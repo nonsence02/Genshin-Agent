@@ -162,6 +162,7 @@ def load_existing_character_names(character_dir: Path) -> dict[str, str]:
 def parse_character_page(candidate: CharacterCandidate, soup: Any) -> dict[str, Any]:
     infobox = select_character_infobox(soup)
     combat_talents = extract_combat_talents(soup)
+    description = extract_description(soup)
 
     return {
         "id": candidate.character_id,
@@ -170,8 +171,8 @@ def parse_character_page(candidate: CharacterCandidate, soup: Any) -> dict[str, 
         "weapon": extract_infobox_field(infobox, "Weapon") if infobox else "",
         "region": extract_infobox_field(infobox, "Region") if infobox else "",
         "rarity": extract_rarity(infobox) if infobox else None,
-        "description": extract_description(soup),
-        "role_summary": extract_role_summary(soup),
+        "description": description,
+        "role_summary": extract_role_summary(soup, description),
         "combat_talents": combat_talents,
         "constellations": extract_constellations(soup),
         "source_url": candidate.url,
@@ -258,21 +259,39 @@ def extract_combat_talents(soup: Any) -> dict[str, str]:
     return talents
 
 
-def extract_role_summary(soup: Any) -> str:
-    heading = find_heading_by_id(soup, ("Character_Description", "Character_Summary"))
+def extract_role_summary(soup: Any, description: str = "") -> str:
+    heading = find_character_summary_heading(soup)
     if heading:
         paragraphs = collect_following_paragraphs(heading)
         if paragraphs:
             return "\n\n".join(paragraphs)
 
     for table in soup.find_all("table"):
-        if "character summary" not in table.get_text(" ", strip=True).casefold():
+        if not re.search(r"Talent\s*Demo|Character\s*(Description|Summary)", table.get_text(" ", strip=True), re.I):
             continue
         summary = extract_character_summary_from_table(table)
         if summary:
             return summary
 
+    if description:
+        return description.split("\n\n", 1)[0].strip()
+
     return ""
+
+
+def find_character_summary_heading(soup: Any) -> Any | None:
+    pattern = re.compile(r"Character\s*(Description|Summary)", re.IGNORECASE)
+    for tag in soup.find_all(["span", "h2", "h3", "h4", "th", "td"]):
+        tag_id = str(tag.get("id", ""))
+        text = normalize_space(tag.get_text(" ", strip=True))
+        if not (pattern.search(tag_id.replace("_", " ")) or pattern.search(text)):
+            continue
+        if getattr(tag, "name", None) == "span":
+            return tag.find_parent(["h2", "h3", "h4"]) or tag
+        if tag.find_parent("table") and tag.name in {"th", "td"}:
+            continue
+        return tag
+    return None
 
 
 def collect_following_paragraphs(heading: Any) -> list[str]:
@@ -280,7 +299,7 @@ def collect_following_paragraphs(heading: Any) -> list[str]:
     node = heading.find_next_sibling()
     while node is not None:
         name = getattr(node, "name", None)
-        if name in {"h2", "h3", "h4", "table"}:
+        if name in {"h2", "h3", "h4"}:
             break
         if name == "p" and not is_empty_paragraph(node):
             text = clean_description_text(node.get_text(" ", strip=True))
@@ -291,23 +310,24 @@ def collect_following_paragraphs(heading: Any) -> list[str]:
 
 
 def extract_character_summary_from_table(table: Any) -> str:
+    pattern = re.compile(r"Character\s*(Description|Summary)", re.IGNORECASE)
     for row in table.find_all("tr"):
         cells = row.find_all(["th", "td"], recursive=False)
         if not cells:
             continue
         for index, cell in enumerate(cells):
-            if "character summary" not in cell.get_text(" ", strip=True).casefold():
+            if not pattern.search(cell.get_text(" ", strip=True)):
                 continue
             for sibling in cells[index + 1 :]:
                 text = clean_description_text(sibling.get_text(" ", strip=True))
-                if text and "character summary" not in text.casefold():
+                if text and not pattern.search(text):
                     return text
             next_row = row.find_next_sibling("tr")
             if next_row:
                 next_cells = next_row.find_all(["td", "th"], recursive=False)
                 for next_cell in next_cells:
                     text = clean_description_text(next_cell.get_text(" ", strip=True))
-                    if text and "character summary" not in text.casefold():
+                    if text and not pattern.search(text):
                         return text
     return ""
 
