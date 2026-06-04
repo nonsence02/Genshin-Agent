@@ -99,6 +99,7 @@ def get_character_lore(
 
 
 def extract_lore_payload(data: dict[str, Any], requested_name: str, path: Path) -> dict[str, Any]:
+    ai_tags = str(data.get("ai_tags", "") or "").strip()
     return {
         "requested_name": requested_name,
         "id": data.get("id", path.stem),
@@ -108,7 +109,8 @@ def extract_lore_payload(data: dict[str, Any], requested_name: str, path: Path) 
         "region": data.get("region", ""),
         "rarity": data.get("rarity"),
         "description": data.get("description", ""),
-        "role_summary": data.get("role_summary", ""),
+        "ai_tags": ai_tags,
+        "role_summary": ai_tags or data.get("role_summary", ""),
         "combat_talents": data.get("combat_talents", {}),
         "constellations": data.get("constellations", {}),
         "source_url": data.get("source_url", ""),
