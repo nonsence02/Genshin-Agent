@@ -13,9 +13,10 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from scripts.tools.calculator import calculate_characters_requirements  # noqa: E402
+from scripts.tools.calculator import calculate_characters_requirements, resolve_character_id  # noqa: E402
 from scripts.tools.character_info import get_character_lore  # noqa: E402
 from scripts.tools.weapon_info import get_weapon_details  # noqa: E402
+from scripts.tools.weapon_recommender import recommend_best_weapon  # noqa: E402
 
 
 DEFAULT_BASE_URL = os.getenv("GENSHIN_LLM_BASE_URL", "http://localhost:11434/v1")
@@ -49,6 +50,7 @@ SYSTEM_PROMPT = """Ты — ИИ-ассистент по Genshin Impact.
 - СТРОГОЕ ПРАВИЛО 2: Общайся ТОЛЬКО на русском языке. Запрещено использовать китайский.
 - Если инструмент вернул информацию о днях фарма ("дни_фарма") и источниках ("где_найти"), обязательно переведи эти данные на русский язык в финальном ответе и посоветуй пользователю, в какие дни лучше идти в подземелья.
 - ПРАВИЛО РАСПИСАНИЯ: Если в данных предмета указан "режим_сбора" (например, "Ежедневно" или "1 раз в неделю"), СТРОГО указывай это пользователю. НИКОГДА не говори "следите за днями фарма" или "не упустите дни" для диковинок, обычных мобов и обычных боссов — они доступны всегда. Расписание по дням недели существует ТОЛЬКО для книг талантов и материалов оружия.
+- Для подбора лучшего свободного оружия из инвентаря используй recommend_weapon. Передавай персонажа без склонений или как ID; Python сам распознает персонажа, проверит тип оружия, свободные варианты и ручные настройки билда.
 - Отвечай на русском языке, кратко и практично, в Markdown.
 """
 
@@ -148,6 +150,30 @@ TOOLS: list[dict[str, Any]] = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "recommend_weapon",
+            "description": (
+                "Подобрать лучшее свободное оружие для персонажа на основе инвентаря пользователя "
+                "и предпочтений по статам."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "character_id": {
+                        "type": "string",
+                        "description": (
+                            "Имя персонажа без склонений или его ID. Примеры: Айно, Рейзор, aino, razor. "
+                            "Не передавай название оружия, только персонажа."
+                        ),
+                    },
+                },
+                "required": ["character_id"],
+                "additionalProperties": False,
+            },
+        },
+    },
 ]
 
 
@@ -233,6 +259,12 @@ def execute_tool_call(tool_call: Any) -> Any:
         return get_character_lore(character_names=extract_character_names(arguments))
     if function_name == "get_weapon_info":
         return get_weapon_details(str(arguments.get("weapon_name") or "").strip())
+    if function_name == "recommend_weapon":
+        raw_character = str(
+            arguments.get("character_id") or arguments.get("character_name") or ""
+        ).strip()
+        resolved_character_id = resolve_character_id(raw_character) or raw_character
+        return recommend_best_weapon(resolved_character_id)
 
     return {
         "error": "unknown_tool",
