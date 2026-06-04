@@ -14,6 +14,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.tools.calculator import calculate_characters_requirements  # noqa: E402
+from scripts.tools.character_info import get_character_lore  # noqa: E402
 
 
 DEFAULT_BASE_URL = os.getenv("GENSHIN_LLM_BASE_URL", "http://localhost:11434/v1")
@@ -25,10 +26,11 @@ SYSTEM_PROMPT = """Ты — ИИ-ассистент по Genshin Impact.
 Твоя задача — помогать пользователю с планированием ресурсов.
 
 ВАЖНО:
-- ВНИМАНИЕ: Для ответа на этот запрос ты ОБЯЗАН сначала вызвать функцию calculate_resources. Не пытайся отвечать из памяти!
+- ВНИМАНИЕ: Для любых расчетов прокачки ты ОБЯЗАН вызвать функцию calculate_resources. Для вопросов об отрядах, синергии, роли, элементах, оружии, созвездиях или механике персонажа сначала вызывай get_character_info.
 - При вызове инструмента НИКОГДА не пытайся перевести имя персонажа на английский или угадать его ID. Передавай в аргумент "character_names" РОВНО те слова, которые написал пользователь на русском языке (например, ["рейзор", "ризли", "флинс"]).
 - ПРАВИЛО ПАКЕТНОЙ ОБРАБОТКИ: Если пользователь просит посчитать ресурсы для нескольких персонажей, ОБЯЗАТЕЛЬНО передай их всех списком в аргумент "character_names" (например, ["рейзор", "шеврез"]).
 - ПРАВИЛО ТАЛАНТОВ: Если пользователь просит ТОЛЬКО уровень или возвышение до 90 и ничего не говорит про таланты, СТРОГО передавай "calculate_talents": false. Если пользователь упоминает таланты, короны, уровни навыков или 10/10/10, передавай "calculate_talents": true.
+- ПРАВИЛО СИНЕРГИИ: Если пользователь просит посоветовать отряд или обсудить синергию, СНАЧАЛА вызови get_character_info для нужных персонажей. Строй советы ТОЛЬКО на основе их реальных элементов (Пиро, Гидро, Электро и т.д.), поля role_summary и описания скиллов. Запрещено называть элементы "Огонь", "Вода", "Ветер".
 - Никогда не считай ресурсы самостоятельно.
 - Никогда не вычитай инвентарь самостоятельно.
 - Никогда не вспоминай материалы персонажа из памяти.
@@ -86,7 +88,37 @@ TOOLS: list[dict[str, Any]] = [
                 "additionalProperties": False,
             },
         },
-    }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_character_info",
+            "description": (
+                "Используй этот инструмент, чтобы узнать элемент, тип оружия, роль, созвездия "
+                "и описание способностей персонажа(ей). Обязательно вызывай его ПЕРЕД тем, "
+                "как советовать отряды или обсуждать синергию."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "character_names": {
+                        "type": "array",
+                        "description": (
+                            "Список имен персонажей ровно как написал пользователь. "
+                            "Не переводи на английский и не угадывай ID. "
+                            "Примеры: [\"шеврез\"], [\"рейзор\", \"беннет\"]."
+                        ),
+                        "items": {
+                            "type": "string",
+                        },
+                        "minItems": 1,
+                    },
+                },
+                "required": ["character_names"],
+                "additionalProperties": False,
+            },
+        },
+    },
 ]
 
 
@@ -162,17 +194,19 @@ def execute_tool_call(tool_call: Any) -> dict[str, Any]:
             "raw_arguments": tool_call.function.arguments,
         }
 
-    if function_name != "calculate_resources":
-        return {
-            "error": "unknown_tool",
-            "message": f"Unknown tool requested: {function_name}",
-        }
+    if function_name == "calculate_resources":
+        return calculate_resources(
+            character_names=extract_character_names(arguments),
+            target_talents=extract_target_talents(arguments),
+            calculate_talents=extract_calculate_talents(arguments),
+        )
+    if function_name == "get_character_info":
+        return get_character_info(character_names=extract_character_names(arguments))
 
-    return calculate_resources(
-        character_names=extract_character_names(arguments),
-        target_talents=extract_target_talents(arguments),
-        calculate_talents=extract_calculate_talents(arguments),
-    )
+    return {
+        "error": "unknown_tool",
+        "message": f"Unknown tool requested: {function_name}",
+    }
 
 
 def extract_character_names(arguments: dict[str, Any]) -> list[str]:
