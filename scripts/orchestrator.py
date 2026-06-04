@@ -15,6 +15,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from scripts.tools.calculator import calculate_characters_requirements  # noqa: E402
 from scripts.tools.character_info import get_character_lore  # noqa: E402
+from scripts.tools.weapon_info import get_weapon_details  # noqa: E402
 
 
 DEFAULT_BASE_URL = os.getenv("GENSHIN_LLM_BASE_URL", "http://localhost:11434/v1")
@@ -27,6 +28,8 @@ SYSTEM_PROMPT = """Ты — ИИ-ассистент по Genshin Impact.
 
 ВАЖНО:
 - ВНИМАНИЕ: Для любых расчетов прокачки ты ОБЯЗАН вызвать функцию calculate_resources. Для вопросов об отрядах, синергии, роли, элементах, оружии, созвездиях или механике персонажа сначала вызывай get_character_info.
+- Для вопросов о характеристиках оружия, пассивке, сабстате или материалах возвышения оружия используй get_weapon_info.
+- При вызове get_weapon_info передавай название оружия без склонений, как именительный падеж или как ключ из инвентаря.
 - При вызове инструмента НИКОГДА не пытайся перевести имя персонажа на английский или угадать его ID. Передавай в аргумент "character_names" РОВНО те слова, которые написал пользователь на русском языке (например, ["рейзор", "ризли", "флинс"]).
 - ПРАВИЛО ИМЕН: При вызове инструмента get_character_info ОБЯЗАТЕЛЬНО передавай имена персонажей строго в ИМЕНИТЕЛЬНОМ ПАДЕЖЕ с большой буквы (например, "Варка", а не "Варк" или "Варки", "Айно", а не "Айне").
 - ПРАВИЛО ПАКЕТНОЙ ОБРАБОТКИ: Если пользователь просит посчитать ресурсы для нескольких персонажей, ОБЯЗАТЕЛЬНО передай их всех списком в аргумент "character_names" (например, ["рейзор", "шеврез"]).
@@ -121,6 +124,30 @@ TOOLS: list[dict[str, Any]] = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_weapon_info",
+            "description": (
+                "Получить характеристики оружия (базовая атака, сабстат на 90 уровне), "
+                "описание пассивного эффекта и материалы возвышения."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "weapon_name": {
+                        "type": "string",
+                        "description": (
+                            "Название оружия в именительном падеже или ключ оружия из инвентаря. "
+                            "Примеры: AstralVulturesCrimsonPlumage, Astral Vulture's Crimson Plumage."
+                        ),
+                    },
+                },
+                "required": ["weapon_name"],
+                "additionalProperties": False,
+            },
+        },
+    },
 ]
 
 
@@ -145,7 +172,7 @@ def main() -> int:
         model=DEFAULT_MODEL,
         messages=messages,
         tools=TOOLS,
-        tool_choice={"type": "function", "function": {"name": "calculate_resources"}},
+        tool_choice="auto",
         temperature=0.1,
     )
     assistant_message = first_response.choices[0].message
@@ -185,7 +212,7 @@ def main() -> int:
     return 0
 
 
-def execute_tool_call(tool_call: Any) -> dict[str, Any]:
+def execute_tool_call(tool_call: Any) -> Any:
     function_name = tool_call.function.name
     try:
         arguments = json.loads(tool_call.function.arguments or "{}")
@@ -204,6 +231,8 @@ def execute_tool_call(tool_call: Any) -> dict[str, Any]:
         )
     if function_name == "get_character_info":
         return get_character_lore(character_names=extract_character_names(arguments))
+    if function_name == "get_weapon_info":
+        return get_weapon_details(str(arguments.get("weapon_name") or "").strip())
 
     return {
         "error": "unknown_tool",
