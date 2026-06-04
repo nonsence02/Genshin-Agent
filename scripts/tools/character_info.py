@@ -19,6 +19,7 @@ from scripts.tools.calculator import (
 
 
 DEFAULT_CHARACTER_LORE_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
+DEFAULT_MANUAL_ROLES_PATH = PROJECT_ROOT / "data" / "manual_roles.json"
 
 ELEMENTS_RU = {
     "Anemo": "Анемо",
@@ -45,10 +46,12 @@ def get_character_lore(
     lore_dir: Path = DEFAULT_CHARACTER_LORE_DIR,
     character_kb_dir: Path = DEFAULT_CHARACTER_KB_DIR,
     dictionary_path: Path = DEFAULT_DICTIONARY_PATH,
+    manual_roles_path: Path = DEFAULT_MANUAL_ROLES_PATH,
 ) -> dict[str, Any]:
     """Return lore and combat metadata for one or more characters."""
 
     results: dict[str, Any] = {}
+    manual_roles = load_manual_roles(manual_roles_path)
     for raw_name in character_names:
         character_name = str(raw_name).strip()
         if not character_name:
@@ -93,24 +96,48 @@ def get_character_lore(
             }
             continue
 
-        results[character_id] = extract_lore_payload(data, character_name, path)
+        results[character_id] = extract_lore_payload(data, character_name, path, manual_roles)
 
     return results
 
 
-def extract_lore_payload(data: dict[str, Any], requested_name: str, path: Path) -> dict[str, Any]:
-    ai_tags = str(data.get("ai_tags", "") or "").strip()
+def load_manual_roles(path: Path) -> dict[str, list[str]]:
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+    except json.JSONDecodeError:
+        return {}
+
+    if not isinstance(data, dict):
+        return {}
+
+    roles: dict[str, list[str]] = {}
+    for key, value in data.items():
+        if isinstance(value, list):
+            roles[str(key)] = [str(item).strip() for item in value if str(item).strip()]
+    return roles
+
+
+def extract_lore_payload(
+    data: dict[str, Any],
+    requested_name: str,
+    path: Path,
+    manual_roles: dict[str, list[str]] | None = None,
+) -> dict[str, Any]:
+    character_id = str(data.get("id", path.stem))
+    roles = (manual_roles or {}).get(character_id, [])
+    role = ", ".join(roles) if roles else "Не указана"
     return {
         "requested_name": requested_name,
-        "id": data.get("id", path.stem),
+        "id": character_id,
         "name_en": data.get("name_en", ""),
         "element": translate_term(data.get("element", ""), ELEMENTS_RU),
         "weapon": translate_term(data.get("weapon", ""), WEAPONS_RU),
         "region": data.get("region", ""),
         "rarity": data.get("rarity"),
         "description": data.get("description", ""),
-        "ai_tags": ai_tags,
-        "role_summary": ai_tags or data.get("role_summary", ""),
+        "role": role,
         "talents": data.get("talents", []),
         "constellations": data.get("constellations", {}),
         "source_url": data.get("source_url", ""),
