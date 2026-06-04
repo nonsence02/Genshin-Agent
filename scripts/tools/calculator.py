@@ -239,8 +239,13 @@ def resolve_character_id(
 
     reverse_dict: dict[str, str] = {}
     dictionary = load_translation_dictionary(dictionary_path)
-    for english_name, russian_name in dictionary.items():
-        reverse_dict[normalize_human_name(russian_name)] = normalize_id(english_name)
+    for key, value in dictionary.items():
+        key_id = normalize_id(key)
+        value_id = normalize_id(value)
+        if (character_kb_dir / f"{key_id}.json").exists():
+            reverse_dict[normalize_human_name(value)] = key_id
+        if (character_kb_dir / f"{value_id}.json").exists():
+            reverse_dict[normalize_human_name(key)] = value_id
 
     reverse_dict.update(
         {normalize_human_name(alias): normalize_id(character_id) for alias, character_id in CHARACTER_ALIASES_RU.items()}
