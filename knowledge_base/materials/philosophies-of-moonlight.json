@@ -1,0 +1,14 @@
+{
+  "id": "philosophies-of-moonlight",
+  "name_en": "Philosophies of Moonlight",
+  "type": "Character Talent Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Lightless Capital (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Philosophies_of_Moonlight"
+}

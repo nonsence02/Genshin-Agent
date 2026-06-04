@@ -1,0 +1,47 @@
+{
+  "id": "amos-bow",
+  "name": "Amos' Bow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Amos%27_Bow",
+  "profile": {
+    "type": "Bow",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Increases Normal Attack and Charged Attack DMG by. After a Normal or Charged Attack is fired, DMG dealt increases by a further every seconds the arrow is in the air for up to times.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Slime Condensate",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Slime Secretions",
+        "Shackles of the Dandelion Gladiator",
+        "Slime Concentrate",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

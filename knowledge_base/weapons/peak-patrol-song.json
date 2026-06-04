@@ -1,0 +1,48 @@
+{
+  "id": "peak-patrol-song",
+  "name": "Peak Patrol Song",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Peak_Patrol_Song",
+  "profile": {
+    "type": "Sword",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "DEF"
+  },
+  "passive": "Gain \"Ode to Flowers\" after Normal or Plunging Attacks hit an opponent: DEF increases by and gain a All Elemental DMG Bonus for. Max stacks. Can trigger once per. When this reaches stacks or the stack's duration is refreshed, increase all nearby party members' All Elemental DMG Bonus by for every DEF the equipping character has, up to a maximum of, for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Night-Wind's Mystic Consideration",
+        "Axis of the Secret Source",
+        "Juvenile Fang",
+        "Night-Wind's Mystic Premonition",
+        "Sheath of the Secret Source",
+        "Seasoned Fang",
+        "Night-Wind's Mystic Augury",
+        "Heart of the Secret Source",
+        "Tyrant's Fang",
+        "Night-Wind's Mystic Revelation"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

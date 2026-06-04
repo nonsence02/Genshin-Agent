@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-contention",
+  "name_en": "Teachings of Contention",
+  "type": "Character Talent Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Blazing Ruins (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Contention"
+}

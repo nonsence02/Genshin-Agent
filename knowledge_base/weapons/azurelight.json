@@ -1,0 +1,48 @@
+{
+  "id": "azurelight",
+  "name": "Azurelight",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Azurelight",
+  "profile": {
+    "type": "Sword",
+    "rarity": "5★",
+    "base_atk": "48 - 674",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Within after an Elemental Skill is used, ATK is increased by. During this time, when the equipping character has Energy, ATK will be further increased by, and CRIT DMG will be increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Night-Wind's Mystic Consideration",
+        "Refractive Bud",
+        "Sentry's Wooden Whistle",
+        "Night-Wind's Mystic Premonition",
+        "Bewildering Broadleaf",
+        "Warrior's Metal Whistle",
+        "Night-Wind's Mystic Augury",
+        "Illusory Leafcoil",
+        "Saurian-Crowned Warrior's Golden Whistle",
+        "Night-Wind's Mystic Revelation"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

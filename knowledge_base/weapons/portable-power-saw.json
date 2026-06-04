@@ -1,0 +1,45 @@
+{
+  "id": "portable-power-saw",
+  "name": "Portable Power Saw",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Portable_Power_Saw",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "HP"
+  },
+  "passive": "When the wielder is healed or heals others, they will gain a Stoic's Symbol that lasts, up to a maximum of Symbols. When using their Elemental Skill or Burst, all Symbols will be consumed and the Roused will be granted for. For each Symbol consumed, gain Elemental Mastery, and after the occurs, Energy per Symbol consumed will be restored for said character. The Roused can be triggered once every, and Symbols can be gained even when the character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Broken Goblet of the Pristine Sea",
+        "Meshing Gear",
+        "Wine Goblet of the Pristine Sea",
+        "Mechanical Spur Gear",
+        "Silver Goblet of the Pristine Sea",
+        "Artificed Dynamic Gear",
+        "Golden Goblet of the Pristine Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

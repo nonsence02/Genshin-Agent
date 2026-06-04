@@ -1,0 +1,48 @@
+{
+  "id": "sacrificers-staff",
+  "name": "Sacrificer's Staff",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sacrificer%27s_Staff",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "45 - 620",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "For after an Elemental Skill hits an opponent, ATK is increased by and Energy Recharge is increased by. Max stacks. This can be triggered even when the equipping character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Ember of Long Night Flint",
+        "Mistshroud Manifestation",
+        "Broken Drive Shaft",
+        "Afterglow of Long Night Flint",
+        "Mistshroud Plate",
+        "Reinforced Drive Shaft",
+        "Flare of Long Night Flint",
+        "Mistshroud Helmet",
+        "Precision Drive Shaft",
+        "Blaze of Long Night Flint"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

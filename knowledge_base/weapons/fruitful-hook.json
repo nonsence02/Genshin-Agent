@@ -1,0 +1,48 @@
+{
+  "id": "fruitful-hook",
+  "name": "Fruitful Hook",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Fruitful_Hook",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Increase Plunging Attack CRIT Rate by; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Night-Wind's Mystic Consideration",
+        "Axis of the Secret Source",
+        "Juvenile Fang",
+        "Night-Wind's Mystic Premonition",
+        "Sheath of the Secret Source",
+        "Seasoned Fang",
+        "Night-Wind's Mystic Augury",
+        "Heart of the Secret Source",
+        "Tyrant's Fang",
+        "Night-Wind's Mystic Revelation"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

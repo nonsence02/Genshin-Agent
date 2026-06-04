@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-kindling",
+  "name_en": "Teachings of Kindling",
+  "type": "Character Talent Materials",
+  "days": [
+    "Tuesday",
+    "Friday",
+    "Sunday"
+  ],
+  "source": [
+    "Blazing Ruins (Tuesday/Friday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Kindling"
+}

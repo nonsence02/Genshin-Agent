@@ -1,0 +1,48 @@
+{
+  "id": "solar-pearl",
+  "name": "Solar Pearl",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Solar_Pearl",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Normal Attack hits increase Elemental Skill and Elemental Burst DMG by for. Likewise, Elemental Skill or Elemental Burst hits increase Normal Attack DMG by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Hunter's Sacrificial Knife",
+        "Whopperflower Nectar",
+        "Lustrous Stone from Guyun",
+        "Agent's Sacrificial Knife",
+        "Shimmering Nectar",
+        "Relic from Guyun",
+        "Inspector's Sacrificial Knife",
+        "Energy Nectar",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

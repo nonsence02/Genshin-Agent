@@ -1,0 +1,14 @@
+{
+  "id": "guide-to-order",
+  "name_en": "Guide to Order",
+  "type": "Character Talent Materials",
+  "days": [
+    "Wednesday",
+    "Saturday",
+    "Sunday"
+  ],
+  "source": [
+    "Pale Forgotten Glory (Wednesday/Saturday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Order"
+}

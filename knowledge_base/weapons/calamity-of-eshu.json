@@ -1,0 +1,48 @@
+{
+  "id": "calamity-of-eshu",
+  "name": "Calamity of Eshu",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Calamity_of_Eshu",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by, and Normal and Charged Attack CRIT Rate is increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Delirious Decadence of the Sacred Lord",
+        "Refractive Bud",
+        "Sentry's Wooden Whistle",
+        "Delirious Desolation of the Sacred Lord",
+        "Bewildering Broadleaf",
+        "Warrior's Metal Whistle",
+        "Delirious Demeanor of the Sacred Lord",
+        "Illusory Leafcoil",
+        "Saurian-Crowned Warrior's Golden Whistle",
+        "Delirious Divinity of the Sacred Lord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

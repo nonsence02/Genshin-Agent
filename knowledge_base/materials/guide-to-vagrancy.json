@@ -1,0 +1,14 @@
+{
+  "id": "guide-to-vagrancy",
+  "name_en": "Guide to Vagrancy",
+  "type": "Character Talent Materials",
+  "days": [
+    "Wednesday",
+    "Saturday",
+    "Sunday"
+  ],
+  "source": [
+    "Lightless Capital (Wednesday/Saturday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Vagrancy"
+}

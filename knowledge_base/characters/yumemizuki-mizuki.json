@@ -1,0 +1,94 @@
+{
+  "id": "yumemizuki-mizuki",
+  "name": "Yumemizuki Mizuki",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Yumemizuki_Mizuki",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Weaves memories of lovely dreams, entering a Dreamdrifter state where she floats above the ground, and dealing instance of AoE Anemo DMG to nearby opponents. Dreamdrifter While in the Dreamdrifter state, Yumemizuki Mizuki will continuously drift forward, dealing AoE Anemo DMG to nearby opponents at regular intervals. During this time, Yumemizuki Mizuki can control her direction of drift, and the pick-up distance of Yumemi Style Special Snacks from the Elemental Burst Anraku Secret Spring Therapy will be increased. Increases the Swirl DMG that nearby party members deal based on Yumemizuki Mizuki's Elemental Mastery. Dreamdrifter will end when Mizuki leaves the field or uses her Elemental...",
+    "elemental_burst": "Summons forth countless lovely dreams and nightmares that pull in nearby objects and opponents, dealing AoE Anemo DMG and summoning a Mini Baku. Mini Baku: Follows the current active character. At regular intervals, the Mini Baku will create Yumemi Style Special Snack nearby. After a nearby active character picks up a Special Snack, if their HP is higher than"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Old Handguard",
+        "Kageuchi Handguard",
+        "Famed Handguard"
+      ],
+      "special": [
+        "Sea Ganoderma",
+        "Talisman of the Enigmatic Land"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Transience",
+        "Guide to Transience",
+        "Philosophies of Transience"
+      ],
+      "mob_drops": [
+        "Old Handguard",
+        "Kageuchi Handguard",
+        "Famed Handguard"
+      ],
+      "weekly_boss": [
+        "Fading Candle"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-freedom",
+  "name_en": "Teachings of Freedom",
+  "type": "Character Talent Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Forsaken Rift (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Freedom"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "lauma",
+  "name": "Lauma",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Lauma",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Dendro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Silently incants an ancient hymn, summoning a Frostgrove Sanctuary Frostgrove Sanctuary A magical array that protects the Moonchanters and can be summoned by using the Elemental Skill Runo: Dawnless Rest of Karsikko. The Frostgrove Sanctuary will follow the active character, dealing a single instance of AoE Dendro DMG to opponents within the array. This DMG is considered Elemental Skill DMG. with different effects depending on whether you Tap or Hold. Tap Intone a Hymn of Hunting, dealing AoE Dendro DMG. Hold Can be unleashed when you have at least Verdant Dew Verdant Dew When party members trigger Lunar-Bloom reactions, the party will receive such a resource. Your party will receive...",
+    "elemental_burst": "Let the wishes of all beings become as moonlight that bathes the earth. Lauma incants a sacred song of the far north, gaining stacks of Pale Hymn Pale Hymn A hymn passed down by generations of Moonchanters that increases the DMG dealt by Bloom, Hyperbloom, Burgeon, and Lunar-Bloom reactions. Lauma can gain Pale Hymn stacks in the following ways: When using her Elemental Burst Runo: All Hearts Become the Beating Moon. When consuming Moon Song stacks due to using her Elemental Burst Runo: All Hearts Become the Beating Moon. When the Frostgrove Sanctuary triggers the effect of her Constellation \"I Offer Blood and Tears to the Moonlight\". When party members deal Bloom, Hyperbloom, Burgeon, or..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Nagadus Emerald Sliver",
+        "Nagadus Emerald Fragment",
+        "Nagadus Emerald Chunk",
+        "Nagadus Emerald Gemstone"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "special": [
+        "Moonfall Silver",
+        "Lightbearing Scale-Feather"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Moonlight",
+        "Guide to Moonlight",
+        "Philosophies of Moonlight"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "weekly_boss": [
+        "Eroded Scale-Feather"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

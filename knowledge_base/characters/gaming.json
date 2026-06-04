@@ -1,0 +1,94 @@
+{
+  "id": "gaming",
+  "name": "Gaming",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Gaming",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Pyro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Pounces forward using the Wushou arts, leaping high into the air after coming into contact with a target or surface. After Gaming has used Bestial Ascent to rise into the air, he will use the especially powerful Plunging Attack: Charmed Cloudstrider when performing a Plunging Attack. Plunging Attack: Charmed Cloudstrider The DMG from Plunging Attacks caused by Bestial Ascent is converted to Pyro DMG that cannot be overridden by other elemental infusions. Upon landing, Gaming will consume a fixed amount of HP. Gaming's HP cannot be reduced below",
+    "elemental_burst": "Gaming enters Wushou Stance, briefly applying Pyro to him, recovering a fixed amount of HP, and summons his companion, the Suanni Man Chai, to smash into his target, dealing AoE Pyro DMG. After bashing its target, Man Chai will roll to a nearby location before moving towards Gaming. When it links up with Gaming, Man Chai will leave the field and reset the CD for Gaming's Elemental Skill, Bestial Ascent. While Wushou Stance is active, his resistance to interruption is increased, and when Gaming lands with Charmed Cloudstrider attack or completes the forward pounce attack from Bestial Ascent with over"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "special": [
+        "Starconch",
+        "Emperor's Resolution"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Prosperity",
+        "Guide to Prosperity",
+        "Philosophies of Prosperity"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "weekly_boss": [
+        "Lightless Mass"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "dainsleif",
+  "name": "Dainsleif",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dainsleif",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Не найдено",
+    "rarity": "Не найдено"
+  },
+  "skills": {
+    "elemental_skill": "Не найдено",
+    "elemental_burst": "Не найдено"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [],
+      "mob_drops": [],
+      "special": []
+    },
+    "talents": {
+      "books": [],
+      "mob_drops": [],
+      "weekly_boss": [],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

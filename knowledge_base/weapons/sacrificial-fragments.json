@@ -1,0 +1,47 @@
+{
+  "id": "sacrificial-fragments",
+  "name": "Sacrificial Fragments",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sacrificial_Fragments",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "After dealing damage to an opponent with an Elemental Skill, the skill has a chance to end its own CD. Can only occur once every s.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Treasure Hoarder Insignia",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Silver Raven Insignia",
+        "Shackles of the Dandelion Gladiator",
+        "Golden Raven Insignia",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

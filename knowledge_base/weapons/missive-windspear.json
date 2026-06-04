@@ -1,0 +1,44 @@
+{
+  "id": "missive-windspear",
+  "name": "Missive Windspear",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Missive_Windspear",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Within after an Elemental Reaction is triggered, ATK is increased by and Elemental Mastery is increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Gloomy Statuette",
+        "Slime Condensate",
+        "Dark Statuette",
+        "Slime Secretions",
+        "Deathly Statuette",
+        "Slime Concentrate"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

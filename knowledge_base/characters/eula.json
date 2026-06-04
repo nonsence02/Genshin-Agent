@@ -1,0 +1,92 @@
+{
+  "id": "eula",
+  "name": "Eula",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Eula",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Cryo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Sharp frost, swift blade. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Slashes swiftly, dealing Cryo DMG. When it hits an opponent, Eula gains a stack of Grimheart that stacks up to times. These stacks can only be gained once. Grimheart Increases Eula's resistance to interruption and DEF. Hold Wielding her sword, Eula consumes all the stacks of Grimheart and lashes forward, dealing AoE Cryo DMG to opponents in front of her. If Grimheart stacks are consumed, surrounding opponents will have their Physical RES and Cryo RES decreased. Each consumed stack of Grimheart will be converted into an Icewhirl Brand that deals Cryo DMG to nearby opponents. When...",
+    "elemental_burst": "Brandishes her greatsword, dealing Cryo DMG to nearby opponents and creating a Lightfall Sword that follows her around for a duration of up to. While present, the Lightfall Sword increases Eula's resistance to interruption. When Eula's own Normal Attack, Elemental Skill, and Elemental Burst deal DMG to opponents, they will charge the Lightfall Sword, which can gain an energy stack once. Once its duration ends, the Lightfall Sword will descend and explode violently, dealing Physical DMG to nearby opponents. This DMG scales on the number of energy stacks the Lightfall Sword has accumulated. If Eula leaves the field, the Lightfall Sword will explode immediately. This Elemental Burst drains..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "special": [
+        "Dandelion Seed",
+        "Crystalline Bloom"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Resistance",
+        "Guide to Resistance",
+        "Philosophies of Resistance"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "weekly_boss": [
+        "Dragon Lord's Crown"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

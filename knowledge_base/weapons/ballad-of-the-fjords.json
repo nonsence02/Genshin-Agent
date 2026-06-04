@@ -1,0 +1,48 @@
+{
+  "id": "ballad-of-the-fjords",
+  "name": "Ballad of the Fjords",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ballad_of_the_Fjords",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "When there are at least different Elemental Types in your party, Elemental Mastery will be increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Broken Goblet of the Pristine Sea",
+        "A Flower Yet to Bloom",
+        "Whopperflower Nectar",
+        "Wine Goblet of the Pristine Sea",
+        "Treasured Flower",
+        "Shimmering Nectar",
+        "Silver Goblet of the Pristine Sea",
+        "Wanderer's Blooming Flower",
+        "Energy Nectar",
+        "Golden Goblet of the Pristine Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

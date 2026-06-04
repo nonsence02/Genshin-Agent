@@ -1,0 +1,48 @@
+{
+  "id": "cranes-echoing-call",
+  "name": "Crane's Echoing Call",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Crane%27s_Echoing_Call",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "49 - 741",
+    "secondary_stat": "ATK"
+  },
+  "passive": "After the equipping character hits an opponent with a Plunging Attack, all nearby party members' Plunging Attacks will deal increased DMG for. When nearby party members hit opponents with Plunging Attacks, they will restore Energy to the equipping character. Energy can be restored this way every. This energy regain can be triggered even if the equipping character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Feathery Fin",
+        "Divining Scroll",
+        "Mist Veiled Mercury Elixir",
+        "Lunar Fin",
+        "Sealed Scroll",
+        "Mist Veiled Gold Elixir",
+        "Chasmlight Fin",
+        "Forbidden Curse Scroll",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "fruit-of-fulfillment",
+  "name": "Fruit of Fulfillment",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Fruit_of_Fulfillment",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Obtain the \"Wax and Wane\" after an Elemental Reaction is triggered, gaining Elemental Mastery while losing ATK. For every, stack of Wax and Wane can be gained. Max stacks. For every that go by without an Elemental Reaction being triggered, stack will be lost. This can be triggered even when the character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Oasis Garden's Reminiscence",
+        "Gloomy Statuette",
+        "Oasis Garden's Kindness",
+        "Dark Statuette",
+        "Luminescent Pollen",
+        "Oasis Garden's Mourning",
+        "Deathly Statuette",
+        "Crystalline Cyst Dust",
+        "Oasis Garden's Truth"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

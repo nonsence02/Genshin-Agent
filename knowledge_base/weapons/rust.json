@@ -1,0 +1,48 @@
+{
+  "id": "rust",
+  "name": "Rust",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Rust",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Increases Normal Attack DMG by but decreases Charged Attack DMG by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Hunter's Sacrificial Knife",
+        "Damaged Mask",
+        "Lustrous Stone from Guyun",
+        "Agent's Sacrificial Knife",
+        "Stained Mask",
+        "Relic from Guyun",
+        "Inspector's Sacrificial Knife",
+        "Ominous Mask",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

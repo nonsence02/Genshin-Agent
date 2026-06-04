@@ -1,0 +1,94 @@
+{
+  "id": "candace",
+  "name": "Candace",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Candace",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Hydro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Candace's fighting style is capable of warding off an entire tide of foes. Tap Rushes forward with her shield, dealing Hydro DMG to opponents in front of her. Hold Raises her shield to block incoming attacks from nearby opponents, forming a barrier that absorbs DMG based on her Max HP and absorbs Hydro DMG",
+    "elemental_burst": "Raising her weapon on high, Candace calls upon a divine blessing that deals AoE Hydro DMG based on her Max HP and continuously confers the Prayer of the Crimson Crown on your active character. Prayer of the Crimson Crown This effect has the following properties: Characters deal increased Elemental DMG with their Normal Attacks. Whenever a character takes the field, they will unleash a rippling wave of water that deals Hydro DMG to nearby opponents. There is a limited number of waves that can be triggered in the duration of this skill. Sword, Claymore, and Polearm -wielding characters under this effect will obtain a Hydro Infusion. Candace 's infusion can override Bennett and Diluc 's..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Faded Red Satin",
+        "Trimmed Red Silk",
+        "Rich Red Brocade"
+      ],
+      "special": [
+        "Henna Berry",
+        "Light Guiding Tetrahedron"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Admonition",
+        "Guide to Admonition",
+        "Philosophies of Admonition"
+      ],
+      "mob_drops": [
+        "Faded Red Satin",
+        "Trimmed Red Silk",
+        "Rich Red Brocade"
+      ],
+      "weekly_boss": [
+        "Tears of the Calamitous God"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

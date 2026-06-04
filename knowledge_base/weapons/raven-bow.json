@@ -1,0 +1,48 @@
+{
+  "id": "raven-bow",
+  "name": "Raven Bow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Raven_Bow",
+  "profile": {
+    "type": "Bow",
+    "rarity": "3★",
+    "base_atk": "40 - 448",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Increases DMG against opponents affected by Hydro or Pyro by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Firm Arrowhead",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Sharp Arrowhead",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Weathered Arrowhead",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

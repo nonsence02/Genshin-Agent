@@ -1,0 +1,94 @@
+{
+  "id": "kinich",
+  "name": "Kinich",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kinich",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Dendro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Kinich uses his big-game hunting skills to either move swiftly or attack his opponent. When there is an opponent or object that can be attacked nearby, he will attach a grappling hook to the target and enter Nightsoul's Blessing with Nightsoul points. If neither is nearby, he fires a grappling hook forward and swings in mid-air, and this Skill's CD is decreased by",
+    "elemental_burst": "Unleashes the power of the Almighty Dragonlord, K'uhul Ajaw (on a limited, conditional, restricted, contractual, partial, temporary basis), dealing Nightsoul-aligned AoE Dendro DMG. Ajaw will unleash his Dragon Breath at intervals, dealing Nightsoul-aligned AoE Dendro DMG. If Kinich is in Nightsoul's Blessing when this is used, this Blessing's duration is extended by. Since the Burst's Animation is long, the effective Nightsoul's Blessing's duration is still reduced by. No more than one K'uhul Ajaw from this talent may exist in the world at any time, including in Co-Op Mode. Successive uses of this talent will override previous uses."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Nagadus Emerald Sliver",
+        "Nagadus Emerald Fragment",
+        "Nagadus Emerald Chunk",
+        "Nagadus Emerald Gemstone"
+      ],
+      "mob_drops": [
+        "Juvenile Fang",
+        "Seasoned Fang",
+        "Tyrant's Fang"
+      ],
+      "special": [
+        "Saurian Claw Succulent",
+        "Overripe Flamegranate"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Kindling",
+        "Guide to Kindling",
+        "Philosophies of Kindling"
+      ],
+      "mob_drops": [
+        "Juvenile Fang",
+        "Seasoned Fang",
+        "Tyrant's Fang"
+      ],
+      "weekly_boss": [
+        "Denial and Judgment"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

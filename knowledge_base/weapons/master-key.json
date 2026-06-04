@@ -1,0 +1,48 @@
+{
+  "id": "master-key",
+  "name": "Master Key",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Master_Key",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Upon causing an Elemental Reaction, increases Elemental Mastery by for. Moonsign: Ascendant Gleam: Elemental Mastery from this is further increased by. This can be triggered even if the equipping character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Sundered Glory of the Far-North Scions",
+        "Lightless Bone",
+        "Broken Drive Shaft",
+        "Unyielding Delusion of the Far-North Scions",
+        "Glowing Remains",
+        "Reinforced Drive Shaft",
+        "Oblation of the Far-North Scions",
+        "Radiant Exoskeleton",
+        "Precision Drive Shaft",
+        "Aureate Radiance of the Far-North Scions"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "deathmatch",
+  "name": "Deathmatch",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Deathmatch",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "If there are at least opponents nearby, ATK is increased by and DEF is increased by. If there are fewer than opponents nearby, ATK is increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Whopperflower Nectar",
+        "Dead Ley Line Leaves",
+        "Shimmering Nectar",
+        "Ley Line Sprout",
+        "Energy Nectar"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

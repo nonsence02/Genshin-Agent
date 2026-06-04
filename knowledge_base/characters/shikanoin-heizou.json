@@ -1,0 +1,94 @@
+{
+  "id": "shikanoin-heizou",
+  "name": "Shikanoin Heizou",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Shikanoin_Heizou",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Press Wields the swift winds to launch a Heartstopper Strike that deals Anemo DMG. Hold Charges energy to unleash an even stronger blow. He will obtain the Declension effect while charging, which will increase the power of the Heartstopper Strike. When the skill button is released or the skill finishes charging, he will strike forward, dealing Anemo DMG. Declension Increases the power of the next Heartstopper Strike. Max stacks. When you possess Declension stacks, the Conviction effect will be produced, which will cause the next Heartstopper Strike to be even stronger and have a larger AoE. When this skill hits at least one enemy, it generates different amounts of Elemental Particles...",
+    "elemental_burst": "Leaps into the air and uses the Fudou Style Vacuum Slugger and kicks his opponent. The Vacuum Slugger will explode upon hit and create an Arresting Windtunnel that pulls in nearby objects and opponents, dealing AoE Anemo DMG. When Vacuum Slugger hits opponents affected by Hydro / Pyro / Cryo / Electro, these opponents will be afflicted with Windmuster Iris. This Windmuster Iris will explode after a moment and dissipate, dealing AoE DMG of the corresponding elemental type. Vacuum Slugger can afflict a maximum of opponents with the Windmuster Iris. A single opponent cannot be under the effect of Windmuster Irises of different elements at the same time. Fudou Style Vacuum Slugger DMG and..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "special": [
+        "Onikabuto",
+        "Runic Fang"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Transience",
+        "Guide to Transience",
+        "Philosophies of Transience"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "weekly_boss": [
+        "The Meaning of Aeons"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

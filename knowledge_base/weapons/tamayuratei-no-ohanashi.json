@@ -1,0 +1,48 @@
+{
+  "id": "tamayuratei-no-ohanashi",
+  "name": "Tamayuratei no Ohanashi",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Tamayuratei_no_Ohanashi",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Increase ATK by and Movement SPD by for when using an Elemental Skill.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mask of the Wicked Lieutenant",
+        "Refractive Bud",
+        "Old Handguard",
+        "Mask of the Tiger's Bite",
+        "Bewildering Broadleaf",
+        "Kageuchi Handguard",
+        "Mask of the One-Horned",
+        "Illusory Leafcoil",
+        "Famed Handguard",
+        "Mask of the Kijin"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

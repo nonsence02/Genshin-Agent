@@ -1,0 +1,48 @@
+{
+  "id": "the-first-great-magic",
+  "name": "The First Great Magic",
+  "source_url": "https://genshin-impact.fandom.com/wiki/The_First_Great_Magic",
+  "profile": {
+    "type": "Bow",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "DMG dealt by Charged Attacks increased by. For every party member with the same Elemental Type as the wielder (including the wielder themselves), gain Gimmick stack. For every party member with a different Elemental Type from the wielder, gain Theatrics stack. When the wielder has or more Gimmick stacks, ATK will be increased by. When the wielder has or more Theatrics stacks, Movement SPD will be increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fragment of an Ancient Chord",
+        "Drop of Tainted Water",
+        "Transoceanic Pearl",
+        "Chapter of an Ancient Chord",
+        "Scoop of Tainted Water",
+        "Transoceanic Chunk",
+        "Movement of an Ancient Chord",
+        "Newborn Tainted Hydro Phantasm",
+        "Xenochromatic Crystal",
+        "Echo of an Ancient Chord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

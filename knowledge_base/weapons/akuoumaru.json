@@ -1,0 +1,48 @@
+{
+  "id": "akuoumaru",
+  "name": "Akuoumaru",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Akuoumaru",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "For every point of the entire party's combined maximum Energy capacity, the Elemental Burst DMG of the character equipping this weapon is increased by. A maximum of increased Elemental Burst DMG can be achieved this way.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Coral Branch of a Distant Sea",
+        "Concealed Claw",
+        "Old Handguard",
+        "Jeweled Branch of a Distant Sea",
+        "Concealed Unguis",
+        "Kageuchi Handguard",
+        "Jade Branch of a Distant Sea",
+        "Concealed Talon",
+        "Famed Handguard",
+        "Golden Branch of a Distant Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

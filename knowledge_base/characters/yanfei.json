@@ -1,0 +1,94 @@
+{
+  "id": "yanfei",
+  "name": "Yanfei",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Yanfei",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Pyro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Summons blistering flames that deal AoE Pyro DMG. Opponents hit by the flames will grant Yanfei the maximum number of Scarlet Seals. When this skill hits at least one enemy, it generates Elemental Particles. Constellation Effects Constellation Level, Samadhi Fire-Forged: Increases this talent's level by, up to a maximum of. Constellation Level, Extra Clause: \"Increases the maximum number of Scarlet Seals by.\"",
+    "elemental_burst": "Triggers a spray of intense flames that rush at nearby opponents, dealing AoE Pyro DMG, granting Yanfei the maximum number of Scarlet Seals, and applying Brilliance to her. Brilliance Has the following effects: Grants Yanfei a Scarlet Seal at fixed intervals. Increases the DMG dealt by her Charged Attacks. The effects of Brilliance will end if Yanfei leaves the field or falls in battle. At maximum Scarlet Seals, Yanfei has to consume the existing Scarlet Seals before another can be granted by Brilliance. The Brilliance's effect lags behind the Elemental Burst by. Theoretically, Yanfei can gain the first Scarlet Seal after of using Elemental Burst. However, Yanfei has to consume the existing..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "special": [
+        "Noctilucous Jade",
+        "Juvenile Jade"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Gold",
+        "Guide to Gold",
+        "Philosophies of Gold"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "weekly_boss": [
+        "Bloodjade Branch"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

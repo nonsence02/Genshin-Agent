@@ -1,0 +1,94 @@
+{
+  "id": "ineffa",
+  "name": "Ineffa",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ineffa",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Ineffa engages her Enhanced Cleaning Module, dealing a single instance of AoE Electro DMG to nearby opponents, activating her Optical Flow Shield Barrier, and summoning the Multipurpose Smart Assistance Unit, Birgitta Birgitta Ineffa's assistant and companion in battle, she can be summoned to the battlefield via Elemental Skill or Elemental Burst. If there are opponents nearby, Birgitta will quickly move close to an opponent and unleash Discharge attacks every, dealing AoE Electro DMG. Only one Birgitta that has been summoned by Ineffa herself can exist at any one time. Additionally, in Nod-Krai, it seems you'll be able to change Birgitta's appearance through certain means.... The Optical...",
+    "elemental_burst": "The Multipurpose Smart Assistance Unit, Birgitta, can use Rocket Punches to quickly clean up opponents! Ineffa shoots Birgitta into the fray, dealing AoE Electro DMG and allowing Birgitta to remain on the field. If Birgitta is already on the field, having been summoned by Ineffa, this Skill will re-summon Birgitta at the target's location and reset her duration."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "special": [
+        "Glowing Hornshroom",
+        "Secret Source Airflow Accumulator"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Conflict",
+        "Guide to Conflict",
+        "Philosophies of Conflict"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "weekly_boss": [
+        "Eroded Sunfire"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

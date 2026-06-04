@@ -1,0 +1,94 @@
+{
+  "id": "kaedehara-kazuha",
+  "name": "Kaedehara Kazuha",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kaedehara_Kazuha",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Unleashes a secret technique as fierce as the rushing wind that pulls objects and opponents towards Kazuha's current position before launching opponents within the AoE, dealing Anemo DMG and lifting Kazuha into the air on a rushing gust of wind. Within of remaining airborne after casting Chihayaburu, Kazuha can unleash a powerful Plunging Attack known as Midare Ranzan. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Can be used in mid-air. Hold Charges up before unleashing greater Anemo DMG over a larger AoE than (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Mode. Plunging Attack: Midare Ranzan When a Plunging...",
+    "elemental_burst": "The signature technique of Kazuha's self-styled bladework — a single slash that strikes with the force of the first winds of autumn, dealing AoE Anemo DMG. The blade's passage will leave behind a field named \"Autumn Whirlwind\" that periodically deals AoE Anemo DMG to opponents within its range. Elemental Absorption If Autumn Whirlwind comes into contact with Hydro / Pyro / Cryo / Electro, it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use. The Autumn Whirlwind field deals DMG every seconds for a total of times. The element that Kazuha is affected with can serve as a source for absorption. Constellation Effects Constellation Level, Scarlet..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "special": [
+        "Sea Ganoderma",
+        "Marionette Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Diligence",
+        "Guide to Diligence",
+        "Philosophies of Diligence"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "weekly_boss": [
+        "Gilded Scale"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

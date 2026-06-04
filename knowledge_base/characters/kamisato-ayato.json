@@ -1,0 +1,94 @@
+{
+  "id": "kamisato-ayato",
+  "name": "Kamisato Ayato",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayato",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Kamisato Ayato shifts positions and enters the Takimeguri Kanka state. After this shift, he will leave a watery illusion at his original location. After it is formed, the watery illusion will explode if opponents are nearby or after its duration ends, dealing AoE Hydro DMG. Takimeguri Kanka In this state, Kamisato Ayato uses his Shunsuiken to engage in blindingly fast attacks, causing DMG from his Normal Attacks to be converted into AoE Hydro DMG. This cannot be overridden. It also has the following properties: After a Shunsuiken attack hits an opponent, it will grant Ayato the Namisen effect, increasing the DMG dealt by Shunsuiken based on Ayato's current Max HP. The initial maximum number...",
+    "elemental_burst": "Unveils a garden of purity that silences the cacophony within. While this space exists, Bloomwater Blades will constantly rain down and attack opponents within its AoE, dealing Hydro DMG and increasing the Normal Attack DMG of characters within. Bloomwater Blades will be created throughout the ability's entire duration. Each Bloomwater Blade targets a random opponent in the area that has not been targeted by the last or Bloomwater Blades. If all opponents in the area have been targeted by the last or Bloomwater Blades, or if there are no opponents in the area, then the next Bloomwater Blade strikes somewhere random in the area. Enemies who are incidentally hit by a Bloomwater Blade that did..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Old Handguard",
+        "Kageuchi Handguard",
+        "Famed Handguard"
+      ],
+      "special": [
+        "Sakura Bloom",
+        "Dew of Repudiation"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Elegance",
+        "Guide to Elegance",
+        "Philosophies of Elegance"
+      ],
+      "mob_drops": [
+        "Old Handguard",
+        "Kageuchi Handguard",
+        "Famed Handguard"
+      ],
+      "weekly_boss": [
+        "Mudra of the Malefic General"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

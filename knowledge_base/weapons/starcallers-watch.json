@@ -1,0 +1,48 @@
+{
+  "id": "starcallers-watch",
+  "name": "Starcaller's Watch",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Starcaller%27s_Watch",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Increases Elemental Mastery by. Gain the \"Mirror of Night\" within after the equipping character creates a shield: The current active party member deals increased DMG to nearby opponents. You can gain the \"Mirror of Night\" once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Delirious Decadence of the Sacred Lord",
+        "Shard of a Shattered Will",
+        "Sentry's Wooden Whistle",
+        "Delirious Desolation of the Sacred Lord",
+        "Locus of a Clear Will",
+        "Warrior's Metal Whistle",
+        "Delirious Demeanor of the Sacred Lord",
+        "Sigil of a Striding Will",
+        "Saurian-Crowned Warrior's Golden Whistle",
+        "Delirious Divinity of the Sacred Lord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

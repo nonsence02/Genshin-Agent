@@ -1,0 +1,45 @@
+{
+  "id": "beginners-protector",
+  "name": "Beginner's Protector",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Beginner%27s_Protector",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "1★",
+    "base_atk": "23 - 185",
+    "secondary_stat": "Не найдено"
+  },
+  "passive": "A polearm as straight as a flag pole. Well suited to most combat situations, it has an imposing presence when swung.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Divining Scroll",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Sealed Scroll",
+        "Shackles of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

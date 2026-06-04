@@ -1,0 +1,94 @@
+{
+  "id": "sangonomiya-kokomi",
+  "name": "Sangonomiya Kokomi",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sangonomiya_Kokomi",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Summons a \"Bake-Kurage\" created from water that can heal her allies. Using this skill will apply the Wet status to Sangonomiya Kokomi. Bake-Kurage Deals Hydro DMG to surrounding opponents and heal nearby active characters at fixed intervals. This healing is based on Kokomi's Max HP. When each of the first hits hits at least one enemy, it generates Elemental Particles. Generate on average × = elemental particles if all ticks hit an enemy. The Bake-Kurage ticks every seconds, for a total of times before its duration ends. (including the initial hit) Only one Bake-Kurage can exist at a time. Ripple DMG will snapshot Sangonomiya Kokomi's stats on cast and will not be affected by changes in her...",
+    "elemental_burst": "Summons the might of Watatsumi, dealing Hydro DMG to surrounding opponents, before robing Kokomi in a Ceremonial Garment made from the flowing waters of Sangonomiya. Ceremonial Garment Sangonomiya Kokomi's Normal Attack, Charged Attack and Bake-Kurage DMG are increased based on her Max HP. When her Normal and Charged Attacks hit opponents, Kokomi will restore HP for all nearby party members, and the amount restored is based on her Max HP. Increases Sangonomiya Kokomi's resistance to interruption and allows her to walk on the water 's surface. These effects will be cleared once Sangonomiya Kokomi leaves the field. This Elemental Burst drains energy later than most others. [ ] Water..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Spectral Husk",
+        "Spectral Heart",
+        "Spectral Nucleus"
+      ],
+      "special": [
+        "Sango Pearl",
+        "Dew of Repudiation"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Transience",
+        "Guide to Transience",
+        "Philosophies of Transience"
+      ],
+      "mob_drops": [
+        "Spectral Husk",
+        "Spectral Heart",
+        "Spectral Nucleus"
+      ],
+      "weekly_boss": [
+        "Hellfire Butterfly"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

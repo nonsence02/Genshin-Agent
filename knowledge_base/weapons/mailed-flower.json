@@ -1,0 +1,48 @@
+{
+  "id": "mailed-flower",
+  "name": "Mailed Flower",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Mailed_Flower",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Within after the character's Elemental Skill hits an opponent or the character triggers an Elemental Reaction, their ATK and Elemental Mastery will be increased by and respectively.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Desiccated Shell",
+        "Spectral Husk",
+        "Chains of the Dandelion Gladiator",
+        "Sturdy Shell",
+        "Spectral Heart",
+        "Shackles of the Dandelion Gladiator",
+        "Marked Shell",
+        "Spectral Nucleus",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

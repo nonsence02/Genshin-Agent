@@ -1,0 +1,44 @@
+{
+  "id": "ballad-of-the-boundless-blue",
+  "name": "Ballad of the Boundless Blue",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ballad_of_the_Boundless_Blue",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Within after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by and Charged Attack DMG will be increased by. Max stacks. This can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fragile Bone Shard",
+        "Treasure Hoarder Insignia",
+        "Sturdy Bone Shard",
+        "Silver Raven Insignia",
+        "Fossilized Bone Shard",
+        "Golden Raven Insignia"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "kings-squire",
+  "name": "King's Squire",
+  "source_url": "https://genshin-impact.fandom.com/wiki/King%27s_Squire",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Obtain the Teachings of the Forest when unleashing Elemental Skills and Elemental Burst, increasing Elemental Mastery by for. This will be removed when switching characters. When the Teachings of the Forest ends or is removed, it will deal of ATK as DMG to nearby opponent. The Teachings of the Forest can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Echo of Scorching Might",
+        "Inactivated Fungal Nucleus",
+        "Firm Arrowhead",
+        "Remnant Glow of Scorching Might",
+        "Dormant Fungal Nucleus",
+        "Sharp Arrowhead",
+        "Dream of Scorching Might",
+        "Robust Fungal Nucleus",
+        "Weathered Arrowhead",
+        "Olden Days of Scorching Might"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

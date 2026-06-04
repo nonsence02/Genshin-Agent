@@ -1,0 +1,42 @@
+{
+  "id": "waster-greatsword",
+  "name": "Waster Greatsword",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Waster_Greatsword",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "1★",
+    "base_atk": "23 - 185",
+    "secondary_stat": "Не найдено"
+  },
+  "passive": "A sturdy sheet of iron that may be powerful enough to break apart mountains, if wielded with enough willpower.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Slime Condensate",
+        "Dead Ley Line Leaves",
+        "Slime Secretions"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

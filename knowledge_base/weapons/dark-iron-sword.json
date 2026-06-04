@@ -1,0 +1,48 @@
+{
+  "id": "dark-iron-sword",
+  "name": "Dark Iron Sword",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dark_Iron_Sword",
+  "profile": {
+    "type": "Sword",
+    "rarity": "3★",
+    "base_atk": "39 - 401",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Upon causing an Overloaded, Superconduct, Electro-Charged, Quicken, Aggravate, Hyperbloom, Lunar-Charged, or Electro-infused Swirl reaction, ATK is increased by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Hunter's Sacrificial Knife",
+        "Damaged Mask",
+        "Lustrous Stone from Guyun",
+        "Agent's Sacrificial Knife",
+        "Stained Mask",
+        "Relic from Guyun",
+        "Inspector's Sacrificial Knife",
+        "Ominous Mask",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

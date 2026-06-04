@@ -1,0 +1,48 @@
+{
+  "id": "fang-of-the-mountain-king",
+  "name": "Fang of the Mountain King",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Fang_of_the_Mountain_King",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "5★",
+    "base_atk": "49 - 741",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Gain stack of Canopy's Favor after hitting an opponent with an Elemental Skill. This can be triggered once every. After a nearby party member triggers a Burning or Burgeon reaction, the equipping character will gain stacks. This can be triggered once every and can be triggered even when the triggering party member is off-field. Canopy's Favor: Elemental Skill and Burst DMG is increased by for. Max stacks. Each stack is counted independently.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Delirious Decadence of the Sacred Lord",
+        "Ignited Stone",
+        "Sentry's Wooden Whistle",
+        "Delirious Desolation of the Sacred Lord",
+        "Ignited Seed of Life",
+        "Warrior's Metal Whistle",
+        "Delirious Demeanor of the Sacred Lord",
+        "Ignited Seeing Eye",
+        "Saurian-Crowned Warrior's Golden Whistle",
+        "Delirious Divinity of the Sacred Lord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

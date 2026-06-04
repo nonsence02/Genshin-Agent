@@ -1,0 +1,14 @@
+{
+  "id": "philosophies-of-admonition",
+  "name_en": "Philosophies of Admonition",
+  "type": "Character Talent Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Steeple of Ignorance (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Philosophies_of_Admonition"
+}

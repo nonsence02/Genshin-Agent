@@ -1,0 +1,92 @@
+{
+  "id": "hu-tao",
+  "name": "Hu Tao",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Hu_Tao",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Pyro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Only an unwavering flame can cleanse the impurities of this world. Hu Tao consumes a set portion of her HP to knock the surrounding enemies back and enter the Paramita Papilio state. Paramita Papilio Increases Hu Tao's ATK based on her Max HP at the time of entering this state. ATK Bonus gained this way cannot exceed",
+    "elemental_burst": "Commands a blazing spirit to attack, dealing Pyro DMG in a large AoE. Upon striking the enemy, regenerates a percentage of Hu Tao's Max HP. This effect can be triggered up to times, based on the number of enemies hit. If Hu Tao's HP is below or equal to"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "special": [
+        "Silk Flower",
+        "Juvenile Jade"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Diligence",
+        "Guide to Diligence",
+        "Philosophies of Diligence"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "weekly_boss": [
+        "Shard of a Foul Legacy"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

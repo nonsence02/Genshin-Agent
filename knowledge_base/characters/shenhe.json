@@ -1,0 +1,92 @@
+{
+  "id": "shenhe",
+  "name": "Shenhe",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Shenhe",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Cryo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "The frosted dew, silvery and dense, shall exorcise all demons. Grants all nearby party members the Icy Quill effect and deals Cryo DMG in different ways based on whether it is (‍ pressed Text for mouse and keyboard and controller ‍/‍ tapped Text for touch screen ‍) or held. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Rushes forward together with a Talisman Spirit, dealing Cryo DMG to opponents along the path. Hold Commands the Talisman Spirit to deal AoE Cryo DMG. Icy Quill When Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts deal Cryo DMG to opponents, the DMG dealt is increased based on Shenhe's current ATK. The Icy...",
+    "elemental_burst": "Unleashes the power of the Talisman Spirit, allowing it to roam free in this plane, dealing AoE Cryo DMG. The Talisman Spirit then creates a field that decreases the Cryo RES and Physical RES of opponents within it. It also deals periodic Cryo DMG to opponents within the field. The DoT hits times. Inflicts a total damage (including the initial hit) of:"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "special": [
+        "Qingxin",
+        "Dragonheir's False Fin"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Prosperity",
+        "Guide to Prosperity",
+        "Philosophies of Prosperity"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "weekly_boss": [
+        "Hellfire Butterfly"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

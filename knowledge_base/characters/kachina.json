@@ -1,0 +1,94 @@
+{
+  "id": "kachina",
+  "name": "Kachina",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kachina",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Geo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Fight alongside the turbo trusty Turbo Twirly! Summons Turbo Twirly. When the skill is Held and released, Kachina will summon and ride Turbo Twirly. After the Skill is used, Kachina will gain Nightsoul points and enter the Nightsoul's Blessing state. Nightsoul's Blessing: Kachina Turbo Twirly's various actions consume Kachina's Nightsoul points. The Nightsoul's Blessing state will end when these points have been depleted. Turbo Twirly Can exist independently or be ridden and operated by Kachina. When Turbo Twirly is present, Kachina's Elemental Skill, \"Go, Go Turbo Twirly!\", will change to an option to Mount/Dismount Turbo Twirly. When present independent of Kachina, it will slam the ground...",
+    "elemental_burst": "Striking the ground, Kachina deals AoE Geo DMG based on her DEF and creates a Turbo Drill Field. The Field increases Turbo Twirly 's attack AoE and its movement speed when Kachina is riding it. If Kachina's own Turbo Twirly is present when this is used, Turbo Twirly will be summoned to her side. Turbo Twirly's attack radius is increased from m to.m. Turbo Twirly's movement speed is increased by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "special": [
+        "Quenepa Berry",
+        "Overripe Flamegranate"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Conflict",
+        "Guide to Conflict",
+        "Philosophies of Conflict"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "weekly_boss": [
+        "Fading Candle"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

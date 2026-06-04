@@ -1,0 +1,94 @@
+{
+  "id": "chevreuse",
+  "name": "Chevreuse",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Chevreuse",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Chevreuse quickly shoulders her musket and fires at her opponent(s), dealing AoE Pyro DMG. For a short duration after Chevreuse fires a shot, she will continuously restore HP to the active character on the field. The amount healed is based on her Max HP. Hold to fire in a different fashion. Hold Enter Aiming Mode, locking a target in her sights to fire a precise interdiction shot. If Chevreuse has an Overcharged Ball, then she will fire the Overcharged Ball instead, dealing greater Pyro DMG in a larger area. Chevreuse gains Overcharged Ball every time a nearby character in the party triggers an Overloaded reaction, and can have up to Overcharged Ball at a time. Arkhe: Ousia Periodically,...",
+    "elemental_burst": "Chevreuse fires an explosive grenade at opponents with her musket, dealing AoE Pyro DMG. After the projectile hits, it will split into many secondary explosive shells. The secondary explosive shells will burst after a short interval, dealing Pyro DMG to nearby opponents. Secondary Explosive Shell DMG will knock enemies towards the center of the Explosive Grenade blast. Constellation Effects Constellation Level, The Secret to Rapid-Fire Multishots: \"After using Ring of Bursting Grenades, the Hold mode of Short-Range Rapid Interdiction Fire will not go on cooldown when Chevreuse uses it. This effect is removed after Short-Range Rapid Interdiction Fire has been fired twice using Hold or..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "special": [
+        "Lumidouce Bell",
+        "Fontemer Unihorn"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Order",
+        "Guide to Order",
+        "Philosophies of Order"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "weekly_boss": [
+        "Lightless Eye of the Maelstrom"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

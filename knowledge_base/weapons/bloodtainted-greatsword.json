@@ -1,0 +1,44 @@
+{
+  "id": "bloodtainted-greatsword",
+  "name": "Bloodtainted Greatsword",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Bloodtainted_Greatsword",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "3★",
+    "base_atk": "38 - 354",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Increases DMG against opponents affected by Pyro or Electro by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Firm Arrowhead",
+        "Dead Ley Line Leaves",
+        "Sharp Arrowhead",
+        "Ley Line Sprout",
+        "Weathered Arrowhead"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

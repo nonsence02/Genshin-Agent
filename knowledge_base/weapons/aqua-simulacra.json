@@ -1,0 +1,48 @@
+{
+  "id": "aqua-simulacra",
+  "name": "Aqua Simulacra",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Aqua_Simulacra",
+  "profile": {
+    "type": "Bow",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "HP is increased by. When there are opponents nearby, the DMG dealt by the wielder of this weapon is increased by. This will take whether the character is on-field or not.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Gloomy Statuette",
+        "Spectral Husk",
+        "Lustrous Stone from Guyun",
+        "Dark Statuette",
+        "Spectral Heart",
+        "Relic from Guyun",
+        "Deathly Statuette",
+        "Spectral Nucleus",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

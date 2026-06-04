@@ -1,0 +1,48 @@
+{
+  "id": "white-tassel",
+  "name": "White Tassel",
+  "source_url": "https://genshin-impact.fandom.com/wiki/White_Tassel",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "3★",
+    "base_atk": "39 - 401",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Sharp Increases Normal Attack DMG by. → Cost Mora ×",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Hunter's Sacrificial Knife",
+        "Recruit's Insignia",
+        "Lustrous Stone from Guyun",
+        "Agent's Sacrificial Knife",
+        "Sergeant's Insignia",
+        "Relic from Guyun",
+        "Inspector's Sacrificial Knife",
+        "Lieutenant's Insignia",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

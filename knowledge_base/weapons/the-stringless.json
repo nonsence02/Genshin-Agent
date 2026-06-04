@@ -1,0 +1,48 @@
+{
+  "id": "the-stringless",
+  "name": "The Stringless",
+  "source_url": "https://genshin-impact.fandom.com/wiki/The_Stringless",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Increases Elemental Skill and Elemental Burst DMG by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Firm Arrowhead",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Sharp Arrowhead",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Weathered Arrowhead",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "black-tassel",
+  "name": "Black Tassel",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Black_Tassel",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "3★",
+    "base_atk": "38 - 354",
+    "secondary_stat": "HP"
+  },
+  "passive": "Bane of the Soft Increases DMG against slimes by. → Cost Mora ×",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Grain of Aerosiderite",
+        "Fragile Bone Shard",
+        "Firm Arrowhead",
+        "Piece of Aerosiderite",
+        "Sturdy Bone Shard",
+        "Sharp Arrowhead",
+        "Bit of Aerosiderite",
+        "Fossilized Bone Shard",
+        "Weathered Arrowhead",
+        "Chunk of Aerosiderite"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

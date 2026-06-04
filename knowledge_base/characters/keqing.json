@@ -1,0 +1,92 @@
+{
+  "id": "keqing",
+  "name": "Keqing",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Keqing",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Hurls a Lightning Stiletto that annihilates her opponents like the swift thunder. When the Stiletto hits its target, it deals Electro DMG to opponents in a small AoE, and places a Stiletto Mark on the spot hit. Hold Hold to adjust the direction in which the Stiletto shall be thrown. Stilettos thrown by the Hold attack mode can be suspended in mid-air, allowing Keqing to jump to them when using Stellar Restoration a second time. Lightning Stiletto If Keqing uses Stellar Restoration again or uses a Charged Attack while its duration lasts, it will clear the Stiletto Mark and produce different effects: If she uses Stellar Restoration again, she will blink to the location of the Mark and unleash...",
+    "elemental_burst": "Keqing unleashes the power of lightning, dealing Electro DMG in an AOE. She then blends into the shadow of her blade, striking a series of thunderclap-blows to nearby opponents simultaneously that deal multiple instances of Electro DMG. The final attack deals massive AoE Electro DMG. This Elemental Burst drains energy later than most others. [ ] Passive Effects Passive Talent, Aristocratic Dignity: \"When casting Starward Sword, Keqing's CRIT Rate is increased by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "special": [
+        "Cor Lapis",
+        "Lightning Prism"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Prosperity",
+        "Guide to Prosperity",
+        "Philosophies of Prosperity"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "weekly_boss": [
+        "Ring of Boreas"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

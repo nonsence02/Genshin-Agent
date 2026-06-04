@@ -1,0 +1,45 @@
+{
+  "id": "verdict",
+  "name": "Verdict",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Verdict",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "5★",
+    "base_atk": "48 - 674",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Increases ATK by. When characters in your party obtain Elemental Shards from Crystallize or trigger Lunar-Crystallize reactions, the equipping character will gain Seal, increasing Elemental Skill DMG by. The Seal lasts for, and the equipped may have up to Seals at once. All of the equipper's Seals will disappear after their Elemental Skill deals DMG. Up to Seal may be obtained every second through the Lunar-Crystallize reaction.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fragment of an Ancient Chord",
+        "Meshing Gear",
+        "Chapter of an Ancient Chord",
+        "Mechanical Spur Gear",
+        "Movement of an Ancient Chord",
+        "Artificed Dynamic Gear",
+        "Echo of an Ancient Chord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

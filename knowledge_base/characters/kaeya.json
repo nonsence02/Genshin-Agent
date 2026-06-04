@@ -1,0 +1,94 @@
+{
+  "id": "kaeya",
+  "name": "Kaeya",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kaeya",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Cryo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Unleashes a frigid blast, dealing Cryo DMG to opponents in front of Kaeya. When this skill hits at least one enemy, it generates Elemental Particles. Frostgnaw uniquely applies U of Cryo on water and freezes it for seconds. As Frostgnaw's cooldown is only seconds, Kaeya can freeze the water in front of him and walk across it indefinitely as long as Frostgnaw is constantly used. Passive Effects Passive Talent, Cold-Blooded Strike: \"Every hit with Frostgnaw regenerates HP for Kaeya equal to",
+    "elemental_burst": "Coalescing the frost in the air, Kaeya summons icicles that revolve around him. These icicles will follow the character around and deal Cryo DMG to opponents in their path for the ability's duration. This Elemental Burst drains energy later than most others. [ ] Once an icicle deals DMG, it has a cooldown before being able to deal DMG to the same target again. It can deal DMG more than once per rotation if its hitbox remains in contact with an enemy for more than. Glacial Waltz can hit ~ times across the initial burst, icicle rotations and final icicle explosions. Icicle damage will snapshot Kaeya's stats on cast and will not be affected by changes in his stats that occur afterwards...."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "special": [
+        "Calla Lily",
+        "Hoarfrost Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ballad",
+        "Guide to Ballad",
+        "Philosophies of Ballad"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "weekly_boss": [
+        "Spirit Locket of Boreas"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

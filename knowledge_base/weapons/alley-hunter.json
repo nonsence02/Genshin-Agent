@@ -1,0 +1,47 @@
+{
+  "id": "alley-hunter",
+  "name": "Alley Hunter",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Alley_Hunter",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by every second up to a max of. When the character is on the field for more than, the aforementioned DMG buff decreases by per second until it reaches.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Slime Condensate",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Slime Secretions",
+        "Shackles of the Dandelion Gladiator",
+        "Slime Concentrate",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

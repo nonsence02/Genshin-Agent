@@ -1,0 +1,45 @@
+{
+  "id": "apprentices-notes",
+  "name": "Apprentice's Notes",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Apprentice%27s_Notes",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "1★",
+    "base_atk": "23 - 185",
+    "secondary_stat": "Не найдено"
+  },
+  "passive": "Notes left behind by a top student. Many useful spells are listed, and the handwriting is beautiful.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Damaged Mask",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Stained Mask",
+        "Fragment of Decarabian's Epic"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

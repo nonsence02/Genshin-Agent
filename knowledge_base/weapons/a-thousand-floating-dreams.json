@@ -1,0 +1,47 @@
+{
+  "id": "a-thousand-floating-dreams",
+  "name": "A Thousand Floating Dreams",
+  "source_url": "https://genshin-impact.fandom.com/wiki/A_Thousand_Floating_Dreams",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Party members other than the equipping character will provide the equipping character with buffs based on whether their Elemental Type is the same as the latter or not. If their Elemental Types are the same, increase Elemental Mastery by. If not, increase the equipping character's DMG Bonus from their Elemental Type by. Each of the aforementioned effects can have up to stacks. Additionally, all nearby party members other than the equipping character will have their Elemental Mastery increased by. Multiple such effects from multiple such weapons can stack.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Oasis Garden's Reminiscence",
+        "Damaged Prism",
+        "Oasis Garden's Kindness",
+        "Turbid Prism",
+        "Luminescent Pollen",
+        "Oasis Garden's Mourning",
+        "Radiant Prism",
+        "Crystalline Cyst Dust",
+        "Oasis Garden's Truth"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "furina",
+  "name": "Furina",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Furina",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Invites the guests of the Salon Solitaire to come forth and aid in Furina's performance. Will summon either the Salon Members or the Singer of Many Waters based on Furina's current Arkhe alignment. Ousia Foaming bubbles like celebrants shall dance, dealing AoE Hydro DMG based on Furina's Max HP and summoning Salon Members: the Ball Octopus-shaped Gentilhomme Usher, the Bubbly Seahorse-shaped Surintendante Chevalmarin, and the Armored Crab-shaped Mademoiselle Crabaletta. They will attack nearby opponents at intervals, prioritizing the target of the active character, dealing Hydro DMG based on Max HP. When they attack, if character(s) with more than",
+    "elemental_burst": "Rouses the impulse to revel, creating a stage of foam that will deal AoE Hydro DMG based on Furina's Max HP and cause nearby party members to enter the Universal Revelry state: During this time, when nearby party members' HP increases or decreases, Fanfare point will be granted to Furina for each percentage point of their Max HP by which their HP changes. At the same time, Furina will increase the DMG dealt by and Incoming Healing Bonus of all nearby party members based on the amount of Fanfare she has. When the duration ends, Furina's Fanfare points will be cleared. An indicator will appear on screen upon reaching"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "special": [
+        "Lakelight Lily",
+        "Water That Failed To Transcend"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Justice",
+        "Guide to Justice",
+        "Philosophies of Justice"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "weekly_boss": [
+        "Lightless Mass"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

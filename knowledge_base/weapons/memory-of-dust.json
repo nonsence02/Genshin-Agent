@@ -1,0 +1,48 @@
+{
+  "id": "memory-of-dust",
+  "name": "Memory of Dust",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Memory_of_Dust",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Increases Shield Strength by. Scoring hits on opponents increases ATK by for. Max stacks. Can only occur once every. While protected by a shield, this ATK increase is increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Grain of Aerosiderite",
+        "Fragile Bone Shard",
+        "Damaged Mask",
+        "Piece of Aerosiderite",
+        "Sturdy Bone Shard",
+        "Stained Mask",
+        "Bit of Aerosiderite",
+        "Fossilized Bone Shard",
+        "Ominous Mask",
+        "Chunk of Aerosiderite"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

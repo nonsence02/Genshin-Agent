@@ -1,0 +1,94 @@
+{
+  "id": "xinyan",
+  "name": "Xinyan",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xinyan",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Pyro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Xinyan brandishes her instrument, dealing Pyro DMG on nearby opponents, forming a shield made out of her audience's passion. The shield's DMG Absorption scales based on Xinyan's DEF and on the number of opponents hit. Hitting – opponents grants Shield Level: Ad Lib. Hitting opponents grants Shield Level: Lead-In. Hitting or more opponents grants Shield Level: Rave, which will also deal intermittent Pyro DMG to nearby opponents. The shield has the following special properties: When unleashed, it infuses Xinyan with Pyro. It has",
+    "elemental_burst": "Strumming rapidly, Xinyan launches nearby opponents and deals Physical DMG to them, hyping up the crowd. The sheer intensity of the atmosphere will cause explosions that deal Pyro DMG to nearby opponents. The DoT portion of Riff Revolution can hit up to times, but may knock smaller enemies out of its AoE. Constellation Effects Constellation Level, Impromptu Opening: \" Riff Revolution 's Physical DMG has its CRIT Rate increased by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "special": [
+        "Violetgrass",
+        "Everflame Seed"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Gold",
+        "Guide to Gold",
+        "Philosophies of Gold"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "weekly_boss": [
+        "Tusk of Monoceros Caeli"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

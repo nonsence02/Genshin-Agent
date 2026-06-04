@@ -1,0 +1,48 @@
+{
+  "id": "predator",
+  "name": "Predator",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Predator",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Effective only on the following platform: \"PlayStation Network\" Dealing Cryo DMG to opponents increases this character's Normal and Charged Attack DMG by for. This can have a maximum of stacks. Additionally, when Aloy equips Predator, ATK is increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Narukami's Wisdom",
+        "Dismal Prism",
+        "Firm Arrowhead",
+        "Narukami's Joy",
+        "Crystal Prism",
+        "Sharp Arrowhead",
+        "Narukami's Affection",
+        "Polarizing Prism",
+        "Weathered Arrowhead",
+        "Narukami's Valor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

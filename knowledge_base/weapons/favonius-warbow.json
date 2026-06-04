@@ -1,0 +1,47 @@
+{
+  "id": "favonius-warbow",
+  "name": "Favonius Warbow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Favonius_Warbow",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "CRIT hits have a chance to generate a small amount of Elemental Particles, which will regenerate Energy for the character. Can only occur once every s.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Whopperflower Nectar",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Shimmering Nectar",
+        "Shackles of the Dandelion Gladiator",
+        "Energy Nectar",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

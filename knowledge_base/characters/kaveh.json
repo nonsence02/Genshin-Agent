@@ -1,0 +1,94 @@
+{
+  "id": "kaveh",
+  "name": "Kaveh",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kaveh",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Dendro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Uses Mehrak 's mapping ability for offensive purposes, initiating a radial scan that deals AoE Dendro DMG. It will also scan all Dendro Cores in its AoE and cause them to immediately burst. When this skill hits at least one enemy, it generates Elemental Particles. DMG dealt by a Dendro Core that prematurely burst due to this skill is calculated in the same way as it would if the Dendro Core had burst normally, i.e., it respects the Elemental Mastery and",
+    "elemental_burst": "Completely unleashes Mehrak 's energy and creates a cubic scanned space, dealing AoE Dendro DMG to all opponents within it, causing all Dendro Cores in its AoE to immediately burst, and granting Kaveh the following enhanced combat abilities for a specific duration: Increases Kaveh's Normal, Charged, and Plunging Attack AoE, and converts his attack DMG to Dendro DMG that cannot be overridden. All Dendro Cores created by all your own party members through Bloom and Lunar-Bloom reactions will deal additional DMG when they burst. Increases Kaveh's resistance to interruption. These effects will be canceled once Kaveh leaves the field. DMG dealt by a Dendro Core that prematurely burst due to this..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Nagadus Emerald Sliver",
+        "Nagadus Emerald Fragment",
+        "Nagadus Emerald Chunk",
+        "Nagadus Emerald Gemstone"
+      ],
+      "mob_drops": [
+        "Fungal Spores",
+        "Luminescent Pollen",
+        "Crystalline Cyst Dust"
+      ],
+      "special": [
+        "Mourning Flower",
+        "Quelled Creeper"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ingenuity",
+        "Guide to Ingenuity",
+        "Philosophies of Ingenuity"
+      ],
+      "mob_drops": [
+        "Fungal Spores",
+        "Luminescent Pollen",
+        "Crystalline Cyst Dust"
+      ],
+      "weekly_boss": [
+        "Primordial Greenbloom"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

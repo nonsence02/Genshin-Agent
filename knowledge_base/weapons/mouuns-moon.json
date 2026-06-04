@@ -1,0 +1,48 @@
+{
+  "id": "mouuns-moon",
+  "name": "Mouun's Moon",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Mouun%27s_Moon",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "For every point of the entire party's combined maximum Energy capacity, the Elemental Burst DMG of the character equipping this weapon is increased by. A maximum of increased Elemental Burst DMG can be achieved this way.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Narukami's Wisdom",
+        "Dismal Prism",
+        "Spectral Husk",
+        "Narukami's Joy",
+        "Crystal Prism",
+        "Spectral Heart",
+        "Narukami's Affection",
+        "Polarizing Prism",
+        "Spectral Nucleus",
+        "Narukami's Valor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

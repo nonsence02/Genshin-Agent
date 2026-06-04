@@ -1,0 +1,45 @@
+{
+  "id": "tidal-shadow",
+  "name": "Tidal Shadow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Tidal_Shadow",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "After the wielder is healed, ATK will be increased by for. This can be triggered even when the character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Broken Goblet of the Pristine Sea",
+        "Meshing Gear",
+        "Wine Goblet of the Pristine Sea",
+        "Mechanical Spur Gear",
+        "Silver Goblet of the Pristine Sea",
+        "Artificed Dynamic Gear",
+        "Golden Goblet of the Pristine Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

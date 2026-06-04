@@ -1,0 +1,44 @@
+{
+  "id": "dodoco-tales",
+  "name": "Dodoco Tales",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dodoco_Tales",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Normal Attack hits on opponents increase Charged Attack DMG by for. Charged Attack hits on opponents increase ATK by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Damaged Mask",
+        "Dead Ley Line Leaves",
+        "Stained Mask",
+        "Ley Line Sprout",
+        "Ominous Mask"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

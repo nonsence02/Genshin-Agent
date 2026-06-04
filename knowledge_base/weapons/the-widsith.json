@@ -1,0 +1,44 @@
+{
+  "id": "the-widsith",
+  "name": "The Widsith",
+  "source_url": "https://genshin-impact.fandom.com/wiki/The_Widsith",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "When a character takes the field, they will gain a random theme song for. This can only occur once every. Recitative: ATK is increased by. Aria: Increases all Elemental DMG by. Interlude: Elemental Mastery is increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Damaged Mask",
+        "Dead Ley Line Leaves",
+        "Stained Mask",
+        "Ley Line Sprout",
+        "Ominous Mask"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

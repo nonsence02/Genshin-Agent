@@ -1,0 +1,94 @@
+{
+  "id": "tartaglia",
+  "name": "Tartaglia",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Tartaglia",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Unleashes a set of weaponry made of pure water, dealing Hydro DMG to surrounding opponents and entering Melee Stance. In this Stance, Tartaglia's Normal and Charged Attacks are converted to Hydro DMG that cannot be overridden by any other elemental infusion and change as follows: Normal Attack Performs up to consecutive Hydro strikes. Charged Attack Consumes a certain amount of Stamina to unleash a cross slash, dealing Hydro DMG. Riptide Slash Hitting an opponent affected by Riptide with a melee attack unleashes a Riptide Slash that deals AoE Hydro DMG. DMG dealt in this way is considered Elemental Skill DMG, and can only occur once. After, or when the ability is unleashed again, this skill...",
+    "elemental_burst": "Performs different attacks based on what stance Tartaglia is in when casting. Ranged Stance: Flash of Havoc Swiftly fires a Hydro-imbued magic arrow, dealing AoE Hydro DMG and applying the Riptide status. Returns a portion of its Energy Cost after use. Melee Stance: Light of Obliteration Performs a slash with a large AoE, dealing massive Hydro DMG to all surrounding opponents, which triggers Riptide Blast. Riptide Blast When the obliterating waters hit an opponent affected by Riptide, it clears their Riptide status and triggers a Hydro Explosion that deals AoE Hydro DMG. DMG dealt in this way is considered Elemental Burst DMG. The Melee Stance version of this Elemental Burst drains energy..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "special": [
+        "Starconch",
+        "Cleansing Heart"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Freedom",
+        "Guide to Freedom",
+        "Philosophies of Freedom"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "weekly_boss": [
+        "Shard of a Foul Legacy"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

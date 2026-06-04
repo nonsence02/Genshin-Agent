@@ -1,0 +1,92 @@
+{
+  "id": "razor",
+  "name": "Razor",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Razor",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Hunts his prey using the techniques taught to him by his master and his lupical. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Swings the Thunder Wolf Claw, dealing Electro DMG to opponents in front of Razor. Upon striking an opponent, Razor will gain an Electro Sigil, which increases his Energy Recharge rate. Razor can have up to Electro Sigils simultaneously, and gaining a new Electro Sigil refreshes their duration. Hold Gathers Electro energy to unleash a lightning storm over a small AoE, causing massive Electro DMG, and clears all of Razor's Electro Sigils. Each Electro Sigil cleared in this manner will be converted into Energy for Razor. When this...",
+    "elemental_burst": "Summons the Wolf Within, which deals Electro DMG to all nearby opponents. This clears all of Razor's Electro Sigils, which will be converted into Elemental Energy for him. The Wolf Within will fight alongside Razor for the skill's duration. The Wolf Within Strikes alongside Razor's normal attacks, dealing Electro DMG. Raises Razor's ATK SPD and Electro RES. Causes Razor to be immune to DMG inflicted by the Electro-Charged status. Disables Razor's Charged Attacks. Increases Razor's resistance to interruption. These effects end when Razor leaves the battlefield. When Razor leaves the field, a maximum of Energy will be returned to him based off the duration remaining on this skill. Soul..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "special": [
+        "Wolfhook",
+        "Lightning Prism"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Resistance",
+        "Guide to Resistance",
+        "Philosophies of Resistance"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "weekly_boss": [
+        "Dvalin's Claw"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

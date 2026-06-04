@@ -1,0 +1,48 @@
+{
+  "id": "makhaira-aquamarine",
+  "name": "Makhaira Aquamarine",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Makhaira_Aquamarine",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "The following will trigger every: The equipping character will gain of their Elemental Mastery as bonus ATK for, with nearby party members gaining of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This will still trigger even if the character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Echo of Scorching Might",
+        "Chaos Storage",
+        "Treasure Hoarder Insignia",
+        "Remnant Glow of Scorching Might",
+        "Chaos Module",
+        "Silver Raven Insignia",
+        "Dream of Scorching Might",
+        "Chaos Bolt",
+        "Golden Raven Insignia",
+        "Olden Days of Scorching Might"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "artful-device-fragment",
+  "name_en": "Artful Device Fragment",
+  "type": "Weapon Ascension Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Lost Mooncourt (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Artful_Device_Fragment"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "cashflow-supervision",
+  "name": "Cashflow Supervision",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Cashflow_Supervision",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "48 - 674",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "ATK is increased by. When current HP increases or decreases, Normal Attack DMG will be increased by and Charged Attack DMG will be increased by for. Max stacks. This can be triggered once every. When the wielder has stacks, ATK SPD will be increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Broken Goblet of the Pristine Sea",
+        "Old Operative's Pocket Watch",
+        "Transoceanic Pearl",
+        "Wine Goblet of the Pristine Sea",
+        "Operative's Standard Pocket Watch",
+        "Transoceanic Chunk",
+        "Silver Goblet of the Pristine Sea",
+        "Operative's Constancy",
+        "Xenochromatic Crystal",
+        "Golden Goblet of the Pristine Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

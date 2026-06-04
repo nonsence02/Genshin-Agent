@@ -1,0 +1,94 @@
+{
+  "id": "diona",
+  "name": "Diona",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Diona",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Cryo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Fires an Icy Paw that deals Cryo DMG to opponents and forms a shield on hit. The shield's DMG Absorption scales based on Diona's Max HP, and its duration scales off the number of Icy Paws that hit their target. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Rapidly fires off Icy Paws. Hold Dashes back quickly before firing Icy Paws. The shield created by a Hold attack will gain a",
+    "elemental_burst": "Tosses out a special cold brew that deals AoE Cryo DMG and creates a Drunken Mist in an AoE. Drunken Mist Deals continuous Cryo DMG to opponents within the AoE. Continuously regenerates the HP of characters within the AoE. This Elemental Burst drains energy later than most others. [ ] Drunken Mist first activates after casting and every afterwards for a total of activations dealing Cryo DMG to opponents and regenerating the HP of characters within its AoE. Passive Effects Passive Talent, Drunkards' Farce: \"Opponents who enter the AoE of Signature Mix have"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "special": [
+        "Calla Lily",
+        "Hoarfrost Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Freedom",
+        "Guide to Freedom",
+        "Philosophies of Freedom"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "weekly_boss": [
+        "Shard of a Foul Legacy"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

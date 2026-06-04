@@ -1,0 +1,48 @@
+{
+  "id": "the-viridescent-hunt",
+  "name": "The Viridescent Hunt",
+  "source_url": "https://genshin-impact.fandom.com/wiki/The_Viridescent_Hunt",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Upon hit, Normal and Aimed Shot Attacks have a chance to generate a Cyclone, which will continuously attract surrounding opponents, dealing of ATK as DMG to these opponents every for. This can only occur once every s.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Firm Arrowhead",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Sharp Arrowhead",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Weathered Arrowhead",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

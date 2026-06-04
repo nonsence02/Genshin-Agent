@@ -1,0 +1,48 @@
+{
+  "id": "ferrous-shadow",
+  "name": "Ferrous Shadow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ferrous_Shadow",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "3★",
+    "base_atk": "39 - 401",
+    "secondary_stat": "HP"
+  },
+  "passive": "When HP falls below, increases Charged Attack DMG by, and Charged Attacks become much harder to interrupt.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Whopperflower Nectar",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Shimmering Nectar",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Energy Nectar",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "the-daybreak-chronicles",
+  "name": "The Daybreak Chronicles",
+  "source_url": "https://genshin-impact.fandom.com/wiki/The_Daybreak_Chronicles",
+  "profile": {
+    "type": "Bow",
+    "rarity": "5★",
+    "base_atk": "48 - 674",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "The equipping character gains Stirring Dawn Breeze: after leaving combat, Normal Attack, Elemental Skill, and Elemental Burst DMG is increased by. While in combat, this DMG Bonus will decrease by per second until it reaches. When the equipping character's Normal Attacks, Elemental Skills, or Elemental Bursts hit an opponent, the DMG Bonus for the corresponding DMG type is increased by until it reaches. This can be triggered once every for each of the attack types mentioned above. This can be triggered even if the equipping character is off-field. Additionally, when the party possesses Hexerei: Secret Rite effects, when the equipping character's Normal Attacks, Elemental Skills, or Elemental...",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Heavy Horn",
+        "Treasure Hoarder Insignia",
+        "Chains of the Dandelion Gladiator",
+        "Black Bronze Horn",
+        "Silver Raven Insignia",
+        "Shackles of the Dandelion Gladiator",
+        "Black Crystal Horn",
+        "Golden Raven Insignia",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "ororon",
+  "name": "Ororon",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ororon",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Ororon manifests an ancient mystical technique from the Masters of the Night-Wind as a Spirit Orb of midnight shade and throws it at his foe, dealing Nightsoul -aligned Electro DMG. When other opponents are nearby, the Spirit Orb will bounce between them, dealing Nightsoul-aligned Electro DMG. Each time Night's Sling is used, each opponent can only be selected as a target once. After bounces, or if there are no eligible targets left, the Orb will disappear. When this skill hits at least one enemy, it generates Elemental Particles. Passive Effects Passive Talent, Aspect Catalyst: \"After the Elemental Skill Night's Sling 's Spirit Orb hits an opponent, Ororon will gain the Aspect Sigil effect...",
+    "elemental_burst": "Ororon works an ancient ritual, dealing Nightsoul-aligned AoE Electro DMG, summoning forth a Supersonic Oculus. Supersonic Oculus Continuously taunts nearby opponents and attracts attacks from them. Continuously rotates and fires off sonic waves that deal Nightsoul -aligned Electro DMG. Constellation Effects Constellation Level, King Bee of the Hidden Honeyed Wine: \"After using his Elemental Burst, Dark Voices Echo, Ororon will obtain the Spiritual Supersense effect for. Spiritual Supersense Gain"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Juvenile Fang",
+        "Seasoned Fang",
+        "Tyrant's Fang"
+      ],
+      "special": [
+        "Glowing Hornshroom",
+        "Mark of the Binding Blessing"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Kindling",
+        "Guide to Kindling",
+        "Philosophies of Kindling"
+      ],
+      "mob_drops": [
+        "Juvenile Fang",
+        "Seasoned Fang",
+        "Tyrant's Fang"
+      ],
+      "weekly_boss": [
+        "Lightless Silk String"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

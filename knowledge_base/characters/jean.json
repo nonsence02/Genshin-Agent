@@ -1,0 +1,92 @@
+{
+  "id": "jean",
+  "name": "Jean",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Jean",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Anemo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Focusing the might of the formless wind around her blade, Jean releases a miniature storm, launching opponents in the direction she aims at, dealing massive Anemo DMG. Hold At the cost of continued stamina consumption, Jean can command the whirlwind to pull surrounding opponents and objects towards her front. Direction can be adjusted. Character is immobile during skill duration. When this skill hits at least one enemy, it generates Elemental Particles. When this skill is held, Jean will continuously apply a Struggle state to enemies near the center of the Vacuum Field whose weight is less than or equal to, preventing them from performing any actions and allowing them to be lifted into the...",
+    "elemental_burst": "Calling upon the wind's protection, Jean creates a swirling Dandelion Field, launching surrounding opponents and dealing Anemo DMG. At the same time, she instantly regenerates a large amount of HP for all party members. The amount of HP restored scales off Jean's ATK. Dandelion Field Continuously regenerates HP of characters within the AoE and continuously imbues them with Anemo. Deals Anemo DMG to opponents entering or exiting the Dandelion Field. This Elemental Burst drains energy later than most others. [ ] The Dandelion Field lasts for seconds. The Dandelion Field will heal active characters within it and apply Anemo to them once every second for a total of times. Swirl reactions..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "special": [
+        "Dandelion Seed",
+        "Hurricane Seed"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Resistance",
+        "Guide to Resistance",
+        "Philosophies of Resistance"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "weekly_boss": [
+        "Dvalin's Plume"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

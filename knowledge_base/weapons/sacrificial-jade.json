@@ -1,0 +1,48 @@
+{
+  "id": "sacrificial-jade",
+  "name": "Sacrificial Jade",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sacrificial_Jade",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "When not on the field for more than, Max HP will be increased by and Elemental Mastery will be increased by. These effects will be canceled after the wielder has been on the field for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Mist Grass Pollen",
+        "Divining Scroll",
+        "Lustrous Stone from Guyun",
+        "Mist Grass",
+        "Sealed Scroll",
+        "Relic from Guyun",
+        "Mist Grass Wick",
+        "Forbidden Curse Scroll",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

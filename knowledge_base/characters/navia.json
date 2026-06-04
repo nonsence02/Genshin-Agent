@@ -1,0 +1,93 @@
+{
+  "id": "navia",
+  "name": "Navia",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Navia",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "When a character in the party obtains an Elemental Shard created from the Crystallize reaction, or when they trigger the Lunar-Crystallize reaction, Navia will gain Crystal Shrapnel stack. Navia can have up to stacks of Crystal Shrapnel at once. Each time Crystal Shrapnel gain is triggered, the duration of the Crystal Shrapnel stacks you already have will be reset. Through the Lunar-Crystallize reaction, Navia will gain up to Crystal Shrapnel stack every second. When she fires, Navia will consume all Crystal Shrapnel stacks and open her elegant yet lethal Gunbrella, firing multiple Rosula Shardshots that can penetrate opponents, dealing Geo DMG to opponents hit. When or more stacks of...",
+    "elemental_burst": "On the orders of the President of the Spina di Rosula, call for a magnificent Rosula Dorata Salute. Unleashes a massive cannon bombardment on opponents in front of her, dealing AoE Geo DMG and providing Cannon Fire Support for a duration afterward, periodically dealing Geo DMG to nearby opponents. When cannon attacks hit opponents, Navia will gain stack of Crystal Shrapnel. This effect can be triggered up to once. Cannon Fire Support will deal DMG to a random target within meters of the active character every seconds. Constellation Effects Constellation Level, A Lady's Rules for Keeping a Courteous Distance: \"Each stack of Crystal Shrapnel consumed when Navia uses Ceremonial Crystalshot..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Transoceanic Chunk",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Transoceanic Pearl",
+        "Xenochromatic Crystal"
+      ],
+      "special": [
+        "Spring of the First Dewdrop",
+        "Artificed Spare Clockwork Component — Coppelius"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Equity",
+        "Guide to Equity",
+        "Philosophies of Equity"
+      ],
+      "mob_drops": [
+        "Transoceanic Pearl",
+        "Xenochromatic Crystal"
+      ],
+      "weekly_boss": [
+        "Lightless Silk String"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

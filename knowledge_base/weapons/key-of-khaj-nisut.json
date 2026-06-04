@@ -1,0 +1,44 @@
+{
+  "id": "key-of-khaj-nisut",
+  "name": "Key of Khaj-Nisut",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Key_of_Khaj-Nisut",
+  "profile": {
+    "type": "Sword",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "HP"
+  },
+  "passive": "HP increased by. When an Elemental Skill hits opponents, you gain the Grand Hymn for. This increases the equipping character's Elemental Mastery by of their Max HP. This can trigger once every. Max stacks. When this gains stacks, or when the third stack's duration is refreshed, the Elemental Mastery of all nearby party members will be increased by of the equipping character's max HP for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Damaged Prism",
+        "Faded Red Satin",
+        "Turbid Prism",
+        "Trimmed Red Silk",
+        "Radiant Prism",
+        "Rich Red Brocade"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

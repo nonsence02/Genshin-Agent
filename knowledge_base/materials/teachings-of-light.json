@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-light",
+  "name_en": "Teachings of Light",
+  "type": "Character Talent Materials",
+  "days": [
+    "Wednesday",
+    "Saturday",
+    "Sunday"
+  ],
+  "source": [
+    "Violet Court (Wednesday/Saturday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Light"
+}

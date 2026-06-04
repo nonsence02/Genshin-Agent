@@ -1,0 +1,47 @@
+{
+  "id": "jadefalls-splendor",
+  "name": "Jadefall's Splendor",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Jadefall%27s_Splendor",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "HP"
+  },
+  "passive": "For after using an Elemental Burst or creating a shield, the equipping character can gain the Primordial Jade Regalia: Restore Energy every, and gain Elemental DMG Bonus for their corresponding Elemental Type for every Max HP they possess, up to. Primordial Jade Regalia will still take even if the equipping character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "A Flower Yet to Bloom",
+        "Lustrous Stone from Guyun",
+        "Treasured Flower",
+        "Luminescent Pollen",
+        "Relic from Guyun",
+        "Wanderer's Blooming Flower",
+        "Crystalline Cyst Dust",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "toukabou-shigure",
+  "name": "Toukabou Shigure",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Toukabou_Shigure",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "After an attack hits opponents, it will inflict an instance of Cursed Parasol upon one of them for. This can be triggered once every. If this opponent is defeated during Cursed Parasol's duration, Cursed Parasol's CD will be refreshed immediately. The character wielding this weapon will deal more DMG to the opponent affected by Cursed Parasol.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Narukami's Wisdom",
+        "Damaged Prism",
+        "Old Handguard",
+        "Narukami's Joy",
+        "Turbid Prism",
+        "Kageuchi Handguard",
+        "Narukami's Affection",
+        "Radiant Prism",
+        "Famed Handguard",
+        "Narukami's Valor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

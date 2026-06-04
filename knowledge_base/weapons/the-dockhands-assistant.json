@@ -1,0 +1,48 @@
+{
+  "id": "the-dockhands-assistant",
+  "name": "The Dockhand's Assistant",
+  "source_url": "https://genshin-impact.fandom.com/wiki/The_Dockhand%27s_Assistant",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "HP"
+  },
+  "passive": "When the wielder is healed or heals others, they will gain a Stoic's Symbol that lasts, up to a maximum of Symbols. When using their Elemental Skill or Burst, all Symbols will be consumed and the Roused will be granted for. For each Symbol consumed, gain Elemental Mastery, and after the occurs, Energy per Symbol consumed will be restored for said character. The Roused can be triggered once every, and Symbols can be gained even when the character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dross of Pure Sacred Dewdrop",
+        "Old Operative's Pocket Watch",
+        "Transoceanic Pearl",
+        "Sublimation of Pure Sacred Dewdrop",
+        "Operative's Standard Pocket Watch",
+        "Transoceanic Chunk",
+        "Spring of Pure Sacred Dewdrop",
+        "Operative's Constancy",
+        "Xenochromatic Crystal",
+        "Essence of Pure Sacred Dewdrop"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

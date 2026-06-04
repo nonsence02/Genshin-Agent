@@ -1,0 +1,14 @@
+{
+  "id": "narukamis-wisdom",
+  "name_en": "Narukami's Wisdom",
+  "type": "Weapon Ascension Materials",
+  "days": [
+    "Tuesday",
+    "Friday",
+    "Sunday"
+  ],
+  "source": [
+    "Court of Flowing Sand (Tuesday/Friday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Narukami%27s_Wisdom"
+}

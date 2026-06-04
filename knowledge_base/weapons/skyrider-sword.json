@@ -1,0 +1,48 @@
+{
+  "id": "skyrider-sword",
+  "name": "Skyrider Sword",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Skyrider_Sword",
+  "profile": {
+    "type": "Sword",
+    "rarity": "3★",
+    "base_atk": "38 - 354",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Using an Elemental Burst grants a increase in ATK and Movement SPD for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Grain of Aerosiderite",
+        "Fragile Bone Shard",
+        "Recruit's Insignia",
+        "Piece of Aerosiderite",
+        "Sturdy Bone Shard",
+        "Sergeant's Insignia",
+        "Bit of Aerosiderite",
+        "Fossilized Bone Shard",
+        "Lieutenant's Insignia",
+        "Chunk of Aerosiderite"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

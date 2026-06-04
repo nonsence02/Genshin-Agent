@@ -1,0 +1,47 @@
+{
+  "id": "staff-of-the-scarlet-sands",
+  "name": "Staff of the Scarlet Sands",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Staff_of_the_Scarlet_Sands",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "The equipping character gains of their Elemental Mastery as bonus ATK. When an Elemental Skill hits opponents, the Dream of the Scarlet Sands will be gained for: The equipping character will gain of their Elemental Mastery as bonus ATK. Max stacks.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Oasis Garden's Reminiscence",
+        "Chaos Storage",
+        "Oasis Garden's Kindness",
+        "Chaos Module",
+        "Luminescent Pollen",
+        "Oasis Garden's Mourning",
+        "Chaos Bolt",
+        "Crystalline Cyst Dust",
+        "Oasis Garden's Truth"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

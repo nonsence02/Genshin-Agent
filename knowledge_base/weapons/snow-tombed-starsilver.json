@@ -1,0 +1,48 @@
+{
+  "id": "snow-tombed-starsilver",
+  "name": "Snow-Tombed Starsilver",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Snow-Tombed_Starsilver",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Physical DMG Bonus"
+  },
+  "passive": "Hitting an opponent with Normal and Charged Attacks has a chance of forming and dropping an Everfrost Icicle above them, dealing AoE DMG equal to of ATK. Opponents affected by Cryo are instead dealt DMG equal to of ATK. Can only occur once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Slime Condensate",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Slime Secretions",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Slime Concentrate",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

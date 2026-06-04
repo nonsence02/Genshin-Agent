@@ -1,0 +1,48 @@
+{
+  "id": "hunters-path",
+  "name": "Hunter's Path",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Hunter%27s_Path",
+  "profile": {
+    "type": "Bow",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Gain All Elemental DMG Bonus. Obtain the Tireless Hunt after hitting an opponent with a Charged Attack. This increases Charged Attack DMG by of Elemental Mastery. This will be removed after Charged Attacks or. Only instance of Tireless Hunt can be gained every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Echo of Scorching Might",
+        "Inactivated Fungal Nucleus",
+        "Faded Red Satin",
+        "Remnant Glow of Scorching Might",
+        "Dormant Fungal Nucleus",
+        "Trimmed Red Silk",
+        "Dream of Scorching Might",
+        "Robust Fungal Nucleus",
+        "Rich Red Brocade",
+        "Olden Days of Scorching Might"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

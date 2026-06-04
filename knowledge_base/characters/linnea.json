@@ -1,0 +1,94 @@
+{
+  "id": "linnea",
+  "name": "Linnea",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Linnea",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Adventure with Lumi! Depending on how you Tap, Lumi attacks in different forms. Tap Lumi strikes in a Super Power Form Lumi: Strike Forms Lumi has three different Strike Forms. Super Power Form Lumi will use Pound-Pound Pummeler to attack nearby opponents continuously. Every attack will deal instances of AoE Geo DMG. If there are Moondrifts nearby, Lumi will alternate between Pound-Pound Pummeler and Heavy Overdrive Hammer to continuously attack nearby opponents. Heavy Overdrive Hammer will deal AoE Geo DMG which will be considered Lunar-Crystallize Reaction DMG. Ultimate Power Form Lumi will use the ultimate Million Ton Crush, dealing an especially powerful instance of AoE Geo DMG that is...",
+    "elemental_burst": "Even master adventurers need proper rest! Linnea summons Lumi to strike in Super Power Form Lumi: Strike Forms Lumi has three different Strike Forms. Super Power Form Lumi will use Pound-Pound Pummeler to attack nearby opponents continuously. Every attack will deal instances of AoE Geo DMG. If there are Moondrifts nearby, Lumi will alternate between Pound-Pound Pummeler and Heavy Overdrive Hammer to continuously attack nearby opponents. Heavy Overdrive Hammer will deal AoE Geo DMG which will be considered Lunar-Crystallize Reaction DMG. Ultimate Power Form Lumi will use the ultimate Million Ton Crush, dealing an especially powerful instance of AoE Geo DMG that is considered..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "special": [
+        "Etherwing Moth",
+        "Plume of the Fallen Watcher"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Vagrancy",
+        "Guide to Vagrancy",
+        "Philosophies of Vagrancy"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "weekly_boss": [
+        "Elixir of the Heretic"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

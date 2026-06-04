@@ -1,0 +1,48 @@
+{
+  "id": "flower-wreathed-feathers",
+  "name": "Flower-Wreathed Feathers",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Flower-Wreathed_Feathers",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Decreases Gliding Stamina consumption by. When using Aimed Shots, the DMG dealt by Charged Attacks increases by every. This can stack up to times and will be removed after leaving Aiming Mode.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Night-Wind's Mystic Consideration",
+        "Ignited Stone",
+        "Sentry's Wooden Whistle",
+        "Night-Wind's Mystic Premonition",
+        "Ignited Seed of Life",
+        "Warrior's Metal Whistle",
+        "Night-Wind's Mystic Augury",
+        "Ignited Seeing Eye",
+        "Saurian-Crowned Warrior's Golden Whistle",
+        "Night-Wind's Mystic Revelation"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

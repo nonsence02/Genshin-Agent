@@ -1,0 +1,94 @@
+{
+  "id": "escoffier",
+  "name": "Escoffier",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Escoffier",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Behold the true meaning of \"cooking\"! Escoffier will demonstrate different cooking techniques when you Tap or Hold this skill, but rest assured, each of them is Fontaine's pride and joy. Tap Activates her All-Spectrum Multi-Use Cooking Mek in its Cold Storage mode and deals AoE Cryo DMG to nearby opponents. Cooking Mek: Cold Storage Mode Follows the current active character and fires Frosty Parfaits at nearby opponents at intervals, dealing Cryo DMG. Arkhe: Ousia At intervals, Escoffier will summon a Surging Blade when activating her Cooking Mek in Cold Storage mode, dealing Ousia-aligned AoE Cryo DMG. Hold Activates her All-Spectrum Multi-Use Cooking Mek's Off-the-Cuff Cookery Mode...",
+    "elemental_burst": "Displaying her exceptional knife skills, Escoffier deals AoE Cryo DMG and restores HP to all nearby party members based on her ATK Passive Effects Passive Talent, Better to Salivate Than Medicate: \"After using the Elemental Burst Scoring Cuts, Escoffier will obtain the Rehab Diet effect for: Restores HP for nearby active characters every based on"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "special": [
+        "Beryl Conch",
+        "Secret Source Airflow Accumulator"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Justice",
+        "Guide to Justice",
+        "Philosophies of Justice"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "weekly_boss": [
+        "Eroded Horn"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

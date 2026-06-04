@@ -1,0 +1,47 @@
+{
+  "id": "scion-of-the-blazing-sun",
+  "name": "Scion of the Blazing Sun",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Scion_of_the_Blazing_Sun",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing ATK as DMG, and applying the Heartsearer to the opponent damaged by said Arrow for. Opponents affected by Heartsearer take more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Echo of Scorching Might",
+        "A Flower Yet to Bloom",
+        "Remnant Glow of Scorching Might",
+        "Treasured Flower",
+        "Luminescent Pollen",
+        "Dream of Scorching Might",
+        "Wanderer's Blooming Flower",
+        "Crystalline Cyst Dust",
+        "Olden Days of Scorching Might"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

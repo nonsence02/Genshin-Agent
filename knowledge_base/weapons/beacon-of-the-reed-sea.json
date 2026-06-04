@@ -1,0 +1,48 @@
+{
+  "id": "beacon-of-the-reed-sea",
+  "name": "Beacon of the Reed Sea",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Beacon_of_the_Reed_Sea",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "After the character's Elemental Skill hits an opponent, their ATK will be increased by for. After the character takes DMG, their ATK will be increased by for. The aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character's Max HP will be increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Echo of Scorching Might",
+        "Desiccated Shell",
+        "Faded Red Satin",
+        "Remnant Glow of Scorching Might",
+        "Sturdy Shell",
+        "Trimmed Red Silk",
+        "Dream of Scorching Might",
+        "Marked Shell",
+        "Rich Red Brocade",
+        "Olden Days of Scorching Might"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

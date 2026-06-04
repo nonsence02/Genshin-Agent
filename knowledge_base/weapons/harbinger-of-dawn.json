@@ -1,0 +1,44 @@
+{
+  "id": "harbinger-of-dawn",
+  "name": "Harbinger of Dawn",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Harbinger_of_Dawn",
+  "profile": {
+    "type": "Sword",
+    "rarity": "3★",
+    "base_atk": "39 - 401",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "When HP is above, increases CRIT Rate by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Slime Condensate",
+        "Dead Ley Line Leaves",
+        "Slime Secretions",
+        "Ley Line Sprout",
+        "Slime Concentrate"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

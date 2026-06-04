@@ -1,0 +1,94 @@
+{
+  "id": "barbara",
+  "name": "Barbara",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Barbara",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Dendro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Summons water droplets resembling musical notes that form a Melody Loop, dealing Hydro DMG to surrounding opponents and applying the Wet status to them. Melody Loop On hit, Barbara's Normal Attacks heal your own party members and nearby teammates for a certain amount of HP, which scales with Barbara's Max HP. On hit, Barbara's Charged Attack generates times the amount of healing. Periodically regenerates your own active character's HP. Applies the Wet status to the character and to opponents who come in contact with them. This skill does not generate any Elemental Particles. This skill deals instances of damage at the start of the skill. While this skill is active, Normal and Charged...",
+    "elemental_burst": "Heals your own party members and nearby teammates for a large amount of HP that scales with Barbara's Max HP. Constellation Effects Constellation Level, Star of Tomorrow: Increases this talent's level by, up to a maximum of. Talent Levels past require Elemental Burst Level Increase methods, such as Constellations and Event bonuses."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "special": [
+        "Philanemo Mushroom",
+        "Cleansing Heart"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Freedom",
+        "Guide to Freedom",
+        "Philosophies of Freedom"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "weekly_boss": [
+        "Ring of Boreas"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

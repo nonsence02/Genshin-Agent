@@ -1,0 +1,47 @@
+{
+  "id": "frostbearer",
+  "name": "Frostbearer",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Frostbearer",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Hitting an opponent with Normal and Charged Attacks has a chance of forming and dropping an Everfrost Icicle above them, dealing AoE ATK DMG. Opponents affected by Cryo are dealt ATK DMG instead by the icicle. Can only occur once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Whopperflower Nectar",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Shimmering Nectar",
+        "Shackles of the Dandelion Gladiator",
+        "Energy Nectar",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

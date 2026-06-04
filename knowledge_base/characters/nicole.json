@@ -1,0 +1,94 @@
+{
+  "id": "nicole",
+  "name": "Nicole",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Nicole",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Pyro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Recreates a fleeting glimpse of an age long past, when the angels acted on the authority of the heavens, bestowing the Grace of Kenosis Grace of Kenosis After unleashing the Elemental Skill Revelation: Uncreated Light, Nicole bestows the following effect on all nearby party members: ATK is increased based on Nicole's ATK. After certain conditions are met, the Grace of Kenosis effect will be upgraded to Guidance of Theosis, further increasing ATK. effect on nearby party members. This increases their ATK and deals AoE Pyro DMG, as well as creates a Shield of Blazing Light. The Shield of Blazing Light's DMG Absorption is based on Nicole's ATK, and it will absorb Pyro DMG at",
+    "elemental_burst": "As Nicole weaves the path of anchored fate with golden threads of light, she deals AoE Pyro DMG and switches to Silent Contemplation mode. In this mode, when nearby active party members hit an opponent, an Arcane Projection is summoned to perform a Coordinated Attack against the opponent, dealing AoE Elemental DMG of the character's corresponding Elemental Type. This DMG scales based on the corresponding character's ATK and will be considered as having been dealt by them. This effect can occur once every, and can be triggered up to times each time Nicole switches to Silent Contemplation mode. It is worth noting that Hexerei characters' Arcane Projections appear to differ somehow in..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "special": [
+        "Pine Amber",
+        "Remnant of the Dreadwing"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Elysium",
+        "Guide to Elysium",
+        "Philosophies of Elysium"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "weekly_boss": [
+        "Counterfeit Resin"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

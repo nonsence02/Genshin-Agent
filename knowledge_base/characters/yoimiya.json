@@ -1,0 +1,94 @@
+{
+  "id": "yoimiya",
+  "name": "Yoimiya",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Yoimiya",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Pyro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Yoimiya waves a sparkler and causes a ring of saltpeter to surround her. Niwabi Enshou During this time, arrows fired by Yoimiya's Normal Attack will be Blazing Arrows, and their DMG will be increased and converted to Pyro DMG. During this time, Normal Attack: Firework Flare-Up will not generate Kindling Arrows at Charge Level. This effect will deactivate when Yoimiya leaves the field. When a converted attack hits at least one enemy, it generates Elemental Particle. This particle generation has a cooldown of seconds. It can generate a total of Elemental Particles through its whole duration. The talent scaling number is multiplicative with her Normal Attack damage. It is a separate...",
+    "elemental_burst": "Yoimiya leaps into the air along with her original creation, the \"Ryuukin Saxifrage,\" and fires forth blazing rockets bursting with surprises that deal AoE Pyro DMG and mark one of the hit opponents with Aurous Blaze. Aurous Blaze All Normal/Charged/Plunging Attacks, Elemental Skills, and Elemental Bursts by any party member other than Yoimiya that hit an opponent marked by Aurous Blaze will trigger an explosion, dealing AoE Pyro DMG. When an opponent affected by Aurous Blaze is defeated before its duration expires, the effect will pass on to another nearby opponent, who will inherit the remaining duration. One Aurous Blaze explosion can be triggered. When Yoimiya is down, Aurous Blaze..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "special": [
+        "Naku Weed",
+        "Smoldering Pearl"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Transience",
+        "Guide to Transience",
+        "Philosophies of Transience"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "weekly_boss": [
+        "Dragon Lord's Crown"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

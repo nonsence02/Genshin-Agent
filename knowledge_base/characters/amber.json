@@ -1,0 +1,94 @@
+{
+  "id": "amber",
+  "name": "Amber",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Amber",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Anemo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "The ever-reliable Baron Bunny takes the stage. Baron Bunny Continuously taunts the enemy, drawing their fire. Baron Bunny's HP scales with Amber's Max HP. When destroyed or when its timer expires, Baron Bunny explodes, dealing AoE Pyro DMG. Hold Adjusts the throwing direction of Baron Bunny. The longer the button is held, the further the throw. When the explosion hits at least one enemy, it generates Elemental Particles. Upon landing, Baron Bunny dances and performs a total of four ° turns, which lasts for seconds. [ ] If not detonated prematurely, it will explode after the last flip (facing away from the throwing direction), damaging and launching enemies backward. While the skill's...",
+    "elemental_burst": "Fires off a shower of arrows, dealing continuous AoE Pyro DMG. This Elemental Burst drains energy later than most others. [ ] The skill starts from a certain height calculated from the ground below the target. It may not hit a target that is flying or too high above the ground due to being thrown, knocked back or any other means. Fiery Rain consists of waves of hits. Half of the waves of hits will land within the inner half of the max range, half of the waves will land within the outer half. The true maximum range is about"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "special": [
+        "Small Lamp Grass",
+        "Everflame Seed"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Freedom",
+        "Guide to Freedom",
+        "Philosophies of Freedom"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "weekly_boss": [
+        "Dvalin's Sigh"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

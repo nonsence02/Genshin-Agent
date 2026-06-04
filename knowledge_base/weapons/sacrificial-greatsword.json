@@ -1,0 +1,44 @@
+{
+  "id": "sacrificial-greatsword",
+  "name": "Sacrificial Greatsword",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sacrificial_Greatsword",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "After dealing damage to an opponent with an Elemental Skill, the skill has a chance to end its own CD. Can only occur once every s.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Firm Arrowhead",
+        "Dead Ley Line Leaves",
+        "Sharp Arrowhead",
+        "Ley Line Sprout",
+        "Weathered Arrowhead"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

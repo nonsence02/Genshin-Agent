@@ -1,0 +1,44 @@
+{
+  "id": "elegy-for-the-end",
+  "name": "Elegy for the End",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Elegy_for_the_End",
+  "profile": {
+    "type": "Bow",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases Elemental Mastery by. When the Elemental Skills or Elemental Bursts of the character wielding this weapon hit opponents, that character gains a Sigil of Remembrance. This can be triggered once every and can be triggered even if said character is not on the field. When you possess Sigils of Remembrance, all of them will be consumed and all nearby party members will obtain the \"Millennial Movement: Farewell Song\" for. \"Millennial Movement: Farewell Song\" increases Elemental Mastery by and increases ATK by. Once this is triggered, you will not gain Sigils of Remembrance for. Of the many effects of the \"Millennial...",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Heavy Horn",
+        "Recruit's Insignia",
+        "Black Bronze Horn",
+        "Sergeant's Insignia",
+        "Black Crystal Horn",
+        "Lieutenant's Insignia"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

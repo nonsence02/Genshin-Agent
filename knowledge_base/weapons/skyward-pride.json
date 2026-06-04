@@ -1,0 +1,44 @@
+{
+  "id": "skyward-pride",
+  "name": "Skyward Pride",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Skyward_Pride",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "5★",
+    "base_atk": "48 - 674",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Increases all DMG by. After using an Elemental Burst, a vacuum blade that does of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for or vacuum blades.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Slime Condensate",
+        "Dead Ley Line Leaves",
+        "Slime Secretions",
+        "Ley Line Sprout",
+        "Slime Concentrate"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

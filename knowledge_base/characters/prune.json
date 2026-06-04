@@ -1,0 +1,94 @@
+{
+  "id": "prune",
+  "name": "Prune",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Prune",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Anemo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Unleash the wind's might to defeat the evil witch and save Descartes! Prune strikes the Witchlure Bell with her Banehunter Oathhammer, dealing Anemo DMG. If Prune triggers Swirl on an opponent using this attack, Ring-A-Ding-Ding! Hexhunter Chime will be changed to Clang Clang! Witch-tribution Comes! for the next. Clang Clang! Witch-tribution Comes! Prune's hammer is now enshrouded by the element involved in the previous Swirl reaction, causing Banehunter Oathhammer Banehunter Oathhammer A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type. Prune can summon the...",
+    "elemental_burst": "Prune gently swings the Witchlure Bell, dealing Anemo DMG to nearby opponents. After this, the Bell will enter the Hunter-Seeker mode. Witchlure Bell: Hunter-Seeker In this mode, the Witchlure Bell will follow the current active character, attacking surrounding opponents at intervals and dealing AoE Anemo DMG. This DMG is considered Elemental Burst DMG. The hammer attacks every seconds and up to attacks can happen during the skill's duration. Constellation: Prune regains energy every which is less than the aforementioned interval, for a total of times or energy during the skill's duration. Constellation: By increasing the duration for it is also adds additional hammer attacks to a total of..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "special": [
+        "Winter Icelea",
+        "Radiant Antler"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Resistance",
+        "Guide to Resistance",
+        "Philosophies of Resistance"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "weekly_boss": [
+        "Mask of the Virtuous Doctor"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

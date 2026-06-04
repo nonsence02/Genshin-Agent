@@ -1,0 +1,48 @@
+{
+  "id": "emerald-orb",
+  "name": "Emerald Orb",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Emerald_Orb",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "3★",
+    "base_atk": "40 - 448",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, Lunar-Charged, Lunar-Bloom, or a Hydro-infused Swirl reaction, ATK is increased by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Hunter's Sacrificial Knife",
+        "Treasure Hoarder Insignia",
+        "Lustrous Stone from Guyun",
+        "Agent's Sacrificial Knife",
+        "Silver Raven Insignia",
+        "Relic from Guyun",
+        "Inspector's Sacrificial Knife",
+        "Golden Raven Insignia",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

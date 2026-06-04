@@ -1,0 +1,92 @@
+{
+  "id": "xingqiu",
+  "name": "Xingqiu",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xingqiu",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Hydro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Xingqiu performs twin strikes with his sword, dealing Hydro DMG. At the same time, this ability creates the maximum number of Rain Swords, which will orbit your active character. The Rain Swords have the following properties: When a character takes DMG, the Rain Sword will shatter, reducing the amount of DMG taken. Increases the character's resistance to interruption.",
+    "elemental_burst": "Initiate Rainbow Bladework and fight using an illusory sword rain, while creating the maximum number of Rain Swords. Rainbow Bladework Your active character's Normal Attacks will trigger consecutive sword rain attacks, dealing Hydro DMG. Rain Swords will remain at the maximum number throughout the ability's duration. Sword rain attacks have a -second cooldown. Rain Sword effects carry over from Xingqiu's Elemental Skill, Guhua Sword: Fatal Rainscreen. Increased resistance to interruption, damage reduction, and application of Wet status to enemies still apply. During this skill's duration, the maximum number of Rain Swords is maintained and the swords cannot be shattered or expire before the..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "special": [
+        "Silk Flower",
+        "Cleansing Heart"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Gold",
+        "Guide to Gold",
+        "Philosophies of Gold"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "weekly_boss": [
+        "Tail of Boreas"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

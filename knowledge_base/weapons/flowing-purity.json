@@ -1,0 +1,45 @@
+{
+  "id": "flowing-purity",
+  "name": "Flowing Purity",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Flowing_Purity",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "When using an Elemental Skill, All Elemental DMG Bonus will be increased by for, and a Bond of Life worth of Max HP will be granted. This can be triggered once every. When the Bond of Life is cleared, every HP cleared in the process will provide All Elemental DMG Bonus, up to a maximum of. This lasts.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dross of Pure Sacred Dewdrop",
+        "Transoceanic Pearl",
+        "Sublimation of Pure Sacred Dewdrop",
+        "Transoceanic Chunk",
+        "Spring of Pure Sacred Dewdrop",
+        "Xenochromatic Crystal",
+        "Essence of Pure Sacred Dewdrop"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

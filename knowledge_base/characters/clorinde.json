@@ -1,0 +1,93 @@
+{
+  "id": "clorinde",
+  "name": "Clorinde",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Clorinde",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Preparing her pistolet, she enters the \"Night Vigil\" state, using steel and shot together. In this state, Clorinde's Normal Attacks will be transformed into \"Swift Hunt\" pistolet attacks, and the DMG dealt is converted into Electro DMG that cannot be overridden by infusions, and she will be unable to use Charged Attacks. Using her Elemental Skill will transform it into \"Impale the Night\": Perform a lunging attack, dealing Electro DMG. The DMG done through the aforementioned method is considered Normal Attack DMG. Swift Hunt When her Bond of Life is equal to or greater than",
+    "elemental_burst": "Grants herself a Bond of Life based upon her own max HP before swiftly evading and striking with saber and sidearm as one, dealing AoE Electro DMG. Passive Effects Passive Talent, Dark-Shattering Flame: \"After a nearby party member triggers an Electro-related reaction against an opponent, Electro DMG dealt by Clorinde's Normal Attacks and Last Lightfall will be increased by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Transoceanic Chunk",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Transoceanic Pearl",
+        "Xenochromatic Crystal"
+      ],
+      "special": [
+        "Lumitoile",
+        "Fontemer Unihorn"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Justice",
+        "Guide to Justice",
+        "Philosophies of Justice"
+      ],
+      "mob_drops": [
+        "Transoceanic Pearl",
+        "Xenochromatic Crystal"
+      ],
+      "weekly_boss": [
+        "Everamber"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

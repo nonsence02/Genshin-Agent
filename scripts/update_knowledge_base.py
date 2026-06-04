@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 import time
@@ -101,40 +102,35 @@ class CharacterKnowledge:
     burst_description: str = MISSING
     materials: MaterialCategories = MaterialCategories()
 
-    def to_markdown(self) -> str:
-        title_name = title_from_slug(self.slug)
-        title = f"{title_name} ({self.name})" if title_name.casefold() != self.name.casefold() else self.name
-
-        return "\n".join(
-            [
-                f"# {title}",
-                "",
-                "## Механика и Роль",
-                f"- Оружие: {self.weapon}",
-                f"- Элемент: {self.element}",
-                f"- Редкость: {self.rarity}",
-                "- Роль: TODO: заполнить вручную или через мета-слой",
-                "- Синергия: TODO: заполнить вручную, Wiki не содержит надежной мета-синергии",
-                f"- Элементальный навык: {self.skill_description}",
-                f"- Взрыв стихии: {self.burst_description}",
-                "",
-                "## Материалы для прокачки",
-                f"- Камни: {join_or_missing(self.materials.stones)}",
-                f"- Книги талантов: {join_or_missing(self.materials.talent_books)}",
-                f"- Материалы с мобов: {join_or_missing(self.materials.mob_drops)}",
-                f"- Еженедельный босс: {join_or_missing(self.materials.weekly_boss)}",
-                f"- Особые материалы (Диковинка / Босс): {join_or_missing(self.materials.special_materials)}",
-                f"- Корона: {self.materials.crown or MISSING}",
-                "",
-                "## Стандартная стоимость прокачки (Справочно)",
-                "- **Возвышение (до 90 ур.):** 168 диковинок, 46 материалов с босса, 1 осколок, 9 фрагментов, 9 кусков, 6 драгоценных камней, 18/30/36 материалов с мобов.",
-                "- **Один талант (до 10 ур.):** 3/21/38 книг талантов, 6/22/31 материалов с мобов, 6 материалов с еженедельного босса, 1 Корона прозрения.",
-                "- **ТРИ таланта (до 10 ур.):** 9/63/114 книг талантов, 18/66/93 материалов с мобов, 18 материалов с еженедельного босса, 3 Короны прозрения.",
-                "",
-                f"<!-- Source: {self.url} -->",
-                "",
-            ]
-        )
+    def to_json_dict(self) -> dict[str, Any]:
+        return {
+            "id": self.slug,
+            "name": self.name,
+            "source_url": self.url,
+            "profile": {
+                "weapon": self.weapon,
+                "element": self.element,
+                "rarity": self.rarity,
+            },
+            "skills": {
+                "elemental_skill": self.skill_description,
+                "elemental_burst": self.burst_description,
+            },
+            "materials": {
+                "ascension": {
+                    "stones": list(self.materials.stones),
+                    "mob_drops": list(self.materials.mob_drops),
+                    "special": list(self.materials.special_materials),
+                },
+                "talents": {
+                    "books": list(self.materials.talent_books),
+                    "mob_drops": list(self.materials.mob_drops),
+                    "weekly_boss": list(self.materials.weekly_boss),
+                    "crown": self.materials.crown or "Crown of Insight",
+                },
+            },
+            "standard_costs": character_standard_costs(),
+        }
 
 
 class WikiClient:
@@ -213,8 +209,11 @@ def main() -> int:
         try:
             soup = client.get_soup(link.url)
             knowledge = parse_character_page(link, soup)
-            output_path = args.output_dir / f"{knowledge.slug}.md"
-            output_path.write_text(knowledge.to_markdown(), encoding="utf-8")
+            output_path = args.output_dir / f"{knowledge.slug}.json"
+            output_path.write_text(
+                json.dumps(knowledge.to_json_dict(), ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
         except Exception as exc:  # noqa: BLE001 - batch scraping should continue.
             print(f"  ERROR: {exc}", file=sys.stderr)
         time.sleep(args.sleep)
@@ -581,6 +580,29 @@ def is_crown(value: str) -> bool:
     return value.casefold() == "crown of insight"
 
 
+def character_standard_costs() -> dict[str, Any]:
+    return {
+        "ascension_90": {
+            "specialty": 168,
+            "boss": 46,
+            "stones": {"sliver": 1, "fragment": 9, "chunk": 9, "gemstone": 6},
+            "mob_drops": {"low": 18, "mid": 30, "high": 36},
+        },
+        "talent_10": {
+            "books": {"low": 3, "mid": 21, "high": 38},
+            "mob_drops": {"low": 6, "mid": 22, "high": 31},
+            "weekly_boss": 6,
+            "crown": 1,
+        },
+        "three_talents_10": {
+            "books": {"low": 9, "mid": 63, "high": 114},
+            "mob_drops": {"low": 18, "mid": 66, "high": 93},
+            "weekly_boss": 18,
+            "crown": 3,
+        },
+    }
+
+
 def find_known_value(text: str, values: set[str]) -> str:
     for value in sorted(values, key=len, reverse=True):
         if re.search(rf"\b{re.escape(value)}\b", text, flags=re.IGNORECASE):
@@ -732,7 +754,7 @@ def ordered_unique(values: Iterable[str]) -> list[str]:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Scrape English Genshin Impact Fandom Wiki into Markdown KB files."
+        description="Scrape English Genshin Impact Fandom Wiki into JSON KB files."
     )
     parser.add_argument("--list-url", default=DEFAULT_LIST_URL, help="Character list page URL.")
     parser.add_argument("--url", default="", help="Parse one concrete character page URL.")

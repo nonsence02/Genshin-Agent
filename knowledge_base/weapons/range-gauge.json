@@ -1,0 +1,48 @@
+{
+  "id": "range-gauge",
+  "name": "Range Gauge",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Range_Gauge",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "When the wielder is healed or heals others, they will gain a Unity's Symbol that lasts, up to a maximum of Symbols. When using their Elemental Skill or Burst, all Symbols will be consumed and the Struggle will be granted for. For each Symbol consumed, gain ATK and All Elemental DMG Bonus. The Struggle can be triggered once every, and Symbols can be gained even when the character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fragment of an Ancient Chord",
+        "Drop of Tainted Water",
+        "Transoceanic Pearl",
+        "Chapter of an Ancient Chord",
+        "Scoop of Tainted Water",
+        "Transoceanic Chunk",
+        "Movement of an Ancient Chord",
+        "Newborn Tainted Hydro Phantasm",
+        "Xenochromatic Crystal",
+        "Echo of an Ancient Chord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

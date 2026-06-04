@@ -1,0 +1,94 @@
+{
+  "id": "albedo",
+  "name": "Albedo",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Albedo",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Geo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Albedo creates a Solar Isotoma using alchemy, which deals AoE Geo DMG on appearance. Solar Isotoma has the following properties: When opponents within the Solar Isotoma field take DMG, the Solar Isotoma will generate Transient Blossoms which deal AoE Geo DMG. DMG dealt scales off Albedo's DEF. Transient Blossoms can only be generated once. When a character is located at the locus of the Solar Isotoma, the Solar Isotoma will accumulate Geo power to form a crystallized platform that lifts the character up to a certain height. Only one crystallized platform can exist at a time. Solar Isotoma is considered a Geo construct. Only one Solar Isotoma created by Albedo himself can exist at a time....",
+    "elemental_burst": "Under Albedo's command, Geo crystals surge and burst forth, dealing AoE Geo DMG in front of him. If a Solar Isotoma created by Albedo himself is on the field, Fatal Blossoms will be generated in the Solar Isotoma field, bursting violently into bloom and dealing AoE Geo DMG. Tectonic Tide DMG and Fatal Blossom DMG will not generate Transient Blossoms. This Elemental Burst drains energy later than most others. [ ] This Elemental Burst begins its cooldown later than most others. [ ] When Fatal Blossoms are generated, Fatal Blossom will track enemy If there are enemies, every single Fatal Blossom is guaranteed to hit If there are less than enemies, then the non-tracking leftover Fatal Blossoms..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "special": [
+        "Cecilia",
+        "Basalt Pillar"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ballad",
+        "Guide to Ballad",
+        "Philosophies of Ballad"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "weekly_boss": [
+        "Tusk of Monoceros Caeli"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

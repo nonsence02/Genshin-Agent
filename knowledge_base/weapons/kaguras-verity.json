@@ -1,0 +1,48 @@
+{
+  "id": "kaguras-verity",
+  "name": "Kagura's Verity",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kagura%27s_Verity",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "Gains the Kagura Dance when using an Elemental Skill, causing the Elemental Skill DMG of the character wielding this weapon to increase by for. Max stacks. This character will gain All Elemental DMG Bonus when they possess stacks.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mask of the Wicked Lieutenant",
+        "Concealed Claw",
+        "Spectral Husk",
+        "Mask of the Tiger's Bite",
+        "Concealed Unguis",
+        "Spectral Heart",
+        "Mask of the One-Horned",
+        "Concealed Talon",
+        "Spectral Nucleus",
+        "Mask of the Kijin"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

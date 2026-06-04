@@ -1,0 +1,48 @@
+{
+  "id": "talking-stick",
+  "name": "Talking Stick",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Talking_Stick",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "ATK will be increased by for after being affected by Pyro. This can be triggered once every. All Elemental DMG Bonus will be increased by for after being affected by Hydro, Cryo, Electro, or Dendro. This can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Oasis Garden's Reminiscence",
+        "Desiccated Shell",
+        "Slime Condensate",
+        "Oasis Garden's Kindness",
+        "Sturdy Shell",
+        "Slime Secretions",
+        "Oasis Garden's Mourning",
+        "Marked Shell",
+        "Slime Concentrate",
+        "Oasis Garden's Truth"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

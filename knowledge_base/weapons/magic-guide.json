@@ -1,0 +1,48 @@
+{
+  "id": "magic-guide",
+  "name": "Magic Guide",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Magic_Guide",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "3★",
+    "base_atk": "38 - 354",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Increases DMG against opponents affected by Hydro or Electro by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Slime Condensate",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Slime Secretions",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Slime Concentrate",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

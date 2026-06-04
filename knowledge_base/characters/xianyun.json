@@ -1,0 +1,94 @@
+{
+  "id": "xianyun",
+  "name": "Xianyun",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xianyun",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Anemo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Xianyun enters the Cloud Transmogrification state, in which she will not take Fall DMG, and uses Skyladder once. In this state, her Plunging Attack will be converted into Driftcloud Wave instead, which deals AoE Anemo DMG and ends the Cloud Transmogrification state. This DMG is considered Plunging Attack DMG. Each use of Skyladder while in this state increases the DMG and AoE of the next Driftcloud Wave used. Skyladder Can be used while in mid-air. Xianyun leaps forward, dealing Anemo DMG to targets along her path. During each Cloud Transmogrification state Xianyun enters, Skyladder may be used up to times and only instance of Skyladder DMG can be dealt to any one opponent. If Skyladder is...",
+    "elemental_burst": "Brings forth a sacred breeze that deals AoE Anemo DMG and heals all nearby characters based on Xianyun's ATK. It will also summon the \"Starwicker\" mechanism. Starwicker Continuously follows the active character and periodically heals all nearby party members based on Xianyun's ATK. Starts with stacks of Adeptal Assistance. While Adeptal Assistance is active, nearby active characters in the party will have their jump height increased. When the active character completes a Plunging Attack, Starwicker will consume stack of Adeptal Assistance and deal AoE Anemo DMG. Only Starwicker can exist simultaneously. The healing interval is seconds. In Co-Op Mode, the Adeptal Assistance stacks are shared..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "special": [
+        "Clearwater Jade",
+        "Cloudseam Scale"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Gold",
+        "Guide to Gold",
+        "Philosophies of Gold"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "weekly_boss": [
+        "Lightless Eye of the Maelstrom"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

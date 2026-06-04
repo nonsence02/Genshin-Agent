@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-prosperity",
+  "name_en": "Teachings of Prosperity",
+  "type": "Character Talent Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Taishan Mansion (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Prosperity"
+}

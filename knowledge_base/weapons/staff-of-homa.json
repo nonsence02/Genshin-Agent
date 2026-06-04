@@ -1,0 +1,48 @@
+{
+  "id": "staff-of-homa",
+  "name": "Staff of Homa",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Staff_of_Homa",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "HP increased by. Additionally, provides an ATK Bonus based on of the wielder's Max HP. When the wielder's HP is less than, this ATK bonus is increased by an additional of Max HP.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Grain of Aerosiderite",
+        "Dead Ley Line Branch",
+        "Slime Condensate",
+        "Piece of Aerosiderite",
+        "Dead Ley Line Leaves",
+        "Slime Secretions",
+        "Bit of Aerosiderite",
+        "Ley Line Sprout",
+        "Slime Concentrate",
+        "Chunk of Aerosiderite"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

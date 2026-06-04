@@ -1,0 +1,48 @@
+{
+  "id": "flute-of-ezpitzal",
+  "name": "Flute of Ezpitzal",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Flute_of_Ezpitzal",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "DEF"
+  },
+  "passive": "Using an Elemental Skill increases DEF by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Blazing Sacrificial Heart's Terror",
+        "Ruined Hilt",
+        "Juvenile Fang",
+        "Blazing Sacrificial Heart's Hesitance",
+        "Splintered Hilt",
+        "Seasoned Fang",
+        "Blazing Sacrificial Heart's Resolve",
+        "Still-Smoldering Hilt",
+        "Tyrant's Fang",
+        "Blazing Sacrificial Heart's Splendor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

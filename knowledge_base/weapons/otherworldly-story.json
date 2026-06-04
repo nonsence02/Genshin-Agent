@@ -1,0 +1,47 @@
+{
+  "id": "otherworldly-story",
+  "name": "Otherworldly Story",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Otherworldly_Story",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "3★",
+    "base_atk": "39 - 401",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Each Elemental Orb or Particle collected restores HP.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Damaged Mask",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Stained Mask",
+        "Shackles of the Dandelion Gladiator",
+        "Ominous Mask",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

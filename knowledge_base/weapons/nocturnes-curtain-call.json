@@ -1,0 +1,47 @@
+{
+  "id": "nocturnes-curtain-call",
+  "name": "Nocturne's Curtain Call",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Nocturne%27s_Curtain_Call",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "Max HP increases by. When triggering Lunar reactions or inflicting Lunar Reaction DMG on opponents, the equipping character will recover Energy, and receive the Bountiful Sea's Sacred Wine for: Max HP increases by an additional, CRIT DMG from Lunar Reaction DMG increases by. The Energy recovery can be triggered at most once every, and can be triggered even when the equipping character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Sundered Glory of the Far-North Scions",
+        "Fractured Eye of the Deep Shadow",
+        "Tattered Warrant",
+        "Unyielding Delusion of the Far-North Scions",
+        "Immaculate Warrant",
+        "Oblation of the Far-North Scions",
+        "Hooked Beak of the Deep Shadow",
+        "Frost-Etched Warrant",
+        "Aureate Radiance of the Far-North Scions"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

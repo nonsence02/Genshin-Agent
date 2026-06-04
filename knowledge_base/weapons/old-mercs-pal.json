@@ -1,0 +1,42 @@
+{
+  "id": "old-mercs-pal",
+  "name": "Old Merc's Pal",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Old_Merc%27s_Pal",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "2★",
+    "base_atk": "33 - 243",
+    "secondary_stat": "Не найдено"
+  },
+  "passive": "A battle-tested greatsword that has seen better days and worse.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Slime Condensate",
+        "Dead Ley Line Leaves",
+        "Slime Secretions"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

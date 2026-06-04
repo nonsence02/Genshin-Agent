@@ -1,0 +1,48 @@
+{
+  "id": "katsuragikiri-nagamasa",
+  "name": "Katsuragikiri Nagamasa",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Katsuragikiri_Nagamasa",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Increases Elemental Skill DMG by. After Elemental Skill hits an opponent, the character loses Energy but regenerates Energy every for the next. This can occur once every. Can be triggered even when the character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Narukami's Wisdom",
+        "Chaos Gear",
+        "Old Handguard",
+        "Narukami's Joy",
+        "Chaos Axis",
+        "Kageuchi Handguard",
+        "Narukami's Affection",
+        "Chaos Oculus",
+        "Famed Handguard",
+        "Narukami's Valor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

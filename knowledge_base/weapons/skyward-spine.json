@@ -1,0 +1,47 @@
+{
+  "id": "skyward-spine",
+  "name": "Skyward Spine",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Skyward_Spine",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "5★",
+    "base_atk": "48 - 674",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Increases CRIT Rate by and increases Normal ATK SPD by. Additionally, Normal and Charged Attacks hits on opponents have a chance to trigger a vacuum blade that deals of ATK as DMG in a small AoE. This can occur no more than once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Divining Scroll",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Sealed Scroll",
+        "Shackles of the Dandelion Gladiator",
+        "Forbidden Curse Scroll",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

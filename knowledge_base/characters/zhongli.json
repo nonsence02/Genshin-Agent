@@ -1,0 +1,94 @@
+{
+  "id": "zhongli",
+  "name": "Zhongli",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Zhongli",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Geo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Every mountain, rock and inch of land is filled with the power of Geo, but those who can wield such powers freely are few and far between. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Commands the power of earth to create a Stone Stele. Hold Causes nearby Geo energy to explode, causing the following effects: If their maximum number hasn't been reached, creates a Stone Stele. Creates a shield of jade. The shield's DMG Absorption scales based on Zhongli's Max HP. Deals AoE Geo DMG. If there are nearby targets with the Geo element, it will drain a large amount of Geo element from a maximum of such targets. This effect does not cause DMG. Stone Stele When...",
+    "elemental_burst": "Brings a falling meteor down to earth, dealing massive Geo DMG to opponents caught in its AoE and applying the Petrification status to them. Petrification Opponents affected by the Petrification status cannot move. This ability applies a persistent Geo aura for the duration of the Petrification. This Geo aura has the following properties: The Geo gauge has gauge units. The Geo gauge does not decay over time. When the petrified ends, the status is fully removed. Does not react with other elements. Passive Effects Passive Talent, Dominance of Earth: increases Planet Befall's DMG by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "special": [
+        "Cor Lapis",
+        "Basalt Pillar"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Gold",
+        "Guide to Gold",
+        "Philosophies of Gold"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "weekly_boss": [
+        "Tusk of Monoceros Caeli"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

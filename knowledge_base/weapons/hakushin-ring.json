@@ -1,0 +1,48 @@
+{
+  "id": "hakushin-ring",
+  "name": "Hakushin Ring",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Hakushin_Ring",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "After the character equipped with this weapon triggers an Electro elemental reaction, nearby party members of an Elemental Type involved in the elemental reaction receive a Elemental DMG Bonus for their element, lasting. Elemental Bonuses gained in this way cannot be stacked.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Coral Branch of a Distant Sea",
+        "Dismal Prism",
+        "Divining Scroll",
+        "Jeweled Branch of a Distant Sea",
+        "Crystal Prism",
+        "Sealed Scroll",
+        "Jade Branch of a Distant Sea",
+        "Polarizing Prism",
+        "Forbidden Curse Scroll",
+        "Golden Branch of a Distant Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

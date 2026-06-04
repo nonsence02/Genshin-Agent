@@ -1,0 +1,94 @@
+{
+  "id": "fischl",
+  "name": "Fischl",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Fischl",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Summons Oz. The night raven forged of darkness and lightning descends upon the land, dealing Electro DMG in a small AoE. For the ability's duration, Oz will continuously attack nearby opponents with Freikugel. Hold to adjust the location Oz will be summoned to. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) again any time during the ability's duration to once again summon him to Fischl's side. Oz attacks at -second intervals. When each of Oz's attacks hits at least one enemy, it generates Elemental Particles. The cooldown starts immediately after the first input. As a result, cooldown reduction effects that shorten ongoing cooldowns, such as the...",
+    "elemental_burst": "Summons Oz to spread his twin wings of twilight and defend Fischl. Has the following properties during the ability's duration: Fischl takes on Oz's form, greatly increasing her Movement Speed. Strikes nearby opponents with lightning, dealing Electro DMG to opponents she comes into contact with. Each opponent can only be struck once. Once this ability's effects end, Oz will remain on the battlefield and attack his Prinzessin's foes. If Oz is already on the field, then this will reset the duration of his presence. Upon casting this skill, Fischl takes on Oz's form for a short duration. She has Invincibility Frames only during the very brief casting period. While Fischl is in Oz's form, Fischl..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "special": [
+        "Small Lamp Grass",
+        "Lightning Prism"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ballad",
+        "Guide to Ballad",
+        "Philosophies of Ballad"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "weekly_boss": [
+        "Spirit Locket of Boreas"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "etherlight-spindlelute",
+  "name": "Etherlight Spindlelute",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Etherlight_Spindlelute",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "For after using an Elemental Skill, the equipping character's Elemental Mastery is increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Sundered Glory of the Far-North Scions",
+        "Lightless Bone",
+        "Tattered Warrant",
+        "Unyielding Delusion of the Far-North Scions",
+        "Glowing Remains",
+        "Immaculate Warrant",
+        "Oblation of the Far-North Scions",
+        "Radiant Exoskeleton",
+        "Frost-Etched Warrant",
+        "Aureate Radiance of the Far-North Scions"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

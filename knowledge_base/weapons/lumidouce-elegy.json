@@ -1,0 +1,48 @@
+{
+  "id": "lumidouce-elegy",
+  "name": "Lumidouce Elegy",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Lumidouce_Elegy",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "ATK increased by. After the equipping character triggers Burning on an opponent or deals Dendro DMG to Burning opponents, the DMG dealt is increased by. This lasts for, max stacks. When stacks are reached or when the duration is refreshed at stacks, restore Energy. Energy can be restored this way once every. The aforementioned effects can be triggered even when the character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Broken Goblet of the Pristine Sea",
+        "Ruined Hilt",
+        "Whopperflower Nectar",
+        "Wine Goblet of the Pristine Sea",
+        "Splintered Hilt",
+        "Shimmering Nectar",
+        "Silver Goblet of the Pristine Sea",
+        "Still-Smoldering Hilt",
+        "Energy Nectar",
+        "Golden Goblet of the Pristine Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

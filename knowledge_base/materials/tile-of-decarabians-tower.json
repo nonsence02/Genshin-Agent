@@ -1,0 +1,14 @@
+{
+  "id": "tile-of-decarabians-tower",
+  "name_en": "Tile of Decarabian's Tower",
+  "type": "Weapon Ascension Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Cecilia Garden (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Tile_of_Decarabian%27s_Tower"
+}

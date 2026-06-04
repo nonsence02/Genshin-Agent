@@ -1,0 +1,48 @@
+{
+  "id": "prototype-crescent",
+  "name": "Prototype Crescent",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Prototype_Crescent",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Charged Attack hits on weak points increase Movement SPD by and ATK by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Treasure Hoarder Insignia",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Silver Raven Insignia",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Golden Raven Insignia",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

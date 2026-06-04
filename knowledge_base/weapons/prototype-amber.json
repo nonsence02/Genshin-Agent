@@ -1,0 +1,48 @@
+{
+  "id": "prototype-amber",
+  "name": "Prototype Amber",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Prototype_Amber",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "HP"
+  },
+  "passive": "Using an Elemental Burst regenerates Energy every for. All party members will regenerate HP every for this duration.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Firm Arrowhead",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Sharp Arrowhead",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Weathered Arrowhead",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

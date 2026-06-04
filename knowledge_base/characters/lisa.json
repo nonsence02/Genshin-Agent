@@ -1,0 +1,94 @@
+{
+  "id": "lisa",
+  "name": "Lisa",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Lisa",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Channels the power of lightning to sweep bothersome matters away. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Releases a homing Lightning Orb. On hit, it deals Electro DMG and applies a stack of the Conductive status to opponents in a small AoE. Hold After an extended casting time, calls down lightning from the heavens, dealing massive Electro DMG to all nearby opponents. Deals great amounts of extra damage to opponents based on the number of Conductive stacks applied to them, and clears their Conductive status. Holding this skill generates Elemental Particles when it hits at least target. Pressing this skill does not generate any elemental particle....",
+    "elemental_burst": "Summons a Lightning Rose that unleashes powerful lightning bolts, launching surrounding opponents and dealing Electro DMG. The Lightning Rose will continuously emit lightning to knock back opponents and deal Electro DMG throughout the ability's duration. This Elemental Burst drains energy later than most others. [ ] Lightning Rose has a weak initial hit on cast to enemies within a certain radius, and then arcs another times before disappearing. This initial hit, despite dealing Electro DMG, does not apply any Electro. The initial hit's DMG value is"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "special": [
+        "Valberry",
+        "Lightning Prism"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ballad",
+        "Guide to Ballad",
+        "Philosophies of Ballad"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "weekly_boss": [
+        "Dvalin's Claw"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

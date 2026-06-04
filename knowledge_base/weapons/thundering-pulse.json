@@ -1,0 +1,48 @@
+{
+  "id": "thundering-pulse",
+  "name": "Thundering Pulse",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Thundering_Pulse",
+  "profile": {
+    "type": "Bow",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "Increases ATK by and grants the might of the Thunder Emblem. At stack levels, the Thunder Emblem increases Normal Attack DMG by. The character will obtain stack of Thunder Emblem in each of the following scenarios: Normal Attack deals DMG, casting Elemental Skill; Energy is less than (stack disappears when Energy is full). Each stack's duration is calculated independently.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Narukami's Wisdom",
+        "Dismal Prism",
+        "Firm Arrowhead",
+        "Narukami's Joy",
+        "Crystal Prism",
+        "Sharp Arrowhead",
+        "Narukami's Affection",
+        "Polarizing Prism",
+        "Weathered Arrowhead",
+        "Narukami's Valor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "messenger",
+  "name": "Messenger",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Messenger",
+  "profile": {
+    "type": "Bow",
+    "rarity": "3★",
+    "base_atk": "40 - 448",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "Charged Attack hits on weak spots deal an additional ATK DMG as CRIT DMG. Can only occur once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Treasure Hoarder Insignia",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Silver Raven Insignia",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Golden Raven Insignia",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

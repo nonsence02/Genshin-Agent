@@ -1,0 +1,48 @@
+{
+  "id": "footprint-of-the-rainbow",
+  "name": "Footprint of the Rainbow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Footprint_of_the_Rainbow",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "DEF"
+  },
+  "passive": "Using an Elemental Skill increases DEF by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Delirious Decadence of the Sacred Lord",
+        "Axis of the Secret Source",
+        "Sentry's Wooden Whistle",
+        "Delirious Desolation of the Sacred Lord",
+        "Sheath of the Secret Source",
+        "Warrior's Metal Whistle",
+        "Delirious Demeanor of the Sacred Lord",
+        "Heart of the Secret Source",
+        "Saurian-Crowned Warrior's Golden Whistle",
+        "Delirious Divinity of the Sacred Lord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

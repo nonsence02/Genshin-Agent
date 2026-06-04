@@ -1,0 +1,47 @@
+{
+  "id": "lost-prayer-to-the-sacred-winds",
+  "name": "Lost Prayer to the Sacred Winds",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Increases Movement SPD by. When in battle, gain an Elemental DMG Bonus every. Max stacks. Lasts until the character falls or leaves combat.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Slime Condensate",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Slime Secretions",
+        "Shackles of the Dandelion Gladiator",
+        "Slime Concentrate",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

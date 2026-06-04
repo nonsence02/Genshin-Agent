@@ -1,0 +1,94 @@
+{
+  "id": "chasca",
+  "name": "Chasca",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Chasca",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Chasca and the will residing in her weapon resonate, dealing Nightsoul-aligned AoE Anemo DMG. After using this Skill, Chasca gains Nightsoul points and enters the Nightsoul's Blessing state. Nightsoul's Blessing: Chasca Continually consume Nightsoul points. When Nightsoul points are fully depleted or the skill is used again, Chasca's Nightsoul's Blessing state will end. Her Nightsoul's Blessing has the following traits: Mounts \"Soulsniper: Ritual Staff,\" increasing Chasca's Movement SPD and interruption resistance. In this state, Chasca will continually consume Nightsoul points to remain airborne. When Sprinting or increasing height, extra Nightsoul points will be consumed. When using...",
+    "elemental_burst": "Chasca concentrates her will, firing a single \"Galesplitting Soulseeker Shell\" that deals Nightsoul-aligned AoE Anemo DMG. Afterward, the Galesplitting Soulseeker Shell will split into Soulseeker Shells, which attack nearby opponents. Soulseeker Shells Deal Nightsoul-aligned Anemo DMG. For each Pyro, Hydro, Cryo, or Electro character in the party, two Soulseeker Shells will undergo corresponding Elemental Conversions to become \"Radiant Soulseeker Shells,\" which deal Nightsoul-aligned Elemental DMG from a randomly selected one of the corresponding Elemental Types. This ability has an extremely far auto- targeting range of m, currently the longest in the game. Constellation Effects..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Juvenile Fang",
+        "Seasoned Fang",
+        "Tyrant's Fang"
+      ],
+      "special": [
+        "Withering Purpurbloom",
+        "Ensnaring Gaze"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Conflict",
+        "Guide to Conflict",
+        "Philosophies of Conflict"
+      ],
+      "mob_drops": [
+        "Juvenile Fang",
+        "Seasoned Fang",
+        "Tyrant's Fang"
+      ],
+      "weekly_boss": [
+        "Silken Feather"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

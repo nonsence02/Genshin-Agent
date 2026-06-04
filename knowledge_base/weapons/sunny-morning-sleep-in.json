@@ -1,0 +1,48 @@
+{
+  "id": "sunny-morning-sleep-in",
+  "name": "Sunny Morning Sleep-In",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sunny_Morning_Sleep-In",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Elemental Mastery increases by for after triggering Swirl. Elemental Mastery increases by for after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by for after the wielder's Elemental Burst hits an opponent.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Narukami's Wisdom",
+        "Ignited Stone",
+        "Spectral Husk",
+        "Narukami's Joy",
+        "Ignited Seed of Life",
+        "Spectral Heart",
+        "Narukami's Affection",
+        "Ignited Seeing Eye",
+        "Spectral Nucleus",
+        "Narukami's Valor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-gold",
+  "name_en": "Teachings of Gold",
+  "type": "Character Talent Materials",
+  "days": [
+    "Wednesday",
+    "Saturday",
+    "Sunday"
+  ],
+  "source": [
+    "Taishan Mansion (Wednesday/Saturday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Gold"
+}

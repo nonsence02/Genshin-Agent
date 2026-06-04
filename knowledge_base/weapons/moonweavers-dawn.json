@@ -1,0 +1,48 @@
+{
+  "id": "moonweavers-dawn",
+  "name": "Moonweaver's Dawn",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Moonweaver%27s_Dawn",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Increases Elemental Burst DMG by. When the equipping character's Energy Capacity does not exceed, their Elemental Burst DMG is increased by an additional.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Sundered Glory of the Far-North Scions",
+        "Lightless Bone",
+        "Broken Drive Shaft",
+        "Unyielding Delusion of the Far-North Scions",
+        "Glowing Remains",
+        "Reinforced Drive Shaft",
+        "Oblation of the Far-North Scions",
+        "Radiant Exoskeleton",
+        "Precision Drive Shaft",
+        "Aureate Radiance of the Far-North Scions"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

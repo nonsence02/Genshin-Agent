@@ -1,0 +1,48 @@
+{
+  "id": "twin-nephrite",
+  "name": "Twin Nephrite",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Twin_Nephrite",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "3★",
+    "base_atk": "40 - 448",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Defeating an opponent increases Movement SPD and ATK by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Recruit's Insignia",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Sergeant's Insignia",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Lieutenant's Insignia",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

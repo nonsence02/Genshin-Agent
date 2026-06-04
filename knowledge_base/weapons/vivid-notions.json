@@ -1,0 +1,48 @@
+{
+  "id": "vivid-notions",
+  "name": "Vivid Notions",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Vivid_Notions",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "48 - 674",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "ATK is increased by. When you use a Plunging Attack, you will gain the \"Dawn's First Hue\": Plunging Attack CRIT DMG is increased by. When you use an Elemental Skill or Burst, you will gain the \"Twilight's Splendor\": Plunging Attack CRIT DMG is increased by. The two effects above each last for, and will be canceled after the ground impact hits a target.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Delirious Decadence of the Sacred Lord",
+        "Cold-Cracked Shellshard",
+        "Juvenile Fang",
+        "Delirious Desolation of the Sacred Lord",
+        "Warm Back-Shell",
+        "Seasoned Fang",
+        "Delirious Demeanor of the Sacred Lord",
+        "Blazing Prismshell",
+        "Tyrant's Fang",
+        "Delirious Divinity of the Sacred Lord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

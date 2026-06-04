@@ -1,0 +1,94 @@
+{
+  "id": "baizhu",
+  "name": "Baizhu",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Baizhu",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Dendro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Controls a Gossamer Sprite that cruises and attacks nearby opponents, dealing Dendro DMG. After it performs attacks or if there are no opponents nearby, the Sprite will return, healing all nearby party members based on Baizhu's Max HP. When this skill hits at least one enemy, it generates Elemental Particles. This skill's and attacks can hit enemies without aggravating them. Constellation Effects Constellation Level, Attentive Observation: \" Universal Diagnosis gains additional charge.\" Constellation Level, Incisive Discernment: \"When your own active character hits a nearby opponent with their attacks, Baizhu will unleash a Gossamer Sprite: Splice. Gossamer Sprite: Splice will initiate...",
+    "elemental_burst": "Enters the Pulsing Clarity state, creating a Seamless Shield that absorbs Dendro DMG with"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Nagadus Emerald Sliver",
+        "Nagadus Emerald Fragment",
+        "Nagadus Emerald Chunk",
+        "Nagadus Emerald Gemstone"
+      ],
+      "mob_drops": [
+        "Fungal Spores",
+        "Luminescent Pollen",
+        "Crystalline Cyst Dust"
+      ],
+      "special": [
+        "Violetgrass",
+        "Evergloom Ring"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Gold",
+        "Guide to Gold",
+        "Philosophies of Gold"
+      ],
+      "mob_drops": [
+        "Fungal Spores",
+        "Luminescent Pollen",
+        "Crystalline Cyst Dust"
+      ],
+      "weekly_boss": [
+        "Worldspan Fern"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

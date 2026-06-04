@@ -1,0 +1,48 @@
+{
+  "id": "eye-of-perception",
+  "name": "Eye of Perception",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Eye_of_Perception",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Normal and Charged Attacks have a chance to fire a Bolt of Perception, dealing ATK as DMG. This bolt can bounce between opponents a maximum of times. This can occur once every s.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Damaged Mask",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Stained Mask",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Ominous Mask",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

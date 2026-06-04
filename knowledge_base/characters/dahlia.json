@@ -1,0 +1,94 @@
+{
+  "id": "dahlia",
+  "name": "Dahlia",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dahlia",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Hydro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Time for a fun little trick! Summons the Sacramental Shower in different ways depending on whether you Tap or Hold it. Tap After a short prayer, summons the Sacramental Shower in front. Hold Engages in continuous prayer, and when done, summons forth a Sacramental Shower in the designated position. Sacramental Shower When opponents or nearby party members touch the Sacramental Shower, different effects will occur depending on the one who touches it: If an opponent touches the Shower, it will explode and deal AoE Hydro DMG to nearby opponents. If a nearby party member touches it, it will bounce the one who touches it high in the air. Only Sacramental Shower summoned by Dahlia himself can be...",
+    "elemental_burst": "Appeals to the divine with earnestness and song, dealing AoE Hydro DMG to nearby opponents and granting his party members Favonian Favor, summoning a Shield of Sacred Favor. The Shield of Sacred Favor's DMG absorption is based on Dahlia's Max HP, and it will absorb Hydro DMG with"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "special": [
+        "Calla Lily",
+        "Secret Source Airflow Accumulator"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ballad",
+        "Guide to Ballad",
+        "Philosophies of Ballad"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "weekly_boss": [
+        "Eroded Scale-Feather"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

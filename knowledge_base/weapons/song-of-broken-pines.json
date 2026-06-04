@@ -1,0 +1,48 @@
+{
+  "id": "song-of-broken-pines",
+  "name": "Song of Broken Pines",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Song_of_Broken_Pines",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "5★",
+    "base_atk": "49 - 741",
+    "secondary_stat": "Physical DMG Bonus"
+  },
+  "passive": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases ATK by, and when Normal or Charged Attacks hit opponents, the character gains a Sigil of Whispers. This can be triggered once every. When you possess four Sigils of Whispers, all of them will be consumed and all nearby party members will obtain the \"Millennial Movement: Banner-Hymn\" for. \"Millennial Movement: Banner-Hymn\" increases Normal ATK SPD by and increases ATK by. Once this is triggered, you will not gain Sigils of Whispers for. Of the many effects of the \"Millennial Movement\", buffs of the same type will not stack.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Damaged Mask",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Stained Mask",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Ominous Mask",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

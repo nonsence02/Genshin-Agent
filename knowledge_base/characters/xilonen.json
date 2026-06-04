@@ -1,0 +1,94 @@
+{
+  "id": "xilonen",
+  "name": "Xilonen",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xilonen",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Let the rhythms of passion resound throughout the land! Xilonen switches to high-speed combat blading gear and rushes forward a certain distance before dealing Nightsoul-aligned Geo DMG based on her DEF. After using this, Xilonen will gain Nightsoul points and enter the Nightsoul's Blessing state. In this state, she will shift to the Blade Roller mode. Source Samples Xilonen has Samplers with her that can generate different Soundscapes based on her other party members' Elemental Types, decreasing nearby opponents' corresponding Elemental RES while active. The initial recorded Source Sample within each Sampler will be Geo, and for each party member who is Pyro / Hydro / Cryo / Electro, Geo...",
+    "elemental_burst": "Activates the Phlogiston Stereo DJ Controller (Portable) at full power, dealing Nightsoul-aligned AoE Geo DMG based on Xilonen's DEF. Additionally, she will trigger the following effects based on her different Source Samples: If she has at least Source Samples that have had their Elemental Types changed, Xilonen will play an Ebullient rhythm, healing nearby active characters at intervals based on her DEF. If she has fewer than Source Samples that have had their Elemental Types changed, Xilonen will start up an Ardent rhythm, which will play two additional beats that deal Nightsoul-aligned AoE Geo DMG based on her DEF. Healing occurs once every for a total of instances. The healing effect..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "special": [
+        "Brilliant Chrysanthemum",
+        "Gold-Inscribed Secret Source Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Kindling",
+        "Guide to Kindling",
+        "Philosophies of Kindling"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "weekly_boss": [
+        "Mirror of Mushin"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

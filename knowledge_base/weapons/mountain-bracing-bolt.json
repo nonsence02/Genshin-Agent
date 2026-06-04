@@ -1,0 +1,48 @@
+{
+  "id": "mountain-bracing-bolt",
+  "name": "Mountain-Bracing Bolt",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Mountain-Bracing_Bolt",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Decreases Climbing Stamina Consumption by and increases Elemental Skill DMG by. Also, after other nearby party members use Elemental Skills, the equipping character's Elemental Skill DMG will also increase by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Delirious Decadence of the Sacred Lord",
+        "Ignited Stone",
+        "Whopperflower Nectar",
+        "Delirious Desolation of the Sacred Lord",
+        "Ignited Seed of Life",
+        "Shimmering Nectar",
+        "Delirious Demeanor of the Sacred Lord",
+        "Ignited Seeing Eye",
+        "Energy Nectar",
+        "Delirious Divinity of the Sacred Lord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

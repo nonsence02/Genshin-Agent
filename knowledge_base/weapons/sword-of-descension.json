@@ -1,0 +1,44 @@
+{
+  "id": "sword-of-descension",
+  "name": "Sword of Descension",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sword_of_Descension",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "39 - 440",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Effective only on the following platform: \"PlayStation Network\" Hitting enemies with Normal or Charged Attacks grants a chance to deal ATK as DMG in a small AoE. This can only occur once every. Additionally, if the Traveler equips the Sword of Descension, their ATK is increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Treasure Hoarder Insignia",
+        "Dead Ley Line Leaves",
+        "Silver Raven Insignia",
+        "Ley Line Sprout",
+        "Golden Raven Insignia"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

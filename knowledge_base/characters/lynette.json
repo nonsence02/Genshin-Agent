@@ -1,0 +1,94 @@
+{
+  "id": "lynette",
+  "name": "Lynette",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Lynette",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Flicks her mantle and executes an Enigma Thrust, dealing Anemo DMG. When the Enigma Thrust hits an opponent, it will restore Lynette's HP based on her Max HP, and in the afterward, she will lose a certain amount of HP per second. Based on whether you (‍ press Text for mouse and keyboard and controller ‍/‍ tap Text for touch screen ‍) or hold this ability, she will use Enigma Thrust differently. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) She swiftly uses an Enigma Thrust. Hold Lynette will enter a high-speed Pilfering Shadow state and apply Shadowsign to a nearby opponent. You can control her movement direction during this state, and you can end it...",
+    "elemental_burst": "Lynette raises her mantle high, dealing AoE Anemo DMG, using skillful sleight of hand to make a giant Bogglecat Box appear! Bogglecat Box Taunts nearby opponents, attracting their attacks. Deals Anemo DMG to nearby opponents at intervals. When the Bogglecat Box comes into contact with Hydro / Pyro / Cryo / Electro, it will gain the corresponding element and additionally fire Vivid Shots that will deal DMG from that element at intervals. Elemental Absorption of this kind will only occur once during this ability's duration. From s after casting the skill, Bogglecat Box deals Anemo DMG to nearby opponents every second and fires a Vivid Shot every seconds for a total of instances of Anemo DMG..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "special": [
+        "Lumidouce Bell",
+        "Artificed Spare Clockwork Component — Coppelia"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Order",
+        "Guide to Order",
+        "Philosophies of Order"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "weekly_boss": [
+        "Everamber"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

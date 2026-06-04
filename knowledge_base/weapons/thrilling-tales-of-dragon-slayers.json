@@ -1,0 +1,44 @@
+{
+  "id": "thrilling-tales-of-dragon-slayers",
+  "name": "Thrilling Tales of Dragon Slayers",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Thrilling_Tales_of_Dragon_Slayers",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "3★",
+    "base_atk": "39 - 401",
+    "secondary_stat": "HP"
+  },
+  "passive": "When switching characters, the new character taking the field has their ATK increased by for. This can only occur once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Divining Scroll",
+        "Dead Ley Line Leaves",
+        "Sealed Scroll",
+        "Ley Line Sprout",
+        "Forbidden Curse Scroll"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

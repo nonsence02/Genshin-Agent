@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-elegance",
+  "name_en": "Teachings of Elegance",
+  "type": "Character Talent Materials",
+  "days": [
+    "Tuesday",
+    "Friday",
+    "Sunday"
+  ],
+  "source": [
+    "Violet Court (Tuesday/Friday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Elegance"
+}

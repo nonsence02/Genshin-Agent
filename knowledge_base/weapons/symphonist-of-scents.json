@@ -1,0 +1,48 @@
+{
+  "id": "symphonist-of-scents",
+  "name": "Symphonist of Scents",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Symphonist_of_Scents",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "ATK is increased by. When the equipping character is off-field, ATK is increased by an additional. After initiating healing, the equipping character and the character(s) they have healed will obtain the \"Sweet Echoes\", increasing their ATK by for. This can be triggered even if the equipping character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dross of Pure Sacred Dewdrop",
+        "Drop of Tainted Water",
+        "Transoceanic Pearl",
+        "Sublimation of Pure Sacred Dewdrop",
+        "Scoop of Tainted Water",
+        "Transoceanic Chunk",
+        "Spring of Pure Sacred Dewdrop",
+        "Newborn Tainted Hydro Phantasm",
+        "Xenochromatic Crystal",
+        "Essence of Pure Sacred Dewdrop"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

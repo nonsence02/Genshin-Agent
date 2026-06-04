@@ -1,0 +1,48 @@
+{
+  "id": "song-of-stillness",
+  "name": "Song of Stillness",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Song_of_Stillness",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "After the wielder is healed, they will deal more DMG for. This can be triggered even when the character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fragment of an Ancient Chord",
+        "Drop of Tainted Water",
+        "Firm Arrowhead",
+        "Chapter of an Ancient Chord",
+        "Scoop of Tainted Water",
+        "Sharp Arrowhead",
+        "Movement of an Ancient Chord",
+        "Newborn Tainted Hydro Phantasm",
+        "Weathered Arrowhead",
+        "Echo of an Ancient Chord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

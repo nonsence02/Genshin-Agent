@@ -1,0 +1,48 @@
+{
+  "id": "prototype-rancour",
+  "name": "Prototype Rancour",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Prototype_Rancour",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Physical DMG Bonus"
+  },
+  "passive": "On hit, Normal or Charged Attacks increase ATK and DEF by for. Max stacks. This can only occur once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Recruit's Insignia",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Sergeant's Insignia",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Lieutenant's Insignia",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

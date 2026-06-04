@@ -1,0 +1,92 @@
+{
+  "id": "zibai",
+  "name": "Zibai",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Zibai",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Summoning a shadow of her former powers, she switches to the Lunar Phase Shift Lunar Phase Shift After using the Elemental Skill Heaven and Earth Made Manifest, Zibai will change to this mode. This mode lasts at most and has the following properties: Normal and Charged Attacks are converted into Geo DMG that cannot be overridden by other infusions. The Elemental Skill Heaven and Earth Made Manifest will also be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least Phase Shift Radiance, she can consume Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of Geo DMG. The second instance will be considered Lunar-Crystallize Reaction DMG. A...",
+    "elemental_burst": "Zibai operates the Jadelight Canopy, dealing two instances of Geo DMG, with the second damage instance being considered Lunar-Crystallize Reaction DMG. When cast, if Zibai is in the Lunar Phase Shift Lunar Phase Shift After using the Elemental Skill Heaven and Earth Made Manifest, Zibai will change to this mode. This mode lasts at most and has the following properties: Normal and Charged Attacks are converted into Geo DMG that cannot be overridden by other infusions. The Elemental Skill Heaven and Earth Made Manifest will also be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least Phase Shift Radiance, she can consume Phase Shift Radiance to unleash Spirit..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "special": [
+        "Glaze Lily",
+        "Remnant of the Dreadwing"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Gold",
+        "Guide to Gold",
+        "Philosophies of Gold"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "weekly_boss": [],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

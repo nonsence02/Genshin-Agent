@@ -1,0 +1,94 @@
+{
+  "id": "emilie",
+  "name": "Emilie",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Emilie",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Dendro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Creates a Lumidouce Case that deals AoE Dendro DMG. Lumidouce Case Fires Puffs of Puredew at nearby opponents at intervals, dealing Dendro DMG. When nearby opponents are affected by Burning, they will give off Scents at intervals, and Scent can be created this way. The Lumidouce Case collects nearby Scents. The Lumidouce Case will level up after gathering of them, after which it will fire extra Puff of Puredew when firing, while the DMG dealt by and DMG AoE of the above attack will also be increased. Lumidouce Case created by Emilie herself can exist at any one time. The Case starts at Level and can go up to Level. If the Case does not collect any Scents for while it is on the field, it...",
+    "elemental_burst": "Guiding the fragrances collected within the Case, Emilie converts them into pure Dendro energy, creating a Level Lumidouce Case and stowing existing Cases away. While it exists, the Level Lumidouce Case will not gather nearby Scents, but it will continuously cause Scented Dew to descend, attacking opponents within range and dealing Dendro DMG. During this time, drop of Scented Dew will descend every seconds, and opponent can become the target every seconds. When the duration ends, a Level Lumidouce Case will be recreated. If a Lumidouce Case was stowed away when using Aromatic Explication, then the Case that was stowed away will be deployed instead, and its duration will be reset. While..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Nagadus Emerald Sliver",
+        "Fragment of a Golden Melody",
+        "Nagadus Emerald Fragment",
+        "Nagadus Emerald Chunk",
+        "Nagadus Emerald Gemstone"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "special": [
+        "Lakelight Lily"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Order",
+        "Guide to Order",
+        "Philosophies of Order"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "weekly_boss": [
+        "Silken Feather"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

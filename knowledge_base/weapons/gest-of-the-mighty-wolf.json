@@ -1,0 +1,43 @@
+{
+  "id": "gest-of-the-mighty-wolf",
+  "name": "Gest of the Mighty Wolf",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Gest_of_the_Mighty_Wolf",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Increase ATK SPD by. Every time the equipping character's Normal Attack (s) hit opponent(s), when they cast their Elemental Skill, or when they begin their Charged Attack (s), gain stacks of Four Winds' Hymn respectively: DMG dealt is increased by, for. Max stacks. This can be triggered once every. Additionally, when the team has the \" Hexerei: Secret Rite \", each stack of Four Winds' Hymn will increase the CRIT DMG of the equipping character by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fractured Eye of the Deep Shadow",
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Hooked Beak of the Deep Shadow",
+        "Lieutenant's Insignia"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

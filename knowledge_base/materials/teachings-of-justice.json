@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-justice",
+  "name_en": "Teachings of Justice",
+  "type": "Character Talent Materials",
+  "days": [
+    "Tuesday",
+    "Friday",
+    "Sunday"
+  ],
+  "source": [
+    "Pale Forgotten Glory (Tuesday/Friday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Justice"
+}

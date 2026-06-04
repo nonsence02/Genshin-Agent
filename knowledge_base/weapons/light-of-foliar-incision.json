@@ -1,0 +1,44 @@
+{
+  "id": "light-of-foliar-incision",
+  "name": "Light of Foliar Incision",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Light_of_Foliar_Incision",
+  "profile": {
+    "type": "Sword",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "CRIT Rate is increased by. After Normal Attacks deal Elemental DMG, the Foliar Incision will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by of Elemental Mastery. This will disappear after DMG instances or. You can obtain Foliar Incision once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Desiccated Shell",
+        "Faded Red Satin",
+        "Sturdy Shell",
+        "Trimmed Red Silk",
+        "Marked Shell",
+        "Rich Red Brocade"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

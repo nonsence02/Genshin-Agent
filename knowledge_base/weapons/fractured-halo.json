@@ -1,0 +1,48 @@
+{
+  "id": "fractured-halo",
+  "name": "Fractured Halo",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Fractured_Halo",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "After an Elemental Skill or Elemental Burst is used, ATK is increased by for. If the equipping character creates a Shield while this is active, they will gain the Electrifying Edict for: All nearby party members deal more Lunar-Charged DMG.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Blazing Sacrificial Heart's Terror",
+        "Cold-Cracked Shellshard",
+        "Juvenile Fang",
+        "Blazing Sacrificial Heart's Hesitance",
+        "Warm Back-Shell",
+        "Seasoned Fang",
+        "Blazing Sacrificial Heart's Resolve",
+        "Blazing Prismshell",
+        "Tyrant's Fang",
+        "Blazing Sacrificial Heart's Splendor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

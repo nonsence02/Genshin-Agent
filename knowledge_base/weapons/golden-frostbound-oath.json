@@ -1,0 +1,48 @@
+{
+  "id": "golden-frostbound-oath",
+  "name": "Golden Frostbound Oath",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Golden_Frostbound_Oath",
+  "profile": {
+    "type": "Bow",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "Increases DEF by. When the equipping character's Elemental Skill or Lunar-Crystallize attack(s) hits enemies, gain the Frost Fae's Favor for: Geo DMG inflicted by the equipping character increases by, Lunar-Crystallize Reaction DMG increases by. While this is active, if there are Moondrifts near the equipping character, all other nearby party members Will gain the Frost Fae's Mischief: Geo DMG dealt increases by and Lunar-Crystallize Reaction DMG increases by. This can be triggered even when the equipping character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Ember of Long Night Flint",
+        "Faded Flaming Hilt",
+        "Tattered Warrant",
+        "Afterglow of Long Night Flint",
+        "Fractured Flaming Hilt",
+        "Immaculate Warrant",
+        "Flare of Long Night Flint",
+        "Jeweled Flaming Hilt",
+        "Frost-Etched Warrant",
+        "Blaze of Long Night Flint"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

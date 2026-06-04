@@ -1,0 +1,93 @@
+{
+  "id": "sigewinne",
+  "name": "Sigewinne",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sigewinne",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Blows a Bolstering Bubblebalm that can stimulate blood flow and help patients drift off to sleep using a bubblegun specially made in the Fortress of Meropide. Bolstering Bubblebalms will bounce between nearby opponents, dealing Hydro DMG based on Sigewinne's max HP to opponents it hits. When it bounces, it will restore HP to all nearby party members except Sigewinne herself. The amount healed is based on Sigewinne's max HP. After bouncing times, the Bolstering Bubblebalm will disappear and restore HP to Sigewinne based on her max HP value. When no opponents are present, the Bolstering Bubblebalm will bounce nearby. Only one Bolstering Bubblebalm created by a Sigewinne may exist at once....",
+    "elemental_burst": "Take out a special Fortress of Meropide -made syringe and assault the area in front with waves of kindness and medicine, dealing AoE Hydro DMG based on Sigewinne's max HP. In addition, Sigewinne absorbs up to nearby Sourcewater Droplets within a certain range right before using the skill. This skill deals DMG every to opponents within its AoE. Skill DMG of this Talent features a Poise Sequence on its ICD. Repeated hits dealt to the same enemy within of the first hit (i.e. hits that do not apply Hydro) will only deal Poise DMG instead of. During the duration of this skill, Sigewinne levitates and can move over the surface of water and Liquid Phlogiston. Constellation Effects Constellation..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Transoceanic Chunk",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Transoceanic Pearl",
+        "Xenochromatic Crystal"
+      ],
+      "special": [
+        "Romaritime Flower",
+        "Water That Failed To Transcend"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Equity",
+        "Guide to Equity",
+        "Philosophies of Equity"
+      ],
+      "mob_drops": [
+        "Transoceanic Pearl",
+        "Xenochromatic Crystal"
+      ],
+      "weekly_boss": [
+        "Lightless Eye of the Maelstrom"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "hunters-bow",
+  "name": "Hunter's Bow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Hunter%27s_Bow",
+  "profile": {
+    "type": "Bow",
+    "rarity": "1★",
+    "base_atk": "23 - 185",
+    "secondary_stat": "Не найдено"
+  },
+  "passive": "A hunter's music consists of but two sounds: the twang of the bowstring and the whoosh of soaring arrows.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Treasure Hoarder Insignia",
+        "Dead Ley Line Leaves",
+        "Silver Raven Insignia"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "kirara",
+  "name": "Kirara",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kirara",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Dendro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "(‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Leaps into the air with all the agility of a cat passing through the bushes, and thwacks her foes with a flying kick that deals AoE Dendro DMG while creating a Shield of Safe Transport. This will also briefly apply Dendro to Kirara. The shield will absorb Dendro DMG with",
+    "elemental_burst": "Smash opponents with a Special Delivery Package used for punishing parcel thieves, dealing AoE Dendro DMG. After the Special Delivery Package explodes, it will split up into many Cat Grass Cardamoms that will explode either upon contact with opponents or after a period of time, dealing AoE Dendro DMG. The Special Delivery Package generates Cat Grass Cardamoms. If no enemies come into contact with the generated Cat Grass Cardamoms, they will automatically explode after – seconds. Cat Grass Cardamom Explosion DMG will snapshot Kirara's stats on cast and will not be affected by changes in her stats that occur afterwards. Passive Effects Passive Talent, Pupillary Variance: \"Every Max HP Kirara..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Nagadus Emerald Sliver",
+        "Nagadus Emerald Fragment",
+        "Nagadus Emerald Chunk",
+        "Nagadus Emerald Gemstone"
+      ],
+      "mob_drops": [
+        "Spectral Husk",
+        "Spectral Heart",
+        "Spectral Nucleus"
+      ],
+      "special": [
+        "Amakumo Fruit",
+        "Evergloom Ring"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Transience",
+        "Guide to Transience",
+        "Philosophies of Transience"
+      ],
+      "mob_drops": [
+        "Spectral Husk",
+        "Spectral Heart",
+        "Spectral Nucleus"
+      ],
+      "weekly_boss": [
+        "Everamber"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "debate-club",
+  "name": "Debate Club",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Debate_Club",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "3★",
+    "base_atk": "39 - 401",
+    "secondary_stat": "ATK"
+  },
+  "passive": "After using an Elemental Skill, Normal or Charged Attacks, on hit, deal an additional ATK DMG in a small area. lasts. DMG can only occur once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Damaged Mask",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Stained Mask",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Ominous Mask",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

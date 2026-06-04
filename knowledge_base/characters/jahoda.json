@@ -1,0 +1,92 @@
+{
+  "id": "jahoda",
+  "name": "Jahoda",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Jahoda",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Jahoda dashes toward her opponent, entering the Shadow Pursuit state upon contact. While in this state, Jahoda moves continuously and swiftly: If nearby opponents are affected by Pyro, Hydro, Electro, or Cryo, she will quietly convert her Purr-loined Treasure Flask Purr-loined Treasure Flask A small elemental vessel that Jahoda retrieves after casting her Elemental Skill Savvy Strategy: Splitting the Spoils. While Jahoda is in the Shadow Pursuit state, if nearby opponents are affected by Pyro, Hydro, Electro, or Cryo, the Purr-loined Treasure Flask will convert to that element and begin filling up. The order of priority that determines which element will be converted to is: Pyro, Hydro,...",
+    "elemental_burst": "Time to reveal those pocket aces! Jahoda retrieves Purrsonal Coordinated Assistance Robots Purrsonal Coordinated Assistance Robots One of the gadgets that Jahoda — a former treasure hunter — carries around with her. It is deployed upon using her Elemental Burst Hidden Aces: Seven Tools of the Hunter. Purrsonal Coordinated Assistance Robots continuously restore HP to your active character. If the healed character's HP is above"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "special": [
+        "Portable Bearing",
+        "Lightbearing Scale-Feather"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Vagrancy",
+        "Guide to Vagrancy",
+        "Philosophies of Vagrancy"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "weekly_boss": [],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

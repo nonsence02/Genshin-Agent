@@ -1,0 +1,94 @@
+{
+  "id": "kuki-shinobu",
+  "name": "Kuki Shinobu",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kuki_Shinobu",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Creates a Grass Ring of Sanctification at the cost of part of her HP, dealing Electro DMG to nearby opponents. Grass Ring of Sanctification Follows your current active character around. Deals Electro DMG to nearby opponents every and restores HP for the active character(s) within the ring's AoE based on Kuki Shinobu's Max HP. The HP consumption from using this skill can only bring her to",
+    "elemental_burst": "Stabs an evil-excoriating blade into the ground, creating a field that cleanses the area of all that is foul, dealing continuous Electro DMG to opponents within its AoE based on Shinobu's Max HP. If Shinobu's HP is less than or equal to"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Spectral Husk",
+        "Spectral Heart",
+        "Spectral Nucleus"
+      ],
+      "special": [
+        "Naku Weed",
+        "Runic Fang"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Elegance",
+        "Guide to Elegance",
+        "Philosophies of Elegance"
+      ],
+      "mob_drops": [
+        "Spectral Husk",
+        "Spectral Heart",
+        "Spectral Nucleus"
+      ],
+      "weekly_boss": [
+        "Tears of the Calamitous God"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

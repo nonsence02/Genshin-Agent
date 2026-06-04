@@ -1,0 +1,94 @@
+{
+  "id": "mavuika",
+  "name": "Mavuika",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Mavuika",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Dendro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Calling upon her authority over \"conflict,\" Mavuika summons the All-Fire Armaments passed down through the line of human Archons, dealing Nightsoul-aligned Pyro DMG After using this, Mavuika's Nightsoul points are restored to max value, and she enters the Nightsoul's Blessing state. All-Fire Armaments Has different forms when Tapped or Held. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) \"Divine Name Unleashed\": The All-Fire Armaments manifest as a Ring of Searing Radiance. The Ring follows the current active character and attacks nearby opponents at intervals, dealing Nightsoul-aligned Pyro DMG. Hold \"Ancient Name Unbound\": The All-Fire Armaments...",
+    "elemental_burst": "Let the people's inner voices reach the divine throne in the heavens. Mavuika's Elemental Burst is not reliant on Energy, but instead, on \"Fighting Spirit.\" Fighting Spirit When Mavuika has at least"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "special": [
+        "Withering Purpurbloom",
+        "Gold-Inscribed Secret Source Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Contention",
+        "Guide to Contention",
+        "Philosophies of Contention"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "weekly_boss": [
+        "Eroded Horn"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

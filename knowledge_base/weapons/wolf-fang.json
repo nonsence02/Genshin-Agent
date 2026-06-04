@@ -1,0 +1,47 @@
+{
+  "id": "wolf-fang",
+  "name": "Wolf-Fang",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Wolf-Fang",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "DMG dealt by Elemental Skill and Elemental Burst is increased by. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by. Both of these effects last separately, have max stacks, and can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Chaos Device",
+        "Damaged Mask",
+        "Debris of Decarabian's City",
+        "Chaos Circuit",
+        "Stained Mask",
+        "Fragment of Decarabian's Epic",
+        "Ominous Mask",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

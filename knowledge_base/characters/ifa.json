@@ -1,0 +1,92 @@
+{
+  "id": "ifa",
+  "name": "Ifa",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ifa",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "It's time for the real bash bros to step up! Ifa calls Cacucu in as backup. After using this skill, Ifa gains Nightsoul points and enters the Nightsoul's Blessing Nightsoul's Blessing: Ifa Continuously consumes Nightsoul points. This state will end when Ifa runs out of Nightsoul points or if he uses this skill again. His Nightsoul's Blessing state has the following properties: Hovers with Cacucu's help, increasing Ifa's Movement SPD and interruption resistance. In this state, Ifa will continuously consume Nightsoul points to maintain this hovering state. If he sprints or accelerates, he will consume additional points. When he uses Normal Attacks, he will use different kinds of Supporting...",
+    "elemental_burst": "Fires a Therapeutic Sedative at a (temporarily aggressive) opponent. The sedative will explode on impact, creating a restraining wind current that pulls nearby objects and opponents in while dealing Nightsoul-aligned AoE Anemo DMG. When the Therapeutic Sedative hits an opponent affected by Hydro / Pyro / Cryo / Electro, it will apply a Sedation Mark Sedation Mark This effect will explode after a short delay and disappear, dealing AoE DMG aligned with the corresponding element. The Therapeutic Sedative can apply Sedation Marks to a maximum of hit opponents. A single opponent cannot receive Marks of different elements simultaneously. to them. Constellation Effects Constellation Level, Decayed..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Juvenile Fang",
+        "Seasoned Fang",
+        "Tyrant's Fang"
+      ],
+      "special": [
+        "Saurian Claw Succulent",
+        "Sparkless Statue Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Conflict",
+        "Guide to Conflict",
+        "Philosophies of Conflict"
+      ],
+      "mob_drops": [
+        "Juvenile Fang",
+        "Seasoned Fang",
+        "Tyrant's Fang"
+      ],
+      "weekly_boss": [],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

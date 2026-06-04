@@ -1,0 +1,48 @@
+{
+  "id": "ring-of-yaxche",
+  "name": "Ring of Yaxche",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ring_of_Yaxche",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "HP"
+  },
+  "passive": "Using an Elemental Skill grants the Jade-Forged Crown: Every Max HP will increase the Normal Attack DMG dealt by the equipping character by for. Normal Attack DMG can be increased this way by a maximum of.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Delirious Decadence of the Sacred Lord",
+        "Shard of a Shattered Will",
+        "Damaged Mask",
+        "Delirious Desolation of the Sacred Lord",
+        "Locus of a Clear Will",
+        "Stained Mask",
+        "Delirious Demeanor of the Sacred Lord",
+        "Sigil of a Striding Will",
+        "Ominous Mask",
+        "Delirious Divinity of the Sacred Lord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

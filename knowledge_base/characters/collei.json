@@ -1,0 +1,94 @@
+{
+  "id": "collei",
+  "name": "Collei",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Collei",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Dendro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Throws out a Floral Ring that deals instance of Dendro DMG to targets it comes into contact with. The Floral Ring will return after a set time, dealing Dendro DMG once again. When this skill hits at least one enemy, it generates Elemental Particles. The Floral Ring will fly back to the player even if the player moves away from their original position. The period of time in which the Floral Ring stays on-field can be greatly extended if the player can exceed the speed in which the Floral Ring returns to the player. Characters with fast movement speed (e.g., Sayu ) can achieve this easily. However, only two instances of damage can be dealt even if the Floral Ring makes contact with the enemy...",
+    "elemental_burst": "Trusty Cuilein-Anbar comes to save the day! Throws the doll named Cuilein-Anbar, causing an explosion that deals AoE Dendro DMG, creating a Cuilein-Anbar Zone. Cuilein-Anbar will bounce around within this zone, dealing AoE Dendro DMG. This skill ticks a total of times, in addition to the initial hit. Trump-Card Kitty's Leap DMG will snapshot Collei's stats on cast and will not be affected by changes in her stats that occur afterwards. Passive Effects Passive Talent, The Languid Wood: \"When a character within the Cuilein-Anbar Zone triggers Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, Burgeon, or Lunar-Bloom reactions, the Zone's duration will be increased by. A single Trump-Card..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Nagadus Emerald Sliver",
+        "Nagadus Emerald Fragment",
+        "Nagadus Emerald Chunk",
+        "Nagadus Emerald Gemstone"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "special": [
+        "Rukkhashava Mushrooms",
+        "Majestic Hooked Beak"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Praxis",
+        "Guide to Praxis",
+        "Philosophies of Praxis"
+      ],
+      "mob_drops": [
+        "Firm Arrowhead",
+        "Sharp Arrowhead",
+        "Weathered Arrowhead"
+      ],
+      "weekly_boss": [
+        "Tears of the Calamitous God"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

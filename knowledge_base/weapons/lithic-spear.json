@@ -1,0 +1,48 @@
+{
+  "id": "lithic-spear",
+  "name": "Lithic Spear",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Lithic_Spear",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "For every character in the party who hails from Liyue, the character who equips this weapon gains ATK increase and a CRIT Rate increase. This stacks up to times.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Grain of Aerosiderite",
+        "Fragile Bone Shard",
+        "Firm Arrowhead",
+        "Piece of Aerosiderite",
+        "Sturdy Bone Shard",
+        "Sharp Arrowhead",
+        "Bit of Aerosiderite",
+        "Fossilized Bone Shard",
+        "Weathered Arrowhead",
+        "Chunk of Aerosiderite"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

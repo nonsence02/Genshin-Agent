@@ -1,0 +1,48 @@
+{
+  "id": "festering-desire",
+  "name": "Festering Desire",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Festering_Desire",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Increases Elemental Skill DMG by and Elemental Skill CRIT Rate by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Heavy Horn",
+        "Recruit's Insignia",
+        "Chains of the Dandelion Gladiator",
+        "Black Bronze Horn",
+        "Sergeant's Insignia",
+        "Shackles of the Dandelion Gladiator",
+        "Black Crystal Horn",
+        "Lieutenant's Insignia",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

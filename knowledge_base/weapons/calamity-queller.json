@@ -1,0 +1,48 @@
+{
+  "id": "calamity-queller",
+  "name": "Calamity Queller",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Calamity_Queller",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "5★",
+    "base_atk": "49 - 741",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Gain All Elemental DMG Bonus. Obtain Consummation for after using an Elemental Skill, causing ATK to increase by per second. This ATK increase has a maximum of stacks. When the character equipped with this weapon is not on the field, Consummation's ATK increase is doubled.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Whopperflower Nectar",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Shimmering Nectar",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Energy Nectar",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

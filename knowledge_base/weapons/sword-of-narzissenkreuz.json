@@ -1,0 +1,48 @@
+{
+  "id": "sword-of-narzissenkreuz",
+  "name": "Sword of Narzissenkreuz",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sword_of_Narzissenkreuz",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "When the equipping character does not have an Arkhe: When Normal Attacks, Charged Attacks, or Plunging Attacks strike, a Pneuma or Ousia energy blast will be unleashed, dealing of ATK as DMG. This can be triggered once every. The energy blast type is determined by the current type of the Sword of Narzissenkreuz.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fragment of an Ancient Chord",
+        "Old Operative's Pocket Watch",
+        "Transoceanic Pearl",
+        "Chapter of an Ancient Chord",
+        "Operative's Standard Pocket Watch",
+        "Transoceanic Chunk",
+        "Movement of an Ancient Chord",
+        "Operative's Constancy",
+        "Xenochromatic Crystal",
+        "Echo of an Ancient Chord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

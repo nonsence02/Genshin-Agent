@@ -1,0 +1,48 @@
+{
+  "id": "the-alley-flash",
+  "name": "The Alley Flash",
+  "source_url": "https://genshin-impact.fandom.com/wiki/The_Alley_Flash",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "45 - 620",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Increases DMG dealt by the character equipping this weapon by. Taking DMG disables this for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Divining Scroll",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Sealed Scroll",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Forbidden Curse Scroll",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

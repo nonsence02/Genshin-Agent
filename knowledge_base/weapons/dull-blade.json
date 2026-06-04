@@ -1,0 +1,45 @@
+{
+  "id": "dull-blade",
+  "name": "Dull Blade",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dull_Blade",
+  "profile": {
+    "type": "Sword",
+    "rarity": "1★",
+    "base_atk": "23 - 185",
+    "secondary_stat": "Не найдено"
+  },
+  "passive": "Youthful dreams and the thrill of adventure. If this isn't enough, then make it up with valiance.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Firm Arrowhead",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Sharp Arrowhead",
+        "Fragment of Decarabian's Epic"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

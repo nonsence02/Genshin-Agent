@@ -1,0 +1,48 @@
+{
+  "id": "surfs-up",
+  "name": "Surf's Up",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Surf%27s_Up",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "Max HP increased by. Once every, for the after using an Elemental Skill: Gain Scorching Summer stacks. Each stack increases Normal Attack DMG by. For the duration of the, every, lose stack after a Normal Attack hits an opponent; once every, gain stack after triggering a Vaporize reaction on an opponent. Max Scorching Summer stacks.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Blazing Sacrificial Heart's Terror",
+        "Shard of a Shattered Will",
+        "Juvenile Fang",
+        "Blazing Sacrificial Heart's Hesitance",
+        "Locus of a Clear Will",
+        "Seasoned Fang",
+        "Blazing Sacrificial Heart's Resolve",
+        "Sigil of a Striding Will",
+        "Tyrant's Fang",
+        "Blazing Sacrificial Heart's Splendor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

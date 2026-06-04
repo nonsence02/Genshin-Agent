@@ -1,0 +1,44 @@
+{
+  "id": "the-flute",
+  "name": "The Flute",
+  "source_url": "https://genshin-impact.fandom.com/wiki/The_Flute",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Normal or Charged Attacks grant a Harmonic on hits. Gaining Harmonics triggers the power of music and deals ATK DMG to surrounding enemies. Harmonics last up to, and a maximum of can be gained every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Slime Condensate",
+        "Dead Ley Line Leaves",
+        "Slime Secretions",
+        "Ley Line Sprout",
+        "Slime Concentrate"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

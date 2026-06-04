@@ -1,0 +1,48 @@
+{
+  "id": "haran-geppaku-futsu",
+  "name": "Haran Geppaku Futsu",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Haran_Geppaku_Futsu",
+  "profile": {
+    "type": "Sword",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Obtain All Elemental DMG Bonus. When other nearby party members use Elemental Skills, the character equipping this weapon will gain Wavespike stack. Max stacks. This can be triggered once every. When the character equipping this weapon uses an Elemental Skill, all stacks of Wavespike will be consumed to gain Rippling Upheaval: each stack of Wavespike consumed will increase Normal Attack DMG by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Narukami's Wisdom",
+        "Gloomy Statuette",
+        "Old Handguard",
+        "Narukami's Joy",
+        "Dark Statuette",
+        "Kageuchi Handguard",
+        "Narukami's Affection",
+        "Deathly Statuette",
+        "Famed Handguard",
+        "Narukami's Valor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

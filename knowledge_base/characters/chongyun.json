@@ -1,0 +1,92 @@
+{
+  "id": "chongyun",
+  "name": "Chongyun",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Chongyun",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Cryo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Chongyun strikes the ground with his greatsword, causing a Cryo explosion in a circular AoE in front of him that deals Cryo DMG. After a short delay, the cold air created by the Cryo explosion will coalesce into a Chonghua Frost Field, within which all Sword, Claymore and Polearm-wielding characters' weapons will be infused with Cryo. When this skill hits at least one enemy, it generates Elemental Particles. The infusion is applied every second to active characters within the field. This skill can override certain elemental infusions. (See Overriding Infusions for details) Passive Effects Passive Talent, Steady Breathing: \"Sword, Claymore, or Polearm-wielding characters within the field...",
+    "elemental_burst": "Performing the secret hand seals, Chongyun summons giant spirit blades in mid-air that fall to the earth one by one after a short delay, exploding as they hit the ground. When the spirit blades explode, they will deal AoE Cryo DMG and launch opponents. Skill DMG refers to the damage per blade. Constellation Effects Constellation Level, Cloudburst: Increases this talent's level by, up to a maximum of. Constellation Level, Rally of Four Blades: \" Spirit Blade: Cloud-Parting Star deals"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "special": [
+        "Cor Lapis",
+        "Hoarfrost Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Diligence",
+        "Guide to Diligence",
+        "Philosophies of Diligence"
+      ],
+      "mob_drops": [
+        "Stained Mask",
+        "Ominous Mask"
+      ],
+      "weekly_boss": [
+        "Dvalin's Sigh"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

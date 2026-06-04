@@ -1,0 +1,44 @@
+{
+  "id": "wine-and-song",
+  "name": "Wine and Song",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Wine_and_Song",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Hitting an opponent with a Normal Attack decreases the Stamina consumption of Sprint or Alternate Sprint by for. Additionally, using a Sprint or Alternate Sprint ability increases ATK by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Treasure Hoarder Insignia",
+        "Dead Ley Line Leaves",
+        "Silver Raven Insignia",
+        "Ley Line Sprout",
+        "Golden Raven Insignia"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

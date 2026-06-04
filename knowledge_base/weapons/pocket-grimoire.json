@@ -1,0 +1,45 @@
+{
+  "id": "pocket-grimoire",
+  "name": "Pocket Grimoire",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Pocket_Grimoire",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "2★",
+    "base_atk": "33 - 243",
+    "secondary_stat": "Не найдено"
+  },
+  "passive": "A carefully compiled notebook featuring the essentials needed to pass a magic exam.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Damaged Mask",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Stained Mask",
+        "Fragment of Decarabian's Epic"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

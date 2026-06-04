@@ -1,0 +1,94 @@
+{
+  "id": "aino",
+  "name": "Aino",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Aino",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Electro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Aino throws a Musecatcher forward, dealing Hydro DMG and dragging her along behind it. When the dragging stops, Aino deals AoE Hydro DMG to nearby opponents. Holding the Skill will cause it to behave differently. Hold Enter Aiming Mode to adjust the Musecatcher's throwing direction. When this skill hits at least one enemy, it generates Elemental Particles. Constellation Effects Constellation Level, The Theory of Ash—Field Equilibrium: \"After Aino uses her Elemental Skill Musecatcher or her Elemental Burst Precision Hydronic Cooler, her Elemental Mastery will be increased by. The Elemental Mastery of other nearby active party members will be increased by for. The Elemental Mastery-increasing...",
+    "elemental_burst": "Aino deploys a custom water -spraying device, the Cool Your Jets Ducky to establish a Focused Hydronic Cooling Zone. While active, the Cool Your Jets Ducky will periodically fire water balls at nearby opponents, dealing Hydro DMG. Water balls are fired every seconds and up to can be fired during the skill's duration. With Moonsign: Ascendant Gleam, water balls are fired every seconds and up to can be fired during the skill's duration. Passive Effects Passive Talent, Modular Efficiency Protocol: \"Aino will be granted the corresponding buff effects based on the party 's Moonsign. Moonsign: Ascendant Gleam: Her Elemental Burst Precision Hydronic Cooler is enhanced: The Cool Your Jets Ducky..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "special": [
+        "Portable Bearing",
+        "Precision Kuuvahki Stamping Die"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Elysium",
+        "Guide to Elysium",
+        "Philosophies of Elysium"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "weekly_boss": [
+        "Silken Feather"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

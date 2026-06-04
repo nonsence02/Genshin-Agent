@@ -1,0 +1,94 @@
+{
+  "id": "wanderer",
+  "name": "Wanderer",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Wanderer",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Concentrates the power of the winds to break free from the shackles of the earth, dealing AoE Anemo DMG before leaping into the air and entering the Windfavored state. Windfavored The Wanderer cannot perform Plunging Attacks in this state. When he uses Normal and Charged Attacks, they will be converted into Kuugo: Fushoudan and Kuugo: Toufukai respectively; the DMG they deal and their AoE will be increased, and their DMG will be considered Normal and Charged Attack DMG respectively. Kuugo: Toufukai will not consume Stamina. The Wanderer will hover persistently during this time. While this state is active, the Wanderer's movements gain the following properties: Persistently consumes...",
+    "elemental_burst": "Compresses the atmosphere into a singular vacuum that grinds all troubles away, dealing multiple instances of AoE Anemo DMG. If the character is in the Windfavored state due to the skill \" Hanega: Song of the Wind,\" Windfavored state will end after casting. This ability's trajectory is snapshotted shortly before the burst's animation ends. Constellation Effects Constellation Level, Niban: Isle Amidst White Waves: \"When in the Windfavored state, Kyougen: Five Ceremonial Plays will see its DMG increased by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Old Handguard",
+        "Kageuchi Handguard",
+        "Famed Handguard"
+      ],
+      "special": [
+        "Rukkhashava Mushrooms",
+        "Perpetual Caliber"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Praxis",
+        "Guide to Praxis",
+        "Philosophies of Praxis"
+      ],
+      "mob_drops": [
+        "Old Handguard",
+        "Kageuchi Handguard",
+        "Famed Handguard"
+      ],
+      "weekly_boss": [
+        "Daka's Bell"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

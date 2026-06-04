@@ -1,0 +1,44 @@
+{
+  "id": "the-black-sword",
+  "name": "The Black Sword",
+  "source_url": "https://genshin-impact.fandom.com/wiki/The_Black_Sword",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Increases DMG dealt by Normal and Charged Attacks by. Additionally, regenerates of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This can occur once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Slime Condensate",
+        "Dead Ley Line Leaves",
+        "Slime Secretions",
+        "Ley Line Sprout",
+        "Slime Concentrate"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

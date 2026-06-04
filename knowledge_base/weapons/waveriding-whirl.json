@@ -1,0 +1,48 @@
+{
+  "id": "waveriding-whirl",
+  "name": "Waveriding Whirl",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Waveriding_Whirl",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Decreases Swimming Stamina consumption by. In addition, for after using an Elemental Skill, Max HP is increased by. For every Hydro Elemental character in the party, Max HP is increased by another, and the maximum increase that can be achieved in this way is. Can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Blazing Sacrificial Heart's Terror",
+        "Shard of a Shattered Will",
+        "Juvenile Fang",
+        "Blazing Sacrificial Heart's Hesitance",
+        "Locus of a Clear Will",
+        "Seasoned Fang",
+        "Blazing Sacrificial Heart's Resolve",
+        "Sigil of a Striding Will",
+        "Tyrant's Fang",
+        "Blazing Sacrificial Heart's Splendor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

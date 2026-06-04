@@ -1,0 +1,48 @@
+{
+  "id": "serpent-spine",
+  "name": "Serpent Spine",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Serpent_Spine",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Every a character is on the field, they will deal more DMG and take more DMG. This has a maximum of stacks and will not be reset if the character leaves the field, but will be reduced by stack when the character takes DMG.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Grain of Aerosiderite",
+        "Fragile Bone Shard",
+        "Whopperflower Nectar",
+        "Piece of Aerosiderite",
+        "Sturdy Bone Shard",
+        "Shimmering Nectar",
+        "Bit of Aerosiderite",
+        "Fossilized Bone Shard",
+        "Energy Nectar",
+        "Chunk of Aerosiderite"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

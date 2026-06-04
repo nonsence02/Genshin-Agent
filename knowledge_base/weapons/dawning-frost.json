@@ -1,0 +1,48 @@
+{
+  "id": "dawning-frost",
+  "name": "Dawning Frost",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dawning_Frost",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "For after a Charged Attack hits an opponent, Elemental Mastery is increased by. For after an Elemental Skill hits an opponent. Elemental Mastery is increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Artful Device Fragment",
+        "Frostnight's Glimmer",
+        "Tattered Warrant",
+        "Artful Device Replica",
+        "Frostnight's Glow",
+        "Immaculate Warrant",
+        "Artful Device Inheritance",
+        "Frostnight's Glory",
+        "Frost-Etched Warrant",
+        "Artful Device Wish"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

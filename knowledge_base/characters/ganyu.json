@@ -1,0 +1,92 @@
+{
+  "id": "ganyu",
+  "name": "Ganyu",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ganyu",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Cryo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Leaving a single Ice Lotus behind, Ganyu dashes backward, shunning all impurity and dealing AoE Cryo DMG. Ice Lotus Continuously taunts surrounding opponents, attracting them to attack it. Endurance scales based on Ganyu's Max HP. Blooms profusely when destroyed or once its duration ends, dealing AoE Cryo DMG. This skill generates elemental particles when the Ice Lotus hits at least target, and elemental particles when the explosion hits at least target. Constellation Effects Constellation Level, The Auspicious: \" Trail of the Qilin gains additional charge.\" Constellation Level, The Merciful: Increases this talent's level by, up to a maximum of. Constellation Level, The Clement: \"Using...",
+    "elemental_burst": "Coalesces atmospheric frost and snow to summon a Sacred Cryo Pearl that exorcises evil. During its ability duration, the Sacred Cryo Pearl will continuously rain down shards of ice, striking opponents within an AoE and dealing Cryo DMG. This ability will drop up to icicles over its duration, with each icicle targeting a random enemy that has not been targeted by the last icicles. Ice Shard DMG will snapshot Ganyu's stats on cast and will not be affected by changes in her stats that occur afterwards. Passive Effects Passive Talent, Harmony between Heaven and Earth: \" Celestial Shower grants a"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "special": [
+        "Qingxin",
+        "Hoarfrost Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Diligence",
+        "Guide to Diligence",
+        "Philosophies of Diligence"
+      ],
+      "mob_drops": [
+        "Whopperflower Nectar",
+        "Shimmering Nectar"
+      ],
+      "weekly_boss": [
+        "Shadow of the Warrior"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "oathsworn-eye",
+  "name": "Oathsworn Eye",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Oathsworn_Eye",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Increases Energy Recharge by for after using an Elemental Skill.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Coral Branch of a Distant Sea",
+        "Concealed Claw",
+        "Spectral Husk",
+        "Jeweled Branch of a Distant Sea",
+        "Concealed Unguis",
+        "Spectral Heart",
+        "Jade Branch of a Distant Sea",
+        "Concealed Talon",
+        "Spectral Nucleus",
+        "Golden Branch of a Distant Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

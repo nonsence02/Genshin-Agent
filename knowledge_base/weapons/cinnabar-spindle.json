@@ -1,0 +1,47 @@
+{
+  "id": "cinnabar-spindle",
+  "name": "Cinnabar Spindle",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Cinnabar_Spindle",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "DEF"
+  },
+  "passive": "Elemental Skill DMG is increased by of DEF. The will be triggered no more than once every and will be cleared after the Elemental Skill deals DMG.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Chaos Device",
+        "Damaged Mask",
+        "Debris of Decarabian's City",
+        "Chaos Circuit",
+        "Stained Mask",
+        "Fragment of Decarabian's Epic",
+        "Ominous Mask",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

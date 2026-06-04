@@ -1,0 +1,94 @@
+{
+  "id": "chiori",
+  "name": "Chiori",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Chiori",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Dashes nimbly forward with silken steps. Once this dash ends, Chiori will summon the automaton doll \" Tamoto \" beside her and sweep her blade upward, dealing AoE Geo DMG to nearby opponents based on her ATK and DEF. Holding the Skill will cause it to behave differently. Hold Enter Aiming Mode to adjust the dash direction. Tamoto Will slash at nearby opponents at intervals, dealing AoE Geo DMG based on Chiori's ATK and DEF. While active, if there are nearby Geo Construct(s) or Geo Construct (s) are created nearby, an additional Tamoto will be summoned next to your active character. Only additional Tamoto can be summoned in this manner, and its duration is independently counted. When Tamoto...",
+    "elemental_burst": "Twin blades leave their sheaths as Chiori slices with the clean cuts of a master tailor, dealing AoE Geo DMG based on her ATK and DEF. Constellation Effects Constellation Level, In Five Colors Dyed: \"For after using Hiyoku: Twin Blades, a simplified automaton doll, 'Kinu,' will be summoned next to your active character. Kinu will attack nearby opponents, dealing AoE Geo DMG equivalent to"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Spectral Husk",
+        "Spectral Heart",
+        "Spectral Nucleus"
+      ],
+      "special": [
+        "Dendrobium",
+        "Artificed Spare Clockwork Component — Coppelia"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Light",
+        "Guide to Light",
+        "Philosophies of Light"
+      ],
+      "mob_drops": [
+        "Spectral Husk",
+        "Spectral Heart",
+        "Spectral Nucleus"
+      ],
+      "weekly_boss": [
+        "Lightless Silk String"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "lions-roar",
+  "name": "Lion's Roar",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Lion%27s_Roar",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Increases DMG against enemies affected by Pyro or Electro by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Hunter's Sacrificial Knife",
+        "Treasure Hoarder Insignia",
+        "Lustrous Stone from Guyun",
+        "Agent's Sacrificial Knife",
+        "Silver Raven Insignia",
+        "Relic from Guyun",
+        "Inspector's Sacrificial Knife",
+        "Golden Raven Insignia",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

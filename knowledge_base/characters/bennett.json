@@ -1,0 +1,94 @@
+{
+  "id": "bennett",
+  "name": "Bennett",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Bennett",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Pyro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Bennett puts all his fire and passion for adventuring into his sword. Results may vary based on how fired up he is... (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) A single, swift flame strike that deals Pyro DMG. Hold (Short) Charges up, resulting in different effects when unleashed based on the Charge Level. Level: Strikes twice, dealing Pyro DMG and launching opponents. Level: Unleashes consecutive attacks that deal impressive Pyro DMG, but the last attack triggers an explosion that launches both Bennett and the enemy. Bennett takes no damage from being launched. When this skill hits at least one enemy, it generates Elemental Particles if it was...",
+    "elemental_burst": "Bennett performs a jumping attack that deals Pyro DMG, creating an Inspiration Field. Inspiration Field If the health of a character within the AoE is equal to or falls below"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "special": [
+        "Windwheel Aster",
+        "Everflame Seed"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Resistance",
+        "Guide to Resistance",
+        "Philosophies of Resistance"
+      ],
+      "mob_drops": [
+        "Treasure Hoarder Insignia",
+        "Silver Raven Insignia",
+        "Golden Raven Insignia"
+      ],
+      "weekly_boss": [
+        "Dvalin's Plume"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

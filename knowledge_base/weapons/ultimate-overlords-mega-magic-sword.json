@@ -1,0 +1,48 @@
+{
+  "id": "ultimate-overlords-mega-magic-sword",
+  "name": "\"Ultimate Overlord's Mega Magic Sword\"",
+  "source_url": "https://genshin-impact.fandom.com/wiki/%22Ultimate_Overlord%27s_Mega_Magic_Sword%22",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "ATK increased by. That's not all! The support from all Melusines you've helped in Merusea Village fills you with strength! Based on the number of them you've helped, your ATK is increased by up to an additional.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Broken Goblet of the Pristine Sea",
+        "Old Operative's Pocket Watch",
+        "Meshing Gear",
+        "Wine Goblet of the Pristine Sea",
+        "Operative's Standard Pocket Watch",
+        "Mechanical Spur Gear",
+        "Silver Goblet of the Pristine Sea",
+        "Operative's Constancy",
+        "Artificed Dynamic Gear",
+        "Golden Goblet of the Pristine Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

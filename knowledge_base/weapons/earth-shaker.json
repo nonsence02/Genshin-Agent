@@ -1,0 +1,48 @@
+{
+  "id": "earth-shaker",
+  "name": "Earth Shaker",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Earth_Shaker",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "After a party member triggers a Pyro -related reaction, the equipping character's Elemental Skill DMG is increased by for. This can be triggered even when the triggering party member is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Blazing Sacrificial Heart's Terror",
+        "Ignited Stone",
+        "Sentry's Wooden Whistle",
+        "Blazing Sacrificial Heart's Hesitance",
+        "Ignited Seed of Life",
+        "Warrior's Metal Whistle",
+        "Blazing Sacrificial Heart's Resolve",
+        "Ignited Seeing Eye",
+        "Saurian-Crowned Warrior's Golden Whistle",
+        "Blazing Sacrificial Heart's Splendor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

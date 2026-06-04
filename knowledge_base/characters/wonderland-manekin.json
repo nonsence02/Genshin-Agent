@@ -1,0 +1,72 @@
+{
+  "id": "wonderland-manekin",
+  "name": "Wonderland Manekin",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Wonderland_Manekin",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Не найдено",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "The Manekin attacks nearby opponents once, dealing AoE DMG corresponding to their own Elemental Type before pulling back rapidly. After unleashing an Elemental Skill, the Manekin's Normal Attacks, Charged Attacks, and Plunging Attacks are converted to deal the corresponding elemental DMG, which cannot be overridden by other Elemental infusions, for a period of time. This effect will disappear when the Manekin leaves the field. Has charges. When this skill hits at least one enemy, it generates Elemental Particles.",
+    "elemental_burst": "The Manekin summons a \"Restricted Area\" that follows them around, dealing instance of DMG corresponding to the Manekin's Elemental Type to nearby opponents. Additionally, when opponents enter the Restricted Area, they will receive instance of DMG corresponding to the Manekin's Elemental Type. This effect can trigger once. The Restricted Area will disappear when the Manekin leaves the field."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [],
+      "mob_drops": [],
+      "special": []
+    },
+    "talents": {
+      "books": [],
+      "mob_drops": [],
+      "weekly_boss": [],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

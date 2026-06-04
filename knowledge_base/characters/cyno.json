@@ -1,0 +1,94 @@
+{
+  "id": "cyno",
+  "name": "Cyno",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Cyno",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Performs a swift thrust, dealing Electro DMG to opponents along the path. When Cyno is under the Pathsworn Pathclearer state triggered by Sacred Rite: Wolf's Swiftness, he will instead unleash a Mortuary Rite that deals thunderous AoE Electro DMG and extends the duration of Pathsworn Pathclearer. When Skill DMG hits at least one enemy, it generates Elemental Particles. When Mortuary Rite DMG hits at least one enemy, it generates Elemental Particles. When this skill is used, both CDs will be triggered. When outside of his Elemental Burst, the normal CD will be used. During his Elemental Burst, the Mortuary Rite CD will be used. The unused CD will still run in the background. For example: If...",
+    "elemental_burst": "Calls upon a divine spirit to indwell him, morphing into the Pactsworn Pathclearer. Pactsworn Pathclearer Cyno's Normal, Charged, and Plunging Attacks will be converted to Electro DMG that cannot be overridden. Cyno's Elemental Mastery and resistance to interruption will increase, and he gains immunity to Electro-Charged DMG. This effect will be canceled when Cyno leaves the field and lasts a maximum of. Cyno's Normal Attack under the Pactsworn Pathclearer state can be manually steered mid-animation using direction controls. Passive Effects Passive Talent, Featherfall Judgment: \"When Cyno is in the Pactsworn Pathclearer state activated by Sacred Rite: Wolf's Swiftness, Cyno will enter the..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "special": [
+        "Scarab",
+        "Thunderclap Fruitcore"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Admonition",
+        "Guide to Admonition",
+        "Philosophies of Admonition"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "weekly_boss": [
+        "Mudra of the Malefic General"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

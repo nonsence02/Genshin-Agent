@@ -1,0 +1,14 @@
+{
+  "id": "artful-device-replica",
+  "name_en": "Artful Device Replica",
+  "type": "Weapon Ascension Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Lost Mooncourt (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Artful_Device_Replica"
+}

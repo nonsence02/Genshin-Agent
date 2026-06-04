@@ -1,0 +1,48 @@
+{
+  "id": "finale-of-the-deep",
+  "name": "Finale of the Deep",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Finale_of_the_Deep",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "When using an Elemental Skill, ATK will be increased by for, and a Bond of Life worth of Max HP will be granted. This can be triggered once every. When the Bond of Life is cleared, a maximum of ATK will be gained based on of the total amount of the Life Bond cleared, lasting for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dross of Pure Sacred Dewdrop",
+        "Drop of Tainted Water",
+        "Old Handguard",
+        "Sublimation of Pure Sacred Dewdrop",
+        "Scoop of Tainted Water",
+        "Kageuchi Handguard",
+        "Spring of Pure Sacred Dewdrop",
+        "Newborn Tainted Hydro Phantasm",
+        "Famed Handguard",
+        "Essence of Pure Sacred Dewdrop"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

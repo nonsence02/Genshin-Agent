@@ -1,0 +1,48 @@
+{
+  "id": "lightbearing-moonshard",
+  "name": "Lightbearing Moonshard",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Lightbearing_Moonshard",
+  "profile": {
+    "type": "Sword",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "Increases DEF by. DMG inflicted by Lunar-Crystallize reactions increases by for after the equipping character uses an Elemental Skill.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Grain of Aerosiderite",
+        "Mistshroud Manifestation",
+        "Broken Drive Shaft",
+        "Piece of Aerosiderite",
+        "Mistshroud Plate",
+        "Reinforced Drive Shaft",
+        "Bit of Aerosiderite",
+        "Mistshroud Helmet",
+        "Precision Drive Shaft",
+        "Chunk of Aerosiderite"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

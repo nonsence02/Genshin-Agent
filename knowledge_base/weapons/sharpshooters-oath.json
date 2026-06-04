@@ -1,0 +1,44 @@
+{
+  "id": "sharpshooters-oath",
+  "name": "Sharpshooter's Oath",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sharpshooter%27s_Oath",
+  "profile": {
+    "type": "Bow",
+    "rarity": "3★",
+    "base_atk": "39 - 401",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "Increases DMG against weak spots by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Slime Condensate",
+        "Dead Ley Line Leaves",
+        "Slime Secretions",
+        "Ley Line Sprout",
+        "Slime Concentrate"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

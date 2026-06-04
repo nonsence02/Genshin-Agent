@@ -1,0 +1,48 @@
+{
+  "id": "whiteblind",
+  "name": "Whiteblind",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Whiteblind",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "DEF"
+  },
+  "passive": "On hit, Normal or Charged Attacks increase ATK and DEF by for. Max stacks. Can only occur once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Hunter's Sacrificial Knife",
+        "Treasure Hoarder Insignia",
+        "Lustrous Stone from Guyun",
+        "Agent's Sacrificial Knife",
+        "Silver Raven Insignia",
+        "Relic from Guyun",
+        "Inspector's Sacrificial Knife",
+        "Golden Raven Insignia",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

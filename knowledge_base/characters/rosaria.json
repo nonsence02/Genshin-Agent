@@ -1,0 +1,94 @@
+{
+  "id": "rosaria",
+  "name": "Rosaria",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Rosaria",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Cryo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Rosaria swiftly shifts her position to appear behind her opponent, then stabs and slashes them with her polearm, dealing Cryo DMG. This ability cannot be used to travel behind opponents of a larger build. When the slash hits at least one enemy, it generates Elemental Particles. Rosaria cannot use this skill to appear behind larger enemies, such as Ruin Guards. Passive Effects Passive Talent, Regina Probationum: \"When Rosaria strikes an opponent from behind using Ravaging Confession, Rosaria's CRIT Rate increases by",
+    "elemental_burst": "Rosaria's unique take on this prayer ritual: First, she swings her weapon to slash surrounding opponents; then, she summons a frigid Ice Lance that strikes the ground. Both actions deal Cryo DMG. While active, the Ice Lance periodically releases a blast of cold air, dealing Cryo DMG to surrounding opponents. Ice Lance releases a blast of cold air every seconds for a total of blasts. Passive Effects Passive Talent, Shadow Samaritan: increases the CRIT Rate of nearby party members (except Rosaria herself) by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "special": [
+        "Valberry",
+        "Hoarfrost Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ballad",
+        "Guide to Ballad",
+        "Philosophies of Ballad"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "weekly_boss": [
+        "Shadow of the Warrior"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

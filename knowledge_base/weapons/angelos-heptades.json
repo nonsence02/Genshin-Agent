@@ -1,0 +1,48 @@
+{
+  "id": "angelos-heptades",
+  "name": "Angelos' Heptades",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Angelos%27_Heptades",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "49 - 741",
+    "secondary_stat": "ATK"
+  },
+  "passive": "ATK is increased by. After the equipping character creates a Shield, they gain \"Pathfinder's Light\" for: Increases your active party member's DMG by for every ATK the equipping character has, up to a maximum of. Additionally, when the equipping character creates a Shield, they will also gain \"Guide's Contentment\": Restores Elemental Energy to the equipping character. The aforementioned can trigger once every, and can also be triggered when any type of chest is opened outside of combat. The equipping character may trigger this even when they are an off-field. Hexerei: Secret Rite: When your own Hexerei character is off-field in the party, they will also gain of the DMG increase from...",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Artful Device Fragment",
+        "Faded Flaming Hilt",
+        "Broken Drive Shaft",
+        "Artful Device Replica",
+        "Fractured Flaming Hilt",
+        "Reinforced Drive Shaft",
+        "Artful Device Inheritance",
+        "Jeweled Flaming Hilt",
+        "Precision Drive Shaft",
+        "Artful Device Wish"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

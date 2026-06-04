@@ -1,0 +1,48 @@
+{
+  "id": "mappa-mare",
+  "name": "Mappa Mare",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Mappa_Mare",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Triggering an Elemental reaction grants a Elemental DMG Bonus for. Max stacks.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Grain of Aerosiderite",
+        "Fragile Bone Shard",
+        "Slime Condensate",
+        "Piece of Aerosiderite",
+        "Sturdy Bone Shard",
+        "Slime Secretions",
+        "Bit of Aerosiderite",
+        "Fossilized Bone Shard",
+        "Slime Concentrate",
+        "Chunk of Aerosiderite"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "alhaitham",
+  "name": "Alhaitham",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Alhaitham",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Dendro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Rushes forward, dealing Dendro DMG to nearby opponents when the rush ends, causing a Chisel-Light Mirror to form. Holding this skill will cause it to behave differently. Hold Enters Aiming Mode to adjust the direction of Alhaitham's rush attack. Chisel-Light Mirror When this skill is unleashed, Alhaitham will generate Chisel-Light Mirror. If there are no Mirrors at this time, he will generate additional Mirror. Chisel-Light Mirrors will have the following properties: When he possesses Chisel-Light Mirrors, Alhaitham's Normal, Charged, and Plunging Attacks will be converted to Dendro DMG. This cannot be overridden. When attacks of the aforementioned kinds hit opponents, the Chisel-Light...",
+    "elemental_burst": "Creates a Particular Binding Field and deals multiple instances of AoE Dendro DMG. If Chisel-Light Mirrors exist when this ability is unleashed, all such Mirrors will be consumed and increase the number of DMG instances dealt. after this ability is unleashed, if Mirrors were consumed, Alhaitham will generate new Mirrors in turn. DMG dealt by this skill will snapshot Alhaitham's stats on cast and will not be affected by changes in his stats that occur afterwards. If the player switches to a different character and back to Alhaitham within after using this skill, Alhaitham will still be able to regenerate Mirrors. However, if the player fails to switch back within, the Mirrors will not be..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Nagadus Emerald Sliver",
+        "Nagadus Emerald Fragment",
+        "Nagadus Emerald Chunk",
+        "Nagadus Emerald Gemstone"
+      ],
+      "mob_drops": [
+        "Faded Red Satin",
+        "Trimmed Red Silk",
+        "Rich Red Brocade"
+      ],
+      "special": [
+        "Sand Grease Pupa",
+        "Pseudo-Stamens"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ingenuity",
+        "Guide to Ingenuity",
+        "Philosophies of Ingenuity"
+      ],
+      "mob_drops": [
+        "Faded Red Satin",
+        "Trimmed Red Silk",
+        "Rich Red Brocade"
+      ],
+      "weekly_boss": [
+        "Mirror of Mushin"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

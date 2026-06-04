@@ -1,0 +1,47 @@
+{
+  "id": "freedom-sworn",
+  "name": "Freedom-Sworn",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Freedom-Sworn",
+  "profile": {
+    "type": "Sword",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases DMG by. When the character wielding this weapon triggers Elemental Reactions, they gain a Sigil of Rebellion. This can be triggered once every and can be triggered even if said character is not on the field. When you possess Sigils of Rebellion, all of them will be consumed and all nearby party members will obtain \"Millennial Movement: Song of Resistance\" for. \"Millennial Movement: Song of Resistance\" increases Normal, Charged, and Plunging Attack DMG by and increases ATK by. Once this is triggered, you will not gain Sigils of Rebellion for. Of the many effects of the \"Millennial Movement,\" buffs of the same type...",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Divining Scroll",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Sealed Scroll",
+        "Shackles of the Dandelion Gladiator",
+        "Forbidden Curse Scroll",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

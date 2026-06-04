@@ -1,0 +1,94 @@
+{
+  "id": "xiao",
+  "name": "Xiao",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xiao",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Anemo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Xiao lunges forward, dealing Anemo DMG to opponents in his path. Can be used in mid-air. Starts with charges. When this skill hits at least one enemy, it generates Elemental Particles. No elemental particles are generated while the Elemental Burst Bane of All Evil is active. A Plunging Attack can be performed immediately after using this skill if it was used after jumping, regardless of Xiao's altitude. When this skill is used above water from a height that is double the jump height and waiting till the ending animation of the skill is played before using the skill again, Wet will be applied to Xiao despite not being close to the water. Passive Effects Passive Talent, Dissolution Eon:...",
+    "elemental_burst": "Xiao dons the Yaksha Mask that set gods and demons trembling millennia ago. Yaksha's Mask Greatly increases Xiao's jumping ability. Increases his attack AoE and attack DMG. Converts attack DMG into Anemo DMG, which cannot be overridden by any other elemental infusion. In this state, Xiao will continuously lose HP. The effects of this skill end when Xiao leaves the field. While donning the Yaksha Mask, Xiao's Interruption Resistance is also increased. The increase to Xiao's jumping ability not only increases the jump height, but increases the speed of him jumping upwards. This does not increase his falling speed. Xiao can perform about Plunging Attacks over this skill's duration. Xiao's..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "special": [
+        "Qingxin",
+        "Juvenile Jade"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Prosperity",
+        "Guide to Prosperity",
+        "Philosophies of Prosperity"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "weekly_boss": [
+        "Shadow of the Warrior"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

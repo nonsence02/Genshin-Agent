@@ -1,0 +1,92 @@
+{
+  "id": "nefer",
+  "name": "Nefer",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Nefer",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Dendro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "A dance that dissolved dynasties, as chilling as a winter's night on the great sea of sand, yet lingering with the tenderness of moonlit gauze. Nefer charges forward, dealing AoE Dendro DMG and entering the Shadow Dance Shadow Dance After using the Elemental Skill Senet Strategy: Dance of a Thousand Nights, Nefer will enter this state. While in the Shadow Dance state, if you have at least Verdant Dew, Nefer's Charged Attacks will be replaced with the special Charged Attack Phantasm Performance. Nefer will exit the Shadow Dance state when she unleashes Phantasm Performance(s) or the state's duration ends. state. While in the Shadow Dance state, if you have at least Verdant Dew Verdant Dew...",
+    "elemental_burst": "Grant \"revelation\" to the mysteries of the false through Thoth 's true sight, dealing AoE Dendro DMG to opponents ahead. When unleashed, Nefer will consume all Veils of Falsehood Veil of Falsehood After absorbing Seeds of Deceit via the Ascension Talent A Wager of Moonlight, Nefer gains this effect, thereby increasing the DMG dealt by her Phantasm Performance. Each stack of Veil of Falsehood increases the DMG dealt by Nefer's Phantasm Performance by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Nagadus Emerald Sliver",
+        "Nagadus Emerald Fragment",
+        "Nagadus Emerald Chunk",
+        "Nagadus Emerald Gemstone"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "special": [
+        "Moonfall Silver",
+        "Radiant Antler"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Elysium",
+        "Guide to Elysium",
+        "Philosophies of Elysium"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "weekly_boss": [],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

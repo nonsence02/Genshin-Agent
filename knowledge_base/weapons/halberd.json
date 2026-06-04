@@ -1,0 +1,48 @@
+{
+  "id": "halberd",
+  "name": "Halberd",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Halberd",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "3★",
+    "base_atk": "40 - 448",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Normal Attacks deal an additional DMG. Can only occur once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Whopperflower Nectar",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Shimmering Nectar",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Energy Nectar",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

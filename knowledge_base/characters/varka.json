@@ -1,0 +1,92 @@
+{
+  "id": "varka",
+  "name": "Varka",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Varka",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Manifest the true essence of Favonius Bladework with absolute power. Produces different effects depending on whether the skill is Tapped or Held. Tap Leap forward and slash in one fluid motion, dealing AoE Anemo DMG and switching to Sturm und Drang Sturm und Drang Tap to unleash Elemental Skill Windbound Execution for Varka to switch to this mode. While in this mode, Varka's Normal Attacks and Charged Attacks deal increased DMG, and he cannot perform Plunging Attacks. When Varka executes Normal or Charged Attacks, his dual-wielded claymores will deal corresponding Elemental DMG based on the Elemental Types of the characters in the party respectively: DMG dealt by the claymore wielded in his...",
+    "elemental_burst": "In the name of the mightiest Knight of Boreas, unleash a powerful double slash attack toward the front, dealing instances of Anemo DMG. If there are Pyro, Hydro, Electro or Cryo characters in the party, the first slash will be converted to deal corresponding Elemental DMG according to the aforementioned priority order of Elemental Types. Constellation Effects Constellation Level, \"Fill High the Cup With Fine Wine, for Tyrants Come and Go\": Increases this talent's level by, up to a maximum of."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "special": [
+        "Wolfhook",
+        "Prismatic Severed Tail"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Freedom",
+        "Guide to Freedom",
+        "Philosophies of Freedom"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "weekly_boss": [],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "nightweavers-looking-glass",
+  "name": "Nightweaver's Looking Glass",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Nightweaver%27s_Looking_Glass",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by for. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by for. When both Prayer of the Far North and New Moon Verse are in, all nearby party members' Bloom DMG is increased by, their Hyperbloom and Burgeon DMG is increased by, and their Lunar-Bloom DMG is increased by. This cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Artful Device Fragment",
+        "Frostnight's Glimmer",
+        "Broken Drive Shaft",
+        "Artful Device Replica",
+        "Frostnight's Glow",
+        "Reinforced Drive Shaft",
+        "Artful Device Inheritance",
+        "Frostnight's Glory",
+        "Precision Drive Shaft",
+        "Artful Device Wish"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

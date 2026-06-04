@@ -1,0 +1,48 @@
+{
+  "id": "favonius-codex",
+  "name": "Favonius Codex",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Favonius_Codex",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "CRIT hits have a chance to generate a small amount of Elemental Particles, which will regenerate Energy for the character. Can only occur once every s.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Divining Scroll",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Sealed Scroll",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Forbidden Curse Scroll",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

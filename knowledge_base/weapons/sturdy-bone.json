@@ -1,0 +1,48 @@
+{
+  "id": "sturdy-bone",
+  "name": "Sturdy Bone",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sturdy_Bone",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Sprint or Alternate Sprint Stamina Consumption decreased by. Additionally, after using Sprint or Alternate Sprint, Normal Attack DMG is increased by of ATK. This expires after triggering times or.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Blazing Sacrificial Heart's Terror",
+        "Shard of a Shattered Will",
+        "Sentry's Wooden Whistle",
+        "Blazing Sacrificial Heart's Hesitance",
+        "Locus of a Clear Will",
+        "Warrior's Metal Whistle",
+        "Blazing Sacrificial Heart's Resolve",
+        "Sigil of a Striding Will",
+        "Saurian-Crowned Warrior's Golden Whistle",
+        "Blazing Sacrificial Heart's Splendor"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

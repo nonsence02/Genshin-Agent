@@ -1,0 +1,94 @@
+{
+  "id": "arataki-itto",
+  "name": "Arataki Itto",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Arataki_Itto",
+  "profile": {
+    "weapon": "Claymore",
+    "element": "Geo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Hurls Ushi, the young akaushi bull and auxiliary member of the Arataki Gang, dealing Geo DMG to opponents on hit. When Ushi hits opponents, Arataki Itto gains stack of Superlative Superstrength. Ushi will remain on the field and provide support in the following ways: Taunts surrounding opponents and draws their attacks. Inherits HP based on a percentage of Arataki Itto's Max HP. When Ushi takes DMG, Arataki Itto gains stack of Superlative Superstrength. Only stack can be gained in this way. Ushi will flee when its HP reaches or its duration ends. It will grant Arataki Itto stack of Superlative Superstrength when it leaves. Hold Adjust throwing angle. Ushi is considered a Geo construct....",
+    "elemental_burst": "Time to show 'em the might of the Arataki Gang! For a time, Itto lets out his inner Raging Oni King, wielding his Oni King's Kanabou in battle. This state has the following special properties: Converts Itto's Normal, Charged, and Plunging Attacks to Geo DMG. This cannot be overridden. Increases Itto's Normal Attack SPD. Also increases his ATK based on his DEF. On hit, the and strikes of his attack combo will each grant Arataki Itto stack of Superlative Superstrength. Decreases Itto's Elemental and Physical RES by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "special": [
+        "Onikabuto",
+        "Riftborn Regalia"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Elegance",
+        "Guide to Elegance",
+        "Philosophies of Elegance"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "weekly_boss": [
+        "Ashen Heart"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

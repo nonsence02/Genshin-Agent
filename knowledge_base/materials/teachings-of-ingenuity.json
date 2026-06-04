@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-ingenuity",
+  "name_en": "Teachings of Ingenuity",
+  "type": "Character Talent Materials",
+  "days": [
+    "Tuesday",
+    "Friday",
+    "Sunday"
+  ],
+  "source": [
+    "Steeple of Ignorance (Tuesday/Friday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Ingenuity"
+}

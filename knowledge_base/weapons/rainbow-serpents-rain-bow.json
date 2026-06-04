@@ -1,0 +1,48 @@
+{
+  "id": "rainbow-serpents-rain-bow",
+  "name": "Rainbow Serpent's Rain Bow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Rainbow_Serpent%27s_Rain_Bow",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "ATK is increased by for after the equipping character's attacks hit an opponent while the equipping character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Night-Wind's Mystic Consideration",
+        "Refractive Bud",
+        "Tattered Warrant",
+        "Night-Wind's Mystic Premonition",
+        "Bewildering Broadleaf",
+        "Immaculate Warrant",
+        "Night-Wind's Mystic Augury",
+        "Illusory Leafcoil",
+        "Frost-Etched Warrant",
+        "Night-Wind's Mystic Revelation"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "philosophies-of-prosperity",
+  "name_en": "Philosophies of Prosperity",
+  "type": "Character Talent Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Taishan Mansion (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Philosophies_of_Prosperity"
+}

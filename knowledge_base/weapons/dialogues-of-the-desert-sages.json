@@ -1,0 +1,44 @@
+{
+  "id": "dialogues-of-the-desert-sages",
+  "name": "Dialogues of the Desert Sages",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dialogues_of_the_Desert_Sages",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "HP"
+  },
+  "passive": "When the wielder performs healing, restore Energy. This can be triggered once every and can occur even when the character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Feathery Fin",
+        "Spectral Husk",
+        "Lunar Fin",
+        "Spectral Heart",
+        "Chasmlight Fin",
+        "Spectral Nucleus"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

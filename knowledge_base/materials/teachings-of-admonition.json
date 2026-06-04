@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-admonition",
+  "name_en": "Teachings of Admonition",
+  "type": "Character Talent Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Steeple of Ignorance (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Admonition"
+}

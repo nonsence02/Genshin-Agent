@@ -1,0 +1,48 @@
+{
+  "id": "crescent-pike",
+  "name": "Crescent Pike",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Crescent_Pike",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Physical DMG Bonus"
+  },
+  "passive": "After picking up an Elemental Orb Particle, Normal and Charged Attacks deal an additional ATK as DMG for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Luminous Sands from Guyun",
+        "Hunter's Sacrificial Knife",
+        "Treasure Hoarder Insignia",
+        "Lustrous Stone from Guyun",
+        "Agent's Sacrificial Knife",
+        "Silver Raven Insignia",
+        "Relic from Guyun",
+        "Inspector's Sacrificial Knife",
+        "Golden Raven Insignia",
+        "Divine Body from Guyun"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "durin",
+  "name": "Durin",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Durin",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Dendro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Purify the substance of souls and wishes to undergo Essential Transmutation Essential Transmutation After unleashing the Elemental Skill Binary Form: Convergence and Division, Durin gains this effect for. While the effect is active, press the Elemental Skill button to enter the Confirmation of Purity state, or press the Normal Attack button to enter the Denial of Darkness state. Durin will gain different buffs and can unleash different Elemental Bursts while in these states.. While transmuted, Durin's Elemental Skill Binary Form: Convergence and Division will be replaced with the special Elemental Skill Transmutation: Confirmation of Purity, and the Normal Attack Radiant Wingslash will be...",
+    "elemental_burst": "Unleash the power of the \"Beast\" in different ways. Durin can use different Elemental Bursts based on his Essential Transmutation Essential Transmutation After unleashing the Elemental Skill Binary Form: Convergence and Division, Durin gains this effect for. While the effect is active, press the Elemental Skill button to enter the Confirmation of Purity state, or press the Normal Attack button to enter the Denial of Darkness state. Durin will gain different buffs and can unleash different Elemental Bursts while in these states. state. Principle of Purity: As the Light Shifts When Durin is in the Confirmation of Purity state, he will use the Elemental Burst Principle of Purity: As the Light..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "special": [
+        "Frostlamp Flower",
+        "Cyclic Military Kuuvahki Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ballad",
+        "Guide to Ballad",
+        "Philosophies of Ballad"
+      ],
+      "mob_drops": [
+        "Tattered Warrant",
+        "Immaculate Warrant",
+        "Frost-Etched Warrant"
+      ],
+      "weekly_boss": [
+        "Eroded Sunfire"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

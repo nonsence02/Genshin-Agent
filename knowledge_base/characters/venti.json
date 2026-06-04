@@ -1,0 +1,94 @@
+{
+  "id": "venti",
+  "name": "Venti",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Venti",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "O wind upon which all hymns and songs fly, bear these earth-walkers up into the sky! (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Summons a Wind Domain at the opponent's location, dealing AoE Anemo DMG and launching opponents into the air. Hold Summons an even larger Wind Domain with Venti as the epicenter, dealing AoE Anemo DMG and launching affected opponents into the air. After unleashing the Hold version of this ability, Venti rides the wind into the air. Opponents hit by Skyward Sonnet will fall to the ground slowly. When this skill hits at least one enemy, it generates Elemental Particles if it was pressed and if it was held. This skill is also...",
+    "elemental_burst": "Fires off an arrow made of countless coalesced winds, creating a huge Stormeye that sucks in opponents and deals continuous Anemo DMG. Elemental Absorption If the Stormeye comes into contact with Hydro / Pyro / Cryo / Electro, it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use. This Elemental Burst drains energy later than most others. [ ] This Elemental Burst begins its cooldown later than most others. [ ] The Stormeye deals × Anemo DMG within seconds. Elemental Absorption deals"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "special": [
+        "Cecilia",
+        "Hurricane Seed"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ballad",
+        "Guide to Ballad",
+        "Philosophies of Ballad"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "weekly_boss": [
+        "Tail of Boreas"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

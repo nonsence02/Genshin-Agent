@@ -1,0 +1,48 @@
+{
+  "id": "sequence-of-solitude",
+  "name": "Sequence of Solitude",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sequence_of_Solitude",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "HP"
+  },
+  "passive": "When an attack hits an opponent, deal AoE DMG equal to of Max HP at the target location. This can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fragment of an Ancient Chord",
+        "Cold-Cracked Shellshard",
+        "Meshing Gear",
+        "Chapter of an Ancient Chord",
+        "Warm Back-Shell",
+        "Mechanical Spur Gear",
+        "Movement of an Ancient Chord",
+        "Blazing Prismshell",
+        "Artificed Dynamic Gear",
+        "Echo of an Ancient Chord"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

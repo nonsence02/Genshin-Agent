@@ -1,0 +1,47 @@
+{
+  "id": "white-iron-greatsword",
+  "name": "White Iron Greatsword",
+  "source_url": "https://genshin-impact.fandom.com/wiki/White_Iron_Greatsword",
+  "profile": {
+    "type": "Claymore",
+    "rarity": "3★",
+    "base_atk": "39 - 401",
+    "secondary_stat": "DEF"
+  },
+  "passive": "Cull the Weak Defeating an opponent restores HP. → Cost Mora ×",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Fetters of the Dandelion Gladiator",
+        "Chaos Device",
+        "Slime Condensate",
+        "Chains of the Dandelion Gladiator",
+        "Chaos Circuit",
+        "Slime Secretions",
+        "Shackles of the Dandelion Gladiator",
+        "Slime Concentrate",
+        "Dream of the Dandelion Gladiator"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

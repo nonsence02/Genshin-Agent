@@ -1,0 +1,94 @@
+{
+  "id": "mualani",
+  "name": "Mualani",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Mualani",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Combining her mastery of speed and the waves and water, Mualani can surf anytime, anywhere. After using this skill, Mualani will gain Nightsoul points and enter the Nightsoul's Blessing state. Nightsoul's Blessing: Mualani Continuously consume Nightsoul points. When they are depleted or when the skill is used again, Mualani's Nightsoul's Blessing will end. The state itself has the following traits: Mualani mounts her Sharky Surfboard, increasing Mualani's Movement SPD and interruption resistance. Mualani can move on water and Liquid Phlogiston while this state is active, and she will take no DMG from the latter. Normal Attacks will be converted to Sharky's Bites, dealing Nightsoul-aligned...",
+    "elemental_burst": "Fires a Super Shark Missile that can track opponents, dealing Nightsoul-aligned AoE Hydro DMG based on Mualani's Max HP. Passive Effects Passive Talent, Natlan's Greatest Guide: \"When a nearby party member triggers a Nightsoul Burst, Mualani will gain stack of Wavechaser's Exploits, which lasts for. Max stacks. When she uses Boomsharka-laka, Mualani will clear all Wavechaser's Exploits stacks and increase the DMG of this Boomsharka-laka by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "special": [
+        "Sprayfeather Gill",
+        "Mark of the Binding Blessing"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Contention",
+        "Guide to Contention",
+        "Philosophies of Contention"
+      ],
+      "mob_drops": [
+        "Sentry's Wooden Whistle",
+        "Warrior's Metal Whistle",
+        "Saurian-Crowned Warrior's Golden Whistle"
+      ],
+      "weekly_boss": [
+        "Lightless Mass"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

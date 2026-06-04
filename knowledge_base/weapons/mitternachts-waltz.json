@@ -1,0 +1,48 @@
+{
+  "id": "mitternachts-waltz",
+  "name": "Mitternachts Waltz",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Mitternachts_Waltz",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Physical DMG Bonus"
+  },
+  "passive": "Normal Attack hits on opponents increase Elemental Skill DMG by for. Elemental Skill hits on opponents increase Normal Attack DMG by for.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Treasure Hoarder Insignia",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Silver Raven Insignia",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Golden Raven Insignia",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

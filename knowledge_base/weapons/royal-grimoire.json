@@ -1,0 +1,48 @@
+{
+  "id": "royal-grimoire",
+  "name": "Royal Grimoire",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Royal_Grimoire",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "ATK"
+  },
+  "passive": "Upon dealing damage to an opponent, increases CRIT Rate by. Max stacks. A CRIT hit removes all existing stacks.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Heavy Horn",
+        "Recruit's Insignia",
+        "Debris of Decarabian's City",
+        "Black Bronze Horn",
+        "Sergeant's Insignia",
+        "Fragment of Decarabian's Epic",
+        "Black Crystal Horn",
+        "Lieutenant's Insignia",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "nilou",
+  "name": "Nilou",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Nilou",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Dendro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Enters the Pirouette state, dealing Hydro DMG to nearby opponents based on Nilou's Max HP. While she is in the Pirouette state, Nilou's Normal Attacks and Elemental Skill will cause her to enter the Sword Dance and Whirling Steps stances respectively, causing DMG she deals to be converted to Hydro DMG that cannot be overridden and that is considered Elemental Skill DMG. In these stances, Nilou's third dance step will end Pirouette, and has the following effects: Sword Dance: unleashes a Luminous Illusion that deals Hydro DMG to opponents it touches and grants Nilou the Lunar Prayer effect. This effect converts Nilou's Normal Attacks into Sword Dance techniques, and her final hit will...",
+    "elemental_burst": "Begins the dance of faraway dreams and springs that hear, causing a Lotus of Distant Waters to bloom, dealing AoE Hydro DMG based on Nilou's Max HP and applying the Lingering Aeon effect to all opponents hit. After an interval, opponents affected by Lingering Aeon will take Hydro DMG. Constellation Effects Constellation Level, Beguiling Shadowstep: Increases this talent's level by, up to a maximum of."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Fungal Spores",
+        "Luminescent Pollen",
+        "Crystalline Cyst Dust"
+      ],
+      "special": [
+        "Padisarah",
+        "Perpetual Caliber"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Praxis",
+        "Guide to Praxis",
+        "Philosophies of Praxis"
+      ],
+      "mob_drops": [
+        "Fungal Spores",
+        "Luminescent Pollen",
+        "Crystalline Cyst Dust"
+      ],
+      "weekly_boss": [
+        "Tears of the Calamitous God"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

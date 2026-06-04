@@ -1,0 +1,94 @@
+{
+  "id": "arlecchino",
+  "name": "Arlecchino",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Arlecchino",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Pyro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Summons forth Balemoon Bloodfire, dealing Pyro DMG to multiple nearby opponents and performing a dash-cleave against one of them, dealing AoE Pyro DMG. Opponents hit by the aforementioned attack will have a Blood-Debt Directive applied to them. Blood-Debt Directive Lasts. Every, it will deal instance of Pyro DMG to the opponent. Max instances. This DMG will be considered Elemental Skill DMG. When Arlecchino uses a Charged Attack or her Elemental Burst, Balemoon Rising, she will absorb and clear nearby Blood-Debt Directives. Each Directive absorbed grants her a Bond of Life worth",
+    "elemental_burst": "Arlecchino's great wing of Balemoon Bloodfire beats as she absorbs and clears Blood-Debt Directives around her. She deals AoE Pyro DMG before clearing the CD of All Is Ash and healing herself. The healing is based on her Bond of Life value and ATK. As Balemoon Rising does not remove Arlecchino's Bond of Life the healing granted by Balemoon Rising is absorbed by Bond of Life bringing the talent's effective healing to"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Fragment of a Golden Melody",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "special": [
+        "Rainbow Rose"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Order",
+        "Guide to Order",
+        "Philosophies of Order"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "weekly_boss": [
+        "Fading Candle"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

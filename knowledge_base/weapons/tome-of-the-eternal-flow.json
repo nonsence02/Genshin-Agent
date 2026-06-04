@@ -1,0 +1,45 @@
+{
+  "id": "tome-of-the-eternal-flow",
+  "name": "Tome of the Eternal Flow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Tome_of_the_Eternal_Flow",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "HP is increased by. When current HP increases or decreases, Charged Attack DMG will be increased by for. Max stacks, can be triggered once every. When you have stacks or refresh a third stack's duration, Energy will be restored. This Energy restoration can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dross of Pure Sacred Dewdrop",
+        "Meshing Gear",
+        "Sublimation of Pure Sacred Dewdrop",
+        "Mechanical Spur Gear",
+        "Spring of Pure Sacred Dewdrop",
+        "Artificed Dynamic Gear",
+        "Essence of Pure Sacred Dewdrop"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

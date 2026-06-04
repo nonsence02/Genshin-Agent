@@ -1,0 +1,94 @@
+{
+  "id": "charlotte",
+  "name": "Charlotte",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Charlotte",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Cryo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Using the keen instincts of an ace reporter, Charlotte uses her photography skills to produce different effects based on whether the ability is Tapped or Held. Tap Takes a snapshot using Monsieur Verite, dealing AoE Cryo DMG to opponents in front of her and applying Snappy Silhouette to a maximum of opponents. During this effect's duration, it will deal Cryo DMG to affected opponents at intervals. Hold Popping Monsieur Verite's viewfinder open, Charlotte enters Composition Mode, and during this time, the viewfinder will expand as you hold until you reach a Finisher Frame state. In this state, Charlotte can move and change direction freely. When the hold state ends, Monsieur Verite will deal...",
+    "elemental_burst": "Condensing ice to create The Steambird's signature, Charlotte creates a Newsflash Field that will deal AoE Cryo DMG and restores HP for all nearby party members based on Charlotte's ATK. Newsflash Field While the ability is active, Monsieur Verite will deal Cryo DMG at intervals to opponents within its AoE. Will continuously restore HP to active character(s) within its AoE based on Charlotte's ATK. Newsflash Field's DMG and healing effects activate a total of times. The interval between most activations is. However, the interval between the and activations is only. Constellation Effects Constellation Level, A Need to Verify Facts: \"After Still Photo: Comprehensive Confirmation heals a..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "special": [
+        "Beryl Conch",
+        "\"Tourbillon Device\""
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Justice",
+        "Guide to Justice",
+        "Philosophies of Justice"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "weekly_boss": [
+        "Lightless Silk String"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

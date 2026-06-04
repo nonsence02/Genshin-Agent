@@ -1,0 +1,48 @@
+{
+  "id": "the-catch",
+  "name": "\"The Catch\"",
+  "source_url": "https://genshin-impact.fandom.com/wiki/%22The_Catch%22",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Increases Elemental Burst DMG by and Elemental Burst CRIT Rate by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mask of the Wicked Lieutenant",
+        "Chaos Gear",
+        "Spectral Husk",
+        "Mask of the Tiger's Bite",
+        "Chaos Axis",
+        "Spectral Heart",
+        "Mask of the One-Horned",
+        "Chaos Oculus",
+        "Spectral Nucleus",
+        "Mask of the Kijin"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

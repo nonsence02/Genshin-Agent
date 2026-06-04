@@ -1,0 +1,48 @@
+{
+  "id": "dragons-bane",
+  "name": "Dragon's Bane",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dragon%27s_Bane",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Increases DMG against opponents affected by Hydro or Pyro by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mist Veiled Lead Elixir",
+        "Mist Grass Pollen",
+        "Divining Scroll",
+        "Mist Veiled Mercury Elixir",
+        "Mist Grass",
+        "Sealed Scroll",
+        "Mist Veiled Gold Elixir",
+        "Mist Grass Wick",
+        "Forbidden Curse Scroll",
+        "Mist Veiled Primo Elixir"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "kagotsurube-isshin",
+  "name": "Kagotsurube Isshin",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kagotsurube_Isshin",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "ATK"
+  },
+  "passive": "When a Normal, Charged, or Plunging Attack hits an opponent, it will whip up a Hewing Gale, dealing AoE DMG equal to of ATK and increasing ATK by for. This can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mask of the Wicked Lieutenant",
+        "Gloomy Statuette",
+        "Spectral Husk",
+        "Mask of the Tiger's Bite",
+        "Dark Statuette",
+        "Spectral Heart",
+        "Mask of the One-Horned",
+        "Deathly Statuette",
+        "Spectral Nucleus",
+        "Mask of the Kijin"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

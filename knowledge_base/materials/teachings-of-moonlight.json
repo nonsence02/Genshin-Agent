@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-moonlight",
+  "name_en": "Teachings of Moonlight",
+  "type": "Character Talent Materials",
+  "days": [
+    "Monday",
+    "Thursday",
+    "Sunday"
+  ],
+  "source": [
+    "Lightless Capital (Monday/Thursday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Moonlight"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "flins",
+  "name": "Flins",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Flins",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Flins summons forth the ancient power concealed within his lamp and switches to his Manifest Flame form. This form has the following characteristics: Flins's Normal and Charged Attacks deal Electro DMG that cannot be overridden by other Elemental infusions, and he is unable to perform Plunging Attacks. His interruption resistance is increased. His Elemental Skill Ancient Rite: Arcane Light is replaced with the special Elemental Skill Northland Spearstorm. Northland Spearstorm Flins summons a flurry of spears in front, dealing AoE Electro DMG and causing his Elemental Burst Ancient Ritual: Cometh the Night to be replaced with the special Elemental Burst Thunderous Symphony Thunderous...",
+    "elemental_burst": "Flins unleashes the true power of his lamp, dealing AoE Electro DMG and, after a short delay, dealing instances of middle-phase and instance of final-phase AoE Electro DMG, all of which are considered Lunar-Charged DMG. Moonsign: Ascendant Gleam: Flins's Skill is enhanced: If there are thunderclouds nearby, Flins will deal an additional instances of middle-phase Lunar-Charged AoE Electro DMG. After using the special Elemental Skill Northland Spearstorm, Flins's Elemental Burst Ancient Ritual: Cometh the Night will be replaced with the special Elemental Burst Thunderous Symphony for the next. Thunderous Symphony Consume less Elemental Energy to unleash a special Elemental Burst. Flins deals..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vajrada Amethyst Sliver",
+        "Vajrada Amethyst Fragment",
+        "Vajrada Amethyst Chunk",
+        "Vajrada Amethyst Gemstone"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "special": [
+        "Frostlamp Flower",
+        "Precision Kuuvahki Stamping Die",
+        "Elemental Gauge Theory",
+        "Interruption Resistance",
+        "Interruption resistance",
+        "CD",
+        "Enemy",
+        "Elemental Particle",
+        "Party",
+        "Elemental Mastery",
+        "Moonsign Benediction Passive",
+        "Electro-Charged",
+        "Lunar-Charged",
+        "Moonsign",
+        "Utility Passive",
+        "Mini-map",
+        "Wild Hunt",
+        "Miniaturized Detection Sensor",
+        "Aino",
+        "Prayers for the Forest",
+        "Lauma",
+        "Wilderness Exile",
+        "Wilderness Hunter"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Vagrancy",
+        "Guide to Vagrancy",
+        "Philosophies of Vagrancy"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "weekly_boss": [],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "faruzan",
+  "name": "Faruzan",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Faruzan",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Anemo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Faruzan deploys a polyhedron that deals AoE Anemo DMG to nearby opponents. She will also enter the Manifest Gale state. While in the Manifest Gale state, Faruzan's next fully charged shot will consume this state and will become a Hurricane Arrow that contains high-pressure currents. This arrow deals Anemo DMG based on the DMG of a fully charged Aimed Shot from \" Normal Attack: Parthian Shot.\" Pressurized Collapse The Hurricane Arrow will apply a Pressurized Collapse effect to the opponent or character hit. This effect will be removed after a short delay, creating a vortex that deals AoE Anemo DMG and pulls nearby objects and opponents in. If the Hurricane Arrow does not hit any opponent or...",
+    "elemental_burst": "Faruzan deploys a Dazzling Polyhedron that unleashes a Whirlwind Pulse and deals AoE Anemo DMG. While the Dazzling Polyhedron persists, it will continuously move along a triangular path. Once it reaches each corner of that triangular path, it will unleash more Whirlwind Pulse. Whirlwind Pulse When the Whirlwind Pulse is unleashed, it will apply Perfidious Wind's Bale to nearby opponents, decreasing their Anemo RES. The Whirlwind Pulse will also apply Prayerful Wind's Benefit to all nearby party members when it is unleashed, granting them an Anemo DMG Bonus. Dazzling Polyhedron unleashes a Whirlwind Pulse on use, and another one every seconds. The skill lasts seconds, for a total of Pulses..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Vayuda Turquoise Sliver",
+        "Vayuda Turquoise Fragment",
+        "Vayuda Turquoise Chunk",
+        "Vayuda Turquoise Gemstone"
+      ],
+      "mob_drops": [
+        "Faded Red Satin",
+        "Trimmed Red Silk",
+        "Rich Red Brocade"
+      ],
+      "special": [
+        "Henna Berry",
+        "Light Guiding Tetrahedron"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Admonition",
+        "Guide to Admonition",
+        "Philosophies of Admonition"
+      ],
+      "mob_drops": [
+        "Faded Red Satin",
+        "Trimmed Red Silk",
+        "Rich Red Brocade"
+      ],
+      "weekly_boss": [
+        "Puppet Strings"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

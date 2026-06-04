@@ -1,0 +1,48 @@
+{
+  "id": "kitain-cross-spear",
+  "name": "Kitain Cross Spear",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kitain_Cross_Spear",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "44 - 565",
+    "secondary_stat": "Elemental Mastery"
+  },
+  "passive": "Increases Elemental Skill DMG by. After Elemental Skill hits an opponent, the character loses Energy but regenerates Energy every for the next. This can occur once every. Can be triggered even when the character is not on the field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mask of the Wicked Lieutenant",
+        "Chaos Gear",
+        "Treasure Hoarder Insignia",
+        "Mask of the Tiger's Bite",
+        "Chaos Axis",
+        "Silver Raven Insignia",
+        "Mask of the One-Horned",
+        "Chaos Oculus",
+        "Golden Raven Insignia",
+        "Mask of the Kijin"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

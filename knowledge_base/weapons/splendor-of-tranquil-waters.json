@@ -1,0 +1,48 @@
+{
+  "id": "splendor-of-tranquil-waters",
+  "name": "Splendor of Tranquil Waters",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Splendor_of_Tranquil_Waters",
+  "profile": {
+    "type": "Sword",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "When the equipping character's current HP increases or decreases, Elemental Skill DMG dealt will be increased by for. Max stacks. This can be triggered once every. When other party members' current HP increases or decreases, the equipping character's Max HP will be increased by for. Max stacks. This can be triggered once every. The aforementioned effects can be triggered even if the wielder is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dross of Pure Sacred Dewdrop",
+        "Drop of Tainted Water",
+        "Transoceanic Pearl",
+        "Sublimation of Pure Sacred Dewdrop",
+        "Scoop of Tainted Water",
+        "Transoceanic Chunk",
+        "Spring of Pure Sacred Dewdrop",
+        "Newborn Tainted Hydro Phantasm",
+        "Xenochromatic Crystal",
+        "Essence of Pure Sacred Dewdrop"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

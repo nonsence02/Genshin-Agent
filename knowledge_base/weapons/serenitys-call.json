@@ -1,0 +1,48 @@
+{
+  "id": "serenitys-call",
+  "name": "Serenity's Call",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Serenity%27s_Call",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Upon causing an Elemental Reaction, increases Max HP by for. Moonsign: Ascendant Gleam: Max HP from this is further increased by. This can be triggered even if the equipping character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Artful Device Fragment",
+        "Frostnight's Glimmer",
+        "Tattered Warrant",
+        "Artful Device Replica",
+        "Frostnight's Glow",
+        "Immaculate Warrant",
+        "Artful Device Inheritance",
+        "Frostnight's Glory",
+        "Frost-Etched Warrant",
+        "Artful Device Wish"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

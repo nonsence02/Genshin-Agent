@@ -1,0 +1,47 @@
+{
+  "id": "reliquary-of-truth",
+  "name": "Reliquary of Truth",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Reliquary_of_Truth",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "44 - 542",
+    "secondary_stat": "CRIT DMG"
+  },
+  "passive": "CRIT Rate is increased by. When the equipping character unleashes an Elemental Skill, they gain the Secret of Lies: Elemental Mastery is increased by for. When the equipping character deals Lunar-Bloom DMG to an opponent, they gain the Moon of Truth: CRIT DMG is increased by for. When both the Secret of Lies and Moon of Truth effects are active at the same time, the results of both effects will be increased by.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Oasis Garden's Reminiscence",
+        "Lightless Bone",
+        "Oasis Garden's Kindness",
+        "Glowing Remains",
+        "Luminescent Pollen",
+        "Oasis Garden's Mourning",
+        "Radiant Exoskeleton",
+        "Crystalline Cyst Dust",
+        "Oasis Garden's Truth"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

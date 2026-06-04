@@ -1,0 +1,94 @@
+{
+  "id": "layla",
+  "name": "Layla",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Layla",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Cryo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Puts forth a shield known as the Curtain of Slumber, dealing AoE Cryo DMG. The Curtain of Slumber's DMG Absorption is based on Layla's Max HP and absorbs Cryo DMG with",
+    "elemental_burst": "Unleashes a Celestial Dreamsphere that constantly fires Starlight Slugs at opponents within its AoE, dealing Cryo DMG. When a Starlight Slug hits, it will generate Night Star for nearby Curtains of Slumber. Each Curtain of Slumber can gain Night Star this way. A Starlight Slug is fired once every seconds. A total of Starlight Slugs can be fired throughout this skill's duration. Starlight Slug DMG will snapshot Layla's stats on cast and will not be affected by changes in her stats that occur afterwards. Constellation Effects Constellation Level, Stream of Consciousness: Increases this talent's level by, up to a maximum of. Constellation Level, Radiant Soulfire: \"Shooting Stars from Nights of..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "special": [
+        "Nilotpala Lotus",
+        "Perpetual Caliber"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Ingenuity",
+        "Guide to Ingenuity",
+        "Philosophies of Ingenuity"
+      ],
+      "mob_drops": [
+        "Divining Scroll",
+        "Sealed Scroll",
+        "Forbidden Curse Scroll"
+      ],
+      "weekly_boss": [
+        "Mirror of Mushin"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

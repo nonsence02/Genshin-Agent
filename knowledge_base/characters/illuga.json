@@ -1,0 +1,94 @@
+{
+  "id": "illuga",
+  "name": "Illuga",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Illuga",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Hydro",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Summons the trusty messenger bird, \"Aedon.\" Different effects are produced depending on whether the skill is Tapped or Held. Tap Aedon dashes towards enemies in front, dealing Geo DMG to enemies it comes into contact with. Hold Enter aiming mode, and command Aedon to dash towards opponents being aimed at, dealing Geo DMG to opponents it comes into contact with. When this skill hits at least one enemy, it generates Elemental Particles. Passive Effects Passive Talent, Torchforger's Covenant: \"After unleashing Elemental Skill Dawnbearing Songbird Dawnbearing Songbird Summons the trusty messenger bird, 'Aedon.' Different effects are produced depending on whether the skill is Tapped or Held. Tap...",
+    "elemental_burst": "Light the lamp, dealing AoE Geo DMG, and gain Haunted Night's Oriole-Song effect for. When this effect is active, Illuga gains stacks of Nightingale's Song Nightingale's Song The effect gained after Illuga unleashes his Elemental Burst Shadowless Reflection. It can increase the Geo DMG inflicted by current active characters.. When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal Geo DMG to opponents, stack of Nightingale’s Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga’s Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further. When Geo DMG dealt..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Prithiva Topaz Sliver",
+        "Prithiva Topaz Fragment",
+        "Prithiva Topaz Chunk",
+        "Prithiva Topaz Gemstone"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "special": [
+        "Pine Amber",
+        "Cyclic Military Kuuvahki Core"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Elysium",
+        "Guide to Elysium",
+        "Philosophies of Elysium"
+      ],
+      "mob_drops": [
+        "Broken Drive Shaft",
+        "Reinforced Drive Shaft",
+        "Precision Drive Shaft"
+      ],
+      "weekly_boss": [
+        "Eroded Horn"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

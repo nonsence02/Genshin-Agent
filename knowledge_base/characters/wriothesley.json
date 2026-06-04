@@ -1,0 +1,94 @@
+{
+  "id": "wriothesley",
+  "name": "Wriothesley",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Wriothesley",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Cryo",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Adjusting his breathing, rhythm, and pace, Wriothesley sprints forward a short distance, entering the Chilling Penalty state and unleashing more powerful attacks than before. Chilling Penalty Increases Wriothesley's interruption resistance When his HP is above",
+    "elemental_burst": "Activating his boxing gloves, Wriothesley strikes out with an icy straight, then uses Icicle Impact to cause multiple instances of AoE Cryo DMG in a frontal area. Arkhe: Ousia After Icicle Impact ends, a Surging Blade will descend upon the opponent's position, dealing Ousia-aligned Cryo DMG. Constellation Effects Constellation Level, Shackles for the Arrogant: \"When using Darkgold Wolfbite, each Prosecution Edict stack from the Ascension Talent ' There Shall Be a Reckoning for Sin ' will increase said ability's DMG dealt by"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "special": [
+        "Subdetection Unit",
+        "\"Tourbillon Device\""
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Order",
+        "Guide to Order",
+        "Philosophies of Order"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "weekly_boss": [
+        "Primordial Greenbloom"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

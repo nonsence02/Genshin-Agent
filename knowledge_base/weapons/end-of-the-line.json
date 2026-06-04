@@ -1,0 +1,47 @@
+{
+  "id": "end-of-the-line",
+  "name": "End of the Line",
+  "source_url": "https://genshin-impact.fandom.com/wiki/End_of_the_Line",
+  "profile": {
+    "type": "Bow",
+    "rarity": "4★",
+    "base_atk": "42 - 510",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "Triggers the Flowrider after using an Elemental Skill, dealing ATK as AoE DMG upon hitting an opponent with an attack. Flowrider will be removed after or after causing instances of AoE DMG. Only instance of AoE DMG can be caused every in this way. Flowrider can be triggered once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Echo of Scorching Might",
+        "Inactivated Fungal Nucleus",
+        "Remnant Glow of Scorching Might",
+        "Dormant Fungal Nucleus",
+        "Luminescent Pollen",
+        "Dream of Scorching Might",
+        "Robust Fungal Nucleus",
+        "Crystalline Cyst Dust",
+        "Olden Days of Scorching Might"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

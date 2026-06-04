@@ -1,0 +1,48 @@
+{
+  "id": "amenoma-kageuchi",
+  "name": "Amenoma Kageuchi",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Amenoma_Kageuchi",
+  "profile": {
+    "type": "Sword",
+    "rarity": "4★",
+    "base_atk": "41 - 454",
+    "secondary_stat": "ATK"
+  },
+  "passive": "After casting an Elemental Skill, gain Succession Seed. This can be triggered once every. The Succession Seed lasts for. Up to Succession Seeds may exist simultaneously. After using an Elemental Burst, all Succession Seeds are consumed and after, the character regenerates Energy for each seed consumed.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Coral Branch of a Distant Sea",
+        "Chaos Gear",
+        "Old Handguard",
+        "Jeweled Branch of a Distant Sea",
+        "Chaos Axis",
+        "Kageuchi Handguard",
+        "Jade Branch of a Distant Sea",
+        "Chaos Oculus",
+        "Famed Handguard",
+        "Golden Branch of a Distant Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

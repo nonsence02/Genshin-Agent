@@ -1,0 +1,94 @@
+{
+  "id": "lyney",
+  "name": "Lyney",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Lyney",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Pyro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Lyney does a flourish with his hat, unleashing a firework surprise! When used, he will clear all current Prop Surplus stacks and deal AoE Pyro DMG to opponents in front of him. DMG will be increased according to the stacks cleared, and this will also regenerate Lyney's HP based on his Max HP. When a Grin-Malkin Hat created by Lyney is on the field, the fireworks will cause it to explode, dealing AoE Pyro DMG equal to that of a Pyrotechnic Strike. The DMG dealt through the Grin-Malkin Hat in this way is considered Charged Attack DMG. When this skill hits at least one enemy, it generates Elemental Particles. This Elemental Skill can be used in Aiming Mode. If used, Lyney will exit Aiming Mode.",
+    "elemental_burst": "Unleashing his magic, Lyney turns himself into a Grin-Malkin Cat that can move around quickly. (Not to be mistaken for the Grin-Malkin Hat. They're two different props!) When the Grin-Malkin Cat gets close to opponents, it will send flames falling down on them, dealing at most instance of Pyro DMG to each opponent. When the duration ends, he will dismiss the Grin-Malkin Cat and ignite fireworks that deal AoE Pyro DMG, summon Grin-Malkin Hat, and grant himself Prop Surplus stack. Grin-Malkin Cat can be actively canceled. While in the Grin-Malkin Cat state, Lyney gains a"
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "special": [
+        "Rainbow Rose",
+        "Emperor's Resolution"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Equity",
+        "Guide to Equity",
+        "Philosophies of Equity"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "weekly_boss": [
+        "Primordial Greenbloom"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

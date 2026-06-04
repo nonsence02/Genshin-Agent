@@ -1,0 +1,48 @@
+{
+  "id": "everlasting-moonglow",
+  "name": "Everlasting Moonglow",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Everlasting_Moonglow",
+  "profile": {
+    "type": "Catalyst",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "HP"
+  },
+  "passive": "Healing Bonus increased by, Normal Attack DMG is increased by of the Max HP of the character equipping this weapon. For after using an Elemental Burst, Normal Attacks that hit opponents will restore Energy. Energy can be restored this way once every.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Coral Branch of a Distant Sea",
+        "Dismal Prism",
+        "Spectral Husk",
+        "Jeweled Branch of a Distant Sea",
+        "Crystal Prism",
+        "Spectral Heart",
+        "Jade Branch of a Distant Sea",
+        "Polarizing Prism",
+        "Spectral Nucleus",
+        "Golden Branch of a Distant Sea"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

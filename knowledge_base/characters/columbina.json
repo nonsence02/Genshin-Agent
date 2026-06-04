@@ -1,0 +1,94 @@
+{
+  "id": "columbina",
+  "name": "Columbina",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Columbina",
+  "profile": {
+    "weapon": "Catalyst",
+    "element": "Electro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Awaken Moonbound Tides, dealing AoE Hydro DMG and summoning Gravity Ripple Gravity Ripple After unleashing Elemental Skill Eternal Tides, Columbina will summon Gravity Ripple. Gravity Ripple will follow the current active character on the field, while continuously dealing AoE Hydro DMG to surrounding opponents. Additionally, while Gravity Ripple is on the field, and nearby party members trigger Lunar reactions or inflict Lunar Reaction DMG, Columbina will gain the New Moon's Omen effect for, continuously accumulating Gravity. Gravity can be accumulated. You can have up to Gravity, and it will be removed when the duration of Gravity Ripple ends. Once Gravity is accumulated to its limit, a...",
+    "elemental_burst": "Hills and tides unite under the silver light of a pristine new moon. Temporarily transforms the surrounding terrain into Lunar Domain Lunar Domain The domain that Columbina summons after unleashing the Elemental Burst Moonlit Melancholy. When current active characters are within the Lunar Domain, Lunar Reaction DMG inflicted by all party members will increase., dealing AoE Hydro DMG. Constellation Effects Constellation Level, Silence Tending One Lone Song: Increases this talent's level by, up to a maximum of. Constellation Level, Through Darkness Led by Moonlight: \"For after characters in the Lunar Domain Lunar Domain The domain that Columbina summons after unleashing the Elemental Burst..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "special": [
+        "Winter Icelea",
+        "Radiant Antler"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Moonlight",
+        "Guide to Moonlight",
+        "Philosophies of Moonlight"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "weekly_boss": [
+        "Mask of the Virtuous Doctor"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "xiangling",
+  "name": "Xiangling",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xiangling",
+  "profile": {
+    "weapon": "Polearm",
+    "element": "Anemo",
+    "rarity": "4★"
+  },
+  "skills": {
+    "elemental_skill": "Summons Guoba, who will continuously breathe fire at opponents, dealing AoE Pyro DMG. When each breath hits at least one enemy, it generates Elemental Particle. After from skill activation, Guoba will breathe fire at opponents every, times. Guoba exists on-field for a total of. After Xiangling gains her first Passive Talent, Crossfire, Guoba's breath attack hits in a -meter-long cone in front of him with a diameter of approximately meters at max range. Unlike Explosive Puppet and Jumpy Dumpty, this skill can not activate pressure plates. Guoba can be picked up by Gust Surge. Flame DMG will snapshot Xiangling's stats on cast and will not be affected by changes in her stats that occur...",
+    "elemental_burst": "Displaying her mastery over both fire and polearms, Xiangling sends a Pyronado whirling around her. The Pyronado will move with your character for the ability's duration, dealing Pyro DMG to all opponents in its path. Pyronado DMG will snapshot Xiangling's stats at the third swing during casting and will not be affected by changes in her stats that occur afterwards. Pyronado takes to complete one cycle if the character has no motion. Once a Pyronado deals DMG, it has a cooldown before being able to deal DMG to the same target again. It can deal DMG more than once per rotation if its hitbox remains in contact with an enemy for more than. This can be accomplished against enemies with large..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Agnidus Agate Sliver",
+        "Agnidus Agate Fragment",
+        "Agnidus Agate Chunk",
+        "Agnidus Agate Gemstone"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "special": [
+        "Jueyun Chili",
+        "Everflame Seed"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Diligence",
+        "Guide to Diligence",
+        "Philosophies of Diligence"
+      ],
+      "mob_drops": [
+        "Slime Condensate",
+        "Slime Secretions",
+        "Slime Concentrate"
+      ],
+      "weekly_boss": [
+        "Dvalin's Claw"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

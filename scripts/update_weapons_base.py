@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 import time
@@ -66,31 +67,25 @@ class WeaponKnowledge:
     passive: str = MISSING
     materials: tuple[str, ...] = ()
 
-    def to_markdown(self) -> str:
-        title_name = title_from_slug(self.slug)
-        title = f"{title_name} ({self.name})" if title_name.casefold() != self.name.casefold() else self.name
-
-        return "\n".join(
-            [
-                f"# {title}",
-                "",
-                "## Характеристики",
-                f"- Тип: {self.weapon_type}",
-                f"- Редкость: {self.rarity}",
-                f"- Базовая атака: {self.base_atk}",
-                f"- Вторичная характеристика: {self.secondary_stat}",
-                f"- Пассивный навык: {self.passive}",
-                "",
-                "## Материалы для прокачки",
-                f"- Материалы: {join_or_missing(self.materials)}",
-                "",
-                "## Стандартная стоимость прокачки (Справочно)",
-                "- **Возвышение (до 90 ур.):** 5 зеленых, 14 синих, 14 фиолетовых, 6 золотых материалов (из подземелий); 15/18/27 с элитных врагов; 10/15/18 с обычных врагов.",
-                "",
-                f"<!-- Source: {self.url} -->",
-                "",
-            ]
-        )
+    def to_json_dict(self) -> dict[str, Any]:
+        return {
+            "id": self.slug,
+            "name": self.name,
+            "source_url": self.url,
+            "profile": {
+                "type": self.weapon_type,
+                "rarity": self.rarity,
+                "base_atk": self.base_atk,
+                "secondary_stat": self.secondary_stat,
+            },
+            "passive": self.passive,
+            "materials": {
+                "ascension": {
+                    "items": list(self.materials),
+                },
+            },
+            "standard_costs": weapon_standard_costs(),
+        }
 
 
 class WikiClient:
@@ -169,8 +164,11 @@ def main() -> int:
         try:
             soup = client.get_soup(link.url)
             knowledge = parse_weapon_page(link, soup)
-            output_path = args.output_dir / f"{knowledge.slug}.md"
-            output_path.write_text(knowledge.to_markdown(), encoding="utf-8")
+            output_path = args.output_dir / f"{knowledge.slug}.json"
+            output_path.write_text(
+                json.dumps(knowledge.to_json_dict(), ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
         except Exception as exc:  # noqa: BLE001 - batch scraping should continue.
             print(f"  ERROR: {exc}", file=sys.stderr)
         time.sleep(args.sleep)
@@ -439,6 +437,16 @@ def clean_rarity(value: str) -> str:
     return f"{match.group(0)}★" if match else MISSING
 
 
+def weapon_standard_costs() -> dict[str, Any]:
+    return {
+        "ascension_90": {
+            "domain_materials": {"green": 5, "blue": 14, "purple": 14, "gold": 6},
+            "elite_drops": {"low": 15, "mid": 18, "high": 27},
+            "common_drops": {"low": 10, "mid": 15, "high": 18},
+        }
+    }
+
+
 def iter_until_next_heading(heading: Any) -> Iterable[Any]:
     current_level = int(heading.name[1]) if getattr(heading, "name", "").startswith("h") else 2
     for sibling in heading.find_all_next():
@@ -493,7 +501,7 @@ def join_or_missing(values: Sequence[str]) -> str:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Scrape English Genshin Impact Fandom Wiki into Markdown weapon KB files."
+        description="Scrape English Genshin Impact Fandom Wiki into JSON weapon KB files."
     )
     parser.add_argument("--list-url", default=DEFAULT_LIST_URL, help="Weapon list page URL.")
     parser.add_argument("--url", default="", help="Parse one concrete weapon page URL.")

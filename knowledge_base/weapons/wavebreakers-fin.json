@@ -1,0 +1,48 @@
+{
+  "id": "wavebreakers-fin",
+  "name": "Wavebreaker's Fin",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Wavebreaker%27s_Fin",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "4★",
+    "base_atk": "45 - 620",
+    "secondary_stat": "ATK"
+  },
+  "passive": "For every point of the entire party's combined maximum Energy capacity, the Elemental Burst DMG of the character equipping this weapon is increased by. A maximum of increased Elemental Burst DMG can be achieved this way.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mask of the Wicked Lieutenant",
+        "Concealed Claw",
+        "Old Handguard",
+        "Mask of the Tiger's Bite",
+        "Concealed Unguis",
+        "Kageuchi Handguard",
+        "Mask of the One-Horned",
+        "Concealed Talon",
+        "Famed Handguard",
+        "Mask of the Kijin"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

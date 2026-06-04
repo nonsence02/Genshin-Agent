@@ -1,0 +1,48 @@
+{
+  "id": "athame-artis",
+  "name": "Athame Artis",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Athame_Artis",
+  "profile": {
+    "type": "Sword",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "CRIT DMG from Elemental Bursts is increased by. When an Elemental Burst hits an opponent, gain the Blade of the Daylight Hours: ATK is increased by. Nearby active party members other than the equipping character have their ATK increased by for. Additionally, when the party possesses Hexerei: Secret Rite effects, the effects of Blade of the Daylight Hours are increased by an additional. This can be triggered even if the equipping character is off-field.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Frostnight's Glimmer",
+        "Broken Drive Shaft",
+        "Debris of Decarabian's City",
+        "Frostnight's Glow",
+        "Reinforced Drive Shaft",
+        "Fragment of Decarabian's Epic",
+        "Frostnight's Glory",
+        "Precision Drive Shaft",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

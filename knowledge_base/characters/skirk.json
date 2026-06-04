@@ -1,0 +1,92 @@
+{
+  "id": "skirk",
+  "name": "Skirk",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Skirk",
+  "profile": {
+    "weapon": "Sword",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Imitates the combat style of \"The Foul.\" Produces different effects depending on whether you Tap or Hold. Tap Skirk gains Serpent's Subtlety Serpent's Subtlety Skirk can consume Serpent's Subtlety to maintain her Seven-Phase Flash mode or to use her Elemental Burst, Havoc: Ruin. Skirk can gain Serpent's Subtlety points in the following ways: After using her Elemental Skill, Havoc: Warp. After triggering the effect of her Ascension Talent, Reason Beyond Reason, and absorbing Void Rifts. When Skirk leaves the field while in Seven-Phase Flash mode or when Seven-Phase Flash ends, her Serpent's Subtlety points will be removed. and switches to Seven-Phase Flash Seven-Phase Flash Skirk will switch...",
+    "elemental_burst": "Skirk's Elemental Burst is not reliant on Elemental Energy but instead on Serpent's Subtlety Serpent's Subtlety Skirk can consume Serpent's Subtlety to maintain her Seven-Phase Flash mode or to use her Elemental Burst, Havoc: Ruin. Skirk can gain Serpent's Subtlety points in the following ways: After using her Elemental Skill, Havoc: Warp. After triggering the effect of her Ascension Talent, Reason Beyond Reason, and absorbing Void Rifts. When Skirk leaves the field while in Seven-Phase Flash mode or when Seven-Phase Flash ends, her Serpent's Subtlety points will be removed.. When Skirk has at least Serpent's Subtlety, she can expend all her Serpent's Subtlety to unleash her Elemental..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Shivada Jade Sliver",
+        "Shivada Jade Fragment",
+        "Shivada Jade Chunk",
+        "Shivada Jade Gemstone"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "special": [
+        "Skysplit Gembloom",
+        "Ensnaring Gaze"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Contention",
+        "Guide to Contention",
+        "Philosophies of Contention"
+      ],
+      "mob_drops": [
+        "Meshing Gear",
+        "Mechanical Spur Gear",
+        "Artificed Dynamic Gear"
+      ],
+      "weekly_boss": [],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-ballad",
+  "name_en": "Teachings of Ballad",
+  "type": "Character Talent Materials",
+  "days": [
+    "Wednesday",
+    "Saturday",
+    "Sunday"
+  ],
+  "source": [
+    "Forsaken Rift (Wednesday/Saturday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Ballad"
+}

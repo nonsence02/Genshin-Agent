@@ -1,0 +1,14 @@
+{
+  "id": "teachings-of-elysium",
+  "name_en": "Teachings of Elysium",
+  "type": "Character Talent Materials",
+  "days": [
+    "Tuesday",
+    "Friday",
+    "Sunday"
+  ],
+  "source": [
+    "Lightless Capital (Tuesday/Friday/Sunday)"
+  ],
+  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Elysium"
+}

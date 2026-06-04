@@ -1,0 +1,44 @@
+{
+  "id": "skyward-harp",
+  "name": "Skyward Harp",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Skyward_Harp",
+  "profile": {
+    "type": "Bow",
+    "rarity": "5★",
+    "base_atk": "48 - 674",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "Increases CRIT DMG by. Hits have a chance to inflict a small AoE attack, dealing Physical ATK DMG. Can only occur once every s.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Dead Ley Line Branch",
+        "Firm Arrowhead",
+        "Dead Ley Line Leaves",
+        "Sharp Arrowhead",
+        "Ley Line Sprout",
+        "Weathered Arrowhead"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

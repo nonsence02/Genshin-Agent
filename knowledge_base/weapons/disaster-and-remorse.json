@@ -1,0 +1,48 @@
+{
+  "id": "disaster-and-remorse",
+  "name": "Disaster and Remorse",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Disaster_and_Remorse",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "5★",
+    "base_atk": "48 - 674",
+    "secondary_stat": "CRIT Rate"
+  },
+  "passive": "After the equipping character uses an Elemental Skill, they gain \"Path of Conflict\" for, as well as \"Unforgivable\" and \"Irreparable\" for each. This can trigger once every. Unforgivable: Increases the equipping character's Normal Attack and Charged Attack DMG by? %. Irreparable: Increases the equipping character's Elemental Skill and Elemental Burst DMG by? %. While Path of Conflict is in, when the equipping character hits an opponent with a Normal Attack or Charged Attack, Irreparable's duration will be increased by. When the equipping character hits an opponent with their Elemental Skill or Elemental Burst, Unforgivable's duration will be increased by. Each of the above effects can be...",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Tile of Decarabian's Tower",
+        "Lightless Bone",
+        "Whopperflower Nectar",
+        "Debris of Decarabian's City",
+        "Glowing Remains",
+        "Shimmering Nectar",
+        "Fragment of Decarabian's Epic",
+        "Radiant Exoskeleton",
+        "Energy Nectar",
+        "Scattered Piece of Decarabian's Dream"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}

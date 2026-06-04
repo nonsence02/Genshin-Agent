@@ -1,0 +1,94 @@
+{
+  "id": "yelan",
+  "name": "Yelan",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Yelan",
+  "profile": {
+    "weapon": "Bow",
+    "element": "Hydro",
+    "rarity": "5★"
+  },
+  "skills": {
+    "elemental_skill": "Fires off a Lifeline that allows her to move rapidly, entangling and marking opponents along its path. When this rapid movement ends, the Lifeline will explode, dealing Hydro DMG to the marked opponents based on Yelan's Max HP. Tap Moves a certain distance forward swiftly. Hold Engages in continuous, swift movement, during which Yelan's resistance to interruption is increased. During this time, Yelan can control this rapid movement and end it by using this Skill again. Additionally, each opponent marked by the Lifeline when it explodes grants Yelan a",
+    "elemental_burst": "Deals AoE Hydro DMG and creates an \"Exquisite Throw,\" which aids her in battle. Exquisite Throw Follows the character around and will initiate a coordinated attack under the following circumstances, dealing Hydro DMG based on Yelan's Max HP: Can occur once every second when your active character uses a Normal Attack. Will occur each time Yelan's Lifeline explodes and hits opponents. Coordinated Attack DMG follows an Internal Cooldown of seconds/ hits. Exquisite Throw DMG does not snapshot and will be affected by changes in Yelan's stats after Depth-Clarion Dice is cast. If Lingering Lifeline is used the maximum amount of times during Exquisite Throw, Exquisite Throw can fire up to times at..."
+  },
+  "materials": {
+    "ascension": {
+      "stones": [
+        "Varunada Lazurite Sliver",
+        "Varunada Lazurite Fragment",
+        "Varunada Lazurite Chunk",
+        "Varunada Lazurite Gemstone"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "special": [
+        "Starconch",
+        "Runic Fang"
+      ]
+    },
+    "talents": {
+      "books": [
+        "Teachings of Prosperity",
+        "Guide to Prosperity",
+        "Philosophies of Prosperity"
+      ],
+      "mob_drops": [
+        "Recruit's Insignia",
+        "Sergeant's Insignia",
+        "Lieutenant's Insignia"
+      ],
+      "weekly_boss": [
+        "Gilded Scale"
+      ],
+      "crown": "Crown of Insight"
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "specialty": 168,
+      "boss": 46,
+      "stones": {
+        "sliver": 1,
+        "fragment": 9,
+        "chunk": 9,
+        "gemstone": 6
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 30,
+        "high": 36
+      }
+    },
+    "talent_10": {
+      "books": {
+        "low": 3,
+        "mid": 21,
+        "high": 38
+      },
+      "mob_drops": {
+        "low": 6,
+        "mid": 22,
+        "high": 31
+      },
+      "weekly_boss": 6,
+      "crown": 1
+    },
+    "three_talents_10": {
+      "books": {
+        "low": 9,
+        "mid": 63,
+        "high": 114
+      },
+      "mob_drops": {
+        "low": 18,
+        "mid": 66,
+        "high": 93
+      },
+      "weekly_boss": 18,
+      "crown": 3
+    }
+  }
+}

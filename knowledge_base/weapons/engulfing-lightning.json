@@ -1,0 +1,48 @@
+{
+  "id": "engulfing-lightning",
+  "name": "Engulfing Lightning",
+  "source_url": "https://genshin-impact.fandom.com/wiki/Engulfing_Lightning",
+  "profile": {
+    "type": "Polearm",
+    "rarity": "5★",
+    "base_atk": "46 - 608",
+    "secondary_stat": "Energy Recharge"
+  },
+  "passive": "ATK increased by of Energy Recharge over the base. You can gain a maximum bonus of ATK. Gain Energy Recharge for after using an Elemental Burst.",
+  "materials": {
+    "ascension": {
+      "items": [
+        "Mask of the Wicked Lieutenant",
+        "Chaos Gear",
+        "Old Handguard",
+        "Mask of the Tiger's Bite",
+        "Chaos Axis",
+        "Kageuchi Handguard",
+        "Mask of the One-Horned",
+        "Chaos Oculus",
+        "Famed Handguard",
+        "Mask of the Kijin"
+      ]
+    }
+  },
+  "standard_costs": {
+    "ascension_90": {
+      "domain_materials": {
+        "green": 5,
+        "blue": 14,
+        "purple": 14,
+        "gold": 6
+      },
+      "elite_drops": {
+        "low": 15,
+        "mid": 18,
+        "high": 27
+      },
+      "common_drops": {
+        "low": 10,
+        "mid": 15,
+        "high": 18
+      }
+    }
+  }
+}
