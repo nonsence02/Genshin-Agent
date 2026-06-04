@@ -21,24 +21,26 @@ DEFAULT_LORE_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
 ALLOWED_TAGS = (
     "Main DPS",
     "Sub DPS",
+    "Карманный урон",
     "Хиллер",
     "Щитовик",
     "Баффер",
-    "Карманный урон",
-    "Enabler",
-    "Аппликатор",
+    "Саппорт",
+    "Элементальный аппликатор",
 )
 
 ROLE_PROMPT = (
-    "Ты — строгий алгоритм классификации для базы данных. "
-    "Твоя единственная задача — выбрать от 1 до 3 тегов из РАЗРЕШЕННОГО СПИСКА, "
-    "которые лучше всего описывают механику талантов персонажа. "
-    "РАЗРЕШЕННЫЙ СПИСОК ТЕГОВ: [Main DPS, Sub DPS, Хиллер, Щитовик, Баффер, "
-    "Карманный урон, Enabler, Аппликатор]. "
-    "ПРАВИЛА: "
-    "1. ЗАПРЕЩЕНО использовать любые слова, которых нет в списке выше. "
-    "2. Выведи ТОЛЬКО выбранные теги через запятую. "
-    "3. Никаких пояснений, извинений или вступлений."
+    "Ты — эксперт по мете Genshin Impact. "
+    "Прочитай таланты персонажа и выбери от 1 до 3 тегов, которые лучше всего описывают его. "
+    "Доступные теги и их значения: "
+    "- Main DPS (основной уронщик, бьет с руки на поле) "
+    "- Sub DPS / Карманный урон (наносит урон из кармана, пока на поле другой персонаж) "
+    "- Хиллер (лечит отряд) "
+    "- Щитовик (создает щиты) "
+    "- Баффер (усиливает атаку, мастерство или другие статы отряда) "
+    "- Саппорт (стяжка врагов, контроль, батарейка) "
+    "- Элементальный аппликатор (быстро и много накладывает стихийный статус) "
+    "ПРАВИЛО: Выведи ТОЛЬКО названия выбранных тегов через запятую. Никаких пояснений."
 )
 
 
@@ -86,7 +88,11 @@ def main() -> int:
             continue
 
         print(f"[{index}/{len(paths)}] {path.stem}: generating role tags...")
-        tags = request_role_tags(client, args.model, talents_text)
+        try:
+            tags = request_role_tags(client, args.model, talents_text)
+        except Exception as exc:  # noqa: BLE001 - local LLM batch should continue after a timeout.
+            print(f"  ERROR: LLM request failed: {exc}")
+            continue
         data["ai_tags"] = clean_tags(tags)
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         processed += 1
@@ -140,7 +146,8 @@ def request_role_tags(client: Any, model: str, talents_text: str) -> str:
             {"role": "system", "content": ROLE_PROMPT},
             {"role": "user", "content": f"Текст навыков:\n{talents_text}"},
         ],
-        temperature=0.0,
+        temperature=0.2,
+        timeout=30.0,
     )
     return response.choices[0].message.content or ""
 
@@ -168,7 +175,10 @@ def normalize_tag(value: str) -> str:
     aliases = {
         "Sub-DPS": "Sub DPS",
         "Sub dps": "Sub DPS",
+        "Sub DPS / Карманный урон": "Sub DPS",
         "Main dps": "Main DPS",
+        "Аппликатор": "Элементальный аппликатор",
+        "Enabler": "Саппорт",
     }
     return aliases.get(text, text)
 
