@@ -1,0 +1,1 @@
+"""Local Genshin planning tools."""

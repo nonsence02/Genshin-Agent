@@ -1,0 +1,634 @@
+# 💎 Базовые ресурсы
+- Мора: 7 364 348
+
+# 👥 Персонажи
+- AratakiItto (Ур. 90, C1, Таланты: 9/9/9)
+- Arlecchino (Ур. 90, C0, Таланты: 10/8/7)
+- Bennett (Ур. 90, C6, Таланты: 3/7/10)
+- Chasca (Ур. 90, C0, Таланты: 1/10/6)
+- Diluc (Ур. 90, C3, Таланты: 8/8/8)
+- Durin (Ур. 90, C0, Таланты: 1/8/9)
+- Faruzan (Ур. 90, C6, Таланты: 1/1/10)
+- Fischl (Ур. 90, C6, Таланты: 1/10/1)
+- Furina (Ур. 90, C0, Таланты: 1/10/10)
+- Ganyu (Ур. 90, C0, Таланты: 10/6/6)
+- Gorou (Ур. 90, C4, Таланты: 1/7/1)
+- HuTao (Ур. 90, C1, Таланты: 10/10/10)
+- Jean (Ур. 90, C4, Таланты: 8/8/8)
+- KamisatoAyaka (Ур. 90, C0, Таланты: 9/9/10)
+- KukiShinobu (Ур. 90, C4, Таланты: 1/9/8)
+- Lauma (Ур. 90, C0, Таланты: 1/10/10)
+- Layla (Ур. 90, C5, Таланты: 1/9/7)
+- Mavuika (Ур. 90, C0, Таланты: 6/8/9)
+- Mona (Ур. 90, C1, Таланты: 1/1/8)
+- Mualani (Ур. 90, C0, Таланты: 9/9/9)
+- Nahida (Ур. 90, C0, Таланты: 7/8/8)
+- Nefer (Ур. 90, C0, Таланты: 1/10/8)
+- Neuvillette (Ур. 90, C0, Таланты: 10/6/8)
+- RaidenShogun (Ур. 90, C0, Таланты: 1/8/10)
+- Rosaria (Ур. 90, C5, Таланты: 1/3/4)
+- Tartaglia (Ур. 90, C0, Таланты: 4/10/10)
+- Tighnari (Ур. 90, C5, Таланты: 9/9/9)
+- Traveler (Ур. 90, C6, Таланты: 1/1/1)
+- TravelerPyro (Ур. 90, C6, Таланты: 1/1/1)
+- Varka (Ур. 90, C0, Таланты: 1/10/6)
+- Wanderer (Ур. 90, C0, Таланты: 8/9/8)
+- Xiangling (Ур. 90, C6, Таланты: 2/6/10)
+- Xianyun (Ур. 90, C0, Таланты: 6/6/6)
+- Xiao (Ур. 90, C1, Таланты: 10/9/10)
+- Xilonen (Ур. 90, C0, Таланты: 8/10/9)
+- Xingqiu (Ур. 90, C6, Таланты: 6/8/9)
+- YaeMiko (Ур. 90, C0, Таланты: 8/9/8)
+- Yoimiya (Ур. 90, C0, Таланты: 9/9/1)
+- Zhongli (Ур. 90, C0, Таланты: 1/8/1)
+- Aino (Ур. 80, C5, Таланты: 1/1/8)
+- Diona (Ур. 80, C6, Таланты: 1/1/1)
+- Nicole (Ур. 80, C0, Таланты: 1/6/1)
+- Prune (Ур. 80, C1, Таланты: 1/1/1)
+- Sucrose (Ур. 80, C6, Таланты: 1/1/1)
+- Razor (Ур. 70, C6, Таланты: 1/4/4)
+- Chevreuse (Ур. 70, C6, Таланты: 1/1/1)
+- Chongyun (Ур. 70, C6, Таланты: 5/5/6)
+- Eula (Ур. 70, C0, Таланты: 1/1/1)
+- Noelle (Ур. 70, C6, Таланты: 1/5/1)
+- Barbara (Ур. 60, C6, Таланты: 2/4/2)
+- Charlotte (Ур. 60, C3, Таланты: 1/1/1)
+- Escoffier (Ур. 60, C0, Таланты: 1/1/1)
+- Gaming (Ур. 60, C6, Таланты: 1/1/1)
+- YunJin (Ур. 60, C2, Таланты: 1/1/1)
+- Kaeya (Ур. 51, C1, Таланты: 2/2/2)
+- Yanfei (Ур. 50, C6, Таланты: 2/2/3)
+- Candace (Ур. 50, C6, Таланты: 1/1/1)
+- Ningguang (Ур. 50, C6, Таланты: 1/1/1)
+- Amber (Ур. 40, C6, Таланты: 1/1/1)
+- Flins (Ур. 40, C0, Таланты: 1/1/1)
+- KujouSara (Ур. 40, C6, Таланты: 1/1/1)
+- Lisa (Ур. 40, C1, Таланты: 1/1/1)
+- Ororon (Ур. 40, C5, Таланты: 1/1/1)
+- ShikanoinHeizou (Ур. 40, C4, Таланты: 1/1/1)
+- Aloy (Ур. 20, C0, Таланты: 1/1/1)
+- Beidou (Ур. 20, C6, Таланты: 1/1/1)
+- Collei (Ур. 20, C6, Таланты: 1/1/1)
+- Dori (Ур. 20, C4, Таланты: 1/1/1)
+- Freminet (Ур. 20, C1, Таланты: 1/1/1)
+- Iansan (Ур. 20, C1, Таланты: 1/1/1)
+- Illuga (Ур. 20, C3, Таланты: 1/1/1)
+- Jahoda (Ур. 20, C2, Таланты: 1/1/1)
+- Kachina (Ур. 20, C2, Таланты: 1/1/1)
+- Kaveh (Ур. 20, C0, Таланты: 1/1/1)
+- Kirara (Ур. 20, C2, Таланты: 1/1/1)
+- LanYan (Ур. 20, C0, Таланты: 1/1/1)
+- Lynette (Ур. 20, C3, Таланты: 1/1/1)
+- Mika (Ур. 20, C1, Таланты: 1/1/1)
+- Qiqi (Ур. 20, C0, Таланты: 1/1/1)
+- Sayu (Ур. 20, C1, Таланты: 1/1/1)
+- Sethos (Ур. 20, C1, Таланты: 1/1/1)
+- Thoma (Ур. 20, C6, Таланты: 1/1/1)
+- Xinyan (Ур. 20, C6, Таланты: 1/1/1)
+- Yaoyao (Ур. 20, C6, Таланты: 1/1/1)
+
+# ⚔️ Оружие
+- DragonsBane (Ур. 90, R5, на: HuTao)
+- EtherlightSpindlelute (Ур. 90, R5, на: Lauma)
+- FavoniusGreatsword (Ур. 90, R5, на: Aino)
+- FavoniusLance (Ур. 90, R5, на: Zhongli)
+- FavoniusSword (Ур. 90, R5, на: Jean)
+- FavoniusSword (Ур. 90, R5, на: Xilonen)
+- FavoniusWarbow (Ур. 90, R5, на: Gorou)
+- FleuveCendreFerryman (Ур. 90, R5, на: Traveler)
+- IronSting (Ур. 90, R5, на: KukiShinobu)
+- Rust (Ур. 90, R5, на: Tartaglia)
+- SacrificialFragments (Ур. 90, R5, на: Nahida)
+- SacrificialSword (Ур. 90, R5, на: Xingqiu)
+- TheCatch (Ур. 90, R5, на: Xiangling)
+- TheWidsith (Ур. 90, R5, на: YaeMiko)
+- SkywardAtlas (Ур. 90, R2, на: Nicole)
+- AmenomaKageuchi (Ур. 90, R1, на: KamisatoAyaka)
+- AmosBow (Ур. 90, R1, на: Ganyu)
+- AstralVulturesCrimsonPlumage (Ур. 90, R1, на: Chasca)
+- BlackcliffPole (Ур. 90, R1, на: Flins)
+- EngulfingLightning (Ур. 90, R1, на: RaidenShogun)
+- FreedomSworn (Ур. 90, R1, на: KaedeharaKazuha)
+- MistsplitterReforged (Ур. 90, R1, на: Durin)
+- PrimordialJadeWingedSpear (Ур. 90, R1, на: Arlecchino)
+- PrimordialJadeWingedSpear (Ур. 90, R1, на: Xiao)
+- RedhornStonethresher (Ур. 90, R1, на: AratakiItto)
+- ReliquaryOfTruth (Ур. 90, R1, на: Nefer)
+- SapwoodBlade (Ур. 90, R1, на: Bennett)
+- SerpentSpine (Ур. 90, R1, на: Varka)
+- SkywardHarp (Ур. 90, R1, на: Fischl)
+- SplendorOfTranquilWaters (Ур. 90, R1, на: Skirk)
+- SurfsUp (Ур. 90, R1, на: Mualani)
+- TheDockhandsAssistant (Ур. 90, R1, на: Layla)
+- ThunderingPulse (Ур. 90, R1, на: Yoimiya)
+- TomeOfTheEternalFlow (Ур. 90, R1, на: Neuvillette)
+- FadingTwilight (Ур. 80, R5, на: Faruzan)
+- PrototypeArchaic (Ур. 80, R5, на: Diluc)
+- TheStringless (Ур. 80, R5, на: Aloy)
+- SnowTombedStarsilver (Ур. 80, R1, на: Eula)
+- SacrificialBow (Ур. 70, R5, на: Diona)
+- SacrificialSword (Ур. 70, R2)
+- EyeOfPerception (Ур. 70, R1, на: Lisa)
+- KagotsurubeIsshin (Ур. 70, R1, на: Kaeya)
+- PrototypeAmber (Ур. 60, R5)
+- SacrificialFragments (Ур. 60, R5)
+- BlackmarrowLantern (Ур. 60, R1)
+- PrototypeRancour (Ур. 60, R1)
+- Rainslasher (Ур. 60, R1)
+- TheFlute (Ур. 50, R5)
+- PrimordialJadeWingedSpear (Ур. 50, R1, на: Escoffier)
+- SkywardSpine (Ур. 50, R1, на: Chevreuse)
+- FavoniusWarbow (Ур. 40, R5)
+- DragonspineSpear (Ур. 40, R1)
+- FavoniusCodex (Ур. 20, R5, на: Prune)
+- MailedFlower (Ур. 20, R5)
+- ToukabouShigure (Ур. 20, R5)
+- Whiteblind (Ур. 20, R3, на: Noelle)
+- SkywardPride (Ур. 20, R1, на: Razor)
+- AlleyHunter (Ур. 1, R5)
+- AshGravenDrinkingHorn (Ур. 1, R5)
+- BalladOfTheBoundlessBlue (Ур. 1, R5)
+- CalamityOfEshu (Ур. 1, R5, на: Furina)
+- Cloudforged (Ур. 1, R5)
+- DialoguesOfTheDesertSages (Ур. 1, R5)
+- DragonsBane (Ур. 1, R5)
+- IbisPiercer (Ур. 1, R5)
+- MissiveWindspear (Ур. 1, R5)
+- UltimateOverlordsMegaMagicSword (Ур. 1, R5)
+- FavoniusLance (Ур. 1, R3)
+- SwordOfNarzissenkreuz (Ур. 1, R2, на: Manequin2)
+- TheAlleyFlash (Ур. 1, R2)
+- Akuoumaru (Ур. 1, R1)
+- DawningFrost (Ур. 1, R1)
+- DawningFrost (Ур. 1, R1)
+- DawningFrost (Ур. 1, R1)
+- DawningFrost (Ур. 1, R1)
+- DragonsBane (Ур. 1, R1)
+- DragonsBane (Ур. 1, R1)
+- DragonsBane (Ур. 1, R1)
+- EarthShaker (Ур. 1, R1)
+- EndOfTheLine (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- EyeOfPerception (Ур. 1, R1)
+- FavoniusCodex (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusGreatsword (Ур. 1, R1)
+- FavoniusSword (Ур. 1, R1)
+- FavoniusSword (Ур. 1, R1)
+- FavoniusSword (Ур. 1, R1)
+- FavoniusSword (Ур. 1, R1)
+- FavoniusSword (Ур. 1, R1)
+- FluteOfEzpitzal (Ур. 1, R1)
+- FootprintOfTheRainbow (Ур. 1, R1, на: Kachina)
+- LionsRoar (Ур. 1, R1)
+- LionsRoar (Ур. 1, R1)
+- LionsRoar (Ур. 1, R1)
+- LionsRoar (Ур. 1, R1)
+- LionsRoar (Ур. 1, R1)
+- LionsRoar (Ур. 1, R1)
+- LionsRoar (Ур. 1, R1)
+- LionsRoar (Ур. 1, R1)
+- LionsRoar (Ур. 1, R1)
+- LionsRoar (Ур. 1, R1)
+- LithicBlade (Ур. 1, R1)
+- LithicSpear (Ур. 1, R1)
+- LithicSpear (Ур. 1, R1)
+- MoonweaversDawn (Ур. 1, R1)
+- PortablePowerSaw (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- Rainslasher (Ур. 1, R1)
+- RingOfYaxche (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- Rust (Ур. 1, R1)
+- SacrificersStaff (Ур. 1, R1)
+- SacrificersStaff (Ур. 1, R1)
+- SacrificersStaff (Ур. 1, R1)
+- SacrificialBow (Ур. 1, R1)
+- SacrificialBow (Ур. 1, R1)
+- SacrificialBow (Ур. 1, R1)
+- SacrificialBow (Ур. 1, R1)
+- SacrificialBow (Ур. 1, R1)
+- SacrificialFragments (Ур. 1, R1)
+- SacrificialFragments (Ур. 1, R1)
+- SacrificialFragments (Ур. 1, R1)
+- SacrificialFragments (Ур. 1, R1)
+- SacrificialGreatsword (Ур. 1, R1)
+- SacrificialGreatsword (Ур. 1, R1)
+- SacrificialGreatsword (Ур. 1, R1)
+- SacrificialGreatsword (Ур. 1, R1)
+- SacrificialGreatsword (Ур. 1, R1)
+- SacrificialGreatsword (Ур. 1, R1)
+- SacrificialSword (Ур. 1, R1)
+- SacrificialSword (Ур. 1, R1)
+- SkywardHarp (Ур. 1, R1)
+- SwordOfDescension (Ур. 1, R1)
+- TheBell (Ур. 1, R1)
+- TheBell (Ур. 1, R1)
+- TheBell (Ур. 1, R1)
+- TheBell (Ур. 1, R1)
+- TheBell (Ур. 1, R1)
+- TheBell (Ур. 1, R1)
+- TheBell (Ур. 1, R1)
+- TheBell (Ур. 1, R1)
+- TheBell (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheFlute (Ур. 1, R1)
+- TheStringless (Ур. 1, R1)
+- TheStringless (Ур. 1, R1)
+- TheStringless (Ур. 1, R1)
+- TheViridescentHunt (Ур. 1, R1)
+- TheWidsith (Ур. 1, R1)
+- TheWidsith (Ур. 1, R1)
+- TheWidsith (Ур. 1, R1)
+- WavebreakersFin (Ур. 1, R1)
+- WaveridingWhirl (Ур. 1, R1)
+
+# 🎒 Важные материалы
+- AFlowerYetToBloom: 420
+- AberrantCoreOfTheDeepShadow: 6
+- AdventurersExperience: 552
+- AfterglowOfLongNightFlint: 37
+- AgnidusAgateSliver: 91
+- ArtfulDeviceFragment: 9
+- ArtfulDeviceReplica: 25
+- ArtificedDynamicGear: 46
+- ArtificedSpareClockworkComponentCoppelia: 3
+- AscendedSampleQueen: 1
+- AshenHeart: 8
+- AxisOfTheSecretSource: 296
+- BasaltPillar: 8
+- BewilderingBroadleaf: 72
+- BitOfAerosiderite: 1
+- BlackBronzeHorn: 832
+- BlackCrystalHorn: 114
+- BlazingPrismshell: 7
+- BlazingSacrificialHeartsHesitance: 17
+- BlazingSacrificialHeartsResolve: 8
+- BlazingSacrificialHeartsTerror: 26
+- BloodjadeBranch: 1
+- BorealWolfsBrokenFang: 3
+- BorealWolfsCrackedTooth: 28
+- BrokenDriveShaft: 1 543
+- BrokenGobletOfThePristineSea: 62
+- ChainsOfTheDandelionGladiator: 3
+- ChaosAxis: 422
+- ChaosCircuit: 5
+- ChaosDevice: 252
+- ChaosGear: 2 127
+- ChaosModule: 65
+- ChaosOculus: 100
+- ChaosStorage: 349
+- ChapterOfAnAncientChord: 4
+- ChasmlightFin: 10
+- CloudseamScale: 1
+- ColdCrackedShellshard: 110
+- ConcealedClaw: 878
+- ConcealedTalon: 15
+- ConcealedUnguis: 204
+- CopperTalismanOfTheForestDew: 16
+- CoralBranchOfADistantSea: 2
+- CrownOfInsight: 34
+- CrystalPrism: 238
+- CrystallineBloom: 6
+- CyclicMilitaryKuuvahkiCore: 2
+- DakasBell: 13
+- DamagedMask: 4 118
+- DamagedPrism: 673
+- DarkStatuette: 19
+- DeadLeyLineBranch: 1 691
+- DeadLeyLineLeaves: 217
+- DeathlyStatuette: 9
+- DebrisOfDecarabiansCity: 3
+- DeliriousDecadenceOfTheSacredLord: 21
+- DeliriousDemeanorOfTheSacredLord: 6
+- DeliriousDesolationOfTheSacredLord: 41
+- DenialAndJudgment: 12
+- DesiccatedShell: 176
+- DewOfRepudiation: 5
+- DismalPrism: 940
+- DiviningScroll: 2 629
+- DormantFungalNucleus: 324
+- DragonLordsCrown: 5
+- DragonheirsFalseFin: 2
+- DreamOfScorchingMight: 5
+- DropOfTaintedWater: 332
+- DrossOfPureSacredDewdrop: 2
+- DvalinsClaw: 15
+- DvalinsPlume: 10
+- DvalinsSigh: 20
+- EchoOfScorchingMight: 21
+- ElixirOfTheHeretic: 4
+- EmberOfLongNightFlint: 12
+- EmperorsResolution: 1
+- EnergyNectar: 37
+- EnsnaringGaze: 2
+- ErodedHorn: 2
+- ErodedScaleFeather: 1
+- ErodedSunfire: 4
+- EverflameSeed: 3
+- EvergloomRing: 10
+- FadedRedSatin: 1 686
+- FadingCandle: 2
+- FamedHandguard: 42
+- FeatheryFin: 125
+- FettersOfTheDandelionGladiator: 10
+- FirmArrowhead: 2 064
+- FontemerUnihorn: 1
+- ForbiddenCurseScroll: 9
+- ForeignSynapse: 2
+- FossilizedBoneShard: 6
+- FracturedEyeOfTheDeepShadow: 20
+- FragileBoneShard: 637
+- FragmentOfAGoldenMelody: 10
+- FragmentOfAnAncientChord: 58
+- FragmentOfDecarabiansEpic: 3
+- FrostEtchedWarrant: 60
+- FrostnightsGlimmer: 1 295
+- FrostnightsGlory: 91
+- FrostnightsGlow: 2
+- FungalSpores: 96
+- GildedScale: 12
+- GloomyStatuette: 113
+- GlowingRemains: 236
+- GoldInscribedSecretSourceCore: 1
+- GoldenRavenInsignia: 64
+- GrainOfAerosiderite: 2
+- GuideToAdmonition: 174
+- GuideToBallad: 14
+- GuideToConflict: 28
+- GuideToContention: 1
+- GuideToDiligence: 19
+- GuideToElegance: 20
+- GuideToElysium: 28
+- GuideToEquity: 13
+- GuideToFreedom: 7
+- GuideToGold: 21
+- GuideToIngenuity: 10
+- GuideToJustice: 15
+- GuideToKindling: 37
+- GuideToLight: 174
+- GuideToMoonlight: 74
+- GuideToOrder: 8
+- GuideToPraxis: 124
+- GuideToProsperity: 103
+- GuideToResistance: 19
+- GuideToTransience: 36
+- GuideToVagrancy: 76
+- HeartOfTheSecretSource: 22
+- HeavyHorn: 3 447
+- HerosWit: 5
+- HoarfrostCore: 2
+- HookedBeakOfTheDeepShadow: 1
+- HuntersSacrificialKnife: 20
+- HurricaneSeed: 15
+- IgnitedSeedOfLife: 65
+- IgnitedSeeingEye: 12
+- IgnitedStone: 244
+- IllusoryLeafcoil: 14
+- ImmaculateWarrant: 175
+- InactivatedFungalNucleus: 1 167
+- IronTalismanOfTheForestDew: 7
+- JadeBranchOfADistantSea: 5
+- JeweledBranchOfADistantSea: 5
+- JuvenileFang: 441
+- JuvenileJade: 9
+- KageuchiHandguard: 353
+- LeyLineSprout: 55
+- LieutenantsInsignia: 41
+- LightGuidingTetrahedron: 7
+- LightbearingScaleFeather: 7
+- LightlessBone: 888
+- LightlessEyeOfTheMaelstrom: 10
+- LightlessSilkString: 13
+- LocusOfAClearWill: 87
+- LuminescentPollen: 30
+- LuminousSandsFromGuyun: 3
+- LunarFin: 33
+- LustrousStoneFromGuyun: 1
+- MadmansRestraint: 3
+- MajesticHookedBeak: 3
+- MarionetteCore: 4
+- MarkOfTheBindingBlessing: 6
+- MarkedShell: 7
+- MaskOfTheOneHorned: 4
+- MaskOfTheTigersBite: 6
+- MaskOfTheVirtuousDoctor: 1
+- MaskOfTheWickedLieutenant: 3
+- MechanicalSpurGear: 31
+- MeshingGear: 1 098
+- MirrorOfMushin: 5
+- MistGrass: 324
+- MistGrassPollen: 1 263
+- MistGrassWick: 43
+- MistVeiledGoldElixir: 1
+- MistVeiledLeadElixir: 7
+- MistVeiledMercuryElixir: 1
+- MistshroudHelmet: 1
+- MistshroudManifestation: 1 221
+- MistshroudPlate: 327
+- MoltenMoment: 8
+- MovementOfAnAncientChord: 9
+- MudraOfTheMaleficGeneral: 45
+- NagadusEmeraldChunk: 2
+- NagadusEmeraldFragment: 21
+- NagadusEmeraldSliver: 153
+- NarukamisAffection: 3
+- NarukamisJoy: 6
+- NightWindsMysticAugury: 2
+- NightWindsMysticConsideration: 47
+- NightWindsMysticPremonition: 37
+- OasisGardensKindness: 1
+- OasisGardensReminiscence: 2
+- OblationOfTheFarNorthScions: 3
+- OldHandguard: 1 273
+- OldOperativesPocketWatch: 346
+- OminousMask: 50
+- OperativesConstancy: 6
+- OperativesStandardPocketWatch: 36
+- OverripeFlamegranate: 6
+- PerpetualCaliber: 5
+- PhilosophiesOfAdmonition: 2
+- PhilosophiesOfBallad: 2
+- PhilosophiesOfConflict: 5
+- PhilosophiesOfContention: 6
+- PhilosophiesOfDiligence: 11
+- PhilosophiesOfElegance: 2
+- PhilosophiesOfElysium: 2
+- PhilosophiesOfEquity: 2
+- PhilosophiesOfFreedom: 1
+- PhilosophiesOfGold: 9
+- PhilosophiesOfJustice: 3
+- PhilosophiesOfKindling: 8
+- PhilosophiesOfLight: 8
+- PhilosophiesOfMoonlight: 4
+- PhilosophiesOfOrder: 2
+- PhilosophiesOfPraxis: 31
+- PhilosophiesOfProsperity: 153
+- PhilosophiesOfResistance: 6
+- PhilosophiesOfTransience: 16
+- PhilosophiesOfVagrancy: 5
+- PieceOfAerosiderite: 4
+- PolarizingPrism: 45
+- PrecisionDriveShaft: 20
+- PrecisionKuuvahkiStampingDie: 1
+- PrimordialGreenbloom: 9
+- PrithivaTopazChunk: 4
+- PrithivaTopazFragment: 47
+- PrithivaTopazSliver: 388
+- PuppetStrings: 8
+- QuelledCreeper: 1
+- RadiantExoskeleton: 11
+- RadiantPrism: 41
+- RecruitsInsignia: 4 641
+- RefractiveBud: 257
+- ReinforcedDriveShaft: 323
+- RelicFromGuyun: 1
+- RemnantGlowOfScorchingMight: 65
+- RemnantOfTheDreadwing: 2
+- RichRedBrocade: 16
+- RiftCore: 13
+- RiftbornRegalia: 2
+- RingOfBoreas: 3
+- RobustFungalNucleus: 86
+- RuinedHilt: 133
+- RunicFang: 22
+- SaurianCrownedWarriorsGoldenWhistle: 16
+- ScatteredPieceOfDecarabiansDream: 1
+- ScoopOfTaintedWater: 16
+- SealedScroll: 145
+- SeasonedFang: 110
+- SecretSourceAirflowAccumulator: 23
+- SentrysWoodenWhistle: 1 458
+- SergeantsInsignia: 507
+- ShacklesOfTheDandelionGladiator: 3
+- ShadowOfTheWarrior: 28
+- ShardOfAFoulLegacy: 8
+- ShardOfAShatteredWill: 444
+- SharpArrowhead: 118
+- SheathOfTheSecretSource: 79
+- ShimmeringNectar: 27
+- ShivadaJadeChunk: 1
+- ShivadaJadeFragment: 25
+- ShivadaJadeSliver: 205
+- SigilOfAStridingWill: 16
+- SilkenFeather: 5
+- SilverGobletOfThePristineSea: 7
+- SilverRavenInsignia: 505
+- SilverTalismanOfTheForestDew: 6
+- SlimeConcentrate: 38
+- SlimeCondensate: 3 531
+- SlimeSecretions: 139
+- SpectralHeart: 10
+- SpectralHusk: 133
+- SpectralNucleus: 65
+- SpiritLocketOfBoreas: 9
+- SplinteredHilt: 35
+- SpringOfPureSacredDewdrop: 1
+- StainedMask: 741
+- StillSmolderingHilt: 8
+- StormBeads: 11
+- SturdyBoneShard: 60
+- SturdyShell: 46
+- SublimationOfPureSacredDewdrop: 2
+- SunderedGloryOfTheFarNorthScions: 4
+- TailOfBoreas: 4
+- TatteredWarrant: 2 026
+- TeachingsOfAdmonition: 6
+- TeachingsOfBallad: 2
+- TeachingsOfConflict: 80
+- TeachingsOfContention: 1
+- TeachingsOfDiligence: 1
+- TeachingsOfElegance: 1
+- TeachingsOfElysium: 82
+- TeachingsOfEquity: 9
+- TeachingsOfFreedom: 24
+- TeachingsOfGold: 2
+- TeachingsOfIngenuity: 3
+- TeachingsOfJustice: 8
+- TeachingsOfKindling: 91
+- TeachingsOfMoonlight: 114
+- TeachingsOfOrder: 8
+- TeachingsOfPraxis: 114
+- TeachingsOfProsperity: 21
+- TeachingsOfTransience: 18
+- TeachingsOfVagrancy: 112
+- TearsOfTheCalamitousGod: 42
+- TheCornerstoneOfStarsAndFlames: 12
+- TheMeaningOfAeons: 28
+- TileOfDecarabiansTower: 1
+- TourbillonDevice: 2
+- TransoceanicChunk: 6
+- TransoceanicPearl: 166
+- TreasureHoarderInsignia: 2 143
+- TreasuredFlower: 115
+- TrimmedRedSilk: 368
+- TurbidPrism: 165
+- TuskOfMonocerosCaeli: 13
+- TyrantsFang: 35
+- UnyieldingDelusionOfTheFarNorthScions: 12
+- VajradaAmethystChunk: 3
+- VajradaAmethystFragment: 189
+- VajradaAmethystGemstone: 2
+- VajradaAmethystSliver: 511
+- VarunadaLazuriteFragment: 35
+- VarunadaLazuriteGemstone: 1
+- VarunadaLazuriteSliver: 201
+- VayudaTurquoiseSliver: 2
+- WanderersBloomingFlower: 25
+- WarmBackShell: 28
+- WarriorsMetalWhistle: 444
+- WaterThatFailedToTranscend: 2
+- WeatheredArrowhead: 3
+- WhopperflowerNectar: 315
+- WineGobletOfThePristineSea: 71
+- WorldspanFern: 3
+- XenochromaticCrystal: 5
