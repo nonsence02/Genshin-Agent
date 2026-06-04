@@ -15,6 +15,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from scripts.tools.calculator import calculate_characters_requirements, resolve_character_id  # noqa: E402
 from scripts.tools.character_info import get_character_lore  # noqa: E402
+from scripts.tools.weapon_calculator import calculate_weapon_ascension  # noqa: E402
 from scripts.tools.weapon_info import get_weapon_details  # noqa: E402
 from scripts.tools.weapon_recommender import recommend_best_weapon  # noqa: E402
 
@@ -30,6 +31,7 @@ SYSTEM_PROMPT = """Ты — ИИ-ассистент по Genshin Impact.
 ВАЖНО:
 - ВНИМАНИЕ: Для любых расчетов прокачки ты ОБЯЗАН вызвать функцию calculate_resources. Для вопросов об отрядах, синергии, роли, элементах, оружии, созвездиях или механике персонажа сначала вызывай get_character_info.
 - Для вопросов о характеристиках оружия, пассивке, сабстате или материалах возвышения оружия используй get_weapon_info.
+- Для точного подсчета материалов возвышения оружия до 90 уровня используй calculate_weapon_resources. Не считай материалы оружия самостоятельно.
 - При вызове get_weapon_info передавай название оружия без склонений, как именительный падеж или как ключ из инвентаря.
 - При вызове инструмента НИКОГДА не пытайся перевести имя персонажа на английский или угадать его ID. Передавай в аргумент "character_names" РОВНО те слова, которые написал пользователь на русском языке (например, ["рейзор", "ризли", "флинс"]).
 - ПРАВИЛО ИМЕН: При вызове инструмента get_character_info ОБЯЗАТЕЛЬНО передавай имена персонажей строго в ИМЕНИТЕЛЬНОМ ПАДЕЖЕ с большой буквы (например, "Варка", а не "Варк" или "Варки", "Айно", а не "Айне").
@@ -174,6 +176,27 @@ TOOLS: list[dict[str, Any]] = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "calculate_weapon_resources",
+            "description": "Рассчитать количество материалов, необходимых для возвышения оружия до 90 уровня.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "weapon_name": {
+                        "type": "string",
+                        "description": (
+                            "Название оружия в именительном падеже или ключ оружия из инвентаря. "
+                            "Примеры: PrototypeArchaic, Prototype Archaic, AstralVulturesCrimsonPlumage."
+                        ),
+                    },
+                },
+                "required": ["weapon_name"],
+                "additionalProperties": False,
+            },
+        },
+    },
 ]
 
 
@@ -259,6 +282,8 @@ def execute_tool_call(tool_call: Any) -> Any:
         return get_character_lore(character_names=extract_character_names(arguments))
     if function_name == "get_weapon_info":
         return get_weapon_details(str(arguments.get("weapon_name") or "").strip())
+    if function_name == "calculate_weapon_resources":
+        return calculate_weapon_ascension(str(arguments.get("weapon_name") or "").strip())
     if function_name == "recommend_weapon":
         raw_character = str(
             arguments.get("character_id") or arguments.get("character_name") or ""
