@@ -20,6 +20,7 @@ from scripts.orchestrator import DEFAULT_API_KEY, DEFAULT_BASE_URL, DEFAULT_MODE
 DEFAULT_LORE_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
 
 ROLE_PROMPT = (
+    "ОТВЕЧАЙ СТРОГО ТЕГАМИ. Запрещено писать пояснения. "
     "Ты — киберспортивный аналитик Genshin Impact. "
     "Прочитай все таланты персонажа (боевые, пассивные, фракционные). "
     "Описания часто ссылаются на названия других навыков. "

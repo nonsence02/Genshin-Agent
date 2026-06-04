@@ -18,21 +18,6 @@ DEFAULT_DICTIONARY_PATH = PROJECT_ROOT / "data" / "raw" / "dictionary.json"
 DEFAULT_CHARACTER_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
 FANDOM_BASE_URL = "https://genshin-impact.fandom.com/wiki"
-TALENT_TYPE_PATTERNS = (
-    r"Normal Attack",
-    r"Elemental Skill",
-    r"Elemental Burst",
-    r"Alternate Sprint",
-    r"\d(?:st|nd|rd|th) Ascension Passive",
-    r"Utility Passive",
-    r"Passive Talent",
-    r"Moonsign Benediction Passive",
-    r"Witch's Eve Rite Passive",
-    r"Night Realm'?s Gift",
-    r"Arkhe",
-    r"Passive",
-)
-TALENT_TYPE_RE = re.compile(r"\b(" + "|".join(TALENT_TYPE_PATTERNS) + r")\b", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -259,157 +244,43 @@ def is_empty_paragraph(node: Any) -> bool:
 
 def extract_talents(soup: Any) -> list[dict[str, str]]:
     talents: list[dict[str, str]] = []
-    seen: set[tuple[str, str, str]] = set()
+    seen: set[tuple[str, str]] = set()
 
-    for table in find_talent_tables(soup):
-        for talent in extract_talents_from_table(table):
-            add_talent(talents, seen, talent)
+    for table in soup.find_all("table", class_="talent-table"):
+        current_name: str | None = None
+        current_type: str | None = None
+        for row in table.find_all("tr"):
+            tds = row.find_all("td", recursive=False)
+            if len(tds) == 3:
+                current_name = clean_talent_text(tds[1].get_text(" ", strip=True))
+                current_type = clean_talent_text(tds[2].get_text(" ", strip=True))
+                continue
 
-    if not talents:
-        heading = find_heading(soup, ("talents", "combat talents", "passive talents"))
-        if heading:
-            for talent in extract_talents_from_section(heading):
-                add_talent(talents, seen, talent)
+            if len(tds) != 1 or not current_name:
+                continue
+
+            desc_div = row.find("div", class_="wds-tab__content")
+            source = desc_div or tds[0]
+            desc = clean_talent_text(source.get_text(separator="\n", strip=True))
+            if not desc:
+                current_name = None
+                current_type = None
+                continue
+
+            key = (current_name.casefold(), desc[:120].casefold())
+            if key not in seen:
+                seen.add(key)
+                talents.append(
+                    {
+                        "type": current_type or "",
+                        "name": current_name,
+                        "description": truncate_text(desc, 1200),
+                    }
+                )
+            current_name = None
+            current_type = None
 
     return talents
-
-
-def find_talent_tables(soup: Any) -> list[Any]:
-    tables: list[Any] = []
-    for table in soup.select("table.talent_table, table.talent-table"):
-        tables.append(table)
-
-    heading = find_heading(soup, ("talents", "combat talents", "passive talents"))
-    if heading:
-        for node in iter_section_siblings(heading):
-            if getattr(node, "name", None) == "table":
-                tables.append(node)
-            elif hasattr(node, "find_all"):
-                tables.extend(node.find_all("table", recursive=False))
-
-    unique: list[Any] = []
-    for table in tables:
-        if table not in unique and looks_like_talent_table(table):
-            unique.append(table)
-    return unique
-
-
-def looks_like_talent_table(table: Any) -> bool:
-    text = normalize_space(table.get_text(" ", strip=True))
-    folded = text.casefold()
-    if TALENT_TYPE_RE.search(text):
-        return True
-    return any(marker in folded for marker in ("cooldown", "energy cost", "passive", "ascension"))
-
-
-def extract_talents_from_table(table: Any) -> list[dict[str, str]]:
-    talents: list[dict[str, str]] = []
-    current_type = ""
-    for row in direct_table_rows(table):
-        cells = row.find_all(["td", "th"], recursive=False)
-        if not cells:
-            continue
-
-        row_text = normalize_space(row.get_text(" ", strip=True))
-        detected_type = extract_talent_type(row_text)
-        if detected_type:
-            current_type = detected_type
-
-        description = extract_description_from_row(row)
-        if not description:
-            continue
-
-        talent_type = current_type or detected_type or "Talent"
-        name = extract_talent_name(cells, talent_type, description)
-        talents.append(
-            {
-                "type": talent_type,
-                "name": name,
-                "description": truncate_text(description, 1200),
-            }
-        )
-    return talents
-
-
-def extract_talents_from_section(heading: Any) -> list[dict[str, str]]:
-    talents: list[dict[str, str]] = []
-    for marker in iter_section_siblings(heading):
-        if getattr(marker, "name", None) not in {"h3", "h4", "h5", "b", "strong", "th"}:
-            continue
-        marker_text = normalize_space(marker.get_text(" ", strip=True))
-        talent_type = extract_talent_type(marker_text)
-        if not talent_type:
-            continue
-        description = find_following_description(marker)
-        if not description:
-            continue
-        name = extract_talent_name_from_text(marker_text, talent_type)
-        talents.append(
-            {
-                "type": talent_type,
-                "name": name,
-                "description": truncate_text(description, 1200),
-            }
-        )
-    return talents
-
-
-def add_talent(talents: list[dict[str, str]], seen: set[tuple[str, str, str]], talent: dict[str, str]) -> None:
-    talent_type = normalize_space(talent.get("type", ""))
-    name = normalize_space(talent.get("name", ""))
-    description = normalize_space(talent.get("description", ""))
-    if not description or len(description) < 20:
-        return
-    key = (talent_type.casefold(), name.casefold(), description[:120].casefold())
-    if key in seen:
-        return
-    seen.add(key)
-    talents.append({"type": talent_type or "Talent", "name": name, "description": description})
-
-
-def extract_talent_type(text: str) -> str:
-    match = TALENT_TYPE_RE.search(normalize_space(text))
-    if not match:
-        return ""
-    return normalize_space(match.group(1))
-
-
-def extract_talent_name(cells: list[Any], talent_type: str, description: str) -> str:
-    candidates: list[str] = []
-    for cell in cells:
-        for node in cell.find_all(["b", "strong", "a"], recursive=True):
-            candidates.append(normalize_space(node.get_text(" ", strip=True)))
-        candidates.append(normalize_space(cell.get_text(" ", strip=True)))
-
-    for candidate in candidates:
-        name = clean_talent_name(candidate, talent_type, description)
-        if name:
-            return name
-    return ""
-
-
-def extract_talent_name_from_text(text: str, talent_type: str) -> str:
-    text = normalize_space(text)
-    name = re.sub(TALENT_TYPE_RE, "", text, count=1).strip(" :-–—")
-    return clean_talent_name(name, talent_type, "")
-
-
-def clean_talent_name(candidate: str, talent_type: str, description: str) -> str:
-    text = normalize_space(candidate)
-    if not text:
-        return ""
-    text = re.sub(TALENT_TYPE_RE, "", text, count=1).strip(" :-–—")
-    if not text or text.casefold() == talent_type.casefold():
-        return ""
-    if description and text in description and len(text) > 80:
-        return ""
-    if len(text) > 90:
-        return ""
-    folded = text.casefold()
-    reject = ("description", "attributes", "upgrade preview", "level ", "cooldown", "energy cost")
-    if any(item in folded for item in reject):
-        return ""
-    return text
 
 
 def extract_role_summary(soup: Any, description: str = "") -> str:
@@ -491,17 +362,6 @@ def extract_character_summary_from_table(table: Any) -> str:
                     text = clean_description_text(next_cell.get_text(" ", strip=True))
                     if text and not pattern.search(text):
                         return text
-    return ""
-
-
-def extract_description_from_row(row: Any) -> str:
-    cells = row.find_all(["td", "th"], recursive=False)
-    for cell in reversed(cells):
-        for table in cell.find_all("table"):
-            table.decompose()
-        text = clean_talent_text(cell.get_text(" ", strip=True))
-        if is_talent_description(text):
-            return truncate_text(text, 900)
     return ""
 
 
