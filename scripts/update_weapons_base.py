@@ -62,10 +62,10 @@ class WeaponKnowledge:
     url: str
     weapon_type: str = MISSING
     rarity: str = MISSING
-    base_atk: str = MISSING
     secondary_stat: str = MISSING
+    stats: dict[str, dict[str, float | int]] | None = None
     passive: str = MISSING
-    materials: tuple[str, ...] = ()
+    materials: dict[str, list[str]] | None = None
 
     def to_json_dict(self) -> dict[str, Any]:
         return {
@@ -75,15 +75,11 @@ class WeaponKnowledge:
             "profile": {
                 "type": self.weapon_type,
                 "rarity": self.rarity,
-                "base_atk": self.base_atk,
                 "secondary_stat": self.secondary_stat,
+                "stats": self.stats or {},
             },
             "passive": self.passive,
-            "materials": {
-                "ascension": {
-                    "items": list(self.materials),
-                },
-            },
+            "materials": self.materials or empty_material_categories(),
             "standard_costs": weapon_standard_costs(),
         }
 
@@ -236,6 +232,10 @@ def parse_weapon_page(link: WeaponLink, soup: Any) -> WeaponKnowledge:
     canonical_name = canonical_name_from_url(link.url) or link.name
     infobox = parse_infobox(soup)
     passive = parse_passive_skill(soup)
+    stats = parse_weapon_stats(soup)
+    secondary_stat = infobox.get("secondary_stat", MISSING)
+    if secondary_stat in {"", MISSING}:
+        secondary_stat = parse_secondary_stat_name(soup)
     materials = parse_ascension_materials(soup, canonical_name)
 
     return WeaponKnowledge(
@@ -244,10 +244,10 @@ def parse_weapon_page(link: WeaponLink, soup: Any) -> WeaponKnowledge:
         url=link.url,
         weapon_type=infobox.get("type", MISSING),
         rarity=infobox.get("rarity", MISSING),
-        base_atk=infobox.get("base_atk", MISSING),
-        secondary_stat=infobox.get("secondary_stat", MISSING),
+        secondary_stat=secondary_stat,
+        stats=stats,
         passive=passive or MISSING,
-        materials=tuple(materials),
+        materials=materials,
     )
 
 
@@ -273,14 +273,6 @@ def parse_infobox(soup: Any) -> dict[str, str]:
                 " ".join(str(img.get("alt") or img.get("title") or "") for img in quality_node.select("img"))
             )
 
-    base_atk = infobox.select_one('[data-source="base-atk"]')
-    if base_atk:
-        result["base_atk"] = clean_numeric_stat(base_atk.get_text(" ", strip=True))
-    if "base_atk" not in result:
-        result["base_atk"] = strip_infobox_label(find_infobox_value(infobox, "Base ATK"), "Base ATK")
-    if result.get("base_atk") in {"", MISSING}:
-        result["base_atk"] = find_quality_text(infobox, r"\b\d+\s*-\s*\d+\b", reject="%")
-
     secondary_stat = infobox.select_one('[data-source="secondary-stat"]')
     if secondary_stat:
         result["secondary_stat"] = normalize_space(secondary_stat.get_text(" ", strip=True))
@@ -295,6 +287,56 @@ def parse_infobox(soup: Any) -> dict[str, str]:
         )
 
     return result
+
+
+def parse_secondary_stat_name(soup: Any) -> str:
+    table = soup.select_one("table.ascension-stats")
+    if not table:
+        return MISSING
+    header_row = table.find("tr")
+    if not header_row:
+        return MISSING
+    headers = header_row.find_all("th", recursive=False)
+    if len(headers) < 4:
+        return MISSING
+    stat_header = headers[-1]
+    tooltip = stat_header.select_one("[data-tt-text]")
+    if tooltip and tooltip.get("data-tt-text"):
+        return normalize_space(str(tooltip.get("data-tt-text")))
+    text = normalize_space(stat_header.get_text(" ", strip=True))
+    text = re.sub(r"\bSecondary Attribute\b", "", text, flags=re.IGNORECASE)
+    return normalize_space(text) or MISSING
+
+
+def parse_weapon_stats(soup: Any) -> dict[str, dict[str, float | int]]:
+    table = soup.select_one("table.ascension-stats")
+    if not table:
+        return {}
+
+    stats: dict[str, dict[str, float | int]] = {}
+    for row in table.find_all("tr"):
+        cells = row.find_all(["td", "th"], recursive=False)
+        if len(cells) < 3:
+            continue
+
+        level_text = normalize_space(cells[-3].get_text(" ", strip=True))
+        base_atk = parse_int(cells[-2].get_text(" ", strip=True))
+        secondary_value = parse_float(cells[-1].get_text(" ", strip=True))
+        if base_atk is None or secondary_value is None:
+            continue
+
+        if level_text == "1/20":
+            stats["level_1"] = {
+                "base_atk": base_atk,
+                "secondary_stat_value": secondary_value,
+            }
+        elif level_text == "90/90":
+            stats["level_90"] = {
+                "base_atk": base_atk,
+                "secondary_stat_value": secondary_value,
+            }
+
+    return stats
 
 
 def find_infobox_data_item(infobox: Any, label: str) -> Any | None:
@@ -339,11 +381,7 @@ def find_quality_text(infobox: Any, pattern: str, reject: str = "") -> str:
 def parse_passive_skill(soup: Any) -> str:
     infobox = soup.select_one(".portable-infobox, aside.portable-infobox, .pi-theme-genshin")
     if infobox:
-        for selector in (
-            '[data-source="passive-skill"]',
-            '[data-source="effect"]',
-            '[data-source="special-ability"]',
-        ):
+        for selector in ('td[data-source="effect"]', '[data-source="passive-skill"]', '[data-source="special-ability"]'):
             node = infobox.select_one(selector)
             if node:
                 candidates = [clean_passive_text(item.get_text(" ", strip=True)) for item in infobox.select(selector)]
@@ -365,10 +403,37 @@ def parse_passive_skill(soup: Any) -> str:
     return ""
 
 
-def parse_ascension_materials(soup: Any, weapon_name: str) -> list[str]:
+def parse_ascension_materials(soup: Any, weapon_name: str) -> dict[str, list[str]]:
+    categories = empty_material_categories()
+    table = soup.select_one("table.ascension-stats")
+    if not table:
+        return categories
+
+    category_order = ("domain_materials", "elite_drops", "common_drops")
+    for row in table.select("tr.ascension"):
+        items = []
+        for anchor in row.select(".card-container a[href], .card-wrapper a[href], a[href]"):
+            candidate = normalize_space(str(anchor.get("title") or anchor.get_text(" ", strip=True)))
+            if is_clean_material_name(candidate, weapon_name) and candidate not in items:
+                items.append(candidate)
+        for index, candidate in enumerate(items[:3]):
+            category = category_order[index]
+            if candidate not in categories[category]:
+                categories[category].append(candidate)
+
+    if any(categories.values()):
+        return categories
+
+    flat_materials = parse_flat_ascension_materials(soup, weapon_name)
+    categories["domain_materials"] = flat_materials[0::3]
+    categories["elite_drops"] = flat_materials[1::3]
+    categories["common_drops"] = flat_materials[2::3]
+    return categories
+
+
+def parse_flat_ascension_materials(soup: Any, weapon_name: str) -> list[str]:
     materials: list[str] = []
     seen: set[str] = set()
-
     for heading in soup.select("h2, h3, h4"):
         heading_text = normalize_space(heading.get_text(" ", strip=True)).casefold()
         if "ascension" not in heading_text:
@@ -381,8 +446,15 @@ def parse_ascension_materials(soup: Any, weapon_name: str) -> list[str]:
                 if is_clean_material_name(candidate, weapon_name) and candidate not in seen:
                     materials.append(candidate)
                     seen.add(candidate)
-
     return materials
+
+
+def empty_material_categories() -> dict[str, list[str]]:
+    return {
+        "domain_materials": [],
+        "elite_drops": [],
+        "common_drops": [],
+    }
 
 
 def is_clean_material_name(value: str, weapon_name: str = "") -> bool:
@@ -413,23 +485,20 @@ def clean_passive_text(value: str) -> str:
         return ""
     for label in ("Passive", "Description", "Refinement", "Effect"):
         text = re.sub(rf"\b{re.escape(label)}\b", " ", text, flags=re.IGNORECASE)
-    text = re.sub(r"\([^)]*\d[^)]*\)", "", text)
-    text = re.sub(r"\d+(?:[.,]\d+)?\s*%", "", text)
-    text = re.sub(r"\d+(?:[.,]\d+)?(?:/\d+(?:[.,]\d+)?)+", "", text)
-    text = re.sub(r"\b\d+(?:[.,]\d+)?(?:st|nd|rd|th|s)?\b", "", text, flags=re.IGNORECASE)
-    text = re.sub(r"\d+(?:[.,]\d+)?", "", text)
-    text = re.sub(r"\s*/\s*", " ", text)
+    text = re.sub(r"\s*/\s*", "/", text)
+    text = re.sub(r"\s+%", "%", text)
     text = re.sub(r"\s+([.,;:!?])", r"\1", text)
     return normalize_space(text)
 
 
-def clean_numeric_stat(value: str) -> str:
-    text = normalize_space(value)
-    range_match = re.search(r"\b\d+(?:\.\d+)?\s*-\s*\d+(?:\.\d+)?%?\b", text)
-    if range_match:
-        return range_match.group(0)
-    match = re.search(r"\b\d+(?:\.\d+)?%?\b", text)
-    return match.group(0) if match else text or MISSING
+def parse_int(value: str) -> int | None:
+    match = re.search(r"\d+", normalize_space(value).replace(",", ""))
+    return int(match.group(0)) if match else None
+
+
+def parse_float(value: str) -> float | None:
+    match = re.search(r"\d+(?:\.\d+)?", normalize_space(value).replace(",", ""))
+    return float(match.group(0)) if match else None
 
 
 def clean_rarity(value: str) -> str:
