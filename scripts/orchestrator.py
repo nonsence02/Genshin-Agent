@@ -201,7 +201,7 @@ def execute_tool_call(tool_call: Any) -> dict[str, Any]:
             calculate_talents=extract_calculate_talents(arguments),
         )
     if function_name == "get_character_info":
-        return get_character_info(character_names=extract_character_names(arguments))
+        return get_character_lore(character_names=extract_character_names(arguments))
 
     return {
         "error": "unknown_tool",
