@@ -171,7 +171,9 @@ def parse_character_page(candidate: CharacterCandidate, soup: Any) -> dict[str, 
         "region": extract_infobox_field(infobox, "Region") if infobox else "",
         "rarity": extract_rarity(infobox) if infobox else None,
         "description": extract_description(soup),
+        "role_summary": extract_role_summary(soup),
         "combat_talents": combat_talents,
+        "constellations": extract_constellations(soup),
         "source_url": candidate.url,
     }
 
@@ -205,24 +207,44 @@ def extract_rarity(infobox: Any) -> int | None:
 
 
 def extract_description(soup: Any) -> str:
-    quote = soup.select_one(".mw-parser-output blockquote, .mw-parser-output .quote")
-    if quote:
-        text = clean_description_text(quote.get_text(" ", strip=True))
-        if text:
-            return text
-
     content = soup.select_one(".mw-parser-output")
     if not content:
         return ""
-    for paragraph in content.find_all("p", recursive=False):
-        text = clean_description_text(paragraph.get_text(" ", strip=True))
-        if len(text) >= 40:
-            return text
-    for paragraph in content.find_all("p"):
-        text = clean_description_text(paragraph.get_text(" ", strip=True))
-        if len(text) >= 40:
-            return text
-    return ""
+
+    first_paragraph = find_first_intro_paragraph(content)
+    if not first_paragraph:
+        quote = soup.select_one(".mw-parser-output blockquote, .mw-parser-output .quote")
+        return clean_description_text(quote.get_text(" ", strip=True)) if quote else ""
+
+    paragraphs: list[str] = []
+    node = first_paragraph
+    while node is not None:
+        name = getattr(node, "name", None)
+        if name in {"h2", "h3", "h4", "table"}:
+            break
+        if name == "p" and not is_empty_paragraph(node):
+            text = clean_description_text(node.get_text(" ", strip=True))
+            if text:
+                paragraphs.append(text)
+        node = node.find_next_sibling()
+
+    return "\n\n".join(paragraphs)
+
+
+def find_first_intro_paragraph(content: Any) -> Any | None:
+    for node in content.find_all("p", recursive=False):
+        if not is_empty_paragraph(node):
+            text = clean_description_text(node.get_text(" ", strip=True))
+            if text:
+                return node
+    return None
+
+
+def is_empty_paragraph(node: Any) -> bool:
+    classes = set(node.get("class", []) or [])
+    if "mw-empty-elt" in classes:
+        return True
+    return not normalize_space(node.get_text(" ", strip=True))
 
 
 def extract_combat_talents(soup: Any) -> dict[str, str]:
@@ -234,6 +256,60 @@ def extract_combat_talents(soup: Any) -> dict[str, str]:
             talents[key] = heuristic_find_talent_description(soup, phrase)
 
     return talents
+
+
+def extract_role_summary(soup: Any) -> str:
+    heading = find_heading_by_id(soup, ("Character_Description", "Character_Summary"))
+    if heading:
+        paragraphs = collect_following_paragraphs(heading)
+        if paragraphs:
+            return "\n\n".join(paragraphs)
+
+    for table in soup.find_all("table"):
+        if "character summary" not in table.get_text(" ", strip=True).casefold():
+            continue
+        summary = extract_character_summary_from_table(table)
+        if summary:
+            return summary
+
+    return ""
+
+
+def collect_following_paragraphs(heading: Any) -> list[str]:
+    paragraphs: list[str] = []
+    node = heading.find_next_sibling()
+    while node is not None:
+        name = getattr(node, "name", None)
+        if name in {"h2", "h3", "h4", "table"}:
+            break
+        if name == "p" and not is_empty_paragraph(node):
+            text = clean_description_text(node.get_text(" ", strip=True))
+            if text:
+                paragraphs.append(text)
+        node = node.find_next_sibling()
+    return paragraphs
+
+
+def extract_character_summary_from_table(table: Any) -> str:
+    for row in table.find_all("tr"):
+        cells = row.find_all(["th", "td"], recursive=False)
+        if not cells:
+            continue
+        for index, cell in enumerate(cells):
+            if "character summary" not in cell.get_text(" ", strip=True).casefold():
+                continue
+            for sibling in cells[index + 1 :]:
+                text = clean_description_text(sibling.get_text(" ", strip=True))
+                if text and "character summary" not in text.casefold():
+                    return text
+            next_row = row.find_next_sibling("tr")
+            if next_row:
+                next_cells = next_row.find_all(["td", "th"], recursive=False)
+                for next_cell in next_cells:
+                    text = clean_description_text(next_cell.get_text(" ", strip=True))
+                    if text and "character summary" not in text.casefold():
+                        return text
+    return ""
 
 
 def extract_talents_from_tables(soup: Any) -> dict[str, str]:
@@ -288,6 +364,95 @@ def heuristic_find_talent_description(soup: Any, phrase: str) -> str:
             description = find_following_description(marker)
             if description:
                 return truncate_text(description, 900)
+    return ""
+
+
+def extract_constellations(soup: Any) -> dict[str, dict[str, str]]:
+    heading = find_heading_by_id(soup, ("Constellations", "Constellation")) or find_heading(
+        soup, ("constellations", "constellation")
+    )
+    if not heading:
+        return {}
+
+    table = find_next_section_table(heading)
+    if not table:
+        return {}
+
+    constellations: dict[str, dict[str, str]] = {}
+    rows = table.find_all("tr")
+    for index, row in enumerate(rows):
+        cells = row.find_all(["td", "th"], recursive=False)
+        if len(cells) < 2:
+            continue
+
+        row_text = normalize_space(row.get_text(" ", strip=True))
+        if not row_text or "level" in row_text.casefold() and "effect" in row_text.casefold():
+            continue
+
+        level = extract_constellation_level(cells, row_text)
+        if level is None or not 1 <= level <= 6:
+            continue
+
+        title = extract_constellation_title(cells)
+        effect = extract_constellation_effect(cells)
+        if normalize_space(effect).casefold() == normalize_space(title).casefold():
+            effect = ""
+        if not effect and index + 1 < len(rows):
+            effect = extract_constellation_effect(rows[index + 1].find_all(["td", "th"], recursive=False))
+        if not title and not effect:
+            continue
+
+        constellations[f"c{level}"] = {
+            "name": title,
+            "effect": effect,
+        }
+
+    return constellations
+
+
+def find_next_section_table(heading: Any) -> Any | None:
+    node = heading
+    while node is not None:
+        node = node.find_next_sibling()
+        if node is None:
+            break
+        if getattr(node, "name", None) in {"h2", "h3", "h4"}:
+            break
+        if getattr(node, "name", None) == "table":
+            return node
+        table = node.find("table") if hasattr(node, "find") else None
+        if table:
+            return table
+    return heading.find_next("table")
+
+
+def extract_constellation_level(cells: list[Any], row_text: str) -> int | None:
+    for cell in cells:
+        text = normalize_space(cell.get_text(" ", strip=True))
+        match = re.search(r"\b(?:C|Level)?\s*([1-6])\b", text, flags=re.IGNORECASE)
+        if match:
+            return int(match.group(1))
+    match = re.search(r"\b(?:C|Level)\s*([1-6])\b", row_text, flags=re.IGNORECASE)
+    return int(match.group(1)) if match else None
+
+
+def extract_constellation_title(cells: list[Any]) -> str:
+    for cell in cells[1:]:
+        text = clean_description_text(cell.get_text(" ", strip=True))
+        if not text:
+            continue
+        folded = text.casefold()
+        if "effect" in folded or len(text) > 120:
+            continue
+        return text
+    return ""
+
+
+def extract_constellation_effect(cells: list[Any]) -> str:
+    for cell in reversed(cells):
+        text = clean_talent_text(cell.get_text(" ", strip=True))
+        if len(text) >= 30:
+            return truncate_text(text, 900)
     return ""
 
 
@@ -350,6 +515,15 @@ def find_heading(soup: Any, names: Iterable[str]) -> Any | None:
     for span in soup.find_all(id=True):
         text = normalize_space(str(span.get("id", ""))).replace("_", " ").casefold()
         if any(name in text for name in wanted):
+            return span.find_parent(["h2", "h3", "h4"]) or span
+    return None
+
+
+def find_heading_by_id(soup: Any, ids: Iterable[str]) -> Any | None:
+    wanted = {item.casefold().replace("_", " ") for item in ids}
+    for span in soup.find_all(id=True):
+        span_id = str(span.get("id", "")).casefold().replace("_", " ")
+        if span_id in wanted:
             return span.find_parent(["h2", "h3", "h4"]) or span
     return None
 
