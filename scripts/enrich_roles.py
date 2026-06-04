@@ -18,17 +18,27 @@ from scripts.orchestrator import DEFAULT_API_KEY, DEFAULT_BASE_URL, DEFAULT_MODE
 
 
 DEFAULT_LORE_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
+ALLOWED_TAGS = (
+    "Main DPS",
+    "Sub DPS",
+    "Хиллер",
+    "Щитовик",
+    "Баффер",
+    "Карманный урон",
+    "Enabler",
+    "Аппликатор",
+)
 
 ROLE_PROMPT = (
-    "ОТВЕЧАЙ СТРОГО ТЕГАМИ. Запрещено писать пояснения. "
-    "Ты — киберспортивный аналитик Genshin Impact. "
-    "Прочитай все таланты персонажа (боевые, пассивные, фракционные). "
-    "Описания часто ссылаются на названия других навыков. "
-    "Пассивные таланты часто определяют истинную роль (хил, бафф, карманный урон). "
-    "Выдай от 2 до 4 тегов через запятую, которые максимально точно описывают его мету. "
-    "Доступные примеры: Main DPS, Sub-DPS, Саппорт, Баффер, Хиллер, Щитовик, "
-    "Карманный урон, [Элемент]-аппликатор, Enabler. "
-    "НИКАКОГО дополнительного текста. Только теги."
+    "Ты — строгий алгоритм классификации для базы данных. "
+    "Твоя единственная задача — выбрать от 1 до 3 тегов из РАЗРЕШЕННОГО СПИСКА, "
+    "которые лучше всего описывают механику талантов персонажа. "
+    "РАЗРЕШЕННЫЙ СПИСОК ТЕГОВ: [Main DPS, Sub DPS, Хиллер, Щитовик, Баффер, "
+    "Карманный урон, Enabler, Аппликатор]. "
+    "ПРАВИЛА: "
+    "1. ЗАПРЕЩЕНО использовать любые слова, которых нет в списке выше. "
+    "2. Выведи ТОЛЬКО выбранные теги через запятую. "
+    "3. Никаких пояснений, извинений или вступлений."
 )
 
 
@@ -130,7 +140,7 @@ def request_role_tags(client: Any, model: str, talents_text: str) -> str:
             {"role": "system", "content": ROLE_PROMPT},
             {"role": "user", "content": f"Текст навыков:\n{talents_text}"},
         ],
-        temperature=0.1,
+        temperature=0.0,
     )
     return response.choices[0].message.content or ""
 
@@ -143,7 +153,24 @@ def clean_tags(value: str) -> str:
         text = text.split(":", 1)[1]
     text = text.replace("*", "").replace("-", " ")
     text = " ".join(text.split())
-    return text.strip("`'\" .,")
+    selected: list[str] = []
+    for part in text.strip("`'\" .,").split(","):
+        tag = normalize_tag(part)
+        if tag and tag in ALLOWED_TAGS and tag not in selected:
+            selected.append(tag)
+        if len(selected) == 3:
+            break
+    return ", ".join(selected)
+
+
+def normalize_tag(value: str) -> str:
+    text = " ".join(str(value or "").strip("`'\" .").split())
+    aliases = {
+        "Sub-DPS": "Sub DPS",
+        "Sub dps": "Sub DPS",
+        "Main dps": "Main DPS",
+    }
+    return aliases.get(text, text)
 
 
 def parse_args() -> argparse.Namespace:

@@ -18,6 +18,7 @@ DEFAULT_DICTIONARY_PATH = PROJECT_ROOT / "data" / "raw" / "dictionary.json"
 DEFAULT_CHARACTER_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
 FANDOM_BASE_URL = "https://genshin-impact.fandom.com/wiki"
+TRAVELER_ELEMENTS = ("Anemo", "Geo", "Electro", "Dendro", "Hydro", "Pyro")
 
 
 @dataclass(frozen=True)
@@ -92,9 +93,7 @@ def main() -> int:
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
     candidates = load_character_candidates(args.dictionary, args.character_dir)
-    pending = [
-        candidate for candidate in candidates if not (args.output_dir / f"{candidate.character_id}.json").exists()
-    ]
+    pending = [candidate for candidate in candidates if is_candidate_pending(candidate, args.output_dir)]
     if args.limit > 0:
         pending = pending[: args.limit]
 
@@ -103,6 +102,10 @@ def main() -> int:
 
     client = WikiClient(timeout=args.timeout)
     for index, candidate in enumerate(pending, start=1):
+        if candidate.name_en.casefold() == "traveler":
+            scrape_traveler_variants(client, candidate, args.output_dir, args.sleep)
+            continue
+
         print(f"[{index}/{len(pending)}] {candidate.name_en} -> {candidate.url}")
         try:
             soup = client.get_soup(candidate.url)
@@ -116,6 +119,36 @@ def main() -> int:
 
     print("Done.")
     return 0
+
+
+def is_candidate_pending(candidate: CharacterCandidate, output_dir: Path) -> bool:
+    if candidate.name_en.casefold() == "traveler":
+        return any(not (output_dir / f"traveler-{element.casefold()}.json").exists() for element in TRAVELER_ELEMENTS)
+    return not (output_dir / f"{candidate.character_id}.json").exists()
+
+
+def scrape_traveler_variants(client: WikiClient, candidate: CharacterCandidate, output_dir: Path, sleep_seconds: float) -> None:
+    print(f"Traveler detected: scraping {len(TRAVELER_ELEMENTS)} elemental variants instead of the tabbed base page.")
+    for element in TRAVELER_ELEMENTS:
+        variant_id = f"traveler-{element.casefold()}"
+        output_path = output_dir / f"{variant_id}.json"
+        if output_path.exists():
+            print(f"  SKIP: {output_path.name}")
+            continue
+
+        variant = CharacterCandidate(variant_id, f"Traveler ({element})")
+        url = f"{FANDOM_BASE_URL}/Traveler_({element})"
+        print(f"  {variant.name_en} -> {url}")
+        try:
+            soup = client.get_soup(url)
+            data = parse_character_page(variant, soup)
+            data["element"] = element
+            data["source_url"] = url
+            output_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            print(f"    OK: {output_path.name}")
+        except Exception as exc:  # noqa: BLE001 - batch scraping should continue.
+            print(f"    ERROR: {exc}", file=sys.stderr)
+        time.sleep(sleep_seconds)
 
 
 def load_character_candidates(dictionary_path: Path, character_dir: Path) -> list[CharacterCandidate]:
