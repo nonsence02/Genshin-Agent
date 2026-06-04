@@ -305,8 +305,17 @@ def collect_following_paragraphs(heading: Any) -> list[str]:
             text = clean_description_text(node.get_text(" ", strip=True))
             if text:
                 paragraphs.append(text)
+        elif name == "div" and has_description_class(node):
+            text = clean_description_text(node.get_text(" ", strip=True))
+            if text:
+                paragraphs.append(text)
         node = node.find_next_sibling()
     return paragraphs
+
+
+def has_description_class(node: Any) -> bool:
+    classes = set(node.get("class", []))
+    return bool(classes & {"description-wrapper", "description-content"})
 
 
 def extract_character_summary_from_table(table: Any) -> str:

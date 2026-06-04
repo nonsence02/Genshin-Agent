@@ -20,6 +20,24 @@ from scripts.tools.calculator import (
 
 DEFAULT_CHARACTER_LORE_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
 
+ELEMENTS_RU = {
+    "Anemo": "Анемо",
+    "Geo": "Гео",
+    "Electro": "Электро",
+    "Dendro": "Дендро",
+    "Hydro": "Гидро",
+    "Pyro": "Пиро",
+    "Cryo": "Крио",
+}
+
+WEAPONS_RU = {
+    "Sword": "Одноручный меч",
+    "Claymore": "Двуручный меч",
+    "Polearm": "Древковое",
+    "Bow": "Стрелковое",
+    "Catalyst": "Катализатор",
+}
+
 
 def get_character_lore(
     character_names: list[str],
@@ -85,8 +103,8 @@ def extract_lore_payload(data: dict[str, Any], requested_name: str, path: Path) 
         "requested_name": requested_name,
         "id": data.get("id", path.stem),
         "name_en": data.get("name_en", ""),
-        "element": data.get("element", ""),
-        "weapon": data.get("weapon", ""),
+        "element": translate_term(data.get("element", ""), ELEMENTS_RU),
+        "weapon": translate_term(data.get("weapon", ""), WEAPONS_RU),
         "region": data.get("region", ""),
         "rarity": data.get("rarity"),
         "description": data.get("description", ""),
@@ -95,3 +113,8 @@ def extract_lore_payload(data: dict[str, Any], requested_name: str, path: Path) 
         "constellations": data.get("constellations", {}),
         "source_url": data.get("source_url", ""),
     }
+
+
+def translate_term(value: Any, dictionary: dict[str, str]) -> str:
+    text = str(value or "").strip()
+    return dictionary.get(text, text)
