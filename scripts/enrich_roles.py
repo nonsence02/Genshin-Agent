@@ -21,10 +21,13 @@ DEFAULT_LORE_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
 
 ROLE_PROMPT = (
     "Ты — киберспортивный аналитик Genshin Impact. "
-    "Прочитай описание навыков персонажа и определи его роль в отряде. "
-    "Верни СТРОГО одну короткую строку с 2-3 тегами через запятую "
-    "(например: 'Main DPS, Карманный урон', 'Хиллер, Баффер', 'Щитовик, Саппорт'). "
-    "НИКАКОГО дополнительного текста, приветствий или форматирования. Только теги."
+    "Прочитай все таланты персонажа (боевые, пассивные, фракционные). "
+    "Описания часто ссылаются на названия других навыков. "
+    "Пассивные таланты часто определяют истинную роль (хил, бафф, карманный урон). "
+    "Выдай от 2 до 4 тегов через запятую, которые максимально точно описывают его мету. "
+    "Доступные примеры: Main DPS, Sub-DPS, Саппорт, Баффер, Хиллер, Щитовик, "
+    "Карманный урон, [Элемент]-аппликатор, Enabler. "
+    "НИКАКОГО дополнительного текста. Только теги."
 )
 
 
@@ -65,9 +68,9 @@ def main() -> int:
             skipped += 1
             continue
 
-        talents_text = build_combat_talents_text(data.get("combat_talents", {}))
+        talents_text = build_talents_text(data)
         if not talents_text:
-            print(f"[{index}/{len(paths)}] {path.name}: skipped, no combat talent text")
+            print(f"[{index}/{len(paths)}] {path.name}: skipped, no talent text")
             skipped += 1
             continue
 
@@ -85,10 +88,27 @@ def main() -> int:
     return 0
 
 
-def build_combat_talents_text(combat_talents: Any) -> str:
+def build_talents_text(data: dict[str, Any]) -> str:
+    talents = data.get("talents", [])
+    if isinstance(talents, list):
+        chunks = []
+        for talent in talents:
+            if not isinstance(talent, dict):
+                continue
+            talent_type = str(talent.get("type", "") or "").strip()
+            name = str(talent.get("name", "") or "").strip()
+            description = str(talent.get("description", "") or "").strip()
+            if not description:
+                continue
+            chunks.append(f"[Тип: {talent_type}] Название: {name}\nОписание: {description}")
+        return "\n\n".join(chunks)
+
+    return build_legacy_combat_talents_text(data.get("combat_talents", {}))
+
+
+def build_legacy_combat_talents_text(combat_talents: Any) -> str:
     if not isinstance(combat_talents, dict):
         return ""
-
     chunks: list[str] = []
     labels = {
         "normal_attack": "Обычная атака",

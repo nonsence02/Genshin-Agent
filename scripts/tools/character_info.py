@@ -111,7 +111,7 @@ def extract_lore_payload(data: dict[str, Any], requested_name: str, path: Path) 
         "description": data.get("description", ""),
         "ai_tags": ai_tags,
         "role_summary": ai_tags or data.get("role_summary", ""),
-        "combat_talents": data.get("combat_talents", {}),
+        "talents": data.get("talents", []),
         "constellations": data.get("constellations", {}),
         "source_url": data.get("source_url", ""),
     }
