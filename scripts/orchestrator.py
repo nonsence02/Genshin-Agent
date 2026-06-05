@@ -18,6 +18,7 @@ from scripts.tools.artifact_info import get_artifact_set_details  # noqa: E402
 from scripts.tools.artifact_scorer import recommend_best_artifacts  # noqa: E402
 from scripts.tools.character_info import get_character_lore  # noqa: E402
 from scripts.tools.equipped_gear import get_character_equipment  # noqa: E402
+from scripts.tools.stat_calculator import calculate_character_full_stats  # noqa: E402
 from scripts.tools.weapon_calculator import calculate_weapon_ascension  # noqa: E402
 from scripts.tools.weapon_info import get_weapon_details  # noqa: E402
 from scripts.tools.weapon_recommender import recommend_best_weapon  # noqa: E402
@@ -77,6 +78,10 @@ SYSTEM_PROMPT += (
 SYSTEM_PROMPT += (
     "- Чтобы посмотреть текущее оружие и уже надетые артефакты персонажа, используй get_equipped_gear. "
     "Не придумывай экипировку из памяти.\n"
+)
+SYSTEM_PROMPT += (
+    "- Для вопросов об итоговых характеристиках персонажа (HP, АТК, DEF, криты, МС, восстановление энергии) "
+    "используй get_character_stats. Не считай статы самостоятельно.\n"
 )
 
 TOOLS: list[dict[str, Any]] = [
@@ -261,6 +266,24 @@ TOOLS: list[dict[str, Any]] = [
     {
         "type": "function",
         "function": {
+            "name": "get_character_stats",
+            "description": "Посчитать и вывести точные итоговые характеристики персонажа (HP, ATK, DEF, Криты, МС, Восстановление) с учетом уровня, оружия и артефактов.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "character_id": {
+                        "type": "string",
+                        "description": "Имя персонажа без склонений или его ID. Примеры: Николь, xiangling, hu-tao.",
+                    },
+                },
+                "required": ["character_id"],
+                "additionalProperties": False,
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
             "name": "calculate_weapon_resources",
             "description": "Рассчитать количество материалов, необходимых для возвышения оружия до 90 уровня.",
             "parameters": {
@@ -373,6 +396,10 @@ def execute_tool_call(tool_call: Any) -> Any:
         )
     if function_name == "get_equipped_gear":
         return get_character_equipment(str(arguments.get("character_name") or "").strip())
+    if function_name == "get_character_stats":
+        return calculate_character_full_stats(
+            str(arguments.get("character_id") or arguments.get("character_name") or "").strip()
+        )
     if function_name == "calculate_weapon_resources":
         return calculate_weapon_ascension(str(arguments.get("weapon_name") or "").strip())
     if function_name == "recommend_weapon":
