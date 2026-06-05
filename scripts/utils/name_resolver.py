@@ -3,8 +3,10 @@
 from __future__ import annotations
 
 import difflib
+import json
 import re
 from collections.abc import Iterable
+from pathlib import Path
 from typing import Any
 
 
@@ -71,3 +73,55 @@ def normalize_weapon_name(value: str) -> str:
     """Lowercase and remove spaces, apostrophes, hyphens and punctuation."""
 
     return re.sub(r"[\W_]+", "", str(value or "").casefold(), flags=re.UNICODE)
+
+
+def resolve_artifact_key(query: str, artifacts_dir: str = "knowledge_base/artifacts") -> str:
+    """Resolve an artifact set query to a local artifact KB id."""
+
+    normalized_query = normalize_weapon_name(query)
+    if not normalized_query:
+        print(f"[DEBUG] Резолв артефакта: '{query}' -> ''")
+        return ""
+
+    normalized_to_id: dict[str, str] = {}
+    base_dir = Path(artifacts_dir)
+    if not base_dir.is_absolute():
+        base_dir = Path.cwd() / base_dir
+
+    if not base_dir.exists():
+        print(f"[DEBUG] Резолв артефакта: '{query}' -> ''")
+        return ""
+
+    for path in base_dir.glob("*.json"):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not isinstance(data, dict):
+            continue
+
+        artifact_id = str(data.get("id") or path.stem)
+        names = [
+            artifact_id,
+            data.get("name"),
+            data.get("name_en"),
+            data.get("name_ru"),
+        ]
+        for name in names:
+            normalized_name = normalize_weapon_name(str(name or "").strip())
+            if normalized_name:
+                normalized_to_id[normalized_name] = artifact_id
+
+    if normalized_query in normalized_to_id:
+        artifact_id = normalized_to_id[normalized_query]
+        print(f"[DEBUG] Резолв артефакта: '{query}' -> '{artifact_id}'")
+        return artifact_id
+
+    matches = difflib.get_close_matches(normalized_query, normalized_to_id.keys(), n=1, cutoff=0.78)
+    if matches:
+        artifact_id = normalized_to_id[matches[0]]
+        print(f"[DEBUG] Резолв артефакта: '{query}' -> '{artifact_id}'")
+        return artifact_id
+
+    print(f"[DEBUG] Резолв артефакта: '{query}' -> ''")
+    return ""

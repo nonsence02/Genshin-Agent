@@ -14,6 +14,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.tools.calculator import calculate_characters_requirements, resolve_character_id  # noqa: E402
+from scripts.tools.artifact_info import get_artifact_set_details  # noqa: E402
 from scripts.tools.character_info import get_character_lore  # noqa: E402
 from scripts.tools.weapon_calculator import calculate_weapon_ascension  # noqa: E402
 from scripts.tools.weapon_info import get_weapon_details  # noqa: E402
@@ -62,6 +63,11 @@ SYSTEM_PROMPT = """Ты — ИИ-ассистент по Genshin Impact.
 
 - Отвечай на русском языке, кратко и практично, в Markdown.
 """
+
+SYSTEM_PROMPT += (
+    "\n- Для вопросов о сетах артефактов, бонусах 2/4 частей или редкости сета "
+    "используй get_artifact_info. Передавай название сета без склонений.\n"
+)
 
 TOOLS: list[dict[str, Any]] = [
     {
@@ -155,6 +161,24 @@ TOOLS: list[dict[str, Any]] = [
                     },
                 },
                 "required": ["weapon_name"],
+                "additionalProperties": False,
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_artifact_info",
+            "description": "Получить информацию о сете артефактов (бонусы 2-х и 4-х частей, редкость).",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "set_name": {
+                        "type": "string",
+                        "description": "Название сета артефактов без склонений. Примеры: Archaic Petra, Архаичный камень, gladiators-finale.",
+                    },
+                },
+                "required": ["set_name"],
                 "additionalProperties": False,
             },
         },
@@ -289,6 +313,8 @@ def execute_tool_call(tool_call: Any) -> Any:
         return get_character_lore(character_names=extract_character_names(arguments))
     if function_name == "get_weapon_info":
         return get_weapon_details(str(arguments.get("weapon_name") or "").strip())
+    if function_name == "get_artifact_info":
+        return get_artifact_set_details(str(arguments.get("set_name") or "").strip())
     if function_name == "calculate_weapon_resources":
         return calculate_weapon_ascension(str(arguments.get("weapon_name") or "").strip())
     if function_name == "recommend_weapon":
