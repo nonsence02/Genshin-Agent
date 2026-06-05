@@ -1,4 +1,4 @@
-"""Sync live HoYoLAB profile data through genshin.py into local JSON."""
+"""Sync live HoYoLAB Calculator data through genshin.py into local JSON."""
 
 from __future__ import annotations
 
@@ -31,6 +31,8 @@ else:
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = PROJECT_ROOT / "data" / "hoyolab_profile.json"
 CHARACTERS_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
+REQUEST_DELAY_SECONDS = 0.2
+
 ALIAS_MAP = {
     "Сара": "kujou-sara",
     "Кудзё Сара": "kujou-sara",
@@ -74,7 +76,6 @@ async def main() -> int:
         return 1
 
     load_dotenv(PROJECT_ROOT / ".env")
-
     ltuid_v2 = os.getenv("LTUID_V2", "").strip()
     ltoken_v2 = os.getenv("LTOKEN_V2", "").strip()
     uid = os.getenv("GENSHIN_UID", "").strip()
@@ -101,11 +102,10 @@ async def main() -> int:
     set_client_cookies(client, ltuid_v2, ltoken_v2)
 
     try:
-        print(f"[1/3] Запрашиваю детальных персонажей HoYoLAB для UID {uid}...")
-        detailed_characters = await client.get_genshin_characters(int(uid))
-        user = await fetch_optional_user_summary(client, int(uid))
-        print("[2/3] Нормализую персонажей, оружие и артефакты...")
-        payload = build_profile_payload(uid, detailed_characters, user)
+        print(f"[1/3] Получаю синхронизированных персонажей Calculator API для UID {uid}...")
+        synced_chars = await client.get_calculator_characters(sync=True, uid=int(uid))
+        print(f"[2/3] Загружаю детали персонажей: {len(synced_chars)} шт.")
+        payload = await build_profile_payload(client, uid, synced_chars)
     except get_invalid_cookies_errors() as exc:
         print(
             "Ошибка авторизации HoYoLAB: cookies протухли или неверны. "
@@ -149,32 +149,31 @@ def get_invalid_cookies_errors() -> tuple[type[BaseException], ...]:
     return tuple()
 
 
-async def fetch_optional_user_summary(client: Any, uid: int) -> Any | None:
-    try:
-        return await client.get_genshin_user(uid)
-    except Exception:
-        return None
-
-
-def build_profile_payload(uid: str, detailed_characters: Any, user: Any | None = None) -> dict[str, Any]:
+async def build_profile_payload(client: Any, uid: str, synced_chars: Any) -> dict[str, Any]:
     character_index = build_character_index()
     characters: dict[str, Any] = {}
-    for raw_character in as_list(detailed_characters):
-        normalized = normalize_character(raw_character, character_index)
+
+    for index, char in enumerate(as_list(synced_chars), start=1):
+        char_id = get_field(char, "id", "avatar_id", default=None)
+        if char_id is None:
+            continue
+
+        print(f"  [{index}/{len(synced_chars)}] Детали персонажа id={char_id}...")
+        details = await client.get_character_details(char_id, uid=int(uid))
+        normalized = normalize_character(details, character_index)
         characters[normalized["id"]] = normalized
+        await asyncio.sleep(REQUEST_DELAY_SECONDS)
 
     return {
-        "source": "hoyolab",
+        "source": "hoyolab_calculator",
         "uid": uid,
-        "nickname": get_field(user, "nickname", "name", "username", default="") if user is not None else "",
-        "level": get_field(user, "level", "adventure_rank", default=None) if user is not None else None,
         "characters": characters,
     }
 
 
-def normalize_character(raw_character: Any, character_index: dict[str, str]) -> dict[str, Any]:
-    data = to_plain(raw_character)
-    name_ru = str(get_field(data, "name", "name_ru", default="")).strip()
+def normalize_character(details: Any, character_index: dict[str, str]) -> dict[str, Any]:
+    data = to_plain(details)
+    name_ru = extract_display_name(data)
     name_en = str(get_field(data, "name_en", "english_name", default="")).strip()
     character_id = resolve_local_character_id(name_ru, name_en, data, character_index)
 
@@ -218,12 +217,9 @@ def resolve_local_character_id(
     character_index: dict[str, str],
 ) -> str:
     for value in (name_ru, name_en):
-        alias_id = ALIAS_MAP.get(str(value or "").strip())
+        alias_id = get_alias(value)
         if alias_id:
             return alias_id
-        normalized_alias_id = get_alias_by_normalized_name(value)
-        if normalized_alias_id:
-            return normalized_alias_id
 
     for value in (name_en, name_ru, get_field(data, "id", "key", "avatar_id", default="")):
         key = normalize_lookup(value)
@@ -232,10 +228,12 @@ def resolve_local_character_id(
     return slugify(name_en or name_ru or str(get_field(data, "id", "key", default="unknown")))
 
 
-def get_alias_by_normalized_name(value: Any) -> str:
-    query = normalize_lookup(value)
-    if not query:
-        return ""
+def get_alias(value: Any) -> str:
+    raw = str(value or "").strip()
+    if raw in ALIAS_MAP:
+        return ALIAS_MAP[raw]
+
+    query = normalize_lookup(raw)
     for alias, character_id in ALIAS_MAP.items():
         if normalize_lookup(alias) == query:
             return character_id
@@ -243,7 +241,13 @@ def get_alias_by_normalized_name(value: Any) -> str:
 
 
 def extract_constellation(data: dict[str, Any]) -> int:
-    for key in ("constellation", "constellations_unlocked", "actived_constellation_num", "actived_constellation"):
+    for key in (
+        "constellation",
+        "constellations_unlocked",
+        "actived_constellation_num",
+        "actived_constellation",
+        "constellation_level",
+    ):
         value = get_field(data, key, default=None)
         if value is not None:
             return max(0, min(6, safe_int(value)))
@@ -255,11 +259,18 @@ def extract_constellation(data: dict[str, Any]) -> int:
 
 
 def extract_talents(data: dict[str, Any]) -> dict[str, int | None]:
-    # TODO: Fetch talents via Calculator API if needed.
+    raw_talents = get_field(data, "talents", "skills", default=[])
+    talents = as_list(raw_talents)
+    levels: list[int | None] = []
+    for talent in talents:
+        plain = to_plain(talent)
+        level = get_field(plain, "level", "current_level", "final_level", "base_level", default=None)
+        levels.append(safe_int(level) if level is not None else None)
+
     return {
-        "normal_attack": None,
-        "elemental_skill": None,
-        "elemental_burst": None,
+        "normal_attack": levels[0] if len(levels) > 0 else None,
+        "elemental_skill": levels[1] if len(levels) > 1 else None,
+        "elemental_burst": levels[2] if len(levels) > 2 else None,
     }
 
 
@@ -284,8 +295,9 @@ def extract_artifacts(data: dict[str, Any]) -> list[dict[str, Any]]:
         plain = to_plain(artifact)
         artifacts.append(
             {
-                "set": extract_display_name(get_field(plain, "set", "set_name", "setName", default="")),
-                "slot": normalize_artifact_slot(get_field(plain, "slot", "pos", "type", default="")),
+                "name": extract_display_name(plain),
+                "set_name": extract_artifact_set_name(plain),
+                "slot": normalize_artifact_slot(get_field(plain, "slot", "pos", "type", "position", default="")),
                 "main_stat": extract_main_stat(plain),
                 "level": safe_int(get_field(plain, "level", default=0)),
                 "rarity": safe_int(get_field(plain, "rarity", default=0)),
@@ -294,8 +306,17 @@ def extract_artifacts(data: dict[str, Any]) -> list[dict[str, Any]]:
     return artifacts
 
 
+def extract_artifact_set_name(artifact: dict[str, Any]) -> str:
+    set_value = get_field(artifact, "set", "set_name", "setName", "setNameTextMapHash", default="")
+    if set_value:
+        return extract_display_name(set_value)
+    return str(get_field(artifact, "reliquary_set_name", "relic_set_name", default=""))
+
+
 def extract_main_stat(artifact: dict[str, Any]) -> str:
-    main_stat = get_field(artifact, "main_stat", "mainStat", "main_property", default=None)
+    main_stat = get_field(artifact, "main_stat", "mainStat", "main_property", "main_property_list", default=None)
+    if isinstance(main_stat, list) and main_stat:
+        main_stat = main_stat[0]
     if main_stat is None:
         return ""
     return extract_display_name(main_stat)
@@ -304,8 +325,20 @@ def extract_main_stat(artifact: dict[str, Any]) -> str:
 def extract_display_name(value: Any) -> str:
     plain = to_plain(value)
     if isinstance(plain, dict):
-        return str(get_field(plain, "name", "name_ru", "name_en", "stat", "type", default=""))
-    return str(plain)
+        return str(
+            get_field(
+                plain,
+                "name",
+                "name_ru",
+                "name_en",
+                "stat",
+                "type",
+                "text",
+                "display_name",
+                default="",
+            )
+        )
+    return str(plain or "")
 
 
 def normalize_artifact_slot(value: Any) -> str:
@@ -315,23 +348,28 @@ def normalize_artifact_slot(value: Any) -> str:
         "flower": "flower",
         "floweroflife": "flower",
         "equipbracer": "flower",
+        "bracer": "flower",
         "1": "flower",
         "plume": "plume",
         "feather": "plume",
         "plumeofdeath": "plume",
         "equipnecklace": "plume",
+        "necklace": "plume",
         "2": "plume",
         "sands": "sands",
         "sandsofeon": "sands",
         "equipshoes": "sands",
+        "shoes": "sands",
         "3": "sands",
         "goblet": "goblet",
         "gobletofeonothem": "goblet",
         "equipring": "goblet",
+        "ring": "goblet",
         "4": "goblet",
         "circlet": "circlet",
         "circletoflogos": "circlet",
         "equipdress": "circlet",
+        "dress": "circlet",
         "5": "circlet",
     }
     return aliases.get(compact, raw.strip())
