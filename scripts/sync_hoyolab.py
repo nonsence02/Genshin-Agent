@@ -162,7 +162,7 @@ async def build_profile_payload(client: Any, uid: str, synced_chars: Any) -> dic
 
         print(f"  [{index}/{len(synced_chars)}] Детали персонажа id={char_id}...")
         details = await client.get_character_details(char_id, uid=int(uid))
-        normalized = normalize_character(details, character_index)
+        normalized = normalize_character(char, details, character_index)
         characters[normalized["id"]] = normalized
         await asyncio.sleep(REQUEST_DELAY_SECONDS)
 
@@ -173,21 +173,24 @@ async def build_profile_payload(client: Any, uid: str, synced_chars: Any) -> dic
     }
 
 
-def normalize_character(details: Any, character_index: dict[str, str]) -> dict[str, Any]:
-    data = to_plain(details)
-    name_ru = extract_display_name(data)
-    name_en = str(get_field(data, "name_en", "english_name", default="")).strip()
-    character_id = resolve_local_character_id(name_ru, name_en, data, character_index)
+def normalize_character(char: Any, details: Any, character_index: dict[str, str]) -> dict[str, Any]:
+    char_data = to_plain(char)
+    details_data = to_plain(details)
+    name_ru = extract_display_name(char_data)
+    if not name_ru:
+        name_ru = str(get_field(char_data, "name", "id", "avatar_id", default="")).strip()
+    name_en = str(get_field(char_data, "name_en", "english_name", default="")).strip()
+    character_id = resolve_local_character_id(name_ru, name_en, char_data, character_index)
 
     return {
         "id": character_id,
         "name_ru": name_ru,
-        "level": safe_int(get_field(data, "level", default=0)),
-        "rarity": safe_int(get_field(data, "rarity", "rank", default=0)),
-        "constellation": extract_constellation(data),
-        "talents": extract_talents(data),
-        "equipped_weapon": extract_weapon(data),
-        "equipped_artifacts": extract_artifacts(data),
+        "level": safe_int(get_field(char_data, "level", default=0)),
+        "rarity": safe_int(get_field(char_data, "rarity", "rank", default=0)),
+        "constellation": extract_constellation(char_data) or extract_constellation(details_data),
+        "talents": extract_talents(details_data),
+        "equipped_weapon": extract_weapon(details_data),
+        "equipped_artifacts": extract_artifacts(details_data),
     }
 
 
