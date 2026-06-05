@@ -15,6 +15,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from scripts.tools.calculator import calculate_characters_requirements, resolve_character_id  # noqa: E402
 from scripts.tools.artifact_info import get_artifact_set_details  # noqa: E402
+from scripts.tools.artifact_scorer import recommend_best_artifacts  # noqa: E402
 from scripts.tools.character_info import get_character_lore  # noqa: E402
 from scripts.tools.weapon_calculator import calculate_weapon_ascension  # noqa: E402
 from scripts.tools.weapon_info import get_weapon_details  # noqa: E402
@@ -67,6 +68,10 @@ SYSTEM_PROMPT = """Ты — ИИ-ассистент по Genshin Impact.
 SYSTEM_PROMPT += (
     "\n- Для вопросов о сетах артефактов, бонусах 2/4 частей или редкости сета "
     "используй get_artifact_info. Передавай название сета без склонений.\n"
+)
+SYSTEM_PROMPT += (
+    "- Для подбора лучших свободных артефактов из инвентаря используй recommend_artifacts. "
+    "Передавай character_id без склонений или как ID и один слот: flower, plume, sands, goblet, circlet.\n"
 )
 
 TOOLS: list[dict[str, Any]] = [
@@ -179,6 +184,29 @@ TOOLS: list[dict[str, Any]] = [
                     },
                 },
                 "required": ["set_name"],
+                "additionalProperties": False,
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "recommend_artifacts",
+            "description": "Подобрать лучшие свободные артефакты из инвентаря для персонажа на конкретный слот (flower, plume, sands, goblet, circlet) с учетом полезных статов.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "character_id": {
+                        "type": "string",
+                        "description": "Имя персонажа без склонений или его ID. Примеры: Арлекино, Нёвиллет, arlecchino, neuvillette.",
+                    },
+                    "slot": {
+                        "type": "string",
+                        "description": "Слот артефакта: flower, plume, sands, goblet или circlet.",
+                        "enum": ["flower", "plume", "sands", "goblet", "circlet"],
+                    },
+                },
+                "required": ["character_id", "slot"],
                 "additionalProperties": False,
             },
         },
@@ -315,6 +343,11 @@ def execute_tool_call(tool_call: Any) -> Any:
         return get_weapon_details(str(arguments.get("weapon_name") or "").strip())
     if function_name == "get_artifact_info":
         return get_artifact_set_details(str(arguments.get("set_name") or "").strip())
+    if function_name == "recommend_artifacts":
+        return recommend_best_artifacts(
+            character_id=str(arguments.get("character_id") or "").strip(),
+            slot=str(arguments.get("slot") or "").strip(),
+        )
     if function_name == "calculate_weapon_resources":
         return calculate_weapon_ascension(str(arguments.get("weapon_name") or "").strip())
     if function_name == "recommend_weapon":
