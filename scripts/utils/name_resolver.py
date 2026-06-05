@@ -18,10 +18,18 @@ def resolve_weapon_key(inventory_key: str, weapons_db: dict[str, Any]) -> str:
 
     normalized_to_id: dict[str, str] = {}
     for weapon_id, weapon in iter_weapons(weapons_db):
-        name = str(weapon.get("name", "") if isinstance(weapon, dict) else "").strip()
-        normalized_name = normalize_weapon_name(name)
-        if normalized_name:
-            normalized_to_id[normalized_name] = weapon_id
+        if not isinstance(weapon, dict):
+            continue
+        names = [
+            weapon_id,
+            weapon.get("name"),
+            weapon.get("name_en"),
+            weapon.get("name_ru"),
+        ]
+        for name in names:
+            normalized_name = normalize_weapon_name(str(name or "").strip())
+            if normalized_name:
+                normalized_to_id[normalized_name] = weapon_id
 
     if normalized_key in normalized_to_id:
         weapon_id = normalized_to_id[normalized_key]

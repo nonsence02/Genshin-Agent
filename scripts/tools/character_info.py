@@ -1,8 +1,4 @@
-"""Character lore lookup tool for Genshin-Agent.
-
-This module is intentionally read-only: it resolves user-facing character names
-to local KB ids and returns structured lore/kit metadata from JSON files.
-"""
+"""Character lookup tool for the modular Genshin-Agent knowledge base."""
 
 from __future__ import annotations
 
@@ -10,15 +6,10 @@ import json
 from pathlib import Path
 from typing import Any
 
-from scripts.tools.calculator import (
-    DEFAULT_CHARACTER_KB_DIR,
-    DEFAULT_DICTIONARY_PATH,
-    PROJECT_ROOT,
-    resolve_character_id,
-)
+from scripts.tools.calculator import DEFAULT_CHARACTER_KB_DIR, DEFAULT_DICTIONARY_PATH, PROJECT_ROOT, resolve_character_id
 
 
-DEFAULT_CHARACTER_LORE_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
+DEFAULT_CHARACTER_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
 DEFAULT_MANUAL_ROLES_PATH = PROJECT_ROOT / "data" / "manual_roles.json"
 
 ELEMENTS_RU = {
@@ -29,6 +20,7 @@ ELEMENTS_RU = {
     "Hydro": "Гидро",
     "Pyro": "Пиро",
     "Cryo": "Крио",
+    "None": "Без элемента",
 }
 
 WEAPONS_RU = {
@@ -43,60 +35,50 @@ WEAPONS_RU = {
 def get_character_lore(
     character_names: list[str],
     *,
-    lore_dir: Path = DEFAULT_CHARACTER_LORE_DIR,
+    character_dir: Path = DEFAULT_CHARACTER_DIR,
     character_kb_dir: Path = DEFAULT_CHARACTER_KB_DIR,
     dictionary_path: Path = DEFAULT_DICTIONARY_PATH,
     manual_roles_path: Path = DEFAULT_MANUAL_ROLES_PATH,
 ) -> dict[str, Any]:
-    """Return lore and combat metadata for one or more characters."""
+    """Return structured gameplay data for one or more characters."""
 
     results: dict[str, Any] = {}
     manual_roles = load_manual_roles(manual_roles_path)
+
     for raw_name in character_names:
-        character_name = str(raw_name).strip()
-        if not character_name:
+        requested_name = str(raw_name).strip()
+        if not requested_name:
             continue
 
-        character_id = resolve_character_id(character_name, character_kb_dir, dictionary_path)
+        character_id = resolve_character_id(requested_name, character_kb_dir, dictionary_path)
         if not character_id:
-            results[character_name] = {
-                "error": f"Персонаж '{character_name}' не найден в базе. Попроси пользователя уточнить имя.",
-                "requested_name": character_name,
+            results[requested_name] = {
+                "error": f"Персонаж '{requested_name}' не найден в базе. Попроси пользователя уточнить имя.",
+                "requested_name": requested_name,
             }
             continue
 
-        path = lore_dir / f"{character_id}.json"
+        path = character_dir / f"{character_id}.json"
         if not path.exists():
             results[character_id] = {
-                "error": f"Лор-файл для персонажа '{character_name}' не найден.",
-                "requested_name": character_name,
+                "error": f"Файл персонажа '{requested_name}' не найден в knowledge_base/characters.",
+                "requested_name": requested_name,
                 "resolved_character_id": character_id,
                 "knowledge_path": str(path),
             }
             continue
 
-        try:
-            data = json.loads(path.read_text(encoding="utf-8"))
-        except json.JSONDecodeError as exc:
+        data = load_json_object(path)
+        if not data:
             results[character_id] = {
-                "error": "Файл лора поврежден или не является валидным JSON.",
-                "requested_name": character_name,
-                "resolved_character_id": character_id,
-                "knowledge_path": str(path),
-                "message": str(exc),
-            }
-            continue
-
-        if not isinstance(data, dict):
-            results[character_id] = {
-                "error": "Файл лора должен содержать JSON-объект.",
-                "requested_name": character_name,
+                "error": "Файл персонажа поврежден или не является JSON-объектом.",
+                "requested_name": requested_name,
                 "resolved_character_id": character_id,
                 "knowledge_path": str(path),
             }
             continue
 
-        results[character_id] = extract_lore_payload(data, character_name, path, manual_roles)
+        results[character_id] = extract_character_payload(data, requested_name, path, manual_roles)
 
     return results
 
@@ -104,9 +86,7 @@ def get_character_lore(
 def load_manual_roles(path: Path) -> dict[str, list[str]]:
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
-    except FileNotFoundError:
-        return {}
-    except json.JSONDecodeError:
+    except (FileNotFoundError, json.JSONDecodeError):
         return {}
 
     if not isinstance(data, dict):
@@ -119,28 +99,37 @@ def load_manual_roles(path: Path) -> dict[str, list[str]]:
     return roles
 
 
-def extract_lore_payload(
+def load_json_object(path: Path) -> dict[str, Any]:
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def extract_character_payload(
     data: dict[str, Any],
     requested_name: str,
     path: Path,
     manual_roles: dict[str, list[str]] | None = None,
 ) -> dict[str, Any]:
-    character_id = str(data.get("id", path.stem))
+    character_id = str(data.get("id") or path.stem)
     roles = (manual_roles or {}).get(character_id, [])
-    role = ", ".join(roles) if roles else "Не указана"
+
     return {
         "requested_name": requested_name,
         "id": character_id,
+        "name_ru": data.get("name_ru", ""),
         "name_en": data.get("name_en", ""),
         "element": translate_term(data.get("element", ""), ELEMENTS_RU),
-        "weapon": translate_term(data.get("weapon", ""), WEAPONS_RU),
-        "region": data.get("region", ""),
+        "weapon_type": translate_term(data.get("weapon_type", ""), WEAPONS_RU),
         "rarity": data.get("rarity"),
-        "description": data.get("description", ""),
-        "role": role,
+        "stats": data.get("stats", {}),
+        "role": ", ".join(roles) if roles else "Не указана",
         "talents": data.get("talents", []),
-        "constellations": data.get("constellations", {}),
-        "source_url": data.get("source_url", ""),
+        "passive_talents": data.get("passive_talents", []),
+        "constellations": data.get("constellations", []),
+        "coordinates": data.get("coordinates", []),
     }
 
 

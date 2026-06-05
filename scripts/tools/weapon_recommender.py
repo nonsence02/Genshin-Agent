@@ -1,4 +1,4 @@
-"""Inventory-aware weapon recommender for Genshin-Agent."""
+"""Inventory-aware weapon recommender for the modular Genshin-Agent KB."""
 
 from __future__ import annotations
 
@@ -12,18 +12,17 @@ from scripts.tools.weapon_info import get_weapon_record, load_weapons_db
 from scripts.utils.name_resolver import normalize_weapon_name, resolve_weapon_key
 
 
-DEFAULT_CHARACTER_LORE_DIR = PROJECT_ROOT / "knowledge_base" / "character_lore"
+DEFAULT_CHARACTER_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
 DEFAULT_BUILDS_PATH = PROJECT_ROOT / "data" / "character_builds.json"
-DEFAULT_INVENTORY_PATH = PROJECT_ROOT / "data" / "inventory.json"
 
 
 def recommend_best_weapon(character_id: str, inventory_file: str | Path = "data/inventory.json") -> str:
     """Recommend free weapons from inventory using manual character build preferences."""
 
     normalized_character_id = normalize_id(character_id)
-    character = load_character_lore(normalized_character_id)
+    character = load_character(normalized_character_id)
     if not character:
-        return f"Персонаж '{character_id}' не найден в knowledge_base/character_lore."
+        return f"Персонаж '{character_id}' не найден в knowledge_base/characters."
 
     builds = load_json_object(DEFAULT_BUILDS_PATH)
     build = builds.get(normalized_character_id) if isinstance(builds, dict) else None
@@ -49,11 +48,11 @@ def recommend_best_weapon(character_id: str, inventory_file: str | Path = "data/
     if not weapons_db:
         return "База оружия не найдена или пуста."
 
-    character_weapon_type = normalize_text(character.get("weapon", ""))
+    character_weapon_type = normalize_text(character.get("weapon_type", ""))
     character_names = {
         normalize_text(normalized_character_id),
         normalize_text(character.get("name_en", "")),
-        normalize_text(character.get("name", "")),
+        normalize_text(character.get("name_ru", "")),
     }
 
     candidates: list[dict[str, Any]] = []
@@ -72,8 +71,7 @@ def recommend_best_weapon(character_id: str, inventory_file: str | Path = "data/
         if not weapon:
             continue
 
-        profile = weapon.get("profile", {}) if isinstance(weapon.get("profile"), dict) else {}
-        weapon_type = normalize_text(profile.get("type", ""))
+        weapon_type = normalize_text(weapon.get("weapon_type", ""))
         if character_weapon_type and weapon_type != character_weapon_type:
             continue
 
@@ -93,8 +91,8 @@ def recommend_best_weapon(character_id: str, inventory_file: str | Path = "data/
 
     if not candidates:
         return (
-            f"Для {character.get('name_en', normalized_character_id)} не найдено свободного оружия, "
-            "которое совпадает с настройками signatures/stats/passive_keywords."
+            f"Для {character.get('name_ru') or character.get('name_en') or normalized_character_id} "
+            "не найдено свободного оружия, которое совпадает с настройками signatures/stats/passive_keywords."
         )
 
     candidates.sort(
@@ -108,12 +106,10 @@ def recommend_best_weapon(character_id: str, inventory_file: str | Path = "data/
     return format_recommendations(character, candidates)
 
 
-def load_character_lore(character_id: str) -> dict[str, Any] | None:
-    path = DEFAULT_CHARACTER_LORE_DIR / f"{normalize_id(character_id)}.json"
-    if not path.exists():
-        return None
+def load_character(character_id: str) -> dict[str, Any] | None:
+    path = DEFAULT_CHARACTER_DIR / f"{normalize_id(character_id)}.json"
     data = load_json_object(path)
-    return data if isinstance(data, dict) else None
+    return data if data else None
 
 
 def load_json_object(path: Path) -> dict[str, Any]:
@@ -141,9 +137,10 @@ def score_weapon(
     preferred_stats: set[str],
     passive_keywords: list[str],
 ) -> tuple[int, list[str]]:
-    profile = weapon.get("profile", {}) if isinstance(weapon.get("profile"), dict) else {}
-    secondary_stat = normalize_text(profile.get("secondary_stat", ""))
-    passive = normalize_text(weapon.get("passive", ""))
+    stats = weapon.get("stats", {}) if isinstance(weapon.get("stats"), dict) else {}
+    level_90 = stats.get("level_90", {}) if isinstance(stats.get("level_90"), dict) else {}
+    secondary_stat = normalize_text(level_90.get("secondary_stat", ""))
+    passive = normalize_text(weapon.get("passive_description_ru", ""))
 
     score = 0
     reasons: list[str] = []
@@ -151,7 +148,8 @@ def score_weapon(
     weapon_signature_keys = {
         normalize_id(weapon_id),
         normalize_weapon_name(weapon_id),
-        normalize_weapon_name(weapon.get("name", "")),
+        normalize_weapon_name(weapon.get("name_en", "")),
+        normalize_weapon_name(weapon.get("name_ru", "")),
     }
     if signatures.intersection(weapon_signature_keys):
         score += 300
@@ -159,11 +157,9 @@ def score_weapon(
 
     if secondary_stat and secondary_stat in preferred_stats:
         score += 200
-        reasons.append(f"совпадает нужный сабстат: {profile.get('secondary_stat')}")
+        reasons.append(f"совпадает нужный сабстат: {level_90.get('secondary_stat')}")
 
-    matched_keywords = [
-        keyword for keyword in passive_keywords if keyword and keyword in passive
-    ]
+    matched_keywords = [keyword for keyword in passive_keywords if keyword and keyword in passive]
     if matched_keywords:
         score += 100 + 10 * len(matched_keywords)
         reasons.append("пассивка содержит ключевые синергии: " + ", ".join(matched_keywords))
@@ -173,27 +169,26 @@ def score_weapon(
 
 def format_recommendations(character: dict[str, Any], candidates: list[dict[str, Any]]) -> str:
     lines = [
-        f"Рекомендации оружия для {character.get('name_en') or character.get('id')}:",
-        f"Тип оружия персонажа: {character.get('weapon', 'Не найдено')}",
+        f"Рекомендации оружия для {character.get('name_ru') or character.get('name_en') or character.get('id')}:",
+        f"Тип оружия персонажа: {character.get('weapon_type', 'Не найдено')}",
         "",
     ]
 
     for index, candidate in enumerate(candidates[:8], start=1):
         weapon = candidate["weapon"]
         inventory_weapon = candidate["inventory_weapon"]
-        profile = weapon.get("profile", {}) if isinstance(weapon.get("profile"), dict) else {}
-        stats = profile.get("stats", {}) if isinstance(profile.get("stats"), dict) else {}
+        stats = weapon.get("stats", {}) if isinstance(weapon.get("stats"), dict) else {}
         level_90 = stats.get("level_90", {}) if isinstance(stats.get("level_90"), dict) else {}
 
         level = inventory_weapon.get("level", "?")
         refinement = inventory_weapon.get("refinement", "?")
-        secondary_stat = profile.get("secondary_stat", "Secondary Stat")
-        secondary_value = level_90.get("secondary_stat_value", "не найдено")
-        base_atk = level_90.get("base_atk", "не найдено")
+        secondary_stat = level_90.get("secondary_stat", "Доп. стат")
+        secondary_value = format_stat_value(level_90.get("secondary_stat_value"))
+        base_atk = format_stat_value(level_90.get("base_atk"))
 
         lines.extend(
             [
-                f"{index}. {weapon.get('name', candidate['weapon_id'])} (ур. {level}, R{refinement})",
+                f"{index}. {weapon.get('name_ru') or weapon.get('name_en') or candidate['weapon_id']} (ур. {level}, R{refinement})",
                 f"   Причина: {'; '.join(candidate['reasons'])}.",
                 f"   Статы на 90: Base ATK {base_atk}, {secondary_stat} {secondary_value}.",
             ]
@@ -224,3 +219,13 @@ def normalize_text_set(value: Any) -> set[str]:
 
 def normalize_text(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "").casefold()).strip()
+
+
+def format_stat_value(value: Any) -> str:
+    if isinstance(value, (int, float)):
+        if 0 < abs(value) < 1:
+            return f"{value * 100:.1f}%"
+        if float(value).is_integer():
+            return str(int(value))
+        return f"{value:.1f}"
+    return "Не найдено"
