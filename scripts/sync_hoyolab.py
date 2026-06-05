@@ -7,6 +7,7 @@ import json
 import os
 import re
 import sys
+from collections.abc import Sequence
 from pathlib import Path
 from typing import Any
 
@@ -30,6 +31,38 @@ else:
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = PROJECT_ROOT / "data" / "hoyolab_profile.json"
 CHARACTERS_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
+ALIAS_MAP = {
+    "Сара": "kujou-sara",
+    "Кудзё Сара": "kujou-sara",
+    "Кудзе Сара": "kujou-sara",
+    "Яэ Мико": "yae-miko",
+    "Ху Тао": "hu-tao",
+    "Кокоми": "sangonomiya-kokomi",
+    "Сангономия Кокоми": "sangonomiya-kokomi",
+    "Сёгун Райдэн": "raiden-shogun",
+    "Сегун Райден": "raiden-shogun",
+    "Райдэн": "raiden-shogun",
+    "Райден": "raiden-shogun",
+    "Аяка": "kamisato-ayaka",
+    "Камисато Аяка": "kamisato-ayaka",
+    "Аято": "kamisato-ayato",
+    "Камисато Аято": "kamisato-ayato",
+    "Кадзуха": "kaedehara-kazuha",
+    "Каэдэхара Кадзуха": "kaedehara-kazuha",
+    "Итто": "arataki-itto",
+    "Аратаки Итто": "arataki-itto",
+    "Син Цю": "xingqiu",
+    "Синцю": "xingqiu",
+    "Юнь Цзинь": "yun-jin",
+    "Юнь Цзин": "yun-jin",
+    "Лань Янь": "lan-yan",
+    "Лан Янь": "lan-yan",
+    "Шиканоин Хэйдзо": "shikanoin-heizou",
+    "Хэйдзо": "shikanoin-heizou",
+    "Нёвиллет": "neuvillette",
+    "Невиллет": "neuvillette",
+    "Странник": "wanderer",
+}
 
 
 async def main() -> int:
@@ -68,10 +101,11 @@ async def main() -> int:
     set_client_cookies(client, ltuid_v2, ltoken_v2)
 
     try:
-        print(f"[1/3] Запрашиваю профиль HoYoLAB для UID {uid}...")
-        user = await client.get_genshin_user(int(uid))
+        print(f"[1/3] Запрашиваю детальных персонажей HoYoLAB для UID {uid}...")
+        detailed_characters = await client.get_genshin_characters(int(uid))
+        user = await fetch_optional_user_summary(client, int(uid))
         print("[2/3] Нормализую персонажей, оружие и артефакты...")
-        payload = build_profile_payload(uid, user)
+        payload = build_profile_payload(uid, detailed_characters, user)
     except get_invalid_cookies_errors() as exc:
         print(
             "Ошибка авторизации HoYoLAB: cookies протухли или неверны. "
@@ -115,18 +149,25 @@ def get_invalid_cookies_errors() -> tuple[type[BaseException], ...]:
     return tuple()
 
 
-def build_profile_payload(uid: str, user: Any) -> dict[str, Any]:
+async def fetch_optional_user_summary(client: Any, uid: int) -> Any | None:
+    try:
+        return await client.get_genshin_user(uid)
+    except Exception:
+        return None
+
+
+def build_profile_payload(uid: str, detailed_characters: Any, user: Any | None = None) -> dict[str, Any]:
     character_index = build_character_index()
     characters: dict[str, Any] = {}
-    for raw_character in as_list(get_field(user, "characters", default=[])):
+    for raw_character in as_list(detailed_characters):
         normalized = normalize_character(raw_character, character_index)
         characters[normalized["id"]] = normalized
 
     return {
         "source": "hoyolab",
         "uid": uid,
-        "nickname": get_field(user, "nickname", "name", "username", default=""),
-        "level": get_field(user, "level", "adventure_rank", default=None),
+        "nickname": get_field(user, "nickname", "name", "username", default="") if user is not None else "",
+        "level": get_field(user, "level", "adventure_rank", default=None) if user is not None else None,
         "characters": characters,
     }
 
@@ -176,11 +217,29 @@ def resolve_local_character_id(
     data: dict[str, Any],
     character_index: dict[str, str],
 ) -> str:
+    for value in (name_ru, name_en):
+        alias_id = ALIAS_MAP.get(str(value or "").strip())
+        if alias_id:
+            return alias_id
+        normalized_alias_id = get_alias_by_normalized_name(value)
+        if normalized_alias_id:
+            return normalized_alias_id
+
     for value in (name_en, name_ru, get_field(data, "id", "key", "avatar_id", default="")):
         key = normalize_lookup(value)
         if key in character_index:
             return character_index[key]
     return slugify(name_en or name_ru or str(get_field(data, "id", "key", default="unknown")))
+
+
+def get_alias_by_normalized_name(value: Any) -> str:
+    query = normalize_lookup(value)
+    if not query:
+        return ""
+    for alias, character_id in ALIAS_MAP.items():
+        if normalize_lookup(alias) == query:
+            return character_id
+    return ""
 
 
 def extract_constellation(data: dict[str, Any]) -> int:
@@ -196,21 +255,11 @@ def extract_constellation(data: dict[str, Any]) -> int:
 
 
 def extract_talents(data: dict[str, Any]) -> dict[str, int | None]:
-    raw_talents = get_field(data, "talents", "skills", default=[])
-    talents = as_list(raw_talents)
-    levels: list[int] = []
-    for talent in talents:
-        plain = to_plain(talent)
-        level = get_field(plain, "level", "base_level", "raw_level", "unlock_level", default=None)
-        if level is not None:
-            levels.append(safe_int(level))
-
-    # genshin.py can expose only effective levels after constellations. We keep
-    # these as reported by HoYoLAB so downstream tools know they are live values.
+    # TODO: Fetch talents via Calculator API if needed.
     return {
-        "normal_attack": levels[0] if len(levels) > 0 else None,
-        "elemental_skill": levels[1] if len(levels) > 1 else None,
-        "elemental_burst": levels[2] if len(levels) > 2 else None,
+        "normal_attack": None,
+        "elemental_skill": None,
+        "elemental_burst": None,
     }
 
 
@@ -221,7 +270,7 @@ def extract_weapon(data: dict[str, Any]) -> dict[str, Any] | None:
 
     plain = to_plain(weapon)
     return {
-        "name": get_field(plain, "name", "name_ru", "name_en", default=""),
+        "name": extract_display_name(plain),
         "level": safe_int(get_field(plain, "level", default=0)),
         "refinement": safe_int(get_field(plain, "refinement", "refine", "rank", default=1)),
         "rarity": safe_int(get_field(plain, "rarity", default=0)),
@@ -235,7 +284,7 @@ def extract_artifacts(data: dict[str, Any]) -> list[dict[str, Any]]:
         plain = to_plain(artifact)
         artifacts.append(
             {
-                "set": get_field(plain, "set", "set_name", "setName", default=""),
+                "set": extract_display_name(get_field(plain, "set", "set_name", "setName", default="")),
                 "slot": normalize_artifact_slot(get_field(plain, "slot", "pos", "type", default="")),
                 "main_stat": extract_main_stat(plain),
                 "level": safe_int(get_field(plain, "level", default=0)),
@@ -249,9 +298,13 @@ def extract_main_stat(artifact: dict[str, Any]) -> str:
     main_stat = get_field(artifact, "main_stat", "mainStat", "main_property", default=None)
     if main_stat is None:
         return ""
-    plain = to_plain(main_stat)
+    return extract_display_name(main_stat)
+
+
+def extract_display_name(value: Any) -> str:
+    plain = to_plain(value)
     if isinstance(plain, dict):
-        return str(get_field(plain, "name", "stat", "type", default=""))
+        return str(get_field(plain, "name", "name_ru", "name_en", "stat", "type", default=""))
     return str(plain)
 
 
@@ -306,6 +359,8 @@ def as_list(value: Any) -> list[Any]:
     if isinstance(value, list):
         return value
     if isinstance(value, tuple):
+        return list(value)
+    if isinstance(value, Sequence) and not isinstance(value, (str, bytes, bytearray)):
         return list(value)
     return []
 
