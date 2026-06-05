@@ -104,6 +104,14 @@ ASCENSION_SUBSTAT_BY_TYPE = {
     "FIGHT_PROP_GRASS_ADD_HURT": "dendro_dmg",
 }
 
+WEAPON_PASSIVE_STATS = {
+    "tome-of-the-eternal-flow": {"hp_": 0.16},
+    "staff-of-homa": {"hp_": 0.20},
+    "primordial-jade-winged-spear": {"atk_": 0.032},
+    "primordial-jade-cutter": {"hp_": 0.20},
+    "elegy-for-the-end": {"enerRech_": 0.0},
+}
+
 
 def calculate_character_full_stats(character_id: str) -> str:
     """Calculate current visible stats using processed account equipment."""
@@ -131,7 +139,10 @@ def calculate_character_full_stats(character_id: str) -> str:
     artifact_stats = collect_artifact_stats(profile.get("equipped_artifacts", []))
 
     ascension_bonuses = classify_ascension_bonus(character_kb.get("substat", {}), character_base.get("ascension_bonus", 0))
-    weapon_bonuses = classify_weapon_substat(weapon_stats)
+    weapon_bonuses = merge_bonus_buckets(
+        classify_weapon_substat(weapon_stats),
+        get_weapon_passive_bonuses(weapon),
+    )
 
     char_hp = character_base.get("hp", 0.0)
     char_atk = character_base.get("atk", 0.0)
@@ -139,15 +150,22 @@ def calculate_character_full_stats(character_id: str) -> str:
     weapon_atk = weapon_stats.get("base_atk", 0.0)
 
     base_atk = char_atk + weapon_atk
-    total_hp = char_hp * (1 + artifact_stats["hp_pct"] + ascension_bonuses["hp_pct"]) + artifact_stats["hp_flat"]
+    total_hp = char_hp * (
+        1 + artifact_stats["hp_pct"] + weapon_bonuses["hp_pct"] + ascension_bonuses["hp_pct"]
+    ) + artifact_stats["hp_flat"]
     total_atk = base_atk * (
         1 + artifact_stats["atk_pct"] + weapon_bonuses["atk_pct"] + ascension_bonuses["atk_pct"]
     ) + artifact_stats["atk_flat"]
-    total_def = char_def * (1 + artifact_stats["def_pct"] + ascension_bonuses["def_pct"]) + artifact_stats["def_flat"]
+    total_def = char_def * (
+        1 + artifact_stats["def_pct"] + weapon_bonuses["def_pct"] + ascension_bonuses["def_pct"]
+    ) + artifact_stats["def_flat"]
 
-    total_crit_rate = as_float(constants.get("crit_rate"), 0.05) + ascension_bonuses["crit_rate"] + weapon_bonuses["crit_rate"] + artifact_stats["crit_rate"]
-    total_crit_dmg = as_float(constants.get("crit_dmg"), 0.5) + ascension_bonuses["crit_dmg"] + weapon_bonuses["crit_dmg"] + artifact_stats["crit_dmg"]
-    total_er = as_float(constants.get("energy_recharge"), 1.0) + ascension_bonuses["energy_recharge"] + weapon_bonuses["energy_recharge"] + artifact_stats["energy_recharge"]
+    base_crit_rate = as_float(constants.get("crit_rate"), 0.05)
+    base_crit_dmg = as_float(constants.get("crit_dmg"), 0.5)
+    base_energy_recharge = as_float(constants.get("energy_recharge"), 1.0)
+    total_crit_rate = base_crit_rate + ascension_bonuses["crit_rate"] + weapon_bonuses["crit_rate"] + artifact_stats["crit_rate"]
+    total_crit_dmg = base_crit_dmg + ascension_bonuses["crit_dmg"] + weapon_bonuses["crit_dmg"] + artifact_stats["crit_dmg"]
+    total_er = base_energy_recharge + ascension_bonuses["energy_recharge"] + weapon_bonuses["energy_recharge"] + artifact_stats["energy_recharge"]
     total_em = ascension_bonuses["elemental_mastery"] + weapon_bonuses["elemental_mastery"] + artifact_stats["elemental_mastery"]
 
     extra_bonuses = build_extra_bonus_lines(ascension_bonuses, weapon_bonuses, artifact_stats)
@@ -393,6 +411,26 @@ def classify_weapon_substat(weapon_stats: dict[str, Any]) -> dict[str, float]:
     if stat_key:
         bonuses[stat_key] = as_float(weapon_stats.get("secondary_stat_value"))
     return bonuses
+
+
+def get_weapon_passive_bonuses(weapon: dict[str, Any]) -> dict[str, float]:
+    bonuses = empty_bonus_bucket()
+    if not isinstance(weapon, dict):
+        return bonuses
+
+    weapon_id = str(weapon.get("id") or "").strip()
+    passive_stats = WEAPON_PASSIVE_STATS.get(weapon_id, {})
+    for stat_key, value in passive_stats.items():
+        add_stat_value(bonuses, stat_key, value)
+    return bonuses
+
+
+def merge_bonus_buckets(*buckets: dict[str, float]) -> dict[str, float]:
+    merged = empty_bonus_bucket()
+    for bucket in buckets:
+        for key, value in bucket.items():
+            merged[key] = merged.get(key, 0.0) + value
+    return merged
 
 
 def infer_stat_bucket(value: Any) -> str:
