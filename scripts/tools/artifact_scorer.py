@@ -21,7 +21,7 @@ CRIT_DMG_KEYS = {"critdmg", "critdmg_", "crit dmg", "crit damage", "крит у�
 def recommend_best_artifacts(
     character_id: str,
     slot: str,
-    inventory_file: str | Path = "data/inventory.json",
+    inventory_file: str | Path = "data/processed/artifacts.json",
 ) -> str:
     """Recommend top free artifacts for one slot using CV and useful stat synergy."""
 
@@ -46,8 +46,8 @@ def recommend_best_artifacts(
     if not inventory_path.exists():
         return f"Файл инвентаря '{inventory_path}' не найден."
 
-    inventory = load_json_object(inventory_path)
-    artifacts = inventory.get("artifacts", []) if isinstance(inventory, dict) else []
+    inventory = load_json_data(inventory_path)
+    artifacts = inventory if isinstance(inventory, list) else inventory.get("artifacts", []) if isinstance(inventory, dict) else []
     if not isinstance(artifacts, list):
         return f"Файл инвентаря '{inventory_path}' не содержит список artifacts."
 
@@ -148,7 +148,7 @@ def format_artifact_recommendations(
 
     for index, candidate in enumerate(candidates, start=1):
         artifact = candidate["artifact"]
-        set_name = artifact.get("setKey") or artifact.get("set") or artifact.get("setName") or "Не найдено"
+        set_name = artifact.get("set_id") or artifact.get("setKey") or artifact.get("set") or artifact.get("setName") or "Не найдено"
         level = artifact.get("level", "?")
         rarity = artifact.get("rarity", "?")
         substats = format_substats(candidate["substats"])
@@ -336,11 +336,16 @@ def normalize_location(value: Any) -> str:
 
 
 def load_json_object(path: Path) -> dict[str, Any]:
+    data = load_json_data(path)
+    return data if isinstance(data, dict) else {}
+
+
+def load_json_data(path: Path) -> Any:
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return {}
-    return data if isinstance(data, dict) else {}
+    return data
 
 
 def resolve_inventory_path(path: str | Path) -> Path:

@@ -8,7 +8,6 @@ from typing import Any
 
 from scripts.tools.artifact_scorer import (
     extract_substats,
-    normalize_location,
     normalize_slot,
     normalize_stat,
     resolve_inventory_path,
@@ -18,57 +17,54 @@ from scripts.tools.artifact_scorer import (
 from scripts.tools.calculator import resolve_character_id
 
 
-def get_character_equipment(character_name: str, inventory_file: str | Path = "data/inventory.json") -> str:
-    """Return currently equipped weapon, artifacts, and total artifact CV."""
+def get_character_equipment(character_name: str, profile_file: str | Path = "data/processed/characters.json") -> str:
+    """Return currently equipped weapon, talents, artifacts, and total artifact CV."""
 
     character_id = resolve_character_id(character_name) or str(character_name or "").strip()
     if not character_id:
         return "Не указано имя персонажа."
 
-    inventory_path = resolve_inventory_path(inventory_file)
-    if not inventory_path.exists():
-        return f"Файл инвентаря '{inventory_path}' не найден."
+    profile_path = resolve_inventory_path(profile_file)
+    if not profile_path.exists():
+        return f"Файл профиля '{profile_path}' не найден."
 
-    inventory = load_json_object(inventory_path)
-    if not inventory:
-        return f"Файл инвентаря '{inventory_path}' пуст или не является JSON-объектом."
+    characters = load_json_object(profile_path)
+    if not characters:
+        return f"Файл профиля '{profile_path}' пуст или не является JSON-объектом."
 
-    location_key = normalize_location(character_id)
-    weapons = inventory.get("weapons", [])
-    artifacts = inventory.get("artifacts", [])
+    character = characters.get(character_id)
+    if not isinstance(character, dict):
+        return f"Персонаж '{character_name}' ({character_id}) не найден в {profile_path}."
 
-    equipped_weapon = find_equipped_weapon(weapons, location_key)
-    equipped_artifacts = find_equipped_artifacts(artifacts, location_key)
+    equipped_weapon = character.get("equipped_weapon") if isinstance(character.get("equipped_weapon"), dict) else None
+    equipped_artifacts = character.get("equipped_artifacts", [])
+    if not isinstance(equipped_artifacts, list):
+        equipped_artifacts = []
 
     if not equipped_weapon and not equipped_artifacts:
         return f"На персонаже {character_name} сейчас нет экипировки."
 
-    lines = [f"Экипировка персонажа: {character_name} ({character_id})", ""]
+    display_name = character.get("name_ru") or character_name
+    lines = [f"Экипировка персонажа: {display_name} ({character_id})", ""]
+    lines.extend(format_talents_section(character.get("talents", {})))
+    lines.append("")
     lines.extend(format_weapon_section(equipped_weapon))
     lines.append("")
     lines.extend(format_artifacts_section(equipped_artifacts))
     return "\n".join(lines)
 
 
-def find_equipped_weapon(weapons: Any, location_key: str) -> dict[str, Any] | None:
-    if not isinstance(weapons, list):
-        return None
-    for weapon in weapons:
-        if not isinstance(weapon, dict):
-            continue
-        if normalize_location(weapon.get("location", "")) == location_key:
-            return weapon
-    return None
+def format_talents_section(talents: Any) -> list[str]:
+    lines = ["Таланты:"]
+    if not isinstance(talents, dict) or not talents:
+        lines.append("- Не найдены")
+        return lines
 
-
-def find_equipped_artifacts(artifacts: Any, location_key: str) -> list[dict[str, Any]]:
-    if not isinstance(artifacts, list):
-        return []
-    return [
-        artifact
-        for artifact in artifacts
-        if isinstance(artifact, dict) and normalize_location(artifact.get("location", "")) == location_key
-    ]
+    normal = talents.get("normal_attack") or talents.get("auto") or "?"
+    skill = talents.get("elemental_skill") or talents.get("skill") or "?"
+    burst = talents.get("elemental_burst") or talents.get("burst") or "?"
+    lines.append(f"- Обычная атака / Навык / Взрыв стихии: {normal}/{skill}/{burst}")
+    return lines
 
 
 def format_weapon_section(weapon: dict[str, Any] | None) -> list[str]:
@@ -77,9 +73,10 @@ def format_weapon_section(weapon: dict[str, Any] | None) -> list[str]:
         lines.append("- Не надето")
         return lines
 
+    name = weapon.get("name") or weapon.get("name_ru") or weapon.get("name_en") or weapon.get("id") or "Не найдено"
     lines.append(
-        "- {key} (ур. {level}, R{refinement})".format(
-            key=weapon.get("key") or "Не найдено",
+        "- {name} (ур. {level}, R{refinement})".format(
+            name=name,
             level=weapon.get("level", "?"),
             refinement=weapon.get("refinement", "?"),
         )
@@ -97,12 +94,18 @@ def format_artifacts_section(artifacts: list[dict[str, Any]]) -> list[str]:
     total_cv = 0.0
     artifacts_by_slot = sorted(
         artifacts,
-        key=lambda artifact: slot_sort_key(normalize_slot(artifact.get("slotKey") or artifact.get("slot") or artifact.get("equipType"))),
+        key=lambda artifact: slot_sort_key(normalize_slot(artifact.get("slot") or artifact.get("slotKey") or artifact.get("equipType"))),
     )
     for artifact in artifacts_by_slot:
-        slot = normalize_slot(artifact.get("slotKey") or artifact.get("slot") or artifact.get("equipType"))
-        set_name = artifact.get("setKey") or artifact.get("set") or artifact.get("setName") or "Не найдено"
-        main_stat_key = artifact.get("mainStatKey") or artifact.get("mainStat") or artifact.get("main_stat")
+        slot = normalize_slot(artifact.get("slot") or artifact.get("slotKey") or artifact.get("equipType"))
+        set_name = (
+            artifact.get("set_id")
+            or artifact.get("setKey")
+            or artifact.get("set")
+            or artifact.get("setName")
+            or "Не найдено"
+        )
+        main_stat_key = artifact.get("main_stat") or artifact.get("mainStatKey") or artifact.get("mainStat")
         main_stat = display_stat_name(main_stat_key) or "Не найдено"
         level = artifact.get("level", "?")
         rarity = artifact.get("rarity", "?")
@@ -112,7 +115,7 @@ def format_artifacts_section(artifacts: list[dict[str, Any]]) -> list[str]:
 
         lines.extend(
             [
-                f"- {slot}: {set_name} (+{level}, {rarity} звезд)",
+                f"- {slot}: {set_name} (+{level}, {rarity} зв.)",
                 f"  Мейн-стат: {main_stat}",
                 f"  CV: {cv:.1f}",
                 f"  Сабстаты: {format_equipped_substats(substats)}",
