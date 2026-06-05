@@ -1,0 +1,24 @@
+{
+  "name": "genshin-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sync:db": "node scripts/sync_database.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonsence02/Genshin-Agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nonsence02/Genshin-Agent/issues"
+  },
+  "homepage": "https://github.com/nonsence02/Genshin-Agent#readme",
+  "dependencies": {
+    "genshin-db": "^5.2.11"
+  }
+}
