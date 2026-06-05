@@ -143,6 +143,11 @@ function syncCharacters() {
       element: characterEn.elementText,
       weapon_type: characterEn.weaponText,
       rarity: characterEn.rarity,
+      substat: {
+        type: characterEn.substatType || '',
+        name_ru: characterRu.substatText || characterEn.substatText || '',
+        name_en: characterEn.substatText || '',
+      },
       stats: buildCharacterStats(characterEn),
       talents: buildCharacterTalents(characterEn.name),
       passive_talents: buildPassiveTalents(characterEn.name),
@@ -343,19 +348,39 @@ function buildWeaponStats(weaponEn, weaponRu) {
 }
 
 function buildCharacterStats(characterEn) {
-  const level1 = safeStats(characterEn, 1);
-  const level90 = safeStats(characterEn, 90);
+  const checkpoints = [
+    { key: 'level_1_a0', label: 'Уровень 1 (A0)', level: 1, ascension: 0 },
+    { key: 'level_20_a0', label: 'Уровень 20 (A0)', level: 20, ascension: 0 },
+    { key: 'level_20_a1', label: 'Уровень 20+ (A1)', level: 20, ascension: 1 },
+    { key: 'level_40_a2', label: 'Уровень 40+ (A2)', level: 40, ascension: 2 },
+    { key: 'level_50_a3', label: 'Уровень 50+ (A3)', level: 50, ascension: 3 },
+    { key: 'level_60_a4', label: 'Уровень 60+ (A4)', level: 60, ascension: 4 },
+    { key: 'level_70_a5', label: 'Уровень 70+ (A5)', level: 70, ascension: 5 },
+    { key: 'level_80_a6', label: 'Уровень 80+ (A6)', level: 80, ascension: 6 },
+    { key: 'level_90_a6', label: 'Уровень 90 (A6)', level: 90, ascension: 6 },
+  ];
+
   return {
-    level_1: {
-      hp: roundStat(level1.hp),
-      atk: roundStat(level1.attack),
-      def: roundStat(level1.defense),
+    base_stats_constants: {
+      crit_rate: 0.05,
+      crit_dmg: 0.5,
+      energy_recharge: 1.0,
     },
-    level_90: {
-      hp: roundStat(level90.hp),
-      atk: roundStat(level90.attack),
-      def: roundStat(level90.defense),
-    },
+    progression: checkpoints.map((checkpoint) => buildCharacterProgressionPoint(characterEn, checkpoint)),
+  };
+}
+
+function buildCharacterProgressionPoint(characterEn, checkpoint) {
+  const stats = safeStats(characterEn, checkpoint.level, checkpoint.ascension);
+  return {
+    key: checkpoint.key,
+    label: checkpoint.label,
+    level: checkpoint.level,
+    ascension: checkpoint.ascension,
+    hp: roundStat(stats.hp),
+    atk: roundStat(stats.attack),
+    def: roundStat(stats.defense),
+    ascension_bonus: roundStat(stats.specialized),
   };
 }
 
@@ -603,10 +628,10 @@ function getEntityIds(folder) {
   );
 }
 
-function safeStats(entity, level) {
+function safeStats(entity, level, ascension = undefined) {
   if (typeof entity?.stats !== 'function') return {};
   try {
-    return entity.stats(level) || {};
+    return ascension === undefined ? entity.stats(level) || {} : entity.stats(level, ascension) || {};
   } catch {
     return {};
   }
