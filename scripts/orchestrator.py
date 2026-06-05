@@ -17,6 +17,7 @@ from scripts.tools.calculator import calculate_characters_requirements, resolve_
 from scripts.tools.artifact_info import get_artifact_set_details  # noqa: E402
 from scripts.tools.artifact_scorer import recommend_best_artifacts  # noqa: E402
 from scripts.tools.character_info import get_character_lore  # noqa: E402
+from scripts.tools.equipped_gear import get_character_equipment  # noqa: E402
 from scripts.tools.weapon_calculator import calculate_weapon_ascension  # noqa: E402
 from scripts.tools.weapon_info import get_weapon_details  # noqa: E402
 from scripts.tools.weapon_recommender import recommend_best_weapon  # noqa: E402
@@ -72,6 +73,10 @@ SYSTEM_PROMPT += (
 SYSTEM_PROMPT += (
     "- Для подбора лучших свободных артефактов из инвентаря используй recommend_artifacts. "
     "Передавай character_id без склонений или как ID и один слот: flower, plume, sands, goblet, circlet.\n"
+)
+SYSTEM_PROMPT += (
+    "- Чтобы посмотреть текущее оружие и уже надетые артефакты персонажа, используй get_equipped_gear. "
+    "Не придумывай экипировку из памяти.\n"
 )
 
 TOOLS: list[dict[str, Any]] = [
@@ -214,6 +219,24 @@ TOOLS: list[dict[str, Any]] = [
     {
         "type": "function",
         "function": {
+            "name": "get_equipped_gear",
+            "description": "Посмотреть, какое оружие и артефакты сейчас надеты на конкретном персонаже.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "character_name": {
+                        "type": "string",
+                        "description": "Имя персонажа без склонений или его ID. Примеры: Xiangling, Сян Лин, hu-tao.",
+                    },
+                },
+                "required": ["character_name"],
+                "additionalProperties": False,
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
             "name": "recommend_weapon",
             "description": (
                 "Подобрать лучшее свободное оружие для персонажа на основе инвентаря пользователя "
@@ -348,6 +371,8 @@ def execute_tool_call(tool_call: Any) -> Any:
             character_id=str(arguments.get("character_id") or "").strip(),
             slot=str(arguments.get("slot") or "").strip(),
         )
+    if function_name == "get_equipped_gear":
+        return get_character_equipment(str(arguments.get("character_name") or "").strip())
     if function_name == "calculate_weapon_resources":
         return calculate_weapon_ascension(str(arguments.get("weapon_name") or "").strip())
     if function_name == "recommend_weapon":
