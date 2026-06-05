@@ -102,6 +102,8 @@ async def main() -> int:
     set_client_cookies(client, ltuid_v2, ltoken_v2)
 
     try:
+        print("Обновление кэша имен...")
+        await genshin.utility.update_characters_any()
         print(f"[1/3] Получаю синхронизированных персонажей Calculator API для UID {uid}...")
         synced_chars = await client.get_calculator_characters(sync=True, uid=int(uid))
         print(f"[2/3] Загружаю детали персонажей: {len(synced_chars)} шт.")
