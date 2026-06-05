@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-crumbling-assembly-ii",
+  "name_ru": "Подземелье благословения: Дробящееся собрание II",
+  "name_en": "Domain of Blessing: Crumbling Assembly II",
+  "type": "Артефакты",
+  "region": "Фонтейн",
+  "days_of_week": [],
+  "rewards": [
+    "song-of-days-past",
+    "nighttime-whispers-in-the-echoing-woods",
+    "tiny-miracle",
+    "martial-artist"
+  ],
+  "coordinates": []
+}

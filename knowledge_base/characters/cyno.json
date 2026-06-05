@@ -1,94 +1,81 @@
 {
   "id": "cyno",
-  "name": "Cyno",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Cyno",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Performs a swift thrust, dealing Electro DMG to opponents along the path. When Cyno is under the Pathsworn Pathclearer state triggered by Sacred Rite: Wolf's Swiftness, he will instead unleash a Mortuary Rite that deals thunderous AoE Electro DMG and extends the duration of Pathsworn Pathclearer. When Skill DMG hits at least one enemy, it generates Elemental Particles. When Mortuary Rite DMG hits at least one enemy, it generates Elemental Particles. When this skill is used, both CDs will be triggered. When outside of his Elemental Burst, the normal CD will be used. During his Elemental Burst, the Mortuary Rite CD will be used. The unused CD will still run in the background. For example: If...",
-    "elemental_burst": "Calls upon a divine spirit to indwell him, morphing into the Pactsworn Pathclearer. Pactsworn Pathclearer Cyno's Normal, Charged, and Plunging Attacks will be converted to Electro DMG that cannot be overridden. Cyno's Elemental Mastery and resistance to interruption will increase, and he gains immunity to Electro-Charged DMG. This effect will be canceled when Cyno leaves the field and lasts a maximum of. Cyno's Normal Attack under the Pactsworn Pathclearer state can be manually steered mid-animation using direction controls. Passive Effects Passive Talent, Featherfall Judgment: \"When Cyno is in the Pactsworn Pathclearer state activated by Sacred Rite: Wolf's Swiftness, Cyno will enter the..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Divining Scroll",
-        "Sealed Scroll",
-        "Forbidden Curse Scroll"
-      ],
-      "special": [
-        "Scarab",
-        "Thunderclap Fruitcore"
-      ]
+  "name_ru": "Сайно",
+  "name_en": "Cyno",
+  "element": "Electro",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 972.3864,
+      "atk": 24.7646,
+      "def": 66.8899
     },
-    "talents": {
-      "books": [
-        "Teachings of Admonition",
-        "Guide to Admonition",
-        "Philosophies of Admonition"
-      ],
-      "mob_drops": [
-        "Divining Scroll",
-        "Sealed Scroll",
-        "Forbidden Curse Scroll"
-      ],
-      "weekly_boss": [
-        "Mudra of the Malefic General"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12490.829,
+      "atk": 318.1072,
+      "def": 859.2438
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Копьё призывателя",
+      "description_ru": "Обычная атака:\nДо четырёх ударов копьём.\n\nЗаряженная атака:\nВыпад, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Тайный обряд: Переправляющий души",
+      "description_ru": "Совершает выпад вперёд, нанося противникам на пути Электро урон.\n\nЕсли Сайно находится в состоянии Поклявшегося прокладывать путь, вызванном Священным обрядом: Проворство шакала, то вместо выпада он активирует Ритуал погребения, который низвергает силу молний и наносит Электро урон по площади, а также продлевает действие Поклявшегося прокладывать путь."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Священный обряд: Проворство шакала",
+      "description_ru": "Взывает к богам и принимает форму Поклявшегося прокладывать путь.\n\nПоклявшийся прокладывать путь\nКонвертирует урон от обычных атак, заряженных атак и атак в падении в Электро урон, который не может быть отменён другими инфузиями.\n· Мастерство стихий и сопротивление прерыванию Сайно увеличиваются, и он получает иммунитет к урону от реакции Заряжен.\n\nЭффект длится максимум 18 сек. и исчезает, если Сайно покидает поле боя."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Суд пера",
+      "description_ru": "Во время действия Поклявшегося прокладывать путь Священного обряда: Проворство шакала Сайно периодически входит в состояние Свидетеля истины. Активация Тайного обряда: Переправляющий души в этом состоянии вызывает эффект Вынесения приговора, который повышает урон текущего Тайного обряда: Переправляющий души на 35% и выпускает 3 Молнии бедствия, наносящие Электро урон в 100% от силы атаки Сайно.\nУрон Молний бедствия считается уроном элементального навыка."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Повелитель девяти луков",
+      "description_ru": "Увеличивает следующие показатели урона Сайно в зависимости от его мастерства стихий:\n· Урон обычной атаки в состоянии Поклявшегося прокладывать путь увеличивается на 150% от его мастерства стихий.\n· Урон Молний бедствия таланта возвышения Суд пера увеличивается на 250% от его мастерства стихий."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Милостивый дар молчания",
+      "description_ru": "На 25% увеличивает награду экспедиций в Сумеру длительностью 20 ч."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Завет: Беспрестанное бдение",
+      "description_ru": "После активации Священного обряда: Проворство шакала скорость обычной атаки Сайно повышается на 20% на 10 сек. Если во время действия Тайного обряда: Переправляющий души активируется Вынесение приговора таланта возвышения Суд пера, длительность этого эффекта обновится.\nТребуется разблокировать талант возвышения Суд пера."
+    },
+    {
+      "name_ru": "Церемония: Проводы душ",
+      "description_ru": "Попадание Сайно по врагу обычной атакой увеличивает бонус Электро урона на 10% на 4 сек. Эффект может возникнуть не чаще 1 раза в 0,1 сек. и складывается до 5 раз."
+    },
+    {
+      "name_ru": "Указ: Исполнение наказания",
+      "description_ru": "Увеличивает уровень навыка Священный обряд: Проворство шакала на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Строгая мера: Страж запрета",
+      "description_ru": "Сайно, активируя реакции Заряжен, Лунный заряд, Сверхпроводник, Перегрузка, Стимуляция, Обострение, Вегетация или Электро Рассеивание во время действия Поклявшегося прокладывать путь Священного обряда: Проворство шакала, восстанавливает 3 ед. энергии всем членам отряда поблизости (кроме самого Сайно).\nЭффект активируется до 5 раз во время действия одного и того же Священного обряда: Проворство шакала."
+    },
+    {
+      "name_ru": "Погребение: Уходящий свет звёзд",
+      "description_ru": "Увеличивает уровень навыка Тайный обряд: Переправляющий души на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Церемония пера: Весы справедливости",
+      "description_ru": "Использование Священного обряда: Проворство шакала или активация Вынесения приговора таланта возвышения Суд пера наделяет Сайно 4 уровнями Жертвоприношения шакала. Попав обычной атакой, Сайно расходует 1 уровень Жертвоприношения шакала и выпускает одну Молнию бедствия.\nЖертвоприношение шакала длится 8 сек. и складывается до 8 раз. С завершением Поклявшегося прокладывать путь Священного обряда: Проворство шакала эффект полностью исчезает.\nМолнию бедствия таким образом можно выпустить не чаще одного раза в 0,4 сек.\nТребуется разблокировать талант возвышения Суд пера."
+    }
+  ],
+  "coordinates": []
 }

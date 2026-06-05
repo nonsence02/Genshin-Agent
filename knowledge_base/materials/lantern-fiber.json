@@ -1,0 +1,15 @@
+{
+  "id": "lantern-fiber",
+  "name_ru": "Волокно для фонарей",
+  "name_en": "Lantern Fiber",
+  "type": "exchange",
+  "type_text_ru": "Материал Праздника морских фонарей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Растения"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

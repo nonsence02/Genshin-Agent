@@ -1,0 +1,13 @@
+{
+  "id": "qucusaurus",
+  "name_ru": "Кукузавр",
+  "name_en": "Qucusaurus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "tyrants-fang",
+    "seasoned-fang",
+    "juvenile-fang"
+  ],
+  "coordinates": []
+}

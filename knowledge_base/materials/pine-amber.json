@@ -1,10 +1,18 @@
 {
   "id": "pine-amber",
+  "name_ru": "Сосновый янтарь",
   "name_en": "Pine Amber",
-  "type": "Local Specialty (Nod-Krai)",
-  "days": [],
-  "source": [
-    "Found in Dreadshade Mire"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Нод-Края",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Мрачные болота",
+    "У штаба Ордо Фавониус",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Pine_Amber"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

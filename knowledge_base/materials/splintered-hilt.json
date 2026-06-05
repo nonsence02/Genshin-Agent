@@ -1,10 +1,19 @@
 {
   "id": "splintered-hilt",
+  "name_ru": "Расщеплённый эфес",
   "name_en": "Splintered Hilt",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Praetorian Golem"
+  "type": "avatar_material",
+  "type_text_ru": "Материал улучшения персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Преторианцы Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Splintered_Hilt"
+  "dropped_by": [
+    "praetorian-golem"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

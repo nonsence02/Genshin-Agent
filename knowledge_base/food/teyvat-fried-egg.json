@@ -1,0 +1,15 @@
+{
+  "id": "teyvat-fried-egg",
+  "name_ru": "Яичница по-тейватски",
+  "name_en": "Teyvat Fried Egg",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 150 HP.",
+  "recipe": [
+    {
+      "material_id": "bird-egg",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

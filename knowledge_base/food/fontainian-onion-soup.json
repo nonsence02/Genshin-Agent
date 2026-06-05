@@ -1,0 +1,23 @@
+{
+  "id": "fontainian-onion-soup",
+  "name_ru": "Луковый суп по-фонтейнски",
+  "name_en": "Fontainian Onion Soup",
+  "rarity": 2,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 126 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "onion",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "cheese",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

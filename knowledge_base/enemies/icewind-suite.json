@@ -1,0 +1,20 @@
+{
+  "id": "icewind-suite",
+  "name_ru": "Сюита ледяного ветра",
+  "name_en": "Icewind Suite",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "artificed-spare-clockwork-component-coppelia",
+    "artificed-spare-clockwork-component-coppelius",
+    "vayuda-turquoise-gemstone",
+    "vayuda-turquoise-chunk",
+    "vayuda-turquoise-fragment",
+    "vayuda-turquoise-sliver",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver"
+  ],
+  "coordinates": []
+}

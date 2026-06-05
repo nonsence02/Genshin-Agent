@@ -1,0 +1,13 @@
+{
+  "id": "domain-of-blessing-dance-of-steel-i",
+  "name_ru": "Подземелье благословения: Танец стали I",
+  "name_en": "Domain of Blessing: Dance of Steel I",
+  "type": "Артефакты",
+  "region": "Мондштадт",
+  "days_of_week": [],
+  "rewards": [
+    "tiny-miracle",
+    "traveling-doctor"
+  ],
+  "coordinates": []
+}

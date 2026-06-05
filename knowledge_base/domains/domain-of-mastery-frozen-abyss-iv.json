@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-frozen-abyss-iv",
+  "name_ru": "Мастерство: Ледяная Бездна IV",
+  "name_en": "Domain of Mastery: Frozen Abyss IV",
+  "type": "Повышение талантов",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-resistance",
+    "guide-to-resistance",
+    "teachings-of-resistance"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-heart-of-the-flames-iii",
+  "name_ru": "Мастерство: Сердце пламени III",
+  "name_en": "Domain of Mastery: Heart of the Flames III",
+  "type": "Повышение талантов",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-diligence",
+    "teachings-of-diligence"
+  ],
+  "coordinates": []
+}

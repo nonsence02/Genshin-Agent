@@ -1,0 +1,23 @@
+{
+  "id": "masala-cheese-balls",
+  "name_ru": "Сырные шарики масала",
+  "name_en": "Masala Cheese Balls",
+  "rarity": 2,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 12% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "potato",
+      "count": 2
+    },
+    {
+      "material_id": "cheese",
+      "count": 1
+    },
+    {
+      "material_id": "spice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

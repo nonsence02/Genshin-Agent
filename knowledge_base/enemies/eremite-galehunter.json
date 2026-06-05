@@ -1,0 +1,13 @@
+{
+  "id": "eremite-galehunter",
+  "name_ru": "Пустынник: Охотница ветров",
+  "name_en": "Eremite Galehunter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

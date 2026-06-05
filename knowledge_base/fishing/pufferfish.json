@@ -1,0 +1,11 @@
+{
+  "id": "pufferfish",
+  "kind": "fish",
+  "name_ru": "Иглобрюх",
+  "name_en": "Pufferfish",
+  "bait_id": "fake-fly-bait",
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

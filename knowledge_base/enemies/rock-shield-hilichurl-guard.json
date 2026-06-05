@@ -1,0 +1,13 @@
+{
+  "id": "rock-shield-hilichurl-guard",
+  "name_ru": "Хиличурл с каменным щитом",
+  "name_en": "Rock Shield Hilichurl Guard",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

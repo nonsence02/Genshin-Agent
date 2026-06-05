@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-variation-iii",
+  "name_ru": "Подземелье благословения: Вариация III",
+  "name_en": "Domain of Blessing: Variation III",
+  "type": "Артефакты",
+  "region": "Фонтейн",
+  "days_of_week": [],
+  "rewards": [
+    "fragment-of-harmonic-whimsy",
+    "unfinished-reverie",
+    "brave-heart",
+    "shackles-of-the-dandelion-gladiator"
+  ],
+  "coordinates": []
+}

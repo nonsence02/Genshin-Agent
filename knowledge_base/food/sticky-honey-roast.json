@@ -1,0 +1,23 @@
+{
+  "id": "sticky-honey-roast",
+  "name_ru": "Медовое мясо с морковкой",
+  "name_en": "Sticky Honey Roast",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время спринта и карабканья на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "carrot",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

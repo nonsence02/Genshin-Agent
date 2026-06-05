@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-sublime-turning-iv",
+  "name_ru": "Подземелье мастерства: Неожиданный поворот IV",
+  "name_en": "Domain of Mastery: Sublime Turning IV",
+  "type": "Повышение талантов",
+  "region": "Натлан",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-contention",
+    "guide-to-contention",
+    "teachings-of-contention"
+  ],
+  "coordinates": []
+}

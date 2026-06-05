@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-seven-senses-ii",
+  "name_ru": "Подземелье благословения: Семь чувств II",
+  "name_en": "Domain of Blessing: Seven Senses II",
+  "type": "Артефакты",
+  "region": "Сумеру",
+  "days_of_week": [],
+  "rewards": [
+    "deepwood-memories",
+    "gilded-dreams",
+    "tiny-miracle",
+    "gambler"
+  ],
+  "coordinates": []
+}

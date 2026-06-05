@@ -1,10 +1,18 @@
 {
   "id": "lightless-mass",
+  "name_ru": "Тёмная масса",
   "name_en": "Lightless Mass",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ All-Devouring Narwhal Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Всепожирающий нарвал Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lightless_Mass"
+  "dropped_by": [
+    "all-devouring-narwhal"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,19 @@
+{
+  "id": "qiankun-mora-meat",
+  "name_ru": "Лепёшка «Инь Ян»",
+  "name_en": "Qiankun Mora Meat",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 10% от макс. HP + 150 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 1
+    },
+    {
+      "material_id": "flour",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "tenebrous-papilla-type-i",
+  "name_ru": "Сумрачная папилла: Тип I",
+  "name_en": "Tenebrous Papilla: Type I",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "ensnaring-gaze",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver",
+    "vayuda-turquoise-gemstone",
+    "vayuda-turquoise-chunk",
+    "vayuda-turquoise-fragment",
+    "vayuda-turquoise-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

@@ -1,14 +1,23 @@
 {
   "id": "debris-of-decarabians-city",
+  "name_ru": "Обломок стены Декарабиана",
   "name_en": "Debris of Decarabian's City",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Cecilia Garden (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Debris_of_Decarabian%27s_City"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-city-of-reflections-ii",
+    "domain-of-forgery-city-of-reflections-iii",
+    "domain-of-forgery-city-of-reflections-iv"
+  ],
+  "source_domain": "domain-of-forgery-city-of-reflections-ii",
+  "coordinates": []
 }

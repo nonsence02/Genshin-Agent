@@ -1,0 +1,13 @@
+{
+  "id": "geological-survey-mek",
+  "name_ru": "Мек: Геологоразведка",
+  "name_en": "Geological Survey Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

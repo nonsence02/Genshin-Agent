@@ -1,0 +1,23 @@
+{
+  "id": "jade-cut-flowers",
+  "name_ru": "Вырезанные из нефрита цветы",
+  "name_en": "Jade-Cut Flowers",
+  "rarity": 2,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 80 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "qingxin",
+      "count": 1
+    },
+    {
+      "material_id": "flour",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

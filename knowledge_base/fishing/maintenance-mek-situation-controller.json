@@ -1,0 +1,11 @@
+{
+  "id": "maintenance-mek-situation-controller",
+  "kind": "fish",
+  "name_ru": "Ремонтный мек: Управление ситуацией",
+  "name_en": "Maintenance Mek: Situation Controller",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tainted-water-splitting-phantasm",
+  "name_ru": "Дробящий воду фантазм",
+  "name_en": "Tainted Water-Splitting Phantasm",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "newborn-tainted-hydro-phantasm",
+    "scoop-of-tainted-water",
+    "drop-of-tainted-water"
+  ],
+  "coordinates": []
+}

@@ -1,94 +1,81 @@
 {
   "id": "thoma",
-  "name": "Thoma",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Thoma",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Pyro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Thoma vaults forward with his polearm and delivers a flame-filled flying kick that deals AoE Pyro DMG, while also summoning a defensive Blazing Barrier. At the moment of casting, Thoma's Elemental Skill applies Pyro to himself. The DMG Absorption of the Blazing Barrier scales off Thoma's Max HP. The Blazing Barrier has the following traits: Absorbs Pyro DMG",
-    "elemental_burst": "Thoma spins his polearm, slicing at his foes with roaring flames that deal AoE Pyro DMG and weave themselves into a Scorching Ooyoroi. Scorching Ooyoroi While Scorching Ooyoroi is in effect, the active character's Normal Attacks will trigger Fiery Collapse, dealing AoE Pyro DMG and summoning a Blazing Barrier. Fiery Collapse can be triggered once. Except for the amount of DMG they can absorb, the Blazing Barriers created in this way are identical to those created by Thoma's Elemental Skill, Blazing Blessing: Absorbs Pyro DMG"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "special": [
-        "Fluorescent Fungus",
-        "Smoldering Pearl"
-      ]
+  "name_ru": "Тома",
+  "name_en": "Thoma",
+  "element": "Pyro",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 866.2015,
+      "atk": 16.9176,
+      "def": 62.9475
     },
-    "talents": {
-      "books": [
-        "Teachings of Transience",
-        "Guide to Transience",
-        "Philosophies of Transience"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "weekly_boss": [
-        "Hellfire Butterfly"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10331.1695,
+      "atk": 201.7773,
+      "def": 750.7737
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Быстробойное копьё",
+      "description_ru": "Обычная атака:\nДо четырёх ударов копьём.\n\nЗаряженная атака:\nВыпад, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Пылающий покров",
+      "description_ru": "Опираясь на воткнутое в землю копьё, Тома стремительно бьёт ногами перед собой и направляет силу пламени, нанося Пиро урон по площади. Также Тома призывает Пылающий щит, который накладывает на него эффект Пиро.\nПоглощение урона щитом зависит от макс. HP Томы.\nПылающий щит обладает следующими свойствами:\n· Пиро урон поглощается с эффективностью 250%.\n·Если во время действия одного Пылающего щита получен другой Пылающий щит, то оставшееся поглощение урона старого щита добавится новому щиту, время действия щита обновится.\n\nМакс. поглощение урона щита не может превышать определённую часть от макс. HP Томы."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Багровый оёрой",
+      "description_ru": "Тома вращает копьём, обдавая врагов потоками жаркого пламени, которые наносят Пиро урон по площади и создают Оёрой огня.\n\nОёрой огня\nОбычные атаки активного персонажа под действием Оёроя огня активируют Огненный разрыв, который наносит Пиро урон по площади, и призывают Пылающий щит.\nОгненный разрыв может возникнуть только раз в секунду.\n\nСозданный щит идентичен Пылающему покрову, созданному элементальным навыком Томы, во всём, кроме поглощения урона.\n· Пиро урон поглощается с эффективностью 250%.\n· Если во время действия одного Пылающего щита получен другой Пылающий щит, то оставшееся поглощение урона старого щита добавится новому щиту, время действия щита обновится.\n\nМакс. поглощение урона щита не может превышать определённую часть от макс. HP Томы.\n\nЕсли Тома погибает, то эффект Оёроя огня пропадает."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Перекрывающая броня",
+      "description_ru": "Когда ваш активный персонаж получает или обновляет Пылающий щит, прочность щита этого персонажа повышается на 5% в течение 6 сек.\nЭтот эффект может возникнуть раз в 0,3 сек. и складывается до 5 раз."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Пламенная атака",
+      "description_ru": "Урон, наносимый Огненным разрывом Багрового оёроя, увеличивается на 2,2% от макс. HP Томы."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Замах и заброс",
+      "description_ru": "Тома помогает путешественнику с рыбалкой в Инадзуме, давая ему 20% шанс получить двойной улов."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Долг друга",
+      "description_ru": "Когда персонаж под защитой Пылающего щита Томы, но кроме него самого, получает удар, время отката Пылающего покрова и Багрового оёроя Томы уменьшается на 3 сек.\nЭтот эффект может возникнуть раз в 20 сек."
+    },
+    {
+      "name_ru": "Проницательность слуги",
+      "description_ru": "Длительность Багрового оёроя увеличивается на 3 сек."
+    },
+    {
+      "name_ru": "Твёрдая решимость",
+      "description_ru": "Увеличивает уровень навыка Пылающий покров на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Долгосрочный план",
+      "description_ru": "Использование навыка Багровый оёрой восстанавливает 15 ед. энергии Томы."
+    },
+    {
+      "name_ru": "Бушующий пожар",
+      "description_ru": "Увеличивает уровень навыка Багровый оёрой на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Горячее сердце",
+      "description_ru": "При получении или обновлении Пылающего щита урон обычных атак, заряженных атак и атак в падении всех членов отряда на 6 сек. повышается на 15%."
+    }
+  ],
+  "coordinates": []
 }

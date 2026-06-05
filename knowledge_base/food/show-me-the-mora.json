@@ -1,0 +1,27 @@
+{
+  "id": "show-me-the-mora",
+  "name_ru": "Где моя мора?",
+  "name_en": "Show Me the Mora",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 274 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 3
+    },
+    {
+      "material_id": "tomato",
+      "count": 3
+    },
+    {
+      "material_id": "butter",
+      "count": 1
+    },
+    {
+      "material_id": "spice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

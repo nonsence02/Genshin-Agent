@@ -1,48 +1,80 @@
 {
   "id": "engulfing-lightning",
-  "name": "Engulfing Lightning",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Engulfing_Lightning",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "ATK increased by of Energy Recharge over the base. You can gain a maximum bonus of ATK. Gain Energy Recharge for after using an Elemental Burst.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mask of the Wicked Lieutenant",
-        "Chaos Gear",
-        "Old Handguard",
-        "Mask of the Tiger's Bite",
-        "Chaos Axis",
-        "Kageuchi Handguard",
-        "Mask of the One-Horned",
-        "Chaos Oculus",
-        "Famed Handguard",
-        "Mask of the Kijin"
-      ]
+  "name_ru": "Сияющая жатва",
+  "name_en": "Engulfing Lightning",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.12
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.5513
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Сон вне времени: Печь вечности",
+  "passive_description_ru": "Увеличивает силу атаки на 28% от показателя восстановления энергии свыше 100%. Вы можете получить бонус силы атаки до 80%. Также даёт 30% восстановления энергии на 12 сек. после активации взрыва стихии.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mask-of-the-wicked-lieutenant",
+        "name_ru": "Маска злого военачальника",
+        "name_en": "Mask of the Wicked Lieutenant"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mask-of-the-tigers-bite",
+        "name_ru": "Маска тигриной пасти",
+        "name_en": "Mask of the Tiger's Bite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mask-of-the-one-horned",
+        "name_ru": "Маска однорогого",
+        "name_en": "Mask of the One-Horned"
+      },
+      {
+        "id": "mask-of-the-kijin",
+        "name_ru": "Маска кидзин",
+        "name_en": "Mask of the Kijin"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-gear",
+        "name_ru": "Механизм хаоса",
+        "name_en": "Chaos Gear"
+      },
+      {
+        "id": "chaos-axis",
+        "name_ru": "Ось хаоса",
+        "name_en": "Chaos Axis"
+      },
+      {
+        "id": "chaos-oculus",
+        "name_ru": "Око хаоса",
+        "name_en": "Chaos Oculus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

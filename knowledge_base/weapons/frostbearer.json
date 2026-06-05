@@ -1,47 +1,80 @@
 {
   "id": "frostbearer",
-  "name": "Frostbearer",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Frostbearer",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Hitting an opponent with Normal and Charged Attacks has a chance of forming and dropping an Everfrost Icicle above them, dealing AoE ATK DMG. Opponents affected by Cryo are dealt ATK DMG instead by the icicle. Can only occur once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Whopperflower Nectar",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Shimmering Nectar",
-        "Shackles of the Dandelion Gladiator",
-        "Energy Nectar",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Плод вечной мерзлоты",
+  "name_en": "Frostbearer",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Морозное погребение",
+  "passive_description_ru": "Попадания обычной или заряженной атакой имеют 60% шанс создать над противником ледяной кристалл и уронить его, нанося 80% урона силы атаки по площади. Если противник имеет эффект Крио, то наносит ему 200% урона силы атаки. Может возникнуть раз в 10 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

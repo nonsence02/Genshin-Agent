@@ -1,0 +1,13 @@
+{
+  "id": "fisher-of-hidden-depths",
+  "name_ru": "Рыболов скрытых глубин",
+  "name_en": "Fisher of Hidden Depths",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "hooked-beak-of-the-deep-shadow",
+    "aberrant-core-of-the-deep-shadow",
+    "fractured-eye-of-the-deep-shadow"
+  ],
+  "coordinates": []
+}

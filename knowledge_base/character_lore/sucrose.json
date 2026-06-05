@@ -1,0 +1,75 @@
+{
+  "id": "sucrose",
+  "name_en": "Sucrose",
+  "element": "Anemo",
+  "weapon": "Catalyst",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "description": "Sucrose is a playable Anemo character in Genshin Impact .\n\nAn alchemist specializing in bio-alchemy, she also serves as an assistant for Albedo , the head alchemist of the Knights of Favonius .",
+  "role_summary": "Sucrose is a playable Anemo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Wind Spirit Creation",
+      "description": "Normal Attack Performs up to 4 attacks using Wind Spirits, dealing Anemo DMG . Charged Attack Consumes a certain amount of Stamina and deals AoE Anemo DMG after a short casting time. Plunging Attack Calling upon the power of her Wind Spirits, Sucrose plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Anemo DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Astable Anemohypostasis Creation - 6308",
+      "description": "Creates a small Wind Spirit that pulls opponents and objects towards its location, launches opponents within its AoE , and deals Anemo DMG ."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Forbidden Creation - Isomer 75 / Type II",
+      "description": "Sucrose hurls an unstable concoction that creates a Large Wind Spirit . While it persists, the Large Wind Spirit will continuously pull in surrounding opponents and objects, launch nearby opponents, and deal Anemo DMG . Elemental Absorption If the Wind Spirit comes into contact with Hydro / Pyro / Cryo / Electro energy, it will deal additional Elemental DMG of that type. Elemental Absorption may only occur once per use."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Catalyst Conversion",
+      "description": "When Sucrose triggers a Swirl effect, all characters in the party with the matching element (excluding Sucrose) have their Elemental Mastery increased by 50 for 8s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Mollis Favonius",
+      "description": "When Astable Anemohypostasis Creation - 6308 or Forbidden Creation - Isomer 75 / Type II hits an opponent, increases all party members' (excluding Sucrose) Elemental Mastery based on 20% of Sucrose's Elemental Mastery for 8s."
+    },
+    {
+      "type": "Witch's Eve Rite Passive",
+      "name": "Sevenfold Transmutation",
+      "description": "After completing Witch's Homework : Of Wonderland Flowers , Sucrose will become a Hexerei character. When the party includes at least 2 Hexerei characters, you will gain the Hexerei: Secret Rite effect, which enhances Hexerei characters. Hexerei: Secret Rite After creating a Small Wind Spirit , nearby party members' Normal Attack , Charged Attack , Plunging Attack , Elemental Skill , and Elemental Burst DMG are increased by 5.71428% for 15s. After creating a Large Wind Spirit , nearby Hexerei party members' Normal Attack, Charged Attack, Plunging Attack, Elemental Skill, and Elemental Burst DMG are increased by 7.14285% for 20s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Astable Invention",
+      "description": "When Sucrose crafts Character and Weapon Enhancement Materials , she has a 10% chance to obtain double the product."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Clustered Vacuum Field",
+      "effect": "Astable Anemohypostasis Creation - 6308 gains 1 additional charge ."
+    },
+    "c2": {
+      "name": "Beth: Unbound Form",
+      "effect": "The duration of Forbidden Creation - Isomer 75 / Type II is increased by 2s."
+    },
+    "c3": {
+      "name": "Flawless Alchemistress",
+      "effect": "Increases the Level of Astable Anemohypostasis Creation - 6308 by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Alchemania",
+      "effect": "Every 7 Normal and Charged Attacks , Sucrose will reduce the CD of Astable Anemohypostasis Creation - 6308 by 1-7s."
+    },
+    "c5": {
+      "name": "Caution: Standard Flask",
+      "effect": "Increases the Level of Forbidden Creation - Isomer 75 / Type II by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Chaotic Entropy",
+      "effect": "Description Hexerei Buff Gameplay Notes If Forbidden Creation - Isomer 75 / Type II triggers an Elemental Absorption, all party members gain a 20% Elemental DMG Bonus for the corresponding absorbed element during its duration. If Forbidden Creation - Isomer 75 / Type II triggers an Elemental Absorption, all party members gain a 20% Elemental DMG Bonus for the corresponding absorbed element, and nearby Hexerei characters in the party gain an additional 8.57142% Elemental DMG Bonus for the corresponding absorbed element during its duration. The Elemental DMG Bonus lasts for 10s after Forbidden Creation - Isomer 75 / Type II triggers an Elemental Absorption."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Sucrose",
+  "ai_tags": "Main DPS, Elemental Absorber"
+}

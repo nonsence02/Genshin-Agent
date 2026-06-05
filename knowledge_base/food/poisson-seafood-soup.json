@@ -1,0 +1,27 @@
+{
+  "id": "poisson-seafood-soup",
+  "name_ru": "Суп де Пуассон",
+  "name_en": "Poisson Seafood Soup",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 30% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 790 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 4
+    },
+    {
+      "material_id": "tomato",
+      "count": 2
+    },
+    {
+      "material_id": "mint",
+      "count": 2
+    },
+    {
+      "material_id": "marcotte",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

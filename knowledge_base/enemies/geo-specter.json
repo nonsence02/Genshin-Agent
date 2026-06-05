@@ -1,0 +1,13 @@
+{
+  "id": "geo-specter",
+  "name_ru": "Гео призрак",
+  "name_en": "Geo Specter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "spectral-nucleus",
+    "spectral-heart",
+    "spectral-husk"
+  ],
+  "coordinates": []
+}

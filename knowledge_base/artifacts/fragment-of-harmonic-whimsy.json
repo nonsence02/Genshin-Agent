@@ -1,0 +1,10 @@
+{
+  "id": "fragment-of-harmonic-whimsy",
+  "name_ru": "Фрагмент гармонической фантазии",
+  "name_en": "Fragment of Harmonic Whimsy",
+  "max_rarity": 5,
+  "bonus_2pc": "Увеличивает силу атаки на 18%.",
+  "bonus_4pc": "Когда значение Долга жизни увеличивается или уменьшается, наносимый персонажем урон увеличивается на 18% на 6 сек. Эффект может складываться до 3 раз.",
+  "source_domain": "domain-of-blessing-variation-i",
+  "coordinates": []
+}

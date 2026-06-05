@@ -1,0 +1,10 @@
+{
+  "id": "viridescent-venerer",
+  "name_ru": "Изумрудная тень",
+  "name_en": "Viridescent Venerer",
+  "max_rarity": 5,
+  "bonus_2pc": "Даёт 15% бонус Анемо урона.",
+  "bonus_4pc": "Увеличивает урон Рассеивания на 60%. При взаимодействии Рассеивания с другим элементом, также понижает сопротивление противника к соответствующему элементу на 40% в течение 10 сек.",
+  "source_domain": "domain-of-blessing-dance-of-steel-ii",
+  "coordinates": []
+}

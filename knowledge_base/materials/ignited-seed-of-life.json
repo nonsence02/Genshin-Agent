@@ -1,10 +1,20 @@
 {
   "id": "ignited-seed-of-life",
+  "name_ru": "Пламенное семя жизни",
   "name_en": "Ignited Seed of Life",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Avatars of Lava"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Воплощение лавы Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ignited_Seed_of_Life"
+  "dropped_by": [
+    "eroding-avatar-of-lava",
+    "fluid-avatar-of-lava"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

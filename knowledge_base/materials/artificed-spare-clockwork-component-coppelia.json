@@ -1,10 +1,17 @@
 {
   "id": "artificed-spare-clockwork-component-coppelia",
+  "name_ru": "Запасная деталь чудного механизма: Коппелия",
   "name_en": "Artificed Spare Clockwork Component — Coppelia",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Icewind Suite: Dirge of Coppelia"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "«Сюита ледяного ветра» Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Artificed_Spare_Clockwork_Component_%E2%80%94_Coppelia"
+  "dropped_by": [
+    "icewind-suite"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

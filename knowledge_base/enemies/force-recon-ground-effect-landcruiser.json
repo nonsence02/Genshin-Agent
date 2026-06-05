@@ -1,0 +1,13 @@
+{
+  "id": "force-recon-ground-effect-landcruiser",
+  "name_ru": "Сухопутный крейсер: Наземный разведчик",
+  "name_en": "Force Recon Ground Effect Landcruiser",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "precision-drive-shaft",
+    "reinforced-drive-shaft",
+    "broken-drive-shaft"
+  ],
+  "coordinates": []
+}

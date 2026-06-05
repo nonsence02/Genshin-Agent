@@ -1,0 +1,11 @@
+{
+  "id": "venomspine-fish",
+  "kind": "fish",
+  "name_ru": "Ядовитая колюшка",
+  "name_en": "Venomspine Fish",
+  "bait_id": "redrot-bait",
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

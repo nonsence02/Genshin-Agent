@@ -1,0 +1,15 @@
+{
+  "id": "flashing-maintenance-mek-bait",
+  "name_ru": "Огонёк ремонтного мека",
+  "name_en": "Flashing Maintenance Mek Bait",
+  "type": "fish_bait",
+  "type_text_ru": "Наживка",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Алхимия"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

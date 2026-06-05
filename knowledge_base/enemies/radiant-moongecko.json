@@ -1,0 +1,15 @@
+{
+  "id": "radiant-moongecko",
+  "name_ru": "Лучезарный лунный геккон",
+  "name_en": "Radiant Moongecko",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "prismatic-severed-tail",
+    "prithiva-topaz-gemstone",
+    "prithiva-topaz-chunk",
+    "prithiva-topaz-fragment",
+    "prithiva-topaz-sliver"
+  ],
+  "coordinates": []
+}

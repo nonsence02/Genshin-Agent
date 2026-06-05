@@ -1,94 +1,81 @@
 {
   "id": "yelan",
-  "name": "Yelan",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Yelan",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Hydro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Fires off a Lifeline that allows her to move rapidly, entangling and marking opponents along its path. When this rapid movement ends, the Lifeline will explode, dealing Hydro DMG to the marked opponents based on Yelan's Max HP. Tap Moves a certain distance forward swiftly. Hold Engages in continuous, swift movement, during which Yelan's resistance to interruption is increased. During this time, Yelan can control this rapid movement and end it by using this Skill again. Additionally, each opponent marked by the Lifeline when it explodes grants Yelan a",
-    "elemental_burst": "Deals AoE Hydro DMG and creates an \"Exquisite Throw,\" which aids her in battle. Exquisite Throw Follows the character around and will initiate a coordinated attack under the following circumstances, dealing Hydro DMG based on Yelan's Max HP: Can occur once every second when your active character uses a Normal Attack. Will occur each time Yelan's Lifeline explodes and hits opponents. Coordinated Attack DMG follows an Internal Cooldown of seconds/ hits. Exquisite Throw DMG does not snapshot and will be affected by changes in Yelan's stats after Depth-Clarion Dice is cast. If Lingering Lifeline is used the maximum amount of times during Exquisite Throw, Exquisite Throw can fire up to times at..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Varunada Lazurite Sliver",
-        "Varunada Lazurite Fragment",
-        "Varunada Lazurite Chunk",
-        "Varunada Lazurite Gemstone"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "special": [
-        "Starconch",
-        "Runic Fang"
-      ]
+  "name_ru": "Е Лань",
+  "name_en": "Yelan",
+  "element": "Hydro",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1124.9176,
+      "atk": 18.9924,
+      "def": 42.6588
     },
-    "talents": {
-      "books": [
-        "Teachings of Prosperity",
-        "Guide to Prosperity",
-        "Philosophies of Prosperity"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "weekly_boss": [
-        "Gilded Scale"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 14450.1749,
+      "atk": 243.9619,
+      "def": 547.9793
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Незаметная стрела",
+      "description_ru": "Обычная атака\nДо четырёх выстрелов из лука подряд.\n\nЗаряженная атака\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается водным потоком. Полностью заряженная стрела наносит Гидро урон.\nПрорыв\nЧерез 5 сек. вне боя Е Лань входит в состояние Прорыва, которое сокращает время зарядки её следующего полностью заряженного прицельного выстрела на 80%. После полной зарядки она выстрелит Прорывной стрелой, которая наносит Гидро урон по площади, зависящий от макс. HP Е Лань.\n\nАтака в падении\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Переплетённая нить жизни",
+      "description_ru": "Быстро движется, опутывая и отмечая противников по пути Нитью жизни.\nПосле окончания движения Нить жизни взрывается, нанося отмеченным противникам Гидро урон, который зависит от макс. HP Е Лань. \n\nБыстрое нажатие\nБыстро продвигается вперёд на определённое расстояние.\n\nДолгое нажатие\nСтремительно движется некоторое время, а её сопротивление прерыванию в этом состоянии повышается.\nЕ Лань может контролировать направление движения. При повторном использовании навыка движение прекращается.\n\nКаждый противник, отмеченный Нитью жизни, даёт Е Лань 34% шанс на получение Прорыва при взрыве."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Изысканные игральные кости",
+      "description_ru": "Наносит Гидро урон по площади и создаёт Изысканный бросок, который помогает в битве. \n\nИзысканный бросок\nСледует за персонажем и при совместной атаке наносит Гидро урон, зависящий от макс. HP Е Лань. Совершает совместную атаку в следующих ситуациях:\n· когда собственный активный персонаж совершает обычную атаку. Может возникать раз в секунду;\n· когда собственная Нить жизни Е Лань взрывается и попадает по противнику."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Перехват инициативы",
+      "description_ru": "Если в отряде 1/2/3/4 типа элементов, макс. HP Е Лань увеличивается на 6%/12%/18%/30% соответственно."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Лёгкая приспособляемость",
+      "description_ru": "Пока активен Изысканный бросок, урон, наносимый своим активным персонажем, увеличивается на 1% и продолжает увеличиваться на 3,5% каждую сек. Максимальное увеличение наносимого урона - 50%.\nПовторная активация Изысканных игральных костей во время действия эффекта прервёт его."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Необходимый расчёт",
+      "description_ru": "На 25% увеличивает награду экспедиций в Ли Юэ длительностью 20 ч."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Игра с мошенниками",
+      "description_ru": "Увеличивает количество зарядов навыка Переплетённая нить жизни на 1."
+    },
+    {
+      "name_ru": "Принимаем всех желающих",
+      "description_ru": "Когда Изысканный бросок проводит совместную атаку, то запускает дополнительную водяную стрелу, которая наносит Гидро урон в 14% макс. HP Е Лань.\nЭффект может возникнуть один раз в 1,8 сек."
+    },
+    {
+      "name_ru": "Остерегайся мошенников",
+      "description_ru": "Увеличивает уровень навыка Изысканные игральные кости на 3.\nМакс. уровень: 15."
+    },
+    {
+      "name_ru": "Заманить и подменить",
+      "description_ru": "После взрыва Нити жизни на 25 сек. увеличивает макс. HP всех членов отряда на 10% за каждого противника, отмеченного ею. Максимальное увеличение HP - 40%."
+    },
+    {
+      "name_ru": "Ловкость дилера",
+      "description_ru": "Увеличивает уровень навыка Переплетённая нить жизни на 3.\nМакс. уровень: 15."
+    },
+    {
+      "name_ru": "Победитель получает всё",
+      "description_ru": "После использования навыка Изысканные игральные кости Е Лань войдёт в состояние Стратега.\nВ этом состоянии все обычные атаки Е Лань становятся особыми Прорывными стрелами. Эти стрелы обладают схожими характеристиками с обычными Прорывными стрелами, наносимый ими урон считается уроном заряженной атаки и составляет 156% от обычного урона Прорывных стрел.\n\nСостояние Стратега исчезнет через 20 сек. или после 5 выпущенных стрел."
+    }
+  ],
+  "coordinates": []
 }

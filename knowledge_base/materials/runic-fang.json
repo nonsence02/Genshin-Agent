@@ -1,10 +1,17 @@
 {
   "id": "runic-fang",
+  "name_ru": "Рунический клык",
   "name_en": "Runic Fang",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Ruin Serpent"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Змеи руин Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Runic_Fang"
+  "dropped_by": [
+    "ruin-serpent"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

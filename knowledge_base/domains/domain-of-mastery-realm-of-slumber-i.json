@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-mastery-realm-of-slumber-i",
+  "name_ru": "Мастерство: Царство снов I",
+  "name_en": "Domain of Mastery: Realm of Slumber I",
+  "type": "Повышение талантов",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "teachings-of-ballad"
+  ],
+  "coordinates": []
+}

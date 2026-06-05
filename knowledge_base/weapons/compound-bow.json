@@ -1,48 +1,80 @@
 {
   "id": "compound-bow",
-  "name": "Compound Bow",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Compound_Bow",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "Physical DMG Bonus"
-  },
-  "passive": "Normal Attack and Charged Attack hits increase ATK by and Normal ATK SPD by for. Max stacks. Can only occur once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Fragile Bone Shard",
-        "Recruit's Insignia",
-        "Piece of Aerosiderite",
-        "Sturdy Bone Shard",
-        "Sergeant's Insignia",
-        "Bit of Aerosiderite",
-        "Fossilized Bone Shard",
-        "Lieutenant's Insignia",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Составной лук",
+  "name_en": "Compound Bow",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.1501
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.6897
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Заряженная стрела",
+  "passive_description_ru": "Попадания обычной и заряженной атакой увеличивают силу атаки на 4% и скорость атаки на 1,2% в течение 6 сек. Эффект может складываться до 4 раз. Может возникнуть раз в 0,3 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fragile-bone-shard",
+        "name_ru": "Хрупкие останки",
+        "name_en": "Fragile Bone Shard"
+      },
+      {
+        "id": "sturdy-bone-shard",
+        "name_ru": "Крепкие останки",
+        "name_en": "Sturdy Bone Shard"
+      },
+      {
+        "id": "fossilized-bone-shard",
+        "name_ru": "Окаменевшие останки",
+        "name_en": "Fossilized Bone Shard"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "recruits-insignia",
+        "name_ru": "Шеврон рядового",
+        "name_en": "Recruit's Insignia"
+      },
+      {
+        "id": "sergeants-insignia",
+        "name_ru": "Шеврон сержанта",
+        "name_en": "Sergeant's Insignia"
+      },
+      {
+        "id": "lieutenants-insignia",
+        "name_ru": "Шеврон офицера",
+        "name_en": "Lieutenant's Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

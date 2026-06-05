@@ -1,0 +1,16 @@
+{
+  "id": "grounded-hydroshroom",
+  "name_ru": "Земляной Гидро моровик",
+  "name_en": "Grounded Hydroshroom",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "robust-fungal-nucleus",
+    "dormant-fungal-nucleus",
+    "inactivated-fungal-nucleus",
+    "crystalline-cyst-dust",
+    "luminescent-pollen",
+    "fungal-spores"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "veggie-mauler-shark",
+  "kind": "fish",
+  "name_ru": "Свирепая овощная акула",
+  "name_en": "Veggie Mauler Shark",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

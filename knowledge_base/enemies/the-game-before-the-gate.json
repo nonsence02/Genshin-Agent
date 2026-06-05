@@ -1,0 +1,31 @@
+{
+  "id": "the-game-before-the-gate",
+  "name_ru": "Игра пред вратами",
+  "name_en": "The Game Before the Gate",
+  "type": "BOSS",
+  "type_ru": "Враги, достойные упоминания",
+  "drops": [
+    "ascended-sample-knight",
+    "ascended-sample-rook",
+    "ascended-sample-queen",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver",
+    "dream-solvent",
+    "northlander-sword-billet",
+    "northlander-bow-billet",
+    "northlander-claymore-billet",
+    "northlander-catalyst-billet",
+    "northlander-polearm-billet"
+  ],
+  "coordinates": []
+}

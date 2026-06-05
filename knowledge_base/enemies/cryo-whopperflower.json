@@ -1,0 +1,13 @@
+{
+  "id": "cryo-whopperflower",
+  "name_ru": "Крио попрыгунья",
+  "name_en": "Cryo Whopperflower",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "energy-nectar",
+    "shimmering-nectar",
+    "whopperflower-nectar"
+  ],
+  "coordinates": []
+}

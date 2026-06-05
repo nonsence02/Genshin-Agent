@@ -1,47 +1,80 @@
 {
   "id": "skyward-spine",
-  "name": "Skyward Spine",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Skyward_Spine",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "48 - 674",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Increases CRIT Rate by and increases Normal ATK SPD by. Additionally, Normal and Charged Attacks hits on opponents have a chance to trigger a vacuum blade that deals of ATK as DMG in a small AoE. This can occur no more than once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Divining Scroll",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Sealed Scroll",
-        "Shackles of the Dandelion Gladiator",
-        "Forbidden Curse Scroll",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Небесная ось",
+  "name_en": "Skyward Spine",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.08
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3675
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Клык, пронзивший тьму",
+  "passive_description_ru": "Увеличивает шанс крит. попадания на 8% и скорость обычной атаки на 12%. При попадании обычной или заряженной атакой есть 50% шанс активировать неосязаемое лезвие, которое наносит 40% урона в небольшом радиусе. Может возникнуть раз в 2 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

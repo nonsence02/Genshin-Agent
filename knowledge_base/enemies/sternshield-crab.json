@@ -1,0 +1,13 @@
+{
+  "id": "sternshield-crab",
+  "name_ru": "Бронекраб-щитовик",
+  "name_en": "Sternshield Crab",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "xenochromatic-crystal",
+    "transoceanic-chunk",
+    "transoceanic-pearl"
+  ],
+  "coordinates": []
+}

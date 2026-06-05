@@ -1,14 +1,22 @@
 {
   "id": "silver-goblet-of-the-pristine-sea",
+  "name_ru": "Серебряный кубок непорочного моря",
   "name_en": "Silver Goblet of the Pristine Sea",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Echoes of the Deep Tides (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Silver_Goblet_of_the_Pristine_Sea"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-curious-contraptions-iii",
+    "domain-of-forgery-curious-contraptions-iv"
+  ],
+  "source_domain": "domain-of-forgery-curious-contraptions-iii",
+  "coordinates": []
 }

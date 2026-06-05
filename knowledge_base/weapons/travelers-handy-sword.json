@@ -1,47 +1,80 @@
 {
   "id": "travelers-handy-sword",
-  "name": "Traveler's Handy Sword",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Traveler%27s_Handy_Sword",
-  "profile": {
-    "type": "Sword",
-    "rarity": "3★",
-    "base_atk": "40 - 448",
-    "secondary_stat": "DEF"
-  },
-  "passive": "Each Elemental Orb or Particle collected restores HP.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Divining Scroll",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Sealed Scroll",
-        "Shackles of the Dandelion Gladiator",
-        "Forbidden Curse Scroll",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Меч путешественника",
+  "name_en": "Traveler's Handy Sword",
+  "weapon_type": "Sword",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 39.8751,
+      "secondary_stat": "Защита",
+      "secondary_stat_value": 0.0637
+    },
+    "level_90": {
+      "base_atk": 448.2216,
+      "secondary_stat": "Защита",
+      "secondary_stat_value": 0.2928
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Путешествие",
+  "passive_description_ru": "Подобранные элементальные сферы и частицы восстанавливают 1% HP.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

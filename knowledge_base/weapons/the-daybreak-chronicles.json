@@ -1,48 +1,80 @@
 {
   "id": "the-daybreak-chronicles",
-  "name": "The Daybreak Chronicles",
-  "source_url": "https://genshin-impact.fandom.com/wiki/The_Daybreak_Chronicles",
-  "profile": {
-    "type": "Bow",
-    "rarity": "5★",
-    "base_atk": "48 - 674",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "The equipping character gains Stirring Dawn Breeze: after leaving combat, Normal Attack, Elemental Skill, and Elemental Burst DMG is increased by. While in combat, this DMG Bonus will decrease by per second until it reaches. When the equipping character's Normal Attacks, Elemental Skills, or Elemental Bursts hit an opponent, the DMG Bonus for the corresponding DMG type is increased by until it reaches. This can be triggered once every for each of the attack types mentioned above. This can be triggered even if the equipping character is off-field. Additionally, when the party possesses Hexerei: Secret Rite effects, when the equipping character's Normal Attacks, Elemental Skills, or Elemental...",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Heavy Horn",
-        "Treasure Hoarder Insignia",
-        "Chains of the Dandelion Gladiator",
-        "Black Bronze Horn",
-        "Silver Raven Insignia",
-        "Shackles of the Dandelion Gladiator",
-        "Black Crystal Horn",
-        "Golden Raven Insignia",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Хроники рассвета",
+  "name_en": "The Daybreak Chronicles",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.096
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.441
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Ода вне времени",
+  "passive_description_ru": "Экипированный персонаж получает Волнующийся утренний ветер: через 3 сек. после выхода из боя урон обычной атаки, элементального навыка и взрыва стихии повышается на 60%. В бою этот эффект повышения урона снижается на 10% каждую секунду, пока не достигнет 0%. Когда обычная атака, элементальный навык или взрыв стихии экипированного персонажа поражают противника, эффект повышения урона соответствующего типа усиливается на 10%, пока не достигает 60%. Этот эффект может возникнуть один раз в 0,1 сек. для атак каждого из перечисленных типов и срабатывает, даже когда экипированный персонаж не на поле боя.\nКроме того, когда в отряде действует эффект Ведьмовство: Тайный обряд, а обычная атака, элементальный навык или взрыв стихии экипированного персонажа поражают противника, то вместо этого эффект повышения урона для урона всех этих типов усиливается на 20%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "heavy-horn",
+        "name_ru": "Тяжёлый рог",
+        "name_en": "Heavy Horn"
+      },
+      {
+        "id": "black-bronze-horn",
+        "name_ru": "Чёрный бронзовый рог",
+        "name_en": "Black Bronze Horn"
+      },
+      {
+        "id": "black-crystal-horn",
+        "name_ru": "Чёрный кристаллический рог",
+        "name_en": "Black Crystal Horn"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

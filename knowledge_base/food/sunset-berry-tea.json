@@ -1,0 +1,23 @@
+{
+  "id": "sunset-berry-tea",
+  "name_ru": "Чай из ягод и закатника",
+  "name_en": "Sunset Berry Tea",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 228 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "sunsettia",
+      "count": 3
+    },
+    {
+      "material_id": "berry",
+      "count": 3
+    },
+    {
+      "material_id": "sugar",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "my-way",
+  "name_ru": "«Особое мнение»",
+  "name_en": "\"My Way\"",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 15% от макс. HP + 550 HP.",
+  "recipe": [
+    {
+      "material_id": "crab-roe",
+      "count": 1
+    },
+    {
+      "material_id": "tofu",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

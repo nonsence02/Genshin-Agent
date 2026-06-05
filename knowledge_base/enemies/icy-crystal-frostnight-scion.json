@@ -1,0 +1,13 @@
+{
+  "id": "icy-crystal-frostnight-scion",
+  "name_ru": "Ледяной кристалл: Потомок морозной ночи",
+  "name_en": "Icy Crystal: Frostnight Scion",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "frostnights-glory",
+    "frostnights-glow",
+    "frostnights-glimmer"
+  ],
+  "coordinates": []
+}

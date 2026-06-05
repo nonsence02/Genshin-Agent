@@ -1,10 +1,17 @@
 {
   "id": "everflame-seed",
+  "name_ru": "Пылающее семя",
   "name_en": "Everflame Seed",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Pyro Regisvines"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пиро орхидеи Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Everflame_Seed"
+  "dropped_by": [
+    "pyro-regisvine"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

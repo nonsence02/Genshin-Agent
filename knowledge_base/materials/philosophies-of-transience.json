@@ -1,14 +1,21 @@
 {
   "id": "philosophies-of-transience",
+  "name_ru": "Философия о «Бренности»",
   "name_en": "Philosophies of Transience",
-  "type": "Character Talent Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Violet Court (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Philosophies_of_Transience"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-reign-of-violet-iv"
+  ],
+  "source_domain": "domain-of-mastery-reign-of-violet-iv",
+  "coordinates": []
 }

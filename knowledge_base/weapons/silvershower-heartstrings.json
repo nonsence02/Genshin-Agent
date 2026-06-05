@@ -1,48 +1,80 @@
 {
   "id": "silvershower-heartstrings",
-  "name": "Silvershower Heartstrings",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Silvershower_Heartstrings",
-  "profile": {
-    "type": "Bow",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "HP"
-  },
-  "passive": "The equipping character can gain the Remedy. When they possess Remedy stacks, Max HP will increase by. stack may be gained when the following conditions are met: stack for when using an Elemental Skill; stack for when the value of a Bond of Life value increases; stack for for performing healing. Stacks can still be triggered when the equipping character is not on the field. Each stack's duration is counted independently. In addition, when stacks are active, Elemental Burst CRIT Rate will be increased by. This will be canceled after falling under stacks.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dross of Pure Sacred Dewdrop",
-        "Feathery Fin",
-        "Transoceanic Pearl",
-        "Sublimation of Pure Sacred Dewdrop",
-        "Lunar Fin",
-        "Transoceanic Chunk",
-        "Spring of Pure Sacred Dewdrop",
-        "Chasmlight Fin",
-        "Xenochromatic Crystal",
-        "Essence of Pure Sacred Dewdrop"
-      ]
+  "name_ru": "Сердечные струны дождя",
+  "name_en": "Silvershower Heartstrings",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.144
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.6615
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Ночная песнь Дриаса",
+  "passive_description_ru": "Экипированный персонаж может получить эффект Снадобья. С 1/2/3 уровнями Снадобья его макс. HP увеличивается на 12%/24%/40%. 1 уровень Снадобья можно получить в следующих ситуациях: на 25 сек. после активации элементального навыка; на 25 сек. после прироста Долга жизни; на 20 сек. после исцеления персонажей. Этот эффект активируется, даже если экипированный персонаж не на поле боя. Длительность каждого уровня эффекта рассчитывается отдельно. Кроме того, когда действует 3 уровня, шанс крит. попадания взрыва стихии увеличивается на 28%. Данный эффект отменяется через 4 сек. после того, как уровней Снадобья становится меньше 3.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "dross-of-pure-sacred-dewdrop",
+        "name_ru": "Осадок чистой капли росы",
+        "name_en": "Dross of Pure Sacred Dewdrop"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "sublimation-of-pure-sacred-dewdrop",
+        "name_ru": "Конденсат чистой капли росы",
+        "name_en": "Sublimation of Pure Sacred Dewdrop"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "spring-of-pure-sacred-dewdrop",
+        "name_ru": "Источник чистой капли росы",
+        "name_en": "Spring of Pure Sacred Dewdrop"
+      },
+      {
+        "id": "essence-of-pure-sacred-dewdrop",
+        "name_ru": "Эссенция чистой капли росы",
+        "name_en": "Essence of Pure Sacred Dewdrop"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "feathery-fin",
+        "name_ru": "Перьевой плавник",
+        "name_en": "Feathery Fin"
+      },
+      {
+        "id": "lunar-fin",
+        "name_ru": "Лунный плавник",
+        "name_en": "Lunar Fin"
+      },
+      {
+        "id": "chasmlight-fin",
+        "name_ru": "Глубинный плавник",
+        "name_en": "Chasmlight Fin"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "transoceanic-pearl",
+        "name_ru": "Жемчужина иноморья",
+        "name_en": "Transoceanic Pearl"
+      },
+      {
+        "id": "transoceanic-chunk",
+        "name_ru": "Обломок из иноморья",
+        "name_en": "Transoceanic Chunk"
+      },
+      {
+        "id": "xenochromatic-crystal",
+        "name_ru": "Ксенохромный кристалл",
+        "name_en": "Xenochromatic Crystal"
+      }
+    ]
+  },
+  "coordinates": []
 }

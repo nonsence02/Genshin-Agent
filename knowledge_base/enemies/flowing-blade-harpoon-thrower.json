@@ -1,0 +1,13 @@
+{
+  "id": "flowing-blade-harpoon-thrower",
+  "name_ru": "Клинок течений: Метатель гарпуна",
+  "name_en": "Flowing Blade Harpoon-Thrower",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

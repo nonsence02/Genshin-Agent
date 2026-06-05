@@ -1,81 +1,81 @@
 {
   "id": "aloy",
-  "name": "Aloy",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Aloy",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Cryo",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Aloy throws a Freeze Bomb in the targeted direction that explodes on impact, dealing Cryo DMG. After it explodes, the Freeze Bomb will split up into many Chillwater Bomblets that explode on contact with opponents or after a short delay, dealing Cryo DMG. When a Freeze Bomb or Chillwater Bomblet hits an opponent, the opponent's ATK is decreased and Aloy receives Coil stack. Aloy can gain up to Coil stack. Coil Each stack increases Aloy's Normal Attack DMG. When Aloy has Coil stacks, all stacks of Coil are cleared. She then enters the Rushing Ice state, which further increases the DMG dealt by her Normal Attacks and converts her Normal Attack DMG to Cryo DMG. While in the Rushing Ice state,...",
-    "elemental_burst": "Aloy throws a Power Cell filled with Cryo in the targeted direction, then detonates it with an arrow, dealing AoE Cryo DMG."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [],
-      "mob_drops": [],
-      "special": []
+  "name_ru": "Элой",
+  "name_en": "Aloy",
+  "element": "Cryo",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 848.4548,
+      "atk": 18.2104,
+      "def": 52.6504
     },
-    "talents": {
-      "books": [
-        "Teachings of Freedom",
-        "Guide to Freedom",
-        "Philosophies of Freedom"
-      ],
-      "mob_drops": [],
-      "weekly_boss": [
-        "Spectral Husk",
-        "Spectral Heart",
-        "Spectral Nucleus",
-        "Molten Moment"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10898.8605,
+      "atk": 233.9165,
+      "def": 676.3278
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Скоростная стрельба",
+      "description_ru": "Обычная атака:\nДо четырёх выстрелов из лука.\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается холодом. Полностью заряженная холодом стрела наносит Крио урон.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Ледяная пустошь",
+      "description_ru": "Элой бросает в цель Морозильную бомбу, которая взрывается при столкновении и наносит Крио урон. После взрыва Морозильная бомба делится на множество Ледяных бомбочек, которые взрываются при контакте с противником или после небольшой задержки и наносят Крио урон.\nКогда Морозильная бомба или Ледяная бомбочка поражают противника, его сила атаки понижается и Элой получает один уровень Спирали.\nЭлой может получить до 1 уровня Спирали каждые 0,1 сек.\n\nСпирали\n· Каждый уровень Спирали повышает урон обычной атаки Элой.\n· Когда Элой набирает 4 уровня Спирали, все уровни Спирали сбрасываются, а она входит в состояние Стремительного льда, которое повышает урон её обычной атаки и конвертирует его в Крио урон.\n\nНаходясь в состоянии Стремительного льда, Элой не может накапливать уровни Спирали.\nЭффекты Спирали сбросятся через 30 сек. после того, как Элой покинет бой."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Пророчества рассвета",
+      "description_ru": "Элой бросает в цель Топливный элемент, наполненный элементом Крио, затем детонирует его стрелой, нанося Крио урон по площади."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Боевой перехват",
+      "description_ru": "Когда Элой получает эффект Спирали навыка Ледяная пустошь, её сила атаки повышается на 16%, а сила атаки других окружающих членов отряда повышается на 8%. Этот эффект длится 10 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Сильная атака",
+      "description_ru": "Когда Элой находится в состоянии Стремительного льда навыка Ледяная пустошь, её бонус Крио урона увеличивается на 3,5% каждую секунду. Подобным способом можно получить до 35% бонуса Крио урона."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Охотник пустоши",
+      "description_ru": "Когда Элой в отряде, мелкие животные, у которых можно добыть мясо птицы, сырое мясо и цельномороженое мясо, больше вас не пугаются."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Чужеземная звезда",
+      "description_ru": "Момент осветить звёздное небо этого человека ещё не настал."
+    },
+    {
+      "name_ru": "Чужеземная звезда",
+      "description_ru": "Момент осветить звёздное небо этого человека ещё не настал."
+    },
+    {
+      "name_ru": "Чужеземная звезда",
+      "description_ru": "Момент осветить звёздное небо этого человека ещё не настал."
+    },
+    {
+      "name_ru": "Чужеземная звезда",
+      "description_ru": "Момент осветить звёздное небо этого человека ещё не настал."
+    },
+    {
+      "name_ru": "Чужеземная звезда",
+      "description_ru": "Момент осветить звёздное небо этого человека ещё не настал."
+    },
+    {
+      "name_ru": "Чужеземная звезда",
+      "description_ru": "Момент осветить звёздное небо этого человека ещё не настал."
+    }
+  ],
+  "coordinates": []
 }

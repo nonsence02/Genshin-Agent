@@ -1,0 +1,21 @@
+{
+  "id": "rift-core",
+  "name_ru": "Ядро расщелины",
+  "name_en": "Rift Core",
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Протогены расщелин",
+    "Звёздная пыль"
+  ],
+  "dropped_by": [
+    "large-overgrown-breacher-primus",
+    "large-shatterstone-breacher-primus",
+    "overgrown-breacher-primus",
+    "shatterstone-breacher-primus"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

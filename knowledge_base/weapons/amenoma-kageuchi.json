@@ -1,48 +1,80 @@
 {
   "id": "amenoma-kageuchi",
-  "name": "Amenoma Kageuchi",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Amenoma_Kageuchi",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "ATK"
-  },
-  "passive": "After casting an Elemental Skill, gain Succession Seed. This can be triggered once every. The Succession Seed lasts for. Up to Succession Seeds may exist simultaneously. After using an Elemental Burst, all Succession Seeds are consumed and after, the character regenerates Energy for each seed consumed.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Coral Branch of a Distant Sea",
-        "Chaos Gear",
-        "Old Handguard",
-        "Jeweled Branch of a Distant Sea",
-        "Chaos Axis",
-        "Kageuchi Handguard",
-        "Jade Branch of a Distant Sea",
-        "Chaos Oculus",
-        "Famed Handguard",
-        "Golden Branch of a Distant Sea"
-      ]
+  "name_ru": "Амэнома Кагэути",
+  "name_en": "Amenoma Kageuchi",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.12
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.5513
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Наследие Ивакуры",
+  "passive_description_ru": "После применения элементального навыка получает 1 семя наследия. Эффект может возникнуть 1 раз каждые 5 сек. Семя наследия действует в течение 30 сек. Одновременно может существовать до 3 семян наследия. После использования взрыва стихии все семена наследия расходуются, и через 2 сек. персонаж восстанавливает 6 единиц элементальной энергии за каждое расходуемое семя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "coral-branch-of-a-distant-sea",
+        "name_ru": "Коралловая ветвь внешних морей",
+        "name_en": "Coral Branch of a Distant Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "jeweled-branch-of-a-distant-sea",
+        "name_ru": "Драгоценная ветвь внешних морей",
+        "name_en": "Jeweled Branch of a Distant Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "jade-branch-of-a-distant-sea",
+        "name_ru": "Нефритовая ветвь внешних морей",
+        "name_en": "Jade Branch of a Distant Sea"
+      },
+      {
+        "id": "golden-branch-of-a-distant-sea",
+        "name_ru": "Золотая ветвь внешних морей",
+        "name_en": "Golden Branch of a Distant Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-gear",
+        "name_ru": "Механизм хаоса",
+        "name_en": "Chaos Gear"
+      },
+      {
+        "id": "chaos-axis",
+        "name_ru": "Ось хаоса",
+        "name_en": "Chaos Axis"
+      },
+      {
+        "id": "chaos-oculus",
+        "name_ru": "Око хаоса",
+        "name_en": "Chaos Oculus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

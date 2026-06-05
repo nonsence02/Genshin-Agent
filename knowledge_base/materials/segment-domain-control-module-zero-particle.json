@@ -1,0 +1,15 @@
+{
+  "id": "segment-domain-control-module-zero-particle",
+  "name_ru": "Модуль управления Фрагментарной юрисдикцией «Нулевая частица»",
+  "name_en": "Segment-Domain Control Module: Zero Particle",
+  "type": "consume",
+  "type_text_ru": "Предмет приключения",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Награды за исследование Храма пространства"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

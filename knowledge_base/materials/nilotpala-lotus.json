@@ -1,10 +1,16 @@
 {
   "id": "nilotpala-lotus",
+  "name_ru": "Лотос нилотпала",
   "name_en": "Nilotpala Lotus",
-  "type": "Local Specialty (Sumeru)",
-  "days": [],
-  "source": [
-    "Found near lakes and river banks in Sumeru"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Сумеру",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Водоёмы Сумеру",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Nilotpala_Lotus"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

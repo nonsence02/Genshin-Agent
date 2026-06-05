@@ -1,48 +1,80 @@
 {
   "id": "polar-star",
-  "name": "Polar Star",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Polar_Star",
-  "profile": {
-    "type": "Bow",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "Elemental Skill and Elemental Burst DMG increased by. After a Normal Attack, Charged Attack, Elemental Skill or Elemental Burst hits an opponent, stack of Ashen Nightstar will be gained for. When stacks of Ashen Nightstar are present, ATK is increased by. The stack of Ashen Nightstar created by the Normal Attack, Charged Attack, Elemental Skill or Elemental Burst will be counted independently of the others.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mask of the Wicked Lieutenant",
-        "Concealed Claw",
-        "Spectral Husk",
-        "Mask of the Tiger's Bite",
-        "Concealed Unguis",
-        "Spectral Heart",
-        "Mask of the One-Horned",
-        "Concealed Talon",
-        "Spectral Nucleus",
-        "Mask of the Kijin"
-      ]
+  "name_ru": "Полярная звезда",
+  "name_en": "Polar Star",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.072
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.3308
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Знамение полярного дня",
+  "passive_description_ru": "Урон, наносимый элементальным навыком и взрывом стихии, увеличивается на 12%. Когда обычная атака, заряженная атака, элементальный навык или взрыв стихии попадают по врагу, возникает 1 ур. эффекта Звезда полярной ночи, который длится 12 сек. При 1/2/3/4 ур. эффекта Звезда полярной ночи сила атаки повышается на 10/20/30/48%. Уровни эффекта Звезда полярной ночи, созданные обычной атакой, заряженной атакой, элементальным навыком и взрывом стихии, существуют независимо.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mask-of-the-wicked-lieutenant",
+        "name_ru": "Маска злого военачальника",
+        "name_en": "Mask of the Wicked Lieutenant"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mask-of-the-tigers-bite",
+        "name_ru": "Маска тигриной пасти",
+        "name_en": "Mask of the Tiger's Bite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mask-of-the-one-horned",
+        "name_ru": "Маска однорогого",
+        "name_en": "Mask of the One-Horned"
+      },
+      {
+        "id": "mask-of-the-kijin",
+        "name_ru": "Маска кидзин",
+        "name_en": "Mask of the Kijin"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "concealed-claw",
+        "name_ru": "Скрытый коготь",
+        "name_en": "Concealed Claw"
+      },
+      {
+        "id": "concealed-unguis",
+        "name_ru": "Скрытый заточенный коготь",
+        "name_en": "Concealed Unguis"
+      },
+      {
+        "id": "concealed-talon",
+        "name_ru": "Скрытый дьявольский коготь",
+        "name_en": "Concealed Talon"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

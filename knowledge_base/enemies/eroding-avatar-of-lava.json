@@ -1,0 +1,13 @@
+{
+  "id": "eroding-avatar-of-lava",
+  "name_ru": "Разлагающееся воплощение лавы",
+  "name_en": "Eroding Avatar of Lava",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "ignited-seeing-eye",
+    "ignited-seed-of-life",
+    "ignited-stone"
+  ],
+  "coordinates": []
+}

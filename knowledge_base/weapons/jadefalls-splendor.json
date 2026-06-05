@@ -1,47 +1,80 @@
 {
   "id": "jadefalls-splendor",
-  "name": "Jadefall's Splendor",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Jadefall%27s_Splendor",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "HP"
-  },
-  "passive": "For after using an Elemental Burst or creating a shield, the equipping character can gain the Primordial Jade Regalia: Restore Energy every, and gain Elemental DMG Bonus for their corresponding Elemental Type for every Max HP they possess, up to. Primordial Jade Regalia will still take even if the equipping character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Luminous Sands from Guyun",
-        "A Flower Yet to Bloom",
-        "Lustrous Stone from Guyun",
-        "Treasured Flower",
-        "Luminescent Pollen",
-        "Relic from Guyun",
-        "Wanderer's Blooming Flower",
-        "Crystalline Cyst Dust",
-        "Divine Body from Guyun"
-      ]
+  "name_ru": "Великолепие лазурного свода",
+  "name_en": "Jadefall's Splendor",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.108
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.4962
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Камень воли",
+  "passive_description_ru": "Когда экипированный персонаж активирует взрыв стихии или создаёт щит, он на 3 сек. получает эффект Камня воли: каждые 2,5 сек. восстанавливается 4,5 ед. энергии, а бонус урона соответствующего элемента повышается на 0,3% за каждую 1000 ед. макс. HP персонажа, максимум 12%. Эффект Камня воли активируется, даже если экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "luminous-sands-from-guyun",
+        "name_ru": "Светящийся песок Гуюнь",
+        "name_en": "Luminous Sands from Guyun"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "lustrous-stone-from-guyun",
+        "name_ru": "Блестящий камень Гуюнь",
+        "name_en": "Lustrous Stone from Guyun"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "relic-from-guyun",
+        "name_ru": "Реликвия Гуюнь",
+        "name_en": "Relic from Guyun"
+      },
+      {
+        "id": "divine-body-from-guyun",
+        "name_ru": "Останки богов Гуюнь",
+        "name_en": "Divine Body from Guyun"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "a-flower-yet-to-bloom",
+        "name_ru": "Нераспустившийся цветок",
+        "name_en": "A Flower Yet to Bloom"
+      },
+      {
+        "id": "treasured-flower",
+        "name_ru": "Заветный цветок",
+        "name_en": "Treasured Flower"
+      },
+      {
+        "id": "wanderers-blooming-flower",
+        "name_ru": "Распустившийся цветок странника",
+        "name_en": "Wanderer's Blooming Flower"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "fungal-spores",
+        "name_ru": "Споры плесенника",
+        "name_en": "Fungal Spores"
+      },
+      {
+        "id": "luminescent-pollen",
+        "name_ru": "Светящаяся пыльца",
+        "name_en": "Luminescent Pollen"
+      },
+      {
+        "id": "crystalline-cyst-dust",
+        "name_ru": "Пыль кристаллоцистов",
+        "name_en": "Crystalline Cyst Dust"
+      }
+    ]
+  },
+  "coordinates": []
 }

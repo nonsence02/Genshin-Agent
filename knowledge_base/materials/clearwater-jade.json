@@ -1,10 +1,17 @@
 {
   "id": "clearwater-jade",
+  "name_ru": "Нефрит чистой воды",
   "name_en": "Clearwater Jade",
-  "type": "Local Specialty (Liyue)",
-  "days": [],
-  "source": [
-    "Found in Chenyu Vale"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Ли Юэ",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Южные холмы Чэньюй",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Clearwater_Jade"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,70 @@
+{
+  "id": "emilie",
+  "name_en": "Emilie",
+  "element": "Dendro",
+  "weapon": "Polearm",
+  "region": "Fontaine",
+  "rarity": 5,
+  "description": "Emilie is a playable Pneuma -aligned Dendro character in Genshin Impact .\n\nShe is a renowned perfume designer in Fontaine . According to Calcagni , Emilie is self-employed, and the fashionable ladies of Fontaine highly seek out her products. She also works closely with detective forces and law enforcement as a \"forensic cleanser\" in the background, which allows her to give additional information that most people might miss at the cost of forcing her to become more familiar with death than she would like.",
+  "role_summary": "Emilie is a playable Pneuma -aligned Dendro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Shadow-Hunting Spear (Custom)",
+      "description": "Normal Attack Performs up to 4 consecutive spear strikes. Charged Attack Consumes a certain amount of Stamina to perform an upward slash. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Fragrance Extraction",
+      "description": "Creates a Lumidouce Case that deals AoE Dendro DMG . Lumidouce Case Fires Puffs of Puredew at nearby opponents at intervals, dealing Dendro DMG . When nearby opponents are affected by Burning , they will give off Scents at intervals, and 1 Scent can be created this way every 2s. The Lumidouce Case collects nearby Scents. The Lumidouce Case will level up after gathering 2 of them, after which it will fire 1 extra Puff of Puredew when firing, while the DMG dealt by and DMG AoE of the above attack will also be increased. 1 Lumidouce Case created by Emilie herself can exist at any one time. The Case starts at"
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Aromatic Explication",
+      "description": "Guiding the fragrances collected within the Case, Emilie converts them into pure Dendro energy, creating a"
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Lingering Fragrance",
+      "description": "Each time it collects 2 Scents, the"
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Rectification",
+      "description": "Emilie deals increased DMG to Burning opponents based on her ATK , with every 1,000 ATK increasing DMG dealt by 15%. The maximum DMG bonus that can be gained this way is 36%."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Headspace Capture",
+      "description": "When the Lumidouce Case created by Emilie is on the field, all party members gain 85% Pyro RES against Burning DMG."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Light Fragrance Leaching",
+      "effect": "Increases the DMG dealt by Fragrance Extraction and her Ascension Talent's Cleardew Cologne \"Lingering Fragrance\" by 20%. The latter requires unlocking said Ascension Talent first. Additionally, when nearby party members trigger the Burning reaction on opponents or deal Dendro DMG to Burning opponents, they will generate an additional Scent. This effect can be triggered once every 2.9s."
+    },
+    "c2": {
+      "name": "Lakelight Top Note",
+      "effect": "When Fragrance Extraction, Aromatic Explication, or Cleardew Cologne produced by the Ascension Talent \"Lingering Fragrance\" (the last of which requires Ascension Talent activation) hits opponents, those opponents' Dendro RES is decreased by 30% for 10s."
+    },
+    "c3": {
+      "name": "Exquisite Essence",
+      "effect": "Increases the Level of Fragrance Extraction by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Lumidouce Heart Note",
+      "effect": "Description Gameplay Notes Aromatic Explication' s duration is increased by 2s. The interval between opponents being selected as the target for Scented Dew is decreased by 0.3s. At Constellation"
+    },
+    "c5": {
+      "name": "Puredew Aroma",
+      "effect": "Increases the Level of Aromatic Explication by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Marcotte Sillage",
+      "effect": "Description Gameplay Notes Preview When using Fragrance Extraction or Aromatic Explication, Emilie will gain Abiding Fragrance for 5s. While this is active, after Emilie uses Normal or Charged Attacks, she will generate 1 Scent, and her Normal and Charged Attack DMG will be converted into Dendro DMG that cannot be overridden, and the DMG dealt will be increased by 300% of Emilie's ATK. The Abiding Fragrance effect will be removed after 4 Scents are created this way or after its duration expires. Abiding Fragrance can be triggered once every 12s. When this effect is ready, it will be indicated by a glow in the shape of a flower on Emilie's left wrist. Indicator that C6 is active while Emilie is moving (green trail) Indicator that C6 is active while Emilie is standing still (green flower glow) C6 Dendro conversion"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Emilie",
+  "ai_tags": "Дерево аппликатор, Щитовик"
+}

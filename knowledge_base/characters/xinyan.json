@@ -1,94 +1,81 @@
 {
   "id": "xinyan",
-  "name": "Xinyan",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Xinyan",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Pyro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Xinyan brandishes her instrument, dealing Pyro DMG on nearby opponents, forming a shield made out of her audience's passion. The shield's DMG Absorption scales based on Xinyan's DEF and on the number of opponents hit. Hitting – opponents grants Shield Level: Ad Lib. Hitting opponents grants Shield Level: Lead-In. Hitting or more opponents grants Shield Level: Rave, which will also deal intermittent Pyro DMG to nearby opponents. The shield has the following special properties: When unleashed, it infuses Xinyan with Pyro. It has",
-    "elemental_burst": "Strumming rapidly, Xinyan launches nearby opponents and deals Physical DMG to them, hyping up the crowd. The sheer intensity of the atmosphere will cause explosions that deal Pyro DMG to nearby opponents. The DoT portion of Riff Revolution can hit up to times, but may knock smaller enemies out of its AoE. Constellation Effects Constellation Level, Impromptu Opening: \" Riff Revolution 's Physical DMG has its CRIT Rate increased by"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "special": [
-        "Violetgrass",
-        "Everflame Seed"
-      ]
+  "name_ru": "Синь Янь",
+  "name_en": "Xinyan",
+  "element": "Pyro",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 939.1447,
+      "atk": 20.8354,
+      "def": 66.9532
     },
-    "talents": {
-      "books": [
-        "Teachings of Gold",
-        "Guide to Gold",
-        "Philosophies of Gold"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "weekly_boss": [
-        "Tusk of Monoceros Caeli"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 11201.1621,
+      "atk": 248.5047,
+      "def": 798.5502
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Танец в огне",
+      "description_ru": "Обычная атака:\nДо четырёх рубящих ударов мечом.\n\nЗаряженная атака:\nВращающаяся атака по окружающим врагам, на которую непрерывно тратится выносливость.\nПосле вращения проводит дополнительную мощную атаку мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Решительный жар",
+      "description_ru": "Синь Янь размахивает своим музыкальным инструментом, нанося Пиро урон окружающим врагам, и создаёт щит из жаркой любви своих фанатов.\nПоглощение урона щита зависит от защиты Синь Янь и от количества попавших под удар врагов:\n· Не попадает или попадает по одному - щит 1 ур. «Импровизация»;\n· Попадает по двум - щит 2 ур. «Вступление»;\n· Попадает по трём и более - щит 3 ур. «Рейв», который также периодически наносит Пиро урон окружающим врагам.\n\nЩит обладает следующими свойствами:\n· Во время активации накладывает на Синь Янь эффект Пиро;\n· Пиро урон поглощается с эффективностью 250%."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Струны протеста",
+      "description_ru": "Синь Янь зажигает толпу игрой на своём инструменте, подкидывая окружающих врагов в воздух и нанося им физ. урон.\nЖаркая атмосфера её выступления создаёт струи огня, которые наносят Пиро урон окружающим врагам."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Выступление без публики",
+      "description_ru": "Уменьшает необходимое для получения уровня щита навыка Решительный жар количество врагов:\n· Щит 2 ур. - «Вступление»: требуется попадание по одному врагу;\n· Щит 3 ур. - «Рейв»: требуется попадание по двум врагам и более."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Вот это рок-н-ролл!",
+      "description_ru": "Щит навыка Решительный жар увеличивает физ. урон персонажа на 15%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Улётный рецепт",
+      "description_ru": "При приготовлении идеального блюда, повышающего защиту, имеет 12% шанс получить дополнительное блюдо."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Фатальный разгон",
+      "description_ru": "При крит. попадании увеличивает скорость обычной и заряженной атаки Синь Янь на 12% в течение 5 сек.\nМожет возникнуть раз в 5 сек."
+    },
+    {
+      "name_ru": "Выступление экспромтом",
+      "description_ru": "Увеличивает шанс крит. попадания физ. уроном навыка Струны протеста на 100%, также при использовании навыка активирует щит 3 ур. - «Рейв»."
+    },
+    {
+      "name_ru": "Сложный аккорд",
+      "description_ru": "Увеличивает уровень навыка Решительный жар на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Дикий ритм",
+      "description_ru": "Попадание навыком Решительный жар понижает физ. сопротивление врага на 15% в течение 12 сек."
+    },
+    {
+      "name_ru": "Крики «Браво!»",
+      "description_ru": "Увеличивает уровень навыка Струны протеста на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Адский рок-н-ролл",
+      "description_ru": "Уменьшает потребление выносливости заряженной атакой Синь Янь на 30%. Также при исполнении заряженной атаки Синь Янь получает бонус атаки равный 50% от её защиты."
+    }
+  ],
+  "coordinates": []
 }

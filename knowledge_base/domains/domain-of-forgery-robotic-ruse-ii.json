@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-forgery-robotic-ruse-ii",
+  "name_ru": "Воля: Робо-уловка II",
+  "name_en": "Domain of Forgery: Robotic Ruse II",
+  "type": "Возвышение оружия",
+  "region": "Фонтейн",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "chapter-of-an-ancient-chord",
+    "fragment-of-an-ancient-chord"
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,17 @@
 {
   "id": "emperors-resolution",
+  "name_ru": "Приговор императора",
   "name_en": "Emperor's Resolution",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Emperor of Fire and Iron"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Император огня и железа Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Emperor%27s_Resolution"
+  "dropped_by": [
+    "emperor-of-fire-and-iron"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

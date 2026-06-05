@@ -1,0 +1,27 @@
+{
+  "id": "nutritious-meal-v-593",
+  "name_ru": "Питательное разнообразие",
+  "name_en": "Nutritious Meal (V.593)",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 20% от макс. HP + 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "crab-roe",
+      "count": 1
+    },
+    {
+      "material_id": "ham",
+      "count": 1
+    },
+    {
+      "material_id": "cream",
+      "count": 1
+    },
+    {
+      "material_id": "cabbage",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,70 @@
+{
+  "id": "noelle",
+  "name_en": "Noelle",
+  "element": "Geo",
+  "weapon": "Claymore",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "description": "Noelle is a playable Geo character in Genshin Impact .\n\nExtremely strong and reliable, Noelle is considered to be \"the maid of all maids\" in the Knights of Favonius , with many thinking she has the ability to be everywhere all at once. She is stubborn, however, and willing to unnecessarily endanger her life at any moment to help someone. She has tried many times to join the ranks of the Knights of Favonius to accomplish her dream of becoming a full-fledged knight, but has fallen short every time so far.",
+  "role_summary": "Noelle is a playable Geo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Favonius Bladework - Maid",
+      "description": "Normal Attack Performs up to 4 consecutive strikes. Charged Attack Drains Stamina over time to perform continuous spinning attacks against all nearby opponents. At the end of the sequence, performs a more powerful slash. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Breastplate",
+      "description": "Summons protective stone armor, dealing Geo DMG to surrounding opponents and creating a shield. The shield's DMG Absorption scales based on Noelle's DEF. The shield has the following properties: When Noelle's Normal and Charged Attacks hit a target, they have a certain chance to regenerate HP for all characters. Possesses 150% DMG Absorption efficiency against all Elemental and Physical DMG. The amount of HP healed when regeneration is triggered scales based on Noelle's DEF."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Sweeping Time",
+      "description": "Gathering the strength of stone around her weapon, Noelle strikes the opponents surrounding her within a large AoE , dealing Geo DMG . Afterwards, Noelle gains the following effects: Larger attack AoE. Converts attack DMG to Geo DMG that cannot be overridden by any other elemental infusion. Increased ATK that scales based on her DEF."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Devotion",
+      "description": "When Noelle is in the party but not on the field, this ability triggers automatically when your active character's HP falls below 30%: Creates a shield for your active character that lasts for 20s and absorbs DMG equal to 400% of Noelle's DEF. The shield has a 150% DMG Absorption effectiveness against all Elemental and Physical DMG. This effect can only occur once every 60s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Nice and Clean",
+      "description": "Every 4 Normal or Charged Attack hits will decrease the CD of Breastplate by 1s. Hitting multiple opponents with a single attack is only counted as 1 hit."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Maid's Knighthood",
+      "description": "When a Perfect Cooking is achieved on a DEF-boosting dish , Noelle has a 12% chance to obtain double the product."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "I Got Your Back",
+      "effect": "While Sweeping Time and Breastplate are both in effect, the chance of Breastplate's healing effects activating is increased to 100%."
+    },
+    "c2": {
+      "name": "2U",
+      "effect": ""
+    },
+    "c3": {
+      "name": "Invulnerable Maid",
+      "effect": "Increases the Level of Breastplate by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "To Be Cleaned",
+      "effect": "Description Gameplay Notes Advanced Properties When Breastplate 's duration expires or it is destroyed by DMG, it will deal 400% of Noelle's ATK of Geo DMG to surrounding opponents. The ability does trigger when Noelle uses Breastplate while the shield from a previous use of Breastplate is still active. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Extra Geo DMG 2U Elemental Skill 2.5s/3 Hits 100 Heavy 200 0 ✔"
+    },
+    "c5": {
+      "name": "Favonius Sweeper Master",
+      "effect": "Increases the Level of Sweeping Time by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Must Be Spotless",
+      "effect": "Description Gameplay Notes Sweeping Time increases Noelle's ATK by an additional 50% of her DEF. Additionally, every opponent defeated during the skill's duration adds 1s to the duration, up to 10s. To extend the skill's duration, Noelle has to be the one who defeats enemies."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Noelle",
+  "ai_tags": "Щитовик, Хиллер"
+}

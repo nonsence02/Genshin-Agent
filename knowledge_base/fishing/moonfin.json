@@ -1,0 +1,11 @@
+{
+  "id": "moonfin",
+  "kind": "fish",
+  "name_ru": "Луннопёрка",
+  "name_en": "Moonfin",
+  "bait_id": null,
+  "locations": [
+    "Сувенирная лавка"
+  ],
+  "coordinates": []
+}

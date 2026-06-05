@@ -1,0 +1,13 @@
+{
+  "id": "cryo-abyss-mage",
+  "name_ru": "Крио маг Бездны",
+  "name_en": "Cryo Abyss Mage",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "ley-line-sprout",
+    "dead-ley-line-leaves",
+    "dead-ley-line-branch"
+  ],
+  "coordinates": []
+}

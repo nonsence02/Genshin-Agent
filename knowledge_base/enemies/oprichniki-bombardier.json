@@ -1,0 +1,13 @@
+{
+  "id": "oprichniki-bombardier",
+  "name_ru": "Опричник: Бомбардир",
+  "name_en": "Oprichniki Bombardier",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "frost-etched-warrant",
+    "immaculate-warrant",
+    "tattered-warrant"
+  ],
+  "coordinates": []
+}

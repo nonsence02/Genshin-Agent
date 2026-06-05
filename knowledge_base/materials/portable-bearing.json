@@ -1,10 +1,17 @@
 {
   "id": "portable-bearing",
+  "name_ru": "Переносной подшипник",
   "name_en": "Portable Bearing",
-  "type": "Local Specialty (Nod-Krai)",
-  "days": [],
-  "source": [
-    "Found in Lempo Isle"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Нод-Края",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "У озера Голубого Янтаря",
+    "Мастерская крумкаке «Дзынь-Клац»",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Portable_Bearing"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

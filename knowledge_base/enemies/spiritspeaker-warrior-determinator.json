@@ -1,0 +1,13 @@
+{
+  "id": "spiritspeaker-warrior-determinator",
+  "name_ru": "Говорящий с духами воин: Мастер настойчивости",
+  "name_en": "Spiritspeaker Warrior: Determinator",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

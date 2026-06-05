@@ -1,0 +1,13 @@
+{
+  "id": "silken-print",
+  "name_ru": "Шёлковый принт",
+  "name_en": "Silken Print",
+  "type": "consume",
+  "type_text_ru": "Расходный предмет",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

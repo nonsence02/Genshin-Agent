@@ -1,10 +1,17 @@
 {
   "id": "prismatic-severed-tail",
+  "name_ru": "Призматический отсечённый хвост",
   "name_en": "Prismatic Severed Tail",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Radiant Moongecko"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Лучезарный лунный геккон Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Prismatic_Severed_Tail"
+  "dropped_by": [
+    "radiant-moongecko"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

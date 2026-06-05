@@ -1,0 +1,17 @@
+{
+  "id": "emberglow-bait",
+  "kind": "bait",
+  "name_ru": "Наживка из листка света",
+  "name_en": "Emberglow Bait",
+  "recipe": [
+    {
+      "material_id": "embercore-flower",
+      "count": 1
+    },
+    {
+      "material_id": "wheat",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,28 @@
 {
   "id": "treasure-hoarder-insignia",
+  "name_ru": "Печать Похитителей сокровищ",
   "name_en": "Treasure Hoarder Insignia",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Treasure Hoarders"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Похитители сокровищ",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Treasure_Hoarder_Insignia"
+  "dropped_by": [
+    "treasure-hoarders-crusher",
+    "treasure-hoarders-cryo-potioneer",
+    "treasure-hoarders-electro-potioneer",
+    "treasure-hoarders-gravedigger",
+    "treasure-hoarders-handyman",
+    "treasure-hoarders-hydro-potioneer",
+    "treasure-hoarders-marksman",
+    "treasure-hoarders-pugilist",
+    "treasure-hoarders-pyro-potioneer",
+    "treasure-hoarders-scout",
+    "treasure-hoarders-seaman"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

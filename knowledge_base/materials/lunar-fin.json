@@ -1,10 +1,19 @@
 {
   "id": "lunar-fin",
+  "name_ru": "Лунный плавник",
   "name_en": "Lunar Fin",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Xuanwen Beasts"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Звери Сюаньвэнь Ур. 40+",
+    "Звёздная пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lunar_Fin"
+  "dropped_by": [
+    "xuanwen-beast"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

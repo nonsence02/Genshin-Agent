@@ -1,10 +1,22 @@
 {
   "id": "weathered-arrowhead",
+  "name_ru": "Старый наконечник стрелы",
   "name_en": "Weathered Arrowhead",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Hilichurl Shooters"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Хиличурлы-стрелки Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Weathered_Arrowhead"
+  "dropped_by": [
+    "cryo-hilichurl-shooter",
+    "electro-hilichurl-shooter",
+    "hilichurl-shooter",
+    "pyro-hilichurl-shooter"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

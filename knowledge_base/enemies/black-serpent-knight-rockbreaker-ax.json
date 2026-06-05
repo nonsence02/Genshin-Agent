@@ -1,0 +1,13 @@
+{
+  "id": "black-serpent-knight-rockbreaker-ax",
+  "name_ru": "Рыцарь Чёрного Змея: Крушащая камни секира",
+  "name_en": "Black Serpent Knight: Rockbreaker Ax",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "deathly-statuette",
+    "dark-statuette",
+    "gloomy-statuette"
+  ],
+  "coordinates": []
+}

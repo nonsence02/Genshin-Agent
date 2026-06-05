@@ -1,0 +1,27 @@
+{
+  "id": "blubber-profiterole",
+  "name_ru": "Пухленевый профитроль",
+  "name_en": "Blubber Profiterole",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает физ. урон всех членов отряда на 40% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "bird-egg",
+      "count": 4
+    },
+    {
+      "material_id": "milk",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "cream",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

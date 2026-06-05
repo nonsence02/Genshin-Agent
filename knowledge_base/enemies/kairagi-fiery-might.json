@@ -1,0 +1,13 @@
+{
+  "id": "kairagi-fiery-might",
+  "name_ru": "Кайраги: Огненная мощь",
+  "name_en": "Kairagi: Fiery Might",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "famed-handguard",
+    "kageuchi-handguard",
+    "old-handguard"
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,17 @@
 {
   "id": "lightbearing-scale-feather",
+  "name_ru": "Светящееся чешуйчатое перо",
   "name_en": "Lightbearing Scale-Feather",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Radiant Moonfly"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Лучезарный мотылёк-призрак Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lightbearing_Scale-Feather"
+  "dropped_by": [
+    "radiant-moonfly"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

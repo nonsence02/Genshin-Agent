@@ -1,0 +1,75 @@
+{
+  "id": "kachina",
+  "name_en": "Kachina",
+  "element": "Geo",
+  "weapon": "Polearm",
+  "region": "Natlan",
+  "rarity": 4,
+  "description": "Kachina is a playable Geo character in Genshin Impact .\n\nBearing the Ancient Name of UTBT (\"UTBT,\" Uthabiti ), Kachina is a young warrior belonging to the Children of Echoes who is determined to become strong in spite of the numerous failures she has experienced.",
+  "role_summary": "Kachina is a playable Geo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Cragbiter",
+      "description": "Normal Attack Performs up to 4 consecutive spear strikes. Charged Attack Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Go, Go Turbo Twirly!",
+      "description": "Fight alongside the turbo trusty Turbo Twirly! Summons Turbo Twirly. When the skill is Held and released, Kachina will summon and ride Turbo Twirly. After the Skill is used, Kachina will gain 60 Nightsoul points and enter the Nightsoul's Blessing state. Nightsoul's Blessing: Kachina Turbo Twirly's various actions consume Kachina's Nightsoul points. The Nightsoul's Blessing state will end when these points have been depleted. Turbo Twirly Can exist independently or be ridden and operated by Kachina. When Turbo Twirly is present, Kachina's Elemental Skill, \"Go, Go Turbo Twirly!\", will change to an option to Mount/Dismount Turbo Twirly. When present independent of Kachina, it will slam the ground at intervals, dealing Nightsoul-aligned AoE Geo DMG based on Kachina's DEF . When Kachina is riding Turbo Twirly, she can control it to move and climb swiftly, and use Normal Attacks to slam the ground, dealing Nightsoul-aligned AoE Geo DMG based on Kachina's DEF. Turbo Twirly will disappear once Kachina's Nightsoul's Blessing state ends, and it is considered a Geo Construct . 1 Turbo Twirly can exist on the field at any one time."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Time to Get Serious!",
+      "description": "Striking the ground, Kachina deals AoE Geo DMG based on her DEF and creates a Turbo Drill Field. The Field increases Turbo Twirly 's attack AoE and its movement speed when Kachina is riding it. If Kachina's own Turbo Twirly is present when this is used, Turbo Twirly will be summoned to her side."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Mountain Echoes",
+      "description": "When nearby party members trigger a Nightsoul Burst , Kachina's Geo DMG Bonus increases by 20% for 12s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "The Weight of Stone",
+      "description": "Turbo Twirly 's DMG is increased by 20% of Kachina's DEF ."
+    },
+    {
+      "type": "Night Realm's Gift Passive",
+      "name": "Heart of Unity",
+      "description": "After her Nightsoul points are depleted, Kachina will switch to consuming Phlogiston to maintain her Nightsoul's Blessing . While in an area with Phlogiston Mechanics within Natlan , she can use Nightsoul Transmission: Kachina. When the active character is currently sprinting , climbing , in a movement mode caused by certain Talents , or at a certain height in the air, the following will trigger when switching to Kachina: Kachina will enter the Nightsoul's Blessing state and ride Turbo Twirly when taking the field while gaining 30 Nightsoul points. Nightsoul Transmission can be triggered once every 10s by your own team. Additionally, while in Natlan, Kachina will consume 90% less Stamina when climbing while riding Turbo Twirly."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Boon of Crystal Flame",
+      "description": "While in an area with Phlogiston Mechanics within Natlan , 20 Stamina will be restored when interacting with some harvestable items. Additionally, the location of nearby resources unique to Natlan will appear on your mini-map ."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Shards Are Gems Too",
+      "effect": "When Kachina mounts or dismounts Turbo Twirly, she will absorb nearby Elemental Shards created by Crystallize . Additionally, when a party member picks up such a Shard, or triggers Lunar-Crystallize reactions, 3 Energy will be restored to Kachina. Energy can be restored this way once every 5s."
+    },
+    "c2": {
+      "name": "Never Leave Home Without... Turbo Twirly",
+      "effect": "When Kachina uses \"Time to Get Serious!\", she will regain 20 Nightsoul points. If there is no Turbo Twirly belonging to her on the field, she will enter Nightsoul's Blessing and summon one."
+    },
+    "c3": {
+      "name": "Improved Stabilizer",
+      "effect": "Increases the Level of Go, Go Turbo Twirly! by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "More Foes, More Caution",
+      "effect": "When there are 1/2/3/4 (or more) opponents within the Turbo Drill Field created by \"Time to Get Serious!\", the active character within the field gains 8%/12%/16%/20% increased DEF."
+    },
+    "c5": {
+      "name": "All I've Collected Till Now",
+      "effect": "Increases the Level of Time to Get Serious! by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "This Time, I've Gotta Win",
+      "effect": "Description Advanced Properties When your active character's shield is replaced or destroyed for any reason, Kachina will deal 200% of her DEF as AoE Geo DMG . This effect can be triggered once every 5s. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Geo DMG 1U No ICD 100 Air 20 600 ✔"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kachina",
+  "ai_tags": "Баффер, Карманный урон"
+}

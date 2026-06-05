@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-stone-chamber-i",
+  "name_ru": "Подземелье благословения: Каменная темница I",
+  "name_en": "Domain of Blessing: Stone Chamber I",
+  "type": "Артефакты",
+  "region": "Ли Юэ",
+  "days_of_week": [],
+  "rewards": [
+    "bloodstained-chivalry",
+    "noblesse-oblige",
+    "gambler",
+    "shackles-of-the-dandelion-gladiator"
+  ],
+  "coordinates": []
+}

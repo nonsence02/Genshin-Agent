@@ -1,0 +1,23 @@
+{
+  "id": "goulash",
+  "name_ru": "Томатное рагу",
+  "name_en": "Goulash",
+  "rarity": 2,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает скорость накопления лютого мороза всеми членами отряда на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "chilled-meat",
+      "count": 2
+    },
+    {
+      "material_id": "carrot",
+      "count": 2
+    },
+    {
+      "material_id": "tomato",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

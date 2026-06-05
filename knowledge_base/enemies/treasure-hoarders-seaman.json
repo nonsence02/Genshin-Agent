@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-seaman",
+  "name_ru": "Похитители сокровищ: Морячок",
+  "name_en": "Treasure Hoarders: Seaman",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

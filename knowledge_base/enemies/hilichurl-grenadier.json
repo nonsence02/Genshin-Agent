@@ -1,0 +1,13 @@
+{
+  "id": "hilichurl-grenadier",
+  "name_ru": "Хиличурл-гренадёр",
+  "name_en": "Hilichurl Grenadier",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

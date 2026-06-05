@@ -1,14 +1,21 @@
 {
   "id": "delirious-divinity-of-the-sacred-lord",
+  "name_ru": "Безумная духовность Святого Мудреца",
   "name_en": "Delirious Divinity of the Sacred Lord",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Ancient Watchtower (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Delirious_Divinity_of_the_Sacred_Lord"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-attentive-observation-iv"
+  ],
+  "source_domain": "domain-of-forgery-attentive-observation-iv",
+  "coordinates": []
 }

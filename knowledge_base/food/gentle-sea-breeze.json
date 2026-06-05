@@ -1,0 +1,23 @@
+{
+  "id": "gentle-sea-breeze",
+  "name_ru": "«Лёгкий морской бриз»",
+  "name_en": "Gentle Sea Breeze",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время спринта и карабканья на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "quenepa-berry",
+      "count": 2
+    },
+    {
+      "material_id": "mint",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

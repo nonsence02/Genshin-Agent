@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-praxis",
+  "name_ru": "Учения о «Честности»",
   "name_en": "Teachings of Praxis",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Steeple of Ignorance (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Praxis"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-basket-of-discipline-i",
+    "domain-of-mastery-basket-of-discipline-ii",
+    "domain-of-mastery-basket-of-discipline-iii",
+    "domain-of-mastery-basket-of-discipline-iv"
+  ],
+  "source_domain": "domain-of-mastery-basket-of-discipline-i",
+  "coordinates": []
 }

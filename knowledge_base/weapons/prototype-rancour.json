@@ -1,48 +1,80 @@
 {
   "id": "prototype-rancour",
-  "name": "Prototype Rancour",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Prototype_Rancour",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Physical DMG Bonus"
-  },
-  "passive": "On hit, Normal or Charged Attacks increase ATK and DEF by for. Max stacks. This can only occur once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mist Veiled Lead Elixir",
-        "Mist Grass Pollen",
-        "Recruit's Insignia",
-        "Mist Veiled Mercury Elixir",
-        "Mist Grass",
-        "Sergeant's Insignia",
-        "Mist Veiled Gold Elixir",
-        "Mist Grass Wick",
-        "Lieutenant's Insignia",
-        "Mist Veiled Primo Elixir"
-      ]
+  "name_ru": "Прототип: Злоба",
+  "name_en": "Prototype Rancour",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.0751
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.3449
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Расколотый камень",
+  "passive_description_ru": "Попадания обычной или заряженной атакой увеличивают силу атаки и защиту на 4% в течение 6 сек. Эффект может складываться до 4 раз и возникает раз в 0,3 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mist-veiled-lead-elixir",
+        "name_ru": "Свинцовая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Lead Elixir"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mist-veiled-mercury-elixir",
+        "name_ru": "Ртутная пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Mercury Elixir"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mist-veiled-gold-elixir",
+        "name_ru": "Золотая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Gold Elixir"
+      },
+      {
+        "id": "mist-veiled-primo-elixir",
+        "name_ru": "Примо эликсир Заоблачного моря",
+        "name_en": "Mist Veiled Primo Elixir"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mist-grass-pollen",
+        "name_ru": "Пыльца туманной травы",
+        "name_en": "Mist Grass Pollen"
+      },
+      {
+        "id": "mist-grass",
+        "name_ru": "Мешочек с туманной травой",
+        "name_en": "Mist Grass"
+      },
+      {
+        "id": "mist-grass-wick",
+        "name_ru": "Пучок туманной травы",
+        "name_en": "Mist Grass Wick"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "recruits-insignia",
+        "name_ru": "Шеврон рядового",
+        "name_en": "Recruit's Insignia"
+      },
+      {
+        "id": "sergeants-insignia",
+        "name_ru": "Шеврон сержанта",
+        "name_en": "Sergeant's Insignia"
+      },
+      {
+        "id": "lieutenants-insignia",
+        "name_ru": "Шеврон офицера",
+        "name_en": "Lieutenant's Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

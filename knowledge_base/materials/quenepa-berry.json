@@ -1,10 +1,18 @@
 {
   "id": "quenepa-berry",
+  "name_ru": "Ягода квенепа",
   "name_en": "Quenepa Berry",
-  "type": "Local Specialty (Natlan)",
-  "days": [],
-  "source": [
-    "Found in Natlan"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Натлана",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Гора Коатепек",
+    "Ниже поселения Потомков Крон",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Quenepa_Berry"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

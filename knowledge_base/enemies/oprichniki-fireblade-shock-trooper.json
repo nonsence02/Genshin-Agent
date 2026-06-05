@@ -1,0 +1,13 @@
+{
+  "id": "oprichniki-fireblade-shock-trooper",
+  "name_ru": "Опричник: Штурмовик огненного клинка",
+  "name_en": "Oprichniki Fireblade Shock Trooper",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "frost-etched-warrant",
+    "immaculate-warrant",
+    "tattered-warrant"
+  ],
+  "coordinates": []
+}

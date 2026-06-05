@@ -1,14 +1,22 @@
 {
   "id": "artful-device-inheritance",
+  "name_ru": "Наследие чудесного устройства",
   "name_en": "Artful Device Inheritance",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Lost Mooncourt (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Artful_Device_Inheritance"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-radiant-splendor-iii",
+    "domain-of-forgery-radiant-splendor-iv"
+  ],
+  "source_domain": "domain-of-forgery-radiant-splendor-iii",
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "fatui-skirmisher-electrohammer-vanguard",
+  "name_ru": "Застрельщик Фатуи: Электро молотобоец",
+  "name_en": "Fatui Skirmisher - Electrohammer Vanguard",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "lieutenants-insignia",
+    "sergeants-insignia",
+    "recruits-insignia"
+  ],
+  "coordinates": []
+}

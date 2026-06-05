@@ -1,10 +1,39 @@
 {
   "id": "saurian-crowned-warriors-golden-whistle",
+  "name_ru": "Золотой свисток коронованного заврианами воина",
   "name_en": "Saurian-Crowned Warrior's Golden Whistle",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Level 60+ Sauroform Tribal Warriors"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Заврианоподобные воины племени Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Saurian-Crowned_Warrior%27s_Golden_Whistle"
+  "dropped_by": [
+    "flowing-blade-grease-saw",
+    "flowing-blade-harpoon-thrower",
+    "flowing-blade-skirmisher",
+    "forged-sand-interrogator",
+    "forged-sand-javelineer",
+    "forged-sand-shieldbreaker",
+    "iktomisaurus-warrior-cryocrystal-cannon",
+    "iktomisaurus-warrior-icy-tidebearer",
+    "koholasaurus-warrior-reefsplitter",
+    "koholasaurus-warrior-waveshuttler",
+    "qucusaurus-warrior-heartstar-hammer",
+    "spiritspeaker-warrior-contemplator",
+    "spiritspeaker-warrior-determinator",
+    "spiritspeaker-warrior-psychokinetic",
+    "swiftstep-armed-courier",
+    "swiftstep-seeker",
+    "swiftstep-storm-scout",
+    "tepetlisaurus-warrior-rockbreaker-blade",
+    "tepetlisaurus-warrior-shard-striker",
+    "yumkasaurus-warrior-flowing-skyfire",
+    "yumkasaurus-warrior-whirling-leaves"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

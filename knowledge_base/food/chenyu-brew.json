@@ -1,0 +1,15 @@
+{
+  "id": "chenyu-brew",
+  "name_ru": "Чайный напиток «Чэньюй»",
+  "name_en": "Chenyu Brew",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 10% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 300 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "chenyu-adeptea",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

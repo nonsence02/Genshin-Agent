@@ -1,92 +1,86 @@
 {
   "id": "ifa",
-  "name": "Ifa",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ifa",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "It's time for the real bash bros to step up! Ifa calls Cacucu in as backup. After using this skill, Ifa gains Nightsoul points and enters the Nightsoul's Blessing Nightsoul's Blessing: Ifa Continuously consumes Nightsoul points. This state will end when Ifa runs out of Nightsoul points or if he uses this skill again. His Nightsoul's Blessing state has the following properties: Hovers with Cacucu's help, increasing Ifa's Movement SPD and interruption resistance. In this state, Ifa will continuously consume Nightsoul points to maintain this hovering state. If he sprints or accelerates, he will consume additional points. When he uses Normal Attacks, he will use different kinds of Supporting...",
-    "elemental_burst": "Fires a Therapeutic Sedative at a (temporarily aggressive) opponent. The sedative will explode on impact, creating a restraining wind current that pulls nearby objects and opponents in while dealing Nightsoul-aligned AoE Anemo DMG. When the Therapeutic Sedative hits an opponent affected by Hydro / Pyro / Cryo / Electro, it will apply a Sedation Mark Sedation Mark This effect will explode after a short delay and disappear, dealing AoE DMG aligned with the corresponding element. The Therapeutic Sedative can apply Sedation Marks to a maximum of hit opponents. A single opponent cannot receive Marks of different elements simultaneously. to them. Constellation Effects Constellation Level, Decayed..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Juvenile Fang",
-        "Seasoned Fang",
-        "Tyrant's Fang"
-      ],
-      "special": [
-        "Saurian Claw Succulent",
-        "Sparkless Statue Core"
-      ]
+  "name_ru": "Ифа",
+  "name_en": "Ifa",
+  "element": "Anemo",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 845.2303,
+      "atk": 14.9587,
+      "def": 50.7586
     },
-    "talents": {
-      "books": [
-        "Teachings of Conflict",
-        "Guide to Conflict",
-        "Philosophies of Conflict"
-      ],
-      "mob_drops": [
-        "Juvenile Fang",
-        "Seasoned Fang",
-        "Tyrant's Fang"
-      ],
-      "weekly_boss": [],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10081.0466,
+      "atk": 178.4136,
+      "def": 605.3966
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Ритуал изгнания ветров",
+      "description_ru": "Обычная атака:\nДо трёх атак, наносящих Анемо урон.\n\nЗаряженная атака:\nВыстрел вперёд, наносящий Анемо урон по площади, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Анемо урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Профилактика воздушно-капельных инфекций",
+      "description_ru": "Настало время настоящих боевых кентов! Ифа призывает на подмогу Какуку.\nПосле применения этого навыка Ифа получает 80 очков Ночного духа и входит в состояние **Благословения Ночного духа**. В состоянии Благословения Ночного духа Ифа с помощью Какуку парит в воздухе. При выполнении обычной атаки, в зависимости от того, было использовано быстрое или долгое нажатие, разными способами активируется **Огневая поддержка** и выпускаются восстанавливающие HP всех членов отряда Лекарственные выстрелы.\n\nКроме того, если удерживать элементальный навык Профилактика воздушно-капельных инфекций, когда Ифа пребывает в состоянии Благословения Ночного духа, то он будет использовать атаку в падении с характеристикой Ночного духа. Если отпустить кнопку элементального навыка, атака в падении прервётся и Ифа останется в воздухе. Если Ифа, выполняя атаку в падении, приземлится, то его состояние Благословения Ночного духа завершится."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Составное поле успокоения",
+      "description_ru": "Выпускает во (временно агрессивного) врага Лечебное успокоительное. При попадании оно взрывается, создаёт сковывающий ветряной поток, который притягивает предметы и врагов поблизости, и наносит Анемо урон по площади с характеристикой Ночного духа.\nПри попадании по противникам под воздействием эффектов Гидро/Пиро/Крио/Электро Лечебное успокоительное накладывает на них **Седативную метку**."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Видение полевого врача",
+      "description_ru": "Когда Ифа находится в состоянии Благословения Ночного духа, за каждое очко Ночного духа от их текущего общего количества в отряде он получает 1 очко **Основ спасения**. Основы спасения повышают урон реакций Рассеивание, Заряжен и Лунный заряд, вызываемых членами отряда поблизости."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Договор о взаимопомощи",
+      "description_ru": "Когда члены отряда поблизости активируют Вспышку Ночного духа, мастерство стихий Ифы повышается на 80 ед. на 10 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Дар владений ночи: Режим целенаправленного спасения",
+      "description_ru": "Когда очки Ночного духа исчерпаны, Ифа продолжит поддерживать Благословение Ночного духа, переключившись на флогистон.\nКогда Ифа находится в областях Натлана с флогистоновыми механиками, он способен применять Передачу Ночного духа: Ифа. Когда активный персонаж находится на определённой высоте в воздухе, при смене персонажа на Ифу активируется следующий эффект: Ифа, появляясь на поле, входит в состояние Благословения Ночного духа и получает 32 очка Ночного духа. Передача Ночного духа может активироваться вашим отрядом один раз в 10 сек."
+    },
+    {
+      "type": "пассивный талант 4",
+      "name_ru": "Тёплая тактическая перевязка",
+      "description_ru": "Когда в областях Натлана с флогистоновыми механиками уровень HP активного персонажа вашего отряда или завриана, в которого он вселился, опускается ниже 40%, Ифа расходует 10 ед. флогистона и восстанавливает ему 40% его HP. Этот эффект может возникнуть один раз в 10 сек. В подземельях, Витой Бездне и Подземельях наказания он не действует."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Отваривание ползучего эликсира",
+      "description_ru": "Попадание **Огневой поддержки** по противнику восстанавливает 6 ед. энергии Ифы. Восстанавливать энергию таким образом можно 1 раз в 8 сек."
+    },
+    {
+      "name_ru": "Путеводный дух баллистической молитвы",
+      "description_ru": "Когда Ифа находится в состоянии Благословения Ночного духа, за каждое очко Ночного духа от их общего количества в отряде свыше 60 он дополнительно получает 4 очка **Основ спасения**.\nКроме того, максимум очков Основ спасения Ифы повышается на 50.\nТребуется разблокировать талант возвышения **Видение полевого врача**."
+    },
+    {
+      "name_ru": "Опровержение в переговорах с ночью",
+      "description_ru": "Увеличивает уровень навыка **Профилактика воздушно-капельных инфекций** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Замещение истлевшего сосуда",
+      "description_ru": "Длительность сковывающего ветряного потока, который создаётся взрывом стихии **Составное поле успокоения**, увеличена до 3 сек.\nКроме того, на 15 сек. после применения взрыва стихии Составное поле успокоения мастерство стихий Ифы повышается на 100 ед."
+    },
+    {
+      "name_ru": "Клятва всеобщего сосуществования",
+      "description_ru": "Увеличивает уровень навыка **Составное поле успокоения** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Обещание на узелке с пером",
+      "description_ru": "Когда Ифа активирует **Огневую поддержку** долгим нажатием, с шансом 50% будет дополнительно выпущен один Лекарственный выстрел, который наносит 120% Анемо урона от силы атаки Ифы. Этот урон считается уроном обычной атаки.\nКроме того, когда Ифа не находится в бою, его потребление очков Ночного духа или флогистона в состоянии Благословения Ночного духа снижается на 20%."
+    }
+  ],
+  "coordinates": []
 }

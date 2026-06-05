@@ -1,0 +1,13 @@
+{
+  "id": "lumenstone-ore",
+  "name_ru": "Светоносная руда",
+  "name_en": "Lumenstone Ore",
+  "type": "elemental_gem",
+  "type_text_ru": "Предмет приключения",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

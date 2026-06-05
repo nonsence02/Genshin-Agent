@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-desert-citadel-ii",
+  "name_ru": "Подземелье благословения: Цитадель в пустыне II",
+  "name_en": "Domain of Blessing: Desert Citadel II",
+  "type": "Артефакты",
+  "region": "Сумеру",
+  "days_of_week": [],
+  "rewards": [
+    "desert-pavilion-chronicle",
+    "flower-of-paradise-lost",
+    "resolution-of-sojourner",
+    "brave-heart"
+  ],
+  "coordinates": []
+}

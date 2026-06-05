@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-rhyming-rhythm-ii",
+  "name_ru": "Мастерство: Рифмованные рифмы II",
+  "name_en": "Domain of Mastery: Rhyming Rhythm II",
+  "type": "Повышение талантов",
+  "region": "Фонтейн",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-equity",
+    "teachings-of-equity"
+  ],
+  "coordinates": []
+}

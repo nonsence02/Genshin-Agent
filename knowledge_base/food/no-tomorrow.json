@@ -1,0 +1,27 @@
+{
+  "id": "no-tomorrow",
+  "name_ru": "Блюдо без будущего",
+  "name_en": "No Tomorrow",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания и крит. урон всех членов отряда на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "rice",
+      "count": 3
+    },
+    {
+      "material_id": "tofu",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

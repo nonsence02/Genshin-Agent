@@ -1,10 +1,17 @@
 {
   "id": "valberry",
+  "name_ru": "Валяшка",
   "name_en": "Valberry",
-  "type": "Local Specialty (Mondstadt)",
-  "days": [],
-  "source": [
-    "Found in the wild around Stormbearer Mountains and Stormbearer Point"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Мондштадта",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Горы Буревестника",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Valberry"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

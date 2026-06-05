@@ -1,0 +1,13 @@
+{
+  "id": "ruin-drake-earthguard",
+  "name_ru": "Дракон руин: Страж земли",
+  "name_en": "Ruin Drake: Earthguard",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "chaos-bolt",
+    "chaos-module",
+    "chaos-storage"
+  ],
+  "coordinates": []
+}

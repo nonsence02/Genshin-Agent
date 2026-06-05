@@ -1,44 +1,80 @@
 {
   "id": "sword-of-descension",
-  "name": "Sword of Descension",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sword_of_Descension",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "39 - 440",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Effective only on the following platform: \"PlayStation Network\" Hitting enemies with Normal or Charged Attacks grants a chance to deal ATK as DMG in a small AoE. This can only occur once every. Additionally, if the Traveler equips the Sword of Descension, their ATK is increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Treasure Hoarder Insignia",
-        "Dead Ley Line Leaves",
-        "Silver Raven Insignia",
-        "Ley Line Sprout",
-        "Golden Raven Insignia"
-      ]
+  "name_ru": "Меч нисхождения",
+  "name_en": "Sword of Descension",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 38.7413,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.0766
+    },
+    "level_90": {
+      "base_atk": 440.1936,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.3519
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Пришествие",
+  "passive_description_ru": "Действует только для игроков\n\"PlayStation™Network\".\nАтакуя противников обычными и заряженными атаками, вы получаете 50% шанс нанести урон, равный 200% силы атаки в небольшом радиусе. Эффект может возникнуть 1 раз в 10 сек. Кроме того, если путешественник экипирован Мечом нисхождения, его сила атаки увеличивается на 66 единиц.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

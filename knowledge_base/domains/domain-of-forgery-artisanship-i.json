@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-forgery-artisanship-i",
+  "name_ru": "Воля: Ремесло I",
+  "name_en": "Domain of Forgery: Artisanship I",
+  "type": "Возвышение оружия",
+  "region": "Фонтейн",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "dross-of-pure-sacred-dewdrop"
+  ],
+  "coordinates": []
+}

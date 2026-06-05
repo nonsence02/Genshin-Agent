@@ -1,10 +1,33 @@
 {
   "id": "varunada-lazurite-sliver",
+  "name_ru": "Осколок лазурита Варунада",
   "name_en": "Varunada Lazurite Sliver",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses and Weekly Bosses"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сувенирные лавки",
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Varunada_Lazurite_Sliver"
+  "dropped_by": [
+    "aeonblight-drake",
+    "all-devouring-narwhal",
+    "childe",
+    "frostnight-herra",
+    "hydro-hypostasis",
+    "hydro-tulpa",
+    "iniquitous-baptist",
+    "oceanid",
+    "primo-geovishap",
+    "secret-source-automaton-overseer-device",
+    "shouki-no-kami-the-prodigal",
+    "solitary-suanni",
+    "stormterror",
+    "the-doctor",
+    "the-game-before-the-gate"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

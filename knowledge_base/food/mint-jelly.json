@@ -1,0 +1,19 @@
+{
+  "id": "mint-jelly",
+  "name_ru": "Мятное желе",
+  "name_en": "Mint Jelly",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "mint",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

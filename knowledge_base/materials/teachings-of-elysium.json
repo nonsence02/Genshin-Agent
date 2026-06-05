@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-elysium",
+  "name_ru": "Учения о «Рае»",
   "name_en": "Teachings of Elysium",
-  "type": "Character Talent Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Lightless Capital (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Elysium"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-shadowed-legacy-i",
+    "domain-of-mastery-shadowed-legacy-ii",
+    "domain-of-mastery-shadowed-legacy-iii",
+    "domain-of-mastery-shadowed-legacy-iv"
+  ],
+  "source_domain": "domain-of-mastery-shadowed-legacy-i",
+  "coordinates": []
 }

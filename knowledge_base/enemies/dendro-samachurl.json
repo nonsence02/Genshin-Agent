@@ -1,0 +1,16 @@
+{
+  "id": "dendro-samachurl",
+  "name_ru": "Дендро шамачурл",
+  "name_en": "Dendro Samachurl",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "forbidden-curse-scroll",
+    "sealed-scroll",
+    "divining-scroll",
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

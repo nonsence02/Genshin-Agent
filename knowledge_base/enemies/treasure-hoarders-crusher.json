@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-crusher",
+  "name_ru": "Похитители сокровищ: Сокрушитель",
+  "name_en": "Treasure Hoarders: Crusher",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

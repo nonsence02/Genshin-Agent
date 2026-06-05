@@ -1,0 +1,70 @@
+{
+  "id": "barbara",
+  "name_en": "Barbara",
+  "element": "Hydro",
+  "weapon": "Catalyst",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "description": "Barbara Pegg is a playable Hydro character in Genshin Impact .\n\nShe is the deaconess of the Church of Favonius and a prominent \"idol\" after learning about them from the intrepid adventurer Alice . She is also the younger sister of the Acting Grand Master Jean .",
+  "role_summary": "Barbara Pegg is a playable Hydro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Whisper of Water",
+      "description": "Normal Attack Performs up to 4 water splash attacks that deal Hydro DMG . Charged Attack Consumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time. Plunging Attack Gathering the might of Hydro, Barbara plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Hydro DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Let the Show Begin♪",
+      "description": "Summons water droplets resembling musical notes that form a Melody Loop, dealing Hydro DMG to surrounding opponents and applying the Wet status to them. Melody Loop On hit, Barbara's Normal Attacks heal your own party members and nearby teammates for a certain amount of HP, which scales with Barbara's Max HP. On hit, Barbara's Charged Attack generates 4 times the amount of healing. Periodically regenerates your own active character's HP. Applies the Wet status to the character and to opponents who come in contact with them."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Shining Miracle♪",
+      "description": "Heals your own party members and nearby teammates for a large amount of HP that scales with Barbara's Max HP."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Glorious Season",
+      "description": "The Stamina Consumption of characters within Let the Show Begin♪ 's Melody Loop is reduced by 12%."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Encore",
+      "description": "When your active character gains an Elemental Orb/Particle, the duration of the Melody Loop of Let the Show Begin♪ is extended by 1s. The maximum extension is 5s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "With My Whole Heart♪",
+      "description": "When a Perfect Cooking is achieved on a dish with restorative effects , Barbara has a 12% chance to obtain double the product."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Gleeful Songs",
+      "effect": "Barbara regenerates 1 Energy every 10s."
+    },
+    "c2": {
+      "name": "Vitality Burst",
+      "effect": "Description Gameplay Notes Decreases the CD of Let the Show Begin♪ by 15%. During the ability's duration, your active character gains a 15% Hydro DMG Bonus . This constellation will reduce Barbara's Elemental Skill cooldown by 4.8 seconds."
+    },
+    "c3": {
+      "name": "Star of Tomorrow",
+      "effect": "Increases the Level of Shining Miracle♪ by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Attentiveness Be My Power",
+      "effect": "Every opponent Barbara hits with her Charged Attack regenerates 1 Energy for her. A maximum of 5 energy can be regenerated in this manner with any one Charged Attack."
+    },
+    "c5": {
+      "name": "The Purest Companionship",
+      "effect": "Increases the Level of Let the Show Begin♪ by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Dedicating Everything to You",
+      "effect": "Description Gameplay Notes When Barbara is in the party but not on the field, and one of your own party members falls: Automatically revives the fallen character. Fully restores the revived character's HP to 100%. This effect can only occur once every 15 mins. In order for this constellation to activate, the character's fallen animation must play. Therefore, if a character receives fatal damage and is quickly switched to skip the fallen animation, the character will not be revived; this does not start the 15-minute cooldown for the constellation to activate again."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Barbara",
+  "ai_tags": "Хиллер, Аппликатор"
+}

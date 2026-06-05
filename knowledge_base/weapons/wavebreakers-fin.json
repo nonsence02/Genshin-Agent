@@ -1,48 +1,80 @@
 {
   "id": "wavebreakers-fin",
-  "name": "Wavebreaker's Fin",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Wavebreaker%27s_Fin",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "45 - 620",
-    "secondary_stat": "ATK"
-  },
-  "passive": "For every point of the entire party's combined maximum Energy capacity, the Elemental Burst DMG of the character equipping this weapon is increased by. A maximum of increased Elemental Burst DMG can be achieved this way.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mask of the Wicked Lieutenant",
-        "Concealed Claw",
-        "Old Handguard",
-        "Mask of the Tiger's Bite",
-        "Concealed Unguis",
-        "Kageuchi Handguard",
-        "Mask of the One-Horned",
-        "Concealed Talon",
-        "Famed Handguard",
-        "Mask of the Kijin"
-      ]
+  "name_ru": "Режущий волны плавник",
+  "name_en": "Wavebreaker's Fin",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.0687,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.03
+    },
+    "level_90": {
+      "base_atk": 620.033,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.1378
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Укротитель волн Ватацуми",
+  "passive_description_ru": "Урон взрыва стихии экипированного этим оружием персонажа увеличивается на 0,12% за каждую единицу суммы макс. энергии каждого члена отряда. Бонус урона не может превышать 40%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mask-of-the-wicked-lieutenant",
+        "name_ru": "Маска злого военачальника",
+        "name_en": "Mask of the Wicked Lieutenant"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mask-of-the-tigers-bite",
+        "name_ru": "Маска тигриной пасти",
+        "name_en": "Mask of the Tiger's Bite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mask-of-the-one-horned",
+        "name_ru": "Маска однорогого",
+        "name_en": "Mask of the One-Horned"
+      },
+      {
+        "id": "mask-of-the-kijin",
+        "name_ru": "Маска кидзин",
+        "name_en": "Mask of the Kijin"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "concealed-claw",
+        "name_ru": "Скрытый коготь",
+        "name_en": "Concealed Claw"
+      },
+      {
+        "id": "concealed-unguis",
+        "name_ru": "Скрытый заточенный коготь",
+        "name_en": "Concealed Unguis"
+      },
+      {
+        "id": "concealed-talon",
+        "name_ru": "Скрытый дьявольский коготь",
+        "name_en": "Concealed Talon"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

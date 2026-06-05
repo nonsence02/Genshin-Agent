@@ -1,48 +1,80 @@
 {
   "id": "prototype-amber",
-  "name": "Prototype Amber",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Prototype_Amber",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "HP"
-  },
-  "passive": "Using an Elemental Burst regenerates Energy every for. All party members will regenerate HP every for this duration.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mist Veiled Lead Elixir",
-        "Mist Grass Pollen",
-        "Firm Arrowhead",
-        "Mist Veiled Mercury Elixir",
-        "Mist Grass",
-        "Sharp Arrowhead",
-        "Mist Veiled Gold Elixir",
-        "Mist Grass Wick",
-        "Weathered Arrowhead",
-        "Mist Veiled Primo Elixir"
-      ]
+  "name_ru": "Прототип: Янтарь",
+  "name_en": "Prototype Amber",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Позолота",
+  "passive_description_ru": "В течение 6 сек. после использования взрыва стихий восстанавливается 4 ед. энергии каждые 2 сек., а все члены отряда восстанавливают по 4% HP каждые 2 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mist-veiled-lead-elixir",
+        "name_ru": "Свинцовая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Lead Elixir"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mist-veiled-mercury-elixir",
+        "name_ru": "Ртутная пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Mercury Elixir"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mist-veiled-gold-elixir",
+        "name_ru": "Золотая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Gold Elixir"
+      },
+      {
+        "id": "mist-veiled-primo-elixir",
+        "name_ru": "Примо эликсир Заоблачного моря",
+        "name_en": "Mist Veiled Primo Elixir"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mist-grass-pollen",
+        "name_ru": "Пыльца туманной травы",
+        "name_en": "Mist Grass Pollen"
+      },
+      {
+        "id": "mist-grass",
+        "name_ru": "Мешочек с туманной травой",
+        "name_en": "Mist Grass"
+      },
+      {
+        "id": "mist-grass-wick",
+        "name_ru": "Пучок туманной травы",
+        "name_en": "Mist Grass Wick"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "firm-arrowhead",
+        "name_ru": "Прочный наконечник стрелы",
+        "name_en": "Firm Arrowhead"
+      },
+      {
+        "id": "sharp-arrowhead",
+        "name_ru": "Острый наконечник стрелы",
+        "name_en": "Sharp Arrowhead"
+      },
+      {
+        "id": "weathered-arrowhead",
+        "name_ru": "Старый наконечник стрелы",
+        "name_en": "Weathered Arrowhead"
+      }
+    ]
+  },
+  "coordinates": []
 }

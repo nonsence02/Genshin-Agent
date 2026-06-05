@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-full-moon-ii",
+  "name_ru": "Мастерство: Полная луна II",
+  "name_en": "Domain of Mastery: Full Moon II",
+  "type": "Повышение талантов",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-admonition",
+    "teachings-of-admonition"
+  ],
+  "coordinates": []
+}

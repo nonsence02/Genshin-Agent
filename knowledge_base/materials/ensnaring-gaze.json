@@ -1,10 +1,17 @@
 {
   "id": "ensnaring-gaze",
+  "name_ru": "Сковывающий взгляд",
   "name_en": "Ensnaring Gaze",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Tenebrous Papilla"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сумрачная папилла ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ensnaring_Gaze"
+  "dropped_by": [
+    "tenebrous-papilla-type-i"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

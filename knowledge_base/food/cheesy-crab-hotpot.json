@@ -1,0 +1,27 @@
+{
+  "id": "cheesy-crab-hotpot",
+  "name_ru": "Запечённый краб в сырном соусе",
+  "name_en": "Cheesy Crab Hotpot",
+  "rarity": 5,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает макс. HP всех членов отряда на 30% и восстановление энергии на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "crab",
+      "count": 6
+    },
+    {
+      "material_id": "flour",
+      "count": 5
+    },
+    {
+      "material_id": "milk",
+      "count": 4
+    },
+    {
+      "material_id": "cheese",
+      "count": 4
+    }
+  ],
+  "coordinates": []
+}

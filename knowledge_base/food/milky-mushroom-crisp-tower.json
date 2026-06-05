@@ -1,0 +1,27 @@
+{
+  "id": "milky-mushroom-crisp-tower",
+  "name_ru": "Сливочно-грибная башенка",
+  "name_en": "Milky Mushroom Crisp Tower",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 34% HP + 1900 HP.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 4
+    },
+    {
+      "material_id": "mushroom",
+      "count": 3
+    },
+    {
+      "material_id": "cheese",
+      "count": 2
+    },
+    {
+      "material_id": "cream",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

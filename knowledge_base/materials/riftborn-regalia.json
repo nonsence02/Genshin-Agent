@@ -1,10 +1,17 @@
 {
   "id": "riftborn-regalia",
+  "name_ru": "Эмблема Разрыва",
   "name_en": "Riftborn Regalia",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Golden Wolflords ."
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Золотые волчьи вожаки Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Riftborn_Regalia"
+  "dropped_by": [
+    "golden-wolflord"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

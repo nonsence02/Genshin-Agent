@@ -1,10 +1,17 @@
 {
   "id": "artificed-spare-clockwork-component-coppelius",
+  "name_ru": "Запасная деталь чудного механизма: Коппелиус",
   "name_en": "Artificed Spare Clockwork Component — Coppelius",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Icewind Suite: Nemesis of Coppelius"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "«Сюита ледяного ветра» Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Artificed_Spare_Clockwork_Component_%E2%80%94_Coppelius"
+  "dropped_by": [
+    "icewind-suite"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

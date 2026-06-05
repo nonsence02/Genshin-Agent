@@ -1,0 +1,19 @@
+{
+  "id": "perpetual-mechanical-array",
+  "name_ru": "Бесконечный механический массив",
+  "name_en": "Perpetual Mechanical Array",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "perpetual-heart",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "prithiva-topaz-gemstone",
+    "prithiva-topaz-chunk",
+    "prithiva-topaz-fragment",
+    "prithiva-topaz-sliver"
+  ],
+  "coordinates": []
+}

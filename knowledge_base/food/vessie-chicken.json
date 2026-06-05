@@ -1,0 +1,27 @@
+{
+  "id": "vessie-chicken",
+  "name_ru": "Цыплёнок в пузыре",
+  "name_en": "Vessie Chicken",
+  "rarity": 4,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает физ. урон всех членов отряда на 45% и шанс крит. попадания на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 4
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "marcotte",
+      "count": 3
+    },
+    {
+      "material_id": "fermented-juice",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

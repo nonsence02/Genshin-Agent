@@ -1,0 +1,13 @@
+{
+  "id": "shop-decoration-portentous-potions",
+  "name_ru": "Декор магазина: Чудесное зелье",
+  "name_en": "Shop Decoration: Portentous Potions",
+  "type": "consume",
+  "type_text_ru": "",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

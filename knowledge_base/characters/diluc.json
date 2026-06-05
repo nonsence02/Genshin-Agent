@@ -1,94 +1,81 @@
 {
   "id": "diluc",
-  "name": "Diluc",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Diluc",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Performs a forward slash that deals Pyro DMG. This skill can be consecutively used times. Enters CD if not cast again within a short period. The cooldown starts immediately after the first input. All DMG dealt by this skill have no Internal Cooldown. When this skill hits at least one enemy, it generates Elemental Particles. If all strikes hit, a total of particles are generated. If the next hit is not executed within seconds of the previous hit, then the skill enters cooldown. Since this skill's cooldown begins counting down immediately after the first hit, the cooldown displayed can be anywhere from seconds to seconds if not altered. First Hit Second Hit Third Hit Constellation Effects...",
-    "elemental_burst": "Releases intense flames to knock back nearby opponents, dealing Pyro DMG. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive Pyro DMG to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of AoE Pyro DMG. The searing flames that run down his blade cause it to be infused with Pyro. The Pyro infusion refreshes once every seconds and will remain when switching to another character. Passive Effects Passive Talent, Blessing of Phoenix: \"The Pyro Infusion provided by Dawn lasts for longer. Additionally, Diluc gains"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "special": [
-        "Small Lamp Grass",
-        "Everflame Seed"
-      ]
+  "name_ru": "Дилюк",
+  "name_en": "Diluc",
+  "element": "Pyro",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1010.5192,
+      "atk": 26.068,
+      "def": 61.0266
     },
-    "talents": {
-      "books": [
-        "Teachings of Resistance",
-        "Guide to Resistance",
-        "Philosophies of Resistance"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "weekly_boss": [
-        "Dvalin's Plume"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12980.6656,
+      "atk": 334.8497,
+      "def": 783.9255
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Закалённый меч",
+      "description_ru": "Обычная атака:\nДо четырёх рубящих ударов мечом.\n\nЗаряженная атака:\nКомбо-атака, на которую непрерывно тратится выносливость.\nПосле комбо-атаки проводит дополнительную мощную атаку мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Огненный натиск",
+      "description_ru": "Совершает рубящий удар мечом, наносящий Пиро урон врагам впереди.\n\nЭтот навык можно активировать 3 раза подряд.\nЕсли не активировать его слишком долго, навык уходит в откат."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Рассвет",
+      "description_ru": "Окружая себя языками пламени, Дилюк отбрасывает окружающих врагов и наносит им Пиро урон. Затем, собравшись на оружии, его пламя превращается в стремящегося вперёд феникса, который наносит большой Пиро урон всем врагам на своём пути. В конце своего пути феникс взрывается, нанося огромный Пиро урон по площади.\nСобравшееся пламя наделяет оружие Дилюка инфузией Пиро."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Беспощадность",
+      "description_ru": "Уменьшает стоимость заряженной атаки Дилюка на 50%, а длительность увеличена на 3 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Благословение феникса",
+      "description_ru": "Увеличивает длительность инфузии Пиро навыка Рассвет на 4 сек. В течение действия этого эффекта Дилюк также получает 20% бонус Пиро урона."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Наследие солнца",
+      "description_ru": "При ковке двуручного оружия возвращает 15% затраченной руды."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Раскалённая месть",
+      "description_ru": "Увеличивает урон Дилюка против врагов с HP выше 50% на 15%."
+    },
+    {
+      "name_ru": "Тлеющий уголёк",
+      "description_ru": "Когда Дилюк получает урон, его сила атаки увеличивается на 10%, а скорость атаки - на 5%. Длится 10 сек.\nМожет складываться до 3 раз и возникнуть раз в 1,5 сек."
+    },
+    {
+      "name_ru": "Стальное пламя",
+      "description_ru": "Увеличивает уровень навыка Огненный натиск на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Палящая комета",
+      "description_ru": "Ритмичная активация навыка Огненный натиск увеличивает наносимый им урон.\nАктивация навыка Огненный натиск через 2 сек. после предыдущего удара увеличивает урон следующего удара на 40% в течение 2 сек."
+    },
+    {
+      "name_ru": "Феникс, предвестник зари",
+      "description_ru": "Увеличивает уровень навыка Рассвет на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Клинок, освещающий тьму",
+      "description_ru": "После активации навыка Огненный натиск в течение 6 сек. увеличивает скорость и наносимый урон двух следующих обычных атак на 30%.\nТакже навык Огненный натиск больше не прерывает серию обычных атак."
+    }
+  ],
+  "coordinates": []
 }

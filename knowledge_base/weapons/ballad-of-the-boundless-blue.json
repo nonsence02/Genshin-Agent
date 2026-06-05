@@ -1,44 +1,80 @@
 {
   "id": "ballad-of-the-boundless-blue",
-  "name": "Ballad of the Boundless Blue",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ballad_of_the_Boundless_Blue",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Within after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by and Charged Attack DMG will be increased by. Max stacks. This can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fragile Bone Shard",
-        "Treasure Hoarder Insignia",
-        "Sturdy Bone Shard",
-        "Silver Raven Insignia",
-        "Fossilized Bone Shard",
-        "Golden Raven Insignia"
-      ]
+  "name_ru": "Песнь необъятной лазури",
+  "name_en": "Ballad of the Boundless Blue",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.0667
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3063
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Лазурные небеса",
+  "passive_description_ru": "В течение 6 сек. после попадания обычной или заряженной атаки по противнику урон обычной атаки повысится на 8%, а урон заряженной атаки - на 6%. Эффект может складываться до 3 раз и возникает один раз в 0,3 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fragile-bone-shard",
+        "name_ru": "Хрупкие останки",
+        "name_en": "Fragile Bone Shard"
+      },
+      {
+        "id": "sturdy-bone-shard",
+        "name_ru": "Крепкие останки",
+        "name_en": "Sturdy Bone Shard"
+      },
+      {
+        "id": "fossilized-bone-shard",
+        "name_ru": "Окаменевшие останки",
+        "name_en": "Fossilized Bone Shard"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

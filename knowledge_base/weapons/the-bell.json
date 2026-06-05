@@ -1,48 +1,80 @@
 {
   "id": "the-bell",
-  "name": "The Bell",
-  "source_url": "https://genshin-impact.fandom.com/wiki/The_Bell",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "HP"
-  },
-  "passive": "Taking DMG generates a shield which absorbs DMG up to of max HP. This shield lasts for or until broken, and can only be triggered once every. While protected by a shield, the character gains increased DMG.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Tile of Decarabian's Tower",
-        "Heavy Horn",
-        "Whopperflower Nectar",
-        "Debris of Decarabian's City",
-        "Black Bronze Horn",
-        "Shimmering Nectar",
-        "Fragment of Decarabian's Epic",
-        "Black Crystal Horn",
-        "Energy Nectar",
-        "Scattered Piece of Decarabian's Dream"
-      ]
+  "name_ru": "Меч-колокол",
+  "name_en": "The Bell",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Бунтарский защитник",
+  "passive_description_ru": "При получении урона генерируется щит, который в течение 10 сек. поглощает урон, равный 20% от макс. HP. Может возникнуть раз в 45 сек. Под защитой щита увеличивает урон персонажа на 12%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "tile-of-decarabians-tower",
+        "name_ru": "Плитка башни Декарабиана",
+        "name_en": "Tile of Decarabian's Tower"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "debris-of-decarabians-city",
+        "name_ru": "Обломок стены Декарабиана",
+        "name_en": "Debris of Decarabian's City"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "fragment-of-decarabians-epic",
+        "name_ru": "Фрагмент эпоса Декарабиана",
+        "name_en": "Fragment of Decarabian's Epic"
+      },
+      {
+        "id": "scattered-piece-of-decarabians-dream",
+        "name_ru": "Осколок мечты Декарабиана",
+        "name_en": "Scattered Piece of Decarabian's Dream"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "heavy-horn",
+        "name_ru": "Тяжёлый рог",
+        "name_en": "Heavy Horn"
+      },
+      {
+        "id": "black-bronze-horn",
+        "name_ru": "Чёрный бронзовый рог",
+        "name_en": "Black Bronze Horn"
+      },
+      {
+        "id": "black-crystal-horn",
+        "name_ru": "Чёрный кристаллический рог",
+        "name_en": "Black Crystal Horn"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,23 @@
+{
+  "id": "chocolate",
+  "name_ru": "Шоколад",
+  "name_en": "Chocolate",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 100 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "cacahuatl",
+      "count": 4
+    },
+    {
+      "material_id": "milk",
+      "count": 3
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

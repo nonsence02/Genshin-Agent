@@ -1,0 +1,27 @@
+{
+  "id": "meatnado",
+  "name_ru": "«Мясное торнадо»",
+  "name_en": "Meatnado",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Победа над противником восстанавливает 25 ед. выносливости. Эффект может возникнуть один раз в 3 сек. и длится 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "bacon",
+      "count": 2
+    },
+    {
+      "material_id": "potato",
+      "count": 1
+    },
+    {
+      "material_id": "onion",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

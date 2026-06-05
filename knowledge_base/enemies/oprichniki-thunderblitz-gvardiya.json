@@ -1,0 +1,13 @@
+{
+  "id": "oprichniki-thunderblitz-gvardiya",
+  "name_ru": "Опричник: Громовой гвардеец",
+  "name_en": "Oprichniki Thunderblitz Gvardiya",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "frost-etched-warrant",
+    "immaculate-warrant",
+    "tattered-warrant"
+  ],
+  "coordinates": []
+}

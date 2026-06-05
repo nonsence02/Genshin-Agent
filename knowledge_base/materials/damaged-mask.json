@@ -1,10 +1,48 @@
 {
   "id": "damaged-mask",
+  "name_ru": "Разбитая маска",
   "name_en": "Damaged Mask",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Hilichurls"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Хиличурлы",
+    "Некоторые хиличурлы-стрелки",
+    "Некоторые шамачурлы",
+    "Некоторые митачурлы",
+    "Некоторые лавачурлы",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Damaged_Mask"
+  "dropped_by": [
+    "anemo-samachurl",
+    "blazing-axe-mitachurl",
+    "crackling-axe-mitachurl",
+    "cryo-hilichurl-grenadier",
+    "cryo-hilichurl-shooter",
+    "cryo-samachurl",
+    "dendro-samachurl",
+    "electro-hilichurl-grenadier",
+    "electro-hilichurl-shooter",
+    "electro-samachurl",
+    "frostarm-lawachurl",
+    "geo-samachurl",
+    "hilichurl",
+    "hilichurl-berserker",
+    "hilichurl-fighter",
+    "hilichurl-grenadier",
+    "hilichurl-shooter",
+    "hydro-samachurl",
+    "ice-shield-hilichurl-guard",
+    "ice-shieldwall-mitachurl",
+    "pyro-hilichurl-shooter",
+    "rock-shield-hilichurl-guard",
+    "rock-shieldwall-mitachurl",
+    "stonehide-lawachurl",
+    "thunderhelm-lawachurl",
+    "wooden-shield-hilichurl-guard",
+    "wooden-shieldwall-mitachurl"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

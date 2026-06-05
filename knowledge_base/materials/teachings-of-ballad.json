@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-ballad",
+  "name_ru": "Учения о «Поэзии»",
   "name_en": "Teachings of Ballad",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Forsaken Rift (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Ballad"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-realm-of-slumber-i",
+    "domain-of-mastery-realm-of-slumber-ii",
+    "domain-of-mastery-realm-of-slumber-iii",
+    "domain-of-mastery-realm-of-slumber-iv"
+  ],
+  "source_domain": "domain-of-mastery-realm-of-slumber-i",
+  "coordinates": []
 }

@@ -1,10 +1,18 @@
 {
   "id": "ashen-heart",
+  "name_ru": "Пепельное сердце",
   "name_en": "Ashen Heart",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ Narukami Island: Tenshukaku Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Синьора Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ashen_Heart"
+  "dropped_by": [
+    "la-signora"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

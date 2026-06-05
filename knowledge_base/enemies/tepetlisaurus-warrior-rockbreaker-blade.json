@@ -1,0 +1,13 @@
+{
+  "id": "tepetlisaurus-warrior-rockbreaker-blade",
+  "name_ru": "Тепетлизавр-воин: Камнедробитель",
+  "name_en": "Tepetlisaurus Warrior: Rockbreaker Blade",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mora",
+  "name_ru": "Мора",
+  "name_en": "Mora",
+  "type": "adsorbate",
+  "type_text_ru": "Обычная валюта",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Исследование мира и приключения",
+    "Обмен Сокровищницы обители",
+    "Активация Цветов богатства"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

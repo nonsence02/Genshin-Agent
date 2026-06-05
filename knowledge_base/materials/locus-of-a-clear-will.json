@@ -1,10 +1,21 @@
 {
   "id": "locus-of-a-clear-will",
+  "name_ru": "Образ ясной воли",
   "name_en": "Locus of a Clear Will",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Wayob Manifestations"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Воплощение Вайоб Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Locus_of_a_Clear_Will"
+  "dropped_by": [
+    "flow-inverted-wayob-manifestation",
+    "foliar-swift-wayob-manifestation",
+    "rock-cavernous-wayob-manifestation"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

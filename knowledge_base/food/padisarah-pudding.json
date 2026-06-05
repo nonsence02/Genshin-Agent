@@ -1,0 +1,27 @@
+{
+  "id": "padisarah-pudding",
+  "name_ru": "Падисаровый пудинг",
+  "name_en": "Padisarah Pudding",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время спринта и карабканья на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "padisarah",
+      "count": 2
+    },
+    {
+      "material_id": "sumeru-rose",
+      "count": 1
+    },
+    {
+      "material_id": "milk",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

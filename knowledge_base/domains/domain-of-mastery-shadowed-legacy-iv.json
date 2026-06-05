@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-shadowed-legacy-iv",
+  "name_ru": "Подземелье мастерства: Тень прошлого IV",
+  "name_en": "Domain of Mastery: Shadowed Legacy IV",
+  "type": "Повышение талантов",
+  "region": "Нод-Край",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-elysium",
+    "guide-to-elysium",
+    "teachings-of-elysium"
+  ],
+  "coordinates": []
+}

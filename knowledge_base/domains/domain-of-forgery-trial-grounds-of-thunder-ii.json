@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-forgery-trial-grounds-of-thunder-ii",
+  "name_ru": "Воля: Древние испытания молнии II",
+  "name_en": "Domain of Forgery: Trial Grounds of Thunder II",
+  "type": "Возвышение оружия",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "piece-of-aerosiderite",
+    "grain-of-aerosiderite"
+  ],
+  "coordinates": []
+}

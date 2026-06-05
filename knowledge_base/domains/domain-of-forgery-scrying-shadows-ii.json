@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-forgery-scrying-shadows-ii",
+  "name_ru": "Подземелье воли: Загробные тени II",
+  "name_en": "Domain of Forgery: Scrying Shadows II",
+  "type": "Возвышение оружия",
+  "region": "Натлан",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "blazing-sacrificial-hearts-hesitance",
+    "blazing-sacrificial-hearts-terror"
+  ],
+  "coordinates": []
+}

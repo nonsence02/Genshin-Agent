@@ -1,0 +1,27 @@
+{
+  "id": "coffee-bavarois",
+  "name_ru": "Кофейный баваруа",
+  "name_en": "Coffee Bavarois",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 30% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 790 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "coffee-beans",
+      "count": 4
+    },
+    {
+      "material_id": "milk",
+      "count": 3
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 3
+    },
+    {
+      "material_id": "cream",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

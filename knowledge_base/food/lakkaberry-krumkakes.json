@@ -1,0 +1,27 @@
+{
+  "id": "lakkaberry-krumkakes",
+  "name_ru": "Крумкаке с ягодами лакка",
+  "name_en": "Lakkaberry Krumkakes",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 30% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "lakkaberry",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 3
+    },
+    {
+      "material_id": "smetana",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

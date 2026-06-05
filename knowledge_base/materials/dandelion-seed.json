@@ -1,10 +1,16 @@
 {
   "id": "dandelion-seed",
+  "name_ru": "Семена одуванчика",
   "name_en": "Dandelion Seed",
-  "type": "Local Specialty (Mondstadt)",
-  "days": [],
-  "source": [
-    "Found in the wild in Mondstadt"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Мондштадта",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "У ворот Мондштадта",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dandelion_Seed"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

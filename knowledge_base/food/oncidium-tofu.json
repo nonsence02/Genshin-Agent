@@ -1,0 +1,27 @@
+{
+  "id": "oncidium-tofu",
+  "name_ru": "Тофу «Вэньсинь»",
+  "name_en": "Oncidium Tofu",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 100 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "tofu",
+      "count": 4
+    },
+    {
+      "material_id": "bamboo-shoot",
+      "count": 2
+    },
+    {
+      "material_id": "ham",
+      "count": 1
+    },
+    {
+      "material_id": "fowl",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

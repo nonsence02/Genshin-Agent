@@ -1,0 +1,13 @@
+{
+  "id": "phlogiston-energy-orb-for-gathering",
+  "name_ru": "Соберите сферы флогистоновой энергии",
+  "name_en": "Phlogiston Energy Orb for Gathering",
+  "type": "consume",
+  "type_text_ru": "Получить флогистон",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

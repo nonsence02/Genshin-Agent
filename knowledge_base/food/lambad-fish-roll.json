@@ -1,0 +1,19 @@
+{
+  "id": "lambad-fish-roll",
+  "name_ru": "Рыбный рулетик Ламбада",
+  "name_en": "Lambad Fish Roll",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 1
+    },
+    {
+      "material_id": "sumeru-rose",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

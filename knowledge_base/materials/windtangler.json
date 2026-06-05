@@ -1,0 +1,15 @@
+{
+  "id": "windtangler",
+  "name_ru": "Переплетение ветров",
+  "name_en": "Windtangler",
+  "type": "fish_rod",
+  "type_text_ru": "Удочка",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Обмен в Ассоциации рыболовов Мондштадта"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

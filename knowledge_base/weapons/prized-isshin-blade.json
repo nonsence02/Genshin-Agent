@@ -1,0 +1,27 @@
+{
+  "id": "prized-isshin-blade",
+  "name_ru": "Легендарный клинок Иссин",
+  "name_en": "Prized Isshin Blade",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
+    }
+  },
+  "passive_name_ru": "Блуждающий клинок",
+  "passive_description_ru": "Попадания обычной атакой, заряженной атакой или атакой в падении выпускают Проклятого духа, нанося урон по площади, равный 180% от силы атаки, а также восстанавливают HP, равное 100% от силы атаки. Этот эффект может возникнуть раз в 8 сек. Экипированный этим оружием персонаж наносит на 50% меньше урона.",
+  "ascension_materials": {
+    "domain_materials": [],
+    "elite_drops": [],
+    "common_drops": []
+  },
+  "coordinates": []
+}

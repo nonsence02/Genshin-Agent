@@ -1,0 +1,19 @@
+{
+  "id": "dinner-of-judgment",
+  "name_ru": "Судный ужин",
+  "name_en": "Dinner of Judgment",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 30% HP + 1750 HP персонажу.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 2
+    },
+    {
+      "material_id": "sweet-flower",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

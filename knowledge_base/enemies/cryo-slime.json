@@ -1,0 +1,13 @@
+{
+  "id": "cryo-slime",
+  "name_ru": "Крио слайм",
+  "name_en": "Cryo Slime",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "slime-concentrate",
+    "slime-secretions",
+    "slime-condensate"
+  ],
+  "coordinates": []
+}

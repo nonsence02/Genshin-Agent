@@ -1,10 +1,18 @@
 {
   "id": "glowing-hornshroom",
+  "name_ru": "Мерцающий рогатый гриб",
   "name_en": "Glowing Hornshroom",
-  "type": "Local Specialty (Natlan)",
-  "days": [],
-  "source": [
-    "Found in Tezcatepetonco Range near the \"Masters of the Night-Wind\""
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Натлана",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Кряж Тецкатепетонко",
+    "Возле Повелителей Ночного Ветра",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Glowing_Hornshroom"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

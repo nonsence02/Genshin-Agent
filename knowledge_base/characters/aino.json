@@ -1,94 +1,86 @@
 {
   "id": "aino",
-  "name": "Aino",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Aino",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Aino throws a Musecatcher forward, dealing Hydro DMG and dragging her along behind it. When the dragging stops, Aino deals AoE Hydro DMG to nearby opponents. Holding the Skill will cause it to behave differently. Hold Enter Aiming Mode to adjust the Musecatcher's throwing direction. When this skill hits at least one enemy, it generates Elemental Particles. Constellation Effects Constellation Level, The Theory of Ash—Field Equilibrium: \"After Aino uses her Elemental Skill Musecatcher or her Elemental Burst Precision Hydronic Cooler, her Elemental Mastery will be increased by. The Elemental Mastery of other nearby active party members will be increased by for. The Elemental Mastery-increasing...",
-    "elemental_burst": "Aino deploys a custom water -spraying device, the Cool Your Jets Ducky to establish a Focused Hydronic Cooling Zone. While active, the Cool Your Jets Ducky will periodically fire water balls at nearby opponents, dealing Hydro DMG. Water balls are fired every seconds and up to can be fired during the skill's duration. With Moonsign: Ascendant Gleam, water balls are fired every seconds and up to can be fired during the skill's duration. Passive Effects Passive Talent, Modular Efficiency Protocol: \"Aino will be granted the corresponding buff effects based on the party 's Moonsign. Moonsign: Ascendant Gleam: Her Elemental Burst Precision Hydronic Cooler is enhanced: The Cool Your Jets Ducky..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Varunada Lazurite Sliver",
-        "Varunada Lazurite Fragment",
-        "Varunada Lazurite Chunk",
-        "Varunada Lazurite Gemstone"
-      ],
-      "mob_drops": [
-        "Broken Drive Shaft",
-        "Reinforced Drive Shaft",
-        "Precision Drive Shaft"
-      ],
-      "special": [
-        "Portable Bearing",
-        "Precision Kuuvahki Stamping Die"
-      ]
+  "name_ru": "Айно",
+  "name_en": "Aino",
+  "element": "Hydro",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 939.1447,
+      "atk": 20.3011,
+      "def": 50.9303
     },
-    "talents": {
-      "books": [
-        "Teachings of Elysium",
-        "Guide to Elysium",
-        "Philosophies of Elysium"
-      ],
-      "mob_drops": [
-        "Broken Drive Shaft",
-        "Reinforced Drive Shaft",
-        "Precision Drive Shaft"
-      ],
-      "weekly_boss": [
-        "Silken Feather"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 11201.1621,
+      "atk": 242.1328,
+      "def": 607.4442
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Починка методом «бах-бум-бац»",
+      "description_ru": "Обычная атака:\nДо трёх последовательных ударов.\n\nЗаряженная атака:\nВращающаяся атака по окружающим врагам, на которую непрерывно тратится выносливость.\nПосле вращения проводит дополнительную мощную рубящую атаку.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Ловец вдохновения",
+      "description_ru": "Айно бросает вперёд Ловца вдохновения, который наносит Гидро урон и увлекает её за собой. Когда движение прекращается, Айно наносит Гидро урон по площади врагам поблизости.\nПри долгом нажатии способ активации навыка меняется.\n\nДолгое нажатие\nПереходит в режим прицеливания, в котором можно выбрать направление броска Ловца вдохновения."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Точный водоохладитель",
+      "description_ru": "Айно задействует Охладительного утёнка, сверхразбрызгиватель особой сборки, который образует Зону точечного охлаждения.\nВо время действия Охладительный утёнок периодически выпускает во врагов поблизости водяные снаряды, нанося Гидро урон."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Протокол модульной эффективности",
+      "description_ru": "В зависимости от Лунного знамения отряда Айно получает соответствующие усиления.\n\nЛунное знамение - Высшее сияние: её взрыв стихии **Точный водоохладитель** получает усиление: Охладительный утёнок выпускает водяные снаряды через более короткие интервалы и наносит Гидро урон по большей площади."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Структурированный усилитель",
+      "description_ru": "Урон взрыва стихии Айно повышается на 50% от её мастерства стихии."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Дар лунного знамения: Анализ предела мощности",
+      "description_ru": "Когда Айно в отряде, уровень Лунного знамения отряда повышается на 1."
+    },
+    {
+      "type": "пассивный талант 4",
+      "name_ru": "Миниатюрный сенсор распознавания",
+      "description_ru": "Отмечает диковинки Нод-Края на мини-карте.\nКроме того, Айно способна неким образом менять внешний вид Охладительного утёнка..."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Теория баланса пепельного поля",
+      "description_ru": "После того как Айно применяет элементальный навык **Ловец вдохновения** или взрыв стихии **Точный водоохладитель**, её мастерство стихий повышается на 80 ед. Мастерство стихий других активных персонажей поблизости повышается на 80 ед. на 15 сек.\n\nЭффекты повышения мастерства стихий этого созвездия не складываются."
+    },
+    {
+      "name_ru": "Принцип перенесения дифференциала",
+      "description_ru": "Когда **Зона точечного охлаждения** взрыва стихии Точный водоохладитель активна и Айно находится вне поля боя, при попадании атак активного персонажа отряда во врага поблизости Охладительный утёнок выпускает в этого врага 1 дополнительный водяной снаряд, который наносит Гидро урон по площади, равный 25% силы атаки и 100% мастерства стихий Айно. Этот эффект может возникнуть один раз в 5 сек., а его урон считается уроном взрыва стихии."
+    },
+    {
+      "name_ru": "Торт и искусство починки механизмов",
+      "description_ru": "Увеличивает уровень навыка **Точный водоохладитель** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Масло и кошки и закон подачи питания",
+      "description_ru": "Элементальный навык **Ловец вдохновения**, попадая по противнику, восстанавливает Айно 10 ед. энергии. Восстанавливать энергию таким способом можно один раз в 10 сек."
+    },
+    {
+      "name_ru": "Вечная турбина из металла и света",
+      "description_ru": "Увеличивает уровень навыка **Ловец вдохновения** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Ноша творческого гения",
+      "description_ru": "На 15 сек. после применения взрыва стихии **Точный водоохладитель** урон реакций Заряжен, Бутонизация, Лунный заряд, Лунная бутонизация и Лунный кристалл активного персонажа поблизости увеличивается на 15%.\nЛунное знамение - Высшее сияние: урон этих реакций дополнительно повышается на 20%."
+    }
+  ],
+  "coordinates": []
 }

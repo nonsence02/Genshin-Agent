@@ -1,0 +1,19 @@
+{
+  "id": "domain-of-forgery-sand-burial-iv",
+  "name_ru": "Воля: Песчаная могила IV",
+  "name_en": "Domain of Forgery: Sand Burial IV",
+  "type": "Возвышение оружия",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "mask-of-the-kijin",
+    "mask-of-the-one-horned",
+    "mask-of-the-tigers-bite",
+    "mask-of-the-wicked-lieutenant"
+  ],
+  "coordinates": []
+}

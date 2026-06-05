@@ -1,0 +1,19 @@
+{
+  "id": "solitary-suanni",
+  "name_ru": "Суаньни-отшельник",
+  "name_en": "Solitary Suanni",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "cloudseam-scale",
+    "vayuda-turquoise-gemstone",
+    "vayuda-turquoise-chunk",
+    "vayuda-turquoise-fragment",
+    "vayuda-turquoise-sliver",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver"
+  ],
+  "coordinates": []
+}

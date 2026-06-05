@@ -1,94 +1,81 @@
 {
   "id": "kuki-shinobu",
-  "name": "Kuki Shinobu",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kuki_Shinobu",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Creates a Grass Ring of Sanctification at the cost of part of her HP, dealing Electro DMG to nearby opponents. Grass Ring of Sanctification Follows your current active character around. Deals Electro DMG to nearby opponents every and restores HP for the active character(s) within the ring's AoE based on Kuki Shinobu's Max HP. The HP consumption from using this skill can only bring her to",
-    "elemental_burst": "Stabs an evil-excoriating blade into the ground, creating a field that cleanses the area of all that is foul, dealing continuous Electro DMG to opponents within its AoE based on Shinobu's Max HP. If Shinobu's HP is less than or equal to"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Spectral Husk",
-        "Spectral Heart",
-        "Spectral Nucleus"
-      ],
-      "special": [
-        "Naku Weed",
-        "Runic Fang"
-      ]
+  "name_ru": "Куки Синобу",
+  "name_en": "Kuki Shinobu",
+  "element": "Electro",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1030.3239,
+      "atk": 17.808,
+      "def": 62.9475
     },
-    "talents": {
-      "books": [
-        "Teachings of Elegance",
-        "Guide to Elegance",
-        "Philosophies of Elegance"
-      ],
-      "mob_drops": [
-        "Spectral Husk",
-        "Spectral Heart",
-        "Spectral Nucleus"
-      ],
-      "weekly_boss": [
-        "Tears of the Calamitous God"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12288.6544,
+      "atk": 212.3972,
+      "def": 750.7737
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Теневой меч Синобу",
+      "description_ru": "Обычная атака:\nДо четырёх быстрых ударов мечом.\n\nЗаряженная атака:\nТратит определённое количество выносливости на два быстрых взмаха мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Освящающее кольцо",
+      "description_ru": "Жертвует частью HP и создаёт Травяное кольцо освящения, нанося Электро урон ближайшим противникам.\n\nТравяное кольцо освящения\nСледует за активным персонажем. Каждые 1,5 сек. наносит Электро урон окружающим противникам и восстанавливает HP активным персонажам в зоне действия. Количество восстановленного HP зависит от макс. HP Куки Синобу.\n\nИспользование навыка не может опустить HP Синобу ниже 20%."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Обряд Гёэй Наруками Карияма",
+      "description_ru": "Вонзает в землю изгоняющий зло клинок, создавая очищающий барьер, который непрерывно наносит Электро урон, зависящий от макс. HP Синобу.\nЕсли у Синобу осталось не более 50% HP при активации навыка, то барьер продержится дольше. "
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Освобождение",
+      "description_ru": "Бонус лечения увеличивается на 15%, когда HP Куки Синобу не превышает 50%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Спокойствие духа",
+      "description_ru": "Характеристики Освящающего кольца улучшаются в зависимости от мастерства стихий Синобу:\n· Лечение увеличивается на 75% от мастерства стихий.\n· Урон увеличивается на 25% от мастерства стихий."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Затянувшаяся молитва",
+      "description_ru": "На 25% увеличивает награду экспедиций в Инадзуме длительностью 20 ч."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Отказ от сострадания",
+      "description_ru": "Зона поражения навыка Обряд Гёэй Наруками Карияма увеличивается на 50%."
+    },
+    {
+      "name_ru": "Отказ от удачи",
+      "description_ru": "Длительность Травяного кольца освящения увеличивается на 3 сек."
+    },
+    {
+      "name_ru": "Отказ от страданий",
+      "description_ru": "Увеличивает уровень навыка Освящающее кольцо на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Отказ от затворничества",
+      "description_ru": "Когда обычные атаки, заряженные атаки и атаки в падении персонажей под действием Травяного кольца освящения Синобу попадают по противникам, на их позиции появляется Метка громовой травы, наносящая Электро урон по площади, который составляет 9,7% от макс. HP Синобу.\nЭффект может возникнуть один раз в 5 сек."
+    },
+    {
+      "name_ru": "Отказ от любезностей",
+      "description_ru": "Увеличивает уровень навыка Обряд Гёэй Наруками Карияма на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Отказ от слабости",
+      "description_ru": "Когда Куки Синобу получает летальный урон, то не погибает от него. Этот эффект активируется автоматически, когда у Куки Синобу остаётся 1 HP. Может возникнуть раз в 60 сек.\nКогда HP Куки Синобу опускается до 25% или ниже, её мастерство стихий увеличивается на 150 ед. на 15 сек. Эффект может возникнуть раз в 60 сек."
+    }
+  ],
+  "coordinates": []
 }

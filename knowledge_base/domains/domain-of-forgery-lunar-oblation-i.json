@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-forgery-lunar-oblation-i",
+  "name_ru": "Подземелье воли: Жертвоприношение луне I",
+  "name_en": "Domain of Forgery: Lunar Oblation I",
+  "type": "Возвышение оружия",
+  "region": "Нод-Край",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "sundered-glory-of-the-far-north-scions"
+  ],
+  "coordinates": []
+}

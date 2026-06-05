@@ -1,10 +1,16 @@
 {
   "id": "beryl-conch",
+  "name_ru": "Берилловая ракушка",
   "name_en": "Beryl Conch",
-  "type": "Local Specialty (Fontaine)",
-  "days": [],
-  "source": [
-    "Found underwater in the of All Waters: The Great Fontaine Lake"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Фонтейна",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Салосское морское плато",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Beryl_Conch"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

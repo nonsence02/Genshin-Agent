@@ -1,0 +1,13 @@
+{
+  "id": "oprichniki-grenadier",
+  "name_ru": "Опричник: Гренадёр",
+  "name_en": "Oprichniki Grenadier",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "frost-etched-warrant",
+    "immaculate-warrant",
+    "tattered-warrant"
+  ],
+  "coordinates": []
+}

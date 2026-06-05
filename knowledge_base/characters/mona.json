@@ -1,92 +1,81 @@
 {
   "id": "mona",
-  "name": "Mona",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mona",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Creates an illusory Phantom of Fate from coalesced waterspouts. Phantom Has the following special properties: Continuously taunts nearby opponents, attracting their fire. Continuously deals Hydro DMG to nearby opponents. When its duration expires, the Phantom explodes, dealing AoE Hydro DMG. Hold Utilizes water currents to move backwards swiftly before conjuring a Phantom. Only one Phantom created by Mirror Reflection of Doom can exist at any time. The Phantom lasts for seconds. It deals Hydro DMG every second (DoT) for a total of times, followed by a final AoE Hydro DMG Explosion. When the Phantom Explosion hits at least one enemy, it generates Elemental Particles. The hold version of this...",
-    "elemental_burst": "Mona summons the sparkling waves and creates a reflection of the starry sky, applying the Illusory Bubble status to opponents in a large AoE. Illusory Bubble Traps opponents inside a pocket of destiny and also makes them Wet. Renders weaker opponents immobile. When an opponent affected by Illusory Bubble sustains DMG, it has the following effects: Applies an Omen to the opponent, which gives a DMG Bonus, also increasing the DMG of the attack that causes it. Removes the Illusory Bubble, dealing Hydro DMG in the process. Omen During its duration, increases DMG taken by opponents. Illusory Bubble and Omen are both applied upon casting Stellaris Phantasm. When Illusory Bubble is active on an..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Varunada Lazurite Sliver",
-        "Varunada Lazurite Fragment",
-        "Varunada Lazurite Chunk",
-        "Varunada Lazurite Gemstone"
-      ],
-      "mob_drops": [
-        "Whopperflower Nectar",
-        "Shimmering Nectar"
-      ],
-      "special": [
-        "Philanemo Mushroom",
-        "Cleansing Heart"
-      ]
+  "name_ru": "Мона",
+  "name_en": "Mona",
+  "element": "Hydro",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 810.322,
+      "atk": 22.344,
+      "def": 50.8555
     },
-    "talents": {
-      "books": [
-        "Teachings of Resistance",
-        "Guide to Resistance",
-        "Philosophies of Resistance"
-      ],
-      "mob_drops": [
-        "Whopperflower Nectar",
-        "Shimmering Nectar"
-      ],
-      "weekly_boss": [
-        "Ring of Boreas"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10409.024,
+      "atk": 287.0141,
+      "def": 653.2712
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Круги на воде",
+      "description_ru": "Обычная атака:\nДо четырёх ударов пузырями, наносящих Гидро урон.\n\nЗаряженная атака:\nКороткое заклинание, наносящее Гидро урон по площади, на которое тратится определённое количество выносливости.\n\nАтака в падении:\nНакопив энергию воды, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Гидро урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Отражение фатума",
+      "description_ru": "Создаёт фантома судьбы из водных пузырей.\n\nФантом имеет следующие свойства:\n· Непрерывно привлекает атаки врагов на себя;\n· Непрерывно наносит Гидро урон окружающим врагам.\n· По истечении времени действия фантом взрывается, нанося Гидро урон по площади.\n\nДолгое нажатие:\nОтпрыгивает назад с помощью водных потоков, при этом создав фантома.\n\nОдновременно на поле боя может существовать только один фантом навыка Отражение фатума."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Звёздный фантазм",
+      "description_ru": "Мона призывает бушующие волны и создаёт отражение звёздного неба, заключая врагов в большом радиусе в Теневые пузыри.\n\nТеневой пузырь:\nЗаключает в себя врагов, накладывая на них статус Мокрый. Попав в Теневой пузырь, слабые противники также теряют способность двигаться.\nНанесённый заключённому в Теневой пузырь противнику урон активирует следующие эффекты:\n· Добавляет бонус урона от Омена, также увеличивая нанесённый урон.\n· Снимает эффект Теневого пузыря, при этом нанося Гидро урон.\n\nОмен:\nНа время длительности навыка увеличивает получаемый противником урон."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "«Старуха, тебе меня не найти!»",
+      "description_ru": "Если через 2 сек. после активации навыка Иллюзорный поток вокруг Моны есть враги, она создаёт одного фантома.\nСозданный таким способом фантом существует 2 сек., урон от его взрыва равен 50% от навыка Отражение фатума."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Пусть судьба кинет кости!",
+      "description_ru": "Увеличивает бонус Гидро урона Моны на 20% от её восстановления энергии."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Принципы астрологии",
+      "description_ru": "При создании материалов возвышения оружия имеет 25% шанс восстановить часть использованных материалов."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Пророчество потопа",
+      "description_ru": "Попадания персонажа из вашего отряда по противнику со статусом Омен на 8 сек. усиливают эффекты Гидро реакций:\n· Увеличивается урон реакций Заряжен, Лунный заряд, Пар, Гидро рассеивание и Лунный кристалл на 15%.\n· Увеличивается длительность реакции Заморозка на 15%."
+    },
+    {
+      "name_ru": "Лунная цепь",
+      "description_ru": "Попадания обычной атакой имеют 20% шанс автоматически активировать заряженную атаку.\nМожет возникнуть раз в 5 сек."
+    },
+    {
+      "name_ru": "Бесконечное вращение планет",
+      "description_ru": "Увеличивает уровень навыка Звёздный фантазм на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Пророчество забвения",
+      "description_ru": "Попадания любого члена вашего отряда по врагу со статусом Омен увеличивают шанс крит. попадания на 15%."
+    },
+    {
+      "name_ru": "Насмешка судьбы",
+      "description_ru": "Увеличивает уровень навыка Отражение фатума на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Риторика катаклизма",
+      "description_ru": "Каждая секунда движения в форме навыка Иллюзорный поток увеличивает урон следующей заряженной атаки Моны на 60%.\nТаким способом можно получить не более 180% бонуса урона заряженной атаки. Длится не более 8 сек."
+    }
+  ],
+  "coordinates": []
 }

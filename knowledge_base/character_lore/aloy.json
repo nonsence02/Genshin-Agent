@@ -1,0 +1,70 @@
+{
+  "id": "aloy",
+  "name_en": "Aloy",
+  "element": "Cryo",
+  "weapon": "Bow",
+  "region": "",
+  "rarity": 5,
+  "description": "Aloy is a playable Cryo crossover character in Genshin Impact .\n\nShe is the heroine from the Horizon series and was introduced as a limited-time collaboration and crossover character between Guerrilla Games and HoYoverse .",
+  "role_summary": "Aloy is a playable Cryo crossover character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Rapid Fire",
+      "description": "Normal Attack Performs up to 4 consecutive shots with a bow. Charged Attack Perform a more precise Aimed Shot with increased DMG. While aiming, biting frost will accumulate on the arrowhead. A fully charged frost arrow will deal Cryo DMG . Plunging Attack Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Frozen Wilds",
+      "description": "Aloy throws a Freeze Bomb in the targeted direction that explodes on impact, dealing Cryo DMG . After it explodes, the Freeze Bomb will split up into many Chillwater Bomblets that explode on contact with opponents or after a short delay, dealing Cryo DMG . When a Freeze Bomb or Chillwater Bomblet hits an opponent, the opponent's ATK is decreased and Aloy receives 1 Coil stack. Aloy can gain up to 1 Coil stack every 0.1s. Coil Each stack increases Aloy's Normal Attack DMG. When Aloy has 4 Coil stacks, all stacks of Coil are cleared. She then enters the Rushing Ice state, which further increases the DMG dealt by her Normal Attacks and converts her Normal Attack DMG to Cryo DMG . While in the Rushing Ice state, Aloy cannot obtain new Coil stacks. Coil effects will be cleared 30s after Aloy leaves the field."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Prophecies of Dawn",
+      "description": "Aloy throws a Power Cell filled with Cryo in the targeted direction, then detonates it with an arrow, dealing AoE Cryo DMG ."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Combat Override",
+      "description": "When Aloy receives the Coil effect from Frozen Wilds , her ATK is increased by 16%, while nearby party members' ATK is increased by 8%. This effect lasts 10s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Strong Strike",
+      "description": "When Aloy is in the Rushing Ice state conferred by Frozen Wilds , her Cryo DMG Bonus increases by 3.5% every 1s. A maximum Cryo DMG Bonus increase of 35% can be gained in this way."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Easy Does It",
+      "description": "When Aloy is in the party, animals who produce Fowl , Raw Meat , or Chilled Meat will not be startled when party members approach them."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Star of Another World",
+      "effect": "The time has not yet come for this person's corner of the night sky to light up."
+    },
+    "c2": {
+      "name": "Star of Another World",
+      "effect": "The time has not yet come for this person's corner of the night sky to light up."
+    },
+    "c3": {
+      "name": "Star of Another World",
+      "effect": "The time has not yet come for this person's corner of the night sky to light up."
+    },
+    "c4": {
+      "name": "Star of Another World",
+      "effect": "The time has not yet come for this person's corner of the night sky to light up."
+    },
+    "c5": {
+      "name": "Star of Another World",
+      "effect": "The time has not yet come for this person's corner of the night sky to light up."
+    },
+    "c6": {
+      "name": "Star of Another World",
+      "effect": "The time has not yet come for this person's corner of the night sky to light up."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Aloy",
+  "ai_tags": "Main DPS, Sub DPS"
+}

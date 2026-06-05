@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-transience",
+  "name_ru": "Учения о «Бренности»",
   "name_en": "Teachings of Transience",
-  "type": "Character Talent Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Violet Court (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Transience"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-reign-of-violet-i",
+    "domain-of-mastery-reign-of-violet-ii",
+    "domain-of-mastery-reign-of-violet-iii",
+    "domain-of-mastery-reign-of-violet-iv"
+  ],
+  "source_domain": "domain-of-mastery-reign-of-violet-i",
+  "coordinates": []
 }

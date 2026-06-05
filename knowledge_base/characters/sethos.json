@@ -1,94 +1,81 @@
 {
   "id": "sethos",
-  "name": "Sethos",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sethos",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Gathers the might of thunder, dealing AoE Electro DMG and quickly retreating. If this attack triggers Electro-Charged, Lunar-Charged, Superconduct, Overloaded, Quicken, Aggravate, or Electro Swirl reactions, Sethos recovers a certain amount of Elemental Energy. When this skill hits at least one enemy, it generates Elemental Particles. Constellation Effects Constellation Level, Papyrus Scripture of Silent Secrets: \"When any of the following conditions are met, Sethos gains a",
-    "elemental_burst": "Perform a secret rite, entering the \"Twilight Meditation\" state, during which Sethos's Normal Attacks will be converted into enemy-piercing Dusk Bolts: Deal Electro DMG to opponents in its path, with DMG increased based on Sethos's Elemental Mastery. Sethos cannot perform Aimed Shots while in this state. DMG dealt by Dusk Bolts is considered Charged Attack DMG. This effect will be canceled when Sethos leaves the field. Constellation Effects Constellation Level, Beneficent Plumage: \"When a Shadowpiercing Shot or Dusk Bolt strikes or more opponents, all nearby party members gain Elemental Mastery for.\""
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "special": [
-        "Trishiraite",
-        "Cloudseam Scale"
-      ]
+  "name_ru": "Сетос",
+  "name_en": "Sethos",
+  "element": "Electro",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 820.6119,
+      "atk": 19.0546,
+      "def": 46.9245
     },
-    "talents": {
-      "books": [
-        "Teachings of Praxis",
-        "Guide to Praxis",
-        "Philosophies of Praxis"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "weekly_boss": [
-        "Daka's Bell"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9787.4236,
+      "atk": 227.265,
+      "def": 559.6677
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Королевское мастерство стрельбы",
+      "description_ru": "Обычная атака:\nДо трёх последовательных выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается силой Электро. Эффект зависит от длительности заряда стрелы:\n· Уровень заряда 1: Выпускает стрелу, наполненную силой молнии, которая наносит Электро урон.\n· Уровень заряда 2: Выпускает Пронзающий тени выстрел, который пронзает цели и наносит Электро урон врагам на своём пути. Когда Пронзающий тени выстрел полностью заряжен, Сетос не сможет передвигаться.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Древний обряд: Громогласный рёв песка",
+      "description_ru": "Собрав мощь грома, наносит Электро урон по площади и стремительно отступает. Если данная атака активирует реакции Заряжен, Лунный заряд, Сверхпроводник, Перегрузка, Стимуляция, Обострение, Вегетация или Электро Рассеивание, Сетос восстанавливает некоторое количество энергии."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Тайный ритуал: Сумеречный пронзитель теней",
+      "description_ru": "Выполняет тайный ритуал и входит в состояние Сумрачной медитации. В этом состоянии обычные атаки Сетоса превращаются в пронзающие врагов Болты сумрака: они наносят Электро урон врагам на пути, а их урон увеличивается пропорционально мастерству стихий Сетоса.\nВо время действия этого состояния Сетос не может выполнять прицельные выстрелы.\nУрон Болтов сумрака считается уроном заряженной атаки.\nЭффект исчезает, когда Сетос покидает поле боя."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Загадка чёрного коршуна",
+      "description_ru": "Длительность заряда во время прицеливания сокращается на 0,285 сек. за каждую единицу текущей энергии Сетоса. Длительность заряда таким способом можно сократить максимум до 0,3 сек., причём засчитывается до 20 единиц энергии. При этом Пронзающий тени выстрел расходует засчитанное количество энергии, тогда как выстрел уровня заряда 1 расходует 50% от засчитанного количества энергии."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Милость короля песков",
+      "description_ru": "Сетос получает эффект Тени палящих песков: урон Пронзающих тени выстрелов повышается на 700% от его мастерства стихий.\nЭффект Тени палящих песков исчезает при следующих условиях:\n· Через 5 сек после того, как Пронзающий тени выстрел впервые поражает противника.\n· После того как 4 Пронзающих тени выстрела поражают противников.\n\nЧерез 15 сек. после того, как Пронзающий тени выстрел во время действия Тени палящих песков впервые поражает противника, Сетос вновь получает эффект Тени палящих песков."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Откровение Тота",
+      "description_ru": "Отмечает диковинки Сумеру на мини-карте."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Песнопения запечатанного святилища",
+      "description_ru": "Шанс крит. попадания Пронзающего тени выстрела увеличивается на 15%."
+    },
+    {
+      "name_ru": "Папирус безмолвных тайн",
+      "description_ru": "Выполняя любое из следующих условий, Сетос на 10 сек. получает 15% бонус Электро урона, который может складываться до 2 раз (отсчёт времени каждого уровня происходит отдельно):\n· Расходуя энергию посредством прицельных выстрелов. Требуется разблокировать талант возвышения Загадка чёрного коршуна.\n· Восстанавливая энергию элементальными реакциями, вызванными с помощью навыка Древний обряд: Громогласный рёв песка.\n· Активируя навык Тайный ритуал: Сумеречный пронзитель теней."
+    },
+    {
+      "name_ru": "Ода мудреца восходящей луны",
+      "description_ru": "Увеличивает уровень навыка Королевское мастерство стрельбы на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Коллекция благожелательных перьев",
+      "description_ru": "Когда Пронзающий тени выстрел или Болт сумрака поражает 2 и более противников, все члены отряда поблизости на 10 сек. получают 80 ед. мастерства стихий."
+    },
+    {
+      "name_ru": "Хроники божества пылающих песков",
+      "description_ru": "Увеличивает уровень навыка Тайный ритуал: Сумеречный пронзитель теней на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Книга храма Блуждающего солнца",
+      "description_ru": "После попадания Пронзающего тени выстрела по врагу энергия, израсходованная талантом возвышения Загадка чёрного коршуна, будет возвращена. Этот эффект может возникнуть не чаще одного раза в 15 сек. Требуется разблокировать талант возвышения Загадка чёрного коршуна."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,0 +1,11 @@
+{
+  "id": "snowstrider",
+  "kind": "fish",
+  "name_ru": "Снежный странник",
+  "name_en": "Snowstrider",
+  "bait_id": "redrot-bait",
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,17 @@
 {
   "id": "saurian-claw-succulent",
+  "name_ru": "Лапа завриана",
   "name_en": "Saurian Claw Succulent",
-  "type": "Local Specialty (Natlan)",
-  "days": [],
-  "source": [
-    "Found in Natlan"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Натлана",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Серные жилы",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Saurian_Claw_Succulent"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

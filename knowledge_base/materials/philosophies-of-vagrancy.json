@@ -1,14 +1,21 @@
 {
   "id": "philosophies-of-vagrancy",
+  "name_ru": "Философия о «Скитании»",
   "name_en": "Philosophies of Vagrancy",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Lightless Capital (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Philosophies_of_Vagrancy"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-overturned-roost-iv"
+  ],
+  "source_domain": "domain-of-mastery-overturned-roost-iv",
+  "coordinates": []
 }

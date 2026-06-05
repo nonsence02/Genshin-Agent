@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-unyielding-iv",
+  "name_ru": "Подземелье благословения: Неподвижный IV",
+  "name_en": "Domain of Blessing: Unyielding IV",
+  "type": "Артефакты",
+  "region": "Мондштадт",
+  "days_of_week": [],
+  "rewards": [
+    "tenacity-of-the-millelith",
+    "pale-flame",
+    "brave-heart",
+    "martial-artist"
+  ],
+  "coordinates": []
+}

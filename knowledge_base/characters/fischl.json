@@ -1,94 +1,81 @@
 {
   "id": "fischl",
-  "name": "Fischl",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fischl",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Summons Oz. The night raven forged of darkness and lightning descends upon the land, dealing Electro DMG in a small AoE. For the ability's duration, Oz will continuously attack nearby opponents with Freikugel. Hold to adjust the location Oz will be summoned to. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) again any time during the ability's duration to once again summon him to Fischl's side. Oz attacks at -second intervals. When each of Oz's attacks hits at least one enemy, it generates Elemental Particles. The cooldown starts immediately after the first input. As a result, cooldown reduction effects that shorten ongoing cooldowns, such as the...",
-    "elemental_burst": "Summons Oz to spread his twin wings of twilight and defend Fischl. Has the following properties during the ability's duration: Fischl takes on Oz's form, greatly increasing her Movement Speed. Strikes nearby opponents with lightning, dealing Electro DMG to opponents she comes into contact with. Each opponent can only be struck once. Once this ability's effects end, Oz will remain on the battlefield and attack his Prinzessin's foes. If Oz is already on the field, then this will reset the duration of his presence. Upon casting this skill, Fischl takes on Oz's form for a short duration. She has Invincibility Frames only during the very brief casting period. While Fischl is in Oz's form, Fischl..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Firm Arrowhead",
-        "Sharp Arrowhead",
-        "Weathered Arrowhead"
-      ],
-      "special": [
-        "Small Lamp Grass",
-        "Lightning Prism"
-      ]
+  "name_ru": "Фишль",
+  "name_en": "Fischl",
+  "element": "Electro",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 770.4634,
+      "atk": 20.4792,
+      "def": 49.7858
     },
-    "talents": {
-      "books": [
-        "Teachings of Ballad",
-        "Guide to Ballad",
-        "Philosophies of Ballad"
-      ],
-      "mob_drops": [
-        "Firm Arrowhead",
-        "Sharp Arrowhead",
-        "Weathered Arrowhead"
-      ],
-      "weekly_boss": [
-        "Spirit Locket of Boreas"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9189.3029,
+      "atk": 244.2568,
+      "def": 593.7937
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Стрела возмездия",
+      "description_ru": "Обычная атака:\nДо пяти выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается тьмой Нирваны Ночи. Полностью заряженная тьмой стрела наносит огромный Электро урон.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Тень расправленных крыльев",
+      "description_ru": "Призывает Оза. Ночной ворон, сотканный из тьмы и молнии, спускается на землю и наносит Электро урон в небольшом радиусе.\nПока навык активен, Оз будет атаковать ближайших врагов Электро снарядами.\n\nУдерживайте, чтобы указать место, куда будет призван Оз.\nПока навык активен, нажмите снова, чтобы подозвать его к Фишль."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Ночная иллюзия",
+      "description_ru": "Приказывает ворону Озу расправить свои сумеречные крылья и встать на защиту Фишль.\nПока навык активен:\n· Фишль принимает форму Оза, значительно увеличивающую её скорость передвижения;\n· Обрушивает на ближайших врагов молнию, наносящую Электро урон. Каждый противник может получить только один удар молнией;\n· После окончания навыка Оз остаётся на поле боя, продолжая атаковать врагов принцессы. Если Оз уже был на поле боя, этот навык сбрасывает длительность его присутствия."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Ворон, клюющий звёзды",
+      "description_ru": "При попадании по Озу полностью заряженной стрелой Фишль, он создаёт грозу, наносящую Электро урон по площади, равный 152,7% от урона стрелы."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Да будет снято проклятье",
+      "description_ru": "Если в присутствии Оза во время атаки ваш персонаж вызывает какую-либо Электро реакцию, на противника нисходит божественная молния, которая наносит Электро урон, равный 80% от силы атаки Фишль."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Мой тайный сад",
+      "description_ru": "Уменьшает длительность экспедиций в Мондштадте на 25%."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Глаза ворона",
+      "description_ru": "Будучи вне битвы, Оз продолжает присматривать за Фишль. Когда Фишль атакует врага, Оз проводит совместную с ней атаку, нанося 22% урона от силы атаки Фишль."
+    },
+    {
+      "name_ru": "Перо осуждения",
+      "description_ru": "Активация навыка Тень расправленных крыльев наносит 200% урона, а его зона поражения увеличивается на 50%."
+    },
+    {
+      "name_ru": "Крылья цвета бездны",
+      "description_ru": "Увеличивает уровень навыка Тень расправленных крыльев на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Принцесса иллюзий",
+      "description_ru": "При активации навыка Ночная иллюзия наносит 222% атаки в виде Электро урона окружающим врагам.\nПо окончании навыка Фишль восстанавливает 20% HP."
+    },
+    {
+      "name_ru": "Полуночный апокалипсис",
+      "description_ru": "Увеличивает уровень навыка Ночная иллюзия на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Птица вечной ночи",
+      "description_ru": "Увеличивает длительность пребывания Оза на поле боя на 2 сек. Оз атакует вместе с вашим активным персонажем, нанося Электро урон, равный 30% от силы атаки Фишль."
+    }
+  ],
+  "coordinates": []
 }

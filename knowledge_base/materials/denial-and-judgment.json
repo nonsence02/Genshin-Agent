@@ -1,10 +1,18 @@
 {
   "id": "denial-and-judgment",
+  "name_ru": "Отрицание и вердикт",
   "name_en": "Denial and Judgment",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ The Knave Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Слуга Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Denial_and_Judgment"
+  "dropped_by": [
+    "the-knave"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

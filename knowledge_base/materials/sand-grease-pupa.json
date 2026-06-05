@@ -1,10 +1,17 @@
 {
   "id": "sand-grease-pupa",
+  "name_ru": "Личинка песчаного жировика",
   "name_en": "Sand Grease Pupa",
-  "type": "Local Specialty (Sumeru)",
-  "days": [],
-  "source": [
-    "Found in the deserts of Sumeru"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Сумеру",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пустыня Сумеру",
+    "Тоннели унутов",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sand_Grease_Pupa"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

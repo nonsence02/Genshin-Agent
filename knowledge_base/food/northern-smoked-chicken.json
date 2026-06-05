@@ -1,0 +1,23 @@
+{
+  "id": "northern-smoked-chicken",
+  "name_ru": "Копчёный цыплёночек",
+  "name_en": "Northern Smoked Chicken",
+  "rarity": 2,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 60 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "smoked-fowl",
+      "count": 1
+    },
+    {
+      "material_id": "onion",
+      "count": 1
+    },
+    {
+      "material_id": "cabbage",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

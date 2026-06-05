@@ -1,0 +1,27 @@
+{
+  "id": "the-endeavor",
+  "name_ru": "Амбициозный проект",
+  "name_en": "The Endeavor",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 15% от макс. HP + 550 HP.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "glabrous-beans",
+      "count": 2
+    },
+    {
+      "material_id": "milk",
+      "count": 2
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "refreshing-lakka-bait",
+  "kind": "bait",
+  "name_ru": "Наживка из ягод лакка",
+  "name_en": "Refreshing Lakka Bait",
+  "recipe": [
+    {
+      "material_id": "lakkaberry",
+      "count": 1
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

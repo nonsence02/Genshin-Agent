@@ -1,0 +1,10 @@
+{
+  "id": "retracing-bolide",
+  "name_ru": "Встречная комета",
+  "name_en": "Retracing Bolide",
+  "max_rarity": 5,
+  "bonus_2pc": "Увеличивает прочность щита на 35%.",
+  "bonus_4pc": "Под защитой щита увеличивает урон обычной и заряженной атаки на 40%.",
+  "source_domain": "domain-of-blessing-spring-iii",
+  "coordinates": []
+}

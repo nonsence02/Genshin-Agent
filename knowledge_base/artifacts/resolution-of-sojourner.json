@@ -1,0 +1,10 @@
+{
+  "id": "resolution-of-sojourner",
+  "name_ru": "Решимость временщика",
+  "name_en": "Resolution of Sojourner",
+  "max_rarity": 4,
+  "bonus_2pc": "Увеличивает силу атаки на 18%.",
+  "bonus_4pc": "Увеличивает шанс крит. попадания заряженной атаки на 30%.",
+  "source_domain": "domain-of-blessing-autumn-hunt-i",
+  "coordinates": []
+}

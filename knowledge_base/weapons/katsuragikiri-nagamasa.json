@@ -1,48 +1,80 @@
 {
   "id": "katsuragikiri-nagamasa",
-  "name": "Katsuragikiri Nagamasa",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Katsuragikiri_Nagamasa",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Increases Elemental Skill DMG by. After Elemental Skill hits an opponent, the character loses Energy but regenerates Energy every for the next. This can occur once every. Can be triggered even when the character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Narukami's Wisdom",
-        "Chaos Gear",
-        "Old Handguard",
-        "Narukami's Joy",
-        "Chaos Axis",
-        "Kageuchi Handguard",
-        "Narukami's Affection",
-        "Chaos Oculus",
-        "Famed Handguard",
-        "Narukami's Valor"
-      ]
+  "name_ru": "Кацурагикири Нагамаса",
+  "name_en": "Katsuragikiri Nagamasa",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.4594
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Мастерство самурая",
+  "passive_description_ru": "Увеличивает урон элементального навыка на 6%. Когда элементальный навык поражает противника, персонаж теряет 3 единицы энергии, но восстанавливает 3 единицы энергии каждые 2 сек. в течение следующих 6 сек. Эффект может возникнуть один раз в 10 сек. Эффект может сработать, даже когда персонаж не находится на поле.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "narukamis-wisdom",
+        "name_ru": "Мудрость Наруками",
+        "name_en": "Narukami's Wisdom"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "narukamis-joy",
+        "name_ru": "Радость Наруками",
+        "name_en": "Narukami's Joy"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "narukamis-affection",
+        "name_ru": "Милость Наруками",
+        "name_en": "Narukami's Affection"
+      },
+      {
+        "id": "narukamis-valor",
+        "name_ru": "Доблесть Наруками",
+        "name_en": "Narukami's Valor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-gear",
+        "name_ru": "Механизм хаоса",
+        "name_en": "Chaos Gear"
+      },
+      {
+        "id": "chaos-axis",
+        "name_ru": "Ось хаоса",
+        "name_en": "Chaos Axis"
+      },
+      {
+        "id": "chaos-oculus",
+        "name_ru": "Око хаоса",
+        "name_en": "Chaos Oculus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

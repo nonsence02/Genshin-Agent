@@ -1,0 +1,13 @@
+{
+  "id": "koholasaurus",
+  "name_ru": "Кохолазавр",
+  "name_en": "Koholasaurus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "tyrants-fang",
+    "seasoned-fang",
+    "juvenile-fang"
+  ],
+  "coordinates": []
+}

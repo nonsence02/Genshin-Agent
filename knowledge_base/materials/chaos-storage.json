@@ -1,10 +1,19 @@
 {
   "id": "chaos-storage",
+  "name_ru": "Сосуд хаоса",
   "name_en": "Chaos Storage",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Ruin Drakes"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Драконы руин",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Chaos_Storage"
+  "dropped_by": [
+    "ruin-drake-earthguard",
+    "ruin-drake-skywatch"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

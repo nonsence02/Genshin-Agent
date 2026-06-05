@@ -1,14 +1,21 @@
 {
   "id": "philosophies-of-diligence",
+  "name_ru": "Философия об «Усердии»",
   "name_en": "Philosophies of Diligence",
-  "type": "Character Talent Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Taishan Mansion (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Philosophies_of_Diligence"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-heart-of-the-flames-iv"
+  ],
+  "source_domain": "domain-of-mastery-heart-of-the-flames-iv",
+  "coordinates": []
 }

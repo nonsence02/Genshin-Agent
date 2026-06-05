@@ -1,0 +1,27 @@
+{
+  "id": "once-upon-a-time-in-mondstadt",
+  "name_ru": "«Однажды в Мондштадте»",
+  "name_en": "\"Once Upon a Time in Mondstadt\"",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания и крит. урон всех членов отряда на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "potato",
+      "count": 3
+    },
+    {
+      "material_id": "small-lamp-grass",
+      "count": 1
+    },
+    {
+      "material_id": "cheese",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "domain-of-forgery-lunar-oblation-iv",
+  "name_ru": "Подземелье воли: Жертвоприношение луне IV",
+  "name_en": "Domain of Forgery: Lunar Oblation IV",
+  "type": "Возвышение оружия",
+  "region": "Нод-Край",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "aureate-radiance-of-the-far-north-scions",
+    "oblation-of-the-far-north-scions",
+    "unyielding-delusion-of-the-far-north-scions",
+    "sundered-glory-of-the-far-north-scions"
+  ],
+  "coordinates": []
+}

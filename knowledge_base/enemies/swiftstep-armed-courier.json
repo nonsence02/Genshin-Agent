@@ -1,0 +1,13 @@
+{
+  "id": "swiftstep-armed-courier",
+  "name_ru": "Стремительный воин: Вооружённый курьер",
+  "name_en": "Swiftstep Armed Courier",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

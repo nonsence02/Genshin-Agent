@@ -1,0 +1,15 @@
+{
+  "id": "dust-of-azoth",
+  "name_ru": "Пыль Азота",
+  "name_en": "Dust of Azoth",
+  "type": "consume",
+  "type_text_ru": "Расходный предмет",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Покупается за Звёздную пыль"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

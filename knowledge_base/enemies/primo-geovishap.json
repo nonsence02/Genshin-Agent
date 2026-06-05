@@ -1,0 +1,31 @@
+{
+  "id": "primo-geovishap",
+  "name_ru": "Древний геовишап",
+  "name_en": "Primo Geovishap",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "juvenile-jade",
+    "prithiva-topaz-gemstone",
+    "prithiva-topaz-chunk",
+    "prithiva-topaz-fragment",
+    "prithiva-topaz-sliver",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver"
+  ],
+  "coordinates": []
+}

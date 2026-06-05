@@ -1,10 +1,38 @@
 {
   "id": "vajrada-amethyst-fragment",
+  "name_ru": "Фрагмент аметиста Ваджрада",
   "name_en": "Vajrada Amethyst Fragment",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses and Weekly Bosses (Lv. 40+)"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Vajrada_Amethyst_Fragment"
+  "dropped_by": [
+    "azhdaha",
+    "bolteater-bathysmal-vishap",
+    "childe",
+    "electro-hypostasis",
+    "electro-regisvine",
+    "il-dottore",
+    "iniquitous-baptist",
+    "knuckle-duckle",
+    "lord-of-the-hidden-depths-whisperer-of-nightmares",
+    "magatsu-mitake-narukami-no-mikoto",
+    "millennial-pearl-seahorse",
+    "primo-geovishap",
+    "rimebiter-bathysmal-vishap",
+    "secret-source-automaton-configuration-device",
+    "shouki-no-kami-the-prodigal",
+    "stormterror",
+    "tenebrous-papilla-type-i",
+    "the-doctor",
+    "the-game-before-the-gate",
+    "thunder-manifestation"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

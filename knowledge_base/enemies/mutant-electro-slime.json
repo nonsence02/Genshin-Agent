@@ -1,0 +1,13 @@
+{
+  "id": "mutant-electro-slime",
+  "name_ru": "Электро слайм-мутант",
+  "name_en": "Mutant Electro Slime",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "slime-concentrate",
+    "slime-secretions",
+    "slime-condensate"
+  ],
+  "coordinates": []
+}

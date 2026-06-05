@@ -1,10 +1,15 @@
 {
   "id": "brilliant-diamond-fragment",
+  "name_ru": "Фрагмент бриллианта",
   "name_en": "Brilliant Diamond Fragment",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Adventure Rank 25 Reward (×3)"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Награда Ранга приключений"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Brilliant_Diamond_Fragment"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

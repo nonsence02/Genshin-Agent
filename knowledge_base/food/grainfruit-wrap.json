@@ -1,0 +1,19 @@
+{
+  "id": "grainfruit-wrap",
+  "name_ru": "Злакофруктовый конвертик",
+  "name_en": "Grainfruit Wrap",
+  "rarity": 2,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 126 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "grainfruit",
+      "count": 2
+    },
+    {
+      "material_id": "fowl",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

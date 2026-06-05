@@ -1,0 +1,13 @@
+{
+  "id": "xuanwen-beast",
+  "name_ru": "Зверь Сюаньвэнь",
+  "name_en": "Xuanwen Beast",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "chasmlight-fin",
+    "lunar-fin",
+    "feathery-fin"
+  ],
+  "coordinates": []
+}

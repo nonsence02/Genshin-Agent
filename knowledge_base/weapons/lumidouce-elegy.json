@@ -1,48 +1,80 @@
 {
   "id": "lumidouce-elegy",
-  "name": "Lumidouce Elegy",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lumidouce_Elegy",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "ATK increased by. After the equipping character triggers Burning on an opponent or deals Dendro DMG to Burning opponents, the DMG dealt is increased by. This lasts for, max stacks. When stacks are reached or when the duration is refreshed at stacks, restore Energy. Energy can be restored this way once every. The aforementioned effects can be triggered even when the character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Broken Goblet of the Pristine Sea",
-        "Ruined Hilt",
-        "Whopperflower Nectar",
-        "Wine Goblet of the Pristine Sea",
-        "Splintered Hilt",
-        "Shimmering Nectar",
-        "Silver Goblet of the Pristine Sea",
-        "Still-Smoldering Hilt",
-        "Energy Nectar",
-        "Golden Goblet of the Pristine Sea"
-      ]
+  "name_ru": "Элегия Люмидус",
+  "name_en": "Lumidouce Elegy",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.072
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.3308
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Увертюра яркого рассвета",
+  "passive_description_ru": "Увеличивает силу атаки на 15%. Когда экипированный персонаж активирует на враге Горение или наносит противникам со статусом Горение Дендро урон, наносимый урон увеличивается на 18%. Этот эффект длится 8 сек. и складывается до 2 раз. После получения 2 уровней или обновления длительности с 2 уровнями восстанавливает 12 ед. энергии. Восстанавливать энергию таким образом можно 1 раз в 12 сек. Эти 2 эффекта срабатывают, даже когда персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "broken-goblet-of-the-pristine-sea",
+        "name_ru": "Разбитая чаша непорочного моря",
+        "name_en": "Broken Goblet of the Pristine Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "wine-goblet-of-the-pristine-sea",
+        "name_ru": "Чаша непорочного моря",
+        "name_en": "Wine Goblet of the Pristine Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-goblet-of-the-pristine-sea",
+        "name_ru": "Серебряный кубок непорочного моря",
+        "name_en": "Silver Goblet of the Pristine Sea"
+      },
+      {
+        "id": "golden-goblet-of-the-pristine-sea",
+        "name_ru": "Золотой кубок непорочного моря",
+        "name_en": "Golden Goblet of the Pristine Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "ruined-hilt",
+        "name_ru": "Сломанный эфес",
+        "name_en": "Ruined Hilt"
+      },
+      {
+        "id": "splintered-hilt",
+        "name_ru": "Расщеплённый эфес",
+        "name_en": "Splintered Hilt"
+      },
+      {
+        "id": "still-smoldering-hilt",
+        "name_ru": "Неугасающий эфес",
+        "name_en": "Still-Smoldering Hilt"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

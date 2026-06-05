@@ -1,45 +1,80 @@
 {
   "id": "portable-power-saw",
-  "name": "Portable Power Saw",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Portable_Power_Saw",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "HP"
-  },
-  "passive": "When the wielder is healed or heals others, they will gain a Stoic's Symbol that lasts, up to a maximum of Symbols. When using their Elemental Skill or Burst, all Symbols will be consumed and the Roused will be granted for. For each Symbol consumed, gain Elemental Mastery, and after the occurs, Energy per Symbol consumed will be restored for said character. The Roused can be triggered once every, and Symbols can be gained even when the character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Broken Goblet of the Pristine Sea",
-        "Meshing Gear",
-        "Wine Goblet of the Pristine Sea",
-        "Mechanical Spur Gear",
-        "Silver Goblet of the Pristine Sea",
-        "Artificed Dynamic Gear",
-        "Golden Goblet of the Pristine Sea"
-      ]
+  "name_ru": "Переносная мотопила",
+  "name_en": "Portable Power Saw",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.12
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.5513
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Матросская песня",
+  "passive_description_ru": "Когда экипированный персонаж лечит или получает лечение, он на 30 сек. наделяется Символом стойкости. Всего можно получить до 3 Символов. При активации элементального навыка или взрыва стихии все Символы расходуются и на 10 сек. создаётся эффект Воодушевления: за каждый израсходованный Символ мастерство стихий повышается на 40 ед., а через 2 сек. после активации эффекта каждый израсходованный Символ восстанавливает 2 ед. энергии. Эффект Воодушевления может возникнуть один раз в 15 сек. Персонаж получает Символы стойкости, даже если он не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "broken-goblet-of-the-pristine-sea",
+        "name_ru": "Разбитая чаша непорочного моря",
+        "name_en": "Broken Goblet of the Pristine Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "wine-goblet-of-the-pristine-sea",
+        "name_ru": "Чаша непорочного моря",
+        "name_en": "Wine Goblet of the Pristine Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-goblet-of-the-pristine-sea",
+        "name_ru": "Серебряный кубок непорочного моря",
+        "name_en": "Silver Goblet of the Pristine Sea"
+      },
+      {
+        "id": "golden-goblet-of-the-pristine-sea",
+        "name_ru": "Золотой кубок непорочного моря",
+        "name_en": "Golden Goblet of the Pristine Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "rift-core",
+        "name_ru": "Ядро расщелины",
+        "name_en": "Rift Core"
+      },
+      {
+        "id": "foreign-synapse",
+        "name_ru": "Иноземный обломок",
+        "name_en": "Foreign Synapse"
+      },
+      {
+        "id": "alien-life-core",
+        "name_ru": "Чужеродное ядро",
+        "name_en": "Alien Life Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "meshing-gear",
+        "name_ru": "Сцепляющаяся шестерня",
+        "name_en": "Meshing Gear"
+      },
+      {
+        "id": "mechanical-spur-gear",
+        "name_ru": "Шестерня механизма",
+        "name_en": "Mechanical Spur Gear"
+      },
+      {
+        "id": "artificed-dynamic-gear",
+        "name_ru": "Изощрённая динамическая шестерня",
+        "name_en": "Artificed Dynamic Gear"
+      }
+    ]
+  },
+  "coordinates": []
 }

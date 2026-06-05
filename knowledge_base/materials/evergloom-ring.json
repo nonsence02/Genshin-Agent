@@ -1,10 +1,17 @@
 {
   "id": "evergloom-ring",
+  "name_ru": "Кольцо вечного мрака",
   "name_en": "Evergloom Ring",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Iniquitous Baptist"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Чудовищные крестители Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Evergloom_Ring"
+  "dropped_by": [
+    "iniquitous-baptist"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

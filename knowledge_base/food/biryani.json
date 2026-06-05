@@ -1,0 +1,27 @@
+{
+  "id": "biryani",
+  "name_ru": "Бирьяни",
+  "name_en": "Biryani",
+  "rarity": 4,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 308 ед. и эффективность лечения на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "rice",
+      "count": 4
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "spice",
+      "count": 2
+    },
+    {
+      "material_id": "padisarah",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

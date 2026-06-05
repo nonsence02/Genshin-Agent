@@ -1,0 +1,13 @@
+{
+  "id": "suppression-specialist-mek",
+  "name_ru": "Спецмек: Подавление",
+  "name_en": "Suppression Specialist Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-forsaken-rampart-iv",
+  "name_ru": "Подземелье благословения: Заброшенная твердыня IV",
+  "name_en": "Domain of Blessing: Forsaken Rampart IV",
+  "type": "Артефакты",
+  "region": "Сумеру",
+  "days_of_week": [],
+  "rewards": [
+    "nymphs-dream",
+    "vourukashas-glow",
+    "martial-artist",
+    "shackles-of-the-dandelion-gladiator"
+  ],
+  "coordinates": []
+}

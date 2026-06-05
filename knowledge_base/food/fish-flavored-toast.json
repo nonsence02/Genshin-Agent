@@ -1,0 +1,27 @@
+{
+  "id": "fish-flavored-toast",
+  "name_ru": "Рыбный бутерброд",
+  "name_en": "Fish-Flavored Toast",
+  "rarity": 2,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 151 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "tomato",
+      "count": 2
+    },
+    {
+      "material_id": "onion",
+      "count": 1
+    },
+    {
+      "material_id": "milk",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

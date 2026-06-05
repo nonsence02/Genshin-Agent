@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-harmony-i",
+  "name_ru": "Подземелье благословения: Гармония I",
+  "name_en": "Domain of Blessing: Harmony I",
+  "type": "Артефакты",
+  "region": "Фонтейн",
+  "days_of_week": [],
+  "rewards": [
+    "marechaussee-hunter",
+    "golden-troupe",
+    "resolution-of-sojourner",
+    "defenders-will"
+  ],
+  "coordinates": []
+}

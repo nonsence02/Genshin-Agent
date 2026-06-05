@@ -1,0 +1,15 @@
+{
+  "id": "anemo-hypostasis",
+  "name_ru": "Анемо гипостазис",
+  "name_en": "Anemo Hypostasis",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "hurricane-seed",
+    "vayuda-turquoise-gemstone",
+    "vayuda-turquoise-chunk",
+    "vayuda-turquoise-fragment",
+    "vayuda-turquoise-sliver"
+  ],
+  "coordinates": []
+}

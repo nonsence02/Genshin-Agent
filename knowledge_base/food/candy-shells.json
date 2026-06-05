@@ -1,0 +1,27 @@
+{
+  "id": "candy-shells",
+  "name_ru": "Конфеты «Ракушки»",
+  "name_en": "Candy Shells",
+  "rarity": 4,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 35% и защиту на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "tidalga",
+      "count": 3
+    },
+    {
+      "material_id": "bulle-fruit",
+      "count": 3
+    },
+    {
+      "material_id": "mint",
+      "count": 3
+    },
+    {
+      "material_id": "sugar",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

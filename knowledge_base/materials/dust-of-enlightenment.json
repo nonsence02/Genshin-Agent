@@ -1,0 +1,19 @@
+{
+  "id": "dust-of-enlightenment",
+  "name_ru": "Пыль просветления",
+  "name_en": "Dust of Enlightenment",
+  "type": "consume",
+  "type_text_ru": "Расходный предмет",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Награда натиска «Мрачный натиск»",
+    "Награда испытания «Мрачный натиск»",
+    "Долгий путь совершенства",
+    "Скрытые сокровища куухенки Нод-Края",
+    "Жемчужный гимн и Жемчужный хор"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

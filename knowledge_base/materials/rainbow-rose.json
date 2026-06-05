@@ -1,10 +1,17 @@
 {
   "id": "rainbow-rose",
+  "name_ru": "Радужная роза",
   "name_en": "Rainbow Rose",
-  "type": "Local Specialty (Fontaine)",
-  "days": [],
-  "source": [
-    "Found in the wilds of Beryl Region and surrounding the Fountain of Lucine"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Фонтейна",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Район Берилл",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Rainbow_Rose"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

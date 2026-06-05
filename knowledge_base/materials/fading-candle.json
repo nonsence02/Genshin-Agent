@@ -1,10 +1,18 @@
 {
   "id": "fading-candle",
+  "name_ru": "Угасающая свеча",
   "name_en": "Fading Candle",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ The Knave Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Слуга Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fading_Candle"
+  "dropped_by": [
+    "the-knave"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

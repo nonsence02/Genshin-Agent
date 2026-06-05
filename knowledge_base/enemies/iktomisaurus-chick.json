@@ -1,0 +1,13 @@
+{
+  "id": "iktomisaurus-chick",
+  "name_ru": "Детёныш иктомизавра",
+  "name_en": "Iktomisaurus Chick",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "tyrants-fang",
+    "seasoned-fang",
+    "juvenile-fang"
+  ],
+  "coordinates": []
+}

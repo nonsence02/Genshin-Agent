@@ -1,0 +1,15 @@
+{
+  "id": "raw-meat",
+  "name_ru": "Сырое мясо",
+  "name_en": "Raw Meat",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Животные"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

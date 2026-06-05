@@ -1,48 +1,80 @@
 {
   "id": "sunny-morning-sleep-in",
-  "name": "Sunny Morning Sleep-In",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sunny_Morning_Sleep-In",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Elemental Mastery increases by for after triggering Swirl. Elemental Mastery increases by for after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by for after the wielder's Elemental Burst hits an opponent.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Narukami's Wisdom",
-        "Ignited Stone",
-        "Spectral Husk",
-        "Narukami's Joy",
-        "Ignited Seed of Life",
-        "Spectral Heart",
-        "Narukami's Affection",
-        "Ignited Seeing Eye",
-        "Spectral Nucleus",
-        "Narukami's Valor"
-      ]
+  "name_ru": "Сон солнечным утром",
+  "name_en": "Sunny Morning Sleep-In",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 57.6
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 264.6144
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Бани, ястребы и Наруками",
+  "passive_description_ru": "На 6 сек. после активации Рассеивания повышает мастерство стихий на 120 ед. На 9 сек. после попадания элементального навыка по противнику повышает мастерство стихий на 96 ед. На 30 сек. после попадания взрыва стихии по противнику повышает мастерство стихий на 32 ед.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "narukamis-wisdom",
+        "name_ru": "Мудрость Наруками",
+        "name_en": "Narukami's Wisdom"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "narukamis-joy",
+        "name_ru": "Радость Наруками",
+        "name_en": "Narukami's Joy"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "narukamis-affection",
+        "name_ru": "Милость Наруками",
+        "name_en": "Narukami's Affection"
+      },
+      {
+        "id": "narukamis-valor",
+        "name_ru": "Доблесть Наруками",
+        "name_en": "Narukami's Valor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "ignited-stone",
+        "name_ru": "Пламенный камень",
+        "name_en": "Ignited Stone"
+      },
+      {
+        "id": "ignited-seed-of-life",
+        "name_ru": "Пламенное семя жизни",
+        "name_en": "Ignited Seed of Life"
+      },
+      {
+        "id": "ignited-seeing-eye",
+        "name_ru": "Пламенное око",
+        "name_en": "Ignited Seeing Eye"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

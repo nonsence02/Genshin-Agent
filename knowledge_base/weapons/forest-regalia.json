@@ -1,44 +1,80 @@
 {
   "id": "forest-regalia",
-  "name": "Forest Regalia",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Forest_Regalia",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Lunar-Bloom, Hyperbloom, or Burgeon, a Leaf of Consciousness will be created around the character for a maximum of. When picked up, the Leaf will grant the character Elemental Mastery for. Only Leaf can be generated this way every. This can still be triggered if the character is not on the field. The Leaf of Consciousness' cannot stack.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Chaos Storage",
-        "Faded Red Satin",
-        "Chaos Module",
-        "Trimmed Red Silk",
-        "Chaos Bolt",
-        "Rich Red Brocade"
-      ]
+  "name_ru": "Регалия леса",
+  "name_en": "Forest Regalia",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.0667
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3063
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Благословение чащи",
+  "passive_description_ru": "Активация реакций Горение, Стимуляция, Обострение, Разрастание, Бутонизация, Лунная бутонизация, Вегетация или Цветение создают рядом с персонажем Семя сознания, которое существует до 10 сек. Мастерство стихий подобравшего его персонажа повышается на 60 ед. на 12 сек. Семя сознания может возникнуть раз в 20 сек. Этот эффект срабатывает, даже если экипированный персонаж не на поле боя. Эффект Семени сознания не суммируется.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "copper-talisman-of-the-forest-dew",
+        "name_ru": "Медный амулет лесной росы",
+        "name_en": "Copper Talisman of the Forest Dew"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "iron-talisman-of-the-forest-dew",
+        "name_ru": "Железный амулет лесной росы",
+        "name_en": "Iron Talisman of the Forest Dew"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-talisman-of-the-forest-dew",
+        "name_ru": "Серебряный амулет лесной росы",
+        "name_en": "Silver Talisman of the Forest Dew"
+      },
+      {
+        "id": "golden-talisman-of-the-forest-dew",
+        "name_ru": "Золотой амулет лесной росы",
+        "name_en": "Golden Talisman of the Forest Dew"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-storage",
+        "name_ru": "Сосуд хаоса",
+        "name_en": "Chaos Storage"
+      },
+      {
+        "id": "chaos-module",
+        "name_ru": "Модуль хаоса",
+        "name_en": "Chaos Module"
+      },
+      {
+        "id": "chaos-bolt",
+        "name_ru": "Анкер хаоса",
+        "name_en": "Chaos Bolt"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "faded-red-satin",
+        "name_ru": "Выцветший красный шёлк",
+        "name_en": "Faded Red Satin"
+      },
+      {
+        "id": "trimmed-red-silk",
+        "name_ru": "Окаймлённый красный шёлк",
+        "name_en": "Trimmed Red Silk"
+      },
+      {
+        "id": "rich-red-brocade",
+        "name_ru": "Златотканый красный шёлк",
+        "name_en": "Rich Red Brocade"
+      }
+    ]
+  },
+  "coordinates": []
 }

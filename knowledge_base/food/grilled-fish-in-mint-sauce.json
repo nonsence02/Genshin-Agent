@@ -1,0 +1,19 @@
+{
+  "id": "grilled-fish-in-mint-sauce",
+  "name_ru": "Жареная рыба в мятном соусе",
+  "name_en": "Grilled Fish in Mint Sauce",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 1
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

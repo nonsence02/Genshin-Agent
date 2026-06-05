@@ -1,10 +1,18 @@
 {
   "id": "hunters-sacrificial-knife",
+  "name_ru": "Церемониальный нож охотника",
   "name_en": "Hunter's Sacrificial Knife",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Fatui Pyro Agents"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Агенты Фатуи",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Hunter%27s_Sacrificial_Knife"
+  "dropped_by": [
+    "fatui-pyro-agent"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,10 +1,20 @@
 {
   "id": "operatives-standard-pocket-watch",
+  "name_ru": "Штатные карманные часы сенешаля",
   "name_en": "Operative's Standard Pocket Watch",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Crafted"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сенешали Фатуи Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Operative%27s_Standard_Pocket_Watch"
+  "dropped_by": [
+    "frost-operative",
+    "wind-operative"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

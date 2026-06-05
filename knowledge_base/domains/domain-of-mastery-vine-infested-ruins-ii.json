@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-vine-infested-ruins-ii",
+  "name_ru": "Мастерство: Руины Кудзу II",
+  "name_en": "Domain of Mastery: Vine-Infested Ruins II",
+  "type": "Повышение талантов",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-light",
+    "teachings-of-light"
+  ],
+  "coordinates": []
+}

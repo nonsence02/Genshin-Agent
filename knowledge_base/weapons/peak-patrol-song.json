@@ -1,48 +1,80 @@
 {
   "id": "peak-patrol-song",
-  "name": "Peak Patrol Song",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Peak_Patrol_Song",
-  "profile": {
-    "type": "Sword",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "DEF"
-  },
-  "passive": "Gain \"Ode to Flowers\" after Normal or Plunging Attacks hit an opponent: DEF increases by and gain a All Elemental DMG Bonus for. Max stacks. Can trigger once per. When this reaches stacks or the stack's duration is refreshed, increase all nearby party members' All Elemental DMG Bonus by for every DEF the equipping character has, up to a maximum of, for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Night-Wind's Mystic Consideration",
-        "Axis of the Secret Source",
-        "Juvenile Fang",
-        "Night-Wind's Mystic Premonition",
-        "Sheath of the Secret Source",
-        "Seasoned Fang",
-        "Night-Wind's Mystic Augury",
-        "Heart of the Secret Source",
-        "Tyrant's Fang",
-        "Night-Wind's Mystic Revelation"
-      ]
+  "name_ru": "Песнь патруля пиков",
+  "name_en": "Peak Patrol Song",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Защита",
+      "secondary_stat_value": 0.18
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Защита",
+      "secondary_stat_value": 0.8269
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Нескончаемая благодать",
+  "passive_description_ru": "Попадание по врагу обычной атакой или атакой в падении наделяет Одой цветам: она повышает защиту на 8% и даёт 10% бонус урона всеми элементами. Эффект длится 6 сек., складывается до 2 раз и возникает не чаще одного раза в 0,1 сек. Когда этот эффект достигает второго уровня или длительность второго уровня обновляется, за каждую 1000 ед. защиты экипированного персонажа бонус урона всеми элементами всех членов отряда поблизости увеличивается на 8% на 15 сек. Максимальное увеличение составляет 25,6%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "night-winds-mystic-consideration",
+        "name_ru": "Загадочные размышления ночного ветра",
+        "name_en": "Night-Wind's Mystic Consideration"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "night-winds-mystic-premonition",
+        "name_ru": "Загадочные предчувствия ночного ветра",
+        "name_en": "Night-Wind's Mystic Premonition"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "night-winds-mystic-augury",
+        "name_ru": "Загадочные предзнаменования ночного ветра",
+        "name_en": "Night-Wind's Mystic Augury"
+      },
+      {
+        "id": "night-winds-mystic-revelation",
+        "name_ru": "Загадочные откровения ночного ветра",
+        "name_en": "Night-Wind's Mystic Revelation"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "axis-of-the-secret-source",
+        "name_ru": "Ось таинственного источника",
+        "name_en": "Axis of the Secret Source"
+      },
+      {
+        "id": "sheath-of-the-secret-source",
+        "name_ru": "Оболочка таинственного источника",
+        "name_en": "Sheath of the Secret Source"
+      },
+      {
+        "id": "heart-of-the-secret-source",
+        "name_ru": "Ядро таинственного источника",
+        "name_en": "Heart of the Secret Source"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "juvenile-fang",
+        "name_ru": "Молодой клык",
+        "name_en": "Juvenile Fang"
+      },
+      {
+        "id": "seasoned-fang",
+        "name_ru": "Клык взрослого",
+        "name_en": "Seasoned Fang"
+      },
+      {
+        "id": "tyrants-fang",
+        "name_ru": "Клык тирана",
+        "name_en": "Tyrant's Fang"
+      }
+    ]
+  },
+  "coordinates": []
 }

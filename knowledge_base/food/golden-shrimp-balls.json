@@ -1,0 +1,23 @@
+{
+  "id": "golden-shrimp-balls",
+  "name_ru": "Шарики с креветкой",
+  "name_en": "Golden Shrimp Balls",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "shrimp-meat",
+      "count": 5
+    },
+    {
+      "material_id": "potato",
+      "count": 4
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    }
+  ],
+  "coordinates": []
+}

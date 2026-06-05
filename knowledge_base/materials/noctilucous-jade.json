@@ -1,10 +1,17 @@
 {
   "id": "noctilucous-jade",
+  "name_ru": "Полуночный нефрит",
   "name_en": "Noctilucous Jade",
-  "type": "Local Specialty (Liyue)",
-  "days": [],
-  "source": [
-    "Found in caves in Liyue , especially Mingyun Village"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Ли Юэ",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "В пещерах Ли Юэ",
+    "Деревня Миньюнь",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Noctilucous_Jade"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

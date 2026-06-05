@@ -1,0 +1,16 @@
+{
+  "id": "stretchy-geo-fungus",
+  "name_ru": "Растягивающийся Гео плесенник",
+  "name_en": "Stretchy Geo Fungus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "robust-fungal-nucleus",
+    "dormant-fungal-nucleus",
+    "inactivated-fungal-nucleus",
+    "crystalline-cyst-dust",
+    "luminescent-pollen",
+    "fungal-spores"
+  ],
+  "coordinates": []
+}

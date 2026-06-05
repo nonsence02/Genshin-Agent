@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-return-iv",
+  "name_ru": "Подземелье мастерства: Возвращение IV",
+  "name_en": "Domain of Mastery: Return IV",
+  "type": "Повышение талантов",
+  "region": "Натлан",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-conflict",
+    "guide-to-conflict",
+    "teachings-of-conflict"
+  ],
+  "coordinates": []
+}

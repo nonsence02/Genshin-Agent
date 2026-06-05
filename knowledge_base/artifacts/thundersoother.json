@@ -1,0 +1,10 @@
+{
+  "id": "thundersoother",
+  "name_ru": "Усмиряющий гром",
+  "name_en": "Thundersoother",
+  "max_rarity": 5,
+  "bonus_2pc": "Повышает Электро сопротивление на +40%.",
+  "bonus_4pc": "Увеличивает урон против врагов, находящихся под действием Электро, на 35%.",
+  "source_domain": "domain-of-blessing-fires-of-purification-iii",
+  "coordinates": []
+}

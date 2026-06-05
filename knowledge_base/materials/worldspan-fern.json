@@ -1,10 +1,18 @@
 {
   "id": "worldspan-fern",
+  "name_ru": "Объявший небосвод папоротник",
   "name_en": "Worldspan Fern",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ The Realm of Beginnings Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Страж оазиса Апеп Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Worldspan_Fern"
+  "dropped_by": [
+    "guardian-of-apeps-oasis"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

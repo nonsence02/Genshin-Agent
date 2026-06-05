@@ -1,0 +1,27 @@
+{
+  "id": "victorious-legend",
+  "name_ru": "Победоносная легенда",
+  "name_en": "Victorious Legend",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 40% от макс. HP + 2350 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "bamboo-shoot",
+      "count": 2
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

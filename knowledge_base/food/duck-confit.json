@@ -1,0 +1,19 @@
+{
+  "id": "duck-confit",
+  "name_ru": "Конфи из утиной ножки",
+  "name_en": "Duck Confit",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 1
+    },
+    {
+      "material_id": "potato",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

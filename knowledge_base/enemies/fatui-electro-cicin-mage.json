@@ -1,0 +1,16 @@
+{
+  "id": "fatui-electro-cicin-mage",
+  "name_ru": "Фатуи: Маг Электро цицинов",
+  "name_en": "Fatui Electro Cicin Mage",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "mist-grass-wick",
+    "mist-grass",
+    "mist-grass-pollen",
+    "lieutenants-insignia",
+    "sergeants-insignia",
+    "recruits-insignia"
+  ],
+  "coordinates": []
+}

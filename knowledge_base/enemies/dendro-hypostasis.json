@@ -1,0 +1,16 @@
+{
+  "id": "dendro-hypostasis",
+  "name_ru": "Дендро гипостазис",
+  "name_en": "Dendro Hypostasis",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "quelled-creeper",
+    "nagadus-emerald-gemstone",
+    "nagadus-emerald-chunk",
+    "nagadus-emerald-fragment",
+    "nagadus-emerald-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

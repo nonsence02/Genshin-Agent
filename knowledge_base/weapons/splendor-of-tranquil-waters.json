@@ -1,48 +1,80 @@
 {
   "id": "splendor-of-tranquil-waters",
-  "name": "Splendor of Tranquil Waters",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Splendor_of_Tranquil_Waters",
-  "profile": {
-    "type": "Sword",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "When the equipping character's current HP increases or decreases, Elemental Skill DMG dealt will be increased by for. Max stacks. This can be triggered once every. When other party members' current HP increases or decreases, the equipping character's Max HP will be increased by for. Max stacks. This can be triggered once every. The aforementioned effects can be triggered even if the wielder is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dross of Pure Sacred Dewdrop",
-        "Drop of Tainted Water",
-        "Transoceanic Pearl",
-        "Sublimation of Pure Sacred Dewdrop",
-        "Scoop of Tainted Water",
-        "Transoceanic Chunk",
-        "Spring of Pure Sacred Dewdrop",
-        "Newborn Tainted Hydro Phantasm",
-        "Xenochromatic Crystal",
-        "Essence of Pure Sacred Dewdrop"
-      ]
+  "name_ru": "Блеск тихих вод",
+  "name_en": "Splendor of Tranquil Waters",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.192
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.882
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Рассвет и закат у озера",
+  "passive_description_ru": "Когда текущее HP экипированного персонажа увеличивается или снижается, наносимый урон элементального навыка повышается на 8% на 6 сек. Эффект возникает не чаще 1 раза в 0,2 сек. и складывается до 3 раз. Когда текущее HP других членов отряда увеличивается или снижается, макс. HP экипированного персонажа повышается на 14% на 6 сек. Эффект возникает не чаще 1 раза в 0,2 сек. и складывается до 2 раз. Эффект срабатывает, даже когда экипированный персонаж находится вне поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "dross-of-pure-sacred-dewdrop",
+        "name_ru": "Осадок чистой капли росы",
+        "name_en": "Dross of Pure Sacred Dewdrop"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "sublimation-of-pure-sacred-dewdrop",
+        "name_ru": "Конденсат чистой капли росы",
+        "name_en": "Sublimation of Pure Sacred Dewdrop"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "spring-of-pure-sacred-dewdrop",
+        "name_ru": "Источник чистой капли росы",
+        "name_en": "Spring of Pure Sacred Dewdrop"
+      },
+      {
+        "id": "essence-of-pure-sacred-dewdrop",
+        "name_ru": "Эссенция чистой капли росы",
+        "name_en": "Essence of Pure Sacred Dewdrop"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "drop-of-tainted-water",
+        "name_ru": "Мутная капля",
+        "name_en": "Drop of Tainted Water"
+      },
+      {
+        "id": "scoop-of-tainted-water",
+        "name_ru": "Мутная лужица",
+        "name_en": "Scoop of Tainted Water"
+      },
+      {
+        "id": "newborn-tainted-hydro-phantasm",
+        "name_ru": "Новорождённый фантазм мутных вод",
+        "name_en": "Newborn Tainted Hydro Phantasm"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "transoceanic-pearl",
+        "name_ru": "Жемчужина иноморья",
+        "name_en": "Transoceanic Pearl"
+      },
+      {
+        "id": "transoceanic-chunk",
+        "name_ru": "Обломок из иноморья",
+        "name_en": "Transoceanic Chunk"
+      },
+      {
+        "id": "xenochromatic-crystal",
+        "name_ru": "Ксенохромный кристалл",
+        "name_en": "Xenochromatic Crystal"
+      }
+    ]
+  },
+  "coordinates": []
 }

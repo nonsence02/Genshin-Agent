@@ -1,0 +1,70 @@
+{
+  "id": "wanderer",
+  "name_en": "Wanderer",
+  "element": "Anemo",
+  "weapon": "Catalyst",
+  "region": "Sumeru (in-game) Snezhnaya (in lore) Inazuma (in lore)",
+  "rarity": 5,
+  "description": "The Wanderer is a playable Anemo character in Genshin Impact .\n\nHe was once Scaramouche , the Sixth of the Eleven Fatui Harbingers , also known by his codename \" The Balladeer .\" After erasing his previous identities from Irminsul , he became a drifter until he willingly regained his memories. He is currently a Driyosh of the Vahumana Darshan.\n\nDuring the Archon Quest As Though Morning Dew in Interlude Chapter : Act III - Inversion of Genesis , the player can change the Wanderer's name, which will then be used in some of the game's interfaces, such as Party Setup . Most characters, however, will refer to him by the name of Hat Guy , the name Nahida used upon enrolling him to Vahumana .",
+  "role_summary": "The Wanderer is a playable Anemo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Yuuban Meigen",
+      "description": "Normal Attack Performs up to 3 attacks using wind blades, dealing Anemo DMG . Charged Attack Consumes a certain amount of Stamina, gathers a build up of high wind pressure, and deals AoE Anemo DMG after a short casting time. Plunging Attack Calling upon the power of Anemo, the Wanderer plunges towards the ground from mid-air, damaging all opponents in his path. Deals AoE Anemo DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Hanega: Song of the Wind",
+      "description": "Concentrates the power of the winds to break free from the shackles of the earth, dealing AoE Anemo DMG before leaping into the air and entering the Windfavored state. Windfavored The Wanderer cannot perform Plunging Attacks in this state. When he uses Normal and Charged Attacks, they will be converted into Kuugo: Fushoudan and Kuugo: Toufukai respectively; the DMG they deal and their AoE will be increased, and their DMG will be considered Normal and Charged Attack DMG respectively. Kuugo: Toufukai will not consume Stamina. The Wanderer will hover persistently during this time. While this state is active, the Wanderer's movements gain the following properties: Persistently consumes Kuugoryoku Points to maintain this hovering state. When sprinting, additional Kuugoryoku Points will be consumed for the Wanderer to accelerate mid-air. Holding sprint will cause persistent Kuugoryoku Point consumption to maintain speed. This effect will replace his default sprint. Jumping expends extra Kuugoryoku Points to increase hovering height. Holding jump will cause persistent Kuugoryoku Point consumption to keep increasing hovering height. Running out of Kuugoryoku Points will end the Windfavo..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Kyougen: Five Ceremonial Plays",
+      "description": "Compresses the atmosphere into a singular vacuum that grinds all troubles away, dealing multiple instances of AoE Anemo DMG . If the character is in the Windfavored state due to the skill \" Hanega: Song of the Wind ,\" Windfavored state will end after casting."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Jade-Claimed Flower",
+      "description": "If Hanega: Song of the Wind comes into contact with Hydro / Pyro / Cryo / Electro when it is unleashed, this instance of the Windfavored state will obtain buffs according to the contacted element(s): Hydro : Kuugoryoku Point cap increases by 20. Pyro : ATK increases by 30%. Cryo : CRIT Rate increases by 20%. Electro : When Normal and Charged Attacks hit an opponent, 0.8 Energy will be restored. Energy can be restored this way every 0.2s. You can have up to 2 different kinds of these buffs simultaneously."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Gales of Reverie",
+      "description": "When the Wanderer hits opponents with Kuugo: Fushoudan or Kuugo: Toufukai in his Windfavored state, he has a 16% chance to obtain the Descent effect: The next time the Wanderer accelerates in mid-air while in this instance of the Windfavored state, this effect will be removed, this acceleration instance will not consume any Kuugoryoku Points, and he will fire off 4 wind arrows that deal 35% of his ATK as Anemo DMG each. For each Kuugo: Fushoudan and Kuugo: Toufukai that does not produce this effect, the next attack of those types will have a 12% increased chance of producing it. The calculation of the effect production is done once every 0.1s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Strum the Swirling Winds",
+      "description": "Mora expended when ascending Bows and Catalysts is decreased by 50%."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Shoban: Ostentatious Plumage",
+      "effect": "When in the Windfavored state, the Attack SPD of the Wanderer's Kuugo: Fushoudan and Kuugo: Toufukai is increased by 10%. Additionally, the wind arrows fired by the Ascension Talent \" Gales of Reverie \" will deal an additional 25% of his ATK as DMG. You must first unlock the Ascension Talent \"Gales of Reverie.\""
+    },
+    "c2": {
+      "name": "Niban: Isle Amidst White Waves",
+      "effect": "Description Gameplay Notes When in the Windfavored state, Kyougen: Five Ceremonial Plays will see its DMG increased by 4% per point of difference between the max amount of Kuugoryoku Points contrasted with Kuugoryoku's present capacity when using this skill. Through this method, you can increase Kyougen: Five Ceremonial Plays's DMG by a maximum of 200%. 50 Kuugoryoku Points must be spent to obtain the maximum damage bonus."
+    },
+    "c3": {
+      "name": "Sanban: Moonflower Kusemai",
+      "effect": "Increases the Level of Kyougen: Five Ceremonial Plays by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Yonban: Set Adrift into Spring",
+      "effect": "When casting Hanega: Song of the Wind , should the Ascension Talent \" Jade-Claimed Flower \" be triggered, the character will gain buffs in correspondence to the contacted Elemental Type(s), and also obtain a random untriggered buff. A maximum of 3 such corresponding elemental buffs can exist simultaneously. You must first unlock the Ascension Talent \"Jade-Claimed Flower.\""
+    },
+    "c5": {
+      "name": "Matsuban: Ancient Illuminator From Abroad",
+      "effect": "Increases the Level of Hanega: Song of the Wind by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "1U",
+      "effect": ""
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Wanderer",
+  "ai_tags": "Main DPS, Anemo аппликатор"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "crab",
+  "name_ru": "Краб",
+  "name_en": "Crab",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "У рек, озёр и морей"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

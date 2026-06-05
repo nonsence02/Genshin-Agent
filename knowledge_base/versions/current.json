@@ -1,0 +1,15 @@
+{
+  "game_version": "5.x",
+  "patch_name": "Название патча",
+  "release_date": "YYYY-MM-DD",
+  "active_banners": {
+    "phase_1": [
+      "character_1",
+      "character_2"
+    ],
+    "phase_2": [
+      "character_3",
+      "character_4"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "lavawalker",
+  "name_ru": "Ступающий по лаве",
+  "name_en": "Lavawalker",
+  "max_rarity": 5,
+  "bonus_2pc": "Повышает Пиро сопротивление на +40%.",
+  "bonus_4pc": "Увеличивает урон против врагов, находящихся под действием Пиро, на 35%.",
+  "source_domain": "domain-of-blessing-roaring-fire-i",
+  "coordinates": []
+}

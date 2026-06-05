@@ -1,0 +1,13 @@
+{
+  "id": "lucky-coin",
+  "name_ru": "Счастливая монета",
+  "name_en": "Lucky Coin",
+  "type": "consume",
+  "type_text_ru": "Расходный предмет",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "anemo-specter",
+  "name_ru": "Анемо призрак",
+  "name_en": "Anemo Specter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "spectral-nucleus",
+    "spectral-heart",
+    "spectral-husk"
+  ],
+  "coordinates": []
+}

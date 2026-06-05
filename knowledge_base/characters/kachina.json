@@ -1,94 +1,86 @@
 {
   "id": "kachina",
-  "name": "Kachina",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kachina",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Geo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Fight alongside the turbo trusty Turbo Twirly! Summons Turbo Twirly. When the skill is Held and released, Kachina will summon and ride Turbo Twirly. After the Skill is used, Kachina will gain Nightsoul points and enter the Nightsoul's Blessing state. Nightsoul's Blessing: Kachina Turbo Twirly's various actions consume Kachina's Nightsoul points. The Nightsoul's Blessing state will end when these points have been depleted. Turbo Twirly Can exist independently or be ridden and operated by Kachina. When Turbo Twirly is present, Kachina's Elemental Skill, \"Go, Go Turbo Twirly!\", will change to an option to Mount/Dismount Turbo Twirly. When present independent of Kachina, it will slam the ground...",
-    "elemental_burst": "Striking the ground, Kachina deals AoE Geo DMG based on her DEF and creates a Turbo Drill Field. The Field increases Turbo Twirly 's attack AoE and its movement speed when Kachina is riding it. If Kachina's own Turbo Twirly is present when this is used, Turbo Twirly will be summoned to her side. Turbo Twirly's attack radius is increased from m to.m. Turbo Twirly's movement speed is increased by"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Prithiva Topaz Sliver",
-        "Prithiva Topaz Fragment",
-        "Prithiva Topaz Chunk",
-        "Prithiva Topaz Gemstone"
-      ],
-      "mob_drops": [
-        "Sentry's Wooden Whistle",
-        "Warrior's Metal Whistle",
-        "Saurian-Crowned Warrior's Golden Whistle"
-      ],
-      "special": [
-        "Quenepa Berry",
-        "Overripe Flamegranate"
-      ]
+  "name_ru": "Качина",
+  "name_en": "Kachina",
+  "element": "Geo",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 989.2932,
+      "atk": 18.1642,
+      "def": 66.4382
     },
-    "talents": {
-      "books": [
-        "Teachings of Conflict",
-        "Guide to Conflict",
-        "Philosophies of Conflict"
-      ],
-      "mob_drops": [
-        "Sentry's Wooden Whistle",
-        "Warrior's Metal Whistle",
-        "Saurian-Crowned Warrior's Golden Whistle"
-      ],
-      "weekly_boss": [
-        "Fading Candle"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 11799.2822,
+      "atk": 216.6451,
+      "def": 792.4075
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Скалогрыз",
+      "description_ru": "Обычная атака:\nДо четырёх ударов копьём.\n\nЗаряженная атака:\nВыпад, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Вперёд, Турбовихрь!",
+      "description_ru": "В бой вместе с надёжным Турбовихрем!\nПризывает Турбовихрь. При долгом нажатии Качина призывает Турбовихрь и садится на него.\nПосле активации Качина получает 60 очков Ночного духа и переходит в состояние Благословения Ночного духа.\n\nБлагословение Ночного духа: Качина\nДействия Турбовихря расходуют очки Ночного духа Качины.\nКогда очки Ночного духа заканчиваются, Благословение Ночного духа Качины завершается.\n\nТурбовихрь\nМожет существовать отдельно или управляться оседлавшей его Качиной. Когда Турбовихрь существует, при использовании элементального навыка Качина будет садиться на него или слезать с него.\n· Существуя отдельно, Турбовихрь периодически врезается в землю, нанося Гео урон по площади с характеристикой Ночного духа, пропорциональный защите Качины.\n· Когда Качина верхом на Турбовихре, она способна управлять им, чтобы быстро перемещаться, карабкаться и поражать землю с помощью обычной атаки, нанося Гео урон по площади с характеристикой Ночного духа, пропорциональный защите Качины.\n\nКогда Благословение Ночного духа Качины завершается, Турбовихрь исчезает. Он считается Гео конструкцией. На поле боя может существовать только один Турбовихрь, созданный самой Качиной."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Ну теперь всё!",
+      "description_ru": "Атакуя землю, Качина наносит Гео урон по площади, пропорциональный своей защите, и создаёт область Турбобура.\nОбласть Турбобура повышает площадь атаки Турбовихря и скорость передвижения верхом.\n\nЕсли во время активации на поле есть Турбовихрь самой Качины, то он будет призван к ней."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Горное эхо",
+      "description_ru": "После того как член отряда поблизости активирует Вспышку Ночного духа, бонус Гео урона Качины повышается на 20% на 12 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Тяжесть монолитной породы",
+      "description_ru": "Повышает урон Турбовихря на 20% от защиты Качины."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Дар владений ночи: Сердце единства",
+      "description_ru": "Когда очки Ночного духа исчерпаны, Качина может поддерживать Благословение Ночного духа, переключившись на флогистон.\nКогда Качина находится в областях Натлана с флогистоновыми механиками, она способна применять Передачу Ночного духа: Качина. Когда активный персонаж использует спринт, карабкается, пребывает в состоянии передвижения некоторых талантов или находится на определённой высоте в воздухе, при смене персонажа на Качину активируется следующий эффект: Качина входит в состояние Благословения Ночного духа, выходит на поле на Турбовихре и получает 30 очков Ночного духа. Передача Ночного духа может активироваться вашим отрядом один раз в 10 сек.\n\nКроме того, в Натлане Качина верхом на Турбовихре во время карабканья расходует на 90% меньше выносливости."
+    },
+    {
+      "type": "пассивный талант 4",
+      "name_ru": "Милость кристального пламени",
+      "description_ru": "В областях с флогистоновыми механиками в Натлане при взаимодействии с некоторыми предметами для сбора восстанавливается 20 ед. выносливости. Кроме того, отмечает диковинки Натлана поблизости на мини-карте."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Осколки тоже самоцветы",
+      "description_ru": "Когда Качина садится на Турбовихрь или сходит с него, она подбирает элементальные осколки, созданные реакцией Кристалл, поблизости.\nКроме того, когда член отряда подбирает такой осколок или активирует реакцию Лунный кристалл, Качина восстанавливает 3 ед. энергии. Восстанавливать энергию таким способом можно не чаще одного раза в 5 сек."
+    },
+    {
+      "name_ru": "Я всегда с собой беру... Турбовихрь",
+      "description_ru": "Качина, активируя навык Ну теперь всё!, восстанавливает 20 очков Ночного духа. Если на поле нет её собственного Турбовихря, Качина войдет в состояние Благословение Ночного духа и призовёт его."
+    },
+    {
+      "name_ru": "Улучшенный стабилизатор",
+      "description_ru": "Увеличивает уровень навыка Вперёд, Турбовихрь! на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Больше врагов - больше осторожности",
+      "description_ru": "Когда в области Турбобура навыка Ну теперь всё! 1/2/3/4 и более врагов, защита активного персонажа в этой области повышается на 8%/12%/16%/20% соответственно."
+    },
+    {
+      "name_ru": "Моя нынешняя коллекция",
+      "description_ru": "Увеличивает уровень навыка Ну теперь всё! на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "На этот раз победа за мной",
+      "description_ru": "Когда щит вашего активного персонажа по какой-либо причине заменяется или разрушается, Качина наносит Гео урон по площади, равный 200% от её защиты. Этот эффект может возникнуть один раз в 5 сек."
+    }
+  ],
+  "coordinates": []
 }

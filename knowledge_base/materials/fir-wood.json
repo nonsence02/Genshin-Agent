@@ -1,0 +1,19 @@
+{
+  "id": "fir-wood",
+  "name_ru": "Пихта",
+  "name_en": "Fir Wood",
+  "type": "wood",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Долина Звездопадов",
+    "Склон Песни ветра",
+    "Куплено в разделе древесины Сокровищницы обители",
+    "Конвертация древесины"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "golden-tempered-jade",
+  "name_ru": "«Золочёный нефрит»",
+  "name_en": "Golden-Tempered Jade",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 22% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 470 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 3
+    },
+    {
+      "material_id": "salt",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

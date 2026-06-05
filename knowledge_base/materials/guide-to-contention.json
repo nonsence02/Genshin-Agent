@@ -1,14 +1,23 @@
 {
   "id": "guide-to-contention",
+  "name_ru": "Указания о «Соперничестве»",
   "name_en": "Guide to Contention",
-  "type": "Character Talent Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Blazing Ruins (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Contention"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-sublime-turning-ii",
+    "domain-of-mastery-sublime-turning-iii",
+    "domain-of-mastery-sublime-turning-iv"
+  ],
+  "source_domain": "domain-of-mastery-sublime-turning-ii",
+  "coordinates": []
 }

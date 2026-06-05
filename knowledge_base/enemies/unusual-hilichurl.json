@@ -1,0 +1,11 @@
+{
+  "id": "unusual-hilichurl",
+  "name_ru": "Странный хиличурл",
+  "name_en": "Unusual Hilichurl",
+  "type": "NORMAL",
+  "type_ru": "Хиличурлы",
+  "drops": [
+    "cabbage"
+  ],
+  "coordinates": []
+}

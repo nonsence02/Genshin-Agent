@@ -1,0 +1,22 @@
+{
+  "id": "boreal-wolfs-broken-fang",
+  "name_ru": "Сломанный клык арктического волка",
+  "name_en": "Boreal Wolf's Broken Fang",
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "source_ru": [
+    "Можно создать: {0}"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-submerged-valley-iii",
+    "domain-of-forgery-submerged-valley-iv"
+  ],
+  "source_domain": "domain-of-forgery-submerged-valley-iii",
+  "coordinates": []
+}

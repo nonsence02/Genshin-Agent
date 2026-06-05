@@ -1,0 +1,13 @@
+{
+  "id": "consecrated-flying-serpent",
+  "name_ru": "Священный летучий змей",
+  "name_en": "Consecrated Flying Serpent",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "marked-shell",
+    "sturdy-shell",
+    "desiccated-shell"
+  ],
+  "coordinates": []
+}

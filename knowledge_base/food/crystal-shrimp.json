@@ -1,0 +1,23 @@
+{
+  "id": "crystal-shrimp",
+  "name_ru": "Кристальные баоцзы",
+  "name_en": "Crystal Shrimp",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 22% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 470 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "rice",
+      "count": 3
+    },
+    {
+      "material_id": "shrimp-meat",
+      "count": 3
+    },
+    {
+      "material_id": "carrot",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

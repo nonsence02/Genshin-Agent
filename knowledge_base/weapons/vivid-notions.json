@@ -1,48 +1,80 @@
 {
   "id": "vivid-notions",
-  "name": "Vivid Notions",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Vivid_Notions",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "48 - 674",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "ATK is increased by. When you use a Plunging Attack, you will gain the \"Dawn's First Hue\": Plunging Attack CRIT DMG is increased by. When you use an Elemental Skill or Burst, you will gain the \"Twilight's Splendor\": Plunging Attack CRIT DMG is increased by. The two effects above each last for, and will be canceled after the ground impact hits a target.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Delirious Decadence of the Sacred Lord",
-        "Cold-Cracked Shellshard",
-        "Juvenile Fang",
-        "Delirious Desolation of the Sacred Lord",
-        "Warm Back-Shell",
-        "Seasoned Fang",
-        "Delirious Demeanor of the Sacred Lord",
-        "Blazing Prismshell",
-        "Tyrant's Fang",
-        "Delirious Divinity of the Sacred Lord"
-      ]
+  "name_ru": "Переливающиеся чаяния",
+  "name_en": "Vivid Notions",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.096
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.441
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Желание падающей радуги",
+  "passive_description_ru": "Сила атаки повышается на 28%. Когда персонаж использует атаку в падении, он получает эффект Первых цветов зари: крит. урон атаки в падении повышается на 28%. Когда персонаж активирует элементальный навык или взрыв стихии, то он получает эффект Сияния сумерек: крит. урон атаки в падении повышается на 40%. Каждый из этих эффектов длится 15 сек. и исчезает через 0,1 сек. после того, как ударная волна от приземления поражает цель.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "delirious-decadence-of-the-sacred-lord",
+        "name_ru": "Безумный декаданс Святого Мудреца",
+        "name_en": "Delirious Decadence of the Sacred Lord"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "delirious-desolation-of-the-sacred-lord",
+        "name_ru": "Безумное опустошение Святого Мудреца",
+        "name_en": "Delirious Desolation of the Sacred Lord"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "delirious-demeanor-of-the-sacred-lord",
+        "name_ru": "Безумный облик Святого Мудреца",
+        "name_en": "Delirious Demeanor of the Sacred Lord"
+      },
+      {
+        "id": "delirious-divinity-of-the-sacred-lord",
+        "name_ru": "Безумная духовность Святого Мудреца",
+        "name_en": "Delirious Divinity of the Sacred Lord"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "cold-cracked-shellshard",
+        "name_ru": "Холодный осколок панциря",
+        "name_en": "Cold-Cracked Shellshard"
+      },
+      {
+        "id": "warm-back-shell",
+        "name_ru": "Тёплый панцирь",
+        "name_en": "Warm Back-Shell"
+      },
+      {
+        "id": "blazing-prismshell",
+        "name_ru": "Пылающий призмопанцирь",
+        "name_en": "Blazing Prismshell"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "juvenile-fang",
+        "name_ru": "Молодой клык",
+        "name_en": "Juvenile Fang"
+      },
+      {
+        "id": "seasoned-fang",
+        "name_ru": "Клык взрослого",
+        "name_en": "Seasoned Fang"
+      },
+      {
+        "id": "tyrants-fang",
+        "name_ru": "Клык тирана",
+        "name_en": "Tyrant's Fang"
+      }
+    ]
+  },
+  "coordinates": []
 }

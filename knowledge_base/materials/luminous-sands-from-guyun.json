@@ -1,14 +1,25 @@
 {
   "id": "luminous-sands-from-guyun",
+  "name_ru": "Светящийся песок Гуюнь",
   "name_en": "Luminous Sands from Guyun",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Hidden Palace of Lianshan Formula (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка Ли Юэ",
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Luminous_Sands_from_Guyun"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-thundercloud-altar-i",
+    "domain-of-forgery-thundercloud-altar-ii",
+    "domain-of-forgery-thundercloud-altar-iii",
+    "domain-of-forgery-thundercloud-altar-iv"
+  ],
+  "source_domain": "domain-of-forgery-thundercloud-altar-i",
+  "coordinates": []
 }

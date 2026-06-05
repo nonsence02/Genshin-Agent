@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-flower-feast-iv",
+  "name_ru": "Подземелье благословения: Цветочный пир IV",
+  "name_en": "Domain of Blessing: Flower Feast IV",
+  "type": "Артефакты",
+  "region": "Мондштадт",
+  "days_of_week": [],
+  "rewards": [
+    "celestial-gift",
+    "disenchantment-in-deep-shadow",
+    "berserker",
+    "the-exile"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tangled-vines-frostnight-scion",
+  "name_ru": "Переплетённая лоза: Потомок морозной ночи",
+  "name_en": "Tangled Vines: Frostnight Scion",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "frostnights-glory",
+    "frostnights-glow",
+    "frostnights-glimmer"
+  ],
+  "coordinates": []
+}

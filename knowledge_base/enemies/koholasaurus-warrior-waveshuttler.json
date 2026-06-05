@@ -1,0 +1,13 @@
+{
+  "id": "koholasaurus-warrior-waveshuttler",
+  "name_ru": "Кохолазавр-воин: Пронзающая волны",
+  "name_en": "Koholasaurus Warrior: Waveshuttler",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

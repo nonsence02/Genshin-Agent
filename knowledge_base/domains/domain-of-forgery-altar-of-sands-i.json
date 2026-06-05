@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-forgery-altar-of-sands-i",
+  "name_ru": "Воля: Песчаный алтарь I",
+  "name_en": "Domain of Forgery: Altar of Sands I",
+  "type": "Возвышение оружия",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "narukamis-wisdom"
+  ],
+  "coordinates": []
+}

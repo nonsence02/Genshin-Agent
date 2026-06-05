@@ -1,0 +1,27 @@
+{
+  "id": "energizing-bento",
+  "name_ru": "Бодрящий бэнто",
+  "name_en": "Energizing Bento",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 34% от макс. HP выбранному персонажу, затем в течение 30 сек. каждые 5 сек. восстанавливает 980 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 4
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "seagrass",
+      "count": 2
+    },
+    {
+      "material_id": "rice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

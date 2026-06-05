@@ -1,0 +1,23 @@
+{
+  "id": "northlander-polearm-billet",
+  "name_ru": "Заготовка копья северянина",
+  "name_en": "Northlander Polearm Billet",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Испытание Подземелья наказания в Мондштадте, Ли Юэ, Инадзуме или испытание «Волчий лорд»"
+  ],
+  "dropped_by": [
+    "azhdaha",
+    "childe",
+    "la-signora",
+    "lupus-boreas-dominator-of-wolves",
+    "magatsu-mitake-narukami-no-mikoto",
+    "stormterror",
+    "the-game-before-the-gate"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

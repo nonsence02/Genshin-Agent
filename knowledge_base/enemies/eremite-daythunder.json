@@ -1,0 +1,13 @@
+{
+  "id": "eremite-daythunder",
+  "name_ru": "Пустынник: Полуденный гром",
+  "name_en": "Eremite Daythunder",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

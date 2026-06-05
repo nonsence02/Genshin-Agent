@@ -1,0 +1,16 @@
+{
+  "id": "goldflame-qucusaur-tyrant",
+  "name_ru": "Кукузавр-тиран золотого пламени",
+  "name_en": "Goldflame Qucusaur Tyrant",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "mark-of-the-binding-blessing",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

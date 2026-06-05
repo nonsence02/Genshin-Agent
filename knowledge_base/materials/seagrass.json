@@ -1,0 +1,15 @@
+{
+  "id": "seagrass",
+  "name_ru": "Морская водоросль",
+  "name_en": "Seagrass",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Акватория Инадзумы"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,47 +1,80 @@
 {
   "id": "royal-greatsword",
-  "name": "Royal Greatsword",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Royal_Greatsword",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Upon dealing damage to an opponent, increases CRIT Rate by. Max stacks. A CRIT hit removes all existing stacks.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Slime Condensate",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Slime Secretions",
-        "Shackles of the Dandelion Gladiator",
-        "Slime Concentrate",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Королевский двуручный меч",
+  "name_en": "Royal Greatsword",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Сосредоточенный",
+  "passive_description_ru": "При нанесении урона противнику повышает шанс крит. попадания на 8%. Эффект может складываться до 5 раз. Добавочный шанс крит. попадания исчезает с первым крит. попаданием.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "slime-condensate",
+        "name_ru": "Слизь слайма",
+        "name_en": "Slime Condensate"
+      },
+      {
+        "id": "slime-secretions",
+        "name_ru": "Выделения слайма",
+        "name_en": "Slime Secretions"
+      },
+      {
+        "id": "slime-concentrate",
+        "name_ru": "Концентрат слайма",
+        "name_en": "Slime Concentrate"
+      }
+    ]
+  },
+  "coordinates": []
 }

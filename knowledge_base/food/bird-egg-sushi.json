@@ -1,0 +1,19 @@
+{
+  "id": "bird-egg-sushi",
+  "name_ru": "Яичные суши",
+  "name_en": "Bird Egg Sushi",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "bird-egg",
+      "count": 1
+    },
+    {
+      "material_id": "rice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

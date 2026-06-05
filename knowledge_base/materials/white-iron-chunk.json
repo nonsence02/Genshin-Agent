@@ -1,0 +1,17 @@
+{
+  "id": "white-iron-chunk",
+  "name_ru": "Обломок белого железа",
+  "name_en": "White Iron Chunk",
+  "type": "exchange",
+  "type_text_ru": "Руда для ковки",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Горы Буревестника",
+    "Вольфендом"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

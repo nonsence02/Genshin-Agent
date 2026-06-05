@@ -1,0 +1,27 @@
+{
+  "id": "qingce-stir-fry",
+  "name_ru": "«Сельская услада»",
+  "name_en": "Qingce Stir Fry",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 228 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "mushroom",
+      "count": 3
+    },
+    {
+      "material_id": "lotus-head",
+      "count": 2
+    },
+    {
+      "material_id": "jueyun-chili",
+      "count": 1
+    },
+    {
+      "material_id": "cabbage",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

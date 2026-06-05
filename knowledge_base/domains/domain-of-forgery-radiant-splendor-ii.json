@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-forgery-radiant-splendor-ii",
+  "name_ru": "Подземелье воли: Сияющее великолепие II",
+  "name_en": "Domain of Forgery: Radiant Splendor II",
+  "type": "Возвышение оружия",
+  "region": "Нод-Край",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "artful-device-replica",
+    "artful-device-fragment"
+  ],
+  "coordinates": []
+}

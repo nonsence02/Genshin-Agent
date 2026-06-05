@@ -1,92 +1,81 @@
 {
   "id": "razor",
-  "name": "Razor",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Razor",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Hunts his prey using the techniques taught to him by his master and his lupical. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Swings the Thunder Wolf Claw, dealing Electro DMG to opponents in front of Razor. Upon striking an opponent, Razor will gain an Electro Sigil, which increases his Energy Recharge rate. Razor can have up to Electro Sigils simultaneously, and gaining a new Electro Sigil refreshes their duration. Hold Gathers Electro energy to unleash a lightning storm over a small AoE, causing massive Electro DMG, and clears all of Razor's Electro Sigils. Each Electro Sigil cleared in this manner will be converted into Energy for Razor. When this...",
-    "elemental_burst": "Summons the Wolf Within, which deals Electro DMG to all nearby opponents. This clears all of Razor's Electro Sigils, which will be converted into Elemental Energy for him. The Wolf Within will fight alongside Razor for the skill's duration. The Wolf Within Strikes alongside Razor's normal attacks, dealing Electro DMG. Raises Razor's ATK SPD and Electro RES. Causes Razor to be immune to DMG inflicted by the Electro-Charged status. Disables Razor's Charged Attacks. Increases Razor's resistance to interruption. These effects end when Razor leaves the battlefield. When Razor leaves the field, a maximum of Energy will be returned to him based off the duration remaining on this skill. Soul..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "special": [
-        "Wolfhook",
-        "Lightning Prism"
-      ]
+  "name_ru": "Рэйзор",
+  "name_en": "Razor",
+  "element": "Electro",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1002.9701,
+      "atk": 19.5888,
+      "def": 62.9475
     },
-    "talents": {
-      "books": [
-        "Teachings of Resistance",
-        "Guide to Resistance",
-        "Philosophies of Resistance"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "weekly_boss": [
-        "Dvalin's Claw"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 11962.4065,
+      "atk": 233.6369,
+      "def": 750.7737
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Стальной клык",
+      "description_ru": "Обычная атака:\nДо четырёх рубящих ударов мечом.\n\nЗаряженная атака:\nВращающаяся атака по окружающим врагам, на которую непрерывно тратится выносливость.\nПосле вращения проводит дополнительную мощную атаку мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Гром и когти",
+      "description_ru": "Выслеживает жертву, используя приёмы и методы, которые он узнал от своего учителя и своей стаи.\n\nБыстрое нажатие:\nУдар когтями громового волка, наносящий Электро урон врагам впереди.\nПри попадании Рэйзор получает печать Электро, которая увеличивает скорость восстановления его энергии.\nРэйзор может иметь до 3 печатей Электро одновременно. Получение новой печати Электро обнуляет их длительность.\n\nДолгое нажатие:\nСобирает энергию Электро и на небольшой площади вызывает грозу, которая наносит огромный Электро урон, отнимая все накопленные печати Электро. Каждая отнятая печать конвертируется в энергию для Рэйзора."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Громовой клык",
+      "description_ru": "Пробуждает внутреннего волка, который наносит Электро урон всем окружающим врагам. Активация навыка отнимает все накопленные печати Электро, конвертируя их в энергию для Рэйзора.\nНа время длительности навыка волк сражается вместе с Рэйзором.\n\nВнутренний волк:\n· Атакует вместе с обычными атаками Рэйзора, нанося Электро урон.\n· Увеличивает скорость атаки и Электро сопротивление Рэйзора.\n· Даёт Рэйзору иммунитет от урона, вызванного статусом Заряжен.\n· Заряженные атаки Рэйзора становятся недоступны.\n· Повышает устойчивость к прерыванию атак Рэйзора.\n\nЭти эффекты заканчиваются, когда Рэйзор покидает бой.\nКогда Рэйзор покидает бой, оставшееся время длительности навыка возвращается к нему в виде энергии. Макс. 10 ед. энергии."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Пробуждение",
+      "description_ru": "Уменьшает время отката навыка Гром и когти на 18%, также использование навыка Громовой клык полностью сбрасывает его время отката."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Голод",
+      "description_ru": "Восстановление энергии Рэйзора увеличивается на 30%, когда количество его энергии опускается ниже 50%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Вольфенспринт",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время спринта на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Волчья натура",
+      "description_ru": "Подобранные элементальные сферы или частицы увеличивают урон Рэйзора на 10% в течение 8 сек."
+    },
+    {
+      "name_ru": "Подавление",
+      "description_ru": "Увеличивает шанс крит. попадания Рэйзора против врагов с HP ниже 30% на 10%."
+    },
+    {
+      "name_ru": "Родственная душа",
+      "description_ru": "Увеличивает уровень навыка Громовой клык на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Укус",
+      "description_ru": "При попадании быстрое нажатие навыка Гром и Когти понижает защиту противника на 15% в течение 7 сек."
+    },
+    {
+      "name_ru": "Заточенные когти",
+      "description_ru": "Увеличивает уровень навыка Гром и когти на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Звезда Сириус",
+      "description_ru": "Каждые 10 сек. меч Рэйзора заряжается молнией, которая высвобождается при следующей обычной атаке и наносит Электро урон, равный 100% от силы атаки Рэйзора.\nЕсли Рэйзор не находится под действием навыка Громовой клык, каждое попадание молнией по врагу даёт ему печать Электро навыка Гром и когти."
+    }
+  ],
+  "coordinates": []
 }

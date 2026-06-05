@@ -1,48 +1,80 @@
 {
   "id": "snow-tombed-starsilver",
-  "name": "Snow-Tombed Starsilver",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Snow-Tombed_Starsilver",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Physical DMG Bonus"
-  },
-  "passive": "Hitting an opponent with Normal and Charged Attacks has a chance of forming and dropping an Everfrost Icicle above them, dealing AoE DMG equal to of ATK. Opponents affected by Cryo are instead dealt DMG equal to of ATK. Can only occur once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Tile of Decarabian's Tower",
-        "Heavy Horn",
-        "Slime Condensate",
-        "Debris of Decarabian's City",
-        "Black Bronze Horn",
-        "Slime Secretions",
-        "Fragment of Decarabian's Epic",
-        "Black Crystal Horn",
-        "Slime Concentrate",
-        "Scattered Piece of Decarabian's Dream"
-      ]
+  "name_ru": "Заснеженное звёздное серебро",
+  "name_en": "Snow-Tombed Starsilver",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.0751
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.3449
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Морозное погребение",
+  "passive_description_ru": "Попадания обычной или заряженной атакой имеют 60% шанс создать над противником ледяной кристалл и уронить его, нанося 80% урона силы атаки по площади. Если противник имеет эффект Крио, то наносит ему 200% урона силы атаки. Может возникнуть раз в 10 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "tile-of-decarabians-tower",
+        "name_ru": "Плитка башни Декарабиана",
+        "name_en": "Tile of Decarabian's Tower"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "debris-of-decarabians-city",
+        "name_ru": "Обломок стены Декарабиана",
+        "name_en": "Debris of Decarabian's City"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "fragment-of-decarabians-epic",
+        "name_ru": "Фрагмент эпоса Декарабиана",
+        "name_en": "Fragment of Decarabian's Epic"
+      },
+      {
+        "id": "scattered-piece-of-decarabians-dream",
+        "name_ru": "Осколок мечты Декарабиана",
+        "name_en": "Scattered Piece of Decarabian's Dream"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "heavy-horn",
+        "name_ru": "Тяжёлый рог",
+        "name_en": "Heavy Horn"
+      },
+      {
+        "id": "black-bronze-horn",
+        "name_ru": "Чёрный бронзовый рог",
+        "name_en": "Black Bronze Horn"
+      },
+      {
+        "id": "black-crystal-horn",
+        "name_ru": "Чёрный кристаллический рог",
+        "name_en": "Black Crystal Horn"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "slime-condensate",
+        "name_ru": "Слизь слайма",
+        "name_en": "Slime Condensate"
+      },
+      {
+        "id": "slime-secretions",
+        "name_ru": "Выделения слайма",
+        "name_en": "Slime Secretions"
+      },
+      {
+        "id": "slime-concentrate",
+        "name_ru": "Концентрат слайма",
+        "name_en": "Slime Concentrate"
+      }
+    ]
+  },
+  "coordinates": []
 }

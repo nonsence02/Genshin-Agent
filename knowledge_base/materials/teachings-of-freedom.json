@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-freedom",
+  "name_ru": "Учения о «Свободе»",
   "name_en": "Teachings of Freedom",
-  "type": "Character Talent Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Forsaken Rift (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Freedom"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-frosted-altar-i",
+    "domain-of-mastery-frosted-altar-ii",
+    "domain-of-mastery-frosted-altar-iii",
+    "domain-of-mastery-frosted-altar-iv"
+  ],
+  "source_domain": "domain-of-mastery-frosted-altar-i",
+  "coordinates": []
 }

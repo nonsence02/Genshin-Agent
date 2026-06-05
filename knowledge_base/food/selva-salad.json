@@ -1,0 +1,23 @@
+{
+  "id": "selva-salad",
+  "name_ru": "Тропический салат",
+  "name_en": "Selva Salad",
+  "rarity": 2,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время спринта на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "zaytun-peach",
+      "count": 2
+    },
+    {
+      "material_id": "mint",
+      "count": 2
+    },
+    {
+      "material_id": "sumeru-rose",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

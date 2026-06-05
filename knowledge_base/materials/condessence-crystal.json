@@ -1,0 +1,16 @@
+{
+  "id": "condessence-crystal",
+  "name_ru": "Конденсирующиеся кристаллы",
+  "name_en": "Condessence Crystal",
+  "type": "exchange",
+  "type_text_ru": "Руда для ковки",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Элинас (поверхность)"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

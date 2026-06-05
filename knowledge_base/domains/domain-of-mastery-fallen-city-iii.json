@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-fallen-city-iii",
+  "name_ru": "Подземелье мастерства: Павший город III",
+  "name_en": "Domain of Mastery: Fallen City III",
+  "type": "Повышение талантов",
+  "region": "Нод-Край",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-moonlight",
+    "teachings-of-moonlight"
+  ],
+  "coordinates": []
+}

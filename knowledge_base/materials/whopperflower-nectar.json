@@ -1,10 +1,20 @@
 {
   "id": "whopperflower-nectar",
+  "name_ru": "Нектар попрыгуньи",
   "name_en": "Whopperflower Nectar",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Whopperflowers"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Попрыгуньи",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Whopperflower_Nectar"
+  "dropped_by": [
+    "cryo-whopperflower",
+    "electro-whopperflower",
+    "pyro-whopperflower"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

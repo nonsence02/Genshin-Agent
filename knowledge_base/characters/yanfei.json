@@ -1,94 +1,81 @@
 {
   "id": "yanfei",
-  "name": "Yanfei",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Yanfei",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Pyro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Summons blistering flames that deal AoE Pyro DMG. Opponents hit by the flames will grant Yanfei the maximum number of Scarlet Seals. When this skill hits at least one enemy, it generates Elemental Particles. Constellation Effects Constellation Level, Samadhi Fire-Forged: Increases this talent's level by, up to a maximum of. Constellation Level, Extra Clause: \"Increases the maximum number of Scarlet Seals by.\"",
-    "elemental_burst": "Triggers a spray of intense flames that rush at nearby opponents, dealing AoE Pyro DMG, granting Yanfei the maximum number of Scarlet Seals, and applying Brilliance to her. Brilliance Has the following effects: Grants Yanfei a Scarlet Seal at fixed intervals. Increases the DMG dealt by her Charged Attacks. The effects of Brilliance will end if Yanfei leaves the field or falls in battle. At maximum Scarlet Seals, Yanfei has to consume the existing Scarlet Seals before another can be granted by Brilliance. The Brilliance's effect lags behind the Elemental Burst by. Theoretically, Yanfei can gain the first Scarlet Seal after of using Elemental Burst. However, Yanfei has to consume the existing..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "special": [
-        "Noctilucous Jade",
-        "Juvenile Jade"
-      ]
+  "name_ru": "Янь Фэй",
+  "name_en": "Yanfei",
+  "element": "Pyro",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 784.1403,
+      "atk": 20.123,
+      "def": 49.2135
     },
-    "talents": {
-      "books": [
-        "Teachings of Gold",
-        "Guide to Gold",
-        "Philosophies of Gold"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "weekly_boss": [
-        "Bloodjade Branch"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9352.427,
+      "atk": 240.0088,
+      "def": 586.9685
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Печать одобрения",
+      "description_ru": "Обычная атака:\nЗапускает до трёх огненных шаров, которые наносят Пиро урон.\nКогда обычная атака попадает по врагу, Янь Фэй получает одну Багровую печать. Изначально может иметь максимум три печати. При каждой активации длительность уже имеющихся Багровых печатей обновляется.\nКаждая Багровая печать снижает потребление выносливости Янь Фэй. Печати исчезают при смене персонажа.\n\nЗаряженная атака:\nПосле прочтения краткого заклинания тратит некоторое количество выносливости и все Багровые печати, нанося Пиро урон по площади перед собой.\nЧем больше потрачено Багровых печатей, тем больше урон и радиус заряженной атаки.\n\nАтака в падении:\nНакопив энергию огня, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Пиро урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Подписанный указ",
+      "description_ru": "Призывает языки пламени, которые наносят Пиро урон по площади.\nПри попадании по врагу даёт Янь Фэй максимальное количество Багровых печатей."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "По рукам",
+      "description_ru": "Вызывает яростный поток огня, который бьёт окружающих врагов, нанося Пиро урон по площади. Также даёт Янь Фэй максимальное количество Багровых печатей и эффект Блеска.\nБлеск\nИмеет следующие эффекты:\n· Периодически даёт Янь Фэй одну Багровую печать.\n· Увеличивает урон заряженной атаки.\nЭффект Блеска пропадает, если Янь Фэй покидает поле боя или погибает."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Оговорка",
+      "description_ru": "Когда заряженная атака Янь Фэй потребляет Багровые печати, каждая потраченная печать увеличивает бонус Пиро урона на 5%, эффект длится 6 сек. Если во время действия эффекта снова используется заряженная атака, то она снимает предыдущий эффект."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Пламенный взгляд",
+      "description_ru": "При критическом попадании заряженной атаки по противнику Янь Фэй дополнительно наносит Пиро урон по площади, равный 80% силы атаки. Урон считается уроном заряженной атаки."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Энциклопедические знания",
+      "description_ru": "Отмечает диковинки Ли Юэ на мини-карте."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Закон суров",
+      "description_ru": "При проведении заряженной атаки каждая Багровая печать увеличивает сопротивление прерыванию во время чтения заклинания и снижает потребление выносливости этой заряженной атаки на 10%."
+    },
+    {
+      "name_ru": "Право толкования",
+      "description_ru": "Увеличивает на 20% шанс критического попадания заряженной атаки Янь Фэй против врагов с HP ниже 50%."
+    },
+    {
+      "name_ru": "Печать истины",
+      "description_ru": "Увеличивает уровень навыка Подписанный указ на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Охранная грамота",
+      "description_ru": "При использовании таланта По рукам:\nСоздаёт щит, который в течение 15 сек. поглощает урон, равный 45% от макс. HP Янь Фэй.\nПиро урон поглощается с эффективностью 250%."
+    },
+    {
+      "name_ru": "Подчинение закону",
+      "description_ru": "Увеличивает уровень навыка По рукам на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Дополнительный пункт",
+      "description_ru": "Увеличивает максимальное количество Багровых печатей на 1."
+    }
+  ],
+  "coordinates": []
 }

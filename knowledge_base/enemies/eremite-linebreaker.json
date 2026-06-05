@@ -1,0 +1,13 @@
+{
+  "id": "eremite-linebreaker",
+  "name_ru": "Штурмовик Пустынников",
+  "name_en": "Eremite Linebreaker",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

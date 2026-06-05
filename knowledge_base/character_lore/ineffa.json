@@ -1,0 +1,75 @@
+{
+  "id": "ineffa",
+  "name_en": "Ineffa",
+  "element": "Electro",
+  "weapon": "Polearm",
+  "region": "Nod-Krai (in-game) Natlan (in lore)",
+  "rarity": 5,
+  "description": "Ineffa is a playable Electro character in Genshin Impact .\n\nShe is a creation of Aino , serving as an all-utility maid and battle automaton created from various scraps from across the nations. Her core originated from Ix Raq'lapuj Chue'q Buluk , the Eleventh of the Thirteen Sovereign Lords , as the part of her who wanted to abandon her vendetta against humanity and find a new place to belong.\n\nAfter reaching Friendship Level 6 with Ineffa, a Krumkake Bolt may be obtained through the character menu.",
+  "role_summary": "Ineffa is an Electro support character who provides protective Shields for her teammates and allows them to trigger Lunar-Charged reactions.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Cyclonic Duster",
+      "description": "Normal Attack Performs up to 4 consecutive spear strikes. Charged Attack Consumes a certain amount of Stamina to perform a spinning attack. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Cleaning Mode: Carrier Frequency",
+      "description": "Ineffa engages her Enhanced Cleaning Module, dealing a single instance of AoE Electro DMG to nearby opponents, activating her Optical Flow Shield Barrier, and summoning the Multipurpose Smart Assistance Unit, Birgitta Birgitta Ineffa's assistant and companion in battle, she can be summoned to the battlefield via Elemental Skill or Elemental Burst. If there are opponents nearby, Birgitta will quickly move close to an opponent and unleash Discharge attacks every 2s, dealing AoE Electro DMG. Only one Birgitta that has been summoned by Ineffa herself can exist at any one time. Additionally, in Nod-Krai, it seems you'll be able to change Birgitta's appearance through certain means... . The Optical Flow Shield Barrier absorbs DMG based on Ineffa's ATK , and it will absorb Electro DMG with 250% effectiveness."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Supreme Instruction: Cyclonic Exterminator",
+      "description": "The Multipurpose Smart Assistance Unit, Birgitta, can use Rocket Punches to quickly clean up opponents! Ineffa shoots Birgitta into the fray, dealing AoE Electro DMG and allowing Birgitta to remain on the field. If Birgitta is already on the field, having been summoned by Ineffa, this Skill will re-summon Birgitta at the target's location and reset her duration."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Overclocking Circuit",
+      "description": "If there are thunderclouds created by Lunar-Charged reactions nearby when Birgitta unleashes Discharge attacks, she will initiate an additional attack, dealing AoE Electro DMG equal to 65% of Ineffa's ATK . This DMG is considered Lunar-Charged DMG."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Panoramic Permutation Protocol",
+      "description": "When using the Elemental Burst Supreme Instruction: Cyclonic Exterminator, all your party members will gain the Parameter Permutation effect: Increases Ineffa and your own active party member's Elemental Mastery by 6% of Ineffa's ATK for 20s."
+    },
+    {
+      "type": "Moonsign Benediction Passive",
+      "name": "Assemblage Hub",
+      "description": "When a party member triggers the Electro-Charged reaction, it will be converted into the Lunar-Charged reaction, with every 100 ATK that Ineffa has increasing Lunar-Charged's Base DMG by 0.7%, up to a maximum of 14%. Additionally, when Ineffa is in the party, the party's Moonsign will increase by 1 level."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Flavor Synthesis Unit",
+      "description": "When Ineffa uses food , there is a 30% chance of gaining a seasoning ingredient. Additionally, in Nod-Krai , it seems you'll be able to change Birgitta 's appearance through certain means..."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Rectifying Processor",
+      "effect": "When Ineffa activates her Optical Flow Shield Barrier , all nearby party members will gain the Carrier Flow Composite effect for 20s: Increases Lunar-Charged DMG by 2.5% for every 100 ATK that Ineffa has, up to a maximum of 50%."
+    },
+    "c2": {
+      "name": "Support Cleaning Module",
+      "effect": "Description Advanced Properties After the Elemental Burst Supreme Instruction: Cyclonic Exterminator hits opponents, it will inflict the Punishment Edict status on one of those hit opponents: After a brief delay, or when this opponent is attacked, nearby opponents will take AoE Electro DMG equal to 300% of Ineffa's ATK . This DMG is considered Lunar-Charged DMG. Additionally, when the Elemental Burst Supreme Instruction: Cyclonic Exterminator is unleashed, nearby party members will gain Optical Flow Shield Barriers. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Extra Lunar-Charged 0U No ICD 100 Light 200 0 ✘"
+    },
+    "c3": {
+      "name": "Enhanced Emotion Emulator",
+      "effect": "Increases the Level of Cleaning Mode: Carrier Frequency by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "The Edictless Path",
+      "effect": "When your own party members trigger Lunar-Charged reactions, recover 5 Elemental Energy . This effect can occur once every 4s."
+    },
+    "c5": {
+      "name": "Mirror's Dream Transcension",
+      "effect": "Increases the Level of Supreme Instruction: Cyclonic Exterminator by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "A Dawning Morn for You",
+      "effect": "Description Advanced Properties When Ineffa is affected by the Carrier Flow Composite effect, she will deal AoE Electro DMG equal to 135% of her ATK to opponents in the current active character's vicinity after nearby thunderclouds release bursts of lightning at opponents. This DMG is considered Lunar-Charged DMG. The aforementioned effect can trigger once every 3.5s. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Extra Lunar-Charged 0U No ICD 50 Light 200 0 ✘"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ineffa",
+  "ai_tags": "Баффер, Элемент аппликатор, Electro аппликатор"
+}

@@ -1,10 +1,17 @@
 {
   "id": "precision-kuuvahki-stamping-die",
+  "name_ru": "Штамповочная форма куувяки",
   "name_en": "Precision Kuuvahki Stamping Die",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Knuckle Duckle"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Железный утёнок Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Precision_Kuuvahki_Stamping_Die"
+  "dropped_by": [
+    "knuckle-duckle"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

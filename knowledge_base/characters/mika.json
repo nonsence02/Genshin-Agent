@@ -1,94 +1,81 @@
 {
   "id": "mika",
-  "name": "Mika",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mika",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Cryo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Mika uses his crossbow to attack, granting all nearby characters in your party Soulwind. When characters in the Soulwind state are on the field, their ATK SPD will be increased. Will take effect in different ways if Tapped or Held. Tap Fires a Flowfrost Arrow that can pierce through opponents, dealing Cryo DMG to enemies it comes into contact with. Hold Goes into Aiming Mode, locking on to an opponent and firing a Rimestar Flare at them, dealing Cryo DMG. When the Rimestar Flare hits, it will rise before exploding, launching Rimestar Shards into a maximum of other opponents, dealing Cryo DMG. When Flowfrost Arrow or Rimestar Flare hits at least one enemy, it generates Elemental Particles....",
-    "elemental_burst": "Derives the ability to spur his teammates on from the recited prayers of the knightly order, regenerating HP for all nearby party members. This healing is based on Mika's Max HP and will grant them the Eagleplume state. Eagleplume When the Normal Attacks of active characters affected by Eagleplume hit an opponent, Mika will help them regenerate HP based on his Max HP. Characters affected by this state can only regenerate HP in this way once per short interval of time. Passive Effects Passive Talent, Topographical Mapping: \"When an active character affected by both Skyfeather Song 's Eagleplume and Starfrost Swirl 's Soulwind at once scores a CRIT Hit with their attacks, Soulwind will grant..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "special": [
-        "Wolfhook",
-        "Pseudo-Stamens"
-      ]
+  "name_ru": "Мика",
+  "name_en": "Mika",
+  "element": "Cryo",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1048.5597,
+      "atk": 18.6984,
+      "def": 59.8001
     },
-    "talents": {
-      "books": [
-        "Teachings of Ballad",
-        "Guide to Ballad",
-        "Philosophies of Ballad"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "weekly_boss": [
-        "Mirror of Mushin"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12506.1524,
+      "atk": 223.0171,
+      "def": 713.235
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Копьё Фавония: Проход стрелы",
+      "description_ru": "Обычная атака:\nДо пяти атак с помощью арбалета и копья.\n\nЗаряженная атака:\nВыпад, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Вихрь звёздного инея",
+      "description_ru": "Атакует противников из арбалета и наделяет всех персонажей из вашего отряда поблизости Ветром духа, который повышает их скорость атаки, когда они активны.\nПри долгом нажатии способ активации навыка меняется.\n\nБыстрое нажатие\nВыпускает пронзающую врагов стрелу потока инея, которая наносит Крио урон.\n\nДолгое нажатие\nПереходит в режим прицеливания и выпускает в зафиксированного в качестве цели врага Сигнал ледяной звезды, который наносит Крио урон. При попадании Сигнал ледяной звезды взлетает в воздух и разрывается Осколками ледяной звезды, которые поражают до 3 других противников и наносят Крио урон."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Песнь небесного пера",
+      "description_ru": "Вдохновляет товарищей по отряду молебнами рыцарского ордена и восстанавливает HP всем окружающим членам отряда, наделяя их статусом Орлиного пера. Размер восстанавливаемого HP зависит от макс. HP Мики.\n\nОрлиное перо\nКогда обычные атаки активных персонажей со статусом Орлиного пера поражают противников, Мика восстанавливает их HP пропорционально собственному макс. HP.\nПерсонажи с этим статусом могут восстанавливать HP таким образом только один раз за определённый промежуток времени."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Подавляющий обстрел",
+      "description_ru": "В следующих ситуациях Ветер духа Вихря звёздного инея наделяет персонажей эффектом Выслеживания, который увеличивает их физ. урон на 10%, когда они активны:\n· Если стрела потока инея поражает более чем 1 противника, каждый дополнительно поражённый противник создаёт 1 уровень эффекта Выслеживания.\n· Осколок ледяной звезды, поражая противника, создаёт 1 уровень эффекта Выслеживания. Каждый Осколок ледяной звезды активируется только 1 раз.\n\nЭффект Выслеживания Ветра духа складывается до 3 раз. При повторной активации Вихря звёздного инея во время его действия существующий Ветер духа и его уровни Выслеживания будут сняты."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Топографическое картографирование",
+      "description_ru": "Если активный персонаж под одновременным воздействием Орлиного пера Песни небесного пера и Ветра духа Вихря звёздного инея наносит критическое попадание своей атакой, Ветер духа создаст 1 уровень эффекта Выслеживания таланта возвышения Подавляющий обстрел. Во время действия одного и того же Ветра духа таким образом можно получить 1 уровень эффекта Выслеживания.\nКроме того, максимум уровней Выслеживания, получаемых с помощью Ветра духа, увеличивается на 1.\nТребуется разблокировать талант возвышения Подавляющий обстрел."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Демаркация",
+      "description_ru": "Отмечает диковинки Мондштадта на мини-карте."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Непредвиденный фактор",
+      "description_ru": "Ветер духа Вихря звёздного инея сокращает интервал, с которым Орлиное перо навыка Песнь небесного пера восстанавливает HP. Процент сокращения соответствует увеличению скорости атаки Ветра духа."
+    },
+    {
+      "name_ru": "Странствия в компании",
+      "description_ru": "При первом попадании стрелы потока инея Вихря звёздного инея или попадании Сигнала ледяной звезды создаётся 1 уровень эффекта Выслеживания таланта возвышения Подавляющий обстрел.\nТребуется разблокировать талант возвышения Подавляющий обстрел."
+    },
+    {
+      "name_ru": "Разведывательный опыт",
+      "description_ru": "Увеличивает уровень навыка Песнь небесного пера на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Хвала солнечного инея",
+      "description_ru": "Орлиное перо Песни небесного пера Мики, исцеляя персонажей отряда, восстанавливает ему 3 ед. энергии. Восстановить энергию таким способом можно до 5 раз за время действия Орлиного пера, вызванного одной активацией Песни небесного пера."
+    },
+    {
+      "name_ru": "Сигнальная стрела",
+      "description_ru": "Увеличивает уровень навыка Вихрь звёздного инея на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Совет компаньона",
+      "description_ru": "Максимальное количество уровней Выслеживания Ветра духа навыка Вихрь звёздного инея увеличивается на 1. Требуется разблокировать талант возвышения Подавляющий обстрел.\nТакже физический крит. урон активных персонажей под воздействием Ветра духа увеличивается на 60%."
+    }
+  ],
+  "coordinates": []
 }

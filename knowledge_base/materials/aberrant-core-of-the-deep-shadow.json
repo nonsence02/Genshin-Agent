@@ -1,0 +1,19 @@
+{
+  "id": "aberrant-core-of-the-deep-shadow",
+  "name_ru": "Аномальное ядро глубокой тьмы",
+  "name_en": "Aberrant Core of the Deep Shadow",
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыболов скрытых глубин Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
+  ],
+  "dropped_by": [
+    "fisher-of-hidden-depths"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

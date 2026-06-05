@@ -1,0 +1,27 @@
+{
+  "id": "chili-mince-cornbread-buns",
+  "name_ru": "Острые хлебцы",
+  "name_en": "Chili-Mince Cornbread Buns",
+  "rarity": 4,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 35% и защиту на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "cabbage",
+      "count": 2
+    },
+    {
+      "material_id": "jueyun-chili",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

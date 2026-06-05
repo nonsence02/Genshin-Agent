@@ -1,10 +1,16 @@
 {
   "id": "dracolite",
+  "name_ru": "Драколит",
   "name_en": "Dracolite",
-  "type": "Local Specialty (Natlan)",
-  "days": [],
-  "source": [
-    "Found in Atocpan"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Натлана",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Атокпан",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dracolite"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

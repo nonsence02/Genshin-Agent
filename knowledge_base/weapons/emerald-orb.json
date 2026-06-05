@@ -1,48 +1,80 @@
 {
   "id": "emerald-orb",
-  "name": "Emerald Orb",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Emerald_Orb",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "3★",
-    "base_atk": "40 - 448",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Upon causing a Vaporize, Electro-Charged, Frozen, Bloom, Lunar-Charged, Lunar-Bloom, or a Hydro-infused Swirl reaction, ATK is increased by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Luminous Sands from Guyun",
-        "Hunter's Sacrificial Knife",
-        "Treasure Hoarder Insignia",
-        "Lustrous Stone from Guyun",
-        "Agent's Sacrificial Knife",
-        "Silver Raven Insignia",
-        "Relic from Guyun",
-        "Inspector's Sacrificial Knife",
-        "Golden Raven Insignia",
-        "Divine Body from Guyun"
-      ]
+  "name_ru": "Изумрудный шар",
+  "name_en": "Emerald Orb",
+  "weapon_type": "Catalyst",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 39.8751,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 20.4
+    },
+    "level_90": {
+      "base_atk": 448.2216,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 93.7176
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Воронка",
+  "passive_description_ru": "Увеличивает силу атаки на 20% на 12 сек. после активации реакций Пар, Заряжен, Заморозка, Бутонизация, Лунный заряд, Лунная бутонизация или Гидро рассеивание.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "luminous-sands-from-guyun",
+        "name_ru": "Светящийся песок Гуюнь",
+        "name_en": "Luminous Sands from Guyun"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "lustrous-stone-from-guyun",
+        "name_ru": "Блестящий камень Гуюнь",
+        "name_en": "Lustrous Stone from Guyun"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "relic-from-guyun",
+        "name_ru": "Реликвия Гуюнь",
+        "name_en": "Relic from Guyun"
+      },
+      {
+        "id": "divine-body-from-guyun",
+        "name_ru": "Останки богов Гуюнь",
+        "name_en": "Divine Body from Guyun"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "hunters-sacrificial-knife",
+        "name_ru": "Церемониальный нож охотника",
+        "name_en": "Hunter's Sacrificial Knife"
+      },
+      {
+        "id": "agents-sacrificial-knife",
+        "name_ru": "Церемониальный нож агента",
+        "name_en": "Agent's Sacrificial Knife"
+      },
+      {
+        "id": "inspectors-sacrificial-knife",
+        "name_ru": "Церемониальный нож инспектора",
+        "name_en": "Inspector's Sacrificial Knife"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

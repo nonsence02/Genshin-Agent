@@ -1,0 +1,15 @@
+{
+  "id": "medium-pretty-crystal",
+  "name_ru": "Средний красивый кристалл",
+  "name_en": "Medium Pretty Crystal",
+  "type": "consume",
+  "type_text_ru": "Созданные Предметы",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Алхимия"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

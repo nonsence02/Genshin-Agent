@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-autumn-hunt-iii",
+  "name_ru": "Подземелье благословения: В поисках клёна III",
+  "name_en": "Domain of Blessing: Autumn Hunt III",
+  "type": "Артефакты",
+  "region": "Инадзума",
+  "days_of_week": [],
+  "rewards": [
+    "shimenawas-reminiscence",
+    "emblem-of-severed-fate",
+    "resolution-of-sojourner",
+    "tiny-miracle"
+  ],
+  "coordinates": []
+}

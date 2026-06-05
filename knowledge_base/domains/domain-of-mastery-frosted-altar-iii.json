@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-frosted-altar-iii",
+  "name_ru": "Мастерство: Инеевый алтарь III",
+  "name_en": "Domain of Mastery: Frosted Altar III",
+  "type": "Повышение талантов",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-freedom",
+    "teachings-of-freedom"
+  ],
+  "coordinates": []
+}

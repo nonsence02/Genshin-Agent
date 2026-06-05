@@ -1,10 +1,18 @@
 {
   "id": "counterfeit-resin",
+  "name_ru": "Поддельная смола",
   "name_en": "Counterfeit Resin",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ Il Dottore Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дотторе Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Counterfeit_Resin"
+  "dropped_by": [
+    "il-dottore"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

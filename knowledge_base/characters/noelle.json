@@ -1,92 +1,81 @@
 {
   "id": "noelle",
-  "name": "Noelle",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Noelle",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Geo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Summons protective stone armor, dealing Geo DMG to surrounding opponents and creating a shield. The shield's DMG Absorption scales based on Noelle's DEF. The shield has the following properties: When Noelle's Normal and Charged Attacks hit a target, they have a certain chance to regenerate HP for all characters. Possesses",
-    "elemental_burst": "Gathering the strength of stone around her weapon, Noelle strikes the opponents surrounding her within a large AoE, dealing Geo DMG. Afterwards, Noelle gains the following effects: Larger attack AoE. Converts attack DMG to Geo DMG that cannot be overridden by any other elemental infusion. Increased ATK that scales based on her DEF. Elemental Burst DMG"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Prithiva Topaz Sliver",
-        "Prithiva Topaz Fragment",
-        "Prithiva Topaz Chunk",
-        "Prithiva Topaz Gemstone"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "special": [
-        "Valberry",
-        "Basalt Pillar"
-      ]
+  "name_ru": "Ноэлль",
+  "name_en": "Noelle",
+  "element": "Geo",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1012.088,
+      "atk": 16.0272,
+      "def": 66.9532
     },
-    "talents": {
-      "books": [
-        "Teachings of Resistance",
-        "Guide to Resistance",
-        "Philosophies of Resistance"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "weekly_boss": [
-        "Dvalin's Claw"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12071.1554,
+      "atk": 191.1575,
+      "def": 798.5502
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Фехтовальный стиль Фавония: Горничная",
+      "description_ru": "Обычная атака:\nДо четырёх рубящих ударов мечом.\n\nЗаряженная атака:\nВращающаяся атака по окружающим врагам, на которую непрерывно тратится выносливость.\nПосле вращения проводит дополнительную мощную атаку мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Бронефартук",
+      "description_ru": "Навык призывает каменную броню, которая наносит Гео урон окружающим врагам и создаёт щит. Поглощаемый урон зависит от защиты Ноэлль.\nЩит имеет следующие свойства:\n· Попадания обычной и заряженной атакой Ноэлль имеют шанс восстановить HP всем членам отряда.\n· Любой элементальный и физический урон поглощается на 150% эффективнее.\n\nКоличество восстанавливаемого HP зависит от защиты Ноэлль."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Генеральная уборка",
+      "description_ru": "Ноэлль собирает силу камня вокруг своего меча и проводит атаку по врагам в большом радиусе, нанося им Гео урон.\nПосле этого Ноэлль получает следующие эффекты:\n· Увеличивается радиус атак.\n· Конвертирует урон от атак в Гео урон, этот эффект не может быть отменён какой-либо элементальной инфузией.\n·Сила атаки увеличивается пропорционально защите Ноэлль."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "От всего сердца",
+      "description_ru": "Будучи в отряде, но не активным персонажем, Ноэлль активирует этот навык, когда HP активного персонажа падает ниже 30%:\n· Создаёт щит для вашего персонажа, который длится 20 сек. и поглощает урон, равный 400% от защиты Ноэлль.\n· Весь элементальный и физический урон поглощается на 150% эффективнее.\n· Может возникнуть раз в 60 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Вот и чистенько",
+      "description_ru": "Каждые 4 попадания обычными или заряженными атаками Ноэлль уменьшают время отката навыка Бронефартук на 1 сек.\nОдно попадание может засчитываться каждые 0,1 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Забота горничной",
+      "description_ru": "При приготовлении идеального блюда, повышающего защиту, имеет 12% шанс получить дополнительное блюдо."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Я прикрою!",
+      "description_ru": "Одновременное использование навыков Генеральная уборка и Бронефартук повышает шанс активации лечащей способности навыка Бронефартук на 100%."
+    },
+    {
+      "name_ru": "Горничная на ветру",
+      "description_ru": "Уменьшает потребление выносливости заряженной атаки Ноэлль на 20%, а также увеличивает урон на 15%."
+    },
+    {
+      "name_ru": "Неуязвимая горничная",
+      "description_ru": "Увеличивает уровень навыка Бронефартук на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Всё будет чисто",
+      "description_ru": "Если оканчивается действие щита навыка Бронефартук или щит оказывается разрушен, то окружающим врагам наносится Гео урон, равный 400% от силы атаки."
+    },
+    {
+      "name_ru": "Рыцарь метлы и щётки",
+      "description_ru": "Увеличивает уровень навыка Генеральная уборка на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Пятновыводитель",
+      "description_ru": "Навык Генеральная уборка увеличивает силу атаки на дополнительные 50% от защиты Ноэлль.\nТакже каждый побеждённый враг добавляет 1 сек. к длительности навыка, пока он активен. Макс. 10 сек."
+    }
+  ],
+  "coordinates": []
 }

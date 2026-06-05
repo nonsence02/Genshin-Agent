@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-elegance",
+  "name_ru": "Учения об «Изяществе»",
   "name_en": "Teachings of Elegance",
-  "type": "Character Talent Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Violet Court (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Elegance"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-thundering-valley-i",
+    "domain-of-mastery-thundering-valley-ii",
+    "domain-of-mastery-thundering-valley-iii",
+    "domain-of-mastery-thundering-valley-iv"
+  ],
+  "source_domain": "domain-of-mastery-thundering-valley-i",
+  "coordinates": []
 }

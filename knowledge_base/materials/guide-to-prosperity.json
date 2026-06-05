@@ -1,14 +1,23 @@
 {
   "id": "guide-to-prosperity",
+  "name_ru": "Указания о «Процветании»",
   "name_en": "Guide to Prosperity",
-  "type": "Character Talent Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Taishan Mansion (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Prosperity"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-altar-of-flames-ii",
+    "domain-of-mastery-altar-of-flames-iii",
+    "domain-of-mastery-altar-of-flames-iv"
+  ],
+  "source_domain": "domain-of-mastery-altar-of-flames-ii",
+  "coordinates": []
 }

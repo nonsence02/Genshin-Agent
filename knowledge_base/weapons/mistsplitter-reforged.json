@@ -1,0 +1,80 @@
+{
+  "id": "mistsplitter-reforged",
+  "name_ru": "Рассекающий туман",
+  "name_en": "Mistsplitter Reforged",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.096
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.441
+    }
+  },
+  "passive_name_ru": "Лезвие рассекателя тумана",
+  "passive_description_ru": "Все типы элементального урона получают 12% бонуса урона, а также силу Эмблемы рассекателя тумана. На уровнях эмблемы 1, 2 или 3 персонаж получает 8%, 16% или 28% бонуса к элементальному урону своей стихии соответственно. Персонаж получает 1 уровень Эмблемы рассекателя тумана в каждом из следующих случаев: при нанесении элементального урона обычной атакой, эмблема действует 5 сек.; при применении взрыва стихии, эмблема действует 10 сек.; когда элементальная энергия персонажа ниже 100%, полученная таким образом эмблема действует до тех пор, пока персонаж не восстановит всю свою элементальную энергию. Продолжительность действия каждого уровня эмблемы рассчитывается индивидуально.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "coral-branch-of-a-distant-sea",
+        "name_ru": "Коралловая ветвь внешних морей",
+        "name_en": "Coral Branch of a Distant Sea"
+      },
+      {
+        "id": "jeweled-branch-of-a-distant-sea",
+        "name_ru": "Драгоценная ветвь внешних морей",
+        "name_en": "Jeweled Branch of a Distant Sea"
+      },
+      {
+        "id": "jade-branch-of-a-distant-sea",
+        "name_ru": "Нефритовая ветвь внешних морей",
+        "name_en": "Jade Branch of a Distant Sea"
+      },
+      {
+        "id": "golden-branch-of-a-distant-sea",
+        "name_ru": "Золотая ветвь внешних морей",
+        "name_en": "Golden Branch of a Distant Sea"
+      }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-gear",
+        "name_ru": "Механизм хаоса",
+        "name_en": "Chaos Gear"
+      },
+      {
+        "id": "chaos-axis",
+        "name_ru": "Ось хаоса",
+        "name_en": "Chaos Axis"
+      },
+      {
+        "id": "chaos-oculus",
+        "name_ru": "Око хаоса",
+        "name_en": "Chaos Oculus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
+}

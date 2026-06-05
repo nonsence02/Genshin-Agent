@@ -1,94 +1,81 @@
 {
   "id": "chevreuse",
-  "name": "Chevreuse",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Chevreuse",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Chevreuse quickly shoulders her musket and fires at her opponent(s), dealing AoE Pyro DMG. For a short duration after Chevreuse fires a shot, she will continuously restore HP to the active character on the field. The amount healed is based on her Max HP. Hold to fire in a different fashion. Hold Enter Aiming Mode, locking a target in her sights to fire a precise interdiction shot. If Chevreuse has an Overcharged Ball, then she will fire the Overcharged Ball instead, dealing greater Pyro DMG in a larger area. Chevreuse gains Overcharged Ball every time a nearby character in the party triggers an Overloaded reaction, and can have up to Overcharged Ball at a time. Arkhe: Ousia Periodically,...",
-    "elemental_burst": "Chevreuse fires an explosive grenade at opponents with her musket, dealing AoE Pyro DMG. After the projectile hits, it will split into many secondary explosive shells. The secondary explosive shells will burst after a short interval, dealing Pyro DMG to nearby opponents. Secondary Explosive Shell DMG will knock enemies towards the center of the Explosive Grenade blast. Constellation Effects Constellation Level, The Secret to Rapid-Fire Multishots: \"After using Ring of Bursting Grenades, the Hold mode of Short-Range Rapid Interdiction Fire will not go on cooldown when Chevreuse uses it. This effect is removed after Short-Range Rapid Interdiction Fire has been fired twice using Hold or..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Meshing Gear",
-        "Mechanical Spur Gear",
-        "Artificed Dynamic Gear"
-      ],
-      "special": [
-        "Lumidouce Bell",
-        "Fontemer Unihorn"
-      ]
+  "name_ru": "Шеврёз",
+  "name_en": "Chevreuse",
+  "element": "Pyro",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1002.9701,
+      "atk": 16.2053,
+      "def": 50.7013
     },
-    "talents": {
-      "books": [
-        "Teachings of Order",
-        "Guide to Order",
-        "Philosophies of Order"
-      ],
-      "mob_drops": [
-        "Meshing Gear",
-        "Mechanical Spur Gear",
-        "Artificed Dynamic Gear"
-      ],
-      "weekly_boss": [
-        "Lightless Eye of the Maelstrom"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 11962.4065,
+      "atk": 193.2814,
+      "def": 604.7141
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Модифицированный ряд штыков",
+      "description_ru": "Обычная атака:\nДо четырёх ударов копьём.\n\nЗаряженная атака:\nВыпад, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Быстрый преграждающий выстрел вблизи",
+      "description_ru": "Шеврёз быстро вскидывает мушкет к плечу и стреляет в противника, нанося Пиро урон по площади.\nВ течение некоторого времени после выстрела Шеврёз периодически восстанавливает HP вашего активного персонажа пропорционально собственному макс. HP.\nПри долгом нажатии способ активации навыка меняется.\n\nДолгое нажатие\nПереходит в режим прицеливания и фиксирует одну цель, чтобы совершить точный преграждающий выстрел. Если у Шеврёз есть Перегруженный заряд, она выстрелит им и нанесёт повышенный Пиро урон по большей площади.\nКаждый раз, когда член отряда поблизости вызывает реакцию Перегрузка, Шеврёз получает 1 Перегруженный заряд. Одновременно можно иметь не более 1 Перегруженного заряда.\n\n\nАрхэ: Усия\nПосле попадания навыка Быстрый преграждающий выстрел вблизи Шеврёз периодически призывает Клинок бурных вод, который наносит Пиро урон усии."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Кольцо разрывных гранат",
+      "description_ru": "Шеврёз выстреливает во врагов разрывной гранатой и наносит Пиро урон по площади. После попадания граната разделяется на множество вторичных разрывных снарядов.\nЧерез короткий промежуток времени разрывные снаряды взрываются, нанося Пиро урон врагам поблизости."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Согласованная тактика авангарда",
+      "description_ru": "Если отряд полностью состоит из Пиро и Электро персонажей и в отряде есть хотя бы по одному персонажу Электро или Пиро:\nШеврёз наделяет персонажей поблизости Согласованной тактикой: когда персонаж активирует реакцию Перегрузка, Пиро и Электро сопротивление противника, который был поражён данной реакцией, понижается на 40% на 6 сек.\nЕсли элементы персонажей отряда не соответствуют требованиям этого таланта возвышения, все существующие эффекты Согласованной тактики прерываются."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Вертикальное координирование сил",
+      "description_ru": "После того как Шеврёз выстреливает Перегруженным зарядом Быстрого преграждающего выстрела вблизи, сила атаки персонажей Пиро и Электро в отряде поблизости на 30 сек. увеличится на 1% за каждые 1000 ед. макс. HP Шеврёз. Силу атаки этим способом можно повысить максимум на 40%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Манёвр скорого марша",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время спринта на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Решительность прочного фронта",
+      "description_ru": "Когда активный персонаж (кроме самой Шеврёз), находящийся под воздействием эффекта Согласованная тактика, активирует реакцию Перегрузка, он восстанавливает 6 ед. энергии. Эффект может возникнуть один раз в 10 сек.\nТребуется разблокировать талант возвышения Согласованная тактика авангарда."
+    },
+    {
+      "name_ru": "Вызванный метким выстрелом взрыв",
+      "description_ru": "При попадании долгого нажатия навыка Быстрый преграждающий выстрел вблизи рядом с местом попадания вызывается 2 цепных взрыва. Каждый взрыв наносит Пиро урон в 120% от силы атаки Шеврёз. Эффект возникает раз в 10 сек. Этот урон считается уроном элементального навыка."
+    },
+    {
+      "name_ru": "Отработанная разборка в поле",
+      "description_ru": "Увеличивает уровень навыка Быстрый преграждающий выстрел вблизи на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Секрет частого огня",
+      "description_ru": "После применения Кольца разрывных гранат, Быстрый преграждающий выстрел вблизи Шеврёз, активированный долгим нажатием, не уходит в откат. Через 6 сек. или после двух активаций Быстрого преграждающего выстрела вблизи удержанием эффект исчезает."
+    },
+    {
+      "name_ru": "Урон усиленного огня",
+      "description_ru": "Увеличивает уровень навыка Кольцо разрывных гранат на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "В погоне за искоренением зла",
+      "description_ru": "После 12 сек. действия эффекта лечения навыка Быстрый преграждающий выстрел вблизи все окружающие члены отряда один раз восстанавливают HP в размере 10% от макс. HP Шеврёз.\nПосле получения лечения Быстрого преграждающего выстрела вблизи персонаж отряда на 8 сек. наделяется 20% бонусом Пиро и Электро урона. Этот эффект может складываться до 3 раз. Длительность каждого уровня рассчитывается отдельно."
+    }
+  ],
+  "coordinates": []
 }

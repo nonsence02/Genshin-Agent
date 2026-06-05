@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-basket-of-discipline-iii",
+  "name_ru": "Мастерство: Корзина дисциплины III",
+  "name_en": "Domain of Mastery: Basket of Discipline III",
+  "type": "Повышение талантов",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-praxis",
+    "teachings-of-praxis"
+  ],
+  "coordinates": []
+}

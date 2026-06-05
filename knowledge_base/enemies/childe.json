@@ -1,0 +1,31 @@
+{
+  "id": "childe",
+  "name_ru": "Чайльд",
+  "name_en": "Childe",
+  "type": "BOSS",
+  "type_ru": "Враги, достойные упоминания",
+  "drops": [
+    "tusk-of-monoceros-caeli",
+    "shard-of-a-foul-legacy",
+    "shadow-of-the-warrior",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "dream-solvent",
+    "northlander-sword-billet",
+    "northlander-bow-billet",
+    "northlander-claymore-billet",
+    "northlander-catalyst-billet",
+    "northlander-polearm-billet"
+  ],
+  "coordinates": []
+}

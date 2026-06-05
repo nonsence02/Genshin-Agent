@@ -1,14 +1,23 @@
 {
   "id": "guide-to-conflict",
+  "name_ru": "Указания о «Раздоре»",
   "name_en": "Guide to Conflict",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Blazing Ruins (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Conflict"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-return-ii",
+    "domain-of-mastery-return-iii",
+    "domain-of-mastery-return-iv"
+  ],
+  "source_domain": "domain-of-mastery-return-ii",
+  "coordinates": []
 }

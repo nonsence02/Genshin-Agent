@@ -1,10 +1,17 @@
 {
   "id": "fontemer-unihorn",
+  "name_ru": "Рог Фонтмера",
   "name_en": "Fontemer Unihorn",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Millennial Pearl Seahorse"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Морские коньки тысячелетней жемчужины Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fontemer_Unihorn"
+  "dropped_by": [
+    "millennial-pearl-seahorse"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,15 @@
+{
+  "id": "moonstringer",
+  "name_ru": "Лунная нить",
+  "name_en": "Moonstringer",
+  "type": "fish_rod",
+  "type_text_ru": "Удочка",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Награда события"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

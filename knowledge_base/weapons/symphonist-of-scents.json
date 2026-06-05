@@ -1,48 +1,80 @@
 {
   "id": "symphonist-of-scents",
-  "name": "Symphonist of Scents",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Symphonist_of_Scents",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "ATK is increased by. When the equipping character is off-field, ATK is increased by an additional. After initiating healing, the equipping character and the character(s) they have healed will obtain the \"Sweet Echoes\", increasing their ATK by for. This can be triggered even if the equipping character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dross of Pure Sacred Dewdrop",
-        "Drop of Tainted Water",
-        "Transoceanic Pearl",
-        "Sublimation of Pure Sacred Dewdrop",
-        "Scoop of Tainted Water",
-        "Transoceanic Chunk",
-        "Spring of Pure Sacred Dewdrop",
-        "Newborn Tainted Hydro Phantasm",
-        "Xenochromatic Crystal",
-        "Essence of Pure Sacred Dewdrop"
-      ]
+  "name_ru": "Симфонист ароматов",
+  "name_en": "Symphonist of Scents",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.144
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.6615
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Симфония вкусов",
+  "passive_description_ru": "Сила атаки повышается на 12%. Когда экипированный персонаж неактивен, сила атаки дополнительно повышается на 12%. После осуществления лечения экипированный и получивший лечение персонажи приобретают эффект Сладких эхо: их сила атаки повышается на 32% на 3 сек. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "dross-of-pure-sacred-dewdrop",
+        "name_ru": "Осадок чистой капли росы",
+        "name_en": "Dross of Pure Sacred Dewdrop"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "sublimation-of-pure-sacred-dewdrop",
+        "name_ru": "Конденсат чистой капли росы",
+        "name_en": "Sublimation of Pure Sacred Dewdrop"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "spring-of-pure-sacred-dewdrop",
+        "name_ru": "Источник чистой капли росы",
+        "name_en": "Spring of Pure Sacred Dewdrop"
+      },
+      {
+        "id": "essence-of-pure-sacred-dewdrop",
+        "name_ru": "Эссенция чистой капли росы",
+        "name_en": "Essence of Pure Sacred Dewdrop"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "drop-of-tainted-water",
+        "name_ru": "Мутная капля",
+        "name_en": "Drop of Tainted Water"
+      },
+      {
+        "id": "scoop-of-tainted-water",
+        "name_ru": "Мутная лужица",
+        "name_en": "Scoop of Tainted Water"
+      },
+      {
+        "id": "newborn-tainted-hydro-phantasm",
+        "name_ru": "Новорождённый фантазм мутных вод",
+        "name_en": "Newborn Tainted Hydro Phantasm"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "transoceanic-pearl",
+        "name_ru": "Жемчужина иноморья",
+        "name_en": "Transoceanic Pearl"
+      },
+      {
+        "id": "transoceanic-chunk",
+        "name_ru": "Обломок из иноморья",
+        "name_en": "Transoceanic Chunk"
+      },
+      {
+        "id": "xenochromatic-crystal",
+        "name_ru": "Ксенохромный кристалл",
+        "name_en": "Xenochromatic Crystal"
+      }
+    ]
+  },
+  "coordinates": []
 }

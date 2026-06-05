@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-forgery-thundercloud-altar-iii",
+  "name_ru": "Воля: Алтарь грозовых туч III",
+  "name_en": "Domain of Forgery: Thundercloud Altar III",
+  "type": "Возвышение оружия",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "relic-from-guyun",
+    "lustrous-stone-from-guyun",
+    "luminous-sands-from-guyun"
+  ],
+  "coordinates": []
+}

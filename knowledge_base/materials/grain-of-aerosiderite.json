@@ -1,14 +1,25 @@
 {
   "id": "grain-of-aerosiderite",
+  "name_ru": "Зерно чёрного сидерита",
   "name_en": "Grain of Aerosiderite",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Hidden Palace of Lianshan Formula (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка Ли Юэ",
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Grain_of_Aerosiderite"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-trial-grounds-of-thunder-i",
+    "domain-of-forgery-trial-grounds-of-thunder-ii",
+    "domain-of-forgery-trial-grounds-of-thunder-iii",
+    "domain-of-forgery-trial-grounds-of-thunder-iv"
+  ],
+  "source_domain": "domain-of-forgery-trial-grounds-of-thunder-i",
+  "coordinates": []
 }

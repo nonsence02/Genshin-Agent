@@ -1,0 +1,13 @@
+{
+  "id": "overgrown-breacher-primus",
+  "name_ru": "Прорастающий протоген расщелин",
+  "name_en": "Overgrown Breacher Primus",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "alien-life-core",
+    "foreign-synapse",
+    "rift-core"
+  ],
+  "coordinates": []
+}

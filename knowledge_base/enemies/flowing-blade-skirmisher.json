@@ -1,0 +1,13 @@
+{
+  "id": "flowing-blade-skirmisher",
+  "name_ru": "Клинок течений: Налётчица",
+  "name_en": "Flowing Blade Skirmisher",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

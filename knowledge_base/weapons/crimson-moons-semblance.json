@@ -1,48 +1,80 @@
 {
   "id": "crimson-moons-semblance",
-  "name": "Crimson Moon's Semblance",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Crimson_Moon%27s_Semblance",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "48 - 674",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "Grants a Bond of Life equal to of Max HP when a Charged Attack hits an opponent. This can be triggered up to once every. In addition, when the equipping character has a Bond of Life, they gain a DMG Bonus; if the value of the Bond of Life is greater than or equal to of Max HP, then gain an additional DMG.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Broken Goblet of the Pristine Sea",
-        "Ruined Hilt",
-        "Meshing Gear",
-        "Wine Goblet of the Pristine Sea",
-        "Splintered Hilt",
-        "Mechanical Spur Gear",
-        "Silver Goblet of the Pristine Sea",
-        "Still-Smoldering Hilt",
-        "Artificed Dynamic Gear",
-        "Golden Goblet of the Pristine Sea"
-      ]
+  "name_ru": "Очертания алой луны",
+  "name_en": "Crimson Moon's Semblance",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.048
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.2205
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Тень пепельного солнца",
+  "passive_description_ru": "Попадание заряженной атакой по врагу наделяет Долгом жизни, равным 25% от макс. HP. Этот эффект может возникнуть раз в 14 сек. Кроме того, пока экипированный персонаж наделён Долгом жизни, наносимый им урон повышается на 12%. Если значение Долга жизни равно или превышает 30% от макс. HP, наносимый урон дополнительно повышается на 24%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "broken-goblet-of-the-pristine-sea",
+        "name_ru": "Разбитая чаша непорочного моря",
+        "name_en": "Broken Goblet of the Pristine Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "wine-goblet-of-the-pristine-sea",
+        "name_ru": "Чаша непорочного моря",
+        "name_en": "Wine Goblet of the Pristine Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-goblet-of-the-pristine-sea",
+        "name_ru": "Серебряный кубок непорочного моря",
+        "name_en": "Silver Goblet of the Pristine Sea"
+      },
+      {
+        "id": "golden-goblet-of-the-pristine-sea",
+        "name_ru": "Золотой кубок непорочного моря",
+        "name_en": "Golden Goblet of the Pristine Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "ruined-hilt",
+        "name_ru": "Сломанный эфес",
+        "name_en": "Ruined Hilt"
+      },
+      {
+        "id": "splintered-hilt",
+        "name_ru": "Расщеплённый эфес",
+        "name_en": "Splintered Hilt"
+      },
+      {
+        "id": "still-smoldering-hilt",
+        "name_ru": "Неугасающий эфес",
+        "name_en": "Still-Smoldering Hilt"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "meshing-gear",
+        "name_ru": "Сцепляющаяся шестерня",
+        "name_en": "Meshing Gear"
+      },
+      {
+        "id": "mechanical-spur-gear",
+        "name_ru": "Шестерня механизма",
+        "name_en": "Mechanical Spur Gear"
+      },
+      {
+        "id": "artificed-dynamic-gear",
+        "name_ru": "Изощрённая динамическая шестерня",
+        "name_en": "Artificed Dynamic Gear"
+      }
+    ]
+  },
+  "coordinates": []
 }

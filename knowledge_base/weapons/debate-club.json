@@ -1,48 +1,80 @@
 {
   "id": "debate-club",
-  "name": "Debate Club",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Debate_Club",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "3★",
-    "base_atk": "39 - 401",
-    "secondary_stat": "ATK"
-  },
-  "passive": "After using an Elemental Skill, Normal or Charged Attacks, on hit, deal an additional ATK DMG in a small area. lasts. DMG can only occur once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mist Veiled Lead Elixir",
-        "Mist Grass Pollen",
-        "Damaged Mask",
-        "Mist Veiled Mercury Elixir",
-        "Mist Grass",
-        "Stained Mask",
-        "Mist Veiled Gold Elixir",
-        "Mist Grass Wick",
-        "Ominous Mask",
-        "Mist Veiled Primo Elixir"
-      ]
+  "name_ru": "Дубина переговоров",
+  "name_en": "Debate Club",
+  "weapon_type": "Claymore",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 38.7413,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.0766
+    },
+    "level_90": {
+      "base_atk": 401.2936,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.3519
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Говори как есть",
+  "passive_description_ru": "При попадании Элементальным навыком Обычные и Заряженные атаки наносят дополнительные 60% урона по небольшой площади в течение 15 сек. Может возникнуть раз в 3 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mist-veiled-lead-elixir",
+        "name_ru": "Свинцовая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Lead Elixir"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mist-veiled-mercury-elixir",
+        "name_ru": "Ртутная пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Mercury Elixir"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mist-veiled-gold-elixir",
+        "name_ru": "Золотая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Gold Elixir"
+      },
+      {
+        "id": "mist-veiled-primo-elixir",
+        "name_ru": "Примо эликсир Заоблачного моря",
+        "name_en": "Mist Veiled Primo Elixir"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mist-grass-pollen",
+        "name_ru": "Пыльца туманной травы",
+        "name_en": "Mist Grass Pollen"
+      },
+      {
+        "id": "mist-grass",
+        "name_ru": "Мешочек с туманной травой",
+        "name_en": "Mist Grass"
+      },
+      {
+        "id": "mist-grass-wick",
+        "name_ru": "Пучок туманной травы",
+        "name_en": "Mist Grass Wick"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "damaged-mask",
+        "name_ru": "Разбитая маска",
+        "name_en": "Damaged Mask"
+      },
+      {
+        "id": "stained-mask",
+        "name_ru": "Грязная маска",
+        "name_en": "Stained Mask"
+      },
+      {
+        "id": "ominous-mask",
+        "name_ru": "Зловещая маска",
+        "name_en": "Ominous Mask"
+      }
+    ]
+  },
+  "coordinates": []
 }

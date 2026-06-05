@@ -1,0 +1,15 @@
+{
+  "id": "ancient-mondstadt-royal-seal",
+  "name_ru": "Печать аристократов древнего Мондштадта",
+  "name_en": "Ancient Mondstadt Royal Seal",
+  "type": "consume",
+  "type_text_ru": "Предмет приключения",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Награды за исследование Пика ветров"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

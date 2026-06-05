@@ -1,0 +1,27 @@
+{
+  "id": "harbor-fish-burger",
+  "name_ru": "Рыбный бургер «Морская гавань»",
+  "name_en": "Harbor Fish Burger",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает макс. HP всех членов отряда на 25% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "onion",
+      "count": 2
+    },
+    {
+      "material_id": "windrest-flower",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

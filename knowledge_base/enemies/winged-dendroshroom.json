@@ -1,0 +1,16 @@
+{
+  "id": "winged-dendroshroom",
+  "name_ru": "Крылатый Дендро моровик",
+  "name_en": "Winged Dendroshroom",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "robust-fungal-nucleus",
+    "dormant-fungal-nucleus",
+    "inactivated-fungal-nucleus",
+    "crystalline-cyst-dust",
+    "luminescent-pollen",
+    "fungal-spores"
+  ],
+  "coordinates": []
+}

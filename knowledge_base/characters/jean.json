@@ -1,92 +1,81 @@
 {
   "id": "jean",
-  "name": "Jean",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Jean",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Anemo",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Focusing the might of the formless wind around her blade, Jean releases a miniature storm, launching opponents in the direction she aims at, dealing massive Anemo DMG. Hold At the cost of continued stamina consumption, Jean can command the whirlwind to pull surrounding opponents and objects towards her front. Direction can be adjusted. Character is immobile during skill duration. When this skill hits at least one enemy, it generates Elemental Particles. When this skill is held, Jean will continuously apply a Struggle state to enemies near the center of the Vacuum Field whose weight is less than or equal to, preventing them from performing any actions and allowing them to be lifted into the...",
-    "elemental_burst": "Calling upon the wind's protection, Jean creates a swirling Dandelion Field, launching surrounding opponents and dealing Anemo DMG. At the same time, she instantly regenerates a large amount of HP for all party members. The amount of HP restored scales off Jean's ATK. Dandelion Field Continuously regenerates HP of characters within the AoE and continuously imbues them with Anemo. Deals Anemo DMG to opponents entering or exiting the Dandelion Field. This Elemental Burst drains energy later than most others. [ ] The Dandelion Field lasts for seconds. The Dandelion Field will heal active characters within it and apply Anemo to them once every second for a total of times. Swirl reactions..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "special": [
-        "Dandelion Seed",
-        "Hurricane Seed"
-      ]
+  "name_ru": "Джинн",
+  "name_en": "Jean",
+  "element": "Anemo",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1143.984,
+      "atk": 18.62,
+      "def": 59.83
     },
-    "talents": {
-      "books": [
-        "Teachings of Resistance",
-        "Guide to Resistance",
-        "Philosophies of Resistance"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "weekly_boss": [
-        "Dvalin's Plume"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 14695.0932,
+      "atk": 239.1784,
+      "def": 768.5544
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Фехтовальный стиль Фавония",
+      "description_ru": "Обычная атака:\nДо пяти быстрых ударов мечом.\n\nЗаряженная атака:\nС помощью силы ветра подкидывает противников в воздух, на что тратится определённое количество выносливости.\nПодкинутые враги медленно падают на землю.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Клинок ветра",
+      "description_ru": "Джинн фокусирует всю мощь бесформенного ветра вокруг своего клинка и создаёт миниатюрный вихрь, который подбрасывает противников в направлении её взгляда, а также наносит им большой Анемо урон.\n\nДолгое нажатие:\nПродолжая затрачивать выносливость, Джинн может с помощью вихря притянуть врагов и предметы к себе. Также можно выбрать направление броска. Во время действия навыка Джинн не может двигаться."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Одуванчиковый бриз",
+      "description_ru": "Джинн призывает защитный ветер и создаёт поле одуванчиков, которое отбрасывает окружающих врагов и наносит им Анемо урон.\nВ то же время Джинн восстанавливает всем членам отряда определённое количество HP, которое зависит от её силы атаки.\n\nПоле одуванчиков:\n· Периодически восстанавливает HP членам отряда в поле одуванчиков;\n· Наделяет членов отряда в поле одуванчиков эффектом Анемо;\n· Наносит Анемо урон врагам, входящим или выходящим за границы поля одуванчиков."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Дружественный бриз",
+      "description_ru": "Попадания обычной атакой Джинн имеют 50% шанс вылечить всех членов отряда на количество HP, равное 15% от силы атаки Джинн."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Да направит тебя ветер",
+      "description_ru": "Использование навыка Одуванчиковый бриз восстанавливает 20% энергии."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Направляющий ветер",
+      "description_ru": "При приготовлении идеального блюда с восстанавливающими свойствами имеет 12% шанс получить дополнительное блюдо."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Растущий ураган",
+      "description_ru": "Увеличивает скорость притягивания навыка Клинок ветра после его удерживания более 1 сек, а также увеличивает урон навыка на 40%."
+    },
+    {
+      "name_ru": "Братский щит",
+      "description_ru": "Когда Джинн получает элементальную сферу или частицу, скорость передвижения и скорость атаки всех членов отряда увеличивается на 15% в течение 15 сек."
+    },
+    {
+      "name_ru": "Куда дует ветер",
+      "description_ru": "Увеличивает уровень навыка Одуванчиковый бриз на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Королевство Одуванчиков",
+      "description_ru": "Понижает Анемо сопротивление противников, находящихся в поле навыка Одуванчиковый бриз, на 40%."
+    },
+    {
+      "name_ru": "Шквальный ветер",
+      "description_ru": "Увеличивает уровень навыка Клинок ветра на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Рыцарь Львиный клык",
+      "description_ru": "Уменьшает получаемый в поле навыка Одуванчиковый бриз урон на 35%.\nПосле ухода из поля одуванчиков данный эффект длится ещё 3 атаки или 10 сек."
+    }
+  ],
+  "coordinates": []
 }

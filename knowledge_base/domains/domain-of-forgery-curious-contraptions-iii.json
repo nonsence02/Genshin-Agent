@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-forgery-curious-contraptions-iii",
+  "name_ru": "Воля: Удивительные механизмы III",
+  "name_en": "Domain of Forgery: Curious Contraptions III",
+  "type": "Возвышение оружия",
+  "region": "Фонтейн",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "silver-goblet-of-the-pristine-sea",
+    "wine-goblet-of-the-pristine-sea",
+    "broken-goblet-of-the-pristine-sea"
+  ],
+  "coordinates": []
+}

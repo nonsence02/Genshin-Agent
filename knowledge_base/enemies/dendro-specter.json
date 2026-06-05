@@ -1,0 +1,13 @@
+{
+  "id": "dendro-specter",
+  "name_ru": "Дендро призрак",
+  "name_en": "Dendro Specter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "spectral-nucleus",
+    "spectral-heart",
+    "spectral-husk"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-altar-of-flames-iii",
+  "name_ru": "Мастерство: Алтарь пламени III",
+  "name_en": "Domain of Mastery: Altar of Flames III",
+  "type": "Повышение талантов",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-prosperity",
+    "teachings-of-prosperity"
+  ],
+  "coordinates": []
+}

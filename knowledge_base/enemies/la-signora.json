@@ -1,0 +1,27 @@
+{
+  "id": "la-signora",
+  "name_ru": "Синьора",
+  "name_en": "La Signora",
+  "type": "BOSS",
+  "type_ru": "Враги, достойные упоминания",
+  "drops": [
+    "molten-moment",
+    "hellfire-butterfly",
+    "ashen-heart",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "dream-solvent",
+    "northlander-sword-billet",
+    "northlander-bow-billet",
+    "northlander-claymore-billet",
+    "northlander-catalyst-billet",
+    "northlander-polearm-billet"
+  ],
+  "coordinates": []
+}

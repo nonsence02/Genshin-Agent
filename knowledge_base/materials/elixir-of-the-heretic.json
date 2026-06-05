@@ -1,10 +1,18 @@
 {
   "id": "elixir-of-the-heretic",
+  "name_ru": "Еретический эликсир",
   "name_en": "Elixir of the Heretic",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ The Doctor Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Доктор Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Elixir_of_the_Heretic"
+  "dropped_by": [
+    "the-doctor"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-necropolis-ii",
+  "name_ru": "Подземелье благословения: Некрополь II",
+  "name_en": "Domain of Blessing: Necropolis II",
+  "type": "Артефакты",
+  "region": "Инадзума",
+  "days_of_week": [],
+  "rewards": [
+    "husk-of-opulent-dreams",
+    "ocean-hued-clam",
+    "defenders-will",
+    "brave-heart"
+  ],
+  "coordinates": []
+}

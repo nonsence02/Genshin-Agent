@@ -1,0 +1,27 @@
+{
+  "id": "rainbow-aster",
+  "name_ru": "Радужная астра",
+  "name_en": "Rainbow Aster",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время полёта и спринта на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "milk",
+      "count": 3
+    },
+    {
+      "material_id": "lavender-melon",
+      "count": 2
+    },
+    {
+      "material_id": "calla-lily",
+      "count": 2
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

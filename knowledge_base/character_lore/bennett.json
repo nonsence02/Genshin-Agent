@@ -1,0 +1,70 @@
+{
+  "id": "bennett",
+  "name_en": "Bennett",
+  "element": "Pyro",
+  "weapon": "Sword",
+  "region": "Mondstadt (in-game) Natlan (born)",
+  "rarity": 4,
+  "description": "Bennett is a playable Pyro character in Genshin Impact .\n\nAn orphan discovered by an elderly adventurer in the Mare Jivari as a baby, Bennett was raised far from his native Natlan in Mondstadt 's Adventurers' Guild . He is the one and only member of \" Benny's Adventure Team ,\" as everyone else left the team after experiencing the constant misfortune that follows him.",
+  "role_summary": "Bennett is a playable Pyro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Strike of Fortune",
+      "description": "Normal Attack Performs up to 5 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Passion Overload",
+      "description": "Bennett puts all his fire and passion for adventuring into his sword. Results may vary based on how fired up he is... (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) A single, swift flame strike that deals Pyro DMG . Hold (Short) Charges up, resulting in different effects when unleashed based on the Charge Level."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Fantastic Voyage",
+      "description": "Bennett performs a jumping attack that deals Pyro DMG , creating an Inspiration Field. Inspiration Field If the health of a character within the AoE is equal to or falls below 70%, their health will continuously regenerate. The amount of HP restored scales off Bennett's Max HP. If the health of a character within the AoE is higher than 70%, they gain an ATK Bonus that is based on Bennett's Base ATK. Imbues characters within the AoE with Pyro ."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Rekindle",
+      "description": "Decreases Passion Overload 's CD by 20%."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Fearnaught",
+      "description": "When inside Fantastic Voyage 's circle, Passion Overload 's CD is decreased by 50% and Bennett cannot be launched by this skill's explosion."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "It Should Be Safe...",
+      "description": "When dispatched on an expedition in Mondstadt , time consumed is reduced by 25%."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Grand Expectation",
+      "effect": "Fantastic Voyage 's ATK increase no longer has an HP restriction, and gains an additional 20% of Bennett's Base ATK."
+    },
+    "c2": {
+      "name": "Impasse Conqueror",
+      "effect": "When Bennett's HP falls below 70%, his Energy Recharge is increased by 30%."
+    },
+    "c3": {
+      "name": "Unstoppable Fervor",
+      "effect": "Increases the Level of Passion Overload by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Unexpected Odyssey",
+      "effect": "Description Advanced Properties Preview Using a Normal Attack as the second attack of Passion Overload 's Charge"
+    },
+    "c5": {
+      "name": "True Explorer",
+      "effect": "Increases the Level of Fantastic Voyage by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Fire Ventures With Me",
+      "effect": "Description Gameplay Notes Sword, Claymore, or Polearm-wielding characters inside Fantastic Voyage 's radius gain a 15% Pyro DMG Bonus and their weapons are infused with Pyro . Bennett's Pyro infusion will override Chongyun 's Spirit Blade: Chonghua's Layered Frost , Keqing 's Stellar Restoration from her 1st Passive Talent , and Kamisato Ayaka 's Cryo infusion from Kamisato Art: Senho . (See Overriding Infusions for details) Although the description specifies that the 15% Pyro DMG buff only applies to Sword, Claymore, or Polearm-wielding characters, the buff instead applies to any and all character inside Fantastic Voyage's radius, regardless of their wielded weapon. The infusion, however, only applies to Sword-, Claymore- and Polearm-wielding characters as stated. Despite what the description states, the Pyro Infusion and Pyro DMG bonus are not applied immediately when the character..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Bennett",
+  "ai_tags": "Хиллер"
+}

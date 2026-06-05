@@ -1,48 +1,80 @@
 {
   "id": "chain-breaker",
-  "name": "Chain Breaker",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Chain_Breaker",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "For every party member from Natlan or who has a different Elemental Type from the equipping character, the equipping character gains increased ATK. When there are no less than of the aforementioned characters, the equipping character gains Elemental Mastery.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Night-Wind's Mystic Consideration",
-        "Feathery Fin",
-        "Juvenile Fang",
-        "Night-Wind's Mystic Premonition",
-        "Lunar Fin",
-        "Seasoned Fang",
-        "Night-Wind's Mystic Augury",
-        "Chasmlight Fin",
-        "Tyrant's Fang",
-        "Night-Wind's Mystic Revelation"
-      ]
+  "name_ru": "Разбивающий цепи",
+  "name_en": "Chain Breaker",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Песнь Цветочного Пера",
+  "passive_description_ru": "За каждого члена отряда из Натлана или с элементом, отличным от элемента экипированного персонажа, сила атаки экипированного персонажа повышается на 4,8%. Когда таких персонажей не менее 3, экипированный персонаж получает 24 ед. мастерства стихий.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "night-winds-mystic-consideration",
+        "name_ru": "Загадочные размышления ночного ветра",
+        "name_en": "Night-Wind's Mystic Consideration"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "night-winds-mystic-premonition",
+        "name_ru": "Загадочные предчувствия ночного ветра",
+        "name_en": "Night-Wind's Mystic Premonition"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "night-winds-mystic-augury",
+        "name_ru": "Загадочные предзнаменования ночного ветра",
+        "name_en": "Night-Wind's Mystic Augury"
+      },
+      {
+        "id": "night-winds-mystic-revelation",
+        "name_ru": "Загадочные откровения ночного ветра",
+        "name_en": "Night-Wind's Mystic Revelation"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "feathery-fin",
+        "name_ru": "Перьевой плавник",
+        "name_en": "Feathery Fin"
+      },
+      {
+        "id": "lunar-fin",
+        "name_ru": "Лунный плавник",
+        "name_en": "Lunar Fin"
+      },
+      {
+        "id": "chasmlight-fin",
+        "name_ru": "Глубинный плавник",
+        "name_en": "Chasmlight Fin"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "juvenile-fang",
+        "name_ru": "Молодой клык",
+        "name_en": "Juvenile Fang"
+      },
+      {
+        "id": "seasoned-fang",
+        "name_ru": "Клык взрослого",
+        "name_en": "Seasoned Fang"
+      },
+      {
+        "id": "tyrants-fang",
+        "name_ru": "Клык тирана",
+        "name_en": "Tyrant's Fang"
+      }
+    ]
+  },
+  "coordinates": []
 }

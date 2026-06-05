@@ -1,48 +1,80 @@
 {
   "id": "prospectors-shovel",
-  "name": "Prospector's Shovel",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Prospector%27s_Shovel",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Electro-Charged DMG is increased by, and Lunar-Charged DMG is increased by. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Ember of Long Night Flint",
-        "Mistshroud Manifestation",
-        "Broken Drive Shaft",
-        "Afterglow of Long Night Flint",
-        "Mistshroud Plate",
-        "Reinforced Drive Shaft",
-        "Flare of Long Night Flint",
-        "Mistshroud Helmet",
-        "Precision Drive Shaft",
-        "Blaze of Long Night Flint"
-      ]
+  "name_ru": "Лопата старателя",
+  "name_en": "Prospector's Shovel",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Молниеносная решительность",
+  "passive_description_ru": "Урон реакции Заряжен повышается на 48%, а реакции Лунный заряд - на 12%. Лунное знамение - Высшее сияние: урон реакции Лунный заряд дополнительно повышается на 12%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "ember-of-long-night-flint",
+        "name_ru": "Искра кремня долгой ночи",
+        "name_en": "Ember of Long Night Flint"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "afterglow-of-long-night-flint",
+        "name_ru": "Отблеск кремня долгой ночи",
+        "name_en": "Afterglow of Long Night Flint"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "flare-of-long-night-flint",
+        "name_ru": "Вспышка кремня долгой ночи",
+        "name_en": "Flare of Long Night Flint"
+      },
+      {
+        "id": "blaze-of-long-night-flint",
+        "name_ru": "Пламя кремня долгой ночи",
+        "name_en": "Blaze of Long Night Flint"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mistshroud-manifestation",
+        "name_ru": "Туманное воплощение",
+        "name_en": "Mistshroud Manifestation"
+      },
+      {
+        "id": "mistshroud-plate",
+        "name_ru": "Туманная пластина",
+        "name_en": "Mistshroud Plate"
+      },
+      {
+        "id": "mistshroud-helmet",
+        "name_ru": "Туманный шлем",
+        "name_en": "Mistshroud Helmet"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "broken-drive-shaft",
+        "name_ru": "Сломанный вал",
+        "name_en": "Broken Drive Shaft"
+      },
+      {
+        "id": "reinforced-drive-shaft",
+        "name_ru": "Усиленный вал",
+        "name_en": "Reinforced Drive Shaft"
+      },
+      {
+        "id": "precision-drive-shaft",
+        "name_ru": "Высокоточный вал",
+        "name_en": "Precision Drive Shaft"
+      }
+    ]
+  },
+  "coordinates": []
 }

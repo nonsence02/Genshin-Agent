@@ -1,10 +1,18 @@
 {
   "id": "small-lamp-grass",
+  "name_ru": "Трава-светяшка",
   "name_en": "Small Lamp Grass",
-  "type": "Local Specialty (Mondstadt)",
-  "days": [],
-  "source": [
-    "Found in the wild in Mondstadt , especially Whispering Woods"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Мондштадта",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Вольфендом",
+    "Шепчущий лес",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Small_Lamp_Grass"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

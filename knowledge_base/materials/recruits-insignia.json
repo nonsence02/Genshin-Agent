@@ -1,10 +1,28 @@
 {
   "id": "recruits-insignia",
+  "name_ru": "Шеврон рядового",
   "name_en": "Recruit's Insignia",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Fatui Skirmishers"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Застрельщики Фатуи",
+    "Некоторые агенты Фатуи",
+    "Некоторые маги цицинов Фатуи",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Recruit%27s_Insignia"
+  "dropped_by": [
+    "fatui-cryo-cicin-mage",
+    "fatui-electro-cicin-mage",
+    "fatui-pyro-agent",
+    "fatui-skirmisher-anemoboxer-vanguard",
+    "fatui-skirmisher-cryogunner-legionnaire",
+    "fatui-skirmisher-electrohammer-vanguard",
+    "fatui-skirmisher-geochanter-bracer",
+    "fatui-skirmisher-hydrogunner-legionnaire",
+    "fatui-skirmisher-pyroslinger-bracer"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

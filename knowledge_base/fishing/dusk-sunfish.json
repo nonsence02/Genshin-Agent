@@ -1,0 +1,11 @@
+{
+  "id": "dusk-sunfish",
+  "kind": "fish",
+  "name_ru": "Рыба-солнце заката",
+  "name_en": "Dusk Sunfish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

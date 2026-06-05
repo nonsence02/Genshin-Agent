@@ -1,0 +1,75 @@
+{
+  "id": "venti",
+  "name_en": "Venti",
+  "element": "Anemo",
+  "weapon": "Bow",
+  "region": "Mondstadt",
+  "rarity": 5,
+  "description": "Venti is a playable Anemo character in Genshin Impact .\n\nHe is a free-spirited, wine-loving bard of Mondstadt , belying his identity as Barbatos, the Anemo Archon .",
+  "role_summary": "Venti is an Anemo character with both on-field and off-field DPS capabilities. He becomes a Hexerei character once \"Witch's Homework: On the Waking of Wind\" is completed.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Divine Marksmanship",
+      "description": "Normal Attack Performs up to 6 consecutive shots with a bow. Charged Attack Perform a more precise Aimed Shot with increased DMG. While aiming, favorable winds will accumulate on the arrowhead. A fully charged wind arrow will deal Anemo DMG . Plunging Attack Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Skyward Sonnet",
+      "description": "O wind upon which all hymns and songs fly, bear these earth-walkers up into the sky! (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Summons a Wind Domain at the opponent's location, dealing AoE Anemo DMG and launching opponents into the air. Hold Summons an even larger Wind Domain with Venti as the epicenter, dealing AoE Anemo DMG and launching affected opponents into the air. After unleashing the Hold version of this ability, Venti rides the wind into the air. Opponents hit by Skyward Sonnet will fall to the ground slowly."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Wind's Grand Ode",
+      "description": "Fires off an arrow made of countless coalesced winds, creating a huge Stormeye that sucks in opponents and deals continuous Anemo DMG . Elemental Absorption If the Stormeye comes into contact with Hydro / Pyro / Cryo / Electro , it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Embrace of Winds",
+      "description": "Holding Skyward Sonnet creates an upcurrent that lasts for 20s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Stormeye",
+      "description": "Regenerates 15 Energy for Venti after the effects of Wind's Grand Ode end. If an Elemental Absorption occurred, this also restores 15 Energy to all characters of that corresponding element in the party."
+    },
+    {
+      "type": "Witch's Eve Rite Passive",
+      "name": "Temporal Wind's Eulogy",
+      "description": "After completing Witch's Homework : Of the Waking of Wind , Venti will become a Hexerei character. When the party includes at least 2 Hexerei characters, you will gain the Hexerei: Secret Rite effect, which enhances Hexerei characters. Hexerei: Secret Rite While the Stormeye created by the Elemental Burst Wind's Grand Ode is active, for 4s after a nearby active character triggers a Swirl reaction, that character's DMG is increased by 50%, and Venti's Stormeye deals 135% of its original DMG."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Windrider",
+      "description": "Decreases gliding Stamina consumption for your own party members by 20%. Not stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Splitting Gales",
+      "effect": "Description Hexerei Buff Advanced Properties Preview Fires 2 additional arrows per Aimed Shot, each dealing 33% of the original arrow's DMG. Fires 2 additional arrows per Aimed Shot, each dealing 33% of the original arrow's DMG. Additionally, 2 extra arrows that track opponents will be fired per Windsunder Arrow, each dealing 20% of the original arrow's DMG. This effect can be triggered once every 0.25s. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Extra Arrow (Physical) — Charged Attack 1s/3 Hits 1 Light 200 0 ✘ Extra Arrow (Physical, Hit Weak Spot) — 4 Light 200 0 ✘ Extra Arrow (Anemo) 1U 2 Air 480 600 ✘ Extra Arrow (Anemo, Hit Weak Spot)..."
+    },
+    "c3": {
+      "name": "Ode to Thousand Winds",
+      "effect": "Increases the Level of Wind's Grand Ode by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Hurricane of Freedom",
+      "effect": "Description Hexerei Buff When Venti picks up an Elemental Orb or Particle, he receives a 25% Anemo DMG Bonus for 10s. After unleashing his Elemental Skill Skyward Sonnet or Elemental Burst Wind's Grand Ode , Venti and his own active party members gain a 25% Anemo DMG Bonus for 10s."
+    },
+    "c2": {
+      "name": "Breeze of Reminiscence",
+      "effect": "Description Hexerei Buff Gameplay Notes Skyward Sonnet decreases opponents' Anemo RES and Physical RES by 12% for 10s. Opponents launched by Skyward Sonnet suffer an additional 12% Anemo RES and Physical RES decrease while airborne. Skyward Sonnet decreases opponents' Anemo RES and Physical RES by 24% for 10s. Additionally, after unleashing the Elemental Burst Wind's Grand Ode , Venti gains the Wherever a Breeze Blows effect, and the cooldown for his Elemental Skill Skyward Sonnet is reset. After a Windsunder Arrow hits an opponent, there is also a 25% chance for Venti to gain the Wherever a Breeze Blows effect. Wherever a Breeze Blows When pressing to unleash the Elemental Skill Skyward Sonnet, 300% of the original amount of DMG is dealt. This effect lasts for 15s and is removed after Venti presses to use the Elemental Skill Skyward Sonnet. Wherever a Breeze Blows"
+    },
+    "c5": {
+      "name": "Concerto dal Cielo",
+      "effect": "Increases the Level of Skyward Sonnet by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Storm of Defiance",
+      "effect": "Description Hexerei Buff Gameplay Notes Targets who take DMG from Wind's Grand Ode have their Anemo RES decreased by 20%. If an Elemental Absorption occurred, then their RES towards the corresponding Element is also decreased by 20%. Targets who take DMG from Wind's Grand Ode have their Anemo RES decreased by 20%. If an Elemental Absorption occurred, then their RES towards the corresponding Element is also decreased by 20%. Additionally, the DMG Venti deals to these opponents will gain a CRIT DMG Bonus of 100%. This Constellation is marginally the same as Anemo Traveler 's"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Venti",
+  "ai_tags": "Main DPS, Anemo applier, Enabler"
+}

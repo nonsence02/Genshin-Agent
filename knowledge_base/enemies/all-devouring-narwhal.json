@@ -1,0 +1,23 @@
+{
+  "id": "all-devouring-narwhal",
+  "name_ru": "Всепожирающий нарвал",
+  "name_en": "All-Devouring Narwhal",
+  "type": "BOSS",
+  "type_ru": "Враги, достойные упоминания",
+  "drops": [
+    "lightless-silk-string",
+    "lightless-eye-of-the-maelstrom",
+    "lightless-mass",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver",
+    "dream-solvent",
+    "midlander-sword-billet",
+    "midlander-bow-billet",
+    "midlander-claymore-billet",
+    "midlander-catalyst-billet",
+    "midlander-polearm-billet"
+  ],
+  "coordinates": []
+}

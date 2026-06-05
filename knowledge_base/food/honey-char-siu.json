@@ -1,0 +1,19 @@
+{
+  "id": "honey-char-siu",
+  "name_ru": "Запечённая с мёдом свинина",
+  "name_en": "Honey Char Siu",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 10% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 300 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

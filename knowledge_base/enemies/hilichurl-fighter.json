@@ -1,0 +1,13 @@
+{
+  "id": "hilichurl-fighter",
+  "name_ru": "Хиличурл-боец",
+  "name_en": "Hilichurl Fighter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

@@ -1,14 +1,23 @@
 {
   "id": "mist-veiled-mercury-elixir",
+  "name_ru": "Ртутная пилюля Заоблачного моря",
   "name_en": "Mist Veiled Mercury Elixir",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Hidden Palace of Lianshan Formula (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mist_Veiled_Mercury_Elixir"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-thundering-ruins-ii",
+    "domain-of-forgery-thundering-ruins-iii",
+    "domain-of-forgery-thundering-ruins-iv"
+  ],
+  "source_domain": "domain-of-forgery-thundering-ruins-ii",
+  "coordinates": []
 }

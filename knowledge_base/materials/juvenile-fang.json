@@ -1,10 +1,27 @@
 {
   "id": "juvenile-fang",
+  "name_ru": "Молодой клык",
   "name_en": "Juvenile Fang",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Natlan Saurians"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Заврианы Натлана",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Juvenile_Fang"
+  "dropped_by": [
+    "iktomisaurus",
+    "iktomisaurus-chick",
+    "koholasaur-whelp",
+    "koholasaurus",
+    "qucusaurus",
+    "qucusaurus-chick",
+    "tepetlisaur-whelp",
+    "tepetlisaurus",
+    "yumkasaur-whelp",
+    "yumkasaurus"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

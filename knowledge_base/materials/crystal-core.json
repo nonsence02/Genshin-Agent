@@ -1,0 +1,17 @@
+{
+  "id": "crystal-core",
+  "name_ru": "Кристальное ядро",
+  "name_en": "Crystal Core",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Ловля кристальных бабочек",
+    "Ловля лунных светлячков",
+    "Капкан для кристальной бабочки"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

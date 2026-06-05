@@ -1,0 +1,13 @@
+{
+  "id": "yumkasaurus-warrior-flowing-skyfire",
+  "name_ru": "Юмказавр-воин: Текущий огонь",
+  "name_en": "Yumkasaurus Warrior: Flowing Skyfire",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

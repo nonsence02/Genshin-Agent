@@ -1,93 +1,81 @@
 {
   "id": "freminet",
-  "name": "Freminet",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Freminet",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Cryo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Performs an upward thrust that deals Cryo DMG and causes Freminet to enter Pers Timer for. While Pers Timer is active, his Elemental Skill will turn into Shattering Pressure. Shattering Pressure Executes different sorts of attacks based on the Pressure Level of Pers Timer, and then cancels Pers Timer. Level: Unleashes a vertical cut, dealing Cryo DMG. Levels to: Unleashes a vertical cut alongside Pers, dealing Cryo DMG and Physical DMG. DMG dealt scales based on Pressure Level. Level: Borrows the power of a fully-pressurized Pers to deal Physical DMG. Meanwhile, Normal Attack: Flowing Eddies will be replaced by Shattering Pressure. Pers Timer When Freminet uses Normal Attacks, he will also...",
-    "elemental_burst": "Unleashes a wave of untouchable cold, dealing AoE Cryo DMG, resetting the CD of the Elemental Skill \" Pressurized Floe,\" and causing Freminet to enter the Subnautical Hunter mode for. While in Subnautical Hunter mode, Freminet's resistance to interruption will increase, and his Elemental Skill \"Pressurized Floe\" will obtain the following buffs: CD is decreased by"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Transoceanic Chunk",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Transoceanic Pearl",
-        "Xenochromatic Crystal"
-      ],
-      "special": [
-        "Romaritime Flower",
-        "Artificed Spare Clockwork Component — Coppelius"
-      ]
+  "name_ru": "Фремине",
+  "name_en": "Freminet",
+  "element": "Cryo",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1012.088,
+      "atk": 21.3696,
+      "def": 59.3995
     },
-    "talents": {
-      "books": [
-        "Teachings of Justice",
-        "Guide to Justice",
-        "Philosophies of Justice"
-      ],
-      "mob_drops": [
-        "Transoceanic Pearl",
-        "Xenochromatic Crystal"
-      ],
-      "weekly_boss": [
-        "Worldspan Fern"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12071.1554,
+      "atk": 254.8766,
+      "def": 708.4573
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Меч водоворотов",
+      "description_ru": "Обычная атака:\nДо четырёх ударов.\n\nЗаряженная атака:\nВращающаяся атака по окружающим врагам, на которую непрерывно тратится выносливость.\nПосле вращения проводит дополнительную мощную атаку мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Давление дрейфующего льда",
+      "description_ru": "Фремине атакует восходящим ударом, нанося Крио урон, и на 10 сек. переходит в состояние Таймера Пера.\nВ этом состоянии его элементальный навык превращается в Дробящее давление.\n\nДробящее давление\nВ зависимости от уровня давления Таймера Пера производит различные атаки, после чего состояние завершается:\n· Уровень 0: вертикальным взмахом наносит Крио урон.\n· Уровни 1-3: выполняет вертикальный взмах вместе с Пером, нанося Крио урон и физический урон. Наносимый урон зависит от уровня давления.\n· Уровень 4: заимствуя силу Пера под максимальным давлением, наносит физ. урон. При этом обычная атака Меч водоворотов сменяется на Дробящее давление.\n\nТаймер Пера\nВместе с обычными атаками Фремине выпускает волны мороза, которые наносят Крио урон и повышают уровень давления Таймера Пера.\nНаносимый при этом Крио урон считается уроном элементального навыка.\n\nАрхэ: Пневма\nС некоторым интервалом, после выполнения восходящего удара создаётся Игла дыхания душ и наносит Крио урон пневмы в форме ещё одного удара вверх."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Засада теневого охотника",
+      "description_ru": "Выпускает волну холода, к которому невозможно прикоснуться, нанося Крио урон по площади, сбрасывая откат элементального навыка Давление дрейфующего льда и на 10 сек. переводя Фремине в режим Подводной охоты.\n\nВ режиме Подводной охоты сопротивление прерыванию Фремине повышается, а Давление дрейфующего льда получает следующие усиления:\n· Время отката сокращается на 70%.\n· Обычные атаки дают Таймеру Пера 1 дополнительный уровень давления, а волны мороза обычных атак наносят 200% от их исходного урона.\n\nЭтот эффект перестаёт действовать, когда Фремине покидает поле боя."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Насыщенное глубоководное погружение",
+      "description_ru": "Если при использовании навыка Давление дрейфующего льда: Дробящее давление у Таймера Пера менее 4 уровней давления, откат Давления дрейфующего льда уменьшается на 1 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Параллельные конденсаторы",
+      "description_ru": "Когда Фремине активирует на противнике реакцию Разбит, урон навыка Давление дрейфующего льда: Дробящее давление увеличивается на 40% на 5 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Глубоководная навигация",
+      "description_ru": "Уменьшает потребление водной выносливости своих персонажей на 35%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Сны пены и глубин",
+      "description_ru": "Увеличивает шанс крит. попадания навыка Давление дрейфующего льда: Дробящее давление на 15%."
+    },
+    {
+      "name_ru": "Пингвины и царство изобилия",
+      "description_ru": "Активация навыка Давление дрейфующего льда: Дробящее давление восстанавливает Фремине 2 ед. энергии. Если Дробящее давление использовано на 4 уровне давления, восстанавливается 3 ед. энергии."
+    },
+    {
+      "name_ru": "Песнь водоворотов и песка",
+      "description_ru": "Увеличивает уровень навыка Меч водоворотов на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Танец луны и свирели",
+      "description_ru": "После того как Фремине активирует реакции Заморозка, Разбит или Сверхпроводник на врагах, его сила атаки увеличится на 9% на 6 сек. Эффект складывается до 2 раз и может возникнуть один раз в 0,3 сек."
+    },
+    {
+      "name_ru": "Ночи очага и веселья",
+      "description_ru": "Увеличивает уровень навыка Давление дрейфующего льда на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Мгновения грёз и решительности",
+      "description_ru": "После того как Фремине активирует реакции Заморозка, Разбит или Сверхпроводник на врагах, его крит. урон увеличится на 12% на 6 сек. Эффект складывается до 3 раз и может возникнуть один раз в 0,3 сек."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,48 +1,80 @@
 {
   "id": "mappa-mare",
-  "name": "Mappa Mare",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mappa_Mare",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Triggering an Elemental reaction grants a Elemental DMG Bonus for. Max stacks.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Fragile Bone Shard",
-        "Slime Condensate",
-        "Piece of Aerosiderite",
-        "Sturdy Bone Shard",
-        "Slime Secretions",
-        "Bit of Aerosiderite",
-        "Fossilized Bone Shard",
-        "Slime Concentrate",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Морской атлас",
+  "name_en": "Mappa Mare",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 24
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 110.256
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Заряженный свиток",
+  "passive_description_ru": "В течение 10 сек. после вызова элементальной реакции даёт 8% бонус элементального урона. Может складываться до 2 раз.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fragile-bone-shard",
+        "name_ru": "Хрупкие останки",
+        "name_en": "Fragile Bone Shard"
+      },
+      {
+        "id": "sturdy-bone-shard",
+        "name_ru": "Крепкие останки",
+        "name_en": "Sturdy Bone Shard"
+      },
+      {
+        "id": "fossilized-bone-shard",
+        "name_ru": "Окаменевшие останки",
+        "name_en": "Fossilized Bone Shard"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "slime-condensate",
+        "name_ru": "Слизь слайма",
+        "name_en": "Slime Condensate"
+      },
+      {
+        "id": "slime-secretions",
+        "name_ru": "Выделения слайма",
+        "name_en": "Slime Secretions"
+      },
+      {
+        "id": "slime-concentrate",
+        "name_ru": "Концентрат слайма",
+        "name_en": "Slime Concentrate"
+      }
+    ]
+  },
+  "coordinates": []
 }

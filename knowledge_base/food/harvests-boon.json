@@ -1,0 +1,27 @@
+{
+  "id": "harvests-boon",
+  "name_ru": "«Дар богатого урожая»",
+  "name_en": "Harvest's Boon",
+  "rarity": 4,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Небольшой сюрприз Удела Благодатных Земель.",
+  "recipe": [
+    {
+      "material_id": "grainfruit",
+      "count": 1
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 1
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 1
+    },
+    {
+      "material_id": "milk",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

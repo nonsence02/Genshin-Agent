@@ -1,0 +1,10 @@
+{
+  "id": "noblesse-oblige",
+  "name_ru": "Церемония древней знати",
+  "name_en": "Noblesse Oblige",
+  "max_rarity": 5,
+  "bonus_2pc": "Увеличивает урон взрыва стихии на 20%.",
+  "bonus_4pc": "Активация взрыва стихии увеличивает силу атаки всех членов отряда на 20% в течение 12 сек. Эффект не складывается.",
+  "source_domain": "domain-of-blessing-stone-chamber-i",
+  "coordinates": []
+}

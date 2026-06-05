@@ -1,0 +1,13 @@
+{
+  "id": "angelic-sea-hare",
+  "name_ru": "Милый морской заяц",
+  "name_en": "Angelic Sea Hare",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "xenochromatic-crystal",
+    "transoceanic-chunk",
+    "transoceanic-pearl"
+  ],
+  "coordinates": []
+}

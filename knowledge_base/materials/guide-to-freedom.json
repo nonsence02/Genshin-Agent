@@ -1,14 +1,23 @@
 {
   "id": "guide-to-freedom",
+  "name_ru": "Указания о «Свободе»",
   "name_en": "Guide to Freedom",
-  "type": "Character Talent Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Forsaken Rift (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Freedom"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-frosted-altar-ii",
+    "domain-of-mastery-frosted-altar-iii",
+    "domain-of-mastery-frosted-altar-iv"
+  ],
+  "source_domain": "domain-of-mastery-frosted-altar-ii",
+  "coordinates": []
 }

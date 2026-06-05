@@ -1,0 +1,13 @@
+{
+  "id": "deepwater-assault-mek",
+  "name_ru": "Глубоководный штурмовой мек",
+  "name_en": "Deepwater Assault Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

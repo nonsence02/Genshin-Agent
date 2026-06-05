@@ -1,0 +1,27 @@
+{
+  "id": "lucky-snow-delight",
+  "name_ru": "«Снежная услада»",
+  "name_en": "Lucky Snow Delight",
+  "rarity": 4,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 35% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 930 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "rice",
+      "count": 3
+    },
+    {
+      "material_id": "lotus-head",
+      "count": 3
+    },
+    {
+      "material_id": "qingxin",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

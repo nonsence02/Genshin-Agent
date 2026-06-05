@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-basket-of-discipline-iv",
+  "name_ru": "Мастерство: Корзина дисциплины IV",
+  "name_en": "Domain of Mastery: Basket of Discipline IV",
+  "type": "Повышение талантов",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-praxis",
+    "guide-to-praxis",
+    "teachings-of-praxis"
+  ],
+  "coordinates": []
+}

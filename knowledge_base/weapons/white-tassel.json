@@ -1,48 +1,80 @@
 {
   "id": "white-tassel",
-  "name": "White Tassel",
-  "source_url": "https://genshin-impact.fandom.com/wiki/White_Tassel",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "3★",
-    "base_atk": "39 - 401",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "Sharp Increases Normal Attack DMG by. → Cost Mora ×",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Luminous Sands from Guyun",
-        "Hunter's Sacrificial Knife",
-        "Recruit's Insignia",
-        "Lustrous Stone from Guyun",
-        "Agent's Sacrificial Knife",
-        "Sergeant's Insignia",
-        "Relic from Guyun",
-        "Inspector's Sacrificial Knife",
-        "Lieutenant's Insignia",
-        "Divine Body from Guyun"
-      ]
+  "name_ru": "Белая кисть",
+  "name_en": "White Tassel",
+  "weapon_type": "Polearm",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 38.7413,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.051
+    },
+    "level_90": {
+      "base_atk": 401.2936,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.2343
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Зоркий",
+  "passive_description_ru": "Увеличивает урон обычной атаки на 24%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "luminous-sands-from-guyun",
+        "name_ru": "Светящийся песок Гуюнь",
+        "name_en": "Luminous Sands from Guyun"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "lustrous-stone-from-guyun",
+        "name_ru": "Блестящий камень Гуюнь",
+        "name_en": "Lustrous Stone from Guyun"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "relic-from-guyun",
+        "name_ru": "Реликвия Гуюнь",
+        "name_en": "Relic from Guyun"
+      },
+      {
+        "id": "divine-body-from-guyun",
+        "name_ru": "Останки богов Гуюнь",
+        "name_en": "Divine Body from Guyun"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "hunters-sacrificial-knife",
+        "name_ru": "Церемониальный нож охотника",
+        "name_en": "Hunter's Sacrificial Knife"
+      },
+      {
+        "id": "agents-sacrificial-knife",
+        "name_ru": "Церемониальный нож агента",
+        "name_en": "Agent's Sacrificial Knife"
+      },
+      {
+        "id": "inspectors-sacrificial-knife",
+        "name_ru": "Церемониальный нож инспектора",
+        "name_en": "Inspector's Sacrificial Knife"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "recruits-insignia",
+        "name_ru": "Шеврон рядового",
+        "name_en": "Recruit's Insignia"
+      },
+      {
+        "id": "sergeants-insignia",
+        "name_ru": "Шеврон сержанта",
+        "name_en": "Sergeant's Insignia"
+      },
+      {
+        "id": "lieutenants-insignia",
+        "name_ru": "Шеврон офицера",
+        "name_en": "Lieutenant's Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

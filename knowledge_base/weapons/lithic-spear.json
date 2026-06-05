@@ -1,48 +1,80 @@
 {
   "id": "lithic-spear",
-  "name": "Lithic Spear",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lithic_Spear",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "For every character in the party who hails from Liyue, the character who equips this weapon gains ATK increase and a CRIT Rate increase. This stacks up to times.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Fragile Bone Shard",
-        "Firm Arrowhead",
-        "Piece of Aerosiderite",
-        "Sturdy Bone Shard",
-        "Sharp Arrowhead",
-        "Bit of Aerosiderite",
-        "Fossilized Bone Shard",
-        "Weathered Arrowhead",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Каменное копьё",
+  "name_en": "Lithic Spear",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Наставления камня: Единство",
+  "passive_description_ru": "С каждым членом отряда из Ли Юэ сила атаки экипированного этим оружием персонажа увеличивается на 7%, а его шанс крит. попадания - на 3%. Эффект может складываться до 4 раз.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fragile-bone-shard",
+        "name_ru": "Хрупкие останки",
+        "name_en": "Fragile Bone Shard"
+      },
+      {
+        "id": "sturdy-bone-shard",
+        "name_ru": "Крепкие останки",
+        "name_en": "Sturdy Bone Shard"
+      },
+      {
+        "id": "fossilized-bone-shard",
+        "name_ru": "Окаменевшие останки",
+        "name_en": "Fossilized Bone Shard"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "firm-arrowhead",
+        "name_ru": "Прочный наконечник стрелы",
+        "name_en": "Firm Arrowhead"
+      },
+      {
+        "id": "sharp-arrowhead",
+        "name_ru": "Острый наконечник стрелы",
+        "name_en": "Sharp Arrowhead"
+      },
+      {
+        "id": "weathered-arrowhead",
+        "name_ru": "Старый наконечник стрелы",
+        "name_en": "Weathered Arrowhead"
+      }
+    ]
+  },
+  "coordinates": []
 }

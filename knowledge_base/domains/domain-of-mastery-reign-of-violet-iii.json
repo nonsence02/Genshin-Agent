@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-reign-of-violet-iii",
+  "name_ru": "Мастерство: Цветущее царство III",
+  "name_en": "Domain of Mastery: Reign of Violet III",
+  "type": "Повышение талантов",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-transience",
+    "teachings-of-transience"
+  ],
+  "coordinates": []
+}

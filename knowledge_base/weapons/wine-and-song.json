@@ -1,44 +1,80 @@
 {
   "id": "wine-and-song",
-  "name": "Wine and Song",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Wine_and_Song",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Hitting an opponent with a Normal Attack decreases the Stamina consumption of Sprint or Alternate Sprint by for. Additionally, using a Sprint or Alternate Sprint ability increases ATK by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Treasure Hoarder Insignia",
-        "Dead Ley Line Leaves",
-        "Silver Raven Insignia",
-        "Ley Line Sprout",
-        "Golden Raven Insignia"
-      ]
+  "name_ru": "Вино и песни",
+  "name_en": "Wine and Song",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.0667
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3063
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Тысяча форм",
+  "passive_description_ru": "Попадания обычной атакой уменьшают потребление выносливости спринта и навыков, заменяющих спринт, на 14% в течение 5 сек. Кроме того, использование спринта или навыка, заменяющего спринт, увеличивает силу атаки на 20% в течение 5 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

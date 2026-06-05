@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-spring-iv",
+  "name_ru": "Подземелье благословения: Весна IV",
+  "name_en": "Domain of Blessing: Spring IV",
+  "type": "Артефакты",
+  "region": "Ли Юэ",
+  "days_of_week": [],
+  "rewards": [
+    "archaic-petra",
+    "retracing-bolide",
+    "brave-heart",
+    "lucky-dog"
+  ],
+  "coordinates": []
+}

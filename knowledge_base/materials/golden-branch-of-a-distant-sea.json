@@ -1,14 +1,21 @@
 {
   "id": "golden-branch-of-a-distant-sea",
+  "name_ru": "Золотая ветвь внешних морей",
   "name_en": "Golden Branch of a Distant Sea",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Court of Flowing Sand (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Golden_Branch_of_a_Distant_Sea"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-sunken-sands-iv"
+  ],
+  "source_domain": "domain-of-forgery-sunken-sands-iv",
+  "coordinates": []
 }

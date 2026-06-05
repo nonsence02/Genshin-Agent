@@ -1,0 +1,27 @@
+{
+  "id": "braised-meat",
+  "name_ru": "Мясной гуляш",
+  "name_en": "Braised Meat",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает физ. урон всех членов отряда на 40% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "carrot",
+      "count": 2
+    },
+    {
+      "material_id": "potato",
+      "count": 2
+    },
+    {
+      "material_id": "onion",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

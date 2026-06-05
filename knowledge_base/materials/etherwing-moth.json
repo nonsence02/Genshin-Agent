@@ -1,10 +1,17 @@
 {
   "id": "etherwing-moth",
+  "name_ru": "Эфирокрылый мотылёк",
   "name_en": "Etherwing Moth",
-  "type": "Local Specialty (Mondstadt)",
-  "days": [],
-  "source": [
-    "Found in Mondstadt"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Мондштадта",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Храм пространства и Пик ветров",
+    "Мельничная Пристань и Центр Зала столпов",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Etherwing_Moth"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

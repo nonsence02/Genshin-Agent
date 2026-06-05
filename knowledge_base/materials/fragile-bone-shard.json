@@ -1,10 +1,22 @@
 {
   "id": "fragile-bone-shard",
+  "name_ru": "Хрупкие останки",
   "name_en": "Fragile Bone Shard",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Vishaps"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Детёныши геовишапа",
+    "Геовишапы",
+    "Вишапы глубин",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fragile_Bone_Shard"
+  "dropped_by": [
+    "geovishap",
+    "geovishap-hatchling",
+    "primordial-bathysmal-vishap"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

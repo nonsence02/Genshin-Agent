@@ -1,0 +1,13 @@
+{
+  "id": "cutting-edge-all-purpose-scout-landcruiser",
+  "name_ru": "Сухопутный крейсер: Новейший многоцелевой разведчик",
+  "name_en": "Cutting Edge All-Purpose Scout Landcruiser",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "precision-drive-shaft",
+    "reinforced-drive-shaft",
+    "broken-drive-shaft"
+  ],
+  "coordinates": []
+}

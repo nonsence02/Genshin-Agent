@@ -1,0 +1,13 @@
+{
+  "id": "large-dendro-slime",
+  "name_ru": "Большой Дендро слайм",
+  "name_en": "Large Dendro Slime",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "slime-concentrate",
+    "slime-secretions",
+    "slime-condensate"
+  ],
+  "coordinates": []
+}

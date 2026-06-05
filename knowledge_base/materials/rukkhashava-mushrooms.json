@@ -1,10 +1,17 @@
 {
   "id": "rukkhashava-mushrooms",
+  "name_ru": "Грибы руккхашава",
   "name_en": "Rukkhashava Mushrooms",
-  "type": "Local Specialty (Sumeru)",
-  "days": [],
-  "source": [
-    "Found in the wild in the Ashavan Realm and Lokapala Jungle"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Сумеру",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Земля Ашаван",
+    "Джунгли Локапал",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Rukkhashava_Mushrooms"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

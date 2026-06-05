@@ -1,0 +1,13 @@
+{
+  "id": "kairagi-dancing-thunder",
+  "name_ru": "Кайраги: Громовое вознесение",
+  "name_en": "Kairagi: Dancing Thunder",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "famed-handguard",
+    "kageuchi-handguard",
+    "old-handguard"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "nicole",
+  "name_en": "Nicole",
+  "element": "Pyro",
+  "weapon": "Catalyst",
+  "region": "",
+  "rarity": 5,
+  "description": "Nicole Reeyn is a playable Pyro character in Genshin Impact .\n\nShe is a voiceless angel and a member of the Hexenzirkel , also known by her codename \"N.\"",
+  "role_summary": "Nicole is an off-field Pyro support who provides ATK bonus, Shields, and coordinated attacks. After casting her Elemental Skill , Nicole grants all nearby party members the \"Grace of Kenosis\" effect, increasing their ATK and protecting them with a \"Shield of Blazing Light.\" When certain conditions are met, \"Grace of Kenosis\" will upgrade to \"Guidance of Theosis,\" further increasing the ATK bonus. After casting her Elemental Burst , when the active character's attacks hit enemies, Nicole summons an \"Arcane Projection\" to perform coordinated attacks, dealing AoE DMG of the active character's Elemental Type. This damage is considered to be dealt by that character.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Allegoria",
+      "description": "Normal Attack Proclaims a decree in the primordial tongue and performs up to 3 attacks that deal Pyro DMG . Charged Attack Consumes a certain amount of Stamina to deal AoE Pyro DMG to opponents in front of her after a short casting time. Plunging Attack Nicole plunges towards the ground from mid-air, damaging all opponents in her path. Also deals AoE Pyro DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Revelation: Uncreated Light",
+      "description": "Recreates a fleeting glimpse of an age long past, when the angels acted on the authority of the heavens, bestowing the Grace of Kenosis Grace of Kenosis After unleashing the Elemental Skill Revelation: Uncreated Light, Nicole bestows the following effect on all nearby party members: ATK is increased based on Nicole's ATK. After certain conditions are met, the Grace of Kenosis effect will be upgraded to Guidance of Theosis, further increasing ATK. effect on nearby party members. This increases their ATK and deals AoE Pyro DMG , as well as creates a Shield of Blazing Light. The Shield of Blazing Light's DMG Absorption is based on Nicole's ATK, and it will absorb Pyro DMG at 250% effectiveness."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Revelation: Ladder of Divine Ascent",
+      "description": "As Nicole weaves the path of anchored fate with golden threads of light, she deals AoE Pyro DMG and switches to Silent Contemplation mode. In this mode, when nearby active party members hit an opponent, an Arcane Projection is summoned to perform a Coordinated Attack against the opponent, dealing AoE Elemental DMG of the character's corresponding Elemental Type. This DMG scales based on the corresponding character's ATK and will be considered as having been dealt by them. This effect can occur once every 3s, and can be triggered up to 4 times each time Nicole switches to Silent Contemplation mode. It is worth noting that Hexerei characters' Arcane Projections appear to differ somehow in appearance from the others..."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Methexis",
+      "description": "For 20s after unleashing the Elemental Skill Revelation: Uncreated Light , Nicole will continuously \"observe\" the other current active party members. After the observed character has remained on the field for 3s, their Grace of Kenosis Grace of Kenosis After unleashing the Elemental Skill Revelation: Uncreated Light, Nicole bestows the following effect on all nearby party members: ATK is increased based on Nicole's ATK. After certain conditions are met, the Grace of Kenosis effect will be upgraded to Guidance of Theosis, further increasing ATK. is upgraded to Guidance of Theosis Guidance of Theosis Upgrading the Grace of Kenosis effect increases ATK by an additional 300. After unlocking the Ascension Talent \"Methexis\" and meeting any of the following observation conditions, Grace of Kenosis will be upgraded to Guidance of Theosis for the remainder of its duration: Another character under observation remains on the field for longer than 3s; or Another character under observation is a Hexerei character. Additionally, after unlocking the Ascension Talent \"Philokalia,\" when a nearby active party member's Elemental DMG hits an opponent, Nicole's own Grace of Kenosis will be upgraded..."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Philokalia",
+      "description": "When Elemental DMG from nearby active party members hits an opponent, Nicole's own Grace of Kenosis Grace of Kenosis After unleashing the Elemental Skill Revelation: Uncreated Light, Nicole bestows the following effect on all nearby party members: ATK is increased based on Nicole's ATK. After certain conditions are met, the Grace of Kenosis effect will be upgraded to Guidance of Theosis, further increasing ATK. effect is upgraded to Guidance of Theosis Guidance of Theosis Upgrading the Grace of Kenosis effect increases ATK by an additional 300. After unlocking the Ascension Talent \"Methexis\" and meeting any of the following observation conditions, Grace of Kenosis will be upgraded to Guidance of Theosis for the remainder of its duration: Another character under observation remains on the field for longer than 3s; or Another character under observation is a Hexerei character. Additionally, after unlocking the Ascension Talent \"Philokalia,\" when a nearby active party member's Elemental DMG hits an opponent, Nicole's own Grace of Kenosis will be upgraded to Guidance of Theosis for 8s. When characters other than Nicole who have Guidance of Theosis leave the field, their effect will..."
+    },
+    {
+      "type": "Witch's Eve Rite Passive",
+      "name": "Light in the Darkness",
+      "description": "After completing Witch's Homework : The Role of a Guide...? , Nicole becomes a Hexerei character. When the party includes at least 2 Hexerei characters, you gain the Hexerei: Secret Rite effect, which enhances Hexerei characters. Hexerei: Secret Rite Increases the DMG dealt by Hexerei characters' Arcane Projections by 300% of Nicole's ATK ."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Nepsis",
+      "description": "When you are in Teyvat and not in combat, Nicole's Charged Attack becomes \"Emissarial Guidance\" if you have already obtained the current region 's Treasure Compass . Emissarial Guidance: Calls upon nearby Seelie to show the way, triggering an effect similar to the region's Treasure Compass. This effect has a cooldown time of 5 seconds and does not work in Domains , Trounce Domains , and the Spiral Abyss ."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "\"Do Not Be Afraid, Child Who Is Loved\"",
+      "effect": "When the current active character of your own in the party hits an opponent, an additional special \"Arcane Projection: Unity\" will be summoned to perform a Coordinated Attack against the opponent, dealing AoE Elemental DMG of the character's corresponding Elemental Type at 600% of their ATK . This DMG will be considered as having been dealt by the corresponding character. This effect can trigger once every 6s."
+    },
+    "c2": {
+      "name": "\"I Will Guide You and Show You the Path You Should Tread\"",
+      "effect": "Enhances the effects of the Elemental Skill Revelation: Uncreated Light : Grace of Kenosis Grace of Kenosis After unleashing the Elemental Skill Revelation: Uncreated Light, Nicole bestows the following effect on all nearby party members: ATK is increased based on Nicole's ATK. After certain conditions are met, the Grace of Kenosis effect will be upgraded to Guidance of Theosis, further increasing ATK. increases ATK by an additional 300 (which does not count toward this effect's ATK Bonus limit), while Guidance of Theosis Guidance of Theosis Upgrading the Grace of Kenosis effect increases ATK by an additional 300. After unlocking the Ascension Talent \"Methexis\" and meeting any of the following observation conditions, Grace of Kenosis will be upgraded to Guidance of Theosis for the remainder of its duration: Another character under observation remains on the field for longer than 3s; o..."
+    },
+    "c3": {
+      "name": "\"A Lamp by Your Side, A Light to Shine the Way\"",
+      "effect": "Increases the Level of Revelation: Uncreated Light by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "\"Whether Left or Right, No Matter Which Way You Turn\"",
+      "effect": "When nearby party members have their Grace of Kenosis Grace of Kenosis After unleashing the Elemental Skill Revelation: Uncreated Light, Nicole bestows the following effect on all nearby party members: ATK is increased based on Nicole's ATK. After certain conditions are met, the Grace of Kenosis effect will be upgraded to Guidance of Theosis, further increasing ATK. upgraded to Guidance of Theosis Guidance of Theosis Upgrading the Grace of Kenosis effect increases ATK by an additional 300. After unlocking the Ascension Talent \"Methexis\" and meeting any of the following observation conditions, Grace of Kenosis will be upgraded to Guidance of Theosis for the remainder of its duration: Another character under observation remains on the field for longer than 3s; or Another character under observation is a Hexerei character. Additionally, after unlocking the Ascension Talent \"Philokalia,\"..."
+    },
+    "c5": {
+      "name": "\"You Will Hear My Voice Beside You\"",
+      "effect": "Increases the Level of Revelation: Ladder of Divine Ascent by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "\"This Is the Path, Walk It Without Delay\"",
+      "effect": "When Nicole's Grace of Kenosis Grace of Kenosis After unleashing the Elemental Skill Revelation: Uncreated Light, Nicole bestows the following effect on all nearby party members: ATK is increased based on Nicole's ATK. After certain conditions are met, the Grace of Kenosis effect will be upgraded to Guidance of Theosis, further increasing ATK. is upgraded to Guidance of Theosis Guidance of Theosis Upgrading the Grace of Kenosis effect increases ATK by an additional 300. After unlocking the Ascension Talent \"Methexis\" and meeting any of the following observation conditions, Grace of Kenosis will be upgraded to Guidance of Theosis for the remainder of its duration: Another character under observation remains on the field for longer than 3s; or Another character under observation is a Hexerei character. Additionally, after unlocking the Ascension Talent \"Philokalia,\" when a nearby active..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Nicole",
+  "ai_tags": "Баффер, Хиллер, Щитовик"
+}

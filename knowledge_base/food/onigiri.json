@@ -1,0 +1,23 @@
+{
+  "id": "onigiri",
+  "name_ru": "Онигири",
+  "name_en": "Onigiri",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 22% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 470 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 2
+    },
+    {
+      "material_id": "seagrass",
+      "count": 2
+    },
+    {
+      "material_id": "rice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

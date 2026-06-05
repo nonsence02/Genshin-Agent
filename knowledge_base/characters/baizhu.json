@@ -1,94 +1,81 @@
 {
   "id": "baizhu",
-  "name": "Baizhu",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Baizhu",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Dendro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Controls a Gossamer Sprite that cruises and attacks nearby opponents, dealing Dendro DMG. After it performs attacks or if there are no opponents nearby, the Sprite will return, healing all nearby party members based on Baizhu's Max HP. When this skill hits at least one enemy, it generates Elemental Particles. This skill's and attacks can hit enemies without aggravating them. Constellation Effects Constellation Level, Attentive Observation: \" Universal Diagnosis gains additional charge.\" Constellation Level, Incisive Discernment: \"When your own active character hits a nearby opponent with their attacks, Baizhu will unleash a Gossamer Sprite: Splice. Gossamer Sprite: Splice will initiate...",
-    "elemental_burst": "Enters the Pulsing Clarity state, creating a Seamless Shield that absorbs Dendro DMG with"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Nagadus Emerald Sliver",
-        "Nagadus Emerald Fragment",
-        "Nagadus Emerald Chunk",
-        "Nagadus Emerald Gemstone"
-      ],
-      "mob_drops": [
-        "Fungal Spores",
-        "Luminescent Pollen",
-        "Crystalline Cyst Dust"
-      ],
-      "special": [
-        "Violetgrass",
-        "Evergloom Ring"
-      ]
+  "name_ru": "Бай Чжу",
+  "name_en": "Baizhu",
+  "element": "Dendro",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1039.1188,
+      "atk": 14.9891,
+      "def": 38.8895
     },
-    "talents": {
-      "books": [
-        "Teachings of Gold",
-        "Guide to Gold",
-        "Philosophies of Gold"
-      ],
-      "mob_drops": [
-        "Fungal Spores",
-        "Luminescent Pollen",
-        "Crystalline Cyst Dust"
-      ],
-      "weekly_boss": [
-        "Worldspan Fern"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 13348.0428,
+      "atk": 192.5386,
+      "def": 499.5603
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Классика иглоукалывания",
+      "description_ru": "Обычная атака:\nДо четырёх ударов перед собой, наносящих Дендро урон.\n\nЗаряженная атака:\nКороткое заклинание, наносящее Дендро урон по площади впереди, на которое тратится определённое количество выносливости.\n\nАтака в падении:\nНакопив силу Дендро, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Дендро урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Универсальная диагностика",
+      "description_ru": "Управляет Летучим духом, который летает и атакует противников поблизости, нанося Дендро урон.\nЕсли дух выполнит 3 атаки или рядом не будет противников, он возвращается и восстанавливает HP всех персонажей поблизости пропорционально макс. HP Бай Чжу."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Целостное восстановление",
+      "description_ru": "Входит в состояние Пульсирующей ясности и создаёт Бесшовный щит, который поглощает Дендро урон с 250% эффективностью.\nВ этом состоянии Бай Чжу создаёт новый Бесшовный щит каждые 2,5 сек.\n\nБесшовный щит восстанавливает HP вашего активного персонажа пропорционально макс. HP Бай Чжу и атакует противников, высвобождая Призрачные артерии, которые наносят Дендро урон, в следующих ситуациях:\n· Когда персонаж находится под защитой Бесшовного щита и создаётся новый Бесшовный щит.\n· Когда время действия Бесшовного щита завершается или его разбивают."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Вечный круговорот стихий",
+      "description_ru": "Бай Чжу получает различные эффекты в зависимости от текущего HP вашего активного персонажа:\n· Если его HP ниже 50%, Бай Чжу получает 20% бонус лечения.\n· Если его HP равно или выше 50%, Бай Чжу получает 25% бонус Дендро урона."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Всё рождено землёй",
+      "description_ru": "Персонажи, получившие лечение Бесшовного щита, наделяются эффектом Год зелёного благодеяния: каждые 1000 ед. макс. HP Бай Чжу (до 50 000 ед. макс.) увеличивают на 6 сек. урон вызываемых этими персонажами реакций Горение, Бутонизация, Вегетация и Цветение на 2%, реакций Обострение и Разрастание - на 0,8%, а реакции Лунная бутонизация - на 0,7%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Польза трав",
+      "description_ru": "Когда Бай Чжу находится в отряде, взаимодействие с некоторыми подбираемыми предметами восстанавливает HP своего активного персонажа пропорционально 2,5% макс. HP Бай Чжу."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Пристальное наблюдение",
+      "description_ru": "Увеличивает количество зарядов навыка Универсальная диагностика на 1."
+    },
+    {
+      "name_ru": "Острая проницательность",
+      "description_ru": "Когда атаки вашего активного персонажа попадают по противнику поблизости, Бай Чжу вызывает Летучего духа: Разрез.\nЛетучий дух: Разрез выполняет 1 атаку и возвращается. Он наносит Дендро урон, равный 250% от силы атаки Бай Чжу, и восстанавливает HP размером 20% от лечения Летучего духа Универсальной диагностики.\nЭтот урон считается уроном элементального навыка.\nЭффект активируется не чаще одного раза в 5 сек."
+    },
+    {
+      "name_ru": "Стабилизация восьми аспектов",
+      "description_ru": "Увеличивает уровень навыка Целостное восстановление на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Древнее искусство восприятия",
+      "description_ru": "На 15 сек. после применения Целостного восстановления мастерство стихий всех членов отряда поблизости увеличивается на 80 ед."
+    },
+    {
+      "name_ru": "Сокрытые токи",
+      "description_ru": "Увеличивает уровень навыка Универсальная диагностика на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Устранение зловредной энергии",
+      "description_ru": "Повышает урон Призрачных артерий навыка Целостное восстановление на 8% от макс. HP Бай Чжу.\nКроме того, попадание Летучего духа или Летучего духа: Разрез по противнику с вероятностью 100% создаёт Бесшовный щит навыка Целостность выздоровления. Этот эффект может быть вызван каждым Летучим духом или Летучим духом: Разрез только один раз."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,10 +1,17 @@
 {
   "id": "cloudseam-scale",
+  "name_ru": "Облачные доспехи",
   "name_en": "Cloudseam Scale",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Solitary Suanni"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Суаньни-отшельники Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Cloudseam_Scale"
+  "dropped_by": [
+    "solitary-suanni"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

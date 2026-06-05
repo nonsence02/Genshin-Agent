@@ -1,48 +1,80 @@
 {
   "id": "snare-hook",
-  "name": "Snare Hook",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Snare_Hook",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Upon causing an Elemental Reaction, increases Elemental Mastery by for. Moonsign: Ascendant Gleam: Elemental Mastery from this is further increased by. This can be triggered even if the equipping character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Ember of Long Night Flint",
-        "Mistshroud Manifestation",
-        "Firm Arrowhead",
-        "Afterglow of Long Night Flint",
-        "Mistshroud Plate",
-        "Sharp Arrowhead",
-        "Flare of Long Night Flint",
-        "Mistshroud Helmet",
-        "Weathered Arrowhead",
-        "Blaze of Long Night Flint"
-      ]
+  "name_ru": "Крюк силка",
+  "name_en": "Snare Hook",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1333
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.6125
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Стремительная тень",
+  "passive_description_ru": "На 12 сек. после активации элементальной реакции мастерство стихий повышается на 60 ед. Лунное знамение - Высшее сияние: мастерство стихий от данного эффекта дополнительно повышается на 60 ед. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "ember-of-long-night-flint",
+        "name_ru": "Искра кремня долгой ночи",
+        "name_en": "Ember of Long Night Flint"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "afterglow-of-long-night-flint",
+        "name_ru": "Отблеск кремня долгой ночи",
+        "name_en": "Afterglow of Long Night Flint"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "flare-of-long-night-flint",
+        "name_ru": "Вспышка кремня долгой ночи",
+        "name_en": "Flare of Long Night Flint"
+      },
+      {
+        "id": "blaze-of-long-night-flint",
+        "name_ru": "Пламя кремня долгой ночи",
+        "name_en": "Blaze of Long Night Flint"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mistshroud-manifestation",
+        "name_ru": "Туманное воплощение",
+        "name_en": "Mistshroud Manifestation"
+      },
+      {
+        "id": "mistshroud-plate",
+        "name_ru": "Туманная пластина",
+        "name_en": "Mistshroud Plate"
+      },
+      {
+        "id": "mistshroud-helmet",
+        "name_ru": "Туманный шлем",
+        "name_en": "Mistshroud Helmet"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "firm-arrowhead",
+        "name_ru": "Прочный наконечник стрелы",
+        "name_en": "Firm Arrowhead"
+      },
+      {
+        "id": "sharp-arrowhead",
+        "name_ru": "Острый наконечник стрелы",
+        "name_en": "Sharp Arrowhead"
+      },
+      {
+        "id": "weathered-arrowhead",
+        "name_ru": "Старый наконечник стрелы",
+        "name_en": "Weathered Arrowhead"
+      }
+    ]
+  },
+  "coordinates": []
 }

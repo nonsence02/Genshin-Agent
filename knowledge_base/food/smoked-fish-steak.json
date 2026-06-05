@@ -1,0 +1,19 @@
+{
+  "id": "smoked-fish-steak",
+  "name_ru": "Рыбный стейк горячего копчения",
+  "name_en": "Smoked Fish Steak",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 1
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

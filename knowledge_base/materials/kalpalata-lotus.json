@@ -1,10 +1,16 @@
 {
   "id": "kalpalata-lotus",
+  "name_ru": "Лотос кальпалата",
   "name_en": "Kalpalata Lotus",
-  "type": "Local Specialty (Sumeru)",
-  "days": [],
-  "source": [
-    "Found in the mountains of Sumeru"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Сумеру",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Горы Сумеру",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kalpalata_Lotus"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

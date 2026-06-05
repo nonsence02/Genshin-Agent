@@ -1,0 +1,70 @@
+{
+  "id": "xingqiu",
+  "name_en": "Xingqiu",
+  "element": "Hydro",
+  "weapon": "Sword",
+  "region": "Liyue",
+  "rarity": 4,
+  "description": "Xingqiu ( Chinese : 行秋 Xíngqiū ) is a playable Hydro character in Genshin Impact .\n\nHe is the second son of the Guild Manager of the Feiyun Commerce Guild , an influential group in Liyue , and is also a self-proclaimed practitioner of the Guhua Clan 's arts. Also an avid reader, Xingqiu aims to be the embodiment of chivalry like the heroes from the books he reads; however, this belies his knack for mischief.",
+  "role_summary": "Xingqiu ( Chinese : 行秋 Xíngqiū ) is a playable Hydro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Guhua Style",
+      "description": "Normal Attack Performs up to 5 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Guhua Sword: Fatal Rainscreen",
+      "description": "Xingqiu performs twin strikes with his sword, dealing Hydro DMG . At the same time, this ability creates the maximum number of Rain Swords, which will orbit your active character. The Rain Swords have the following properties: When a character takes DMG, the Rain Sword will shatter, reducing the amount of DMG taken . Increases the character's resistance to interruption . 20% of Xingqiu's Hydro DMG Bonus will be converted to additional DMG Reduction for the Rain Swords. The maximum amount of additional DMG Reduction that can be gained this way is 24%. The initial maximum number of Rain Swords is 3. Using this ability applies the Wet status onto the character."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Guhua Sword: Raincutter",
+      "description": "Initiate Rainbow Bladework and fight using an illusory sword rain, while creating the maximum number of Rain Swords . Rainbow Bladework Your active character's Normal Attacks will trigger consecutive sword rain attacks, dealing Hydro DMG . Rain Swords will remain at the maximum number throughout the ability's duration."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Hydropathic",
+      "description": "When a Rain Sword is shattered or when its duration expires, it regenerates the current character's HP based on 6% of Xingqiu's Max HP."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Blades Amidst Raindrops",
+      "description": "Xingqiu gains a 20% Hydro DMG Bonus ."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Flash of Genius",
+      "description": "When Xingqiu crafts Character Talent Materials , he has a 25% chance to refund a portion of the crafting materials used."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "The Scent Remained",
+      "effect": "Description Preview Increases the maximum number of Rain Swords by 1. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Constellation The Scent Remained.mp4"
+    },
+    "c2": {
+      "name": "Rainbow Upon the Azure Sky",
+      "effect": "Extends the duration of Guhua Sword: Raincutter by 3s. Decreases the Hydro RES of opponents hit by sword rain attacks by 15% for 4s."
+    },
+    "c3": {
+      "name": "Weaver of Verses",
+      "effect": "Increases the Level of Guhua Sword: Raincutter by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Evilsoother",
+      "effect": "Description Gameplay Notes Throughout the duration of Guhua Sword: Raincutter , the DMG dealt by Guhua Sword: Fatal Rainscreen is increased by 50%. The DMG increase of this constellation is not a DMG Bonus . Instead, it provides a Base DMG Multiplier of 1.5 which is directly multiplicative with the Elemental Skill's Base DMG."
+    },
+    "c5": {
+      "name": "Embrace of Rain",
+      "effect": "Increases the Level of Guhua Sword: Fatal Rainscreen by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Hence, Call Them My Own Verses",
+      "effect": "Description Gameplay Notes Preview Activating 2 of Guhua Sword: Raincutter 's sword rain attacks greatly enhances the third sword rain attack. On hit, the third sword rain attack also regenerates 3 Energy for Xingqiu. Before unlocking this constellation, during the duration of Guhua Sword: Raincutter , the number of swords per attack consistently alternates between 2 swords and 3 swords. After unlocking this constellation, the order is 2 Swords → 3 Swords → 5 Swords. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Hence, Call Them My Own Verses Preview.mp4"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xingqiu",
+  "ai_tags": "Hydro аппликатор, Дамагер"
+}

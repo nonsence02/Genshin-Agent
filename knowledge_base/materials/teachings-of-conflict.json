@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-conflict",
+  "name_ru": "Учения о «Раздоре»",
   "name_en": "Teachings of Conflict",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Blazing Ruins (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Conflict"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-return-i",
+    "domain-of-mastery-return-ii",
+    "domain-of-mastery-return-iii",
+    "domain-of-mastery-return-iv"
+  ],
+  "source_domain": "domain-of-mastery-return-i",
+  "coordinates": []
 }

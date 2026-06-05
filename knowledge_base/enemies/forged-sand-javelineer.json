@@ -1,0 +1,13 @@
+{
+  "id": "forged-sand-javelineer",
+  "name_ru": "Кованый песок: Копьеносец",
+  "name_en": "Forged Sand Javelineer",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

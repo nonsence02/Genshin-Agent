@@ -1,0 +1,70 @@
+{
+  "id": "gorou",
+  "name_en": "Gorou",
+  "element": "Geo",
+  "weapon": "Bow",
+  "region": "Inazuma",
+  "rarity": 4,
+  "description": "Gorou ( Japanese : ゴロー Goroo ) is a playable Geo character in Genshin Impact .\n\nHe is a general of the Watatsumi Army . Courageous and reliable, his men know they can place their trust in him both on and off of the battlefield.",
+  "role_summary": "Gorou ( Japanese : ゴロー Goroo ) is a playable Geo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Ripping Fang Fletching",
+      "description": "Normal Attack Performs up to 4 consecutive shots with a bow. Charged Attack Perform a more precise Aimed Shot with increased DMG. While aiming, stone crystals will accumulate on the arrowhead. A fully charged crystalline arrow will deal Geo DMG . Plunging Attack Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Inuzaka All-Round Defense",
+      "description": "Deals AoE Geo DMG and sets up a General's War Banner. General's War Banner Provides up to 3 buffs to active characters within the skill's AoE based on the number of Geo characters in the party at the time of casting: 1 Geo character: Adds \"Standing Firm\" - DEF Bonus. 2 Geo characters: Adds \"Impregnable\" - Increased resistance to interruption. 3 Geo characters: Adds \"Crunch\" - Geo DMG Bonus . Gorou can deploy only 1 General's War Banner on the field at any one time. Characters can only benefit from 1 General's War Banner at a time. When a party member leaves the field, the active buff will last for 2s. Hold Adjust the location of the skill."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Juuga: Forward Unto Victory",
+      "description": "Displaying his valor as a general, Gorou deals Aoe Geo DMG and creates a field known as General's Glory to embolden his comrades. General's Glory This field has the following properties: Like the General's War Banner created by Inuzaka All-Round Defense , provides buffs to active characters within the skill's AoE based on the number of Geo characters in the party. Also moves together with your active character. Generates 1 Crystal Collapse every 1.5s that deals AoE Geo DMG to 1 opponent within the skill's AoE. Pulls 1 elemental shard in the skill's AoE to your active character's position every 1.5s (elemental shards are created by Crystallize reactions). If a General's War Banner created by Gorou currently exists on the field when his ability is used, it will be destroyed. In addition, for the duration of General's Glory, Gorou's Elemental Skill \"Inuzaka All-Round Defense\" will not create the General's War Banner. If Gorou falls, the effects of General's Glory will be cleared."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Heedless of the Wind and Weather",
+      "description": "After using Juuga: Forward Unto Victory , all nearby party members' DEF is increased by 25% for 12s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "A Favor Repaid",
+      "description": "Gorou receives the following DMG Bonuses to his attacks based on his DEF: Inuzaka All-Round Defense : Skill DMG increased by 156% of DEF Juuga: Forward Unto Victory : Skill DMG and Crystal Collapse DMG increased by 15.6% of DEF"
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Seeker of Shinies",
+      "description": "Displays the location of nearby resources unique to Inazuma on the mini-map ."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Rushing Hound: Swift as the Wind",
+      "effect": "When characters (other than Gorou) within the AoE of Gorou's General's War Banner or General's Glory deal Geo DMG to opponents, the CD of Gorou's Inuzaka All-Round Defense is decreased by 2s. This effect can occur once every 10s."
+    },
+    "c2": {
+      "name": "Sitting Hound: Steady as a Clock",
+      "effect": "While General's Glory is in effect, its duration is extended by 1s when a nearby active character obtains an Elemental Shard from a Crystallize reaction, or triggers a Lunar-Crystallize reaction. This effect can occur once every 0.1s. Max extension is 3s."
+    },
+    "c3": {
+      "name": "Mauling Hound: Fierce as Fire",
+      "effect": "Increases the Level of Inuzaka All-Round Defense by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Lapping Hound: Warm as Water",
+      "effect": "When General's Glory is in the \"Impregnable\" or \"Crunch\" states, it will also heal active characters within its AoE by 50% of Gorou's own DEF every 1.5s."
+    },
+    "c5": {
+      "name": "Striking Hound: Thunderous Force",
+      "effect": "Increases the Level of Juuga: Forward Unto Victory by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Valiant Hound: Mountainous Fealty",
+      "effect": "Description Gameplay Notes For 12s after using Inuzaka All-Round Defense or Juuga: Forward Unto Victory , increases the CRIT DMG of all nearby party members' Geo DMG based on the buff level of the skill's field at the time of use: \"Standing Firm\": +10% \"Impregnable\": +20% \"Crunch\": +40% This effect cannot stack and will take reference from the last instance of the effect that is triggered. The CRIT DMG buff is a direct buff . Therefore, it cannot be snapshotted but will also apply to abilities that have already snapshotted."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Gorou",
+  "ai_tags": "Баффер, Enabler"
+}

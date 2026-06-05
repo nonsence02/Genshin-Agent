@@ -1,0 +1,13 @@
+{
+  "id": "ruin-grader",
+  "name_ru": "Руинный молотильщик",
+  "name_en": "Ruin Grader",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "chaos-core",
+    "chaos-circuit",
+    "chaos-device"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "diving-rapidfighting-fish",
+  "kind": "fish",
+  "name_ru": "Ныряющая рыба-боец стремнин",
+  "name_en": "Diving Rapidfighting Fish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

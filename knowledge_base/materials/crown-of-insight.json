@@ -1,10 +1,15 @@
 {
   "id": "crown-of-insight",
+  "name_ru": "Корона прозрения",
   "name_en": "Crown of Insight",
-  "type": "Character Talent Materials",
-  "days": [],
-  "source": [
-    "Events"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Награда временного события"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Crown_of_Insight"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

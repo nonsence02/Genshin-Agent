@@ -1,0 +1,16 @@
+{
+  "id": "fatui-cryo-cicin-mage",
+  "name_ru": "Фатуи: Маг Крио цицинов",
+  "name_en": "Fatui Cryo Cicin Mage",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "mist-grass-wick",
+    "mist-grass",
+    "mist-grass-pollen",
+    "lieutenants-insignia",
+    "sergeants-insignia",
+    "recruits-insignia"
+  ],
+  "coordinates": []
+}

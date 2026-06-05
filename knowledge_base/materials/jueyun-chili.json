@@ -1,10 +1,17 @@
 {
   "id": "jueyun-chili",
+  "name_ru": "Заоблачный перчик",
   "name_en": "Jueyun Chili",
-  "type": "Local Specialty (Liyue)",
-  "days": [],
-  "source": [
-    "Found in the wild in Minlin , Qingce Village and Stone Gate"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Ли Юэ",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Деревня Цинцэ",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Jueyun_Chili"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

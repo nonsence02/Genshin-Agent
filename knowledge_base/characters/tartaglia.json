@@ -1,94 +1,81 @@
 {
   "id": "tartaglia",
-  "name": "Tartaglia",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Tartaglia",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Hydro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Unleashes a set of weaponry made of pure water, dealing Hydro DMG to surrounding opponents and entering Melee Stance. In this Stance, Tartaglia's Normal and Charged Attacks are converted to Hydro DMG that cannot be overridden by any other elemental infusion and change as follows: Normal Attack Performs up to consecutive Hydro strikes. Charged Attack Consumes a certain amount of Stamina to unleash a cross slash, dealing Hydro DMG. Riptide Slash Hitting an opponent affected by Riptide with a melee attack unleashes a Riptide Slash that deals AoE Hydro DMG. DMG dealt in this way is considered Elemental Skill DMG, and can only occur once. After, or when the ability is unleashed again, this skill...",
-    "elemental_burst": "Performs different attacks based on what stance Tartaglia is in when casting. Ranged Stance: Flash of Havoc Swiftly fires a Hydro-imbued magic arrow, dealing AoE Hydro DMG and applying the Riptide status. Returns a portion of its Energy Cost after use. Melee Stance: Light of Obliteration Performs a slash with a large AoE, dealing massive Hydro DMG to all surrounding opponents, which triggers Riptide Blast. Riptide Blast When the obliterating waters hit an opponent affected by Riptide, it clears their Riptide status and triggers a Hydro Explosion that deals AoE Hydro DMG. DMG dealt in this way is considered Elemental Burst DMG. The Melee Stance version of this Elemental Burst drains energy..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Varunada Lazurite Sliver",
-        "Varunada Lazurite Fragment",
-        "Varunada Lazurite Chunk",
-        "Varunada Lazurite Gemstone"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "special": [
-        "Starconch",
-        "Cleansing Heart"
-      ]
+  "name_ru": "Тарталья",
+  "name_en": "Tartaglia",
+  "element": "Hydro",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1020.0524,
+      "atk": 23.4612,
+      "def": 63.4198
     },
-    "talents": {
-      "books": [
-        "Teachings of Freedom",
-        "Guide to Freedom",
-        "Philosophies of Freedom"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "weekly_boss": [
-        "Shard of a Foul Legacy"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 13103.1246,
+      "atk": 301.3648,
+      "def": 814.6676
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Дождь расставаний",
+      "description_ru": "Обычная атака:\nДо шести выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается энергией воды. Полностью заряженная водой стрела наносит Гидро урон и накладывает на противника статус Отлив.\n\nОтлив:\nНекоторые атаки Тартальи по противникам со статусом Отлив наносят Гидро урон по площади. Этот урон считается нанесённым обычной атакой.\n·Отлив-вспышка: Полностью заряженный прицельный выстрел по противнику со статусом Отлив наносит последовательный Гидро урон по площади. Возникает раз в 0,7 сек.\n·Отлив-всплеск: Победа над противником со статусом Отлив вызывает Гидро всплеск, который накладывает на окружающих противника врагов статус Отлив.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади.\nТарталья не может провести атаку в падении, находясь в ближней стойке Формы духа: Бушующие волны."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Форма духа: Бушующие волны",
+      "description_ru": "Тарталья обнажает клинки из чистой воды, которые наносят Гидро урон окружающим врагам и активируют ближнюю стойку.\nВ этой стойке обычные и заряженные атаки Тартальи наносят Гидро урон, который не может быть отменён какой-либо элементальной инфузией, и изменяются следующим образом:\n\nОбычная атака:\nДо шести ударов Гидро клинками.\n\nЗаряженная атака:\nПерекрёстный удар, который наносит Гидро урон и затрачивает определённое количество выносливости.\n\nОтлив-удар:\nАтаки в ближней стойке по противникам со статусом Отлив вызывают Отлив-удар, который наносит Гидро урон по площади. Этот урон считается уроном элементального навыка. Отлив-удар срабатывает не чаще чем один раз в 1,5 сек.\n\nТарталья возвращается в дальнюю стойку по истечении 30 сек. или при повторной активации навыка, а сам навык уходит в откат. Чем дольше Тарталья был в ближней стойке, тем дольше будет время отката навыка.\nВремя отката увеличивается, если возврат в дальнюю стойку произошёл по истечении 30 сек."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Хаос: Опустошение",
+      "description_ru": "Совершаемая атака определяется стойкой, в которой находится Тарталья.\n\nДальняя стойка - Вспышка хаоса:\nТарталья выпускает заряженную водной стихией стрелу, которая наносит Гидро урон по площади и накладывает на врагов статус Отлив.\nПосле активации навык восстанавливает часть энергии.\n\nБлижняя стойка - Свет погибели:\nТарталья выполняет круговую атаку, которая наносит большой Гидро урон окружающим врагам и накладывает на них статус Отлив-взрыв.\n\nОтлив-взрыв:\nАтака Свет погибели, попавшая по врагам со статусом Отлив, снимает с них этот статус, вызывая при этом Гидро взрывы, которые наносят Гидро урон по площади. Урон Отлив-взрыва считается уроном взрыва стихии."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Не кончается пытка",
+      "description_ru": "Увеличивает длительность статуса Отлив на 8 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Водяной меч",
+      "description_ru": "Когда Тарталья находится в рукопашной стойке навыка Форма духа: Бушующие волны, крит. попадания обычными или заряженными атаками накладывают на противников статус Отлив."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Мастерское владение оружием",
+      "description_ru": "Увеличивает уровень обычной атаки персонажей вашего отряда на 1."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Форма духа: Останавливающий волну",
+      "description_ru": "Уменьшает время отката навыка Форма духа: Бушующие волны на 20%."
+    },
+    {
+      "name_ru": "Форма духа: Скрытое течение",
+      "description_ru": "Когда враги со статусом Отлив побеждены, Тарталья восстанавливает 4 ед. элементальной энергии."
+    },
+    {
+      "name_ru": "Хаос бездны: Источник беспорядков",
+      "description_ru": "Увеличивает уровень навыка Форма духа: Бушующие волны на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Хаос бездны: Гидро излив",
+      "description_ru": "Когда Тарталья находится в стойке Форма духа: Бушующие волны, враги со статусом Отлив получают урон от эффекта Отлив-удар каждые 4 сек. В противном случае срабатывает эффект Отлив-вспышка.\nНа эффекты Отлив-удар и Отлив-вспышка, вызванные этим уровнем созвездия, не действуют их обычные ограничения длительности, также они не имеют никаких эффектов в этих временных промежутках."
+    },
+    {
+      "name_ru": "Хаос: Бесформенный клинок",
+      "description_ru": "Увеличивает уровень навыка Хаос: Опустошение на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Хаос: Охота на ангелов",
+      "description_ru": "При активации навыка Хаос: Опустошение обнуляется время отката навыка Форма духа: Бушующие волны.\nЭтот эффект срабатывает, только когда Тарталья возвращается в дальнюю стойку."
+    }
+  ],
+  "coordinates": []
 }

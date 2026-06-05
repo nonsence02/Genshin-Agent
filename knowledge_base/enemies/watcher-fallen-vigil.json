@@ -1,0 +1,15 @@
+{
+  "id": "watcher-fallen-vigil",
+  "name_ru": "Созерцатель: Падший страж",
+  "name_en": "Watcher: Fallen Vigil",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "plume-of-the-fallen-watcher",
+    "prithiva-topaz-gemstone",
+    "prithiva-topaz-chunk",
+    "prithiva-topaz-fragment",
+    "prithiva-topaz-sliver"
+  ],
+  "coordinates": []
+}

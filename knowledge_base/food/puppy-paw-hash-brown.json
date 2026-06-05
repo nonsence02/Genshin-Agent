@@ -1,0 +1,23 @@
+{
+  "id": "puppy-paw-hash-brown",
+  "name_ru": "Картофельные оладьи «Волчьи лапки»",
+  "name_en": "Puppy-Paw Hash Brown",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 40% от макс. HP + 2350 HP.",
+  "recipe": [
+    {
+      "material_id": "pinecone",
+      "count": 2
+    },
+    {
+      "material_id": "potato",
+      "count": 1
+    },
+    {
+      "material_id": "jam",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

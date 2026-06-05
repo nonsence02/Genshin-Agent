@@ -1,0 +1,17 @@
+{
+  "id": "flashing-maintenance-mek-bait",
+  "kind": "bait",
+  "name_ru": "Огонёк ремонтного мека",
+  "name_en": "Flashing Maintenance Mek Bait",
+  "recipe": [
+    {
+      "material_id": "marcotte",
+      "count": 1
+    },
+    {
+      "material_id": "iron-chunk",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

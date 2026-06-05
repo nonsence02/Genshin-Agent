@@ -1,48 +1,80 @@
 {
   "id": "disaster-and-remorse",
-  "name": "Disaster and Remorse",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Disaster_and_Remorse",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "48 - 674",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "After the equipping character uses an Elemental Skill, they gain \"Path of Conflict\" for, as well as \"Unforgivable\" and \"Irreparable\" for each. This can trigger once every. Unforgivable: Increases the equipping character's Normal Attack and Charged Attack DMG by? %. Irreparable: Increases the equipping character's Elemental Skill and Elemental Burst DMG by? %. While Path of Conflict is in, when the equipping character hits an opponent with a Normal Attack or Charged Attack, Irreparable's duration will be increased by. When the equipping character hits an opponent with their Elemental Skill or Elemental Burst, Unforgivable's duration will be increased by. Each of the above effects can be...",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Tile of Decarabian's Tower",
-        "Lightless Bone",
-        "Whopperflower Nectar",
-        "Debris of Decarabian's City",
-        "Glowing Remains",
-        "Shimmering Nectar",
-        "Fragment of Decarabian's Epic",
-        "Radiant Exoskeleton",
-        "Energy Nectar",
-        "Scattered Piece of Decarabian's Dream"
-      ]
+  "name_ru": "Бедствие и раскаяние",
+  "name_en": "Disaster and Remorse",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.048
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.2205
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Погибель и вина",
+  "passive_description_ru": "Экипированный персонаж, применив элементальный навык, на 17 сек. получает Путь раздора, а также на 3 сек. по отдельности эффекты Непростительности и Непоправимости. Этот эффект может возникнуть один раз в 18 сек.\nНепростительность: урон обычной и заряженной атак экипированного персонажа повышается на 40%.\nНепоправимость: урон элементального навыка и взрыва стихии экипированного персонажа повышается на 40%.\nВо время действия Пути раздора, когда обычная и заряженная атаки экипированного персонажа поражают противника, Непоправимость продлевается на 1 сек. Когда противника поражают элементальный навык и взрыв стихии экипированного персонажа, Непростительность продлевается на 1 сек. Каждый из этих эффектов может возникнуть один раз в 0,1 сек. Когда Путь раздора завершается, либо экипированный персонаж покидает поле боя, Непростительность и Непоправимость снимаются.\nВедьмовство: Тайный обряд: перечисленные эффекты повышения урона усиливаются на 75%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "tile-of-decarabians-tower",
+        "name_ru": "Плитка башни Декарабиана",
+        "name_en": "Tile of Decarabian's Tower"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "debris-of-decarabians-city",
+        "name_ru": "Обломок стены Декарабиана",
+        "name_en": "Debris of Decarabian's City"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "fragment-of-decarabians-epic",
+        "name_ru": "Фрагмент эпоса Декарабиана",
+        "name_en": "Fragment of Decarabian's Epic"
+      },
+      {
+        "id": "scattered-piece-of-decarabians-dream",
+        "name_ru": "Осколок мечты Декарабиана",
+        "name_en": "Scattered Piece of Decarabian's Dream"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "lightless-bone",
+        "name_ru": "Потускневшая кость",
+        "name_en": "Lightless Bone"
+      },
+      {
+        "id": "glowing-remains",
+        "name_ru": "Светящиеся останки",
+        "name_en": "Glowing Remains"
+      },
+      {
+        "id": "radiant-exoskeleton",
+        "name_ru": "Сияющая кость",
+        "name_en": "Radiant Exoskeleton"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

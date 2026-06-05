@@ -1,0 +1,18 @@
+{
+  "id": "profaned-sprout",
+  "name_ru": "Осквернённый росток",
+  "name_en": "Profaned Sprout",
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дотторе Ур. 70+",
+    "Вкладка создания алхимического верстака"
+  ],
+  "dropped_by": [
+    "il-dottore"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

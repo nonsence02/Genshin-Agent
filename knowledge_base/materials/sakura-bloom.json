@@ -1,10 +1,16 @@
 {
   "id": "sakura-bloom",
+  "name_ru": "Цвет сакуры",
   "name_en": "Sakura Bloom",
-  "type": "Local Specialty (Inazuma)",
-  "days": [],
-  "source": [
-    "Found in the wild on Narukami Island"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Инадзумы",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Остров Наруками",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sakura_Bloom"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,27 @@
+{
+  "id": "yearning",
+  "name_ru": "Мечта",
+  "name_en": "Yearning",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 40% от макс. HP + 2350 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "tomato",
+      "count": 2
+    },
+    {
+      "material_id": "milk",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

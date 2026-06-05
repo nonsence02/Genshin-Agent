@@ -1,10 +1,19 @@
 {
   "id": "blazing-prismshell",
+  "name_ru": "Пылающий призмопанцирь",
   "name_en": "Blazing Prismshell",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Furnace Shell Mountain Weasels"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Термопанцирные горные хори Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Blazing_Prismshell"
+  "dropped_by": [
+    "furnace-shell-mountain-weasel"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

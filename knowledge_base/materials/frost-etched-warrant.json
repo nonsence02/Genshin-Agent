@@ -1,10 +1,27 @@
 {
   "id": "frost-etched-warrant",
+  "name_ru": "Заиндевевший мандат",
   "name_en": "Frost-Etched Warrant",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Fatui Oprichnikis"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Опричники Фатуи Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Frost-Etched_Warrant"
+  "dropped_by": [
+    "oprichniki-bombardier",
+    "oprichniki-fireblade-shock-trooper",
+    "oprichniki-grenadier",
+    "oprichniki-hailstorm-cannoneer",
+    "oprichniki-line-trooper",
+    "oprichniki-medic",
+    "oprichniki-support-trooper",
+    "oprichniki-thunderblitz-gvardiya",
+    "oprichniki-vanguard"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

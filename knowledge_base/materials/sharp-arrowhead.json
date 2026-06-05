@@ -1,10 +1,22 @@
 {
   "id": "sharp-arrowhead",
+  "name_ru": "Острый наконечник стрелы",
   "name_en": "Sharp Arrowhead",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Hilichurl Shooters"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Хиличурлы-стрелки Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sharp_Arrowhead"
+  "dropped_by": [
+    "cryo-hilichurl-shooter",
+    "electro-hilichurl-shooter",
+    "hilichurl-shooter",
+    "pyro-hilichurl-shooter"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

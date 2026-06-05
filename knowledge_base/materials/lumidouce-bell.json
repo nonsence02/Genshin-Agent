@@ -1,10 +1,17 @@
 {
   "id": "lumidouce-bell",
+  "name_ru": "Ламповый колокольчик",
   "name_en": "Lumidouce Bell",
-  "type": "Local Specialty (Fontaine)",
-  "days": [],
-  "source": [
-    "Found in the north of the Court of Fontaine"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Фонтейна",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "На севере Кур-де-Фонтейна",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lumidouce_Bell"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

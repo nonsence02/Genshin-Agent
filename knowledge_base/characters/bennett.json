@@ -1,94 +1,81 @@
 {
   "id": "bennett",
-  "name": "Bennett",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Bennett",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Pyro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Bennett puts all his fire and passion for adventuring into his sword. Results may vary based on how fired up he is... (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) A single, swift flame strike that deals Pyro DMG. Hold (Short) Charges up, resulting in different effects when unleashed based on the Charge Level. Level: Strikes twice, dealing Pyro DMG and launching opponents. Level: Unleashes consecutive attacks that deal impressive Pyro DMG, but the last attack triggers an explosion that launches both Bennett and the enemy. Bennett takes no damage from being launched. When this skill hits at least one enemy, it generates Elemental Particles if it was...",
-    "elemental_burst": "Bennett performs a jumping attack that deals Pyro DMG, creating an Inspiration Field. Inspiration Field If the health of a character within the AoE is equal to or falls below"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "special": [
-        "Windwheel Aster",
-        "Everflame Seed"
-      ]
+  "name_ru": "Беннет",
+  "name_en": "Bennett",
+  "element": "Pyro",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1039.4418,
+      "atk": 16.0272,
+      "def": 64.6642
     },
-    "talents": {
-      "books": [
-        "Teachings of Resistance",
-        "Guide to Resistance",
-        "Philosophies of Resistance"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "weekly_boss": [
-        "Dvalin's Plume"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12397.4036,
+      "atk": 191.1575,
+      "def": 771.2493
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Счастливый меч",
+      "description_ru": "Обычная атака:\nДо пяти быстрых ударов мечом.\n\nЗаряженная атака:\nДва быстрых взмаха мечом, на которые тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех противников на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Чрезмерные стремления",
+      "description_ru": "Беннет концентрирует на своём клинке весь свой пыл и страсть к приключениям. Результат зависит от уровня его пылающей страсти...\n\nБыстрое нажатие:\nБыстрый взмах пылающим мечом, наносящий Пиро урон.\n\nДолгое нажатие:\nЭффект зависит от уровня заряда навыка.\n· Уровень заряда 1: Совершает два удара пылающим мечом, которые наносят Пиро урон и подбрасывают противников в воздух;\n· Уровень заряда 2: Совершает три удара пылающим мечом, которые наносят внушительный Пиро урон. Последний удар создаёт взрыв, который одновременно подбрасывает в воздух противников и самого Беннета.\nБеннет не получает урон от взрыва."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Волнительное приключение",
+      "description_ru": "Беннет проводит атаку в прыжке, которая наносит Пиро урон и создаёт Круг вдохновения.\n\nКруг вдохновения:\n· Восстанавливает персонажам в области, HP которых равно или ниже 70%, определённое количество HP, которое зависит от макс. HP Беннета;\n· Если HP персонажа в области выше 70%, то он получает бонус атаки, который зависит от базовой атаки Беннета;\n· Накладывает на персонажей в области эффект Пиро."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Вспышка страсти",
+      "description_ru": "Уменьшает время отката навыка Чрезмерные стремления на 20%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Храбрая кровь",
+      "description_ru": "Находясь в области навыка Волнительное приключение, навык Чрезмерные стремления получает следующие свойства:\n· Уменьшается время отката навыка на 50%;\n· Уровень заряда 2 не подбрасывает Беннета в воздух."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Ступайте осторожно",
+      "description_ru": "Уменьшает длительность экспедиций в Мондштадте на 25%."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Мечты о приключениях",
+      "description_ru": "Увеличение силы атаки навыка Волнительное приключение больше не имеет ограничений по HP, также навык получает дополнительные 20% базовой атаки Беннета."
+    },
+    {
+      "name_ru": "Тупиковая ситуация",
+      "description_ru": "Увеличивает восстановление энергии Беннета на 30%, когда его HP падает ниже 70%."
+    },
+    {
+      "name_ru": "Горячая страсть",
+      "description_ru": "Увеличивает уровень навыка Чрезмерные стремления на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Несгораемая решительность",
+      "description_ru": "Использование обычной атаки во время второго удара уровня заряда 1 навыка Чрезмерные стремления позволяет совершить дополнительную атаку.\nЭта атака наносит урон, равный 135% урона второго удара."
+    },
+    {
+      "name_ru": "Душа первооткрывателя",
+      "description_ru": "Увеличивает уровень навыка Волнительное приключение на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Пылкая храбрость",
+      "description_ru": "Активные члены отряда в области навыка Волнительное приключение, экипированные одноручным мечом, двуручным мечом или древковым оружием, получают 15% бонус Пиро урона, а их оружие наделяется инфузией Пиро."
+    }
+  ],
+  "coordinates": []
 }

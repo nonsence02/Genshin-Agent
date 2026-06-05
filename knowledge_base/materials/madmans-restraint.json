@@ -1,0 +1,18 @@
+{
+  "id": "madmans-restraint",
+  "name_ru": "Оковы безумца",
+  "name_en": "Madman's Restraint",
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Доктор Ур. 70+",
+    "Вкладка создания алхимического верстака"
+  ],
+  "dropped_by": [
+    "the-doctor"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mint-salad",
+  "name_ru": "Мятный салат",
+  "name_en": "Mint Salad",
+  "rarity": 2,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 95 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "mint",
+      "count": 4
+    },
+    {
+      "material_id": "jueyun-chili",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "moongleam-sapling",
+  "name_ru": "Белая ветвь тихого сияния",
+  "name_en": "Moongleam Sapling",
+  "type": "fish_rod",
+  "type_text_ru": "Удочка",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Обмен в Ассоциации рыболовов Нод-Края"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

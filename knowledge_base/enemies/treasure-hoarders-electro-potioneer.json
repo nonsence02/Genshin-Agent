@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-electro-potioneer",
+  "name_ru": "Похитители сокровищ: Электро химик",
+  "name_en": "Treasure Hoarders: Electro Potioneer",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

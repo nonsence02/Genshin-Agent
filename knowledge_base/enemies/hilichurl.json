@@ -1,0 +1,13 @@
+{
+  "id": "hilichurl",
+  "name_ru": "Хиличурл",
+  "name_en": "Hilichurl",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

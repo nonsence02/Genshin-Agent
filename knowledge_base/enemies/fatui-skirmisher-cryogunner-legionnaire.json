@@ -1,0 +1,13 @@
+{
+  "id": "fatui-skirmisher-cryogunner-legionnaire",
+  "name_ru": "Застрельщик Фатуи: Крио бомбардир",
+  "name_en": "Fatui Skirmisher - Cryogunner Legionnaire",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "lieutenants-insignia",
+    "sergeants-insignia",
+    "recruits-insignia"
+  ],
+  "coordinates": []
+}

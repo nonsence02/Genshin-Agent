@@ -1,10 +1,17 @@
 {
   "id": "talisman-of-the-enigmatic-land",
+  "name_ru": "Талисман загадочной земли",
   "name_en": "Talisman of the Enigmatic Land",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Wayward Hermetic Spiritspeaker"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Говорящая с духами отшельница (Ур. 30+)"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Talisman_of_the_Enigmatic_Land"
+  "dropped_by": [
+    "wayward-hermetic-spiritspeaker"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

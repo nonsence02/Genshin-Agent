@@ -1,0 +1,13 @@
+{
+  "id": "nimble-harvester-mek",
+  "name_ru": "Мек: Быстрый сбор",
+  "name_en": "Nimble Harvester Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

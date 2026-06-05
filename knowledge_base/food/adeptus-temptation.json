@@ -1,0 +1,27 @@
+{
+  "id": "adeptus-temptation",
+  "name_ru": "«Искушение Адепта»",
+  "name_en": "Adeptus' Temptation",
+  "rarity": 5,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 372 ед. и шанс крит. попадания на 12% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "ham",
+      "count": 4
+    },
+    {
+      "material_id": "crab",
+      "count": 3
+    },
+    {
+      "material_id": "shrimp-meat",
+      "count": 3
+    },
+    {
+      "material_id": "matsutake",
+      "count": 3
+    }
+  ],
+  "coordinates": []
+}

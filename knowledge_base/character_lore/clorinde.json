@@ -1,0 +1,70 @@
+{
+  "id": "clorinde",
+  "name_en": "Clorinde",
+  "element": "Electro",
+  "weapon": "Sword",
+  "region": "Fontaine",
+  "rarity": 5,
+  "description": "Clorinde is a playable Ousia -aligned Electro character in Genshin Impact .\n\nShe is the strongest Champion Duelist in Fontaine and once served as Furina 's bodyguard.",
+  "role_summary": "Clorinde is a playable Ousia -aligned Electro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Oath of Hunting Shadows",
+      "description": "Normal Attack Performs up to 5 rapid strikes. Charged Attack Consumes a certain amount of Stamina and fires Suppressing Shots in a fan pattern with her pistolet. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Hunter's Vigil",
+      "description": "Preparing her pistolet, she enters the \"Night Vigil\" state, using steel and shot together. In this state, Clorinde's Normal Attacks will be transformed into \"Swift Hunt\" pistolet attacks, and the DMG dealt is converted into Electro DMG that cannot be overridden by infusions , and she will be unable to use Charged Attacks . Using her Elemental Skill will transform it into \"Impale the Night\": Perform a lunging attack, dealing Electro DMG . The DMG done through the aforementioned method is considered Normal Attack DMG. Swift Hunt When her Bond of Life is equal to or greater than 100% of her max HP : Performs a pistolet shot. When her Bond of Life is less than 100%, firing her pistolet will grant her Bond of Life, with the amount gained based on her max HP. The shots she fires can pierce opponents, and DMG dealt to opponents in their path is increased. Impale the Night The current percentage value of Clorinde's Bond of Life determines its effect: When the Bond of Life value is 0%, perform a normal lunging strike; When the Bond of Life value is less than 100% of her max HP, Clorinde is healed based on the Bond of Life value, and the AoE of the lunging attack and the DMG dealt is incr..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Last Lightfall",
+      "description": "Grants herself a Bond of Life based upon her own max HP before swiftly evading and striking with saber and sidearm as one, dealing AoE Electro DMG ."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Dark-Shattering Flame",
+      "description": "After a nearby party member triggers an Electro-related reaction against an opponent, Electro DMG dealt by Clorinde's Normal Attacks and Last Lightfall will be increased by 20% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. The Maximum DMG increase achievable this way for the above attacks is 1,800."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Lawful Remuneration",
+      "description": "If Clorinde's Bond of Life is equal to or greater than 100% of her Max HP , her CRIT Rate will increase by 10% for 15s whenever her Bond of Life value increases or decreases. Max 2 stacks. Each stack is counted independently. Additionally, Hunter's Vigil 's Night Vigil state is buffed: While it is active, the percent of healing converted to Bond of Life increases to 100%."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Night Vigil's Harvest",
+      "description": "Displays the location of nearby resources unique to Fontaine on the mini-map ."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "1U",
+      "effect": ""
+    },
+    "c2": {
+      "name": "\"Now, As We Face the Perils of the Long Night\"",
+      "effect": "Enhance the Ascension Talent \" Dark-Shattering Flame \": After a nearby party member triggers an Electro-related reaction against an opponent, Electro DMG dealt by Clorinde's Normal Attacks and Last Lightfall will be increased by 30% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. When you have 3 stacks, Clorinde's interruption resistance will be increased. The Maximum DMG increase achievable this way for the above attacks is 2,700. You must first unlock the Ascension Talent \"Dark-Shattering Flame.\""
+    },
+    "c3": {
+      "name": "\"I Pledge to Remember the Oath of Daylight\"",
+      "effect": "Increases the Level of Hunter's Vigil by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "\"To Enshrine Tears, Life, and Love\"",
+      "effect": "When Last Lightfall deals DMG to opponent(s), DMG dealt is increased based on Clorinde's Bond of Life percentage. Every 1% of her current Bond of Life will increase Last Lightfall DMG by 2%. The maximum Last Lightfall DMG increase achievable this way is 200%."
+    },
+    "c5": {
+      "name": "\"Holding Dawn's Coming as My Votive\"",
+      "effect": "Increases the Level of Last Lightfall by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "\"And So Shall I Never Despair\"",
+      "effect": "Description Gameplay Notes Advanced Properties For 12s after Hunter's Vigil is used, Clorinde's CRIT Rate will be increased by 10%, and her CRIT DMG by 70%. Additionally, while Night Vigil is active, a Glimbright Shade will appear under specific circumstances, executing an attack that deals 200% of Clorinde's ATK as Electro DMG . DMG dealt this way is considered Normal Attack DMG. The Glimbright Shade will appear under the following circumstances: When Clorinde is about to be hit by an attack. When Clorinde uses Impale the Night: Pact. 1 Glimbright Shade can be summoned in the aforementioned ways every 1s. 6 Shades can be summoned per single Night Vigil duration. In addition, while Night Vigil is active, the DMG Clorinde receives is decreased by 80% and her interruption resistance is increased. This effect will disappear after the Night Vigil state ends or 1s after she summons 6 Glimb..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Clorinde",
+  "ai_tags": "Main DPS, Элемент аппликатор"
+}

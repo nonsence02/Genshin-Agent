@@ -1,0 +1,13 @@
+{
+  "id": "ruin-defender",
+  "name_ru": "Руинный защитник",
+  "name_en": "Ruin Defender",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "chaos-oculus",
+    "chaos-axis",
+    "chaos-gear"
+  ],
+  "coordinates": []
+}

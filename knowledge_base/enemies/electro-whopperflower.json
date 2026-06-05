@@ -1,0 +1,13 @@
+{
+  "id": "electro-whopperflower",
+  "name_ru": "Электро попрыгунья",
+  "name_en": "Electro Whopperflower",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "energy-nectar",
+    "shimmering-nectar",
+    "whopperflower-nectar"
+  ],
+  "coordinates": []
+}

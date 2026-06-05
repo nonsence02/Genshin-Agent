@@ -1,0 +1,70 @@
+{
+  "id": "dahlia",
+  "name_en": "Dahlia",
+  "element": "Hydro",
+  "weapon": "Sword",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "description": "Dahlia is a playable Hydro character in Genshin Impact .\n\nDahlia is a deacon from the Church of Favonius . Additionally, he serves as the Herald of Barbatos and is aware of Venti 's identity as such, informing him of any notable events in the nation and relaying his feedback to the people of Mondstadt .",
+  "role_summary": "Dahlia is a Hydro support character who can provide Shields to protect his allies and increase their ATK SPD. Dahlia can use his Elemental Burst to create a Shield to protect party members. When Dahlia is in the party, the active character can use Normal Attacks or trigger the Frozen reaction to grant Dahlia Benison stacks. When his Shield is destroyed, Benison stacks can be consumed to create a new one.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Favonius Bladework - Ritual",
+      "description": "Normal Attack Performs up to 4 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Immersive Ordinance",
+      "description": "Time for a fun little trick! Summons the Sacramental Shower in different ways depending on whether you Tap or Hold it. Tap After a short prayer, summons the Sacramental Shower in front. Hold Engages in continuous prayer, and when done, summons forth a Sacramental Shower in the designated position. Sacramental Shower When opponents or nearby party members touch the Sacramental Shower, different effects will occur depending on the one who touches it: If an opponent touches the Shower, it will explode and deal AoE Hydro DMG to nearby opponents. If a nearby party member touches it, it will bounce the one who touches it high in the air. Only 1 Sacramental Shower summoned by Dahlia himself can be on the field at once."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Radiant Psalter",
+      "description": "Appeals to the divine with earnestness and song, dealing AoE Hydro DMG to nearby opponents and granting his party members Favonian Favor, summoning a Shield of Sacred Favor. The Shield of Sacred Favor's DMG absorption is based on Dahlia's Max HP , and it will absorb Hydro DMG with 250% effectiveness. Favonian Favor While this effect is active, 1 Benison stack may be consumed to summon a new Shield of Sacred Favor when an existing Shield is broken via DMG. Dahlia can obtain Benison via the following methods: He will gain 1 Benison stack when his own active party member hits opponents 4 times with Normal Attacks while affected by Favonian Favor. After triggering the effect of his Ascension Talent , \" The Wind's Gentle Grace \" (You must first unlock this Ascension Talent.) Dahlia can gain a maximum of 4 Benison stacks per Favonian Favor duration."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "The Wind's Gentle Grace",
+      "description": "When characters affected by the Favonian Favor effect of the Elemental Burst Radiant Psalter trigger Frozen reactions on opponents, they will grant Dahlia 2 Benison stacks. This effect can trigger once every 8s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Prayer of Well-Wrought Joy",
+      "description": "When your active party member is affected by the Favonian Favor effect of the Elemental Burst \" Radiant Psalter ,\" Radiant Psalter Appeals to the divine with earnestness and song, dealing AoE Hydro DMG to nearby opponents and granting his party members Favonian Favor, summoning a Shield of Sacred Favor. The Shield of Sacred Favor's DMG absorption is based on Dahlia's Max HP, and it will absorb Hydro DMG with 250% effectiveness. Favonian Favor While this effect is active, 1 Benison stack may be consumed to summon a new Shield of Sacred Favor when an existing Shield is broken via DMG. Dahlia can obtain Benison via the following methods: He will gain 1 Benison stack when his own active party member hits opponents 4 times with Normal Attacks while affected by Favonian Favor. After triggering the effect of his Passive Talent, \"The Wind's Gentle Grace\" (You must first unlock this Passive Talent.) Dahlia can gain a maximum of 4 Benison stacks per Favonian Favor duration. their ATK SPD will increase based on Dahlia's Max HP : Every 1,000 Max HP will cause an increase of 0.5%, up to a maximum of 20%."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Pilgrimage Upon Returning Winds",
+      "description": "During the day (06:00 - 18:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%. Does not take effect in Domains , Trounce Domains , or the Spiral Abyss . Swift Stride does not stack."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Infallible Procession",
+      "effect": "Each time Dahlia gains 1 of his Elemental Burst Radiant Psalter 's Benison stacks, he will regain 2.5 Elemental Energy ."
+    },
+    "c2": {
+      "name": "Revelation of Mercy",
+      "effect": "After Dahlia consumes his Elemental Burst Radiant Psalter 's Benison stacks to summon a Shield of Sacred Favor, the character protected by said Shield will gain 25% increased Shield Strength for 12s."
+    },
+    "c3": {
+      "name": "Windblume Offertory",
+      "effect": "Increases the Level of Radiant Psalter by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Collect of the Assembly",
+      "effect": "The Favonian Favor from Dahlia's Elemental Burst Radiant Psalter lasts 3 more seconds."
+    },
+    "c5": {
+      "name": "Let It Be Subtly So",
+      "effect": "Increases the Level of Immersive Ordinance by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "You Shall Go Out With Joy",
+      "effect": "The current active character affected by the Elemental Burst Radiant Psalter 's Favonian Favor has their ATK SPD increased by 10%. Additionally, when an active character affected by Favonian Favor falls, immediately: Revive them. Restore their HP to 100%. This effect can trigger once every 15 minutes."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dahlia",
+  "ai_tags": "Баффер, Хиллер"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "sugardew-bait",
+  "name_ru": "Сахарная наживка",
+  "name_en": "Sugardew Bait",
+  "type": "fish_bait",
+  "type_text_ru": "Наживка",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Алхимия"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

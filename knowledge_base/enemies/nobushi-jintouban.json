@@ -1,0 +1,13 @@
+{
+  "id": "nobushi-jintouban",
+  "name_ru": "Нобуси: Дзинтобан",
+  "name_en": "Nobushi: Jintouban",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "famed-handguard",
+    "kageuchi-handguard",
+    "old-handguard"
+  ],
+  "coordinates": []
+}

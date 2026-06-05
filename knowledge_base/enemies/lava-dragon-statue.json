@@ -1,0 +1,16 @@
+{
+  "id": "lava-dragon-statue",
+  "name_ru": "Статуя лавового дракона",
+  "name_en": "Lava Dragon Statue",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "sparkless-statue-core",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

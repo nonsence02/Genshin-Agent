@@ -1,0 +1,27 @@
+{
+  "id": "eight-treasure-duck",
+  "name_ru": "Фаршированная «восемью драгоценностями» утка",
+  "name_en": "Eight-Treasure Duck",
+  "rarity": 4,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 35% и защиту на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 4
+    },
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "matsutake",
+      "count": 2
+    },
+    {
+      "material_id": "ham",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

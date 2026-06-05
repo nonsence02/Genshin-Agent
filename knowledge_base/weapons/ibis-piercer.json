@@ -1,44 +1,80 @@
 {
   "id": "ibis-piercer",
-  "name": "Ibis Piercer",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ibis_Piercer",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "The character's Elemental Mastery will increase by within after Charged Attacks hit opponents. Max stacks. This can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "A Flower Yet to Bloom",
-        "Faded Red Satin",
-        "Treasured Flower",
-        "Trimmed Red Silk",
-        "Wanderer's Blooming Flower",
-        "Rich Red Brocade"
-      ]
+  "name_ru": "Клюв ибиса",
+  "name_en": "Ibis Piercer",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Благоволение тайной мудрости",
+  "passive_description_ru": "Попадание заряженной атакой по противнику увеличивает мастерство стихий на 40 ед. на 6 сек. Эффект складывается до 2 раз и может возникнуть раз в 0,5 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "copper-talisman-of-the-forest-dew",
+        "name_ru": "Медный амулет лесной росы",
+        "name_en": "Copper Talisman of the Forest Dew"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "iron-talisman-of-the-forest-dew",
+        "name_ru": "Железный амулет лесной росы",
+        "name_en": "Iron Talisman of the Forest Dew"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-talisman-of-the-forest-dew",
+        "name_ru": "Серебряный амулет лесной росы",
+        "name_en": "Silver Talisman of the Forest Dew"
+      },
+      {
+        "id": "golden-talisman-of-the-forest-dew",
+        "name_ru": "Золотой амулет лесной росы",
+        "name_en": "Golden Talisman of the Forest Dew"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "a-flower-yet-to-bloom",
+        "name_ru": "Нераспустившийся цветок",
+        "name_en": "A Flower Yet to Bloom"
+      },
+      {
+        "id": "treasured-flower",
+        "name_ru": "Заветный цветок",
+        "name_en": "Treasured Flower"
+      },
+      {
+        "id": "wanderers-blooming-flower",
+        "name_ru": "Распустившийся цветок странника",
+        "name_en": "Wanderer's Blooming Flower"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "faded-red-satin",
+        "name_ru": "Выцветший красный шёлк",
+        "name_en": "Faded Red Satin"
+      },
+      {
+        "id": "trimmed-red-silk",
+        "name_ru": "Окаймлённый красный шёлк",
+        "name_en": "Trimmed Red Silk"
+      },
+      {
+        "id": "rich-red-brocade",
+        "name_ru": "Златотканый красный шёлк",
+        "name_en": "Rich Red Brocade"
+      }
+    ]
+  },
+  "coordinates": []
 }

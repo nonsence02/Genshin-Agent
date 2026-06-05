@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-dance-of-steel-v",
+  "name_ru": "Подземелье благословения: Танец стали V",
+  "name_en": "Domain of Blessing: Dance of Steel V",
+  "type": "Артефакты",
+  "region": "Мондштадт",
+  "days_of_week": [],
+  "rewards": [
+    "viridescent-venerer",
+    "maiden-beloved",
+    "tiny-miracle",
+    "traveling-doctor"
+  ],
+  "coordinates": []
+}

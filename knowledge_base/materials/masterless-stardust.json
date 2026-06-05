@@ -1,0 +1,15 @@
+{
+  "id": "masterless-stardust",
+  "name_ru": "Блуждающая звёздная пыль",
+  "name_en": "Masterless Stardust",
+  "type": "consume",
+  "type_text_ru": "Обычный билет обмена",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Молитва"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

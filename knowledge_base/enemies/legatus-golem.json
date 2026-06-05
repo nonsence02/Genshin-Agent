@@ -1,0 +1,20 @@
+{
+  "id": "legatus-golem",
+  "name_ru": "Легат големов",
+  "name_en": "Legatus Golem",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "fragment-of-a-golden-melody",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "prithiva-topaz-gemstone",
+    "prithiva-topaz-chunk",
+    "prithiva-topaz-fragment",
+    "prithiva-topaz-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

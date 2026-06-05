@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-frozen-abyss-iii",
+  "name_ru": "Мастерство: Ледяная Бездна III",
+  "name_en": "Domain of Mastery: Frozen Abyss III",
+  "type": "Повышение талантов",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-resistance",
+    "teachings-of-resistance"
+  ],
+  "coordinates": []
+}

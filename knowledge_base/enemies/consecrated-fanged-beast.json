@@ -1,0 +1,13 @@
+{
+  "id": "consecrated-fanged-beast",
+  "name_ru": "Священный клыкастый зверь",
+  "name_en": "Consecrated Fanged Beast",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "marked-shell",
+    "sturdy-shell",
+    "desiccated-shell"
+  ],
+  "coordinates": []
+}

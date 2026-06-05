@@ -1,0 +1,13 @@
+{
+  "id": "armored-crab",
+  "name_ru": "Бронекраб",
+  "name_en": "Armored Crab",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "xenochromatic-crystal",
+    "transoceanic-chunk",
+    "transoceanic-pearl"
+  ],
+  "coordinates": []
+}

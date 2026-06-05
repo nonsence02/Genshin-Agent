@@ -1,0 +1,13 @@
+{
+  "id": "fatui-skirmisher-pyroslinger-bracer",
+  "name_ru": "Застрельщик Фатуи: Пиро мушкетёр",
+  "name_en": "Fatui Skirmisher - Pyroslinger Bracer",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "lieutenants-insignia",
+    "sergeants-insignia",
+    "recruits-insignia"
+  ],
+  "coordinates": []
+}

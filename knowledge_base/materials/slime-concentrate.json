@@ -1,10 +1,33 @@
 {
   "id": "slime-concentrate",
+  "name_ru": "Концентрат слайма",
   "name_en": "Slime Concentrate",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Slimes"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Слаймы Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Slime_Concentrate"
+  "dropped_by": [
+    "anemo-slime",
+    "cryo-slime",
+    "dendro-slime",
+    "electro-slime",
+    "geo-slime",
+    "hydro-slime",
+    "large-anemo-slime",
+    "large-cryo-slime",
+    "large-dendro-slime",
+    "large-electro-slime",
+    "large-geo-slime",
+    "large-hydro-slime",
+    "large-pyro-slime",
+    "mutant-electro-slime",
+    "pyro-slime"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

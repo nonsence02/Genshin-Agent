@@ -1,0 +1,18 @@
+{
+  "id": "ascended-sample-rook",
+  "name_ru": "Вознёсшийся образец: Ладья",
+  "name_en": "Ascended Sample: Rook",
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Игра пред вратами Ур. 70+",
+    "Вкладка создания алхимического верстака"
+  ],
+  "dropped_by": [
+    "the-game-before-the-gate"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

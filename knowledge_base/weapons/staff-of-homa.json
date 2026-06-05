@@ -1,48 +1,80 @@
 {
   "id": "staff-of-homa",
-  "name": "Staff of Homa",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Staff_of_Homa",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "HP increased by. Additionally, provides an ATK Bonus based on of the wielder's Max HP. When the wielder's HP is less than, this ATK bonus is increased by an additional of Max HP.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Dead Ley Line Branch",
-        "Slime Condensate",
-        "Piece of Aerosiderite",
-        "Dead Ley Line Leaves",
-        "Slime Secretions",
-        "Bit of Aerosiderite",
-        "Ley Line Sprout",
-        "Slime Concentrate",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Посох Хомы",
+  "name_en": "Staff of Homa",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.144
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.6615
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Безрассудная бабочка",
+  "passive_description_ru": "Увеличивает HP на 20%. Также даёт бонус атаки, равный 0,8% от макс. HP экипированного этим оружием персонажа. Когда HP экипированного этим оружием персонажа опускается ниже 50%, его сила атаки дополнительно увеличивается на 1% от его макс. HP.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "slime-condensate",
+        "name_ru": "Слизь слайма",
+        "name_en": "Slime Condensate"
+      },
+      {
+        "id": "slime-secretions",
+        "name_ru": "Выделения слайма",
+        "name_en": "Slime Secretions"
+      },
+      {
+        "id": "slime-concentrate",
+        "name_ru": "Концентрат слайма",
+        "name_en": "Slime Concentrate"
+      }
+    ]
+  },
+  "coordinates": []
 }

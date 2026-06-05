@@ -1,0 +1,13 @@
+{
+  "id": "primal-construct-repulsor",
+  "name_ru": "Первозданная конструкция: Репульсор",
+  "name_en": "Primal Construct: Repulsor",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "radiant-prism",
+    "turbid-prism",
+    "damaged-prism"
+  ],
+  "coordinates": []
+}

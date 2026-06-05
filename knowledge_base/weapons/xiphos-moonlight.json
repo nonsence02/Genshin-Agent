@@ -1,44 +1,80 @@
 {
   "id": "xiphos-moonlight",
-  "name": "Xiphos' Moonlight",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Xiphos%27_Moonlight",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "The following will trigger every: The equipping character will gain Energy Recharge for each point of Elemental Mastery they possess for, with nearby party members gaining of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This will still trigger even if the character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Damaged Prism",
-        "Faded Red Satin",
-        "Turbid Prism",
-        "Trimmed Red Silk",
-        "Radiant Prism",
-        "Rich Red Brocade"
-      ]
+  "name_ru": "Лунное сияние ксифоса",
+  "name_en": "Xiphos' Moonlight",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 36
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 165.384
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Шёпот джинна",
+  "passive_description_ru": "Каждые 10 сек. срабатывает следующий эффект: восстановление энергии экипированного этим оружием персонажа увеличивается на 0,036% за каждую единицу собственного мастерства стихий на 12 сек. Члены отряда поблизости получают 30% этого эффекта. Если этим оружием обладают и другие члены отряда, эффект суммируется. Этот эффект срабатывает, даже если экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "copper-talisman-of-the-forest-dew",
+        "name_ru": "Медный амулет лесной росы",
+        "name_en": "Copper Talisman of the Forest Dew"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "iron-talisman-of-the-forest-dew",
+        "name_ru": "Железный амулет лесной росы",
+        "name_en": "Iron Talisman of the Forest Dew"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-talisman-of-the-forest-dew",
+        "name_ru": "Серебряный амулет лесной росы",
+        "name_en": "Silver Talisman of the Forest Dew"
+      },
+      {
+        "id": "golden-talisman-of-the-forest-dew",
+        "name_ru": "Золотой амулет лесной росы",
+        "name_en": "Golden Talisman of the Forest Dew"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "damaged-prism",
+        "name_ru": "Сломанная призма",
+        "name_en": "Damaged Prism"
+      },
+      {
+        "id": "turbid-prism",
+        "name_ru": "Загрязнённая призма",
+        "name_en": "Turbid Prism"
+      },
+      {
+        "id": "radiant-prism",
+        "name_ru": "Блестящая призма",
+        "name_en": "Radiant Prism"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "faded-red-satin",
+        "name_ru": "Выцветший красный шёлк",
+        "name_en": "Faded Red Satin"
+      },
+      {
+        "id": "trimmed-red-silk",
+        "name_ru": "Окаймлённый красный шёлк",
+        "name_en": "Trimmed Red Silk"
+      },
+      {
+        "id": "rich-red-brocade",
+        "name_ru": "Златотканый красный шёлк",
+        "name_en": "Rich Red Brocade"
+      }
+    ]
+  },
+  "coordinates": []
 }

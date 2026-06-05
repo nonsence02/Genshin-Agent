@@ -1,10 +1,19 @@
 {
   "id": "drop-of-tainted-water",
+  "name_ru": "Мутная капля",
   "name_en": "Drop of Tainted Water",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Tainted Hydro Phantasms"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Фантазмы мутных вод",
+    "Звёздная пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Drop_of_Tainted_Water"
+  "dropped_by": [
+    "tainted-water-splitting-phantasm",
+    "tainted-water-spouting-phantasm"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

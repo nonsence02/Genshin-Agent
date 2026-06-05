@@ -1,0 +1,19 @@
+{
+  "id": "satiety-gel",
+  "name_ru": "Сытный студень",
+  "name_en": "Satiety Gel",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 16% HP + 1350 HP.",
+  "recipe": [
+    {
+      "material_id": "mint",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

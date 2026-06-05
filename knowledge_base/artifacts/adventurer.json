@@ -1,0 +1,10 @@
+{
+  "id": "adventurer",
+  "name_ru": "Искатель приключений",
+  "name_en": "Adventurer",
+  "max_rarity": 3,
+  "bonus_2pc": "Увеличивает макс. HP на 1000 ед.",
+  "bonus_4pc": "В течение 5 сек. после открытия любого сундука восстанавливает 30% HP.",
+  "source_domain": null,
+  "coordinates": []
+}

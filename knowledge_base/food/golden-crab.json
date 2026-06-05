@@ -1,0 +1,27 @@
+{
+  "id": "golden-crab",
+  "name_ru": "Золотистый краб",
+  "name_en": "Golden Crab",
+  "rarity": 4,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 308 ед. и эффективность лечения на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "bird-egg",
+      "count": 5
+    },
+    {
+      "material_id": "flour",
+      "count": 5
+    },
+    {
+      "material_id": "crab",
+      "count": 4
+    },
+    {
+      "material_id": "salt",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

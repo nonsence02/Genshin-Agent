@@ -1,0 +1,19 @@
+{
+  "id": "rice-buns",
+  "name_ru": "Рисовые пампушки",
+  "name_en": "Rice Buns",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "rice",
+      "count": 1
+    },
+    {
+      "material_id": "horsetail",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,94 +1,81 @@
 {
   "id": "beidou",
-  "name": "Beidou",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Beidou",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Nothing to worry about. Should anyone raise a hand against her or her men, she will avenge it ten-fold with sword and thunder. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Accumulating the power of lightning, Beidou swings her blade forward fiercely, dealing Electro DMG. Hold Lifts her weapon up as a shield. Max DMG absorbed scales off Beidou's Max HP. Attacks using the energy stored within the greatsword upon release or once this ability's duration expires, dealing Electro DMG. DMG dealt scales with the number of times Beidou is attacked in the skill's duration. The greatest DMG Bonus will be attained once this effect is triggered twice. The shield...",
-    "elemental_burst": "Recalling her slaying of the great beast Haishan, Beidou calls upon that monstrous strength and the lightning to create a Thunderbeast's Targe around herself, dealing Electro DMG to nearby opponents. Thunderbeast's Targe When Normal and Charged Attacks hit, they create a lightning discharge that can jump between opponents, dealing Electro DMG. Increases the character's resistance to interruption, and decreases DMG taken. A maximum of lightning discharge can be triggered per second. Although not explicitly stated, Thunderbeast's Targe persists when changing to another character in the team and continue to affect the active character. The discharges jump between enemies: At C: jumps, hits..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "special": [
-        "Noctilucous Jade",
-        "Lightning Prism"
-      ]
+  "name_ru": "Бэй Доу",
+  "name_en": "Beidou",
+  "element": "Electro",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1094.1492,
+      "atk": 18.8765,
+      "def": 54.3638
     },
-    "talents": {
-      "books": [
-        "Teachings of Gold",
-        "Guide to Gold",
-        "Philosophies of Gold"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "weekly_boss": [
-        "Dvalin's Sigh"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 13049.8979,
+      "atk": 225.141,
+      "def": 648.3954
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "По волнам",
+      "description_ru": "Обычная атака:\nДо пяти рубящих ударов мечом.\n\nЗаряженная атака:\nКомбо-атака, на которую непрерывно тратится выносливость.\nПосле комбо-атаки проводит дополнительную мощную атаку мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех противников на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Призыв волны",
+      "description_ru": "Обидчик десять раз пожалеет о том, что связался с Бэй Доу и её командой.\n\nБыстрое нажатие:\nНакапливая силу молнии, Бэй Доу яростно поднимает свой меч, нанося Электро урон.\n\nДолгое нажатие:\nБэй Доу поднимает свой меч в качестве щита. Количество поглощаемого урона зависит от макс. HP Бэй Доу.\nПосле окончания или прерывания навыка взмахивает мечом, высвобождая накопленную в нём энергию, и наносит Электро урон.\nУрон увеличивается в зависимости от количества полученных во время навыка ударов. Два полученных удара дают максимальный бонус урона.\nЩит Бэй Доу обладает следующими свойствами:\n· Электро урон поглощается с эффективностью 250%.\n· В момент активации накладывает на Бэй Доу эффект Электро."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Крушитель бури",
+      "description_ru": "Воспоминания о битве с великим чудовищем Хай Шанем помогают Бэй Доу создать вокруг себя громовой щит, нанося при этом Электро урон окружающим противникам.\n\nГромовой щит:\n· Попадания обычной и заряженной атакой запускают цепную молнию, которая прыгает с одного противника на другого и наносит им Электро урон;\n· Повышает устойчивость персонажа к прерыванию атак и уменьшает получаемый им урон;\n· Запускает не более одной цепной молнии в секунду."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Возмездие",
+      "description_ru": "Идеальная контратака навыком Призыв волны даёт максимальный бонус урона."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Гром и молния",
+      "description_ru": "В течение 10 сек. после идеального парирования навыком Призыв волны, Бэй Доу получает следующие эффекты:\n· Увеличивается урон обычной и заряженной атаки на 15%, а также скорость атаки на 15%;\n·Значительно уменьшается время, необходимое для активации заряженной атаки."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Покоритель волн",
+      "description_ru": "Уменьшает потребление выносливости собственных персонажей во время плавания на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Хищник морей",
+      "description_ru": "При использовании таланта Крушитель бури:\nСоздаёт щит, который в течение 15 сек. поглощает урон, равный 16% от макс. HP Бэй Доу.\nЭлектро урон поглощается с эффективностью 250%."
+    },
+    {
+      "name_ru": "Гроза морей",
+      "description_ru": "Цепная молния навыка Крушитель бури может перепрыгнуть на двух дополнительных противников."
+    },
+    {
+      "name_ru": "Призыв бури",
+      "description_ru": "Увеличивает уровень навыка Призыв волны на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Оглушающая месть",
+      "description_ru": "После полученного удара обычные атаки Бэй Доу наносят дополнительные 20% Электро урона в течение 10 сек."
+    },
+    {
+      "name_ru": "Алые паруса на горизонте",
+      "description_ru": "Увеличивает уровень навыка Крушитель бури на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Погибель порока",
+      "description_ru": "На время действия навыка Крушитель бури Электро сопротивление окружающих противников понижается на 15%."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,48 +1,80 @@
 {
   "id": "akuoumaru",
-  "name": "Akuoumaru",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Akuoumaru",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "ATK"
-  },
-  "passive": "For every point of the entire party's combined maximum Energy capacity, the Elemental Burst DMG of the character equipping this weapon is increased by. A maximum of increased Elemental Burst DMG can be achieved this way.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Coral Branch of a Distant Sea",
-        "Concealed Claw",
-        "Old Handguard",
-        "Jeweled Branch of a Distant Sea",
-        "Concealed Unguis",
-        "Kageuchi Handguard",
-        "Jade Branch of a Distant Sea",
-        "Concealed Talon",
-        "Famed Handguard",
-        "Golden Branch of a Distant Sea"
-      ]
+  "name_ru": "Акуомару",
+  "name_en": "Akuoumaru",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Укротитель волн Ватацуми",
+  "passive_description_ru": "Урон взрыва стихии экипированного этим оружием персонажа увеличивается на 0,12% за каждую единицу суммы макс. энергии каждого члена отряда. Бонус урона не может превышать 40%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "coral-branch-of-a-distant-sea",
+        "name_ru": "Коралловая ветвь внешних морей",
+        "name_en": "Coral Branch of a Distant Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "jeweled-branch-of-a-distant-sea",
+        "name_ru": "Драгоценная ветвь внешних морей",
+        "name_en": "Jeweled Branch of a Distant Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "jade-branch-of-a-distant-sea",
+        "name_ru": "Нефритовая ветвь внешних морей",
+        "name_en": "Jade Branch of a Distant Sea"
+      },
+      {
+        "id": "golden-branch-of-a-distant-sea",
+        "name_ru": "Золотая ветвь внешних морей",
+        "name_en": "Golden Branch of a Distant Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "concealed-claw",
+        "name_ru": "Скрытый коготь",
+        "name_en": "Concealed Claw"
+      },
+      {
+        "id": "concealed-unguis",
+        "name_ru": "Скрытый заточенный коготь",
+        "name_en": "Concealed Unguis"
+      },
+      {
+        "id": "concealed-talon",
+        "name_ru": "Скрытый дьявольский коготь",
+        "name_en": "Concealed Talon"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

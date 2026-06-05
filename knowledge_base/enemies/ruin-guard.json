@@ -1,0 +1,13 @@
+{
+  "id": "ruin-guard",
+  "name_ru": "Страж руин",
+  "name_en": "Ruin Guard",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "chaos-core",
+    "chaos-circuit",
+    "chaos-device"
+  ],
+  "coordinates": []
+}

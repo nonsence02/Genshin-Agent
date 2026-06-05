@@ -1,0 +1,16 @@
+{
+  "id": "fatui-pyro-agent",
+  "name_ru": "Фатуи: Пиро агент",
+  "name_en": "Fatui Pyro Agent",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "inspectors-sacrificial-knife",
+    "agents-sacrificial-knife",
+    "hunters-sacrificial-knife",
+    "lieutenants-insignia",
+    "sergeants-insignia",
+    "recruits-insignia"
+  ],
+  "coordinates": []
+}

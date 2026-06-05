@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-forgery-attentive-observation-ii",
+  "name_ru": "Подземелье воли: Внимательное наблюдение II",
+  "name_en": "Domain of Forgery: Attentive Observation II",
+  "type": "Возвышение оружия",
+  "region": "Натлан",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "delirious-desolation-of-the-sacred-lord",
+    "delirious-decadence-of-the-sacred-lord"
+  ],
+  "coordinates": []
+}

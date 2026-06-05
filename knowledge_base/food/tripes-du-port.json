@@ -1,0 +1,27 @@
+{
+  "id": "tripes-du-port",
+  "name_ru": "Портовый говяжий желудок",
+  "name_en": "Tripes du Port",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "carrot",
+      "count": 3
+    },
+    {
+      "material_id": "onion",
+      "count": 2
+    },
+    {
+      "material_id": "fermented-juice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "matsutake-meat-rolls",
+  "name_ru": "Голубцы с грибами",
+  "name_en": "Matsutake Meat Rolls",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 24% HP + 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "matsutake",
+      "count": 2
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

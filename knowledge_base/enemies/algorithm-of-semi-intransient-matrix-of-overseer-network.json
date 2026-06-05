@@ -1,0 +1,20 @@
+{
+  "id": "algorithm-of-semi-intransient-matrix-of-overseer-network",
+  "name_ru": "Алгоритм полуизвечной матрицы оператора наблюдения",
+  "name_en": "Algorithm of Semi-Intransient Matrix of Overseer Network",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "light-guiding-tetrahedron",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "vayuda-turquoise-gemstone",
+    "vayuda-turquoise-chunk",
+    "vayuda-turquoise-fragment",
+    "vayuda-turquoise-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

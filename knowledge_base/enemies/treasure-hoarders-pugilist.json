@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-pugilist",
+  "name_ru": "Похитители сокровищ: Боксёр",
+  "name_en": "Treasure Hoarders: Pugilist",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "magatsu-mitake-narukami-no-mikoto",
+  "name_ru": "Магацу митакэ Наруками но микото",
+  "name_en": "Magatsu Mitake Narukami no Mikoto",
+  "type": "BOSS",
+  "type_ru": "Враги, достойные упоминания",
+  "drops": [
+    "mudra-of-the-malefic-general",
+    "tears-of-the-calamitous-god",
+    "the-meaning-of-aeons",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver",
+    "dream-solvent",
+    "northlander-sword-billet",
+    "northlander-bow-billet",
+    "northlander-claymore-billet",
+    "northlander-catalyst-billet",
+    "northlander-polearm-billet"
+  ],
+  "coordinates": []
+}

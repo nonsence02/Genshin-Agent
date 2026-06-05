@@ -1,94 +1,81 @@
 {
   "id": "nilou",
-  "name": "Nilou",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Nilou",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Dendro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Enters the Pirouette state, dealing Hydro DMG to nearby opponents based on Nilou's Max HP. While she is in the Pirouette state, Nilou's Normal Attacks and Elemental Skill will cause her to enter the Sword Dance and Whirling Steps stances respectively, causing DMG she deals to be converted to Hydro DMG that cannot be overridden and that is considered Elemental Skill DMG. In these stances, Nilou's third dance step will end Pirouette, and has the following effects: Sword Dance: unleashes a Luminous Illusion that deals Hydro DMG to opponents it touches and grants Nilou the Lunar Prayer effect. This effect converts Nilou's Normal Attacks into Sword Dance techniques, and her final hit will...",
-    "elemental_burst": "Begins the dance of faraway dreams and springs that hear, causing a Lotus of Distant Waters to bloom, dealing AoE Hydro DMG based on Nilou's Max HP and applying the Lingering Aeon effect to all opponents hit. After an interval, opponents affected by Lingering Aeon will take Hydro DMG. Constellation Effects Constellation Level, Beguiling Shadowstep: Increases this talent's level by, up to a maximum of."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Varunada Lazurite Sliver",
-        "Varunada Lazurite Fragment",
-        "Varunada Lazurite Chunk",
-        "Varunada Lazurite Gemstone"
-      ],
-      "mob_drops": [
-        "Fungal Spores",
-        "Luminescent Pollen",
-        "Crystalline Cyst Dust"
-      ],
-      "special": [
-        "Padisarah",
-        "Perpetual Caliber"
-      ]
+  "name_ru": "Нилу",
+  "name_en": "Nilou",
+  "element": "Hydro",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1182.1168,
+      "atk": 17.8752,
+      "def": 56.7188
     },
-    "talents": {
-      "books": [
-        "Teachings of Praxis",
-        "Guide to Praxis",
-        "Philosophies of Praxis"
-      ],
-      "mob_drops": [
-        "Fungal Spores",
-        "Luminescent Pollen",
-        "Crystalline Cyst Dust"
-      ],
-      "weekly_boss": [
-        "Tears of the Calamitous God"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 15184.9293,
+      "atk": 229.6112,
+      "def": 728.5895
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Танец шамшира",
+      "description_ru": "Обычная атака:\nДо трёх быстрых ударов мечом.\n\nЗаряженная атака:\nУдар с вращением, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Танец Хафткаршвар",
+      "description_ru": "Входит в состояние Пируэта и наносит противникам поблизости Гидро урон, пропорциональный макс. HP Нилу.\nСовершив в состоянии Пируэта обычную атаку или атаку элементальным навыком, Нилу переходит в состояние Танца мечей или Кружащих шагов соответственно. Урон, наносимый в этих состояниях, преобразуется в Гидро урон, который считается уроном элементального навыка и не может быть отменён другими инфузиями.\n\nВ этих состояниях третий танцевальный шаг Нилу завершает Пируэт и, в зависимости от текущего состояния, производит следующие эффекты:\n· Танец мечей: выпускает Сияющую иллюзию, которая при соприкосновении с врагами наносит Гидро урон и наделяет Нилу Лунной молитвой. Этот эффект превращает её обычные атаки в техники Танца мечей, а последний удар выпускает Сияющую иллюзию.\n· Кружащие шаги: Нилу выпускает Водяное колесо, которое наносит Гидро урон по площади и создаёт Ауру покоя, которая следует за активным персонажем и накладывает на врагов в радиусе действия статус Мокрый.\n\nПребывая в состояниях Пируэта и Лунной молитвы, Нилу не может наносить заряженные атаки. Эти состояния исчезают, когда Нилу покидает поле боя."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Танец Абзендеги: Далёкие мечты, внемлющий ручей",
+      "description_ru": "Пускается в танец дальних мечтаний и внемлющего ручья, от чего распускается Лотос далёких вод, нанося Гидро урон по площади пропорционально макс. HP Нилу и накладывая на поражённых противников Течение вечности.\nВскоре противники под влиянием этого эффекта получают Гидро урон."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Зал кружащих лепестков",
+      "description_ru": "Если отряд полностью состоит из Дендро и Гидро персонажей, и в отряде есть хотя бы по одному персонажу Гидро и Дендро:\nНилу по завершении третьего шага Танца Хафткаршвар на 30 сек. наделяет всех персонажей поблизости Изобилием золотого кубка.\nЕсли персонажи под воздействием Изобилия золотого кубка атакованы Дендро, мастерство стихий всех персонажей поблизости увеличивается на 100 ед. на 10 сек. Кроме того, активация реакций Бутонизация или Лунная бутонизация вместо Дендро ядер создаёт Ядра изобилия.\nЯдра изобилия быстрее взрываются и обладают большей зоной поражения.\nОни не активируют Вегетацию и Цветение, и обладают тем же количественным ограничением, что и Дендро ядра. Урон Ядер изобилия считается уроном от Дендро ядер, созданных реакцией Бутонизация.\nЕсли элементы персонажей отряда не соответствуют требованиям этого таланта возвышения, все существующие эффекты Изобилия золотого кубка прерываются."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Сон танцующих веков",
+      "description_ru": "За каждые 1000 ед. HP выше 30 000 ед. макс. HP Нилу повышает урон Ядер изобилия, созданных персонажами под действием Изобилия золотого кубка, на 9%.\nМаксимальное увеличение урона Ядер изобилия, полученное таким образом, не может превышать 400%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Лотос белого нефрита",
+      "description_ru": "При приготовлении идеального блюда для приключений имеет 12% шанс получить дополнительное блюдо."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Танец убывающей луны",
+      "description_ru": "Танец Хафткаршвар усиливается следующим образом:\n· Урон Сияющей иллюзии повышается на 65%.\n· Длительность Ауры покоя увеличивается на 6 сек."
+    },
+    {
+      "name_ru": "Дождь лепестков звёздного неба",
+      "description_ru": "Гидро сопротивление противников, получивших Гидро урон от персонажей под воздействием Изобилия золотого кубка, понижается на 35% на 10 сек. После нанесения противнику урона от реакций Бутонизация или Лунная бутонизация его Дендро сопротивление снижается на 35% на 10 сек.\nТребуется разблокировать талант возвышения Зал кружащих лепестков."
+    },
+    {
+      "name_ru": "Грациозная поступь тени",
+      "description_ru": "Увеличивает уровень навыка Танец Абзендеги: Далёкие мечты, внемлющий ручей на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Ритм зыби",
+      "description_ru": "Попадание по врагу третьего шага Танца Хафткаршвар во время действия Пируэта восстанавливает 15 ед. энергии Нилу и на 8 сек. увеличивает урон её Танца Абзендеги: Далёкие мечты, внемлющий ручей на 50%."
+    },
+    {
+      "name_ru": "Кружащиеся лунные блики",
+      "description_ru": "Увеличивает уровень навыка Танец Хафткаршвар на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Мелодия разбитого хлада",
+      "description_ru": "За каждые 1000 ед. макс. HP шанс критического попадания Нилу увеличивается на 0,6%, а её критический урон - на 1,2%.\nШанс критического попадания Нилу может таким образом увеличиться на 30%, а критический урон - на 60%."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,10 +1,36 @@
 {
   "id": "shivada-jade-gemstone",
+  "name_ru": "Драгоценный нефрит Шивада",
   "name_en": "Shivada Jade Gemstone",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses and Weekly Bosses (Lv. 75+)"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Shivada_Jade_Gemstone"
+  "dropped_by": [
+    "aeonblight-drake",
+    "bolteater-bathysmal-vishap",
+    "childe",
+    "cryo-hypostasis",
+    "cryo-regisvine",
+    "frostnight-herra",
+    "icewind-suite",
+    "il-dottore",
+    "iniquitous-baptist",
+    "la-signora",
+    "lupus-boreas-dominator-of-wolves",
+    "maguu-kenki",
+    "perpetual-mechanical-array",
+    "primo-geovishap",
+    "rimebiter-bathysmal-vishap",
+    "super-heavy-landrover-mechanized-fortress",
+    "the-doctor",
+    "wayward-hermetic-spiritspeaker"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

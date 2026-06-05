@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-order",
+  "name_ru": "Учения о «Порядке»",
   "name_en": "Teachings of Order",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Pale Forgotten Glory (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Order"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-chiming-recitation-i",
+    "domain-of-mastery-chiming-recitation-ii",
+    "domain-of-mastery-chiming-recitation-iii",
+    "domain-of-mastery-chiming-recitation-iv"
+  ],
+  "source_domain": "domain-of-mastery-chiming-recitation-i",
+  "coordinates": []
 }

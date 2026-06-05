@@ -1,10 +1,17 @@
 {
   "id": "overripe-flamegranate",
+  "name_ru": "Перезревший пламегранат",
   "name_en": "Overripe Flamegranate",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Gluttonous Yumkasaur Mountain King"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Прожорливый Горный король-юмказавр Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Overripe_Flamegranate"
+  "dropped_by": [
+    "gluttonous-yumkasaur-mountain-king"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

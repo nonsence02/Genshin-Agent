@@ -1,94 +1,81 @@
 {
   "id": "emilie",
-  "name": "Emilie",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Emilie",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Dendro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Creates a Lumidouce Case that deals AoE Dendro DMG. Lumidouce Case Fires Puffs of Puredew at nearby opponents at intervals, dealing Dendro DMG. When nearby opponents are affected by Burning, they will give off Scents at intervals, and Scent can be created this way. The Lumidouce Case collects nearby Scents. The Lumidouce Case will level up after gathering of them, after which it will fire extra Puff of Puredew when firing, while the DMG dealt by and DMG AoE of the above attack will also be increased. Lumidouce Case created by Emilie herself can exist at any one time. The Case starts at Level and can go up to Level. If the Case does not collect any Scents for while it is on the field, it...",
-    "elemental_burst": "Guiding the fragrances collected within the Case, Emilie converts them into pure Dendro energy, creating a Level Lumidouce Case and stowing existing Cases away. While it exists, the Level Lumidouce Case will not gather nearby Scents, but it will continuously cause Scented Dew to descend, attacking opponents within range and dealing Dendro DMG. During this time, drop of Scented Dew will descend every seconds, and opponent can become the target every seconds. When the duration ends, a Level Lumidouce Case will be recreated. If a Lumidouce Case was stowed away when using Aromatic Explication, then the Case that was stowed away will be deployed instead, and its duration will be reset. While..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Nagadus Emerald Sliver",
-        "Fragment of a Golden Melody",
-        "Nagadus Emerald Fragment",
-        "Nagadus Emerald Chunk",
-        "Nagadus Emerald Gemstone"
-      ],
-      "mob_drops": [
-        "Meshing Gear",
-        "Mechanical Spur Gear",
-        "Artificed Dynamic Gear"
-      ],
-      "special": [
-        "Lakelight Lily"
-      ]
+  "name_ru": "Эмилия",
+  "name_en": "Emilie",
+  "element": "Dendro",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1056.2786,
+      "atk": 26.068,
+      "def": 56.8385
     },
-    "talents": {
-      "books": [
-        "Teachings of Order",
-        "Guide to Order",
-        "Philosophies of Order"
-      ],
-      "mob_drops": [
-        "Meshing Gear",
-        "Mechanical Spur Gear",
-        "Artificed Dynamic Gear"
-      ],
-      "weekly_boss": [
-        "Silken Feather"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 13568.4697,
+      "atk": 334.8497,
+      "def": 730.1267
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Копьё охоты на тени",
+      "description_ru": "Обычная атака:\nДо четырёх последовательных ударов копьём.\n\nЗаряженная атака:\nТратит определённое количество выносливости и наносит восходящий удар.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Извлечение ароматов",
+      "description_ru": "Создаёт Шкатулку Люмидус, которая наносит Дендро урон по площади.\n\nШкатулка Люмидус\n· Периодически выпускает во врагов поблизости Благоухание чистых рос, нанося Дендро урон.\n· Если поблизости есть враги со статусом Горение, они будут периодически производить Ароматы, собираемые Шкатулкой Люмидус. Таким способом может создаваться 1 Аромат каждые 2 сек. Собрав 2 Аромата, Шкатулка станет уровнем выше, и во время стрельбы она будет дополнительно выпускать ещё одно Благоухание. Кроме того, увеличивается область поражения и урон вышеописанной атаки.\n· Одновременно может существовать только одна Шкатулка Люмидус, созданная самой Эмилией. Шкатулка при создании обладает первым уровнем и может быть повышена до второго. Если Шкатулка в течение 8 сек. на поле боя не соберёт ни одного Аромата, её уровень вернётся к 1.\n\nАрхэ: Пневма\nПосле того как Эмилия создаёт Шкатулку Люмидус таким способом, перед ней периодически появляется пронзающая врагов Игла дыхания душ, которая наносит Дендро урон пневмы."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Толкование ароматов",
+      "description_ru": "Направляя собранные в Шкатулке ароматы, Эмилия превращает их в чистую силу Дендро, создаёт Шкатулку Люмидус третьего уровня и откладывает существующую Шкатулку.\nНаходясь на поле боя, Шкатулка Люмидус третьего уровня не собирает Ароматы поблизости, но непрерывно обрушивает Благоухающую росу, атакуя врагов в своей области действия и нанося им Дендро урон. Во время действия обрушивается 1 капля Благоухающей росы в 0,3 сек., причём каждый враг может быть целью только один раз в 0,7 сек.\nКогда время действия истекает, заново создаётся Шкатулка Люмидус первого уровня. Если Шкатулка Люмидус была отложена во время использования Толкования ароматов, то воссоздаётся отложенная Шкатулка, причём её длительность сбрасывается.\nЭлементальный навык Извлечение ароматов во время действия Толкования ароматов не создаёт Шкатулку Люмидус."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Непреходящий аромат",
+      "description_ru": "Собрав два Аромата, Шкатулка Люмидус второго уровня расходует их и выпускает Парфюм ясных рос, который наносит врагам Дендро урон по площади, равный 600% силы атаки Эмилии. Этот урон не считается уроном элементального навыка."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Ректификация",
+      "description_ru": "Эмилия пропорционально своей силе атаки наносит противникам со статусом Горение повышенный урон: урон повышается на 15% за каждые 1000 ед. силы атаки. Максимальное увеличение урона, которое можно получить таким образом, составляет 36%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Сбор ароматов из пространства",
+      "description_ru": "Когда созданная самой Эмилией Шкатулка Люмидус находится на поле боя, Пиро сопротивление урону от Горения всех членов отряда поблизости повышается на 85%."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Экстрагирование лёгкого аромата",
+      "description_ru": "Повышает урон Извлечения ароматов и Парфюма ясных рос таланта возвышения Непреходящий аромат на 20%. Для последнего требуется открыть талант возвышения Непреходящий аромат.\nКроме того, когда персонажи отряда поблизости активируют на противнике Горение или наносят противнику в состоянии Горения Дендро урон, будет дополнительно создан 1 Аромат. Этот эффект может возникнуть один раз в 2,9 сек."
+    },
+    {
+      "name_ru": "Высший тон озёрного света",
+      "description_ru": "Когда Извлечение ароматов, Толкование ароматов или Парфюм ясных рос таланта возвышения Непреходящий аромат (для последнего требуется открыть соответствующий талант возвышения) поражают противников, их Дендро сопротивление снижается на 30% на 10 сек."
+    },
+    {
+      "name_ru": "Благоуханная эссенция",
+      "description_ru": "Увеличивает уровень навыка Извлечение ароматов на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Нотка сердца Люмидус",
+      "description_ru": "Увеличивает длительность Толкования ароматов на 2 сек., а также сокращает интервал выбора противника в качестве цели Благоухающей росы на 0,3 сек."
+    },
+    {
+      "name_ru": "Аромат чистых рос",
+      "description_ru": "Увеличивает уровень навыка Толкование ароматов на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Шлейф маркота",
+      "description_ru": "Применяя Извлечение ароматов или Толкование ароматов, Эмилия на 5 сек. получает Стойкое благоухание.\nВо время его действия после обычных и заряженных атак Эмилии создаётся 1 Аромат, урон её обычных и заряженных атак конвертируется в Дендро урон, который не может быть отменён другими инфузиями, а наносимый урон увеличивается на 300% от её силы атаки.\n\nЭффект Стойкого благоухания прекращается, когда он таким способом создаёт Аромат 4 раза или когда заканчивается время его действия. Стойкое благоухание может возникнуть один раз в 12 сек."
+    }
+  ],
+  "coordinates": []
 }

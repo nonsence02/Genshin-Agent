@@ -1,0 +1,10 @@
+{
+  "id": "gambler",
+  "name_ru": "Азартный игрок",
+  "name_en": "Gambler",
+  "max_rarity": 4,
+  "bonus_2pc": "Увеличивает урон элементального навыка на 20%.",
+  "bonus_4pc": "Победа над противником со 100% шансом восстанавливает время отката элементального навыка. Может возникнуть раз в 15 сек.",
+  "source_domain": "domain-of-blessing-derivations-from-the-deep-i",
+  "coordinates": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "plaustrite-shard",
+  "name_ru": "Осколок плаустрита",
+  "name_en": "Plaustrite Shard",
+  "type": "exchange",
+  "type_text_ru": "Материал Праздника морских фонарей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Месторождения руды",
+    "Молодые и взрослые геовишапы",
+    "Лавачурлы с каменным панцирем"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

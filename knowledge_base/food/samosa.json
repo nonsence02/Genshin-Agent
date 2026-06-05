@@ -1,0 +1,23 @@
+{
+  "id": "samosa",
+  "name_ru": "Самоса",
+  "name_en": "Samosa",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 24% от макс. HP + 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "flour",
+      "count": 1
+    },
+    {
+      "material_id": "spice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

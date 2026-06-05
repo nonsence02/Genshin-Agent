@@ -1,48 +1,80 @@
 {
   "id": "flute-of-ezpitzal",
-  "name": "Flute of Ezpitzal",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Flute_of_Ezpitzal",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "DEF"
-  },
-  "passive": "Using an Elemental Skill increases DEF by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Blazing Sacrificial Heart's Terror",
-        "Ruined Hilt",
-        "Juvenile Fang",
-        "Blazing Sacrificial Heart's Hesitance",
-        "Splintered Hilt",
-        "Seasoned Fang",
-        "Blazing Sacrificial Heart's Resolve",
-        "Still-Smoldering Hilt",
-        "Tyrant's Fang",
-        "Blazing Sacrificial Heart's Splendor"
-      ]
+  "name_ru": "Флейта Эспицаль",
+  "name_en": "Flute of Ezpitzal",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Защита",
+      "secondary_stat_value": 0.1501
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Защита",
+      "secondary_stat_value": 0.6897
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Тайна дыма и зеркал",
+  "passive_description_ru": "Использование элементального навыка повышает защиту на 16% на 15 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "blazing-sacrificial-hearts-terror",
+        "name_ru": "Ужас пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Terror"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "blazing-sacrificial-hearts-hesitance",
+        "name_ru": "Сомнение пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Hesitance"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "blazing-sacrificial-hearts-resolve",
+        "name_ru": "Решимость пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Resolve"
+      },
+      {
+        "id": "blazing-sacrificial-hearts-splendor",
+        "name_ru": "Великолепие пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Splendor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "ruined-hilt",
+        "name_ru": "Сломанный эфес",
+        "name_en": "Ruined Hilt"
+      },
+      {
+        "id": "splintered-hilt",
+        "name_ru": "Расщеплённый эфес",
+        "name_en": "Splintered Hilt"
+      },
+      {
+        "id": "still-smoldering-hilt",
+        "name_ru": "Неугасающий эфес",
+        "name_en": "Still-Smoldering Hilt"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "juvenile-fang",
+        "name_ru": "Молодой клык",
+        "name_en": "Juvenile Fang"
+      },
+      {
+        "id": "seasoned-fang",
+        "name_ru": "Клык взрослого",
+        "name_en": "Seasoned Fang"
+      },
+      {
+        "id": "tyrants-fang",
+        "name_ru": "Клык тирана",
+        "name_en": "Tyrant's Fang"
+      }
+    ]
+  },
+  "coordinates": []
 }

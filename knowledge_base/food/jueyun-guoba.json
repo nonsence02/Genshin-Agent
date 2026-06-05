@@ -1,0 +1,27 @@
+{
+  "id": "jueyun-guoba",
+  "name_ru": "Заоблачный гоба",
+  "name_en": "Jueyun Guoba",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает физ. урон всех членов отряда на 40% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "horsetail",
+      "count": 2
+    },
+    {
+      "material_id": "rice",
+      "count": 2
+    },
+    {
+      "material_id": "ham",
+      "count": 1
+    },
+    {
+      "material_id": "jueyun-chili",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

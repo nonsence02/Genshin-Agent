@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-the-burning-gauntlet-iii",
+  "name_ru": "Подземелье благословения: Испытание пламенем III",
+  "name_en": "Domain of Blessing: The Burning Gauntlet III",
+  "type": "Артефакты",
+  "region": "Натлан",
+  "days_of_week": [],
+  "rewards": [
+    "scroll-of-the-hero-of-cinder-city",
+    "obsidian-codex",
+    "resolution-of-sojourner",
+    "gambler"
+  ],
+  "coordinates": []
+}

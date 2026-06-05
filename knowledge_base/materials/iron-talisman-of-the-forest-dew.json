@@ -1,0 +1,23 @@
+{
+  "id": "iron-talisman-of-the-forest-dew",
+  "name_ru": "Железный амулет лесной росы",
+  "name_en": "Iron Talisman of the Forest Dew",
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "source_ru": [
+    "Можно создать: {0}"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-tainted-clouds-ii",
+    "domain-of-forgery-tainted-clouds-iii",
+    "domain-of-forgery-tainted-clouds-iv"
+  ],
+  "source_domain": "domain-of-forgery-tainted-clouds-ii",
+  "coordinates": []
+}

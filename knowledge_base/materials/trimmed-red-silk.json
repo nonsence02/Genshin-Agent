@@ -1,10 +1,30 @@
 {
   "id": "trimmed-red-silk",
+  "name_ru": "Окаймлённый красный шёлк",
   "name_en": "Trimmed Red Silk",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ The Eremites"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пустынники Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Trimmed_Red_Silk"
+  "dropped_by": [
+    "eremite-axe-vanguard",
+    "eremite-crossbow",
+    "eremite-daythunder",
+    "eremite-desert-clearwater",
+    "eremite-floral-ring-dancer",
+    "eremite-galehunter",
+    "eremite-linebreaker",
+    "eremite-ravenbeak-halberdier",
+    "eremite-scorching-loremaster",
+    "eremite-stone-enchanter",
+    "eremite-sunfrost",
+    "eremite-sword-dancer"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

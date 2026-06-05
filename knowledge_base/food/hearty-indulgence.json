@@ -1,0 +1,23 @@
+{
+  "id": "hearty-indulgence",
+  "name_ru": "Услада желудка",
+  "name_en": "Hearty Indulgence",
+  "rarity": 2,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 80 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "smoked-fowl",
+      "count": 1
+    },
+    {
+      "material_id": "onion",
+      "count": 1
+    },
+    {
+      "material_id": "cabbage",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "thunder-manifestation",
+  "name_ru": "Манифестация грома",
+  "name_en": "Thunder Manifestation",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "storm-beads",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver"
+  ],
+  "coordinates": []
+}

@@ -1,94 +1,81 @@
 {
   "id": "alhaitham",
-  "name": "Alhaitham",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Alhaitham",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Dendro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Rushes forward, dealing Dendro DMG to nearby opponents when the rush ends, causing a Chisel-Light Mirror to form. Holding this skill will cause it to behave differently. Hold Enters Aiming Mode to adjust the direction of Alhaitham's rush attack. Chisel-Light Mirror When this skill is unleashed, Alhaitham will generate Chisel-Light Mirror. If there are no Mirrors at this time, he will generate additional Mirror. Chisel-Light Mirrors will have the following properties: When he possesses Chisel-Light Mirrors, Alhaitham's Normal, Charged, and Plunging Attacks will be converted to Dendro DMG. This cannot be overridden. When attacks of the aforementioned kinds hit opponents, the Chisel-Light...",
-    "elemental_burst": "Creates a Particular Binding Field and deals multiple instances of AoE Dendro DMG. If Chisel-Light Mirrors exist when this ability is unleashed, all such Mirrors will be consumed and increase the number of DMG instances dealt. after this ability is unleashed, if Mirrors were consumed, Alhaitham will generate new Mirrors in turn. DMG dealt by this skill will snapshot Alhaitham's stats on cast and will not be affected by changes in his stats that occur afterwards. If the player switches to a different character and back to Alhaitham within after using this skill, Alhaitham will still be able to regenerate Mirrors. However, if the player fails to switch back within, the Mirrors will not be..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Nagadus Emerald Sliver",
-        "Nagadus Emerald Fragment",
-        "Nagadus Emerald Chunk",
-        "Nagadus Emerald Gemstone"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "special": [
-        "Sand Grease Pupa",
-        "Pseudo-Stamens"
-      ]
+  "name_ru": "Аль-Хайтам",
+  "name_en": "Alhaitham",
+  "element": "Dendro",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1039.1188,
+      "atk": 24.3922,
+      "def": 60.8471
     },
-    "talents": {
-      "books": [
-        "Teachings of Ingenuity",
-        "Guide to Ingenuity",
-        "Philosophies of Ingenuity"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "weekly_boss": [
-        "Mirror of Mushin"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 13348.0428,
+      "atk": 313.3237,
+      "def": 781.6198
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Абдуктивная аргументация",
+      "description_ru": "Обычная атака:\nДо пяти быстрых ударов мечом.\n\nЗаряженная атака:\nДва быстрых взмаха мечом, на которые тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Универсалия: Совершенствование формы",
+      "description_ru": "Совершает рывок, по окончании которого наносит противникам поблизости Дендро урон и создаёт Зеркало света.\nПри долгом нажатии способ активации навыка меняется.\n\nДолгое нажатие\nПереходит в режим прицеливания, в котором можно выбрать направление рывка аль-Хайтама.\n\nЗеркало света\nПри активации навыка аль-Хайтам создаёт 1 Зеркало света. Если в данный момент Зеркал света нет, он создаст 1 дополнительное Зеркало света. Зеркала света обладают следующими свойствами:\n· Когда существуют Зеркала света, обычные атаки, заряженные атаки и атаки в падении аль-Хайтама конвертируются в Дендро урон, который не может быть отменён другими инфузиями.\n· Если такие атаки попадают по противнику, то Зеркала света выполняют Проекционный удар, наносящий Дендро урон по площади, размер которого зависит от количества существующих Зеркал света.\n· Одновременно может существовать до 3 Зеркал света.\n· Со временем Зеркала света по очереди исчезают. Все зеркала исчезнут, если аль-Хайтам покинет поле боя."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Особое поле: Взаимосвязь феноменов",
+      "description_ru": "Создаёт Особое связующее поле и наносит многократный Дендро урон по площади.\nЕсли во время активации навыка существуют Зеркала света, все зеркала израсходуются, увеличивая количество раз нанесения урона.\nЧерез 2 сек. после активации этого навыка, если израсходованных зеркал 0/1/2/3, создаётся 3/2/1/0 новых Зеркал света соответственно."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Коррекция по четырём причинам",
+      "description_ru": "Заряженные атаки или атаки в падении аль-Хайтама при попадании создают 1 Зеркало света. Этот эффект может возникнуть один раз в 12 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Раскрытие тайн",
+      "description_ru": "Каждая единица мастерства стихий аль-Хайтама увеличивает урон его Проекционного удара и навыка Особое поле: Взаимосвязь феноменов на 0,1%.\nБонус урона этих навыков, полученный таким образом, не может превышать 100%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Закон редуктивной переопределённости",
+      "description_ru": "При создании материалов возвышения оружия имеет 10% шанс создать дополнительный предмет."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Интуиция",
+      "description_ru": "Когда Проекционный удар попадает по противнику, откат навыка Универсалия: Совершенствование формы уменьшается на 1,2 сек. Эффект активируется не чаще одного раза в 1 сек."
+    },
+    {
+      "name_ru": "Полемика",
+      "description_ru": "Когда аль-Хайтам создаёт Зеркало света, его мастерство стихий повышается на 50 ед. на 8 сек. Эффект может складываться до 4 раз. Длительность каждого уровня рассчитывается отдельно. Эффект срабатывает, даже если достигнуто максимальное количество Зеркал света."
+    },
+    {
+      "name_ru": "Отрицание",
+      "description_ru": "Увеличивает уровень навыка Универсалия: Совершенствование формы на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Толкование",
+      "description_ru": "Во время применения навыка Особое поле: Взаимосвязь феноменов в зависимости от количества израсходованных и созданных в этот раз Зеркал света активируются следующие эффекты:\n· Каждое израсходованное Зеркало света повышает мастерство стихий остальных членов отряда поблизости на 30 ед. на 15 сек.\n· Каждое созданное Зеркало света даёт аль-Хайтаму 10% бонус Дендро урона на 15 сек.\n\nСуществующие эффекты, описанные выше, будут сняты, если во время их действия повторно активировать Особое поле: Взаимосвязь феноменов."
+    },
+    {
+      "name_ru": "Проницательность",
+      "description_ru": "Увеличивает уровень навыка Особое поле: Взаимосвязь феноменов на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Структурирование",
+      "description_ru": "Аль-Хайтам получает следующие эффекты:\n· Через 2 сек. после применения навыка Особое поле: Взаимосвязь феноменов вне зависимости от числа израсходованных Зеркал света создаётся 3 Зеркала света.\n· Если аль-Хайтам создаёт Зеркала света, когда достигнуто их максимальное количество, его шанс крит. попадания повысится на 10%, а крит. урон - на 70% на 6 сек. Если эффект во время его исходного действия активируется повторно, его остающаяся длительность увеличится на 6 сек."
+    }
+  ],
+  "coordinates": []
 }

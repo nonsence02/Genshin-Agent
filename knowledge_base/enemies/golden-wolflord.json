@@ -1,0 +1,15 @@
+{
+  "id": "golden-wolflord",
+  "name_ru": "Золотой волчий вожак",
+  "name_en": "Golden Wolflord",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "riftborn-regalia",
+    "prithiva-topaz-gemstone",
+    "prithiva-topaz-chunk",
+    "prithiva-topaz-fragment",
+    "prithiva-topaz-sliver"
+  ],
+  "coordinates": []
+}

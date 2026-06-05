@@ -1,47 +1,80 @@
 {
   "id": "recurve-bow",
-  "name": "Recurve Bow",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Recurve_Bow",
-  "profile": {
-    "type": "Bow",
-    "rarity": "3★",
-    "base_atk": "38 - 354",
-    "secondary_stat": "HP"
-  },
-  "passive": "Cull the Weak Defeating an opponent restores HP. → Cost Mora ×",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Divining Scroll",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Sealed Scroll",
-        "Shackles of the Dandelion Gladiator",
-        "Forbidden Curse Scroll",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Изогнутый лук",
+  "name_en": "Recurve Bow",
+  "weapon_type": "Bow",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 37.6075,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.1021
+    },
+    "level_90": {
+      "base_atk": 354.3794,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.4692
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Жатва",
+  "passive_description_ru": "Победа над противником восстанавливает 8% HP.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

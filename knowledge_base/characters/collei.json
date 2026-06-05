@@ -1,94 +1,81 @@
 {
   "id": "collei",
-  "name": "Collei",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Collei",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Dendro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Throws out a Floral Ring that deals instance of Dendro DMG to targets it comes into contact with. The Floral Ring will return after a set time, dealing Dendro DMG once again. When this skill hits at least one enemy, it generates Elemental Particles. The Floral Ring will fly back to the player even if the player moves away from their original position. The period of time in which the Floral Ring stays on-field can be greatly extended if the player can exceed the speed in which the Floral Ring returns to the player. Characters with fast movement speed (e.g., Sayu ) can achieve this easily. However, only two instances of damage can be dealt even if the Floral Ring makes contact with the enemy...",
-    "elemental_burst": "Trusty Cuilein-Anbar comes to save the day! Throws the doll named Cuilein-Anbar, causing an explosion that deals AoE Dendro DMG, creating a Cuilein-Anbar Zone. Cuilein-Anbar will bounce around within this zone, dealing AoE Dendro DMG. This skill ticks a total of times, in addition to the initial hit. Trump-Card Kitty's Leap DMG will snapshot Collei's stats on cast and will not be affected by changes in her stats that occur afterwards. Passive Effects Passive Talent, The Languid Wood: \"When a character within the Cuilein-Anbar Zone triggers Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, Burgeon, or Lunar-Bloom reactions, the Zone's duration will be increased by. A single Trump-Card..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Nagadus Emerald Sliver",
-        "Nagadus Emerald Fragment",
-        "Nagadus Emerald Chunk",
-        "Nagadus Emerald Gemstone"
-      ],
-      "mob_drops": [
-        "Firm Arrowhead",
-        "Sharp Arrowhead",
-        "Weathered Arrowhead"
-      ],
-      "special": [
-        "Rukkhashava Mushrooms",
-        "Majestic Hooked Beak"
-      ]
+  "name_ru": "Коллеи",
+  "name_en": "Collei",
+  "element": "Dendro",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 820.6119,
+      "atk": 16.7395,
+      "def": 50.358
     },
-    "talents": {
-      "books": [
-        "Teachings of Praxis",
-        "Guide to Praxis",
-        "Philosophies of Praxis"
-      ],
-      "mob_drops": [
-        "Firm Arrowhead",
-        "Sharp Arrowhead",
-        "Weathered Arrowhead"
-      ],
-      "weekly_boss": [
-        "Tears of the Calamitous God"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9787.4236,
+      "atk": 199.6534,
+      "def": 600.6189
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Лук молельщицы",
+      "description_ru": "Обычная атака:\nДо четырёх выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается стихией Дендро. Полностью заряженная стрела наносит Дендро урон.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Сметающие цветы",
+      "description_ru": "Бросает Цветочное кольцо, которое наносит однократный Дендро урон врагам, с которыми оно соприкоснулось.\nЦветочное кольцо через некоторое время возвращается и наносит Дендро урон ещё раз."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Кошачье сокровище",
+      "description_ru": "Надёжнейший Куйлейн-Анбар спешит на помощь!\nБросает куклу по имени Куйлейн-Анбар, взрыв которой наносит Дендро урон по площади, и создаёт зону Куйлейн-Анбара. Куйлейн-Анбар беспрестанно прыгает внутри неё, нанося Дендро урон по площади."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Возвращение цветов",
+      "description_ru": "Ваш персонаж, который до возвращения Цветочного кольца вызвал Горение, Стимуляцию, Обострение, Разрастание, Бутонизацию, Вегетацию, Цветение или Лунную бутонизацию, по его возвращении получит Росток. Во время его действия враги поблизости будут получать продолжительный Дендро урон, равный 40% от силы атаки Коллеи. Эффект длится 3 сек.\nПри повторной активации Ростка существующий эффект снимается. Нанесённый Ростком урон считается уроном элементального навыка."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Безмолвная чаща",
+      "description_ru": "Когда персонаж в зоне Куйлейн-Анбара активирует реакции Горение, Стимуляция, Обострение, Разрастание, Бутонизация, Вегетация, Цветение или Лунная бутонизация, длительность зоны увеличивается на 1 сек.\nДлительность одного и того же Кошачьего сокровища можно увеличить этим способом до 3 раз."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Чемпион полётов Сумеру",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время полёта на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Охрана чащи",
+      "description_ru": "Когда Коллеи в отряде, но не является активным персонажем, её восстановление энергии повышается на 20%."
+    },
+    {
+      "name_ru": "По горам и лесам",
+      "description_ru": "Талант возвышения Возвращение цветов меняется следующим образом:\nВозвращаясь, Цветочное кольцо наделяет персонажа эффектом Ростка таланта возвышения Возвращение цветов, нанося врагам поблизости Дендро урон, равный 40% от силы атаки Коллеи, в течение 3 сек.\nЕсли с момента использования навыка Сметающие цветы до завершения текущего Ростка свой персонаж отряда вызывает Горение, Стимуляцию, Обострение, Разрастание, Бутонизацию, Вегетацию, Цветение или Лунную бутонизацию, действие Ростка продлится на 3 сек.\nПродлить действие Ростка таким способом можно только один раз. При повторной активации Ростка текущий эффект снимается. Урон, наносимый эффектом Ростком, считается уроном элементального навыка.\nТребуется разблокировать талант возвышения Возвращение цветов."
+    },
+    {
+      "name_ru": "Благоухание лета",
+      "description_ru": "Увеличивает уровень навыка Сметающие цветы на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Дар лесов",
+      "description_ru": "Активация Кошачьего сокровища увеличивает мастерство стихий всех членов отряда поблизости (кроме самой Коллеи) на 60 ед. на 12 сек."
+    },
+    {
+      "name_ru": "Всё как угли",
+      "description_ru": "Увеличивает уровень навыка Кошачье сокровище на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Лес падающих стрел",
+      "description_ru": "Попадание Цветочного кольца создаёт миниатюрного Куйлейн-Анбара, который наносит Дендро урон, равный 200% от силы атаки Коллеи.\nПри каждом использовании Сметающих цветов можно создать только одного миниатюрного Куйлейн-Анбара."
+    }
+  ],
+  "coordinates": []
 }

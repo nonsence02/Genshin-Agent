@@ -1,0 +1,27 @@
+{
+  "id": "unagi-chazuke",
+  "name_ru": "Унаги тядзукэ",
+  "name_en": "Unagi Chazuke",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает бонус лечения всех членов отряда на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "eel-meat",
+      "count": 4
+    },
+    {
+      "material_id": "rice",
+      "count": 3
+    },
+    {
+      "material_id": "seagrass",
+      "count": 3
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

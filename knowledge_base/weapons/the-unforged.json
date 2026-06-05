@@ -1,0 +1,80 @@
+{
+  "id": "the-unforged",
+  "name_ru": "Некованый",
+  "name_en": "The Unforged",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.108
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4962
+    }
+  },
+  "passive_name_ru": "Золочёное величество",
+  "passive_description_ru": "Увеличивает прочность щита на 20%. При попадании увеличивает силу атаки на 4% в течение 8 сек. Эффект может складываться до 5 раз и возникнуть раз в 0,3 сек. Кроме того, под защитой щита бонус силы атаки данного эффекта увеличивается на 100%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mist-veiled-lead-elixir",
+        "name_ru": "Свинцовая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Lead Elixir"
+      },
+      {
+        "id": "mist-veiled-mercury-elixir",
+        "name_ru": "Ртутная пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Mercury Elixir"
+      },
+      {
+        "id": "mist-veiled-gold-elixir",
+        "name_ru": "Золотая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Gold Elixir"
+      },
+      {
+        "id": "mist-veiled-primo-elixir",
+        "name_ru": "Примо эликсир Заоблачного моря",
+        "name_en": "Mist Veiled Primo Elixir"
+      }
+    ],
+    "elite_drops": [
+      {
+        "id": "mist-grass-pollen",
+        "name_ru": "Пыльца туманной травы",
+        "name_en": "Mist Grass Pollen"
+      },
+      {
+        "id": "mist-grass",
+        "name_ru": "Мешочек с туманной травой",
+        "name_en": "Mist Grass"
+      },
+      {
+        "id": "mist-grass-wick",
+        "name_ru": "Пучок туманной травы",
+        "name_en": "Mist Grass Wick"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
+}

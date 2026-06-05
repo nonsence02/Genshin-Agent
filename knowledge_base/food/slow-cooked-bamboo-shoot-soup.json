@@ -1,0 +1,23 @@
+{
+  "id": "slow-cooked-bamboo-shoot-soup",
+  "name_ru": "Томлёный свиной суп с бамбуком",
+  "name_en": "Slow-Cooked Bamboo Shoot Soup",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 34% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 980 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "ham",
+      "count": 2
+    },
+    {
+      "material_id": "bamboo-shoot",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

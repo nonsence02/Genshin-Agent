@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-hydro-potioneer",
+  "name_ru": "Похитители сокровищ: Гидро химик",
+  "name_en": "Treasure Hoarders: Hydro Potioneer",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

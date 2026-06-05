@@ -1,0 +1,23 @@
+{
+  "id": "flaming-red-bolognese",
+  "name_ru": "Паста с томатным соусом",
+  "name_en": "Flaming Red Bolognese",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 22% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 470 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "tomato",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

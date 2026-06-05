@@ -1,92 +1,81 @@
 {
   "id": "ganyu",
-  "name": "Ganyu",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ganyu",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Cryo",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Leaving a single Ice Lotus behind, Ganyu dashes backward, shunning all impurity and dealing AoE Cryo DMG. Ice Lotus Continuously taunts surrounding opponents, attracting them to attack it. Endurance scales based on Ganyu's Max HP. Blooms profusely when destroyed or once its duration ends, dealing AoE Cryo DMG. This skill generates elemental particles when the Ice Lotus hits at least target, and elemental particles when the explosion hits at least target. Constellation Effects Constellation Level, The Auspicious: \" Trail of the Qilin gains additional charge.\" Constellation Level, The Merciful: Increases this talent's level by, up to a maximum of. Constellation Level, The Clement: \"Using...",
-    "elemental_burst": "Coalesces atmospheric frost and snow to summon a Sacred Cryo Pearl that exorcises evil. During its ability duration, the Sacred Cryo Pearl will continuously rain down shards of ice, striking opponents within an AoE and dealing Cryo DMG. This ability will drop up to icicles over its duration, with each icicle targeting a random enemy that has not been targeted by the last icicles. Ice Shard DMG will snapshot Ganyu's stats on cast and will not be affected by changes in her stats that occur afterwards. Passive Effects Passive Talent, Harmony between Heaven and Earth: \" Celestial Shower grants a"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Whopperflower Nectar",
-        "Shimmering Nectar"
-      ],
-      "special": [
-        "Qingxin",
-        "Hoarfrost Core"
-      ]
+  "name_ru": "Гань Юй",
+  "name_en": "Ganyu",
+  "element": "Cryo",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 762.656,
+      "atk": 26.068,
+      "def": 49.0606
     },
-    "talents": {
-      "books": [
-        "Teachings of Diligence",
-        "Guide to Diligence",
-        "Philosophies of Diligence"
-      ],
-      "mob_drops": [
-        "Whopperflower Nectar",
-        "Shimmering Nectar"
-      ],
-      "weekly_boss": [
-        "Shadow of the Warrior"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9796.7288,
+      "atk": 334.8497,
+      "def": 630.2146
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Небесная стрела",
+      "description_ru": "Обычная атака:\nДо шести выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается ледяной аурой. Эффект зависит от длительности заряда стрелы:\n· Уровень заряда 1: Выпускает ледяную стрелу, наносящую Крио урон;\n· Уровень заряда 2: Выпускает стрелу-снежинку, наносящую Крио урон. При попадании стрела-снежинка расцветает и наносит Крио урон по площади.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "След цилиня",
+      "description_ru": "Гань Юй отпрыгивает назад, оставив перед собой Ледяной лотос, который наносит Крио урон по площади.\n\nЛедяной лотос:\n· Привлекает атаки врагов на себя;\n· Макс. HP Ледяного лотоса зависит от макс. HP Гань Юй;\n· Если Ледяной лотос уничтожен, либо его время заканчивается, он распускается, нанося Крио урон по площади."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Небесный дождь",
+      "description_ru": "Собирает из воздуха иней для того, чтобы призвать Священную Крио жемчужину, изгоняющую зло.\nПока навык активен, Священная Крио жемчужина непрерывно обрушивает на врагов в области осколки льда, нанося Крио урон."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Неразделённое сердце",
+      "description_ru": "В течение 5 сек. после выстрела стрелы-снежинки увеличивает шанс крит. попадания стрел-снежинок и вызванного ими цветения на 20%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Гармония Земли и Небес",
+      "description_ru": "Активные члены отряда, находящиеся в области навыка Небесный дождь, получают 20% бонус Крио урона."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Отложено на охоту",
+      "description_ru": "При ковке стрелкового оружия возвращает 15% затраченной руды."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Жажда росы",
+      "description_ru": "Попадание стрелой-снежинкой с уровнем заряда 2 или её цветением понижает Крио сопротивление противников на 15% в течение 6 сек.;\nТакже попадание восстанавливает 2 ед. энергии Гань Юй. Каждое попадание заряженной атакой с уровнем заряда 2 может восстановить энергию только один раз, вне зависимости от того, было ли это попадание стрелой-снежинкой или её цветением."
+    },
+    {
+      "name_ru": "Благополучие",
+      "description_ru": "Увеличивает количество зарядов навыка След цилиня на 1."
+    },
+    {
+      "name_ru": "Облачные странствия",
+      "description_ru": "Увеличивает уровень навыка Небесный дождь на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Поход на Запад",
+      "description_ru": "Увеличивает урон, получаемый врагами, находящимися в области навыка Небесный дождь. Этот эффект усиливается со временем.\nУвеличение урона начинается с 5% и увеличивается на 5% каждые 3 сек., до макс. 25%.\nЭффект продолжается ещё 3 сек. после того, как враг покидает зону действия навыка."
+    },
+    {
+      "name_ru": "Милосердие",
+      "description_ru": "Увеличивает уровень навыка След цилиня на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Сострадание",
+      "description_ru": "Следующая стрела-снежинка в течение 30 сек. после активации навыка След цилиня не нуждается в зарядке."
+    }
+  ],
+  "coordinates": []
 }

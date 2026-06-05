@@ -1,0 +1,13 @@
+{
+  "id": "jubilant-feather",
+  "name_ru": "Перо веселья",
+  "name_en": "Jubilant Feather",
+  "type": "consume",
+  "type_text_ru": "Предмет приключения",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "aizen-medaka",
+  "kind": "fish",
+  "name_ru": "Голубая оризия",
+  "name_en": "Aizen Medaka",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

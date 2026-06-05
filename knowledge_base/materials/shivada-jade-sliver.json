@@ -1,10 +1,36 @@
 {
   "id": "shivada-jade-sliver",
+  "name_ru": "Осколок нефрита Шивада",
   "name_en": "Shivada Jade Sliver",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses and Weekly Bosses"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сувенирные лавки",
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Shivada_Jade_Sliver"
+  "dropped_by": [
+    "aeonblight-drake",
+    "bolteater-bathysmal-vishap",
+    "childe",
+    "cryo-hypostasis",
+    "cryo-regisvine",
+    "frostnight-herra",
+    "icewind-suite",
+    "il-dottore",
+    "iniquitous-baptist",
+    "la-signora",
+    "lupus-boreas-dominator-of-wolves",
+    "maguu-kenki",
+    "perpetual-mechanical-array",
+    "primo-geovishap",
+    "rimebiter-bathysmal-vishap",
+    "super-heavy-landrover-mechanized-fortress",
+    "the-doctor",
+    "wayward-hermetic-spiritspeaker"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

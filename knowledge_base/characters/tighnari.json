@@ -1,94 +1,81 @@
 {
   "id": "tighnari",
-  "name": "Tighnari",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Tighnari",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Dendro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Tighnari throws a Vijnana Stormheart ahead that deals AoE Dendro DMG, creating a Vijnana-Khanda Field that creates mysterious illusions that taunt opponents and draw their fire. Additionally, Tighnari gains the Vijnana Suffusion effect, which will decrease the Wreath Arrow's charging time by. This effect will dissipate once the skill duration ends or after Tighnari has fired Wreath Arrows. When this skill hits at least one enemy, it generates Elemental Particles. The Vijnana Suffusion effect is depicted by the seeds floating around Tighnari's left shoulder. They will disappear as Tighnari shoots Wreath Arrows, or when the Vijnana Suffusion effect ends. Constellation Effects Constellation...",
-    "elemental_burst": "Combines the power of all seeds to fire Tanglevine Shafts that can track opponents and deal Dendro DMG. After they hit, the Tanglevine Shafts will create a secondary wave of Tanglevine Shafts that can also track nearby opponents and deal Dendro DMG on hit. Passive Effects Passive Talent, Scholarly Blade: \"For every point of Elemental Mastery Tighnari possesses, his Charged Attack and Fashioner's Tanglevine Shaft DMG are increased by"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Nagadus Emerald Sliver",
-        "Nagadus Emerald Fragment",
-        "Nagadus Emerald Chunk",
-        "Nagadus Emerald Gemstone"
-      ],
-      "mob_drops": [
-        "Fungal Spores",
-        "Luminescent Pollen",
-        "Crystalline Cyst Dust"
-      ],
-      "special": [
-        "Nilotpala Lotus",
-        "Majestic Hooked Beak"
-      ]
+  "name_ru": "Тигнари",
+  "name_en": "Tighnari",
+  "element": "Dendro",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 844.6415,
+      "atk": 20.8544,
+      "def": 49.0606
     },
-    "talents": {
-      "books": [
-        "Teachings of Admonition",
-        "Guide to Admonition",
-        "Philosophies of Admonition"
-      ],
-      "mob_drops": [
-        "Fungal Spores",
-        "Luminescent Pollen",
-        "Crystalline Cyst Dust"
-      ],
-      "weekly_boss": [
-        "The Meaning of Aeons"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10849.8771,
+      "atk": 267.8798,
+      "def": 630.2146
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Крушащая преграды кханда",
+      "description_ru": "Обычная атака:\nДо четырёх выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается силой Дендро. Эффект зависит от длительности заряда стрелы:\n· Уровень заряда 1: Выпускает стрелу, наполненную силой растений, которая наносит Дендро урон.\n· Уровень заряда 2: Выпускает стрелу-венец, наносящую Дендро урон. При попадании стрела-венец создаёт 4 стрелы соцветия. Стрелы соцветия самостоятельно находят цель поблизости и наносят Дендро урон.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Мина виджняны-пхалы",
+      "description_ru": "Тигнари бросает вперёд Сердце бури виджняны, которое наносит Дендро урон по площади и создаёт Поле виджняны-кханды. Поле порождает иллюзию, которая непрерывно привлекает атаки врагов на себя.\nВдобавок Тигнари получает эффект Прорыва виджняны, сокращающий время заряда стрелы-венца на 2,4 сек. Эффект рассеивается, когда закончится его длительность или Тигнари выпустит 3 стрелы-венца."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Стрела-лиана жизни",
+      "description_ru": "Собрав силу всех семян, выпускает 6 стрел-лиан. Стрелы-лианы самостоятельно находят цель и наносят Дендро урон.\nПри попадании они создают дополнительные стрелы-лианы, которые также самостоятельно находят цель и при попадании наносят Дендро урон."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Острый глаз",
+      "description_ru": "Выпущенная Тигнари стрела-венец увеличивает его мастерство стихий на 50 ед. на 4 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Учёный клинок",
+      "description_ru": "Каждая единица мастерства стихий Тигнари увеличивает урон его заряженной атаки и Стрелы-лианы жизни на 0,06%.\nБонус урона, полученный таким образом, не может превышать 60%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Энциклопедические знания",
+      "description_ru": "Отмечает диковинки Сумеру на мини-карте."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Побеги определяются корнями",
+      "description_ru": "Увеличивает шанс крит. попадания заряженной атакой Тигнари на 15%."
+    },
+    {
+      "name_ru": "Истоки узнаются по стеблю",
+      "description_ru": "Когда в поле виджняны-кханды, созданном Миной виджняны-пхалы, находятся враги, Тигнари получает 20% бонус Дендро урона.\nЕсли время действия поля истечёт или в нём не останется врагов, эффект продлится ещё 6 сек."
+    },
+    {
+      "name_ru": "По ветвям постигается сотворение",
+      "description_ru": "Увеличивает уровень навыка Стрелы-лианы жизни на 3.\nМакс. уровень: 15."
+    },
+    {
+      "name_ru": "В листьях является расцвет и увядание",
+      "description_ru": "Активация навыка Стрела-лиана жизни увеличивает мастерство стихий всех членов отряда поблизости на 60 ед. на 8 сек. Если Стрела-лиана жизни вызывает Горение, Бутонизацию, Лунную бутонизацию, Стимуляцию или Разрастание, мастерство стихий дополнительно увеличивается на 60 ед., а длительность данного эффекта обновляется."
+    },
+    {
+      "name_ru": "Во цветении осмысливается истина",
+      "description_ru": "Увеличивает уровень навыка Мина виджняны-пхалы на 3.\nМакс. уровень: 15."
+    },
+    {
+      "name_ru": "Плодом налитым определяется карма",
+      "description_ru": "Сокращает время заряда стрелы-венца на 0,9 сек. и при попадании создаёт 1 дополнительную стрелу соцветия. Эта стрела наносит 150% от силы атаки Тигнари."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-altar-of-flames-iv",
+  "name_ru": "Мастерство: Алтарь пламени IV",
+  "name_en": "Domain of Mastery: Altar of Flames IV",
+  "type": "Повышение талантов",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-prosperity",
+    "guide-to-prosperity",
+    "teachings-of-prosperity"
+  ],
+  "coordinates": []
+}

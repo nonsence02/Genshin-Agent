@@ -1,0 +1,27 @@
+{
+  "id": "sakura-tempura",
+  "name_ru": "Тэмпура с сакурой",
+  "name_en": "Sakura Tempura",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 30% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "shrimp-meat",
+      "count": 4
+    },
+    {
+      "material_id": "lavender-melon",
+      "count": 2
+    },
+    {
+      "material_id": "sakura-bloom",
+      "count": 2
+    },
+    {
+      "material_id": "flour",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

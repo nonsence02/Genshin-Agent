@@ -1,0 +1,27 @@
+{
+  "id": "rice-cake-soup",
+  "name_ru": "Суп одзони",
+  "name_en": "Rice Cake Soup",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "sausage",
+      "count": 2
+    },
+    {
+      "material_id": "tofu",
+      "count": 1
+    },
+    {
+      "material_id": "fish",
+      "count": 1
+    },
+    {
+      "material_id": "lavender-melon",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

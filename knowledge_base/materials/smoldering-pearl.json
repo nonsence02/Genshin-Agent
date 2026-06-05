@@ -1,10 +1,17 @@
 {
   "id": "smoldering-pearl",
+  "name_ru": "Тлеющая жемчужина",
   "name_en": "Smoldering Pearl",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Pyro Hypostases"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пиро гипостазисы Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Smoldering_Pearl"
+  "dropped_by": [
+    "pyro-hypostasis"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,18 @@
+{
+  "id": "mallow-wood",
+  "name_ru": "Древесина мальвы",
+  "name_en": "Mallow Wood",
+  "type": "wood",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Дикая природа Фонтейна",
+    "Куплено в разделе древесины Сокровищницы обители",
+    "Конвертация древесины"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

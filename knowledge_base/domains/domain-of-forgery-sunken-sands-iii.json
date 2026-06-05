@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-forgery-sunken-sands-iii",
+  "name_ru": "Воля: Песчаная бездна III",
+  "name_en": "Domain of Forgery: Sunken Sands III",
+  "type": "Возвышение оружия",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "jade-branch-of-a-distant-sea",
+    "jeweled-branch-of-a-distant-sea",
+    "coral-branch-of-a-distant-sea"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "iktomisaurus-warrior-cryocrystal-cannon",
+  "name_ru": "Иктомизавр-воин: Криокристаллическая пушка",
+  "name_en": "Iktomisaurus Warrior: Cryocrystal Cannon",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

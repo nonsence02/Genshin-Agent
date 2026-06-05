@@ -1,10 +1,29 @@
 {
   "id": "prithiva-topaz-fragment",
+  "name_ru": "Фрагмент топаза Притхива",
   "name_en": "Prithiva Topaz Fragment",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses and Weekly Bosses (Lv. 40+)"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Prithiva_Topaz_Fragment"
+  "dropped_by": [
+    "azhdaha",
+    "experimental-field-generator",
+    "geo-hypostasis",
+    "golden-wolflord",
+    "legatus-golem",
+    "lupus-boreas-dominator-of-wolves",
+    "perpetual-mechanical-array",
+    "primo-geovishap",
+    "radiant-moongecko",
+    "ruin-serpent",
+    "watcher-fallen-vigil"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

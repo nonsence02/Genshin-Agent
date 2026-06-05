@@ -1,0 +1,15 @@
+{
+  "id": "millennial-pearl-seahorse",
+  "name_ru": "Морской конёк тысячелетней жемчужины",
+  "name_en": "Millennial Pearl Seahorse",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "fontemer-unihorn",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver"
+  ],
+  "coordinates": []
+}

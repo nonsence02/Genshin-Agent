@@ -1,10 +1,16 @@
 {
   "id": "philanemo-mushroom",
+  "name_ru": "Гриб филанемо",
   "name_en": "Philanemo Mushroom",
-  "type": "Local Specialty (Mondstadt)",
-  "days": [],
-  "source": [
-    "Found under the eaves of houses in the City of Mondstadt , Springvale , Dawn Winery , and Millhaven"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Мондштадта",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Под крышами домов",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Philanemo_Mushroom"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,23 @@
+{
+  "id": "rose-custard",
+  "name_ru": "Заварной крем из роз",
+  "name_en": "Rose Custard",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 22% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 470 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "milk",
+      "count": 2
+    },
+    {
+      "material_id": "sumeru-rose",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

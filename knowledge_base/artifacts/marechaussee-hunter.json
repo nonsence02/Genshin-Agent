@@ -1,0 +1,10 @@
+{
+  "id": "marechaussee-hunter",
+  "name_ru": "Охотник Сумеречного двора",
+  "name_en": "Marechaussee Hunter",
+  "max_rarity": 5,
+  "bonus_2pc": "Увеличивает урон обычной и заряженной атаки на 15%.",
+  "bonus_4pc": "Увеличивает шанс крит. попадания на 12% на 5 сек., когда текущее HP увеличивается или снижается. Эффект может складываться до 3 раз.",
+  "source_domain": "domain-of-blessing-harmony-i",
+  "coordinates": []
+}

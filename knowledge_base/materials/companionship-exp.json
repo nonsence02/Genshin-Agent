@@ -1,0 +1,13 @@
+{
+  "id": "companionship-exp",
+  "name_ru": "Опыт дружбы",
+  "name_en": "Companionship EXP",
+  "type": "none",
+  "type_text_ru": "Укрепление дружбы",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

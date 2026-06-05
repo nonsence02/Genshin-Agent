@@ -1,0 +1,13 @@
+{
+  "id": "furnace-shell-mountain-weasel",
+  "name_ru": "Термопанцирный горный хорь",
+  "name_en": "Furnace Shell Mountain Weasel",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "blazing-prismshell",
+    "warm-back-shell",
+    "cold-cracked-shellshard"
+  ],
+  "coordinates": []
+}

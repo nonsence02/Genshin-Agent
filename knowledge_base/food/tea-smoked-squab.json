@@ -1,0 +1,19 @@
+{
+  "id": "tea-smoked-squab",
+  "name_ru": "Копчённый в чайных листьях голубь",
+  "name_en": "Tea-Smoked Squab",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 24% от макс. HP + 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "chenyu-adeptea",
+      "count": 2
+    },
+    {
+      "material_id": "fowl",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

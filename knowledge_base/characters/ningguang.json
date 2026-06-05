@@ -1,94 +1,81 @@
 {
   "id": "ningguang",
-  "name": "Ningguang",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ningguang",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Geo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Ningguang creates a Jade Screen out of gold, obsidian and her great opulence, dealing AoE Geo DMG. Jade Screen Blocks opponents' projectiles. Endurance scales based on Ningguang's Max HP. Jade Screen is considered a Geo Construct and can be used to block certain attacks, but cannot be climbed. Only one Jade Screen may exist at any one time. When this skill hits at least one enemy, it generates Elemental Particles. This particle generation has a cooldown of seconds. With the constellation, consecutive use of the skill will not generate any particles. The Jade Screen, unlike any other Geo construct, can block enemy projectiles, but does not block projectiles or attacks from the player. It is...",
-    "elemental_burst": "Gathering a great number of gems, Ningguang scatters them all at once, sending homing projectiles at her opponents that deal massive Geo DMG. If Starshatter is cast when a Jade Screen is nearby, the Jade Screen will fire additional gem projectiles at the same time. When Jade Screen is nearby, additional gem projectiles are launched. In an open area, – gems will hit the ground. It's not recommended to use the Burst in a confined space, because the gems are likely blocked by obstacles. This skill fires gems without Jade Screen nearby and fires gems with Jade Screen nearby. Constellation Effects Constellation Level, Majesty Be the Array of Stars: Increases this talent's level by, up to a..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Prithiva Topaz Sliver",
-        "Prithiva Topaz Fragment",
-        "Prithiva Topaz Chunk",
-        "Prithiva Topaz Gemstone"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "special": [
-        "Glaze Lily",
-        "Basalt Pillar"
-      ]
+  "name_ru": "Нин Гуан",
+  "name_en": "Ningguang",
+  "element": "Geo",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 820.6119,
+      "atk": 17.808,
+      "def": 48.069
     },
-    "talents": {
-      "books": [
-        "Teachings of Prosperity",
-        "Guide to Prosperity",
-        "Philosophies of Prosperity"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "weekly_boss": [
-        "Spirit Locket of Boreas"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9787.4236,
+      "atk": 212.3972,
+      "def": 573.3181
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Сверкающий дождь",
+      "description_ru": "Обычная атака:\nЗапускает в цель самоцветы, которые наносят Гео урон.\nПри попадании самоцветом даёт Нин Гуан один Звёздный нефрит.\n\nЗаряженная атака:\nВыстреливает гигантским самоцветом, наносящим Гео урон, на который тратится определённое количество выносливости.\nЕсли Нин Гуан имеет Звёздный нефрит, то при выполнении заряженной атаки также выстреливает и им, нанося дополнительный урон.\n\nАтака в падении:\nНакопив энергию камня, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Гео урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Нефритовая ширма",
+      "description_ru": "Нин Гуан создаёт роскошную Нефритовую ширму из обсидиана и золота, нанося при этом Гео урон по площади.\n\nНефритовая ширма:\n· Блокирует вражеские снаряды;\n· Прочность зависит от макс. HP Нин Гуан;\n\nСчитается Гео конструкцией. Ширмой можно воспользоваться для защиты от вражеских атак, но на неё нельзя взобраться. Одновременно может существовать не больше одной Нефритовой ширмы."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Осколки звёзд",
+      "description_ru": "Собрав большое количество самоцветов, Нин Гуан запускает их во врагов, нанося огромный Гео урон. Самоцветы сами находят свою цель.\nЕсли поблизости находится Нефритовая ширма, то она также запускает дополнительные самоцветы."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Запасной план",
+      "description_ru": "При наличии у Нин Гуан Звёздного нефрита, её заряженная атака не потребляет выносливость."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Стратегические запасы",
+      "description_ru": "Даёт 12% бонус Гео урона прошедшим сквозь Нефритовую ширму персонажам на 10 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Рог изобилия",
+      "description_ru": "Отмечает на мини-карте ближайшую используемую для ковки руду."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Пронзающие осколки",
+      "description_ru": "При попадании обычная атака наносит урон по площади."
+    },
+    {
+      "name_ru": "Шоковый эффект",
+      "description_ru": "Разрушение Нефритовой ширмы сбрасывает время её отката.\nМожет возникнуть раз в 6 сек."
+    },
+    {
+      "name_ru": "Величественная россыпь звёзд",
+      "description_ru": "Увеличивает уровень навыка Осколки звёзд на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Изысканный блеск нефрита",
+      "description_ru": "Навык Нефритовая ширма повышает элементальное сопротивление окружающих персонажей на 10%."
+    },
+    {
+      "name_ru": "Бессмертная нефритовая ширма",
+      "description_ru": "Увеличивает уровень навыка Нефритовая ширма на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Грандиозность Цисин",
+      "description_ru": "Активация навыка Осколки звёзд даёт Нин Гуан 7 камней Звёздного нефрита."
+    }
+  ],
+  "coordinates": []
 }

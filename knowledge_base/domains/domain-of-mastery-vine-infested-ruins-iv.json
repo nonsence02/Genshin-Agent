@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-vine-infested-ruins-iv",
+  "name_ru": "Мастерство: Руины Кудзу IV",
+  "name_en": "Domain of Mastery: Vine-Infested Ruins IV",
+  "type": "Повышение талантов",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-light",
+    "guide-to-light",
+    "teachings-of-light"
+  ],
+  "coordinates": []
+}

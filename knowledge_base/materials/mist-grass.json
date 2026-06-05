@@ -1,10 +1,20 @@
 {
   "id": "mist-grass",
+  "name_ru": "Мешочек с туманной травой",
   "name_en": "Mist Grass",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.40+ Fatui Cicin Mages"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Маги цицинов Фатуи Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mist_Grass"
+  "dropped_by": [
+    "fatui-cryo-cicin-mage",
+    "fatui-electro-cicin-mage"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "yumkasaurus",
+  "name_ru": "Юмказавр",
+  "name_en": "Yumkasaurus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "tyrants-fang",
+    "seasoned-fang",
+    "juvenile-fang"
+  ],
+  "coordinates": []
+}

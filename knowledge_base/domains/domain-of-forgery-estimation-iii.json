@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-forgery-estimation-iii",
+  "name_ru": "Подземелье воли: Расчёты III",
+  "name_en": "Domain of Forgery: Estimation III",
+  "type": "Возвышение оружия",
+  "region": "Натлан",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "night-winds-mystic-augury",
+    "night-winds-mystic-premonition",
+    "night-winds-mystic-consideration"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "shrimp-meat",
+  "name_ru": "Мясо креветки",
+  "name_en": "Shrimp Meat",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Лавки Ли Юэ",
+    "Торговые лавки Инадзумы",
+    "Лавки Сумеру"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "iniquitous-baptist",
+  "name_ru": "Чудовищный креститель",
+  "name_en": "Iniquitous Baptist",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "evergloom-ring",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver"
+  ],
+  "coordinates": []
+}

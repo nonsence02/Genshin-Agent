@@ -1,0 +1,15 @@
+{
+  "id": "glowgrass-bait",
+  "name_ru": "Наживка блескушка",
+  "name_en": "Glowgrass Bait",
+  "type": "fish_bait",
+  "type_text_ru": "Наживка",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Задание Кудзирай Момидзи"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

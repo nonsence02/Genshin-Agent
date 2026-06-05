@@ -1,10 +1,22 @@
 {
   "id": "ley-line-sprout",
+  "name_ru": "Ростки артерий земли",
   "name_en": "Ley Line Sprout",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Abyss Mages"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Маги Бездны Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ley_Line_Sprout"
+  "dropped_by": [
+    "cryo-abyss-mage",
+    "electro-abyss-mage",
+    "hydro-abyss-mage",
+    "pyro-abyss-mage"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

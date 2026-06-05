@@ -1,0 +1,19 @@
+{
+  "id": "aeonblight-drake",
+  "name_ru": "Дракон вечных бедствий",
+  "name_en": "Aeonblight Drake",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "perpetual-caliber",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver"
+  ],
+  "coordinates": []
+}

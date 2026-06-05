@@ -1,0 +1,75 @@
+{
+  "id": "jahoda",
+  "name_en": "Jahoda",
+  "element": "Anemo",
+  "weapon": "Bow",
+  "region": "Nod-Krai",
+  "rarity": 4,
+  "description": "Jahoda is a playable Anemo character in Genshin Impact .\n\nAn employee of the Curatorium of Secrets , a self-proclaimed legendary bounty hunter. A former member of the Seahook Gang , she was taken in by Nefer to be the only front member, to cover up Nefer's informants and activities under the Northern Intelligence Network .",
+  "role_summary": "Jahoda is an Anemo character capable of both high-frequency Elemental DMG and continuous healing. In battle, she can adapt to various elemental environments to deal different types of Elemental DMG as the situation dictates.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Strike While the Arrow's Hot",
+      "description": "Normal Attack Performs up to 3 consecutive shots with a bow. Charged Attack Performs a more precise Aimed Shot with increased DMG. While aiming, mighty winds will accumulate on the arrowhead. A fully charged wind arrow will deal Anemo DMG . Plunging Attack Fires off a shower of arrows in mid-air before falling and striking the ground, hitting opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Savvy Strategy: Splitting the Spoils",
+      "description": "Jahoda dashes toward her opponent, entering the Shadow Pursuit state upon contact. While in this state, Jahoda moves continuously and swiftly: If nearby opponents are affected by Pyro , Hydro , Electro , or Cryo , she will quietly convert her Purr-loined Treasure Flask Purr-loined Treasure Flask A small elemental vessel that Jahoda retrieves after casting her Elemental Skill Savvy Strategy: Splitting the Spoils. While Jahoda is in the Shadow Pursuit state, if nearby opponents are affected by Pyro , Hydro , Electro , or Cryo , the Purr-loined Treasure Flask will convert to that element and begin filling up. The order of priority that determines which element will be converted to is: Pyro , Hydro , Electro , then Cryo . After each use of her Elemental Skill, the Purr-loined Treasure Flask can undergo one such conversion. When the Purr-loined Treasure Flask is full, Jahoda immediately drains it, exiting the Shadow Pursuit state and dealing a single instance of Anemo DMG to nearby opponents. Each time the Elemental Skill is cast, Jahoda takes out a brand-new Purr-loined Treasure Flask. Moonsign: Ascendant Gleam : When the Purr-loined Treasure Flask becomes full, Jahoda will not imme..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Hidden Aces: Seven Tools of the Hunter",
+      "description": "Time to reveal those pocket aces! Jahoda retrieves 2 Purrsonal Coordinated Assistance Robots Purrsonal Coordinated Assistance Robots One of the gadgets that Jahoda — a former treasure hunter — carries around with her. It is deployed upon using her Elemental Burst Hidden Aces: Seven Tools of the Hunter. Purrsonal Coordinated Assistance Robots continuously restore HP to your active character. If the healed character's HP is above 70%, they also restore HP to the nearby party member with the lowest HP. Moonsign: Ascendant Gleam : If nearby opponents are affected by Pyro , Hydro , Electro , or Cryo , Purrsonal Coordinated Assistance Robots will convert to that element. The order of priority that determines which element will be converted to is: Pyro , Hydro , Electro , then Cryo . After each deployment, a Purrsonal Coordinated Assistance Robot can undergo one such conversion. After converting, the Purrsonal Coordinated Assistance Robot will periodically attack up to 3 nearby opponents, dealing damage of the corresponding element. and deals a single instance of Anemo DMG to nearby opponents."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Plan to Get Paid",
+      "description": "When your team has at least one Pyro , Hydro , Electro , or Cryo character, the Purrsonal Coordinated Assistance Robots Purrsonal Coordinated Assistance Robots One of the gadgets that Jahoda — a former treasure hunter — carries around with her. It is deployed upon using her Elemental Burst Hidden Aces: Seven Tools of the Hunter. Purrsonal Coordinated Assistance Robots continuously restore HP to your active character. If the healed character's HP is above 70%, they also restore HP to the nearby party member with the lowest HP. Moonsign: Ascendant Gleam : If nearby opponents are affected by Pyro , Hydro , Electro , or Cryo , Purrsonal Coordinated Assistance Robots will convert to that element. The order of priority that determines which element will be converted to is: Pyro , Hydro , Electro , then Cryo . After each deployment, a Purrsonal Coordinated Assistance Robot can undergo one such conversion. After converting, the Purrsonal Coordinated Assistance Robot will periodically attack up to 3 nearby opponents, dealing damage of the corresponding element. from the Elemental Burst Hidden Aces: Seven Tools of the Hunter will be enhanced based on the number of characters of each corre..."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Sweet Berry Bounty",
+      "description": "When a Purrsonal Coordinated Assistance Robot Purrsonal Coordinated Assistance Robots One of the gadgets that Jahoda — a former treasure hunter — carries around with her. It is deployed upon using her Elemental Burst Hidden Aces: Seven Tools of the Hunter. Purrsonal Coordinated Assistance Robots continuously restore HP to your active character. If the healed character's HP is above 70%, they also restore HP to the nearby party member with the lowest HP. Moonsign: Ascendant Gleam : If nearby opponents are affected by Pyro , Hydro , Electro , or Cryo , Purrsonal Coordinated Assistance Robots will convert to that element. The order of priority that determines which element will be converted to is: Pyro , Hydro , Electro , then Cryo . After each deployment, a Purrsonal Coordinated Assistance Robot can undergo one such conversion. After converting, the Purrsonal Coordinated Assistance Robot will periodically attack up to 3 nearby opponents, dealing damage of the corresponding element. from the Elemental Burst Hidden Aces: Seven Tools of the Hunter triggers healing on an active team member, if that character's HP is above 70%, their Elemental Mastery will be increased by 100 for 6s."
+    },
+    {
+      "type": "Moonsign Benediction Passive",
+      "name": "Rooftop Dash",
+      "description": "When Jahoda is in the party , the party's Moonsign will increase by 1 level."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Backstreet Guile",
+      "description": "When dispatched on an expedition in Nod-Krai , time consumed is reduced by 25%. Additionally, as the employee of the Curatorium of Secrets , Jahoda seemingly has the ability to obtain intelligence from a variety of sources — intelligence that certain factions in Nasha Town might find extremely interesting."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "1U",
+      "effect": ""
+    },
+    "c2": {
+      "name": "Rogue's Quick Thinking",
+      "effect": "Moonsign: Ascendant Gleam : In the Ascension Talent \"Plan to Get Paid,\" Jahoda can secretly track, in addition to the element with the highest number of characters, the element with the next highest number of characters among the remaining types. This allows up to two elemental effects to be active at once. You must first unlock the Ascension Talent \"Plan to Get Paid.\""
+    },
+    "c3": {
+      "name": "Desperate Gamble",
+      "effect": "Increases the Level of Hidden Aces: Seven Tools of the Hunter by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Wild Berry Amid the Dust",
+      "effect": "When a Purrsonal Coordinated Assistance Robot Purrsonal Coordinated Assistance Robots One of the gadgets that Jahoda — a former treasure hunter — carries around with her. It is deployed upon using her Elemental Burst Hidden Aces: Seven Tools of the Hunter. Purrsonal Coordinated Assistance Robots continuously restore HP to your active character. If the healed character's HP is above 70%, they also restore HP to the nearby party member with the lowest HP. Moonsign: Ascendant Gleam : If nearby opponents are affected by Pyro , Hydro , Electro , or Cryo , Purrsonal Coordinated Assistance Robots will convert to that element. The order of priority that determines which element will be converted to is: Pyro , Hydro , Electro , then Cryo . After each deployment, a Purrsonal Coordinated Assistance Robot can undergo one such conversion. After converting, the Purrsonal Coordinated Assistance Robo..."
+    },
+    "c5": {
+      "name": "The Greatest Treasure",
+      "effect": "Increases the Level of Savvy Strategy: Splitting the Spoils by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "The Littlest Luck",
+      "effect": "Moonsign: Ascendant Gleam : After the Purr-loined Treasure Flask Purr-loined Treasure Flask A small elemental vessel that Jahoda retrieves after casting her Elemental Skill Savvy Strategy: Splitting the Spoils. While Jahoda is in the Shadow Pursuit state, if nearby opponents are affected by Pyro , Hydro , Electro , or Cryo , the Purr-loined Treasure Flask will convert to that element and begin filling up. The order of priority that determines which element will be converted to is: Pyro , Hydro , Electro , then Cryo . After each use of her Elemental Skill, the Purr-loined Treasure Flask can undergo one such conversion. When the Purr-loined Treasure Flask is full, Jahoda immediately drains it, exiting the Shadow Pursuit state and dealing a single instance of Anemo DMG to nearby opponents. Each time the Elemental Skill is cast, Jahoda takes out a brand-new Purr-loined Treasure Flask. Moo..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Jahoda",
+  "ai_tags": "Хиллер, Карманный урон"
+}

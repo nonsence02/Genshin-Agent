@@ -1,0 +1,69 @@
+{
+  "id": "traveler-pyro",
+  "name_en": "Traveler (Pyro)",
+  "element": "Pyro",
+  "weapon": "",
+  "region": "",
+  "rarity": null,
+  "description": "Pyro is the sixth Element the Traveler acquires after completing the Archon Quest Where All Hopes Lie in Chapter V : Act V - Incandescent Ode of Resurrection . It can subsequently be swapped to by resonating with the Statue of The Seven in Natlan or the Throne of the Primal Fire in Ochkanatlan .\n\nThe Traveler has 2 sets of constellations in Pyro alignment. The first set of 6 constellations are unlocked at once during Where All Hopes Lie , and can subsequently only be used while fighting Lord of Eroded Primal Fire . The second set of 6 constellations can be unlocked by offering Blazing Flint Ore through Primal Flame Resonance , and can be used anywhere.",
+  "role_summary": "Pyro is the sixth Element the Traveler acquires after completing the Archon Quest Where All Hopes Lie in Chapter V : Act V - Incandescent Ode of Resurrection . It can subsequently be swapped to by resonating with the Statue of The Seven in Natlan or the Throne of the Primal Fire in Ochkanatlan .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Foreign Blaze",
+      "description": "Normal Attack Performs up to 5 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Flowfire Blade",
+      "description": "Wields a searing flame that can incinerate the very earth. Has different effects when Tapped or Held. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Call forth flames in a raging blaze. When used, the Traveler gains 42 Nightsoul point and enters the Nightsoul's Blessing state, summoning a Blazing Threshold that follows the current active character. When the Blazing Threshold gets close to opponents, it will deal Nightsoul-aligned Pyro DMG to nearby opponents at intervals. Hold Unleash fire in a composed manner, dealing Nightsoul-aligned AoE Pyro DMG to nearby opponents. When used, the Traveler gains 42 Nightsoul points and enters the Nightsoul's Blessing state, summoning a Scorching Threshold that follows the current active character. When the current active character within a Scorching Threshold deals DMG to opponents, the Threshold will launch a Coordinated Attack that deals Nightsoul-aligned Pyro DMG based on the Traveler's ATK . This effect can occur once every 3s. Nightsoul's Blessing: Traveler Continuously consumes Nightsoul points. The Traveler's Nightsoul's Blessing state lasts 12s at maximum, and when their Nightsoul points are exha..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Plains Scorcher",
+      "description": "Condense the flames into a mark, dealing Nightsoul-aligned AoE Pyro DMG to opponents up ahead. Within the next 4s, the Traveler restores 7 Nightsoul point per second."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "True Flame of Incineration",
+      "description": "When the Traveler has over 20 Nightsoul points, the attack AoE of the Blazing and Scorching Thresholds from the Elemental Skill Flowfire Blade after they hit opponents is increased."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Embers Unspent",
+      "description": "After the current active character inside a Blazing Threshold or Scorching Threshold triggers a Pyro-related reaction , the Traveler will regain 5 Energy. This can occur once every 12s. Additionally, when a nearby party member triggers a Nightsoul Burst, the Traveler will regain 4 Energy."
+    },
+    {
+      "type": "Additional Talent",
+      "name": "Foreign Starfire",
+      "description": "Draw new strength from journeys past. For every element you have resonated with, you gain additional buffs Additional Buff Effects The Traveler gains an attribute bonus for every element they have resonated with: Anemo : CRIT Rate is increased by 10%, Geo : DEF is increased by 20%, Electro : Energy Recharge is increased by 20%, Dendro : Elemental Mastery is increased by 60, Hydro : HP is increased by 20%, Pyro : ATK is increased by 20%, Cryo : CRIT DMG is increased by 20%. . Additionally, when nearby party members trigger Nightsoul Burst , Traveler will receive 1 stack of Blade of the Sacred Flame, max 2 stacks. After obtaining 2 stacks of Blade of the Sacred Flame, performing a Charged Attack will consume all stacks of Blade of the Sacred Flame and transform into a special Charged Attack: Inferno . Charged Attack: Inferno Each Charged Attack hit deals increased, Nightsoul-aligned Pyro DMG . Increase in DMG is equal to 200% of Traveler's ATK. Charged Attack: Inferno can be triggered up to once every 15s."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Starfire's Flowing Light",
+      "effect": "Base Effect: When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth , while the Blazing Threshold or Scorching Threshold is active, the Traveler's ATK increases by 40%, they take 40% less DMG , and their interruption resistance is increased. Unlocked With Blazing Flint Ore : While Blazing Threshold or Scorching Threshold are active, the current active character deals 6% increased DMG . If said character is in the Nightsoul's Blessing state, they will deal an additional 9% DMG."
+    },
+    "c2": {
+      "name": "1U",
+      "effect": ""
+    },
+    "c3": {
+      "name": "Relayed Beacon",
+      "effect": "Base Effect: When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth , the Traveler gains 40% Pyro DMG Bonus . Unlocked With Blazing Flint Ore : Increases the Level of Flowfire Blade by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Ravaging Flame",
+      "effect": "Base Effect: When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth , after using the Elemental Burst Plains Scorcher , all nearby party members will restore 40% of their Max HP . Within the next 10s, the Traveler will regain 4 Energy per second. Unlocked With Blazing Flint Ore : After using the Elemental Burst Plains Scorcher , the Traveler gains 20% Pyro DMG Bonus for 9s."
+    },
+    "c5": {
+      "name": "The Fire Inextinguishable",
+      "effect": "Base Effect: When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth , the Traveler's CRIT Rate increases by 20%, and their CRIT DMG increases by 40%. Unlocked With Blazing Flint Ore : Increases the Level of Plains Scorcher by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "The Sacred Flame Imperishable",
+      "effect": "Description Gameplay Notes Advanced Properties Base Effect: When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth , while in the Nightsoul's Blessing state, the Traveler's Movement SPD increases by 20%, their Stamina consumption decreases by 30%, and when they use Normal or Charged Attacks , they will send flaming waves flowing forward, dealing 96% of their ATK to opponents in the wave's path as Nightsoul-aligned Pyro DMG . Unlocked With Blazing Flint Ore : While in the Nightsoul's Blessing state, the Traveler's Normal, Charged, and Plunging Attacks will be converted to Nightsoul-aligned Pyro DMG that cannot be overridden, and the CRIT DMG of these attacks is increased by 40%. DMG dealt by flaming waves is not considered Normal or Charged Attack DMG. Using a Charged Attack will fire 2 waves. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Pyro)"
+}

@@ -1,48 +1,80 @@
 {
   "id": "tamayuratei-no-ohanashi",
-  "name": "Tamayuratei no Ohanashi",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Tamayuratei_no_Ohanashi",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Increase ATK by and Movement SPD by for when using an Elemental Skill.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mask of the Wicked Lieutenant",
-        "Refractive Bud",
-        "Old Handguard",
-        "Mask of the Tiger's Bite",
-        "Bewildering Broadleaf",
-        "Kageuchi Handguard",
-        "Mask of the One-Horned",
-        "Illusory Leafcoil",
-        "Famed Handguard",
-        "Mask of the Kijin"
-      ]
+  "name_ru": "Тамаюратэй но оханаси",
+  "name_en": "Tamayuratei no Ohanashi",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.0667
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3063
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Мчащийся фонарь проныры",
+  "passive_description_ru": "При активации элементального навыка на 10 сек. увеличивает силу атаки на 20% и скорость передвижения на 10%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mask-of-the-wicked-lieutenant",
+        "name_ru": "Маска злого военачальника",
+        "name_en": "Mask of the Wicked Lieutenant"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mask-of-the-tigers-bite",
+        "name_ru": "Маска тигриной пасти",
+        "name_en": "Mask of the Tiger's Bite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mask-of-the-one-horned",
+        "name_ru": "Маска однорогого",
+        "name_en": "Mask of the One-Horned"
+      },
+      {
+        "id": "mask-of-the-kijin",
+        "name_ru": "Маска кидзин",
+        "name_en": "Mask of the Kijin"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "refractive-bud",
+        "name_ru": "Преломляющий бутон",
+        "name_en": "Refractive Bud"
+      },
+      {
+        "id": "bewildering-broadleaf",
+        "name_ru": "Ошеломляющий широколист",
+        "name_en": "Bewildering Broadleaf"
+      },
+      {
+        "id": "illusory-leafcoil",
+        "name_ru": "Иллюзорная листовая спираль",
+        "name_en": "Illusory Leafcoil"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

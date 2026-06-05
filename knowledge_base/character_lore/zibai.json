@@ -1,0 +1,75 @@
+{
+  "id": "zibai",
+  "name_en": "Zibai",
+  "element": "Geo",
+  "weapon": "Sword",
+  "region": "Liyue",
+  "rarity": 5,
+  "description": "Zibai ( Chinese : 兹白 Zībái ) is a playable Geo character in Genshin Impact .\n\nShe was once an Angel who governed the civilization of Lang-Gan , worshipped as the God of Soil and Grain before Lang-Gan's destruction, eventually becoming one of the Eight Adepts . During the Lantern Rite celebration following the events of Archon Quest Song of the Welkin Moon : Act VIII - True Moon , the Traveler and Zhongli successfully reunited the three fragments of her divided soul, restoring her to her original form.\n\nUpon obtaining Zibai, the Gadget That Which Has Lost Its Power may be obtained through the character menu. After reaching Friendship Level 6 and completing World Quest Adeptus's Gift , it is transformed into Jadelight Canopy .",
+  "role_summary": "Zibai is a Geo DMG dealer who enables her teammates to trigger Lunar-Crystallize reactions and who deals Lunar-Crystallize DMG directly. After casting her Elemental Skill , Zibai enters Lunar Phase Shift. While in this state, Zibai can accumulate the special resource, Phase Shift Radiance, through different methods. Zibai can consume Phase Shift Radiance to unleash the special Elemental Skill, Spirit Steed's Stride, dealing Geo DMG and Lunar-Crystallize DMG to opponents. Upon unleashing her Elemental Burst , Zibai can also deal Geo DMG and Lunar-Crystallize DMG to opponents.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Golden Blade's Petaled Touch",
+      "description": "Normal Attack Performs up to 4 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Heaven and Earth Made Manifest",
+      "description": "Summoning a shadow of her former powers, she switches to the Lunar Phase Shift Lunar Phase Shift After using the Elemental Skill Heaven and Earth Made Manifest, Zibai will change to this mode. This mode lasts at most 15s and has the following properties: Normal and Charged Attacks are converted into Geo DMG that cannot be overridden by other infusions. The Elemental Skill Heaven and Earth Made Manifest will also be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least 70 Phase Shift Radiance, she can consume 70 Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of Geo DMG. The second instance will be considered Lunar-Crystallize Reaction DMG. A maximum of 100 Phase Shift Radiance points can be accrued, and Zibai can accumulate them in the following ways: She gains 10 points every second she is in the Lunar Phase Shift mode. She gains 5 points when hitting an opponent with her Normal Attacks. She can gain Phase Shift Radiance points in this way once every 0.5s. Moonsign: Ascendant Gleam When nearby party members trigger Lunar-Crystallize, they will also accrue 35 Phase Shift Radiance points for Zibai. Points can be gained this..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Tri-Sphere Eminence",
+      "description": "Zibai operates the Jadelight Canopy, dealing two instances of Geo DMG , with the second damage instance being considered Lunar-Crystallize Reaction DMG. When cast, if Zibai is in the Lunar Phase Shift Lunar Phase Shift After using the Elemental Skill Heaven and Earth Made Manifest, Zibai will change to this mode. This mode lasts at most 15s and has the following properties: Normal and Charged Attacks are converted into Geo DMG that cannot be overridden by other infusions. The Elemental Skill Heaven and Earth Made Manifest will also be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least 70 Phase Shift Radiance, she can consume 70 Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of Geo DMG. The second instance will be considered Lunar-Crystallize Reaction DMG. A maximum of 100 Phase Shift Radiance points can be accrued, and Zibai can accumulate them in the following ways: She gains 10 points every second she is in the Lunar Phase Shift mode. She gains 5 points when hitting an opponent with her Normal Attacks. She can gain Phase Shift Radiance points in this way once every 0.5s. Moonsign: Ascendant Gleam When nearby party mem..."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "The Selenic Adeptus Descends",
+      "description": "When casting the Elemental Skill Heaven and Earth Made Manifest Heaven and Earth Made Manifest Summoning a shadow of her former powers, she switches to the Lunar Phase Shift mode. In this mode, Zibai's Normal Attacks and Charged Attacks will deal Geo DMG that cannot be overridden by other infusions, and she can accrue special Phase Shift Radiance through different methods. Zibai can consume Phase Shift Radiance to unleash the special Elemental Skill Spirit Steed's Stride. Moonsign: Ascendant Gleam While in the Lunar Phase Shift mode, when Zibai performs Normal Attacks, the fourth attack will deal an additional instance of Geo DMG , which is considered Lunar-Crystallize Reaction DMG. , or when triggering Moondrift Harmony , Zibai gains the Moonfall effect for 4s: The DMG dealt by the 2nd hit of Spirit Steed's Stride is increased by 60% of Zibai's DEF."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Layered Peaks Pierce the Clouds",
+      "description": "Other Geo party members increase Zibai's DEF by 15% each. Hydro party members increase her Elemental Mastery by 60 each."
+    },
+    {
+      "type": "Moonsign Benediction Passive",
+      "name": "The Coursing Sun and Moon",
+      "description": "When a party member triggers a Hydro Crystallize reaction, it will be converted into the Lunar-Crystallize reaction, with every 100 DEF that Zibai has increasing Lunar-Crystallize's Base DMG by 0.7%, up to a maximum of 14%. Additionally, when Zibai is in the party, the party's Moonsign will increase by 1 level."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Moonlit Flower Forest",
+      "description": "At night (18:00 – 06:00), when not in combat, restore 1 Elemental Energy to Zibai every 2 seconds. This effect does not work in Domains , Trounce Domains , or the Spiral Abyss ."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Burst Forth With Vigor, But Enter in Silence",
+      "effect": "After using the Elemental Skill Heaven and Earth Made Manifest Heaven and Earth Made Manifest Summoning a shadow of her former powers, she switches to the Lunar Phase Shift mode. In this mode, Zibai's Normal Attacks and Charged Attacks will deal Geo DMG that cannot be overridden by other infusions, and she can accrue special Phase Shift Radiance through different methods. Zibai can consume Phase Shift Radiance to unleash the special Elemental Skill Spirit Steed's Stride. Moonsign: Ascendant Gleam While in the Lunar Phase Shift mode, when Zibai performs Normal Attacks, the fourth attack will deal an additional instance of Geo DMG , which is considered Lunar-Crystallize Reaction DMG. , Zibai will immediately gain 100 Phase Shift Radiance, and the max number of Spirit Steed's Stride usages per Lunar Phase Shift mode is increased to 5 times. Additionally, each time you switch to the Lunar..."
+    },
+    "c2": {
+      "name": "At Birth Are Souls Born, and in Death Leave But Husks",
+      "effect": "When in the Lunar Phase Shift Lunar Phase Shift After using the Elemental Skill Heaven and Earth Made Manifest, Zibai will change to this mode. This mode lasts at most 15s and has the following properties: Normal and Charged Attacks are converted into Geo DMG that cannot be overridden by other infusions. The Elemental Skill Heaven and Earth Made Manifest will also be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least 70 Phase Shift Radiance, she can consume 70 Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of Geo DMG. The second instance will be considered Lunar-Crystallize Reaction DMG. A maximum of 100 Phase Shift Radiance points can be accrued, and Zibai can accumulate them in the following ways: She gains 10 points every second she is in the Lunar Phase Shift mode. She gains 5 points when hitting an opponent with her Norm..."
+    },
+    "c3": {
+      "name": "Free From Constraints and Worldly Ties",
+      "effect": "Increases the Level of Elemental Skill Heaven and Earth Made Manifest Heaven and Earth Made Manifest Summoning a shadow of her former powers, she switches to the Lunar Phase Shift mode. In this mode, Zibai's Normal Attacks and Charged Attacks will deal Geo DMG that cannot be overridden by other infusions, and she can accrue special Phase Shift Radiance through different methods. Zibai can consume Phase Shift Radiance to unleash the special Elemental Skill Spirit Steed's Stride. Moonsign: Ascendant Gleam While in the Lunar Phase Shift mode, when Zibai performs Normal Attacks, the fourth attack will deal an additional instance of Geo DMG , which is considered Lunar-Crystallize Reaction DMG. by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "The Spirit Passes, Then Form Follows",
+      "effect": "While in the Lunar Phase Shift Lunar Phase Shift After using the Elemental Skill Heaven and Earth Made Manifest, Zibai will change to this mode. This mode lasts at most 15s and has the following properties: Normal and Charged Attacks are converted into Geo DMG that cannot be overridden by other infusions. The Elemental Skill Heaven and Earth Made Manifest will also be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least 70 Phase Shift Radiance, she can consume 70 Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of Geo DMG. The second instance will be considered Lunar-Crystallize Reaction DMG. A maximum of 100 Phase Shift Radiance points can be accrued, and Zibai can accumulate them in the following ways: She gains 10 points every second she is in the Lunar Phase Shift mode. She gains 5 points when hitting an opponent with her Nor..."
+    },
+    "c5": {
+      "name": "Perceive the Worthless and Debate It Not",
+      "effect": "Increases the Level of Tri-Sphere Eminence by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "The World, A Journey in Passing",
+      "effect": "While Zibai is in the Lunar Phase Shift Lunar Phase Shift After using the Elemental Skill Heaven and Earth Made Manifest, Zibai will change to this mode. This mode lasts at most 15s and has the following properties: Normal and Charged Attacks are converted into Geo DMG that cannot be overridden by other infusions. The Elemental Skill Heaven and Earth Made Manifest will also be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least 70 Phase Shift Radiance, she can consume 70 Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of Geo DMG. The second instance will be considered Lunar-Crystallize Reaction DMG. A maximum of 100 Phase Shift Radiance points can be accrued, and Zibai can accumulate them in the following ways: She gains 10 points every second she is in the Lunar Phase Shift mode. She gains 5 points when hitting an opponent wit..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Zibai",
+  "ai_tags": "Баффер, Гео аппликатор"
+}

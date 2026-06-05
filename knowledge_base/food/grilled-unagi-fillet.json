@@ -1,0 +1,19 @@
+{
+  "id": "grilled-unagi-fillet",
+  "name_ru": "Унаги кабаяки",
+  "name_en": "Grilled Unagi Fillet",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 24% HP + 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "eel-meat",
+      "count": 3
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

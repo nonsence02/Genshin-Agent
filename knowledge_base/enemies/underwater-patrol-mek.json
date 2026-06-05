@@ -1,0 +1,13 @@
+{
+  "id": "underwater-patrol-mek",
+  "name_ru": "Мек: Подводное патрулирование",
+  "name_en": "Underwater Patrol Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

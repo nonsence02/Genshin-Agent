@@ -1,0 +1,27 @@
+{
+  "id": "sunshine-sprat",
+  "name_ru": "Солнечная рыба",
+  "name_en": "Sunshine Sprat",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 30% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "butter",
+      "count": 3
+    },
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    },
+    {
+      "material_id": "small-lamp-grass",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

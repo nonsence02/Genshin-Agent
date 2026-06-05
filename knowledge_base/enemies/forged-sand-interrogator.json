@@ -1,0 +1,13 @@
+{
+  "id": "forged-sand-interrogator",
+  "name_ru": "Кованый песок: Допросчица",
+  "name_en": "Forged Sand Interrogator",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

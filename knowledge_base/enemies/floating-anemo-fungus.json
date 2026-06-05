@@ -1,0 +1,16 @@
+{
+  "id": "floating-anemo-fungus",
+  "name_ru": "Парящий Анемо плесенник",
+  "name_en": "Floating Anemo Fungus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "robust-fungal-nucleus",
+    "dormant-fungal-nucleus",
+    "inactivated-fungal-nucleus",
+    "crystalline-cyst-dust",
+    "luminescent-pollen",
+    "fungal-spores"
+  ],
+  "coordinates": []
+}

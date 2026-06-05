@@ -1,0 +1,13 @@
+{
+  "id": "oprichniki-support-trooper",
+  "name_ru": "Опричник: Боец поддержки",
+  "name_en": "Oprichniki Support Trooper",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "frost-etched-warrant",
+    "immaculate-warrant",
+    "tattered-warrant"
+  ],
+  "coordinates": []
+}

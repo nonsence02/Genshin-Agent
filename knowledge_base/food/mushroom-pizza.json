@@ -1,0 +1,27 @@
+{
+  "id": "mushroom-pizza",
+  "name_ru": "Грибная пицца",
+  "name_en": "Mushroom Pizza",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 30% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 790 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "mushroom",
+      "count": 4
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "cabbage",
+      "count": 2
+    },
+    {
+      "material_id": "cheese",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

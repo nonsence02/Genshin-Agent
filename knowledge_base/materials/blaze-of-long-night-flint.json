@@ -1,14 +1,21 @@
 {
   "id": "blaze-of-long-night-flint",
+  "name_ru": "Пламя кремня долгой ночи",
   "name_en": "Blaze of Long Night Flint",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Lost Mooncourt (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Blaze_of_Long_Night_Flint"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-prayers-sung-iv"
+  ],
+  "source_domain": "domain-of-forgery-prayers-sung-iv",
+  "coordinates": []
 }

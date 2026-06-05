@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-roaring-fire-iv",
+  "name_ru": "Подземелье благословения: Ревущий огонь IV",
+  "name_en": "Domain of Blessing: Roaring Fire IV",
+  "type": "Артефакты",
+  "region": "Ли Юэ",
+  "days_of_week": [],
+  "rewards": [
+    "crimson-witch-of-flames",
+    "lavawalker",
+    "defenders-will",
+    "martial-artist"
+  ],
+  "coordinates": []
+}

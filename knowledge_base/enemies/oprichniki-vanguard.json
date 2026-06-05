@@ -1,0 +1,13 @@
+{
+  "id": "oprichniki-vanguard",
+  "name_ru": "Опричник: Боец авангарда",
+  "name_en": "Oprichniki Vanguard",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "frost-etched-warrant",
+    "immaculate-warrant",
+    "tattered-warrant"
+  ],
+  "coordinates": []
+}

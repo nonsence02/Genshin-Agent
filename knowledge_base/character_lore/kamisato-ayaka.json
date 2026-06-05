@@ -1,0 +1,75 @@
+{
+  "id": "kamisato-ayaka",
+  "name_en": "Kamisato Ayaka",
+  "element": "Cryo",
+  "weapon": "Sword",
+  "region": "Inazuma",
+  "rarity": 5,
+  "description": "Kamisato Ayaka ( Japanese : 神里綾華 Kamisato Ayaka ) is a playable Cryo character in Genshin Impact .\n\nShe is in charge of the internal and external affairs of the Kamisato Clan and is the younger sister of Kamisato Ayato . Beautiful, dignified, and noble, Ayaka has earned the title Shirasagi Himegimi and is considered a model of perfection in Inazuma .",
+  "role_summary": "Kamisato Ayaka ( Japanese : 神里綾華 Kamisato Ayaka ) is a playable Cryo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Kamisato Art: Kabuki",
+      "description": "Normal Attack Performs up to 5 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash a flurry of sword ki. Plunging Attack Plunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Kamisato Art: Hyouka",
+      "description": "Summons blooming ice to launch nearby opponents, dealing AoE Cryo DMG ."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Kamisato Art: Soumetsu",
+      "description": "Summons forth a snowstorm with flawless poise, unleashing a Frostflake Seki no To that moves forward continuously. Frostflake Seki no To A storm of whirling icy winds that slashes repeatedly at every enemy it touches, dealing Cryo DMG . The snowstorm explodes after its duration ends, dealing AoE Cryo DMG ."
+    },
+    {
+      "type": "Alternate Sprint",
+      "name": "Kamisato Art: Senho",
+      "description": "Alternate Sprint Ayaka consumes Stamina and cloaks herself in a frozen fog that moves with her. In Senho form, she moves swiftly upon water. When she reappears, the following effects occur: Ayaka unleashes frigid energy to apply Cryo on nearby opponents. Coldness condenses around Ayaka's blade, infusing her attacks with Cryo for a brief period."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Amatsumi Kunitsumi Sanctification",
+      "description": "After using Kamisato Art: Hyouka , Kamisato Ayaka's Normal and Charged attacks deal 30% increased DMG for 6s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Kanten Senmyou Blessing",
+      "description": "When the Cryo application at the end of Kamisato Art: Senho hits an opponent, Kamisato Ayaka gains the following effects: Restores 10 Stamina Gains 18% Cryo DMG Bonus for 10s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Fruits of Shinsa",
+      "description": "When Ayaka crafts Weapon Ascension Materials , she has a 10% chance to receive double the product."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Snowswept Sakura",
+      "effect": "When Kamisato Ayaka's Normal or Charged Attacks deal Cryo DMG to opponents, it has a 50% chance of decreasing the CD of Kamisato Art: Hyouka by 0.3s. This effect can occur once every 0.1s."
+    },
+    "c2": {
+      "name": "1U",
+      "effect": ""
+    },
+    "c3": {
+      "name": "Frostbloom Kamifubuki",
+      "effect": "Increases the Level of Kamisato Art: Soumetsu by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Ebb and Flow",
+      "effect": "Opponents damaged by Kamisato Art: Soumetsu 's Frostflake Seki no To will have their DEF decreased by 30% for 6s."
+    },
+    "c5": {
+      "name": "Blossom Cloud Irutsuki",
+      "effect": "Increases the Level of Kamisato Art: Hyouka by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Dance of Suigetsu",
+      "effect": "Description Gameplay Notes Preview Kamisato Ayaka gains Usurahi Butou every 10s, increasing her Charged Attack DMG by 298%. This buff will be cleared 0.5s after Ayaka's Charged ATK hits an opponent, after which the timer for this ability will restart. The Usurahi Butou effect will remain when the player enters a domain, enters a different map layer, enters a different world, removes Ayaka from the party, or restarts the game. When this effect is ready, it will be indicated by a glow on Ayaka's right wrist. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Constellation Dance of Suigetsu Charged.mp4 Charged Attack Visual Effect Indicator that C6 is active while Ayaka is moving (blue trail) Indicator that C6 is active while Ayaka is standing still (blue glow)"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayaka",
+  "ai_tags": "Main DPS, Cryo аппликатор"
+}

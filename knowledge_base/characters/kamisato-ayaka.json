@@ -1,94 +1,81 @@
 {
   "id": "kamisato-ayaka",
-  "name": "Kamisato Ayaka",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayaka",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Cryo",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Summons blooming ice to launch nearby opponents, dealing AoE Cryo DMG. When this skill hits at least one enemy, it generates Elemental Particles. Passive Effects Passive Talent, Amatsumi Kunitsumi Sanctification: \"After using Kamisato Art: Hyouka, Kamisato Ayaka's Normal and Charged attacks deal",
-    "elemental_burst": "Summons forth a snowstorm with flawless poise, unleashing a Frostflake Seki no To that moves forward continuously. Frostflake Seki no To A storm of whirling icy winds that slashes repeatedly at every enemy it touches, dealing Cryo DMG. The snowstorm explodes after its duration ends, dealing AoE Cryo DMG. Deals up to × Cutting DMG followed by × Bloom DMG. When a Frostflake Seki no To comes into contact with an enemy, it will remain stationary until the enemy is defeated or exits its AoE. Smaller enemies will be pushed by the Frostflake Seki no To if not shielded, Frozen or Petrified. Frostflake Seki no To will snapshot Kamisato Ayaka's stats when the casting animation ends and will not be..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Old Handguard",
-        "Kageuchi Handguard",
-        "Famed Handguard"
-      ],
-      "special": [
-        "Sakura Bloom",
-        "Perpetual Heart"
-      ]
+  "name_ru": "Камисато Аяка",
+  "name_en": "Kamisato Ayaka",
+  "element": "Cryo",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1000.986,
+      "atk": 26.6266,
+      "def": 61.0266
     },
-    "talents": {
-      "books": [
-        "Teachings of Elegance",
-        "Guide to Elegance",
-        "Philosophies of Elegance"
-      ],
-      "mob_drops": [
-        "Old Handguard",
-        "Kageuchi Handguard",
-        "Famed Handguard"
-      ],
-      "weekly_boss": [
-        "Bloodjade Branch"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12858.2067,
+      "atk": 342.0251,
+      "def": 783.9255
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Искусство Камисато: Нанамэ",
+      "description_ru": "Обычная атака:\nДо пяти быстрых ударов мечом.\n\nЗаряженная атака:\nСоздаёт продолжительный град из клинков, для которого тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Искусство Камисато: Хёка",
+      "description_ru": "Призывает цветущий лёд, который подбрасывает ближайших противников в воздух и наносит им Крио урон."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Искусство Камисато: Сомэцу",
+      "description_ru": "Безупречным движением вызывает снежную бурю и выпускает непрерывно движущийся вперёд Морозный сэки но то.\n\nМорозный сэки но то\n· Пронзающий холодный ветер непрерывно кромсает противников и наносит им Крио урон.\n· По истечении времени действия взрывается и наносит Крио урон по площади."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Освящение амацуми куницуми",
+      "description_ru": "После использования навыка Искусство Камисато: Хёка урон обычных и заряженных атак Аяки увеличивается на 30% в течение 6 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Благословение кантэн сэммё",
+      "description_ru": "Когда Крио эффект в конце действия навыка Искусство Камисато: Сэнхо поражает противника, Камисато Аяка получает следующие эффекты:\n· Восстанавливает 10 ед. выносливости.\n· Получает 18% бонус Крио урона на 10 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Плоды синса",
+      "description_ru": "При создании материалов возвышения оружия имеет 10% шанс создать дополнительный предмет."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Укутанная снегом сакура",
+      "description_ru": "Когда обычные атаки или заряженные атаки Аяки наносят Крио урон противникам, есть 50% шанс уменьшить время отката навыка Искусство Камисато: Хёка на 0,3 сек. Этот эффект может возникнуть раз в 0,1 сек."
+    },
+    {
+      "name_ru": "Лезвие бури сэки но то",
+      "description_ru": "Навык Искусство Камисато: Сомэцу создаёт два дополнительных Морозных сэки но то поменьше, каждый из которых наносит урон, равный 20% от основного урона."
+    },
+    {
+      "name_ru": "Ледяной цветок камифубуки",
+      "description_ru": "Увеличивает уровень навыка Искусство Камисато: Сомэцу на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Приливы и отливы",
+      "description_ru": "Понижает защиту противников, получивших урон от Морозного сэки но то навыка Искусство Камисато: Сомэцу, на 30% в течение 6 сек."
+    },
+    {
+      "name_ru": "Цветущее облако ируцуки",
+      "description_ru": "Увеличивает уровень навыка Искусство Камисато: Хёка на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Танец суигэцу",
+      "description_ru": "Каждые 10 сек. Камисато Аяка получает эффект Усурахи буто, который повышает урон её заряженных атак на 298%. Через 0,5 сек после попадания заряженной атакой по врагу этот эффект пропадает, и отсчёт начинается заново."
+    }
+  ],
+  "coordinates": []
 }

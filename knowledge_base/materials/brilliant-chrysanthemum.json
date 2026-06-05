@@ -1,10 +1,18 @@
 {
   "id": "brilliant-chrysanthemum",
+  "name_ru": "Сверкающая хризантема",
   "name_en": "Brilliant Chrysanthemum",
-  "type": "Local Specialty (Natlan)",
-  "days": [],
-  "source": [
-    "Found in Natlan"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Натлана",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Холм Уитцтли",
+    "Возле стадиона Священного пламени",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Brilliant_Chrysanthemum"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-diligence",
+  "name_ru": "Учения об «Усердии»",
   "name_en": "Teachings of Diligence",
-  "type": "Character Talent Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Taishan Mansion (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Diligence"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-heart-of-the-flames-i",
+    "domain-of-mastery-heart-of-the-flames-ii",
+    "domain-of-mastery-heart-of-the-flames-iii",
+    "domain-of-mastery-heart-of-the-flames-iv"
+  ],
+  "source_domain": "domain-of-mastery-heart-of-the-flames-i",
+  "coordinates": []
 }

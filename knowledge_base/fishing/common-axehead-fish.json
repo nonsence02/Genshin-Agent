@@ -1,0 +1,11 @@
+{
+  "id": "common-axehead-fish",
+  "kind": "fish",
+  "name_ru": "Обыкновенная рыба-топор",
+  "name_en": "Common Axehead Fish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

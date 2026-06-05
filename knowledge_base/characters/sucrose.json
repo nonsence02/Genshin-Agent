@@ -1,92 +1,81 @@
 {
   "id": "sucrose",
-  "name": "Sucrose",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sucrose",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Creates a small Wind Spirit that pulls opponents and objects towards its location, launches opponents within its AoE, and deals Anemo DMG. When this skill hits at least one enemy, it generates Elemental Particles. Skill DMG can hit ally objects such as Baron Bunny, Guoba, Yuegui, etc. and trigger Swirl reactions if the hit object is affected by an element. Passive Effects Passive Talent, Mollis Favonius: \"When Astable Anemohypostasis Creation - or Forbidden Creation - Isomer / Type II hits an opponent, increases all party members' (excluding Sucrose) Elemental Mastery based on",
-    "elemental_burst": "Sucrose hurls an unstable concoction that creates a Large Wind Spirit. While it persists, the Large Wind Spirit will continuously pull in surrounding opponents and objects, launch nearby opponents, and deal Anemo DMG. Elemental Absorption If the Wind Spirit comes into contact with Hydro / Pyro / Cryo / Electro energy, it will deal additional Elemental DMG of that type. Elemental Absorption may only occur once per use. The Elemental Burst has a total of three pulses. Elemental Absorption does not occur until after the first pulse. The area in which Elemental Absorption can occur is much smaller than the damage area. Constellation Effects Constellation Level, Beth: Unbound Form: \"The duration..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Whopperflower Nectar",
-        "Shimmering Nectar"
-      ],
-      "special": [
-        "Windwheel Aster",
-        "Hurricane Seed"
-      ]
+  "name_ru": "Сахароза",
+  "name_en": "Sucrose",
+  "element": "Anemo",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 775.0223,
+      "atk": 14.2464,
+      "def": 58.9417
     },
-    "talents": {
-      "books": [
-        "Teachings of Freedom",
-        "Guide to Freedom",
-        "Philosophies of Freedom"
-      ],
-      "mob_drops": [
-        "Whopperflower Nectar",
-        "Shimmering Nectar"
-      ],
-      "weekly_boss": [
-        "Spirit Locket of Boreas"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9243.6775,
+      "atk": 169.9178,
+      "def": 702.9972
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Базовая эссенция ветра",
+      "description_ru": "Обычная атака:\nДо четырёх ударов эссенцией ветра, наносящих Анемо урон.\n\nЗаряженная атака:\nКороткое заклинание, наносящее Анемо урон по площади, на которое тратится определённое количество выносливости.\n\nАтака в падении:\nНакопив энергию ветра, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Анемо урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Эксперимент №6308",
+      "description_ru": "Создаёт маленького Воздушного духа, который притягивает к себе врагов и предметы, а затем подбрасывает врагов поблизости и наносит им Анемо урон."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Запретно! Изомер 75 / Тип II",
+      "description_ru": "Сахароза бросает колбу с нестабильным реагентом, который создаёт большого Воздушного духа.\nОн непрерывно притягивает предметы и врагов поблизости, подбрасывает врагов в воздух, нанося им Анемо урон.\n\nПоглощение стихии:\nПри контакте с элементами Гидро, Пиро, Крио или Электро большой Воздушный дух наносит дополнительный урон этим элементом.\nЗа каждое использование навык может поглотить только один элемент."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Замещение катализатора",
+      "description_ru": "Вызванная Сахарозой реакция Рассеивание увеличивает мастерство соответствующего элемента остальных членов отряда (но не у Сахарозы) на 50 ед. в течение 8 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Сообразительный ветерок",
+      "description_ru": "При попадании навыками «Эксперимент №6308» или «Запретно! Изомер 75 / Тип II» увеличивает мастерство стихий остальных членов отряда (но не у Сахарозы) на 20% от мастерства стихий Сахарозы в течение 8 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Нестабильное изобретение",
+      "description_ru": "При создании материалов улучшения персонажей и оружия имеет 10% шанс создать дополнительный предмет."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Кластерное вакуумное поле",
+      "description_ru": "Увеличивает количество зарядов навыка Эксперимент №6308 на 1."
+    },
+    {
+      "name_ru": "Бет: Свободная форма",
+      "description_ru": "Увеличивает длительность навыка Запретно! Изомер 75 / Тип II на 2 сек."
+    },
+    {
+      "name_ru": "Безупречный алхимик",
+      "description_ru": "Увеличивает уровень навыка Эксперимент №6308 на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Мания алхимии",
+      "description_ru": "Сахароза уменьшает время отката навыка Эксперимент №6308 на 1-7 сек. за каждые 7 попаданий обычной или заряженной атакой по противникам.\nОдно попадание может засчитываться каждые 0,1 сек."
+    },
+    {
+      "name_ru": "Внимание: обычная колба",
+      "description_ru": "Увеличивает уровень навыка Запретно! Изомер 75 / Тип II на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Энтропия хаоса",
+      "description_ru": "Если навык Запретно! Изомер 75 / Тип II активировал поглощение стихий, все члены отряда получают 20% бонус урона соответствующего элемента на время действия навыка."
+    }
+  ],
+  "coordinates": []
 }

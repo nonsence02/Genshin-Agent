@@ -1,0 +1,13 @@
+{
+  "id": "ainos-toolbox-empty",
+  "name_ru": "Набор инструментов Айно (пустой)",
+  "name_en": "Aino's Toolbox (Empty)",
+  "type": "consume",
+  "type_text_ru": "Особый предмет",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

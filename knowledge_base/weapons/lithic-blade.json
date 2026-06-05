@@ -1,48 +1,80 @@
 {
   "id": "lithic-blade",
-  "name": "Lithic Blade",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lithic_Blade",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "ATK"
-  },
-  "passive": "For every character in the party who hails from Liyue, the character who equips this weapon gains ATK increase and CRIT Rate increase. This stacks up to times.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Luminous Sands from Guyun",
-        "Hunter's Sacrificial Knife",
-        "Firm Arrowhead",
-        "Lustrous Stone from Guyun",
-        "Agent's Sacrificial Knife",
-        "Sharp Arrowhead",
-        "Relic from Guyun",
-        "Inspector's Sacrificial Knife",
-        "Weathered Arrowhead",
-        "Divine Body from Guyun"
-      ]
+  "name_ru": "Каменный меч",
+  "name_en": "Lithic Blade",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Наставления камня: Единство",
+  "passive_description_ru": "С каждым членом отряда из Ли Юэ сила атаки экипированного этим оружием персонажа увеличивается на 7%, а его шанс крит. попадания - на 3%. Эффект может складываться до 4 раз.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "luminous-sands-from-guyun",
+        "name_ru": "Светящийся песок Гуюнь",
+        "name_en": "Luminous Sands from Guyun"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "lustrous-stone-from-guyun",
+        "name_ru": "Блестящий камень Гуюнь",
+        "name_en": "Lustrous Stone from Guyun"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "relic-from-guyun",
+        "name_ru": "Реликвия Гуюнь",
+        "name_en": "Relic from Guyun"
+      },
+      {
+        "id": "divine-body-from-guyun",
+        "name_ru": "Останки богов Гуюнь",
+        "name_en": "Divine Body from Guyun"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "hunters-sacrificial-knife",
+        "name_ru": "Церемониальный нож охотника",
+        "name_en": "Hunter's Sacrificial Knife"
+      },
+      {
+        "id": "agents-sacrificial-knife",
+        "name_ru": "Церемониальный нож агента",
+        "name_en": "Agent's Sacrificial Knife"
+      },
+      {
+        "id": "inspectors-sacrificial-knife",
+        "name_ru": "Церемониальный нож инспектора",
+        "name_en": "Inspector's Sacrificial Knife"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "firm-arrowhead",
+        "name_ru": "Прочный наконечник стрелы",
+        "name_en": "Firm Arrowhead"
+      },
+      {
+        "id": "sharp-arrowhead",
+        "name_ru": "Острый наконечник стрелы",
+        "name_en": "Sharp Arrowhead"
+      },
+      {
+        "id": "weathered-arrowhead",
+        "name_ru": "Старый наконечник стрелы",
+        "name_en": "Weathered Arrowhead"
+      }
+    ]
+  },
+  "coordinates": []
 }

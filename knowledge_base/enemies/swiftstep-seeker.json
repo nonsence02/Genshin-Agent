@@ -1,0 +1,13 @@
+{
+  "id": "swiftstep-seeker",
+  "name_ru": "Стремительный воин: Ищущая",
+  "name_en": "Swiftstep Seeker",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

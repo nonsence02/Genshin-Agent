@@ -1,0 +1,70 @@
+{
+  "id": "chiori",
+  "name_en": "Chiori",
+  "element": "Geo",
+  "weapon": "Sword",
+  "region": "Inazuma (in-game) Fontaine (in lore)",
+  "rarity": 5,
+  "description": "Chiori ( Japanese : 千織 Chiori ) is a playable Geo character in Genshin Impact .\n\nAn independent designer hailing from Inazuma who strives to make her brand internationally recognized across all of Teyvat , Chiori is the industrious yet headstrong owner of Chioriya Boutique , a fashion label in Fontaine which has also served as an \"intelligence boutique\" for law enforcement. Steadfast in attaining what she wants, she refuses to change her ways and personality to conform with societal norms.",
+  "role_summary": "Chiori ( Japanese : 千織 Chiori ) is a playable Geo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Weaving Blade",
+      "description": "Normal Attack Performs up to 4 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Fluttering Hasode",
+      "description": "Dashes nimbly forward with silken steps. Once this dash ends, Chiori will summon the automaton doll \" Tamoto \" beside her and sweep her blade upward, dealing AoE Geo DMG to nearby opponents based on her ATK and DEF . Holding the Skill will cause it to behave differently. Hold Enter Aiming Mode to adjust the dash direction. Tamoto Will slash at nearby opponents at intervals, dealing AoE Geo DMG based on Chiori's ATK and DEF. While active, if there are nearby Geo Construct(s) or Geo Construct (s) are created nearby, an additional Tamoto will be summoned next to your active character. Only 1 additional Tamoto can be summoned in this manner, and its duration is independently counted."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Hiyoku: Twin Blades",
+      "description": "Twin blades leave their sheaths as Chiori slices with the clean cuts of a master tailor, dealing AoE Geo DMG based on her ATK and DEF ."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Tailor-Made",
+      "description": "Gain different effects depending on the next action you take within a short duration after using Fluttering Hasode's upward sweep. If you (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) the Elemental Skill , you will trigger the Tapestry effect. If you (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) your Normal Attack , the Tailoring effect will be triggered instead. Tapestry Switches to the next character in your roster. Grants all your party members \"Seize the Moment\": When your active party member's Normal Attacks , Charged Attacks , and Plunging Attacks hit a nearby opponent, \" Tamoto \" will execute a coordinated attack, dealing 100% of Fluttering Hasode's upward sweep DMG as AoE Geo DMG at the opponent's location. DMG dealt this way is considered Elemental Skill DMG. \"Seize the Moment\" lasts 8s, and 1 of \"Tamoto\"'s coordinated attack can be unleashed every 2s. 2 such coordinated attacks can occur per \"Seize the Moment\" effect duration. Tailoring Chiori gains Geo infusion for 5s. When on the field, if Chiori does not either (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch scre..."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "The Finishing Touch",
+      "description": "When a nearby party member creates a Geo Construct , Chiori will gain 20% Geo DMG Bonus for 20s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Brocaded Collar's Beauteous Silhouette",
+      "description": "When any party member is wearing an outfit apart from their default outfit, or is wearing a wind glider other than the Wings of First Flight , your party members will obtain the Swift Stride effect: Movement SPD is increased by 10%. This effect does not take effect in Domains , Trounce Domains and the Spiral Abyss . Swift Stride does not stack."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Six Paths of Sage Silkcraft",
+      "effect": "The AoE of the automaton doll \"Tamoto\" summoned by Fluttering Hasode is increased by 50%. Additionally, if there is a Geo party member other than Chiori, Fluttering Hasode will trigger the following after the dash is completed: Summon an additional Tamoto. Only one additional Tamoto can exist at the same time, whether summoned by Chiori this way or through the presence of a Geo Construct. Triggers the Ascension Talent \"The Finishing Touch.\" You must first unlock the Ascension Talent \"The Finishing Touch.\""
+    },
+    "c2": {
+      "name": "In Five Colors Dyed",
+      "effect": "For 10s after using Hiyoku: Twin Blades, a simplified automaton doll, \"Kinu,\" will be summoned next to your active character every 3s. Kinu will attack nearby opponents, dealing AoE Geo DMG equivalent to 170% of Tamoto's DMG. DMG dealt this way is considered Elemental Skill DMG. Kinu will leave the field after 1 attack or after lasting 3s."
+    },
+    "c3": {
+      "name": "Four Brocade Embellishments",
+      "effect": "Increases the Level of Fluttering Hasode by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "A Tailor's Three Courtesies",
+      "effect": "For 8s after triggering either follow-up effect of the Ascension Talent \"Tailor-Made,\" when your current active character's Normal, Charged, or Plunging Attacks hit a nearby opponent, a simplified automaton doll, \"Kinu,\" will be summoned near this opponent. You can summon 1 Kinu every 1s in this way, and up to 3 Kinu may be summoned this way during each instance of \"Tailor-Made\"'s Seize the Moment or Tailoring effect. The above effect can be triggered up to once every 15s. You must first unlock the Ascension Talent \"Tailor-Made.\""
+    },
+    "c5": {
+      "name": "Two Silken Plumules",
+      "effect": "Increases the Level of Hiyoku: Twin Blades by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Sole Principle Pursuit",
+      "effect": "After triggering a follow-up effect of the Ascension Talent \"Tailor-Made,\" Chiori's own Fluttering Hasode's CD is decreased by 12s. You must first unlock the Ascension Talent \"Tailor-Made.\". In addition, the DMG dealt by Chiori's own Normal Attacks is increased by an amount equal to 235% of her own DEF."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Chiori",
+  "ai_tags": "Enabler, Саппорт"
+}

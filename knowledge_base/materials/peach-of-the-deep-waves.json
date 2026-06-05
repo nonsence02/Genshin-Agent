@@ -1,0 +1,15 @@
+{
+  "id": "peach-of-the-deep-waves",
+  "name_ru": "Водяной персик",
+  "name_en": "Peach of the Deep Waves",
+  "type": "exchange",
+  "type_text_ru": "Рыба",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыбалка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

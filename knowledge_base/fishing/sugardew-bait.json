@@ -1,0 +1,17 @@
+{
+  "id": "sugardew-bait",
+  "kind": "bait",
+  "name_ru": "Сахарная наживка",
+  "name_en": "Sugardew Bait",
+  "recipe": [
+    {
+      "material_id": "harra-fruit",
+      "count": 1
+    },
+    {
+      "material_id": "sumeru-rose",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

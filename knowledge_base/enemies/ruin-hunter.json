@@ -1,0 +1,13 @@
+{
+  "id": "ruin-hunter",
+  "name_ru": "Руинный охотник",
+  "name_en": "Ruin Hunter",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "chaos-core",
+    "chaos-circuit",
+    "chaos-device"
+  ],
+  "coordinates": []
+}

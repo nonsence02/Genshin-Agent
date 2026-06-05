@@ -1,0 +1,23 @@
+{
+  "id": "radish-and-fish-stew",
+  "name_ru": "Рагу из редиса и рыбы",
+  "name_en": "Radish and Fish Stew",
+  "rarity": 2,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 12% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 2
+    },
+    {
+      "material_id": "radish",
+      "count": 2
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

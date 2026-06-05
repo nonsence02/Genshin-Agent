@@ -1,45 +1,65 @@
 {
   "id": "iron-point",
-  "name": "Iron Point",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Iron_Point",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "2★",
-    "base_atk": "33 - 243",
-    "secondary_stat": "Не найдено"
-  },
-  "passive": "Sharp and pointy at one end, it is a balanced weapon that is quite popular among travelers.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Divining Scroll",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Sealed Scroll",
-        "Shackles of the Dandelion Gladiator"
-      ]
+  "name_ru": "Железный наконечник",
+  "name_en": "Iron Point",
+  "weapon_type": "Polearm",
+  "rarity": 2,
+  "stats": {
+    "level_1": {
+      "base_atk": 32.93,
+      "secondary_stat": null,
+      "secondary_stat_value": 0
+    },
+    "level_90": {
+      "base_atk": null,
+      "secondary_stat": null,
+      "secondary_stat_value": null
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "",
+  "passive_description_ru": "",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

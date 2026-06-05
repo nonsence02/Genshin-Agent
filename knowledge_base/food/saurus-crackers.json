@@ -1,0 +1,27 @@
+{
+  "id": "saurus-crackers",
+  "name_ru": "Заврианское печенье",
+  "name_en": "Saurus Crackers",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 34% HP + 1900 HP.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "cacahuatl",
+      "count": 3
+    },
+    {
+      "material_id": "grainfruit",
+      "count": 2
+    },
+    {
+      "material_id": "butter",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

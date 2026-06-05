@@ -1,0 +1,11 @@
+{
+  "id": "maintenance-mek-gold-leader",
+  "kind": "fish",
+  "name_ru": "Ремонтный мек: Золотой лидер",
+  "name_en": "Maintenance Mek: Gold Leader",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

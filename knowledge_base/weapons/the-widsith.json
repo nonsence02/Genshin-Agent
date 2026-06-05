@@ -1,44 +1,80 @@
 {
   "id": "the-widsith",
-  "name": "The Widsith",
-  "source_url": "https://genshin-impact.fandom.com/wiki/The_Widsith",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "When a character takes the field, they will gain a random theme song for. This can only occur once every. Recitative: ATK is increased by. Aria: Increases all Elemental DMG by. Interlude: Elemental Mastery is increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Damaged Mask",
-        "Dead Ley Line Leaves",
-        "Stained Mask",
-        "Ley Line Sprout",
-        "Ominous Mask"
-      ]
+  "name_ru": "Песнь странника",
+  "name_en": "The Widsith",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.12
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.5513
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Дебют",
+  "passive_description_ru": "При переключении на персонажа в течение 10 сек. играет случайная музыкальная тема. Может возникнуть раз в 30 сек. Речитатив: увеличивает силу атаки на 60%; Ария: увеличивает элементальный урон на 48%; Интерлюдия: увеличивает мастерство стихий на 240.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "damaged-mask",
+        "name_ru": "Разбитая маска",
+        "name_en": "Damaged Mask"
+      },
+      {
+        "id": "stained-mask",
+        "name_ru": "Грязная маска",
+        "name_en": "Stained Mask"
+      },
+      {
+        "id": "ominous-mask",
+        "name_ru": "Зловещая маска",
+        "name_en": "Ominous Mask"
+      }
+    ]
+  },
+  "coordinates": []
 }

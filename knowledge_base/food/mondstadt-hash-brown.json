@@ -1,0 +1,23 @@
+{
+  "id": "mondstadt-hash-brown",
+  "name_ru": "Мондштадтские оладушки",
+  "name_en": "Mondstadt Hash Brown",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 34% HP + 1900 HP.",
+  "recipe": [
+    {
+      "material_id": "pinecone",
+      "count": 2
+    },
+    {
+      "material_id": "potato",
+      "count": 1
+    },
+    {
+      "material_id": "jam",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

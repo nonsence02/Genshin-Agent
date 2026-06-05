@@ -1,94 +1,81 @@
 {
   "id": "venti",
-  "name": "Venti",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Venti",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "O wind upon which all hymns and songs fly, bear these earth-walkers up into the sky! (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Summons a Wind Domain at the opponent's location, dealing AoE Anemo DMG and launching opponents into the air. Hold Summons an even larger Wind Domain with Venti as the epicenter, dealing AoE Anemo DMG and launching affected opponents into the air. After unleashing the Hold version of this ability, Venti rides the wind into the air. Opponents hit by Skyward Sonnet will fall to the ground slowly. When this skill hits at least one enemy, it generates Elemental Particles if it was pressed and if it was held. This skill is also...",
-    "elemental_burst": "Fires off an arrow made of countless coalesced winds, creating a huge Stormeye that sucks in opponents and deals continuous Anemo DMG. Elemental Absorption If the Stormeye comes into contact with Hydro / Pyro / Cryo / Electro, it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use. This Elemental Burst drains energy later than most others. [ ] This Elemental Burst begins its cooldown later than most others. [ ] The Stormeye deals × Anemo DMG within seconds. Elemental Absorption deals"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "special": [
-        "Cecilia",
-        "Hurricane Seed"
-      ]
+  "name_ru": "Венти",
+  "name_en": "Venti",
+  "element": "Anemo",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 819.8552,
+      "atk": 20.482,
+      "def": 52.0521
     },
-    "talents": {
-      "books": [
-        "Teachings of Ballad",
-        "Guide to Ballad",
-        "Philosophies of Ballad"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "weekly_boss": [
-        "Tail of Boreas"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10531.4834,
+      "atk": 263.0962,
+      "def": 668.6423
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Божественная точность",
+      "description_ru": "Обычная атака:\nДо шести выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается божественным ветром. Полностью заряженная ветром стрела наносит Анемо урон.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Небесная поэзия",
+      "description_ru": "О, ветер, о котором поют гимны и слагают песни, неси этих странников к небесам!\n\nБыстрое нажатие:\nСоздаёт зону ветра, которая наносит Анемо урон по площади и подкидывает врагов в воздух.\n\nДолгое нажатие:\nВызывает ещё большую силу ветра с Венти в её центре. Она наносит Анемо урон по площади и подкидывает попавших в её зону действия врагов.\nЭта версия навыка поднимает Венти в воздух.\n\nВраги, подкинутые навыком Небесная поэзия, медленно опускаются на землю."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Великая ода ветру",
+      "description_ru": "Выпустив стрелу из тысячи ветров, призывает огромный глаз бури, который притягивает к себе врагов, нанося им постоянный Анемо урон.\n\nПоглощение стихии:\nПри контакте с элементами Гидро, Пиро, Крио или Электро глаз бури наносит дополнительный урон этим элементом.\nЗа каждое использование навык может поглотить только один элемент."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Объятья ветра",
+      "description_ru": "Долгое нажатие навыка Небесная поэзия создаёт поток ветра, который длится 20 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Глаз бури",
+      "description_ru": "После окончания навыка Великая ода ветру восстанавливает 15 ед. энергии Венти.\nЕсли произошло Поглощение стихии, то также восстанавливает 15 ед. энергии всем членам отряда, чей элемент соответствует поглощённому элементу."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Ветряной наездник",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время полёта на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Дробящий шторм",
+      "description_ru": "Каждый прицельный выстрел пускает две дополнительные стрелы. Каждая дополнительная стрела наносит 33% от урона первой стрелы."
+    },
+    {
+      "name_ru": "Бриз воспоминаний",
+      "description_ru": "Использование навыка Небесная поэзия уменьшает Анемо и физ. сопротивление противников на 12% в течение 10 сек.\nТакже временно понижает Анемо и физ. сопротивление противников, подкинутых в воздух этим навыком, на 12%."
+    },
+    {
+      "name_ru": "Ода тысяче ветров",
+      "description_ru": "Увеличивает уровень навыка Великая ода ветру на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Ветер свободы",
+      "description_ru": "Подобранные Венти элементальные сферы и частицы дают ему 25% бонус Анемо урона в течение 10 сек."
+    },
+    {
+      "name_ru": "Небесная гармония",
+      "description_ru": "Увеличивает уровень навыка Небесная поэзия на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Шторм непокорности",
+      "description_ru": "Понижает Анемо сопротивление противников, получивших урон от навыка Великая ода ветру, на 20%.\nЕсли произошло Поглощение стихии, то также понижает сопротивление к поглощённому элементу на 20%."
+    }
+  ],
+  "coordinates": []
 }

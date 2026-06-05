@@ -1,48 +1,80 @@
 {
   "id": "iron-sting",
-  "name": "Iron Sting",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Iron_Sting",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Dealing Elemental DMG increases all DMG by for. Max stacks. Can only occur once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Fragile Bone Shard",
-        "Whopperflower Nectar",
-        "Piece of Aerosiderite",
-        "Sturdy Bone Shard",
-        "Shimmering Nectar",
-        "Bit of Aerosiderite",
-        "Fossilized Bone Shard",
-        "Energy Nectar",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Стальное жало",
+  "name_en": "Iron Sting",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 36
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 165.384
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Заряженное жало",
+  "passive_description_ru": "Нанесённый элементальный урон увеличивает весь наносимый урон на 6% на 6 сек. Может складываться до 2 раз. Может возникнуть раз в 1 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fragile-bone-shard",
+        "name_ru": "Хрупкие останки",
+        "name_en": "Fragile Bone Shard"
+      },
+      {
+        "id": "sturdy-bone-shard",
+        "name_ru": "Крепкие останки",
+        "name_en": "Sturdy Bone Shard"
+      },
+      {
+        "id": "fossilized-bone-shard",
+        "name_ru": "Окаменевшие останки",
+        "name_en": "Fossilized Bone Shard"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

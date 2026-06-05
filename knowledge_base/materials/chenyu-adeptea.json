@@ -1,0 +1,16 @@
+{
+  "id": "chenyu-adeptea",
+  "name_ru": "Чай Адептов",
+  "name_en": "Chenyu Adeptea",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Деревня Цяоин"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

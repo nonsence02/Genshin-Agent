@@ -1,0 +1,27 @@
+{
+  "id": "chatter-of-joyful-nights",
+  "name_ru": "«Беседы весёлых ночей»",
+  "name_en": "\"Chatter of Joyful Nights\"",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 34% от макс. HP выбранному персонажу, затем в течение 30 сек. каждые 5 сек. восстанавливает 980 HP.",
+  "recipe": [
+    {
+      "material_id": "mint",
+      "count": 4
+    },
+    {
+      "material_id": "shrimp-meat",
+      "count": 4
+    },
+    {
+      "material_id": "potato",
+      "count": 3
+    },
+    {
+      "material_id": "berry",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

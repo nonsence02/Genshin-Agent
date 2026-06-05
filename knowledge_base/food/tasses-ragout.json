@@ -1,0 +1,23 @@
+{
+  "id": "tasses-ragout",
+  "name_ru": "Рагу",
+  "name_en": "Tasses Ragout",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 24% от макс. HP + 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "tomato",
+      "count": 3
+    },
+    {
+      "material_id": "onion",
+      "count": 3
+    },
+    {
+      "material_id": "salt",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

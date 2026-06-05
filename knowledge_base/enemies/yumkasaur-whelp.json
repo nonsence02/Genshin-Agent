@@ -1,0 +1,13 @@
+{
+  "id": "yumkasaur-whelp",
+  "name_ru": "Детёныш юмказавра",
+  "name_en": "Yumkasaur Whelp",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "tyrants-fang",
+    "seasoned-fang",
+    "juvenile-fang"
+  ],
+  "coordinates": []
+}

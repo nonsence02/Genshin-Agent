@@ -1,0 +1,13 @@
+{
+  "id": "yellow-dye",
+  "name_ru": "Жёлтая краска",
+  "name_en": "Yellow Dye",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

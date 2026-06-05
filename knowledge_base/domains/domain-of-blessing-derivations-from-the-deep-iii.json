@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-derivations-from-the-deep-iii",
+  "name_ru": "Подземелье благословения: Производные из глубины III",
+  "name_en": "Domain of Blessing: Derivations From the Deep III",
+  "type": "Артефакты",
+  "region": "Нод-Край",
+  "days_of_week": [],
+  "rewards": [
+    "night-of-the-skys-unveiling",
+    "silken-moons-serenade",
+    "resolution-of-sojourner",
+    "gambler"
+  ],
+  "coordinates": []
+}

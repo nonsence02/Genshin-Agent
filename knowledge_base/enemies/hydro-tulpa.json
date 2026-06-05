@@ -1,0 +1,16 @@
+{
+  "id": "hydro-tulpa",
+  "name_ru": "Гидротульпа",
+  "name_en": "Hydro Tulpa",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "water-that-failed-to-transcend",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

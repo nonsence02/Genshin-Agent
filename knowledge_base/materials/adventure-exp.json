@@ -1,0 +1,13 @@
+{
+  "id": "adventure-exp",
+  "name_ru": "Опыт приключений",
+  "name_en": "Adventure EXP",
+  "type": "none",
+  "type_text_ru": "Системный доступ",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

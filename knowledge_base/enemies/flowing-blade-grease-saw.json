@@ -1,0 +1,13 @@
+{
+  "id": "flowing-blade-grease-saw",
+  "name_ru": "Клинок течений: Режущий",
+  "name_en": "Flowing Blade Grease-Saw",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

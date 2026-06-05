@@ -1,48 +1,80 @@
 {
   "id": "sturdy-bone",
-  "name": "Sturdy Bone",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sturdy_Bone",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Sprint or Alternate Sprint Stamina Consumption decreased by. Additionally, after using Sprint or Alternate Sprint, Normal Attack DMG is increased by of ATK. This expires after triggering times or.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Blazing Sacrificial Heart's Terror",
-        "Shard of a Shattered Will",
-        "Sentry's Wooden Whistle",
-        "Blazing Sacrificial Heart's Hesitance",
-        "Locus of a Clear Will",
-        "Warrior's Metal Whistle",
-        "Blazing Sacrificial Heart's Resolve",
-        "Sigil of a Striding Will",
-        "Saurian-Crowned Warrior's Golden Whistle",
-        "Blazing Sacrificial Heart's Splendor"
-      ]
+  "name_ru": "Крепкая кость",
+  "name_en": "Sturdy Bone",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Бахвальство ловчего",
+  "passive_description_ru": "Спринт или заменяющие его навыки расходуют на 15% выносливости меньше. Кроме того, после использования спринта или заменяющего его навыка урон обычной атаки повышается на 16% от силы атаки. Эффект исчезает после 18 активаций или через 7 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "blazing-sacrificial-hearts-terror",
+        "name_ru": "Ужас пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Terror"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "blazing-sacrificial-hearts-hesitance",
+        "name_ru": "Сомнение пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Hesitance"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "blazing-sacrificial-hearts-resolve",
+        "name_ru": "Решимость пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Resolve"
+      },
+      {
+        "id": "blazing-sacrificial-hearts-splendor",
+        "name_ru": "Великолепие пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Splendor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "shard-of-a-shattered-will",
+        "name_ru": "Осколок разбитой воли",
+        "name_en": "Shard of a Shattered Will"
+      },
+      {
+        "id": "locus-of-a-clear-will",
+        "name_ru": "Образ ясной воли",
+        "name_en": "Locus of a Clear Will"
+      },
+      {
+        "id": "sigil-of-a-striding-will",
+        "name_ru": "Талисман странствующей воли",
+        "name_en": "Sigil of a Striding Will"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "sentrys-wooden-whistle",
+        "name_ru": "Деревянный свисток дозорного",
+        "name_en": "Sentry's Wooden Whistle"
+      },
+      {
+        "id": "warriors-metal-whistle",
+        "name_ru": "Металлический свисток воина",
+        "name_en": "Warrior's Metal Whistle"
+      },
+      {
+        "id": "saurian-crowned-warriors-golden-whistle",
+        "name_ru": "Золотой свисток коронованного заврианами воина",
+        "name_en": "Saurian-Crowned Warrior's Golden Whistle"
+      }
+    ]
+  },
+  "coordinates": []
 }

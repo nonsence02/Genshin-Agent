@@ -1,0 +1,13 @@
+{
+  "id": "area-alert-mek",
+  "name_ru": "Мек: Сигнализация области",
+  "name_en": "Area Alert Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ice-shield-hilichurl-guard",
+  "name_ru": "Хиличурл с ледяным щитом",
+  "name_en": "Ice Shield Hilichurl Guard",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

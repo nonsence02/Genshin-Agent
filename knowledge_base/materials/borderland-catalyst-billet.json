@@ -1,0 +1,18 @@
+{
+  "id": "borderland-catalyst-billet",
+  "name_ru": "Заготовка катализатора приграничных земель",
+  "name_en": "Borderland Catalyst Billet",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Испытание Подземелья наказания в Натлане и Нод-Крае"
+  ],
+  "dropped_by": [
+    "lord-of-eroded-primal-fire",
+    "the-doctor"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,10 +1,18 @@
 {
   "id": "dragonheirs-false-fin",
+  "name_ru": "Ложный плавник Дракона глубин",
   "name_en": "Dragonheir's False Fin",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Bathysmal Vishap Herds"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Стаи вишапов глубин Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dragonheir%27s_False_Fin"
+  "dropped_by": [
+    "bolteater-bathysmal-vishap",
+    "rimebiter-bathysmal-vishap"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,92 +1,86 @@
 {
   "id": "zibai",
-  "name": "Zibai",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Zibai",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Hydro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Summoning a shadow of her former powers, she switches to the Lunar Phase Shift Lunar Phase Shift After using the Elemental Skill Heaven and Earth Made Manifest, Zibai will change to this mode. This mode lasts at most and has the following properties: Normal and Charged Attacks are converted into Geo DMG that cannot be overridden by other infusions. The Elemental Skill Heaven and Earth Made Manifest will also be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least Phase Shift Radiance, she can consume Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of Geo DMG. The second instance will be considered Lunar-Crystallize Reaction DMG. A...",
-    "elemental_burst": "Zibai operates the Jadelight Canopy, dealing two instances of Geo DMG, with the second damage instance being considered Lunar-Crystallize Reaction DMG. When cast, if Zibai is in the Lunar Phase Shift Lunar Phase Shift After using the Elemental Skill Heaven and Earth Made Manifest, Zibai will change to this mode. This mode lasts at most and has the following properties: Normal and Charged Attacks are converted into Geo DMG that cannot be overridden by other infusions. The Elemental Skill Heaven and Earth Made Manifest will also be converted to the Elemental Skill Spirit Steed's Stride: When Zibai has at least Phase Shift Radiance, she can consume Phase Shift Radiance to unleash Spirit..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Prithiva Topaz Sliver",
-        "Prithiva Topaz Fragment",
-        "Prithiva Topaz Chunk",
-        "Prithiva Topaz Gemstone"
-      ],
-      "mob_drops": [
-        "Tattered Warrant",
-        "Immaculate Warrant",
-        "Frost-Etched Warrant"
-      ],
-      "special": [
-        "Glaze Lily",
-        "Remnant of the Dreadwing"
-      ]
+  "name_ru": "Цзы Бай",
+  "name_en": "Zibai",
+  "element": "Geo",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1005.7526,
+      "atk": 17.5028,
+      "def": 74.4883
     },
-    "talents": {
-      "books": [
-        "Teachings of Gold",
-        "Guide to Gold",
-        "Philosophies of Gold"
-      ],
-      "mob_drops": [
-        "Tattered Warrant",
-        "Immaculate Warrant",
-        "Frost-Etched Warrant"
-      ],
-      "weekly_boss": [],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12919.436,
+      "atk": 224.8277,
+      "def": 956.8502
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Лепестковое прикосновение золотого клинка",
+      "description_ru": "Обычная атака:\nДо четырёх быстрых ударов мечом.\n\nЗаряженная атака:\nТратит определённое количество выносливости на два быстрых взмаха мечом перед собой.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Когда небо и земля стали единым",
+      "description_ru": "Призывая тень своих былых сил, Цзы Бай переходит в режим **Сдвига лунных фаз**.\nВ этом режиме её обычная и заряженная атаки наносят Гео урон, который не может быть отменён другими инфузиями, а также она становится способна разными способами накапливать особое Сияние сдвига фаз. Цзы Бай может расходовать Сияние сдвига фаз, чтобы применять особый элементальный навык Поступь проворной кобылицы.\n\nЛунное знамение - Высшее сияние\nКогда Цзы Бай находится в режиме Сдвига лунных фаз, четвёртый удар её обычной атаки один раз наносит дополнительный Гео урон, который считается уроном реакции Лунный кристалл."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Величие трёх сфер",
+      "description_ru": "Управляя Нефритовым зонтом, Цзы Бай два раза наносит Гео урон. Урон второго раза считается уроном реакции Лунный кристалл.\nЕсли во время активации Цзы Бай находится в режиме **Сдвига лунных фаз**, то длительность текущего Сдвига лунных фаз увеличивается на 1,7 сек."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Нисхождение лунного Адепта",
+      "description_ru": "Во время использования элементального навыка **Когда небо и земля стали единым** или активации членом отряда поблизости Гармонии Лунной пелены Цзы Бай на 4 сек. получает эффект Лунного нисхождения: урон второй атаки **Поступи проворной кобылицы** повышается на 60% от защиты Цзы Бай."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Гряды вершин над облаками",
+      "description_ru": "Защита Цзы Бай повышается на 15% за каждого другого Гео персонажа в отряде. Мастерство стихий Цзы Бай повышается на 60 ед. за каждого Гидро персонажа в отряде."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Дар лунного знамения: Ход солнца и луны",
+      "description_ru": "Когда персонажи отряда активируют реакцию Гидро Кристалл, она превращается в Лунный кристалл, а базовый урон реакции Лунный кристалл персонажей отряда увеличивается на 0,7% за каждые 100 ед. защиты Цзы Бай. Максимальное увеличение урона, которое можно получить таким образом, составляет 14%.\n\nКроме того, когда Цзы Бай в отряде, уровень Лунного знамения отряда повышается на 1."
+    },
+    {
+      "type": "пассивный талант 4",
+      "name_ru": "Лунный лес цветов",
+      "description_ru": "В ночное время (18:00 - 06:00) вне боя Цзы Бай восстанавливает 1 ед. энергии в 2 сек.\nЭтот эффект не действует в подземельях, Витой Бездне и Подземельях наказания."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Прорывайся с силой, но входи в тишине",
+      "description_ru": "После применения элементального навыка **Когда небо и земля стали единым** Цзы Бай сразу получает 100 ед. **Сияния сдвига фаз**, а максимум использований Поступи проворной кобылицы в режиме Сдвига лунных фаз увеличивается до 5.\nКроме того, при каждом переходе в режим Сдвига лунных фаз и первом применении Поступи проворной кобылицы урон реакции Лунный кристалл её второй атаки повышается на 220%."
+    },
+    {
+      "name_ru": "Рождение являет души, смерть оставляет лишь оболочку",
+      "description_ru": "Когда Цзы Бай находится в режиме **Сдвига лунных фаз**, урон реакции Лунный кристалл всех персонажей отряда поблизости повышается на 30%.\n\nЛунное знамение - Высшее сияние: талант возвышения **Нисхождение лунного Адепта** получает усиление - урон второй атаки Поступи проворной кобылицы дополнительно повышается на 550% от защиты Цзы Бай. Требуется разблокировать талант возвышения Нисхождение лунного Адепта."
+    },
+    {
+      "name_ru": "Свобода от пут и мирских уз",
+      "description_ru": "Увеличивает уровень навыка **Когда небо и земля стали единым** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Дух уходит, форма следует за ним",
+      "description_ru": "Когда Цзы Бай находится в режиме **Сдвига лунных фаз**, серия её обычной атаки не сбрасывается, а когда Поступь проворной кобылицы поражает врага, Цзы Бай получает эффект Великолепие разлившейся луны: при следующем использовании обычной атаки дополнительная атака её четвёртого удара наносит урон реакции Лунный кристалл, равный 250% от исходного."
+    },
+    {
+      "name_ru": "Понимай бесполезность и не оспаривай её",
+      "description_ru": "Увеличивает уровень навыка **Величие трёх сфер** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Мир, мимолётное странствие",
+      "description_ru": "Когда Цзы Бай находится в режиме **Сдвига лунных фаз**, накопление Сияния сдвига фаз повышается на 50%.\nКроме того, Поступь проворной кобылицы теперь полностью расходует Сияние сдвига фаз, благодаря чему урон данного применения Поступи проворной кобылицы и на последующие 3 сек. урон реакции Лунный кристалл Цзы Бай **возвышается** на 1,6% за каждую израсходованную единицу Сияния сдвига фаз свыше 70. Этот эффект не складывается."
+    }
+  ],
+  "coordinates": []
 }

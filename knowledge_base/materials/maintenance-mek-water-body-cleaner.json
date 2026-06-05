@@ -1,0 +1,15 @@
+{
+  "id": "maintenance-mek-water-body-cleaner",
+  "name_ru": "Ремонтный мек: Водоочиститель",
+  "name_en": "Maintenance Mek: Water Body Cleaner",
+  "type": "exchange",
+  "type_text_ru": "Рыба",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыбалка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

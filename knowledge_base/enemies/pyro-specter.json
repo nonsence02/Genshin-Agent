@@ -1,0 +1,13 @@
+{
+  "id": "pyro-specter",
+  "name_ru": "Пиро призрак",
+  "name_en": "Pyro Specter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "spectral-nucleus",
+    "spectral-heart",
+    "spectral-husk"
+  ],
+  "coordinates": []
+}

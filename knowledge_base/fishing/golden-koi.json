@@ -1,0 +1,11 @@
+{
+  "id": "golden-koi",
+  "kind": "fish",
+  "name_ru": "Золотой лжедракон",
+  "name_en": "Golden Koi",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

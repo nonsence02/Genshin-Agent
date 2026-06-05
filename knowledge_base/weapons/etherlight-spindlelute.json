@@ -1,48 +1,80 @@
 {
   "id": "etherlight-spindlelute",
-  "name": "Etherlight Spindlelute",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Etherlight_Spindlelute",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "For after using an Elemental Skill, the equipping character's Elemental Mastery is increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Sundered Glory of the Far-North Scions",
-        "Lightless Bone",
-        "Tattered Warrant",
-        "Unyielding Delusion of the Far-North Scions",
-        "Glowing Remains",
-        "Immaculate Warrant",
-        "Oblation of the Far-North Scions",
-        "Radiant Exoskeleton",
-        "Frost-Etched Warrant",
-        "Aureate Radiance of the Far-North Scions"
-      ]
+  "name_ru": "Лютня ткача света",
+  "name_en": "Etherlight Spindlelute",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.4594
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Последний певец",
+  "passive_description_ru": "После использования элементального навыка мастерство стихий экипированного персонажа повышается на 100 ед. на 20 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "sundered-glory-of-the-far-north-scions",
+        "name_ru": "Растоптанная слава последователей крайнего севера",
+        "name_en": "Sundered Glory of the Far-North Scions"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "unyielding-delusion-of-the-far-north-scions",
+        "name_ru": "Упрямое заблуждение последователей крайнего севера",
+        "name_en": "Unyielding Delusion of the Far-North Scions"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "oblation-of-the-far-north-scions",
+        "name_ru": "Подношение последователей крайнего севера",
+        "name_en": "Oblation of the Far-North Scions"
+      },
+      {
+        "id": "aureate-radiance-of-the-far-north-scions",
+        "name_ru": "Златое сияние последователей крайнего севера",
+        "name_en": "Aureate Radiance of the Far-North Scions"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "lightless-bone",
+        "name_ru": "Потускневшая кость",
+        "name_en": "Lightless Bone"
+      },
+      {
+        "id": "glowing-remains",
+        "name_ru": "Светящиеся останки",
+        "name_en": "Glowing Remains"
+      },
+      {
+        "id": "radiant-exoskeleton",
+        "name_ru": "Сияющая кость",
+        "name_en": "Radiant Exoskeleton"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "tattered-warrant",
+        "name_ru": "Потрёпанный мандат",
+        "name_en": "Tattered Warrant"
+      },
+      {
+        "id": "immaculate-warrant",
+        "name_ru": "Безупречный мандат",
+        "name_en": "Immaculate Warrant"
+      },
+      {
+        "id": "frost-etched-warrant",
+        "name_ru": "Заиндевевший мандат",
+        "name_en": "Frost-Etched Warrant"
+      }
+    ]
+  },
+  "coordinates": []
 }

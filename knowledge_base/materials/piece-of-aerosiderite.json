@@ -1,14 +1,23 @@
 {
   "id": "piece-of-aerosiderite",
+  "name_ru": "Кусочек чёрного сидерита",
   "name_en": "Piece of Aerosiderite",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Hidden Palace of Lianshan Formula (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Piece_of_Aerosiderite"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-trial-grounds-of-thunder-ii",
+    "domain-of-forgery-trial-grounds-of-thunder-iii",
+    "domain-of-forgery-trial-grounds-of-thunder-iv"
+  ],
+  "source_domain": "domain-of-forgery-trial-grounds-of-thunder-ii",
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "foliar-swift-wayob-manifestation",
+  "name_ru": "Воплощение Вайоб стремительности и листвы",
+  "name_en": "Foliar-Swift Wayob Manifestation",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "sigil-of-a-striding-will",
+    "locus-of-a-clear-will",
+    "shard-of-a-shattered-will"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "experimental-field-generator",
+  "name_ru": "Экспериментальный генератор поля",
+  "name_en": "Experimental Field Generator",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "tourbillon-device",
+    "prithiva-topaz-gemstone",
+    "prithiva-topaz-chunk",
+    "prithiva-topaz-fragment",
+    "prithiva-topaz-sliver"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "primordial-bathysmal-vishap",
+  "name_ru": "Вишап глубин: Исток",
+  "name_en": "Primordial Bathysmal Vishap",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "fossilized-bone-shard",
+    "sturdy-bone-shard",
+    "fragile-bone-shard"
+  ],
+  "coordinates": []
+}

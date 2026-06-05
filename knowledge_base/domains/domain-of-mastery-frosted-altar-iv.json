@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-frosted-altar-iv",
+  "name_ru": "Мастерство: Инеевый алтарь IV",
+  "name_en": "Domain of Mastery: Frosted Altar IV",
+  "type": "Повышение талантов",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-freedom",
+    "guide-to-freedom",
+    "teachings-of-freedom"
+  ],
+  "coordinates": []
+}

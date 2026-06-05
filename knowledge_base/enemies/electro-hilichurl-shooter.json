@@ -1,0 +1,16 @@
+{
+  "id": "electro-hilichurl-shooter",
+  "name_ru": "Электро хиличурл-стрелок",
+  "name_en": "Electro Hilichurl Shooter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "weathered-arrowhead",
+    "sharp-arrowhead",
+    "firm-arrowhead",
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

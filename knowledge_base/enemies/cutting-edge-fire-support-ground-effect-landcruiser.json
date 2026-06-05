@@ -1,0 +1,13 @@
+{
+  "id": "cutting-edge-fire-support-ground-effect-landcruiser",
+  "name_ru": "Сухопутный крейсер: Новейшая наземная огневая поддержка",
+  "name_en": "Cutting Edge Fire Support Ground Effect Landcruiser",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "precision-drive-shaft",
+    "reinforced-drive-shaft",
+    "broken-drive-shaft"
+  ],
+  "coordinates": []
+}

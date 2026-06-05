@@ -1,10 +1,18 @@
 {
   "id": "puppet-strings",
+  "name_ru": "Нити марионетки",
   "name_en": "Puppet Strings",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ Joururi Workshop Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сёки но Ками Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Puppet_Strings"
+  "dropped_by": [
+    "shouki-no-kami-the-prodigal"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

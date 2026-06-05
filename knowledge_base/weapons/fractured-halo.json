@@ -1,48 +1,80 @@
 {
   "id": "fractured-halo",
-  "name": "Fractured Halo",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fractured_Halo",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "After an Elemental Skill or Elemental Burst is used, ATK is increased by for. If the equipping character creates a Shield while this is active, they will gain the Electrifying Edict for: All nearby party members deal more Lunar-Charged DMG.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Blazing Sacrificial Heart's Terror",
-        "Cold-Cracked Shellshard",
-        "Juvenile Fang",
-        "Blazing Sacrificial Heart's Hesitance",
-        "Warm Back-Shell",
-        "Seasoned Fang",
-        "Blazing Sacrificial Heart's Resolve",
-        "Blazing Prismshell",
-        "Tyrant's Fang",
-        "Blazing Sacrificial Heart's Splendor"
-      ]
+  "name_ru": "Расколотый ореол",
+  "name_en": "Fractured Halo",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.144
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.6615
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Очищающий венец",
+  "passive_description_ru": "После активации элементального навыка или взрыва стихии сила атаки увеличивается на 24% на 20 сек. Если экипированный персонаж в это время создаёт щит, то на 20 сек. он получает эффект Электризующего эдикта: урон реакции Лунный заряд всех членов отряда поблизости увеличивается на 40%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "blazing-sacrificial-hearts-terror",
+        "name_ru": "Ужас пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Terror"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "blazing-sacrificial-hearts-hesitance",
+        "name_ru": "Сомнение пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Hesitance"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "blazing-sacrificial-hearts-resolve",
+        "name_ru": "Решимость пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Resolve"
+      },
+      {
+        "id": "blazing-sacrificial-hearts-splendor",
+        "name_ru": "Великолепие пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Splendor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "cold-cracked-shellshard",
+        "name_ru": "Холодный осколок панциря",
+        "name_en": "Cold-Cracked Shellshard"
+      },
+      {
+        "id": "warm-back-shell",
+        "name_ru": "Тёплый панцирь",
+        "name_en": "Warm Back-Shell"
+      },
+      {
+        "id": "blazing-prismshell",
+        "name_ru": "Пылающий призмопанцирь",
+        "name_en": "Blazing Prismshell"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "juvenile-fang",
+        "name_ru": "Молодой клык",
+        "name_en": "Juvenile Fang"
+      },
+      {
+        "id": "seasoned-fang",
+        "name_ru": "Клык взрослого",
+        "name_en": "Seasoned Fang"
+      },
+      {
+        "id": "tyrants-fang",
+        "name_ru": "Клык тирана",
+        "name_en": "Tyrant's Fang"
+      }
+    ]
+  },
+  "coordinates": []
 }

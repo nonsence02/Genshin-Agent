@@ -1,10 +1,17 @@
 {
   "id": "naku-weed",
+  "name_ru": "Трава наку",
   "name_en": "Naku Weed",
-  "type": "Local Specialty (Inazuma)",
-  "days": [],
-  "source": [
-    "Found in areas of high Electro concentration in Inazuma , especially Seirai Island"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Инадзумы",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Татарасуна",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Naku_Weed"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

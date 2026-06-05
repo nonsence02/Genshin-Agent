@@ -1,0 +1,75 @@
+{
+  "id": "razor",
+  "name_en": "Razor",
+  "element": "Electro",
+  "weapon": "Claymore",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "description": "Razor is a playable Electro character in Genshin Impact .\n\nAbandoned as an infant, Razor was taken in by the Wolf of the North Boreas and raised by his wolf pack in Wolvendom . After a chance encounter with Varka , the current Grand Master of the Knights of Favonius , he has slowly started integrating with humans again through the help of his teacher Lisa .",
+  "role_summary": "Razor is a playable Electro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Steel Fang",
+      "description": "Normal Attack Performs up to 4 consecutive strikes. Charged Attack Drains Stamina over time to perform continuous spinning attacks against all nearby opponents. At the end of the sequence, performs a more powerful slash. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Claw and Thunder",
+      "description": "Hunts his prey using the techniques taught to him by his master and his lupical. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Swings the Thunder Wolf Claw, dealing Electro DMG to opponents in front of Razor. Upon striking an opponent, Razor will gain an Electro Sigil, which increases his Energy Recharge rate. Razor can have up to 3 Electro Sigils simultaneously, and gaining a new Electro Sigil refreshes their duration. Hold Gathers Electro energy to unleash a lightning storm over a small AoE , causing massive Electro DMG , and clears all of Razor's Electro Sigils. Each Electro Sigil cleared in this manner will be converted into Energy for Razor."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Lightning Fang",
+      "description": "Summons the Wolf Within, which deals Electro DMG to all nearby opponents. This clears all of Razor's Electro Sigils, which will be converted into Elemental Energy for him. The Wolf Within will fight alongside Razor for the skill's duration. The Wolf Within Strikes alongside Razor's normal attacks , dealing Electro DMG . Raises Razor's ATK SPD and Electro RES . Causes Razor to be immune to DMG inflicted by the Electro-Charged status. Disables Razor's Charged Attacks . Increases Razor's resistance to interruption . These effects end when Razor leaves the battlefield. When Razor leaves the field, a maximum of 10 Energy will be returned to him based off the duration remaining on this skill."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Awakening",
+      "description": "Decreases Claw and Thunder 's CD by 18%. Using Lightning Fang resets the CD of Claw and Thunder."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Hunger",
+      "description": "When Razor's Energy is below 50%, increases Energy Recharge by 30%."
+    },
+    {
+      "type": "Witch's Eve Rite Passive",
+      "name": "Surge of Lightning",
+      "description": "After completing Witch's Homework : Of the Little Wolf Pack , Razor will become a Hexerei character. When the party includes at least 2 Hexerei characters, you will gain the Hexerei: Secret Rite effect, which enhances Hexerei characters. Additionally, Razor's Elemental Burst Lightning Fang is enhanced: The Wolf Within's DMG dealt is increased by 70% of Razor's ATK . Hexerei: Secret Rite While the Wolf Within summoned by Razor's Elemental Burst Lightning Fang is active, if the Electro Sigils from Razor's Elemental Skill Claw and Thunder overflow, the Wolf Within will call down a lightning strike on nearby enemies, dealing AoE Electro DMG equal to 150% of Razor's ATK and restoring 7 Energy to Razor. This effect can be triggered once every 1s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Wolvensprint",
+      "description": "Decreases sprinting Stamina consumption for your own party members by 20%. Not stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Wolf's Instinct",
+      "effect": "Picking up an Elemental Orb or Particle increases Razor's DMG by 10% for 8s."
+    },
+    "c2": {
+      "name": "Suppression",
+      "effect": "Increases CRIT Rate against opponents with less than 30% HP by 10%."
+    },
+    "c3": {
+      "name": "Soul Companion",
+      "effect": "Increases the Level of Lightning Fang by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Bite",
+      "effect": "When casting Claw and Thunder ((‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍)), opponents hit will have their DEF decreased by 15% for 7s."
+    },
+    "c5": {
+      "name": "Sharpened Claws",
+      "effect": "Increases the Level of Claw and Thunder by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Lupus Fulguris",
+      "effect": "Description Hexerei Buff Advanced Properties Preview Every 10s, Razor's sword charges up, causing the next Normal Attack to release lightning that deals 100% of Razor's ATK as Electro DMG . When Razor is not using Lightning Fang , a lightning strike on an opponent will grant Razor an Electro Sigil for Claw and Thunder . Every 10s, Razor's sword charges up, causing the next Normal Attack to release lightning that deals 100% of Razor's ATK as Electro DMG . When Razor is not using Lightning Fang , lightning strikes on an opponent will grant 3 Electro Sigils for his Elemental Skill Claw and Thunder . Additionally, when Razor gains Electro Sigils through his Elemental Skill Claw and Thunder, he will gain 3 Sigils instead. For 15s after consuming Electro Sigils, Razor's CRIT Rate is increased by 10% and CRIT DMG by 50%. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag A..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Razor",
+  "ai_tags": "Main DPS, Элемент аппликатор"
+}

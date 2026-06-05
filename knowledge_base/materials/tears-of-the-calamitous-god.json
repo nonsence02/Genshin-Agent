@@ -1,10 +1,18 @@
 {
   "id": "tears-of-the-calamitous-god",
+  "name_ru": "Слёзы очищения божества бедствий",
   "name_en": "Tears of the Calamitous God",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ End of the Oneiric Euthymia Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Защитник вечности Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Tears_of_the_Calamitous_God"
+  "dropped_by": [
+    "magatsu-mitake-narukami-no-mikoto"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

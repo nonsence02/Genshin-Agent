@@ -1,0 +1,19 @@
+{
+  "id": "domain-of-forgery-robotic-ruse-iv",
+  "name_ru": "Воля: Робо-уловка IV",
+  "name_en": "Domain of Forgery: Robotic Ruse IV",
+  "type": "Возвышение оружия",
+  "region": "Фонтейн",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "echo-of-an-ancient-chord",
+    "movement-of-an-ancient-chord",
+    "chapter-of-an-ancient-chord",
+    "fragment-of-an-ancient-chord"
+  ],
+  "coordinates": []
+}

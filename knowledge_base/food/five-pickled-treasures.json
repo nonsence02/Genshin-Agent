@@ -1,0 +1,27 @@
+{
+  "id": "five-pickled-treasures",
+  "name_ru": "Пять драгоценных солений",
+  "name_en": "Five Pickled Treasures",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 100 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "radish",
+      "count": 2
+    },
+    {
+      "material_id": "carrot",
+      "count": 2
+    },
+    {
+      "material_id": "lavender-melon",
+      "count": 2
+    },
+    {
+      "material_id": "seagrass",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

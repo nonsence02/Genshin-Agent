@@ -1,48 +1,80 @@
 {
   "id": "earth-shaker",
-  "name": "Earth Shaker",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Earth_Shaker",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "After a party member triggers a Pyro -related reaction, the equipping character's Elemental Skill DMG is increased by for. This can be triggered even when the triggering party member is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Blazing Sacrificial Heart's Terror",
-        "Ignited Stone",
-        "Sentry's Wooden Whistle",
-        "Blazing Sacrificial Heart's Hesitance",
-        "Ignited Seed of Life",
-        "Warrior's Metal Whistle",
-        "Blazing Sacrificial Heart's Resolve",
-        "Ignited Seeing Eye",
-        "Saurian-Crowned Warrior's Golden Whistle",
-        "Blazing Sacrificial Heart's Splendor"
-      ]
+  "name_ru": "Сотрясающий землю",
+  "name_en": "Earth Shaker",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Клятва Капах-Ньан",
+  "passive_description_ru": "После того как член отряда активирует реакцию, связанную с Пиро, урон элементального навыка экипированного персонажа повышается на 16% на 8 сек. Этот эффект срабатывает, даже когда персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "blazing-sacrificial-hearts-terror",
+        "name_ru": "Ужас пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Terror"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "blazing-sacrificial-hearts-hesitance",
+        "name_ru": "Сомнение пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Hesitance"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "blazing-sacrificial-hearts-resolve",
+        "name_ru": "Решимость пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Resolve"
+      },
+      {
+        "id": "blazing-sacrificial-hearts-splendor",
+        "name_ru": "Великолепие пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Splendor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "ignited-stone",
+        "name_ru": "Пламенный камень",
+        "name_en": "Ignited Stone"
+      },
+      {
+        "id": "ignited-seed-of-life",
+        "name_ru": "Пламенное семя жизни",
+        "name_en": "Ignited Seed of Life"
+      },
+      {
+        "id": "ignited-seeing-eye",
+        "name_ru": "Пламенное око",
+        "name_en": "Ignited Seeing Eye"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "sentrys-wooden-whistle",
+        "name_ru": "Деревянный свисток дозорного",
+        "name_en": "Sentry's Wooden Whistle"
+      },
+      {
+        "id": "warriors-metal-whistle",
+        "name_ru": "Металлический свисток воина",
+        "name_en": "Warrior's Metal Whistle"
+      },
+      {
+        "id": "saurian-crowned-warriors-golden-whistle",
+        "name_ru": "Золотой свисток коронованного заврианами воина",
+        "name_en": "Saurian-Crowned Warrior's Golden Whistle"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "cherubic-sea-hare",
+  "name_ru": "Премилый морской заяц",
+  "name_en": "Cherubic Sea Hare",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "xenochromatic-crystal",
+    "transoceanic-chunk",
+    "transoceanic-pearl"
+  ],
+  "coordinates": []
+}

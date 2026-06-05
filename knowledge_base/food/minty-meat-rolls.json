@@ -1,0 +1,23 @@
+{
+  "id": "minty-meat-rolls",
+  "name_ru": "Мясные рулетики с мятой",
+  "name_en": "Minty Meat Rolls",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время полёта и спринта на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "mint",
+      "count": 4
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "jueyun-chili",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-sublime-turning-ii",
+  "name_ru": "Подземелье мастерства: Неожиданный поворот II",
+  "name_en": "Domain of Mastery: Sublime Turning II",
+  "type": "Повышение талантов",
+  "region": "Натлан",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-contention",
+    "teachings-of-contention"
+  ],
+  "coordinates": []
+}

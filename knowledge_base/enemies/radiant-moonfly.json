@@ -1,0 +1,20 @@
+{
+  "id": "radiant-moonfly",
+  "name_ru": "Лучезарный мотылёк-призрак",
+  "name_en": "Radiant Moonfly",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "lightbearing-scale-feather",
+    "nagadus-emerald-gemstone",
+    "nagadus-emerald-chunk",
+    "nagadus-emerald-fragment",
+    "nagadus-emerald-sliver",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

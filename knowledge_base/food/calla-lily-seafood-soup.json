@@ -1,0 +1,23 @@
+{
+  "id": "calla-lily-seafood-soup",
+  "name_ru": "Суп с морепродуктами",
+  "name_en": "Calla Lily Seafood Soup",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "crab",
+      "count": 4
+    },
+    {
+      "material_id": "calla-lily",
+      "count": 1
+    },
+    {
+      "material_id": "mint",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

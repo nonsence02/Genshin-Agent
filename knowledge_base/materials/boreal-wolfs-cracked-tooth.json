@@ -1,0 +1,23 @@
+{
+  "id": "boreal-wolfs-cracked-tooth",
+  "name_ru": "Треснувший зуб арктического волка",
+  "name_en": "Boreal Wolf's Cracked Tooth",
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "source_ru": [
+    "Можно создать: {0}"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-submerged-valley-ii",
+    "domain-of-forgery-submerged-valley-iii",
+    "domain-of-forgery-submerged-valley-iv"
+  ],
+  "source_domain": "domain-of-forgery-submerged-valley-ii",
+  "coordinates": []
+}

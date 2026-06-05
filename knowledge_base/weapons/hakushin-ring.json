@@ -1,48 +1,80 @@
 {
   "id": "hakushin-ring",
-  "name": "Hakushin Ring",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Hakushin_Ring",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "After the character equipped with this weapon triggers an Electro elemental reaction, nearby party members of an Elemental Type involved in the elemental reaction receive a Elemental DMG Bonus for their element, lasting. Elemental Bonuses gained in this way cannot be stacked.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Coral Branch of a Distant Sea",
-        "Dismal Prism",
-        "Divining Scroll",
-        "Jeweled Branch of a Distant Sea",
-        "Crystal Prism",
-        "Sealed Scroll",
-        "Jade Branch of a Distant Sea",
-        "Polarizing Prism",
-        "Forbidden Curse Scroll",
-        "Golden Branch of a Distant Sea"
-      ]
+  "name_ru": "Кольцо Хакусин",
+  "name_en": "Hakushin Ring",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.0667
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3063
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Дворец сакуры",
+  "passive_description_ru": "Когда персонаж, экипированный этим оружием, вызывает реакцию, связанную с элементом Электро, все находящиеся рядом члены отряда, чей элемент соответствует этой реакции, получают 10% бонус урона к своему элементу на 6 сек. Элементальные бонусы урона, полученные таким образом, не суммируются.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "coral-branch-of-a-distant-sea",
+        "name_ru": "Коралловая ветвь внешних морей",
+        "name_en": "Coral Branch of a Distant Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "jeweled-branch-of-a-distant-sea",
+        "name_ru": "Драгоценная ветвь внешних морей",
+        "name_en": "Jeweled Branch of a Distant Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "jade-branch-of-a-distant-sea",
+        "name_ru": "Нефритовая ветвь внешних морей",
+        "name_en": "Jade Branch of a Distant Sea"
+      },
+      {
+        "id": "golden-branch-of-a-distant-sea",
+        "name_ru": "Золотая ветвь внешних морей",
+        "name_en": "Golden Branch of a Distant Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dismal-prism",
+        "name_ru": "Тёмная призма",
+        "name_en": "Dismal Prism"
+      },
+      {
+        "id": "crystal-prism",
+        "name_ru": "Кристальная призма",
+        "name_en": "Crystal Prism"
+      },
+      {
+        "id": "polarizing-prism",
+        "name_ru": "Поляризационная призма",
+        "name_en": "Polarizing Prism"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

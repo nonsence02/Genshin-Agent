@@ -1,48 +1,80 @@
 {
   "id": "starcallers-watch",
-  "name": "Starcaller's Watch",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Starcaller%27s_Watch",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Increases Elemental Mastery by. Gain the \"Mirror of Night\" within after the equipping character creates a shield: The current active party member deals increased DMG to nearby opponents. You can gain the \"Mirror of Night\" once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Delirious Decadence of the Sacred Lord",
-        "Shard of a Shattered Will",
-        "Sentry's Wooden Whistle",
-        "Delirious Desolation of the Sacred Lord",
-        "Locus of a Clear Will",
-        "Warrior's Metal Whistle",
-        "Delirious Demeanor of the Sacred Lord",
-        "Sigil of a Striding Will",
-        "Saurian-Crowned Warrior's Golden Whistle",
-        "Delirious Divinity of the Sacred Lord"
-      ]
+  "name_ru": "Бдение взывающего к звёздам",
+  "name_en": "Starcaller's Watch",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 57.6
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 264.6144
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Подношение ветру и солнцу",
+  "passive_description_ru": "Повышает мастерство стихий на 100 ед. После того как экипированный персонаж создаёт щит, на 15 сек. он получает эффект Зеркала ночи: урон активного персонажа вашего отряда по врагам поблизости повышается на 28%. Эффект Зеркала ночи можно получить один раз в 14 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "delirious-decadence-of-the-sacred-lord",
+        "name_ru": "Безумный декаданс Святого Мудреца",
+        "name_en": "Delirious Decadence of the Sacred Lord"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "delirious-desolation-of-the-sacred-lord",
+        "name_ru": "Безумное опустошение Святого Мудреца",
+        "name_en": "Delirious Desolation of the Sacred Lord"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "delirious-demeanor-of-the-sacred-lord",
+        "name_ru": "Безумный облик Святого Мудреца",
+        "name_en": "Delirious Demeanor of the Sacred Lord"
+      },
+      {
+        "id": "delirious-divinity-of-the-sacred-lord",
+        "name_ru": "Безумная духовность Святого Мудреца",
+        "name_en": "Delirious Divinity of the Sacred Lord"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "shard-of-a-shattered-will",
+        "name_ru": "Осколок разбитой воли",
+        "name_en": "Shard of a Shattered Will"
+      },
+      {
+        "id": "locus-of-a-clear-will",
+        "name_ru": "Образ ясной воли",
+        "name_en": "Locus of a Clear Will"
+      },
+      {
+        "id": "sigil-of-a-striding-will",
+        "name_ru": "Талисман странствующей воли",
+        "name_en": "Sigil of a Striding Will"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "sentrys-wooden-whistle",
+        "name_ru": "Деревянный свисток дозорного",
+        "name_en": "Sentry's Wooden Whistle"
+      },
+      {
+        "id": "warriors-metal-whistle",
+        "name_ru": "Металлический свисток воина",
+        "name_en": "Warrior's Metal Whistle"
+      },
+      {
+        "id": "saurian-crowned-warriors-golden-whistle",
+        "name_ru": "Золотой свисток коронованного заврианами воина",
+        "name_en": "Saurian-Crowned Warrior's Golden Whistle"
+      }
+    ]
+  },
+  "coordinates": []
 }

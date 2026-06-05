@@ -1,94 +1,81 @@
 {
   "id": "qiqi",
-  "name": "Qiqi",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Qiqi",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Cryo",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Using the Icevein Talisman, Qiqi brings forth the Herald of Frost, dealing Cryo DMG to surrounding opponents. Herald of Frost On hit, Qiqi's Normal and Charged Attacks regenerate HP for your own party members and nearby teammates. Healing scales based on Qiqi's ATK. Periodically regenerates your active character's HP. Follows the character around, dealing Cryo DMG to opponents in their path. This skill does not generate any Elemental Particles. After its initial hit, Herald of Frost will deal damage times over its duration over attacks for a total of hits. One swipe will occur after the initial hit, while in the consequent attacks it performs swipes each. The Herald of Frost deals damage...",
-    "elemental_burst": "Qiqi releases the adeptus power sealed within her body, marking nearby opponents with a Fortune-Preserving Talisman that deals Cryo DMG. Fortune-Preserving Talisman When opponents affected by this Talisman take DMG, the character that dealt this DMG regenerates HP. Healing from this talent can only occur once every second. Healing will occur as long as the attack hits regardless if the attack is blocked or does not deal any damage. Healing can only affect the active character and requires them to hit the enemy themselves. Hits landed by off-field characters will not trigger any healing effects. The talisman is applied before the damage is dealt. Therefore, Qiqi will receive healing if the..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Divining Scroll",
-        "Sealed Scroll",
-        "Forbidden Curse Scroll"
-      ],
-      "special": [
-        "Violetgrass",
-        "Hoarfrost Core"
-      ]
+  "name_ru": "Ци Ци",
+  "name_en": "Qiqi",
+  "element": "Cryo",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 962.8532,
+      "atk": 22.344,
+      "def": 71.796
     },
-    "talents": {
-      "books": [
-        "Teachings of Prosperity",
-        "Guide to Prosperity",
-        "Philosophies of Prosperity"
-      ],
-      "mob_drops": [
-        "Divining Scroll",
-        "Sealed Scroll",
-        "Forbidden Curse Scroll"
-      ],
-      "weekly_boss": [
-        "Tail of Boreas"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12368.3699,
+      "atk": 287.0141,
+      "def": 922.2652
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Облачный меч",
+      "description_ru": "Обычная атака:\nДо пяти быстрых ударов мечом.\n\nЗаряженная атака:\nДва быстрых взмаха мечом, на которые тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Искусство Адепта: Вестник стужи",
+      "description_ru": "Ци Ци использует талисман Ледяной крови для того, чтобы призвать Вестника стужи, и наносит Крио урон окружающим врагам.\n\nВестник стужи:\n· Попадания Ци Ци обычной или заряженной атакой восстанавливают определённое количество HP членам отряда и ближайшим союзникам. Количество HP зависит от силы атаки Ци Ци;\n· Регулярно восстанавливает HP вашему персонажу;\n· Следует за активным персонажем и наносит Крио урон врагам, которых касается."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Искусство Адепта: Хранитель Фортуны",
+      "description_ru": "Ци Ци выпускает на волю запечатанную в её теле мощь Адептов, помечая ближайших врагов талисманом Фортуны, который наносит им Крио урон.\n\nТалисман Фортуны\nПомеченные талисманом Фортуны враги при получении урона восстанавливают HP нанёсшего урон персонажа."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Долголетие",
+      "description_ru": "Когда персонаж, находящийся под эффектами навыка Искусство Адепта: Вестник стужи, совершает элементальную реакцию, его бонус получаемого лечения увеличивается на 20% в течение 8 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Созерцание тайн волшебства",
+      "description_ru": "При попадании обычной и заряженной атакой у Ци Ци есть 50% шанс применить на них талисман Фортуны на 6 сек. Может возникнуть раз в 30 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Пыльные воспоминания",
+      "description_ru": "Отмечает диковинки Ли Юэ на мини-карте."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Зима близко",
+      "description_ru": "Когда Вестник стужи попадает по цели, помеченной талисманом Фортуны, Ци Ци восстанавливает 2 ед. энергии."
+    },
+    {
+      "name_ru": "Мороз до костей",
+      "description_ru": "Увеличивает урон обычной и заряженной атаки Ци Ци по противникам с эффектом Крио на 15%."
+    },
+    {
+      "name_ru": "Хвала небесам",
+      "description_ru": "Увеличивает уровень навыка Искусство Адепта: Хранитель Фортуны на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Божественное подавление",
+      "description_ru": "Уменьшает силу атаки врагов, помеченных талисманом Фортуны, на 20%."
+    },
+    {
+      "name_ru": "Цветение красного лотоса",
+      "description_ru": "Увеличивает уровень навыка Искусство Адепта: Вестник стужи на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Возвращение к жизни",
+      "description_ru": "Использование навыка Искусство Адепта: Хранитель Фортуны воскрешает ближайших павших персонажей вашего отряда и восстанавливает им 50% HP.\nМожет возникнуть раз в 15 мин."
+    }
+  ],
+  "coordinates": []
 }

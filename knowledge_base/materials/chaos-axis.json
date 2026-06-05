@@ -1,10 +1,22 @@
 {
   "id": "chaos-axis",
+  "name_ru": "Ось хаоса",
   "name_en": "Chaos Axis",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Ruin Sentinels"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Часовые руин Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Chaos_Axis"
+  "dropped_by": [
+    "ruin-cruiser",
+    "ruin-defender",
+    "ruin-destroyer",
+    "ruin-scout"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

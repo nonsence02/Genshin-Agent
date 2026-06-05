@@ -1,48 +1,80 @@
 {
   "id": "the-alley-flash",
-  "name": "The Alley Flash",
-  "source_url": "https://genshin-impact.fandom.com/wiki/The_Alley_Flash",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "45 - 620",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Increases DMG dealt by the character equipping this weapon by. Taking DMG disables this for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Tile of Decarabian's Tower",
-        "Heavy Horn",
-        "Divining Scroll",
-        "Debris of Decarabian's City",
-        "Black Bronze Horn",
-        "Sealed Scroll",
-        "Fragment of Decarabian's Epic",
-        "Black Crystal Horn",
-        "Forbidden Curse Scroll",
-        "Scattered Piece of Decarabian's Dream"
-      ]
+  "name_ru": "Вспышка во тьме",
+  "name_en": "The Alley Flash",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.0687,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 12
+    },
+    "level_90": {
+      "base_atk": 620.033,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 55.1279
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Странствующий рыцарь",
+  "passive_description_ru": "Увеличивает урон персонажа на 12%. После получения урона эффект пропадает на 5 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "tile-of-decarabians-tower",
+        "name_ru": "Плитка башни Декарабиана",
+        "name_en": "Tile of Decarabian's Tower"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "debris-of-decarabians-city",
+        "name_ru": "Обломок стены Декарабиана",
+        "name_en": "Debris of Decarabian's City"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "fragment-of-decarabians-epic",
+        "name_ru": "Фрагмент эпоса Декарабиана",
+        "name_en": "Fragment of Decarabian's Epic"
+      },
+      {
+        "id": "scattered-piece-of-decarabians-dream",
+        "name_ru": "Осколок мечты Декарабиана",
+        "name_en": "Scattered Piece of Decarabian's Dream"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "heavy-horn",
+        "name_ru": "Тяжёлый рог",
+        "name_en": "Heavy Horn"
+      },
+      {
+        "id": "black-bronze-horn",
+        "name_ru": "Чёрный бронзовый рог",
+        "name_en": "Black Bronze Horn"
+      },
+      {
+        "id": "black-crystal-horn",
+        "name_ru": "Чёрный кристаллический рог",
+        "name_en": "Black Crystal Horn"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

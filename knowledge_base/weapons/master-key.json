@@ -1,48 +1,80 @@
 {
   "id": "master-key",
-  "name": "Master Key",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Master_Key",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Upon causing an Elemental Reaction, increases Elemental Mastery by for. Moonsign: Ascendant Gleam: Elemental Mastery from this is further increased by. This can be triggered even if the equipping character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Sundered Glory of the Far-North Scions",
-        "Lightless Bone",
-        "Broken Drive Shaft",
-        "Unyielding Delusion of the Far-North Scions",
-        "Glowing Remains",
-        "Reinforced Drive Shaft",
-        "Oblation of the Far-North Scions",
-        "Radiant Exoskeleton",
-        "Precision Drive Shaft",
-        "Aureate Radiance of the Far-North Scions"
-      ]
+  "name_ru": "Мастер-ключ",
+  "name_en": "Master Key",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1333
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.6125
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Мгновенное решение",
+  "passive_description_ru": "На 12 сек. после активации элементальной реакции мастерство стихий повышается на 60 ед. Лунное знамение - Высшее сияние: мастерство стихий от данного эффекта дополнительно повышается на 60 ед. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "sundered-glory-of-the-far-north-scions",
+        "name_ru": "Растоптанная слава последователей крайнего севера",
+        "name_en": "Sundered Glory of the Far-North Scions"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "unyielding-delusion-of-the-far-north-scions",
+        "name_ru": "Упрямое заблуждение последователей крайнего севера",
+        "name_en": "Unyielding Delusion of the Far-North Scions"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "oblation-of-the-far-north-scions",
+        "name_ru": "Подношение последователей крайнего севера",
+        "name_en": "Oblation of the Far-North Scions"
+      },
+      {
+        "id": "aureate-radiance-of-the-far-north-scions",
+        "name_ru": "Златое сияние последователей крайнего севера",
+        "name_en": "Aureate Radiance of the Far-North Scions"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "lightless-bone",
+        "name_ru": "Потускневшая кость",
+        "name_en": "Lightless Bone"
+      },
+      {
+        "id": "glowing-remains",
+        "name_ru": "Светящиеся останки",
+        "name_en": "Glowing Remains"
+      },
+      {
+        "id": "radiant-exoskeleton",
+        "name_ru": "Сияющая кость",
+        "name_en": "Radiant Exoskeleton"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "broken-drive-shaft",
+        "name_ru": "Сломанный вал",
+        "name_en": "Broken Drive Shaft"
+      },
+      {
+        "id": "reinforced-drive-shaft",
+        "name_ru": "Усиленный вал",
+        "name_en": "Reinforced Drive Shaft"
+      },
+      {
+        "id": "precision-drive-shaft",
+        "name_ru": "Высокоточный вал",
+        "name_en": "Precision Drive Shaft"
+      }
+    ]
+  },
+  "coordinates": []
 }

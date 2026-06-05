@@ -1,10 +1,17 @@
 {
   "id": "crystalline-bloom",
+  "name_ru": "Цветение кристалла",
   "name_en": "Crystalline Bloom",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Cryo Hypostasis"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Крио гипостазисы Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Crystalline_Bloom"
+  "dropped_by": [
+    "cryo-hypostasis"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,94 +1,81 @@
 {
   "id": "candace",
-  "name": "Candace",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Candace",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Hydro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Candace's fighting style is capable of warding off an entire tide of foes. Tap Rushes forward with her shield, dealing Hydro DMG to opponents in front of her. Hold Raises her shield to block incoming attacks from nearby opponents, forming a barrier that absorbs DMG based on her Max HP and absorbs Hydro DMG",
-    "elemental_burst": "Raising her weapon on high, Candace calls upon a divine blessing that deals AoE Hydro DMG based on her Max HP and continuously confers the Prayer of the Crimson Crown on your active character. Prayer of the Crimson Crown This effect has the following properties: Characters deal increased Elemental DMG with their Normal Attacks. Whenever a character takes the field, they will unleash a rippling wave of water that deals Hydro DMG to nearby opponents. There is a limited number of waves that can be triggered in the duration of this skill. Sword, Claymore, and Polearm -wielding characters under this effect will obtain a Hydro Infusion. Candace 's infusion can override Bennett and Diluc 's..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Varunada Lazurite Sliver",
-        "Varunada Lazurite Fragment",
-        "Varunada Lazurite Chunk",
-        "Varunada Lazurite Gemstone"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "special": [
-        "Henna Berry",
-        "Light Guiding Tetrahedron"
-      ]
+  "name_ru": "Кандакия",
+  "name_en": "Candace",
+  "element": "Hydro",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 911.791,
+      "atk": 17.808,
+      "def": 57.225
     },
-    "talents": {
-      "books": [
-        "Teachings of Admonition",
-        "Guide to Admonition",
-        "Philosophies of Admonition"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "weekly_boss": [
-        "Tears of the Calamitous God"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10874.9149,
+      "atk": 212.3972,
+      "def": 682.5215
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Сверкающее копьё - Оборона",
+      "description_ru": "Обычная атака:\nДо четырёх ударов копьём.\n\nЗаряженная атака:\nВыпад, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Священный обряд: Обитель цапли",
+      "description_ru": "Боевой стиль Кандакии позволяет ей противостоять целой волне врагов.\n\nБыстрое нажатие\nСовершает рывок со щитом вперёд, нанося Гидро урон.\n\nДолгое нажатие\nПоднимает щит, блокируя атаки врагов поблизости, и создаёт барьер. Поглощаемый им урон зависит от максимального HP Кандакии. Барьер поглощает Гидро урон с 250% эффективностью. С активацией элементального навыка действие барьера завершится.\nЕсли завершить зарядку, удерживая кнопку навыка некоторое время, то, когда кнопка навыка будет отпущена, действие навыка истечёт или барьер будет разрушен, Кандакия выполнит удар в прыжке, который наносит Гидро урон противникам впереди."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Священный обряд: Прилив трясогузки",
+      "description_ru": "Подняв оружие над головой, Кандакия призывает благословение свыше, которое наносит Гидро урон по площади пропорционально её макс. HP и предоставляет вашему активному персонажу Молитву алой короны.\n\nМолитва алой короны\nОбладает следующими свойствами:\n· При нанесении элементального урона обычной атакой персонажи наносят повышенный урон.\n· Персонаж, становясь активным, выпускает водяной вал, который наносит Гидро урон врагам поблизости. Количество волн, которые можно вызвать во время действия навыка, ограничено.\n· Персонаж, владеющий одноручным, двуручным или древковым оружием, во время действия этого эффекта получает инфузию Гидро."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Защита скрещённых стрел",
+      "description_ru": "Если во время зарядки Священного обряда: Обитель цапли Кандакию атакуют, навык заряжается мгновенно."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Песчаный свод небес",
+      "description_ru": "Элементальный урон, наносимый обычной атакой персонажей под воздействием Молитвы алой короны Священного обряда: Прилив трясогузки, увеличивается на 0,5% за каждые 1000 ед. макс. HP Кандакии."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "К первому лучу зари",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время карабканья на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Возвращение наследницы алых песков",
+      "description_ru": "Длительность Молитвы алой короны Священного обряда: Прилив трясогузки увеличивается на 3 сек."
+    },
+    {
+      "name_ru": "Пронзающее луну сияние",
+      "description_ru": "Попадание Священного обряда: Обитель цапли по врагу увеличивает макс. HP Кандакии на 20% на 15 сек."
+    },
+    {
+      "name_ru": "Подношение охотницы",
+      "description_ru": "Увеличивает уровень навыка Священный обряд: Прилив трясогузки на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Клятва часового",
+      "description_ru": "Уменьшает время отката заряженного режима Священного обряда: Обитель цапли, делая его равным времени отката незаряженного варианта."
+    },
+    {
+      "name_ru": "Разноцветные глаза",
+      "description_ru": "Увеличивает уровень навыка Священный обряд: Обитель цапли на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Затопляющий прилив",
+      "description_ru": "Обычные атаки персонажей под воздействием Молитвы алой короны Священного обряда: Прилив трясогузки (кроме самой Кандакии), наносящие элементальный урон, вызывают Водяной вал, который наносит Гидро урон по площади, равный 15% от макс. HP Кандакии.\nЭффект может возникнуть не чаще 1 раза в 2,3 сек. Урон водяных валов считается уроном взрыва стихии."
+    }
+  ],
+  "coordinates": []
 }

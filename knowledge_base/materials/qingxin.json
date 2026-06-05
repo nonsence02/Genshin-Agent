@@ -1,10 +1,18 @@
 {
   "id": "qingxin",
+  "name_ru": "Цветок цинсинь",
   "name_en": "Qingxin",
-  "type": "Local Specialty (Liyue)",
-  "days": [],
-  "source": [
-    "Found in the heights of Liyue , especially Minlin and Wuwang Hill"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Ли Юэ",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Заоблачный предел",
+    "Каменный лес Гуюнь",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Qingxin"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

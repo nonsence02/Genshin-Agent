@@ -1,0 +1,27 @@
+{
+  "id": "cured-pork-dry-hotpot",
+  "name_ru": "Ветчина на сковороде",
+  "name_en": "Cured Pork Dry Hotpot",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "ham",
+      "count": 2
+    },
+    {
+      "material_id": "matsutake",
+      "count": 2
+    },
+    {
+      "material_id": "snapdragon",
+      "count": 1
+    },
+    {
+      "material_id": "pepper",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

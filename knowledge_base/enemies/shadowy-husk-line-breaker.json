@@ -1,0 +1,13 @@
+{
+  "id": "shadowy-husk-line-breaker",
+  "name_ru": "Чёрный доспех: Штурмовик",
+  "name_en": "Shadowy Husk: Line Breaker",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "deathly-statuette",
+    "dark-statuette",
+    "gloomy-statuette"
+  ],
+  "coordinates": []
+}

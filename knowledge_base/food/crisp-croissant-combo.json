@@ -1,0 +1,27 @@
+{
+  "id": "crisp-croissant-combo",
+  "name_ru": "Комбо с хрустящим круассаном",
+  "name_en": "Crisp Croissant Combo",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время спринта и карабканья на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "butter",
+      "count": 2
+    },
+    {
+      "material_id": "coffee-beans",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "spiritspeaker-warrior-psychokinetic",
+  "name_ru": "Говорящий с духами воин: Управляющий разумом",
+  "name_en": "Spiritspeaker Warrior: Psychokinetic",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

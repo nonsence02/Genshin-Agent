@@ -1,0 +1,27 @@
+{
+  "id": "gilded-tajine",
+  "name_ru": "Таджин Пустынника",
+  "name_en": "Gilded Tajine",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает макс. HP всех членов отряда на 25% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "padisarah",
+      "count": 2
+    },
+    {
+      "material_id": "spice",
+      "count": 1
+    },
+    {
+      "material_id": "onion",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

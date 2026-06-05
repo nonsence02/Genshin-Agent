@@ -1,0 +1,10 @@
+{
+  "id": "maiden-beloved",
+  "name_ru": "Возлюбленная юная дева",
+  "name_en": "Maiden Beloved",
+  "max_rarity": 5,
+  "bonus_2pc": "Увеличивает эффективность лечения на 15%.",
+  "bonus_4pc": "Увеличивает получаемое лечение всех членов отряда на 20% в течение 10 сек. после использования элементального навыка или взрыва стихии.",
+  "source_domain": "domain-of-blessing-dance-of-steel-ii",
+  "coordinates": []
+}

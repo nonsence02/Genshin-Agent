@@ -1,0 +1,23 @@
+{
+  "id": "jewelry-soup",
+  "name_ru": "Суп из украшений",
+  "name_en": "Jewelry Soup",
+  "rarity": 2,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 126 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "snapdragon",
+      "count": 2
+    },
+    {
+      "material_id": "tofu",
+      "count": 2
+    },
+    {
+      "material_id": "lotus-head",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

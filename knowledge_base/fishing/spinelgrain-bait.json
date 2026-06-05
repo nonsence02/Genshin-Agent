@@ -1,0 +1,17 @@
+{
+  "id": "spinelgrain-bait",
+  "kind": "bait",
+  "name_ru": "Наживка из корундина",
+  "name_en": "Spinelgrain Bait",
+  "recipe": [
+    {
+      "material_id": "spinel-fruit",
+      "count": 1
+    },
+    {
+      "material_id": "grainfruit",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

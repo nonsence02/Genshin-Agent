@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-forgery-city-of-reflections-ii",
+  "name_ru": "Воля: Город отражений II",
+  "name_en": "Domain of Forgery: City of Reflections II",
+  "type": "Возвышение оружия",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "debris-of-decarabians-city",
+    "tile-of-decarabians-tower"
+  ],
+  "coordinates": []
+}

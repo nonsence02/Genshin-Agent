@@ -1,48 +1,80 @@
 {
   "id": "ring-of-yaxche",
-  "name": "Ring of Yaxche",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ring_of_Yaxche",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "HP"
-  },
-  "passive": "Using an Elemental Skill grants the Jade-Forged Crown: Every Max HP will increase the Normal Attack DMG dealt by the equipping character by for. Normal Attack DMG can be increased this way by a maximum of.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Delirious Decadence of the Sacred Lord",
-        "Shard of a Shattered Will",
-        "Damaged Mask",
-        "Delirious Desolation of the Sacred Lord",
-        "Locus of a Clear Will",
-        "Stained Mask",
-        "Delirious Demeanor of the Sacred Lord",
-        "Sigil of a Striding Will",
-        "Ominous Mask",
-        "Delirious Divinity of the Sacred Lord"
-      ]
+  "name_ru": "Кольцо Яшче",
+  "name_en": "Ring of Yaxche",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Эхо земли изобилия",
+  "passive_description_ru": "Использование элементального навыка наделяет эффектом Нефритовой короны: наносимый урон обычной атаки повышается на 0,6% за каждую 1000 ед. макс. HP на 10 сек. Урон обычной атаки таким образом можно повысить максимум на 16%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "delirious-decadence-of-the-sacred-lord",
+        "name_ru": "Безумный декаданс Святого Мудреца",
+        "name_en": "Delirious Decadence of the Sacred Lord"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "delirious-desolation-of-the-sacred-lord",
+        "name_ru": "Безумное опустошение Святого Мудреца",
+        "name_en": "Delirious Desolation of the Sacred Lord"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "delirious-demeanor-of-the-sacred-lord",
+        "name_ru": "Безумный облик Святого Мудреца",
+        "name_en": "Delirious Demeanor of the Sacred Lord"
+      },
+      {
+        "id": "delirious-divinity-of-the-sacred-lord",
+        "name_ru": "Безумная духовность Святого Мудреца",
+        "name_en": "Delirious Divinity of the Sacred Lord"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "shard-of-a-shattered-will",
+        "name_ru": "Осколок разбитой воли",
+        "name_en": "Shard of a Shattered Will"
+      },
+      {
+        "id": "locus-of-a-clear-will",
+        "name_ru": "Образ ясной воли",
+        "name_en": "Locus of a Clear Will"
+      },
+      {
+        "id": "sigil-of-a-striding-will",
+        "name_ru": "Талисман странствующей воли",
+        "name_en": "Sigil of a Striding Will"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "damaged-mask",
+        "name_ru": "Разбитая маска",
+        "name_en": "Damaged Mask"
+      },
+      {
+        "id": "stained-mask",
+        "name_ru": "Грязная маска",
+        "name_en": "Stained Mask"
+      },
+      {
+        "id": "ominous-mask",
+        "name_ru": "Зловещая маска",
+        "name_en": "Ominous Mask"
+      }
+    ]
+  },
+  "coordinates": []
 }

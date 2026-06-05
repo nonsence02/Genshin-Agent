@@ -1,48 +1,80 @@
 {
   "id": "rainbow-serpents-rain-bow",
-  "name": "Rainbow Serpent's Rain Bow",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Rainbow_Serpent%27s_Rain_Bow",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "ATK is increased by for after the equipping character's attacks hit an opponent while the equipping character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Night-Wind's Mystic Consideration",
-        "Refractive Bud",
-        "Tattered Warrant",
-        "Night-Wind's Mystic Premonition",
-        "Bewildering Broadleaf",
-        "Immaculate Warrant",
-        "Night-Wind's Mystic Augury",
-        "Illusory Leafcoil",
-        "Frost-Etched Warrant",
-        "Night-Wind's Mystic Revelation"
-      ]
+  "name_ru": "Струны дождя радужного змея",
+  "name_en": "Rainbow Serpent's Rain Bow",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.4594
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Шёпот звёзд за священным престолом",
+  "passive_description_ru": "Когда экипированный персонаж не находится на поле боя, на 8 сек. после попадания его атак по противнику сила атаки повышается на 28%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "night-winds-mystic-consideration",
+        "name_ru": "Загадочные размышления ночного ветра",
+        "name_en": "Night-Wind's Mystic Consideration"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "night-winds-mystic-premonition",
+        "name_ru": "Загадочные предчувствия ночного ветра",
+        "name_en": "Night-Wind's Mystic Premonition"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "night-winds-mystic-augury",
+        "name_ru": "Загадочные предзнаменования ночного ветра",
+        "name_en": "Night-Wind's Mystic Augury"
+      },
+      {
+        "id": "night-winds-mystic-revelation",
+        "name_ru": "Загадочные откровения ночного ветра",
+        "name_en": "Night-Wind's Mystic Revelation"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "refractive-bud",
+        "name_ru": "Преломляющий бутон",
+        "name_en": "Refractive Bud"
+      },
+      {
+        "id": "bewildering-broadleaf",
+        "name_ru": "Ошеломляющий широколист",
+        "name_en": "Bewildering Broadleaf"
+      },
+      {
+        "id": "illusory-leafcoil",
+        "name_ru": "Иллюзорная листовая спираль",
+        "name_en": "Illusory Leafcoil"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "tattered-warrant",
+        "name_ru": "Потрёпанный мандат",
+        "name_en": "Tattered Warrant"
+      },
+      {
+        "id": "immaculate-warrant",
+        "name_ru": "Безупречный мандат",
+        "name_en": "Immaculate Warrant"
+      },
+      {
+        "id": "frost-etched-warrant",
+        "name_ru": "Заиндевевший мандат",
+        "name_en": "Frost-Etched Warrant"
+      }
+    ]
+  },
+  "coordinates": []
 }

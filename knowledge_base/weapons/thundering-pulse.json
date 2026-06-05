@@ -1,48 +1,80 @@
 {
   "id": "thundering-pulse",
-  "name": "Thundering Pulse",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Thundering_Pulse",
-  "profile": {
-    "type": "Bow",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "Increases ATK by and grants the might of the Thunder Emblem. At stack levels, the Thunder Emblem increases Normal Attack DMG by. The character will obtain stack of Thunder Emblem in each of the following scenarios: Normal Attack deals DMG, casting Elemental Skill; Energy is less than (stack disappears when Energy is full). Each stack's duration is calculated independently.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Narukami's Wisdom",
-        "Dismal Prism",
-        "Firm Arrowhead",
-        "Narukami's Joy",
-        "Crystal Prism",
-        "Sharp Arrowhead",
-        "Narukami's Affection",
-        "Polarizing Prism",
-        "Weathered Arrowhead",
-        "Narukami's Valor"
-      ]
+  "name_ru": "Громовой пульс",
+  "name_en": "Thundering Pulse",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.144
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.6615
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Правило грома",
+  "passive_description_ru": "Увеличивает силу атаки на 20% и дарует мощь Громовой эмблемы. На уровнях эмблемы 1, 2 или 3 урон обычной атаки увеличивается на 12%, 24% или 40% соответственно. Персонаж получает 1 уровень Громовой эмблемы в каждом из следующих случаев: при нанесении урона обычной атакой (эмблема действует 5 сек.); при применении элементального навыка (эмблема действует 10 сек.); когда элементальная энергия персонажа ниже 100% (эмблема исчезнет, когда элементальная энергия полностью восстановится). Продолжительность действия каждого уровня эмблемы рассчитывается индивидуально.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "narukamis-wisdom",
+        "name_ru": "Мудрость Наруками",
+        "name_en": "Narukami's Wisdom"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "narukamis-joy",
+        "name_ru": "Радость Наруками",
+        "name_en": "Narukami's Joy"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "narukamis-affection",
+        "name_ru": "Милость Наруками",
+        "name_en": "Narukami's Affection"
+      },
+      {
+        "id": "narukamis-valor",
+        "name_ru": "Доблесть Наруками",
+        "name_en": "Narukami's Valor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dismal-prism",
+        "name_ru": "Тёмная призма",
+        "name_en": "Dismal Prism"
+      },
+      {
+        "id": "crystal-prism",
+        "name_ru": "Кристальная призма",
+        "name_en": "Crystal Prism"
+      },
+      {
+        "id": "polarizing-prism",
+        "name_ru": "Поляризационная призма",
+        "name_en": "Polarizing Prism"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "firm-arrowhead",
+        "name_ru": "Прочный наконечник стрелы",
+        "name_en": "Firm Arrowhead"
+      },
+      {
+        "id": "sharp-arrowhead",
+        "name_ru": "Острый наконечник стрелы",
+        "name_en": "Sharp Arrowhead"
+      },
+      {
+        "id": "weathered-arrowhead",
+        "name_ru": "Старый наконечник стрелы",
+        "name_en": "Weathered Arrowhead"
+      }
+    ]
+  },
+  "coordinates": []
 }

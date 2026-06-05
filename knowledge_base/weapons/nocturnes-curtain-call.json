@@ -1,47 +1,80 @@
 {
   "id": "nocturnes-curtain-call",
-  "name": "Nocturne's Curtain Call",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Nocturne%27s_Curtain_Call",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "Max HP increases by. When triggering Lunar reactions or inflicting Lunar Reaction DMG on opponents, the equipping character will recover Energy, and receive the Bountiful Sea's Sacred Wine for: Max HP increases by an additional, CRIT DMG from Lunar Reaction DMG increases by. The Energy recovery can be triggered at most once every, and can be triggered even when the equipping character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Sundered Glory of the Far-North Scions",
-        "Fractured Eye of the Deep Shadow",
-        "Tattered Warrant",
-        "Unyielding Delusion of the Far-North Scions",
-        "Immaculate Warrant",
-        "Oblation of the Far-North Scions",
-        "Hooked Beak of the Deep Shadow",
-        "Frost-Etched Warrant",
-        "Aureate Radiance of the Far-North Scions"
-      ]
+  "name_ru": "Вызов ноктюрна",
+  "name_en": "Nocturne's Curtain Call",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.192
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.882
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Баллада перекрёстков",
+  "passive_description_ru": "Увеличивает макс. HP на 10%. Когда экипированный персонаж активирует Лунные реакции или наносит ими урон противнику, он восстанавливает себе 14 ед. энергии и на 12 сек. получает эффект Священного вина щедрых морей: макс. HP дополнительно увеличивается на 14%, а крит. урон урона Лунных реакций повышается на 60%. Эффект восстановления энергии может возникнуть один раз в 18 сек. и срабатывает, даже когда экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "sundered-glory-of-the-far-north-scions",
+        "name_ru": "Растоптанная слава последователей крайнего севера",
+        "name_en": "Sundered Glory of the Far-North Scions"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "unyielding-delusion-of-the-far-north-scions",
+        "name_ru": "Упрямое заблуждение последователей крайнего севера",
+        "name_en": "Unyielding Delusion of the Far-North Scions"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "oblation-of-the-far-north-scions",
+        "name_ru": "Подношение последователей крайнего севера",
+        "name_en": "Oblation of the Far-North Scions"
+      },
+      {
+        "id": "aureate-radiance-of-the-far-north-scions",
+        "name_ru": "Златое сияние последователей крайнего севера",
+        "name_en": "Aureate Radiance of the Far-North Scions"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fractured-eye-of-the-deep-shadow",
+        "name_ru": "Расколотый глаз глубокой тьмы",
+        "name_en": "Fractured Eye of the Deep Shadow"
+      },
+      {
+        "id": "aberrant-core-of-the-deep-shadow",
+        "name_ru": "Аномальное ядро глубокой тьмы",
+        "name_en": "Aberrant Core of the Deep Shadow"
+      },
+      {
+        "id": "hooked-beak-of-the-deep-shadow",
+        "name_ru": "Клюв глубокой тьмы",
+        "name_en": "Hooked Beak of the Deep Shadow"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "tattered-warrant",
+        "name_ru": "Потрёпанный мандат",
+        "name_en": "Tattered Warrant"
+      },
+      {
+        "id": "immaculate-warrant",
+        "name_ru": "Безупречный мандат",
+        "name_en": "Immaculate Warrant"
+      },
+      {
+        "id": "frost-etched-warrant",
+        "name_ru": "Заиндевевший мандат",
+        "name_en": "Frost-Etched Warrant"
+      }
+    ]
+  },
+  "coordinates": []
 }

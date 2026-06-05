@@ -1,94 +1,81 @@
 {
   "id": "kaedehara-kazuha",
-  "name": "Kaedehara Kazuha",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kaedehara_Kazuha",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Unleashes a secret technique as fierce as the rushing wind that pulls objects and opponents towards Kazuha's current position before launching opponents within the AoE, dealing Anemo DMG and lifting Kazuha into the air on a rushing gust of wind. Within of remaining airborne after casting Chihayaburu, Kazuha can unleash a powerful Plunging Attack known as Midare Ranzan. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Can be used in mid-air. Hold Charges up before unleashing greater Anemo DMG over a larger AoE than (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Mode. Plunging Attack: Midare Ranzan When a Plunging...",
-    "elemental_burst": "The signature technique of Kazuha's self-styled bladework — a single slash that strikes with the force of the first winds of autumn, dealing AoE Anemo DMG. The blade's passage will leave behind a field named \"Autumn Whirlwind\" that periodically deals AoE Anemo DMG to opponents within its range. Elemental Absorption If Autumn Whirlwind comes into contact with Hydro / Pyro / Cryo / Electro, it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use. The Autumn Whirlwind field deals DMG every seconds for a total of times. The element that Kazuha is affected with can serve as a source for absorption. Constellation Effects Constellation Level, Scarlet..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "special": [
-        "Sea Ganoderma",
-        "Marionette Core"
-      ]
+  "name_ru": "Каэдэхара Кадзуха",
+  "name_en": "Kaedehara Kazuha",
+  "element": "Anemo",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1039.1188,
+      "atk": 23.0888,
+      "def": 62.8215
     },
-    "talents": {
-      "books": [
-        "Teachings of Diligence",
-        "Guide to Diligence",
-        "Philosophies of Diligence"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "weekly_boss": [
-        "Gilded Scale"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 13348.0428,
+      "atk": 296.5812,
+      "def": 806.9821
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Фехтовальный стиль Гарю",
+      "description_ru": "Обычная атака:\nДо пяти быстрых ударов мечом.\n\nЗаряженная атака:\nДва быстрых взмаха мечом, на которые тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади. Если атака в падении произошла благодаря навыку Тихаяфуру, то вместо неё выполняется атака в падении: Мидарэ рандзан.\n\nАтака в падении: Мидарэ рандзан\nУрон атаки в падении, выполненной благодаря элементальному навыку Тихаяфуру, конвертируется в Анемо урон. Также с помощью тайной техники эта атака создаёт небольшой воздушный тоннель, который втягивает в себя ближайшие объекты и врагов."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Тихаяфуру",
+      "description_ru": "Использование тайной техники, столь же свирепой, сколь стремительный ветер, притягивает объекты и врагов к текущей позиции Кадзухи и в небольшом радиусе подкидывает их в воздух, нанося Анемо урон. Также ветряные потоки поднимают в воздух и самого Кадзуху.\nВ течение 10 сек. после поднятия Кадзухи в воздух навыком Тихаяфуру и при соблюдении состояния в воздухе он может выполнить более сильную атаку в падении: Мидарэ рандзан.\n\nБыстрое нажатие:\nМожно совершить в воздухе.\n\nДолгое нажатие:\nНекоторое время заряжается, а затем наносит увеличенный Анемо урон по большей площади, чем быстрое нажатие.\n\nАтака в падении: Мидарэ рандзан\nУрон атаки в падении, выполненной благодаря элементальному навыку Тихаяфуру, конвертируется в Анемо урон. Также с помощью тайной техники эта атака создаёт небольшой воздушный тоннель, который втягивает в себя ближайшие объекты и врагов.\nУрон Мидарэ рандзан считается уроном атаки в падении."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Удар Кадзухи",
+      "description_ru": "Особая техника Гарю - единственный взмах, словно надвигающийся шторм, наносит Анемо урон по площади.\nСлед от меча оставляет за собой поле Осеннего вихря, которое наносит периодический Анемо урон по площади врагам, находящимся в нём.\n\nПоглощение стихии:\nПри контакте с элементами Гидро, Пиро, Крио или Электро Осенний вихрь наносит дополнительный урон этим элементом.\nЗа каждое использование навык может поглотить только один элемент."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Летучий клинок",
+      "description_ru": "При контакте с элементами Гидро, Пиро, Крио и Электро атака в падении: Мидарэ рандзан навыка Тихаяфуру наносит дополнительный урон соответствующим элементом, равный 200% от силы атаки. Этот урон считается уроном атаки в падении. За раз навык Тихаяфуру может поглотить только один элемент."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Поэзия песен ветра",
+      "description_ru": "Вызывая реакцию Рассеивания, Кадзуха даёт остальным членам отряда 0,04% бонус элементального урона соответствующего элемента за каждую единицу собственного мастерства стихий в течение 8 сек. Полученные этим способом бонусы разных элементов могут совмещаться."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Шелест ветра",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время спринта на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Алые холмы",
+      "description_ru": "Уменьшает время отката навыка Тихаяфуру на 10%, также использование навыка Удар Кадзухи полностью сбрасывает его время отката."
+    },
+    {
+      "name_ru": "Ветер ямаараси",
+      "description_ru": "Поле Осеннего вихря, созданное навыком Удар Кадзухи, имеет следующие свойства:\n· Увеличивает мастерство стихий Кадзухи на 200 ед.\n· Увеличивает мастерство стихий персонажей внутри поля на 200 ед.\n\nЭффекты увеличения мастерства стихий этого созвездия не складываются."
+    },
+    {
+      "name_ru": "Кленовая легенда",
+      "description_ru": "Увеличивает уровень навыка Тихаяфуру на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Одзора гэмпо",
+      "description_ru": "Когда энергия Кадзухи падает ниже 45 ед., он получает следующие эффекты:\n· Быстрое и долгое нажатие навыка Тихаяфуру восстанавливает 3 и 4 ед. энергии Кадзухи соответственно.\n· Полёт на планере восстанавливает 2 ед. энергии Кадзухи в сек."
+    },
+    {
+      "name_ru": "Мудрость веков",
+      "description_ru": "Увеличивает уровень навыка Удар Кадзухи на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Багровые листья",
+      "description_ru": "Использование навыков Тихаяфуру и Удар Кадзухи наделяет оружие Кадзухи инфузией Анемо на 5 сек. А также каждая единица мастерства стихий Кадзухи увеличивает на 0,2% урон, наносимый его обычной атакой, заряженной атакой и атакой в падении."
+    }
+  ],
+  "coordinates": []
 }

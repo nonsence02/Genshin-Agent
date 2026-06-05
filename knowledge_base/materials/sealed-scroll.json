@@ -1,10 +1,24 @@
 {
   "id": "sealed-scroll",
+  "name_ru": "Свиток печати",
   "name_en": "Sealed Scroll",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Samachurls"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Шамачурлы Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sealed_Scroll"
+  "dropped_by": [
+    "anemo-samachurl",
+    "cryo-samachurl",
+    "dendro-samachurl",
+    "electro-samachurl",
+    "geo-samachurl",
+    "hydro-samachurl"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

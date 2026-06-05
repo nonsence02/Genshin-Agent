@@ -1,44 +1,80 @@
 {
   "id": "the-flute",
-  "name": "The Flute",
-  "source_url": "https://genshin-impact.fandom.com/wiki/The_Flute",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Normal or Charged Attacks grant a Harmonic on hits. Gaining Harmonics triggers the power of music and deals ATK DMG to surrounding enemies. Harmonics last up to, and a maximum of can be gained every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Slime Condensate",
-        "Dead Ley Line Leaves",
-        "Slime Secretions",
-        "Ley Line Sprout",
-        "Slime Concentrate"
-      ]
+  "name_ru": "Меч-флейта",
+  "name_en": "The Flute",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Аккорд",
+  "passive_description_ru": "Попадания обычной или заряженной атакой дают музыкальную ноту. При накоплении 5 нот активируется сила музыки, которая наносит 100% урона окружающим врагам. Ноты исчезают через 30 сек. Новую ноту можно получить раз в 0,5 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "slime-condensate",
+        "name_ru": "Слизь слайма",
+        "name_en": "Slime Condensate"
+      },
+      {
+        "id": "slime-secretions",
+        "name_ru": "Выделения слайма",
+        "name_en": "Slime Secretions"
+      },
+      {
+        "id": "slime-concentrate",
+        "name_ru": "Концентрат слайма",
+        "name_en": "Slime Concentrate"
+      }
+    ]
+  },
+  "coordinates": []
 }

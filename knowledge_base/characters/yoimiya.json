@@ -1,94 +1,81 @@
 {
   "id": "yoimiya",
-  "name": "Yoimiya",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Yoimiya",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Pyro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Yoimiya waves a sparkler and causes a ring of saltpeter to surround her. Niwabi Enshou During this time, arrows fired by Yoimiya's Normal Attack will be Blazing Arrows, and their DMG will be increased and converted to Pyro DMG. During this time, Normal Attack: Firework Flare-Up will not generate Kindling Arrows at Charge Level. This effect will deactivate when Yoimiya leaves the field. When a converted attack hits at least one enemy, it generates Elemental Particle. This particle generation has a cooldown of seconds. It can generate a total of Elemental Particles through its whole duration. The talent scaling number is multiplicative with her Normal Attack damage. It is a separate...",
-    "elemental_burst": "Yoimiya leaps into the air along with her original creation, the \"Ryuukin Saxifrage,\" and fires forth blazing rockets bursting with surprises that deal AoE Pyro DMG and mark one of the hit opponents with Aurous Blaze. Aurous Blaze All Normal/Charged/Plunging Attacks, Elemental Skills, and Elemental Bursts by any party member other than Yoimiya that hit an opponent marked by Aurous Blaze will trigger an explosion, dealing AoE Pyro DMG. When an opponent affected by Aurous Blaze is defeated before its duration expires, the effect will pass on to another nearby opponent, who will inherit the remaining duration. One Aurous Blaze explosion can be triggered. When Yoimiya is down, Aurous Blaze..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Divining Scroll",
-        "Sealed Scroll",
-        "Forbidden Curse Scroll"
-      ],
-      "special": [
-        "Naku Weed",
-        "Smoldering Pearl"
-      ]
+  "name_ru": "Ёимия",
+  "name_en": "Yoimiya",
+  "element": "Pyro",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 791.2556,
+      "atk": 25.137,
+      "def": 47.864
     },
-    "talents": {
-      "books": [
-        "Teachings of Transience",
-        "Guide to Transience",
-        "Philosophies of Transience"
-      ],
-      "mob_drops": [
-        "Divining Scroll",
-        "Sealed Scroll",
-        "Forbidden Curse Scroll"
-      ],
-      "weekly_boss": [
-        "Dragon Lord's Crown"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10164.1059,
+      "atk": 322.8908,
+      "def": 614.8435
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Вспышка фейерверка",
+      "description_ru": "Обычная атака:\nДо пяти выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания на наконечнике стрелы накапливается пламя. Эффект зависит от длительности заряда стрелы:\n· Уровень заряда 1: Выпускает огненную стрелу, наносящую Пиро урон.\n· Уровень заряда 2: В зависимости от длительности заряда выпускает до 3 Зажигательных стрел. Зажигательные стрелы самостоятельно находят ближайшую цель и при попадании наносят Пиро урон.\n\nАтака в падении:\nВыпускает град стрел, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Огненный танец Ниваби",
+      "description_ru": "Ёимия взмахивает ниваби и окружает себя кольцом горящей селитры.\n\nНиваби энсё\nПока навык активен, стрелы, выпущенные обычной атакой Ёимии, становятся Зажигательными стрелами, а их урон увеличивается и конвертируется в Пиро урон. Однако второй уровень заряда обычной атаки Вспышка фейерверка не будет генерировать Зажигательные стрелы.\n\nЭтот эффект перестаёт действовать, когда Ёимия покидает бой."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Камнеломка Рюкин",
+      "description_ru": "Ёимия взмывает в воздух со своим изобретением, Камнеломкой Рюкин, которая запускает пылающие ракеты, полные сюрпризов, и наносит Пиро урон по площади, помечая одного из поражённых противников Золотым сиянием.\n\nЗолотое сияние\nОбычные атаки, заряженные атаки, атаки в падении, элементальные навыки и взрывы стихии любого члена отряда, кроме Ёимии, поражающие помеченного Золотым сиянием врага, вызывают взрывы, которые наносят Пиро урон по площади.\nЕсли противник, помеченный Золотым сиянием, погибает во время действия навыка, эффект и его оставшаяся длительность передаются другому ближайшему противнику.\n\nКаждые 2 сек. может возникнуть только один взрыв Золотого сияния. Если Ёимия погибает в бою, эффекты Золотого сияния, вызванные её навыком, перестанут действовать."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Трюки нарушителя порядка",
+      "description_ru": "Во время действия навыка Огненный танец Ниваби попадания обычной атакой Ёимии будут давать ей 2% бонус Пиро урона. Этот эффект длится 3 сек. и может складываться до 10 раз."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Летняя заря",
+      "description_ru": "После использования навыка Камнеломка Рюкин сила атаки всех членов отряда поблизости (кроме Ёимии) увеличивается на 10% на 15 сек. Имеющиеся на момент активирования навыка Камнеломка Рюкин уровни таланта возвышения Трюки нарушителя порядка Ёимии дополнительно улучшают данный эффект повышения силы атаки. Каждый уровень повышает силу атаки на 1%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Горящая спичка",
+      "description_ru": "При создании элементов декора типа «отделка», «украшение» и «пейзаж» имеет 100% шанс восстановить часть использованных материалов."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Агатовый рюкин",
+      "description_ru": "Длительность Взрыва золотого сияния, вызванного навыком Камнеломка Рюкин, увеличена на 4 сек.\nТакже победа над противником, находящимся под эффектом Взрыва золотого сияния, во время длительности этого эффекта увеличивает силу атаки Ёимии на 20% в течение 20 сек."
+    },
+    {
+      "name_ru": "Шествие тысячи огней",
+      "description_ru": "Крит. попадание Пиро уроном Ёимии даёт ей 25% бонус Пиро урона на 6 сек.\nЭтот эффект может быть активирован, даже когда Ёимия не является активным персонажем."
+    },
+    {
+      "name_ru": "Пламя трюкача",
+      "description_ru": "Увеличивает уровень навыка Огненный танец Ниваби на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Профессиональный пиротехник",
+      "description_ru": "Когда Взрыв золотого сияния Ёимии вызывает взрыв, время отката навыка Огненный танец Ниваби уменьшается на 1,2 сек."
+    },
+    {
+      "name_ru": "Канун летнего фестиваля",
+      "description_ru": "Увеличивает уровень навыка Камнеломка Рюкин на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Падающие звёзды Наганохары",
+      "description_ru": "Во время действия навыка Огненный танец Ниваби обычные атаки Ёимии имеют 50% шанс пустить дополнительную зажигательную стрелу, которая наносит 60% от первоначального урона. Этот урон считается уроном обычной атаки."
+    }
+  ],
+  "coordinates": []
 }

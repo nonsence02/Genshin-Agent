@@ -1,10 +1,16 @@
 {
   "id": "lumitoile",
+  "name_ru": "Темнозвёздник",
   "name_en": "Lumitoile",
-  "type": "Local Specialty (Fontaine)",
-  "days": [],
-  "source": [
-    "Found on beaches and underwater in Liffey Region"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Фонтейна",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Район Лиффи",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lumitoile"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,70 @@
+{
+  "id": "yae-miko",
+  "name_en": "Yae Miko",
+  "element": "Electro",
+  "weapon": "Catalyst",
+  "region": "Inazuma",
+  "rarity": 5,
+  "description": "Yae Miko ( Japanese : 八重神子 Yae Miko ), also known as Guuji Yae ( Japanese : 宮司 Guuji ) or the Guuji , is a playable Electro character in Genshin Impact .\n\nA kitsune of many facets, Yae Miko oversees the Grand Narukami Shrine , owns the Yae Publishing House , and is Eternity 's servant and friend.",
+  "role_summary": "Yae Miko ( Japanese : 八重神子 Yae Miko ), also known as Guuji Yae ( Japanese : 宮司 Guuji ) or the Guuji , is a playable Electro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Spiritfox Sin-Eater",
+      "description": "Normal Attack Summons forth kitsune spirits, initiating a maximum of 3 attacks that deal Electro DMG . Charged Attack Consumes a certain amount of Stamina to deal Electro DMG after a short casting time. Plunging Attack Plunges towards the ground from mid-air, damaging all opponents in her path with thunderous might. Deals AoE Electro DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Yakan Evocation: Sesshou Sakura",
+      "description": "To Yae, such dull tasks as can be accomplished by driving spirits out need not be done personally. Moves swiftly, leaving a Sesshou Sakura behind. Sesshou Sakura Has the following properties: Periodically strikes one nearby opponent with lightning, dealing Electro DMG When there are other Sesshou Sakura nearby, their level will increase, boosting the DMG dealt by these lightning strikes. This skill has three charges. A maximum of 3 Sesshou Sakura can exist simultaneously. The initial level of each Sesshou Sakura is 1, and the initial highest level each sakura can reach is 3. If a new Sesshou Sakura is created too close to an existing one, the existing one will be destroyed."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Great Secret Art: Tenko Kenshin",
+      "description": "Legends of \"kitsunetsuki,\" or the manifestations of a kitsune's might, are common in Inazuma's folktales. One that particularly captures the imagination is that of the Sky Kitsune, said to cause lightning to fall down upon the foes of the Grand Narukami Shrine. Summons a lightning strike, dealing AoE Electro DMG . When she uses this skill, Yae Miko will unseal nearby Sesshou Sakura , destroying their outer forms and transforming them into Tenko Thunderbolts that descend from the skies, dealing AoE Electro DMG . Each Sesshou Sakura destroyed in this way will create one Tenko Thunderbolt."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "The Shrine's Sacred Shade",
+      "description": "When casting Great Secret Art: Tenko Kenshin , each Sesshou Sakura destroyed resets the cooldown for 1 charge of Yakan Evocation: Sesshou Sakura ."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Enlightened Blessing",
+      "description": "Every point of Elemental Mastery Yae Miko possesses will increase Sesshou Sakura DMG by 0.15%."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Meditations of a Yako",
+      "description": "Has a 25% chance to get 1 regional Character Talent Material (base material excluded) when crafting . The rarity is that of the base material."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Yakan Offering",
+      "effect": "Each time Great Secret Art: Tenko Kenshin activates a Tenko Thunderbolt, Yae Miko will restore 8 Elemental Energy for herself."
+    },
+    "c2": {
+      "name": "Fox's Mooncall",
+      "effect": "Description Preview Sesshou Sakura start at"
+    },
+    "c3": {
+      "name": "The Seven Glamours",
+      "effect": "Increases the Level of Yakan Evocation: Sesshou Sakura by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Sakura Channeling",
+      "effect": "When Sesshou Sakura lightning hits opponents, the Electro DMG Bonus of all nearby party members is increased by 20% for 5s."
+    },
+    "c5": {
+      "name": "Mischievous Teasing",
+      "effect": "Increases the Level of Great Secret Art: Tenko Kenshin by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Forbidden Art: Daisesshou",
+      "effect": "Description Gameplay Notes The Sesshou Sakura's attacks will ignore 60% of the opponent's DEF. The defense ignored is multiplicative with other forms of defense reduction and decrease. See Defense ."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Yae_Miko",
+  "ai_tags": "Элемент аппликатор, Main DPS"
+}

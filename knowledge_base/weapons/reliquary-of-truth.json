@@ -1,47 +1,80 @@
 {
   "id": "reliquary-of-truth",
-  "name": "Reliquary of Truth",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Reliquary_of_Truth",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "CRIT Rate is increased by. When the equipping character unleashes an Elemental Skill, they gain the Secret of Lies: Elemental Mastery is increased by for. When the equipping character deals Lunar-Bloom DMG to an opponent, they gain the Moon of Truth: CRIT DMG is increased by for. When both the Secret of Lies and Moon of Truth effects are active at the same time, the results of both effects will be increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Oasis Garden's Reminiscence",
-        "Lightless Bone",
-        "Oasis Garden's Kindness",
-        "Glowing Remains",
-        "Luminescent Pollen",
-        "Oasis Garden's Mourning",
-        "Radiant Exoskeleton",
-        "Crystalline Cyst Dust",
-        "Oasis Garden's Truth"
-      ]
+  "name_ru": "Шкатулка истин",
+  "name_en": "Reliquary of Truth",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.192
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.882
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Подлинный смысл лжи",
+  "passive_description_ru": "Шанс крит. попадания повышается на 8%. При активации элементального навыка экипированный персонаж получает эффект Секрет лжи: мастерство стихий повышается на 80 ед. на 12 сек. Когда экипированный персонаж наносит врагу урон Лунной бутонизации, он получает эффект Луна истины: крит. урон повышается на 24% на 4 сек. Когда Секрет лжи и Луна истины действуют одновременно, результат обоих эффектов повышается на 50%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "oasis-gardens-reminiscence",
+        "name_ru": "Воспоминания цветущего оазиса",
+        "name_en": "Oasis Garden's Reminiscence"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "oasis-gardens-kindness",
+        "name_ru": "Милость цветущего оазиса",
+        "name_en": "Oasis Garden's Kindness"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "oasis-gardens-mourning",
+        "name_ru": "Печаль цветущего оазиса",
+        "name_en": "Oasis Garden's Mourning"
+      },
+      {
+        "id": "oasis-gardens-truth",
+        "name_ru": "Истина цветущего оазиса",
+        "name_en": "Oasis Garden's Truth"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "lightless-bone",
+        "name_ru": "Потускневшая кость",
+        "name_en": "Lightless Bone"
+      },
+      {
+        "id": "glowing-remains",
+        "name_ru": "Светящиеся останки",
+        "name_en": "Glowing Remains"
+      },
+      {
+        "id": "radiant-exoskeleton",
+        "name_ru": "Сияющая кость",
+        "name_en": "Radiant Exoskeleton"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "fungal-spores",
+        "name_ru": "Споры плесенника",
+        "name_en": "Fungal Spores"
+      },
+      {
+        "id": "luminescent-pollen",
+        "name_ru": "Светящаяся пыльца",
+        "name_en": "Luminescent Pollen"
+      },
+      {
+        "id": "crystalline-cyst-dust",
+        "name_ru": "Пыль кристаллоцистов",
+        "name_en": "Crystalline Cyst Dust"
+      }
+    ]
+  },
+  "coordinates": []
 }

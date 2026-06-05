@@ -1,0 +1,13 @@
+{
+  "id": "eremite-desert-clearwater",
+  "name_ru": "Пустынник: Родник в песках",
+  "name_en": "Eremite Desert Clearwater",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

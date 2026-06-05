@@ -1,14 +1,23 @@
 {
   "id": "narukamis-joy",
+  "name_ru": "Радость Наруками",
   "name_en": "Narukami's Joy",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Court of Flowing Sand (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Narukami%27s_Joy"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-altar-of-sands-ii",
+    "domain-of-forgery-altar-of-sands-iii",
+    "domain-of-forgery-altar-of-sands-iv"
+  ],
+  "source_domain": "domain-of-forgery-altar-of-sands-ii",
+  "coordinates": []
 }

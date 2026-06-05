@@ -1,47 +1,80 @@
 {
   "id": "favonius-greatsword",
-  "name": "Favonius Greatsword",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Favonius_Greatsword",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "CRIT hits have a chance to generate a small amount of Elemental Particles, which will regenerate Energy for the character. Can only occur once every s.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Recruit's Insignia",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Sergeant's Insignia",
-        "Shackles of the Dandelion Gladiator",
-        "Lieutenant's Insignia",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Двуручный меч Фавония",
+  "name_en": "Favonius Greatsword",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1333
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.6125
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Дружественный бриз",
+  "passive_description_ru": "Критические атаки имеют 60% шанс создать элементальные частицы, которые восстанавливают 6 ед. энергии. Возникает раз в 12 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "recruits-insignia",
+        "name_ru": "Шеврон рядового",
+        "name_en": "Recruit's Insignia"
+      },
+      {
+        "id": "sergeants-insignia",
+        "name_ru": "Шеврон сержанта",
+        "name_en": "Sergeant's Insignia"
+      },
+      {
+        "id": "lieutenants-insignia",
+        "name_ru": "Шеврон офицера",
+        "name_en": "Lieutenant's Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

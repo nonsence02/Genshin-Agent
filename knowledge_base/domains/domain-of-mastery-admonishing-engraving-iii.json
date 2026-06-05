@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-admonishing-engraving-iii",
+  "name_ru": "Мастерство: Предостережение III",
+  "name_en": "Domain of Mastery: Admonishing Engraving III",
+  "type": "Повышение талантов",
+  "region": "Фонтейн",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-justice",
+    "teachings-of-justice"
+  ],
+  "coordinates": []
+}

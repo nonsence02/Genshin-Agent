@@ -1,45 +1,80 @@
 {
   "id": "rightful-reward",
-  "name": "Rightful Reward",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Rightful_Reward",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "HP"
-  },
-  "passive": "When the wielder is healed, restore Energy. This can be triggered once every, and can occur even when the character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Broken Goblet of the Pristine Sea",
-        "Meshing Gear",
-        "Wine Goblet of the Pristine Sea",
-        "Mechanical Spur Gear",
-        "Silver Goblet of the Pristine Sea",
-        "Artificed Dynamic Gear",
-        "Golden Goblet of the Pristine Sea"
-      ]
+  "name_ru": "Справедливая награда",
+  "name_en": "Rightful Reward",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Остриё копья",
+  "passive_description_ru": "При получении лечения персонаж восстанавливает 8 ед. энергии. Эффект может возникнуть один раз в 10 сек. и срабатывает, даже когда персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "broken-goblet-of-the-pristine-sea",
+        "name_ru": "Разбитая чаша непорочного моря",
+        "name_en": "Broken Goblet of the Pristine Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "wine-goblet-of-the-pristine-sea",
+        "name_ru": "Чаша непорочного моря",
+        "name_en": "Wine Goblet of the Pristine Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-goblet-of-the-pristine-sea",
+        "name_ru": "Серебряный кубок непорочного моря",
+        "name_en": "Silver Goblet of the Pristine Sea"
+      },
+      {
+        "id": "golden-goblet-of-the-pristine-sea",
+        "name_ru": "Золотой кубок непорочного моря",
+        "name_en": "Golden Goblet of the Pristine Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "rift-core",
+        "name_ru": "Ядро расщелины",
+        "name_en": "Rift Core"
+      },
+      {
+        "id": "foreign-synapse",
+        "name_ru": "Иноземный обломок",
+        "name_en": "Foreign Synapse"
+      },
+      {
+        "id": "alien-life-core",
+        "name_ru": "Чужеродное ядро",
+        "name_en": "Alien Life Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "meshing-gear",
+        "name_ru": "Сцепляющаяся шестерня",
+        "name_en": "Meshing Gear"
+      },
+      {
+        "id": "mechanical-spur-gear",
+        "name_ru": "Шестерня механизма",
+        "name_en": "Mechanical Spur Gear"
+      },
+      {
+        "id": "artificed-dynamic-gear",
+        "name_ru": "Изощрённая динамическая шестерня",
+        "name_en": "Artificed Dynamic Gear"
+      }
+    ]
+  },
+  "coordinates": []
 }

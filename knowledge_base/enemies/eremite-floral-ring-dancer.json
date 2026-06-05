@@ -1,0 +1,13 @@
+{
+  "id": "eremite-floral-ring-dancer",
+  "name_ru": "Пустынник: Танцовщица лиственного круга",
+  "name_en": "Eremite Floral Ring-Dancer",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

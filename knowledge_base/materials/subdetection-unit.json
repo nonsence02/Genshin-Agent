@@ -1,10 +1,16 @@
 {
   "id": "subdetection-unit",
+  "name_ru": "Миниатюрный детектор",
   "name_en": "Subdetection Unit",
-  "type": "Local Specialty (Fontaine)",
-  "days": [],
-  "source": [
-    "Found in Fontaine Research Institute of Kinetic Energy Engineering Region , Liffey Region"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Фонтейна",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Район Научно-исследовательского института кинетической энергии Фонтейна",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Subdetection_Unit"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

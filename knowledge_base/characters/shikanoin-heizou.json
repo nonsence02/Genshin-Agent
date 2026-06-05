@@ -1,94 +1,81 @@
 {
   "id": "shikanoin-heizou",
-  "name": "Shikanoin Heizou",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Shikanoin_Heizou",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Press Wields the swift winds to launch a Heartstopper Strike that deals Anemo DMG. Hold Charges energy to unleash an even stronger blow. He will obtain the Declension effect while charging, which will increase the power of the Heartstopper Strike. When the skill button is released or the skill finishes charging, he will strike forward, dealing Anemo DMG. Declension Increases the power of the next Heartstopper Strike. Max stacks. When you possess Declension stacks, the Conviction effect will be produced, which will cause the next Heartstopper Strike to be even stronger and have a larger AoE. When this skill hits at least one enemy, it generates different amounts of Elemental Particles...",
-    "elemental_burst": "Leaps into the air and uses the Fudou Style Vacuum Slugger and kicks his opponent. The Vacuum Slugger will explode upon hit and create an Arresting Windtunnel that pulls in nearby objects and opponents, dealing AoE Anemo DMG. When Vacuum Slugger hits opponents affected by Hydro / Pyro / Cryo / Electro, these opponents will be afflicted with Windmuster Iris. This Windmuster Iris will explode after a moment and dissipate, dealing AoE DMG of the corresponding elemental type. Vacuum Slugger can afflict a maximum of opponents with the Windmuster Iris. A single opponent cannot be under the effect of Windmuster Irises of different elements at the same time. Fudou Style Vacuum Slugger DMG and..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "special": [
-        "Onikabuto",
-        "Runic Fang"
-      ]
+  "name_ru": "Сиканоин Хэйдзо",
+  "name_en": "Shikanoin Heizou",
+  "element": "Anemo",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 893.5552,
+      "atk": 18.8765,
+      "def": 57.3394
     },
-    "talents": {
-      "books": [
-        "Teachings of Transience",
-        "Guide to Transience",
-        "Philosophies of Transience"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "weekly_boss": [
-        "The Meaning of Aeons"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10657.4169,
+      "atk": 225.141,
+      "def": 683.8866
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Боевой стиль Фудо",
+      "description_ru": "Обычная атака:\nДо пяти усиленных могучим ветром ударов, которые наносят Анемо урон.\n\nЗаряженная атака:\nТратит некоторое количество выносливости на стремительный удар, наносящий Анемо урон.\n\nАтака в падении:\nНакопив энергию сильного ветра, Хэйдзо стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Анемо урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Убиение сердца",
+      "description_ru": "Быстрое нажатие\nНаправляя порыв ветра, совершает удар Убиения сердца, который наносит Анемо урон.\n\nДолгое нажатие\nЗаряжается и наносит ещё более сильный удар. Во время зарядки получает эффект Отклонения, который усиливает удар Убиения сердца. Когда кнопка навыка отпущена или закончена зарядка, совершает удар Убиения сердца вперёд, нанося Анемо урон.\n\nОтклонение\nУвеличивает урон последующего удара Убиения сердца. Эффект может складываться до 4 раз.\nНа 4 уровне складывания Отклонения появится эффект Верного мнения, который делает урон последующего удара Убиения сердца ещё выше и увеличивает зону поражения."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Ураганный удар",
+      "description_ru": "Взмывает в воздух и совершает взрывной удар Снаряда пустоты стиля Фудо. Снаряд пустоты при попадании взрывается и создаёт Ураганный туннель, притягивающий предметы и противников поблизости, а также наносит Анемо урон по площади.\nПри попадании по противникам под воздействием Гидро/Пиро/Крио/Электро Снаряд пустоты стиля Фудо накладывает на них Око урагана, которое вскоре взрывается и наносит урон по площади соответствующей стихией.\nСнаряд пустоты стиля Фудо может наложить Око урагана максимум на 4 поражённых им противников. Один и тот же противник не может одновременно находиться под воздействием Ока урагана разных стихий."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Парадоксальное учение",
+      "description_ru": "Когда Сиканоин Хэйдзо, будучи активным персонажем, вызывает реакцию Рассеивания, он получает 1 уровень эффекта Отклонения Убиения сердца. Эффект может возникнуть один раз в 0,1 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Пробивная аргументация",
+      "description_ru": "Убиение сердца после попадания по противнику увеличивает мастерство стихий всех членов отряда (кроме самого Хэйдзо) на 80 ед. на 10 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Предшествующая вина",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время спринта на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Журнал дел молодого сыщика",
+      "description_ru": "На 5 сек. после вступления в бой скорость обычной атаки Сиканоина Хэйдзо увеличивается на 15%. Также он получает 1 уровень эффекта Отклонения Убиения сердца. Эффект может возникнуть один раз в 10 сек."
+    },
+    {
+      "name_ru": "Подборка расследований",
+      "description_ru": "Усиливается притяжение Ураганного туннеля, создаваемого Ураганным ударом, длительность увеличивается до 1 сек."
+    },
+    {
+      "name_ru": "Книга таинственных загадок",
+      "description_ru": "Увеличивает уровень навыка Убиение сердца на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Сборник пустословия",
+      "description_ru": "Первый взрыв Ока урагана в каждом Ураганном ударе восстанавливает Сиканоину Хэйдзо 9 ед. элементальной энергии. Каждый последующий взрыв восстанавливает дополнительные 1,5 ед. энергии Хэйдзо.\nОдин Ураганный удар может таким образом восстановить до 13,5 ед. энергии Хэйдзо."
+    },
+    {
+      "name_ru": "Архив запретного зала",
+      "description_ru": "Увеличивает уровень навыка Ураганный удар на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Опись престранных улик",
+      "description_ru": "Каждый уровень Отклонения повышает шанс крит. попадания активируемого удара Убиения сердца на 4%. Когда Хэйдзо обладает Верным мнением, крит. урон этого удара Убиения сердца увеличивается на 32%."
+    }
+  ],
+  "coordinates": []
 }

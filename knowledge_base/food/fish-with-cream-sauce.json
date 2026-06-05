@@ -1,0 +1,23 @@
+{
+  "id": "fish-with-cream-sauce",
+  "name_ru": "Рыба в сливочном соусе",
+  "name_en": "Fish With Cream Sauce",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 22% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 470 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "milk",
+      "count": 2
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

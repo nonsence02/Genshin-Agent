@@ -1,0 +1,23 @@
+{
+  "id": "curry-shrimp",
+  "name_ru": "Креветки в соусе карри",
+  "name_en": "Curry Shrimp",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 24% HP + 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "shrimp-meat",
+      "count": 3
+    },
+    {
+      "material_id": "onion",
+      "count": 2
+    },
+    {
+      "material_id": "spice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "cutting-edge-all-purpose-storm-landcruiser",
+  "name_ru": "Сухопутный крейсер: Новейший многоцелевой штурмовик",
+  "name_en": "Cutting Edge All-Purpose Storm Landcruiser",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "precision-drive-shaft",
+    "reinforced-drive-shaft",
+    "broken-drive-shaft"
+  ],
+  "coordinates": []
+}

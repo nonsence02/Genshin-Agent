@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-frosted-altar-ii",
+  "name_ru": "Мастерство: Инеевый алтарь II",
+  "name_en": "Domain of Mastery: Frosted Altar II",
+  "type": "Повышение талантов",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-freedom",
+    "teachings-of-freedom"
+  ],
+  "coordinates": []
+}

@@ -1,94 +1,81 @@
 {
   "id": "prune",
-  "name": "Prune",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Prune",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Anemo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Unleash the wind's might to defeat the evil witch and save Descartes! Prune strikes the Witchlure Bell with her Banehunter Oathhammer, dealing Anemo DMG. If Prune triggers Swirl on an opponent using this attack, Ring-A-Ding-Ding! Hexhunter Chime will be changed to Clang Clang! Witch-tribution Comes! for the next. Clang Clang! Witch-tribution Comes! Prune's hammer is now enshrouded by the element involved in the previous Swirl reaction, causing Banehunter Oathhammer Banehunter Oathhammer A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type. Prune can summon the...",
-    "elemental_burst": "Prune gently swings the Witchlure Bell, dealing Anemo DMG to nearby opponents. After this, the Bell will enter the Hunter-Seeker mode. Witchlure Bell: Hunter-Seeker In this mode, the Witchlure Bell will follow the current active character, attacking surrounding opponents at intervals and dealing AoE Anemo DMG. This DMG is considered Elemental Burst DMG. The hammer attacks every seconds and up to attacks can happen during the skill's duration. Constellation: Prune regains energy every which is less than the aforementioned interval, for a total of times or energy during the skill's duration. Constellation: By increasing the duration for it is also adds additional hammer attacks to a total of..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "special": [
-        "Winter Icelea",
-        "Radiant Antler"
-      ]
+  "name_ru": "Прюн",
+  "name_en": "Prune",
+  "element": "Anemo",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 811.494,
+      "atk": 18.5203,
+      "def": 48.6412
     },
-    "talents": {
-      "books": [
-        "Teachings of Resistance",
-        "Guide to Resistance",
-        "Philosophies of Resistance"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "weekly_boss": [
-        "Mask of the Virtuous Doctor"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9678.6744,
+      "atk": 220.8931,
+      "def": 580.1433
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Трам-бам-бам: Молот-ведьмобой",
+      "description_ru": "Обычная атака:\nРазмахивая Клятвенным молотом истребителя бедствий, выполняет до трёх ударов, которые наносят Анемо урон.\n\nЗаряженная атака:\nПотратив определённое количество выносливости, взмахивает молотом вверх, нанося Анемо урон врагам впереди.\n\nАтака в падении:\nВзывая к силе ветра, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Анемо урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Динь-дилинь: Звон охоты на ведьм",
+      "description_ru": "С твёрдым намерением победить злую ведьму и выручить Декарта Прюн высвобождает силу ветра и обрушивает Клятвенный молот истребителя бедствий на колокольчик-приманку, нанося Анемо урон.\nЕсли эта атака Прюн активирует на противнике Рассеивание, то на следующие 6 сек. Динь-дилинь: Звон охоты на ведьм заменяется на Бом-цзынь-цзынь: Грядёт ведьмина кара.\n\nБом-цзынь-цзынь: Грядёт ведьмина кара\nЭлемент, участвовавший в прошлой реакции Рассеивание, теперь окутывает молот Прюн, вызывая поглощение стихии **Клятвенным молотом истребителя бедствий**. При активации навыка быстрым нажатием Прюн подпрыгивает и выбивает молот вперёд, нанося урон соответствующего элемента врагам впереди."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Грянул звон, началась охота",
+      "description_ru": "Прюн легко взмахивает колокольчиком-приманкой, нанося Анемо урон противникам поблизости, после чего колокольчик переходит в режим Охотника-ловца.\n\nКолокольчик-приманка: Охотник-ловец\nВ этом режиме колокольчик-приманка следует за активным персонажем и периодически атакует врагов поблизости, нанося Анемо урон по площади. Этот урон считается уроном взрыва стихии."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Вердикт и наказание",
+      "description_ru": "После того как колокольчик-приманка в режиме Охотника-ловца во время взрыва стихии **Грянул звон, началась охота** наносит противнику урон, и этот урон активирует на противнике Рассеивание, то он также призывает перед противником **Клятвенный молот истребителя бедствий**, который наносит 150% урона от силы атаки Прюн с элементом, соответствующим типу элемента поглощения стихии данной реакции Рассеивание. Такой урон считается уроном взрыва стихии."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Звонкое единодушие",
+      "description_ru": "После того как Прюн поражает врага **Клятвенным молотом истребителя бедствий**, который прошёл поглощение стихии, другие персонажи отряда поблизости на 5 сек. наделяются Вдохновением колоколов: когда враг получает урон от обычной атаки, заряженной атаки, атаки в падении, элементального навыка или взрыва стихии, урон данной атаки повышается на 0,025% за каждую единицу свыше 2000 ед. силы атаки Прюн во время получения эффекта Вдохновения колоколов. Максимальное увеличение составляет 50%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Цзыньк-цзыньк, звяк-бряк: Переделываем!",
+      "description_ru": "При создании материалов повышения талантов персонажей есть 10% шанс дополнительно получить 1 другой случайный материал того же региона и той же редкости, как у произведённых."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "С клятвы найти спасение странствие начинается",
+      "description_ru": "После того как **Клятвенный молот истребителя бедствий**, претерпевший поглощение стихии, поражает противника, Прюн восстанавливает 2 ед. энергии. Эффект может возникнуть один раз в 1,8 сек."
+    },
+    {
+      "name_ru": "Убрать груз неопрятный силы стихий помогают",
+      "description_ru": "Во время взрыва стихии **Грянул звон, началась охота**, когда колокольчик-приманка находится в режиме Охотника-ловца, Прюн получает эффект Охотимся на ведьму: сила атаки Прюн повышается на 10%, а когда колокольчик-приманка и претерпевший поглощение стихии **Клятвенный молот истребителя бедствий** поражают противника, её сила атаки дополнительно повышается на 5%. Максимальное повышение силы атаки, которое можно получить таким способом, составляет 40%.\nПовторная активация навыка Грянул звон, началась охота во время действия эффекта прерывает его."
+    },
+    {
+      "name_ru": "Караван проходит горный перевал, пейзаж меняется вновь",
+      "description_ru": "Увеличивает уровень навыка **Грянул звон, началась охота** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Следуя ветру, назад обернёшься - всё нет половины тени",
+      "description_ru": "После того как претерпевший поглощение стихии **Клятвенный молот истребителя бедствий** поражает противника, он отскакивает и падает на противника рядом, нанося элементальный урон соответствующего типа, равный 80% от силы атаки."
+    },
+    {
+      "name_ru": "Сто поражений не в счёт, завтра продолжим бой",
+      "description_ru": "Увеличивает уровень навыка **Динь-дилинь: Звон охоты на ведьм** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Вот и вся история, перескажи её как-нибудь друзьям",
+      "description_ru": "Длительность режима Колокольчик-приманка: Охотник-ловец взрыва стихии **Грянул звон, началась охота** увеличивается на 4 сек.\nВдобавок после того как персонажи отряда под воздействием Вдохновения колоколов активируют на противнике любые элементальные реакции, то сила атаки Прюн и других активных персонажей поблизости под воздействием Вдохновения колоколов повышается на 350 ед. на 5 сек."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,0 +1,10 @@
+{
+  "id": "bloodstained-chivalry",
+  "name_ru": "Рыцарь крови",
+  "name_en": "Bloodstained Chivalry",
+  "max_rarity": 5,
+  "bonus_2pc": "Увеличивает физ. урон на 25%.",
+  "bonus_4pc": "После победы над противником увеличивает урон заряженной атаки на 50% и обнуляет стоимость выносливости заряженной атаки на 10 сек.",
+  "source_domain": "domain-of-blessing-stone-chamber-i",
+  "coordinates": []
+}

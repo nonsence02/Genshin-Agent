@@ -1,94 +1,81 @@
 {
   "id": "amber",
-  "name": "Amber",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Amber",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Anemo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "The ever-reliable Baron Bunny takes the stage. Baron Bunny Continuously taunts the enemy, drawing their fire. Baron Bunny's HP scales with Amber's Max HP. When destroyed or when its timer expires, Baron Bunny explodes, dealing AoE Pyro DMG. Hold Adjusts the throwing direction of Baron Bunny. The longer the button is held, the further the throw. When the explosion hits at least one enemy, it generates Elemental Particles. Upon landing, Baron Bunny dances and performs a total of four ° turns, which lasts for seconds. [ ] If not detonated prematurely, it will explode after the last flip (facing away from the throwing direction), damaging and launching enemies backward. While the skill's...",
-    "elemental_burst": "Fires off a shower of arrows, dealing continuous AoE Pyro DMG. This Elemental Burst drains energy later than most others. [ ] The skill starts from a certain height calculated from the ground below the target. It may not hit a target that is flying or too high above the ground due to being thrown, knocked back or any other means. Fiery Rain consists of waves of hits. Half of the waves of hits will land within the inner half of the max range, half of the waves will land within the outer half. The true maximum range is about"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Firm Arrowhead",
-        "Sharp Arrowhead",
-        "Weathered Arrowhead"
-      ],
-      "special": [
-        "Small Lamp Grass",
-        "Everflame Seed"
-      ]
+  "name_ru": "Эмбер",
+  "name_en": "Amber",
+  "element": "Pyro",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 793.2582,
+      "atk": 18.6984,
+      "def": 50.358
     },
-    "talents": {
-      "books": [
-        "Teachings of Freedom",
-        "Guide to Freedom",
-        "Philosophies of Freedom"
-      ],
-      "mob_drops": [
-        "Firm Arrowhead",
-        "Sharp Arrowhead",
-        "Weathered Arrowhead"
-      ],
-      "weekly_boss": [
-        "Dvalin's Sigh"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9461.1761,
+      "atk": 223.0171,
+      "def": 600.6189
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Первоклассный стрелок",
+      "description_ru": "Обычная атака:\nДо пяти выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается огнём. Полностью заряженная огнём стрела наносит Пиро урон.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Барон Зайчик",
+      "description_ru": "На Барона Зайчика всегда можно положиться.\n\nБарон Зайчик:\n· Непрерывно дразнит врагов, привлекая их огонь на себя;\n· Макс. HP Барона Зайчика зависит от макс. HP Эмбер;\n· Если Барон Зайчик уничтожен, либо его время заканчивается, он взрывается, нанося Пиро урон по площади.\n\nДолгое нажатие:\nПозволяет выбрать направление броска.\nЧем дольше удерживать кнопку, тем дальше будет бросок."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Огненный дождь",
+      "description_ru": "Эмбер выпускает град огненных стрел, который наносит периодический Пиро урон по площади."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Сто стрел - все в цель!",
+      "description_ru": "Шанс критического попадания навыка Огненный дождь увеличивается на 10%, а его зона поражения - на 30%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Подавляющий огонь",
+      "description_ru": "Прицельные выстрелы по уязвимым местам противника увеличивают силу атаки на 15% на 10 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Чемпион Полётов",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время полёта на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Двух зайцев...",
+      "description_ru": "Во время прицельной стрельбы выпускает по две стрелы за выстрел. Вторая стрела наносит 20% от урона первой стрелы."
+    },
+    {
+      "name_ru": "Зайчик активирован",
+      "description_ru": "Барон Зайчик, свежий и навороченный! Попадание по его ногам полностью заряженным прицельным выстрелом заставляет его моментально взорваться.\nТакой взрыв наносит дополнительные 200% урона."
+    },
+    {
+      "name_ru": "Оно горит!",
+      "description_ru": "Увеличивает уровень навыка Огненный дождь на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Это не просто кукла",
+      "description_ru": "Уменьшает время отката навыка Барон Зайчик на 20%. Также даёт одну дополнительную куклу."
+    },
+    {
+      "name_ru": "Взрывная кукла!",
+      "description_ru": "Увеличивает уровень навыка Барон Зайчик на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Горящие пятки",
+      "description_ru": "Использование навыка Огненный дождь увеличивает скорость передвижения всех членов отряда и их атаку на 15% в течение 10 сек."
+    }
+  ],
+  "coordinates": []
 }

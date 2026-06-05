@@ -1,0 +1,19 @@
+{
+  "id": "maguu-kenki",
+  "name_ru": "Магу кэнки",
+  "name_en": "Maguu Kenki",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "marionette-core",
+    "vayuda-turquoise-gemstone",
+    "vayuda-turquoise-chunk",
+    "vayuda-turquoise-fragment",
+    "vayuda-turquoise-sliver",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver"
+  ],
+  "coordinates": []
+}

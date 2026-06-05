@@ -1,47 +1,80 @@
 {
   "id": "end-of-the-line",
-  "name": "End of the Line",
-  "source_url": "https://genshin-impact.fandom.com/wiki/End_of_the_Line",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Triggers the Flowrider after using an Elemental Skill, dealing ATK as AoE DMG upon hitting an opponent with an attack. Flowrider will be removed after or after causing instances of AoE DMG. Only instance of AoE DMG can be caused every in this way. Flowrider can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Echo of Scorching Might",
-        "Inactivated Fungal Nucleus",
-        "Remnant Glow of Scorching Might",
-        "Dormant Fungal Nucleus",
-        "Luminescent Pollen",
-        "Dream of Scorching Might",
-        "Robust Fungal Nucleus",
-        "Crystalline Cyst Dust",
-        "Olden Days of Scorching Might"
-      ]
+  "name_ru": "Иссушитель",
+  "name_en": "End of the Line",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.4594
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Разрывающий сети",
+  "passive_description_ru": "Активация элементального навыка вызывает эффект Плывущего по течению: атаки при попадании наносят урон по площади, равный 80% от силы атаки. Через 15 сек. либо после 3 нанёсших урон атак эффект исчезнет. Эффект наносит урон не чаще одного раза в 2 сек. и может возникнуть раз в 12 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "echo-of-scorching-might",
+        "name_ru": "Эхо пылающей мощи",
+        "name_en": "Echo of Scorching Might"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "remnant-glow-of-scorching-might",
+        "name_ru": "Отсветы пылающей мощи",
+        "name_en": "Remnant Glow of Scorching Might"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "dream-of-scorching-might",
+        "name_ru": "Грёзы пылающей мощи",
+        "name_en": "Dream of Scorching Might"
+      },
+      {
+        "id": "olden-days-of-scorching-might",
+        "name_ru": "Прошлое пылающей мощи",
+        "name_en": "Olden Days of Scorching Might"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "inactivated-fungal-nucleus",
+        "name_ru": "Неактивное ядро плесенника",
+        "name_en": "Inactivated Fungal Nucleus"
+      },
+      {
+        "id": "dormant-fungal-nucleus",
+        "name_ru": "Спящее ядро плесенника",
+        "name_en": "Dormant Fungal Nucleus"
+      },
+      {
+        "id": "robust-fungal-nucleus",
+        "name_ru": "Здоровое ядро плесенника",
+        "name_en": "Robust Fungal Nucleus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "fungal-spores",
+        "name_ru": "Споры плесенника",
+        "name_en": "Fungal Spores"
+      },
+      {
+        "id": "luminescent-pollen",
+        "name_ru": "Светящаяся пыльца",
+        "name_en": "Luminescent Pollen"
+      },
+      {
+        "id": "crystalline-cyst-dust",
+        "name_ru": "Пыль кристаллоцистов",
+        "name_en": "Crystalline Cyst Dust"
+      }
+    ]
+  },
+  "coordinates": []
 }

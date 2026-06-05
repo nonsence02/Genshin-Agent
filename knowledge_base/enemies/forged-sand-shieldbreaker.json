@@ -1,0 +1,13 @@
+{
+  "id": "forged-sand-shieldbreaker",
+  "name_ru": "Кованый песок: Крушитель щитов",
+  "name_en": "Forged Sand Shieldbreaker",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

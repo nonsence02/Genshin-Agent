@@ -1,94 +1,86 @@
 {
   "id": "ineffa",
-  "name": "Ineffa",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ineffa",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Ineffa engages her Enhanced Cleaning Module, dealing a single instance of AoE Electro DMG to nearby opponents, activating her Optical Flow Shield Barrier, and summoning the Multipurpose Smart Assistance Unit, Birgitta Birgitta Ineffa's assistant and companion in battle, she can be summoned to the battlefield via Elemental Skill or Elemental Burst. If there are opponents nearby, Birgitta will quickly move close to an opponent and unleash Discharge attacks every, dealing AoE Electro DMG. Only one Birgitta that has been summoned by Ineffa herself can exist at any one time. Additionally, in Nod-Krai, it seems you'll be able to change Birgitta's appearance through certain means.... The Optical...",
-    "elemental_burst": "The Multipurpose Smart Assistance Unit, Birgitta, can use Rocket Punches to quickly clean up opponents! Ineffa shoots Birgitta into the fray, dealing AoE Electro DMG and allowing Birgitta to remain on the field. If Birgitta is already on the field, having been summoned by Ineffa, this Skill will re-summon Birgitta at the target's location and reset her duration."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Sentry's Wooden Whistle",
-        "Warrior's Metal Whistle",
-        "Saurian-Crowned Warrior's Golden Whistle"
-      ],
-      "special": [
-        "Glowing Hornshroom",
-        "Secret Source Airflow Accumulator"
-      ]
+  "name_ru": "Инеффа",
+  "name_en": "Ineffa",
+  "element": "Electro",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 981.9196,
+      "atk": 25.6956,
+      "def": 64.4369
     },
-    "talents": {
-      "books": [
-        "Teachings of Conflict",
-        "Guide to Conflict",
-        "Philosophies of Conflict"
-      ],
-      "mob_drops": [
-        "Sentry's Wooden Whistle",
-        "Warrior's Metal Whistle",
-        "Saurian-Crowned Warrior's Golden Whistle"
-      ],
-      "weekly_boss": [
-        "Eroded Sunfire"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12613.2881,
+      "atk": 330.0662,
+      "def": 827.7331
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Вихревой пылеочиститель",
+      "description_ru": "Обычная атака:\nДо четырёх последовательных ударов копьём.\n\nЗаряженная атака:\nТратит определённое количество выносливости и выполняет вращающуюся атаку.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Режим очистки: Несущая частота",
+      "description_ru": "Инеффа активирует Усовершенствованный модуль уборки и один раз наносит Электро урон по площади врагам поблизости, развёртывая Барьер оптического потока и призывая Умный многоцелевой вспомогательный модуль **Биргитту**.\nБарьер оптического потока поглощает урон согласно силе атаки Инеффы. Также он поглощает Электро урон с 250% эффективностью."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Высшая команда: Циклонический истребитель",
+      "description_ru": "Умный многоцелевой вспомогательный модуль **Биргитта** очищает поле от врагов Ракетными кулаками! Инеффа выпускает Биргитту в бой и наносит Электро урон по площади, причём Биргитта остаётся на поле.\n\nЕсли на поле уже есть Биргитта, призванная самой Инеффой, то Биргитта вновь вызывается на месте цели, а её длительность сбрасывается."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Контур превышения частоты",
+      "description_ru": "Когда **Биргитта** атакует разрядами, и при этом рядом с ней есть грозовые тучи, созданные реакцией Лунный заряд, то она выполняет одну дополнительную атаку, которая наносит 65% Электро урона по площади от силы атаки Инеффы. Такой урон считается уроном реакции Лунный заряд."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Протокол панорамного преобразования",
+      "description_ru": "Во время применения взрыва стихии **Высшая команда: Циклонический истребитель** все персонажи вашего отряда получают эффект Параметрического преобразования: мастерство стихий Инеффы и вашего активного персонажа на 20 сек. повышается на 6% от силы атаки Инеффы."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Дар лунного знамения: Узел сборки",
+      "description_ru": "Когда персонажи отряда активируют реакцию Заряжен, она превращается в Лунный заряд, а базовый урон реакции Лунный заряд увеличивается на 0,7% за каждые 100 ед. силы атаки Инеффы. Максимальное увеличение урона, которое можно получить таким образом, составляет 14%.\n\nКроме того, когда Инеффа в отряде, уровень Лунного знамения отряда повышается на 1."
+    },
+    {
+      "type": "пассивный талант 4",
+      "name_ru": "Модуль синтезирования вкусов",
+      "description_ru": "Когда Инеффа потребляет еду, с шансом 30% вы получите кухонный ингредиент-приправу.\n\nКроме того, в Нод-Крае, похоже, есть некий способ изменить облик Биргитты..."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Процессор ректификации",
+      "description_ru": "Когда Инеффа развёртывает Барьер оптического потока, все персонажи отряда поблизости на 20 сек. наделяются эффектом Токонесущего композита, который увеличивает урон реакции Лунный заряд на 2,5% за каждые 100 ед. силы атаки Инеффы. Максимальное увеличение урона, которое можно получить таким образом, составляет 50%."
+    },
+    {
+      "name_ru": "Вспомогательный очистной модуль",
+      "description_ru": "После того как взрыв стихии **Высшая команда: Циклонический истребитель** поражает противников, на одного из них накладывается состояние Указ о взыскании: через короткий промежуток времени или когда этот противник оказывается побеждён, враги поблизости получают Электро урон по площади, равный 300% силы атаки Инеффы. Такой урон считается уроном реакции Лунный заряд.\nКроме того, во время активации взрыва стихии Высшая команда: Циклонический истребитель активный персонаж поблизости получает Барьер оптического потока."
+    },
+    {
+      "name_ru": "Улучшенный эмулятор эмоций",
+      "description_ru": "Увеличивает уровень навыка **Режим очистки: Несущая частота** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Путь без указа",
+      "description_ru": "Когда персонажи вашего отряда активируют реакцию Лунный заряд, восстанавливается 5 ед. энергии. Этот эффект может возникнуть один раз в 4 сек."
+    },
+    {
+      "name_ru": "Преодоление зеркального сна",
+      "description_ru": "Увеличивает уровень навыка **Высшая команда: Циклонический истребитель** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Рассветное утро для тебя",
+      "description_ru": "Когда Инеффа находится под воздействием Токонесущего композита, то она наносит 135% Электро урона по площади от собственной силы атаки противникам рядом с вашим активным персонажем после того, как грозовые тучи поблизости поражают их молнией. Такой урон считается уроном реакции Лунный заряд. Этот эффект может возникнуть один раз в 3,5 сек."
+    }
+  ],
+  "coordinates": []
 }

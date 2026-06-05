@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-reign-of-violet-iv",
+  "name_ru": "Мастерство: Цветущее царство IV",
+  "name_en": "Domain of Mastery: Reign of Violet IV",
+  "type": "Повышение талантов",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-transience",
+    "guide-to-transience",
+    "teachings-of-transience"
+  ],
+  "coordinates": []
+}

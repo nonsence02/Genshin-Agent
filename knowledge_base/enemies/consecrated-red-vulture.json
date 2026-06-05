@@ -1,0 +1,13 @@
+{
+  "id": "consecrated-red-vulture",
+  "name_ru": "Священный красный стервятник",
+  "name_en": "Consecrated Red Vulture",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "marked-shell",
+    "sturdy-shell",
+    "desiccated-shell"
+  ],
+  "coordinates": []
+}

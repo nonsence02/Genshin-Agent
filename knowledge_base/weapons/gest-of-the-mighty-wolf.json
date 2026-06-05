@@ -1,43 +1,80 @@
 {
   "id": "gest-of-the-mighty-wolf",
-  "name": "Gest of the Mighty Wolf",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Gest_of_the_Mighty_Wolf",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "Increase ATK SPD by. Every time the equipping character's Normal Attack (s) hit opponent(s), when they cast their Elemental Skill, or when they begin their Charged Attack (s), gain stacks of Four Winds' Hymn respectively: DMG dealt is increased by, for. Max stacks. This can be triggered once every. Additionally, when the team has the \" Hexerei: Secret Rite \", each stack of Four Winds' Hymn will increase the CRIT DMG of the equipping character by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fractured Eye of the Deep Shadow",
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Hooked Beak of the Deep Shadow",
-        "Lieutenant's Insignia"
-      ]
+  "name_ru": "Подвиг могучего волка",
+  "name_en": "Gest of the Mighty Wolf",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.072
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.3308
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Неугасающее рыцарство",
+  "passive_description_ru": "Скорость атаки повышается на 10%. Попадания по врагу обычной атакой, применение элементального навыка или начало заряженной атаки наделяют экипированного персонажа 1/2/2 уровнями Гимна четырёх ветров соответственно: наносимый урон повышается на 7,5%. Этот эффект длится 4 сек., складывается до 4 раз и может возникнуть один раз в 0,01 сек.\nКроме того, когда в отряде действует эффект Ведьмовство: Тайный обряд, каждый уровень Гимна четырёх ветров дополнительно повышает крит. урон экипированного персонажа на 7,5%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fractured-eye-of-the-deep-shadow",
+        "name_ru": "Расколотый глаз глубокой тьмы",
+        "name_en": "Fractured Eye of the Deep Shadow"
+      },
+      {
+        "id": "aberrant-core-of-the-deep-shadow",
+        "name_ru": "Аномальное ядро глубокой тьмы",
+        "name_en": "Aberrant Core of the Deep Shadow"
+      },
+      {
+        "id": "hooked-beak-of-the-deep-shadow",
+        "name_ru": "Клюв глубокой тьмы",
+        "name_en": "Hooked Beak of the Deep Shadow"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "recruits-insignia",
+        "name_ru": "Шеврон рядового",
+        "name_en": "Recruit's Insignia"
+      },
+      {
+        "id": "sergeants-insignia",
+        "name_ru": "Шеврон сержанта",
+        "name_en": "Sergeant's Insignia"
+      },
+      {
+        "id": "lieutenants-insignia",
+        "name_ru": "Шеврон офицера",
+        "name_en": "Lieutenant's Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

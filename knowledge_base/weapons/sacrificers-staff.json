@@ -1,48 +1,80 @@
 {
   "id": "sacrificers-staff",
-  "name": "Sacrificer's Staff",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sacrificer%27s_Staff",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "45 - 620",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "For after an Elemental Skill hits an opponent, ATK is increased by and Energy Recharge is increased by. Max stacks. This can be triggered even when the equipping character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Ember of Long Night Flint",
-        "Mistshroud Manifestation",
-        "Broken Drive Shaft",
-        "Afterglow of Long Night Flint",
-        "Mistshroud Plate",
-        "Reinforced Drive Shaft",
-        "Flare of Long Night Flint",
-        "Mistshroud Helmet",
-        "Precision Drive Shaft",
-        "Blaze of Long Night Flint"
-      ]
+  "name_ru": "Посох жертвующей",
+  "name_en": "Sacrificer's Staff",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.0687,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.02
+    },
+    "level_90": {
+      "base_atk": 620.033,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.0919
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Незапятнанное желание",
+  "passive_description_ru": "На 6 сек. после попадания элементального навыка по противнику сила атаки повышается на 8%, а восстановление энергии - на 6%. Этот эффект складывается до 3 раз и срабатывает, даже когда экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "ember-of-long-night-flint",
+        "name_ru": "Искра кремня долгой ночи",
+        "name_en": "Ember of Long Night Flint"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "afterglow-of-long-night-flint",
+        "name_ru": "Отблеск кремня долгой ночи",
+        "name_en": "Afterglow of Long Night Flint"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "flare-of-long-night-flint",
+        "name_ru": "Вспышка кремня долгой ночи",
+        "name_en": "Flare of Long Night Flint"
+      },
+      {
+        "id": "blaze-of-long-night-flint",
+        "name_ru": "Пламя кремня долгой ночи",
+        "name_en": "Blaze of Long Night Flint"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mistshroud-manifestation",
+        "name_ru": "Туманное воплощение",
+        "name_en": "Mistshroud Manifestation"
+      },
+      {
+        "id": "mistshroud-plate",
+        "name_ru": "Туманная пластина",
+        "name_en": "Mistshroud Plate"
+      },
+      {
+        "id": "mistshroud-helmet",
+        "name_ru": "Туманный шлем",
+        "name_en": "Mistshroud Helmet"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "broken-drive-shaft",
+        "name_ru": "Сломанный вал",
+        "name_en": "Broken Drive Shaft"
+      },
+      {
+        "id": "reinforced-drive-shaft",
+        "name_ru": "Усиленный вал",
+        "name_en": "Reinforced Drive Shaft"
+      },
+      {
+        "id": "precision-drive-shaft",
+        "name_ru": "Высокоточный вал",
+        "name_en": "Precision Drive Shaft"
+      }
+    ]
+  },
+  "coordinates": []
 }

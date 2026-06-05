@@ -1,10 +1,16 @@
 {
   "id": "henna-berry",
+  "name_ru": "Красноплодник",
   "name_en": "Henna Berry",
-  "type": "Local Specialty (Sumeru)",
-  "days": [],
-  "source": [
-    "Found in the deserts of Sumeru"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Сумеру",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пустыня Сумеру",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Henna_Berry"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

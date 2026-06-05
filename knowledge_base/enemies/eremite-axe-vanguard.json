@@ -1,0 +1,13 @@
+{
+  "id": "eremite-axe-vanguard",
+  "name_ru": "Топорник Пустынников",
+  "name_en": "Eremite Axe Vanguard",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

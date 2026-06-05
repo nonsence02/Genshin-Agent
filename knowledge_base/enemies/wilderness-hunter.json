@@ -1,0 +1,13 @@
+{
+  "id": "wilderness-hunter",
+  "name_ru": "Охотник пустошей",
+  "name_en": "Wilderness Hunter",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "mistshroud-helmet",
+    "mistshroud-plate",
+    "mistshroud-manifestation"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "boreal-wolfs-nostalgia",
+  "name_ru": "Ностальгия арктического волка",
+  "name_en": "Boreal Wolf's Nostalgia",
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "source_ru": [
+    "Можно создать: {0}"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-submerged-valley-iv"
+  ],
+  "source_domain": "domain-of-forgery-submerged-valley-iv",
+  "coordinates": []
+}

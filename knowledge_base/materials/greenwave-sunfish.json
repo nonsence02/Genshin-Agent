@@ -1,0 +1,15 @@
+{
+  "id": "greenwave-sunfish",
+  "name_ru": "Рыба-солнце зелёной волны",
+  "name_en": "Greenwave Sunfish",
+  "type": "exchange",
+  "type_text_ru": "Рыба",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыбалка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

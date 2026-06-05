@@ -1,0 +1,23 @@
+{
+  "id": "cold-noodles-with-mountain-delicacies",
+  "name_ru": "Холодная лапша «Дары гор»",
+  "name_en": "Cold Noodles with Mountain Delicacies",
+  "rarity": 2,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 80 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "mushroom",
+      "count": 3
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

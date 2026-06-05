@@ -1,0 +1,16 @@
+{
+  "id": "horsetail",
+  "name_ru": "Конский хвост",
+  "name_en": "Horsetail",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Среди зарослей тростника и во влажных местах",
+    "Тростниковые острова"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

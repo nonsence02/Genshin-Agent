@@ -1,0 +1,13 @@
+{
+  "id": "primal-construct-prospector",
+  "name_ru": "Первозданная конструкция: Разведчик",
+  "name_en": "Primal Construct: Prospector",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "radiant-prism",
+    "turbid-prism",
+    "damaged-prism"
+  ],
+  "coordinates": []
+}

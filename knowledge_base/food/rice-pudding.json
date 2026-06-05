@@ -1,0 +1,27 @@
+{
+  "id": "rice-pudding",
+  "name_ru": "Рисовый пудинг",
+  "name_en": "Rice Pudding",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 100 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "bird-egg",
+      "count": 3
+    },
+    {
+      "material_id": "rice",
+      "count": 2
+    },
+    {
+      "material_id": "milk",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

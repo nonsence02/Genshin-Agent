@@ -1,0 +1,80 @@
+{
+  "id": "flame-forged-insight",
+  "name_ru": "Выкованное пламенем озарение",
+  "name_en": "Flame-Forged Insight",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 36
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 165.384
+    }
+  },
+  "passive_name_ru": "Разум в расцвете",
+  "passive_description_ru": "Активация реакций Заряжен, Лунный заряд, Бутонизация, Лунная бутонизация, Кристалл или Лунный кристалл восстанавливает 12 ед. энергии и на 15 сек. повышает мастерство стихий на 60 ед. Эффект может возникнуть один раз в 15 сек. и срабатывает, даже когда экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "delirious-decadence-of-the-sacred-lord",
+        "name_ru": "Безумный декаданс Святого Мудреца",
+        "name_en": "Delirious Decadence of the Sacred Lord"
+      },
+      {
+        "id": "delirious-desolation-of-the-sacred-lord",
+        "name_ru": "Безумное опустошение Святого Мудреца",
+        "name_en": "Delirious Desolation of the Sacred Lord"
+      },
+      {
+        "id": "delirious-demeanor-of-the-sacred-lord",
+        "name_ru": "Безумный облик Святого Мудреца",
+        "name_en": "Delirious Demeanor of the Sacred Lord"
+      },
+      {
+        "id": "delirious-divinity-of-the-sacred-lord",
+        "name_ru": "Безумная духовность Святого Мудреца",
+        "name_en": "Delirious Divinity of the Sacred Lord"
+      }
+    ],
+    "elite_drops": [
+      {
+        "id": "cold-cracked-shellshard",
+        "name_ru": "Холодный осколок панциря",
+        "name_en": "Cold-Cracked Shellshard"
+      },
+      {
+        "id": "warm-back-shell",
+        "name_ru": "Тёплый панцирь",
+        "name_en": "Warm Back-Shell"
+      },
+      {
+        "id": "blazing-prismshell",
+        "name_ru": "Пылающий призмопанцирь",
+        "name_en": "Blazing Prismshell"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "transoceanic-pearl",
+        "name_ru": "Жемчужина иноморья",
+        "name_en": "Transoceanic Pearl"
+      },
+      {
+        "id": "transoceanic-chunk",
+        "name_ru": "Обломок из иноморья",
+        "name_en": "Transoceanic Chunk"
+      },
+      {
+        "id": "xenochromatic-crystal",
+        "name_ru": "Ксенохромный кристалл",
+        "name_en": "Xenochromatic Crystal"
+      }
+    ]
+  },
+  "coordinates": []
+}

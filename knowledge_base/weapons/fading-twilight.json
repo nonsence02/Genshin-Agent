@@ -1,48 +1,80 @@
 {
   "id": "fading-twilight",
-  "name": "Fading Twilight",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fading_Twilight",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Has three states, Evengleam, Afterglow, and Dawnblaze, which increase DMG dealt by respectively. When attacks hit opponents, this weapon will switch to the next state. This weapon can change states once every. The character equipping this weapon can still trigger the state switch while not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Hunter's Sacrificial Knife",
-        "Divining Scroll",
-        "Piece of Aerosiderite",
-        "Agent's Sacrificial Knife",
-        "Sealed Scroll",
-        "Bit of Aerosiderite",
-        "Inspector's Sacrificial Knife",
-        "Forbidden Curse Scroll",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Гаснущие сумерки",
+  "name_en": "Fading Twilight",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.0667
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3063
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Сияние бездны",
+  "passive_description_ru": "Оружие обладает 3 состояниями: Закат, Туман и Заря, каждое из которых увеличивает наносимый урон на 6%/10%/14% соответственно. После попадания по противнику состояние меняется на следующее, не чаще одного раза в 7 сек. Эффект смены состояния срабатывает, даже когда персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "hunters-sacrificial-knife",
+        "name_ru": "Церемониальный нож охотника",
+        "name_en": "Hunter's Sacrificial Knife"
+      },
+      {
+        "id": "agents-sacrificial-knife",
+        "name_ru": "Церемониальный нож агента",
+        "name_en": "Agent's Sacrificial Knife"
+      },
+      {
+        "id": "inspectors-sacrificial-knife",
+        "name_ru": "Церемониальный нож инспектора",
+        "name_en": "Inspector's Sacrificial Knife"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

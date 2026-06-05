@@ -1,0 +1,13 @@
+{
+  "id": "green-obsidian-ring",
+  "name_ru": "Кольцо с зелёным обсидианом",
+  "name_en": "Green Obsidian Ring",
+  "type": "consume",
+  "type_text_ru": "Предмет приключения",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

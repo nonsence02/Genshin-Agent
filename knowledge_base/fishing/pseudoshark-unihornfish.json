@@ -1,0 +1,11 @@
+{
+  "id": "pseudoshark-unihornfish",
+  "kind": "fish",
+  "name_ru": "Псевдоакулья рыба-единорог",
+  "name_en": "Pseudoshark Unihornfish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,16 @@
 {
   "id": "padisarah",
+  "name_ru": "Падисара",
   "name_en": "Padisarah",
-  "type": "Local Specialty (Sumeru)",
-  "days": [],
-  "source": [
-    "Found in Sumeru City"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Сумеру",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Окрестности города Сумеру",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Padisarah"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

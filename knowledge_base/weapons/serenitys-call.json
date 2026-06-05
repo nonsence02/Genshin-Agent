@@ -1,48 +1,80 @@
 {
   "id": "serenitys-call",
-  "name": "Serenity's Call",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Serenity%27s_Call",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Upon causing an Elemental Reaction, increases Max HP by for. Moonsign: Ascendant Gleam: Max HP from this is further increased by. This can be triggered even if the equipping character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Artful Device Fragment",
-        "Frostnight's Glimmer",
-        "Tattered Warrant",
-        "Artful Device Replica",
-        "Frostnight's Glow",
-        "Immaculate Warrant",
-        "Artful Device Inheritance",
-        "Frostnight's Glory",
-        "Frost-Etched Warrant",
-        "Artful Device Wish"
-      ]
+  "name_ru": "Зов безмятежности",
+  "name_en": "Serenity's Call",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1333
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.6125
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Затихший шёпот",
+  "passive_description_ru": "На 12 сек. после активации элементальной реакции макс. HP экипированного персонажа повышается на 16%. Лунное знамение - Высшее сияние: макс. HP от данного эффекта дополнительно повышается на 16%. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "artful-device-fragment",
+        "name_ru": "Фрагмент чудесного устройства",
+        "name_en": "Artful Device Fragment"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "artful-device-replica",
+        "name_ru": "Образец чудесного устройства",
+        "name_en": "Artful Device Replica"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "artful-device-inheritance",
+        "name_ru": "Наследие чудесного устройства",
+        "name_en": "Artful Device Inheritance"
+      },
+      {
+        "id": "artful-device-wish",
+        "name_ru": "Мечта чудесного устройства",
+        "name_en": "Artful Device Wish"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "frostnights-glimmer",
+        "name_ru": "Мерцание морозной ночи",
+        "name_en": "Frostnight's Glimmer"
+      },
+      {
+        "id": "frostnights-glow",
+        "name_ru": "Сияние морозной ночи",
+        "name_en": "Frostnight's Glow"
+      },
+      {
+        "id": "frostnights-glory",
+        "name_ru": "Слава морозной ночи",
+        "name_en": "Frostnight's Glory"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "tattered-warrant",
+        "name_ru": "Потрёпанный мандат",
+        "name_en": "Tattered Warrant"
+      },
+      {
+        "id": "immaculate-warrant",
+        "name_ru": "Безупречный мандат",
+        "name_en": "Immaculate Warrant"
+      },
+      {
+        "id": "frost-etched-warrant",
+        "name_ru": "Заиндевевший мандат",
+        "name_en": "Frost-Etched Warrant"
+      }
+    ]
+  },
+  "coordinates": []
 }

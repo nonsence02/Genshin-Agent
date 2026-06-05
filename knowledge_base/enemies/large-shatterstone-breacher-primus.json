@@ -1,0 +1,13 @@
+{
+  "id": "large-shatterstone-breacher-primus",
+  "name_ru": "Большой камнедробящий протоген расщелин",
+  "name_en": "Large Shatterstone Breacher Primus",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "alien-life-core",
+    "foreign-synapse",
+    "rift-core"
+  ],
+  "coordinates": []
+}

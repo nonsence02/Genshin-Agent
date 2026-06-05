@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-handyman",
+  "name_ru": "Похитители сокровищ: Разнорабочий",
+  "name_en": "Treasure Hoarders: Handyman",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "true-fruit-angler",
+  "name_ru": "Плодовый иглобрюх",
+  "name_en": "True Fruit Angler",
+  "type": "exchange",
+  "type_text_ru": "Рыба",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыбалка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,14 +1,37 @@
 {
   "id": "shackles-of-the-dandelion-gladiator",
+  "name_ru": "Оковы львиного клыка",
   "name_en": "Shackles of the Dandelion Gladiator",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Cecilia Garden (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Shackles_of_the_Dandelion_Gladiator"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-blessing-deepfire-construct-i",
+    "domain-of-blessing-deepfire-construct-ii",
+    "domain-of-blessing-deepfire-construct-iii",
+    "domain-of-blessing-deepfire-construct-iv",
+    "domain-of-blessing-forsaken-rampart-i",
+    "domain-of-blessing-forsaken-rampart-ii",
+    "domain-of-blessing-forsaken-rampart-iii",
+    "domain-of-blessing-forsaken-rampart-iv",
+    "domain-of-blessing-stone-chamber-i",
+    "domain-of-blessing-stone-chamber-ii",
+    "domain-of-blessing-stone-chamber-iii",
+    "domain-of-blessing-variation-i",
+    "domain-of-blessing-variation-ii",
+    "domain-of-blessing-variation-iii",
+    "domain-of-blessing-variation-iv",
+    "domain-of-forgery-ruins-of-thirsting-capital-iii",
+    "domain-of-forgery-ruins-of-thirsting-capital-iv"
+  ],
+  "source_domain": "domain-of-blessing-deepfire-construct-i",
+  "coordinates": []
 }

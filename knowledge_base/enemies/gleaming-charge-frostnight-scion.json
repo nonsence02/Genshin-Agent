@@ -1,0 +1,13 @@
+{
+  "id": "gleaming-charge-frostnight-scion",
+  "name_ru": "Сияющая молния: Потомок морозной ночи",
+  "name_en": "Gleaming Charge: Frostnight Scion",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "frostnights-glory",
+    "frostnights-glow",
+    "frostnights-glimmer"
+  ],
+  "coordinates": []
+}

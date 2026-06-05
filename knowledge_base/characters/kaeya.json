@@ -1,94 +1,81 @@
 {
   "id": "kaeya",
-  "name": "Kaeya",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kaeya",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Cryo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Unleashes a frigid blast, dealing Cryo DMG to opponents in front of Kaeya. When this skill hits at least one enemy, it generates Elemental Particles. Frostgnaw uniquely applies U of Cryo on water and freezes it for seconds. As Frostgnaw's cooldown is only seconds, Kaeya can freeze the water in front of him and walk across it indefinitely as long as Frostgnaw is constantly used. Passive Effects Passive Talent, Cold-Blooded Strike: \"Every hit with Frostgnaw regenerates HP for Kaeya equal to",
-    "elemental_burst": "Coalescing the frost in the air, Kaeya summons icicles that revolve around him. These icicles will follow the character around and deal Cryo DMG to opponents in their path for the ability's duration. This Elemental Burst drains energy later than most others. [ ] Once an icicle deals DMG, it has a cooldown before being able to deal DMG to the same target again. It can deal DMG more than once per rotation if its hitbox remains in contact with an enemy for more than. Glacial Waltz can hit ~ times across the initial burst, icicle rotations and final icicle explosions. Icicle damage will snapshot Kaeya's stats on cast and will not be affected by changes in his stats that occur afterwards...."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "special": [
-        "Calla Lily",
-        "Hoarfrost Core"
-      ]
+  "name_ru": "Кэйа",
+  "name_en": "Kaeya",
+  "element": "Cryo",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 975.6164,
+      "atk": 18.6984,
+      "def": 66.381
     },
-    "talents": {
-      "books": [
-        "Teachings of Ballad",
-        "Guide to Ballad",
-        "Philosophies of Ballad"
-      ],
-      "mob_drops": [
-        "Treasure Hoarder Insignia",
-        "Silver Raven Insignia",
-        "Golden Raven Insignia"
-      ],
-      "weekly_boss": [
-        "Spirit Locket of Boreas"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 11636.1591,
+      "atk": 223.0171,
+      "def": 791.725
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Ритуальное фехтование",
+      "description_ru": "Обычная атака:\nДо пяти быстрых ударов мечом.\n\nЗаряженная атака:\nДва быстрых взмаха мечом, на которые тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Выпад холода",
+      "description_ru": "Совершает выпад холода, который наносит Крио урон врагам впереди."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Ледниковый вальс",
+      "description_ru": "Собрав остатки инея из утреннего воздуха, Кэйа создаёт три вращающиеся вокруг него льдинки.\nОни следуют за активным персонажем и наносят Крио урон врагам, которых касаются."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Клинок холодной крови",
+      "description_ru": "Каждое попадание навыком Выпад холода восстанавливает Кэйе HP в размере 15% от силы атаки."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Ледниковое сердце",
+      "description_ru": "Противники, замороженные навыком Выпад холода, роняют больше элементальных частиц.\nКаждый удар навыка Выпад холода генерирует до 2 элементальных частиц."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Скрытые силы",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время спринта на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Превосходная кровь",
+      "description_ru": "Увеличивает шанс крит. попадания обычной и заряженной атаки Кэйи по противникам с эффектом Крио на 15%."
+    },
+    {
+      "name_ru": "Бесконечный вальс",
+      "description_ru": "Каждый побеждённый во время длительности навыка Ледниковый вальс враг увеличивает его длительность на 2,5 сек. Макс. 15 сек."
+    },
+    {
+      "name_ru": "Танец холода",
+      "description_ru": "Увеличивает уровень навыка Выпад холода на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Поцелуй холода",
+      "description_ru": "Активируется, когда HP Кэйи падает ниже 20%:\nСоздаёт щит, в течение 20 сек. поглощающий урон, равный 30% от макс. HP Кэйи.\nКрио урон поглощается с эффективностью 250%.\nМожет возникнуть раз в 60 сек."
+    },
+    {
+      "name_ru": "Объятья холода",
+      "description_ru": "Увеличивает уровень навыка Ледниковый вальс на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Ледниковый вихрь",
+      "description_ru": "Использование навыка Ледниковый вальс создаёт одну дополнительную льдинку, и при активации восстанавливает 15 ед. энергии."
+    }
+  ],
+  "coordinates": []
 }

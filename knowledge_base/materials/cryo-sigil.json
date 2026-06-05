@@ -1,0 +1,15 @@
+{
+  "id": "cryo-sigil",
+  "name_ru": "Печать Крио",
+  "name_en": "Cryo Sigil",
+  "type": "consume",
+  "type_text_ru": "Символ города",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Исследование мира"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

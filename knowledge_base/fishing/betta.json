@@ -1,0 +1,11 @@
+{
+  "id": "betta",
+  "kind": "fish",
+  "name_ru": "Боевая колюшка",
+  "name_en": "Betta",
+  "bait_id": "redrot-bait",
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

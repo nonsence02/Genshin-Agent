@@ -1,48 +1,80 @@
 {
   "id": "sacrificial-jade",
-  "name": "Sacrificial Jade",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sacrificial_Jade",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "When not on the field for more than, Max HP will be increased by and Elemental Mastery will be increased by. These effects will be canceled after the wielder has been on the field for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Luminous Sands from Guyun",
-        "Mist Grass Pollen",
-        "Divining Scroll",
-        "Lustrous Stone from Guyun",
-        "Mist Grass",
-        "Sealed Scroll",
-        "Relic from Guyun",
-        "Mist Grass Wick",
-        "Forbidden Curse Scroll",
-        "Divine Body from Guyun"
-      ]
+  "name_ru": "Жертвенный нефрит",
+  "name_en": "Sacrificial Jade",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.08
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.3675
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Нефритовый круговорот",
+  "passive_description_ru": "Если персонаж не на поле боя более 5 сек., макс. HP увеличивается на 32%, а мастерство стихий - на 40 ед. После вступления персонажа в бой эффект длится 10 сек., после чего исчезает.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "luminous-sands-from-guyun",
+        "name_ru": "Светящийся песок Гуюнь",
+        "name_en": "Luminous Sands from Guyun"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "lustrous-stone-from-guyun",
+        "name_ru": "Блестящий камень Гуюнь",
+        "name_en": "Lustrous Stone from Guyun"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "relic-from-guyun",
+        "name_ru": "Реликвия Гуюнь",
+        "name_en": "Relic from Guyun"
+      },
+      {
+        "id": "divine-body-from-guyun",
+        "name_ru": "Останки богов Гуюнь",
+        "name_en": "Divine Body from Guyun"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mist-grass-pollen",
+        "name_ru": "Пыльца туманной травы",
+        "name_en": "Mist Grass Pollen"
+      },
+      {
+        "id": "mist-grass",
+        "name_ru": "Мешочек с туманной травой",
+        "name_en": "Mist Grass"
+      },
+      {
+        "id": "mist-grass-wick",
+        "name_ru": "Пучок туманной травы",
+        "name_en": "Mist Grass Wick"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

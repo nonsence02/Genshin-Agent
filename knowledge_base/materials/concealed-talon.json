@@ -1,10 +1,22 @@
 {
   "id": "concealed-talon",
+  "name_ru": "Скрытый дьявольский коготь",
   "name_en": "Concealed Talon",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Riftwolves"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Волки Разрыва Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Concealed_Talon"
+  "dropped_by": [
+    "rockfond-rifthound",
+    "rockfond-rifthound-whelp",
+    "thundercraven-rifthound",
+    "thundercraven-rifthound-whelp"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

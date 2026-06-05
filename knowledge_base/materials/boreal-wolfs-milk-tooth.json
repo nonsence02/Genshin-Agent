@@ -1,0 +1,25 @@
+{
+  "id": "boreal-wolfs-milk-tooth",
+  "name_ru": "Молочный зуб арктического волка",
+  "name_en": "Boreal Wolf's Milk Tooth",
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "source_ru": [
+    "Сувенирная лавка Мондштадта",
+    "Сувенирная лавка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-submerged-valley-i",
+    "domain-of-forgery-submerged-valley-ii",
+    "domain-of-forgery-submerged-valley-iii",
+    "domain-of-forgery-submerged-valley-iv"
+  ],
+  "source_domain": "domain-of-forgery-submerged-valley-i",
+  "coordinates": []
+}

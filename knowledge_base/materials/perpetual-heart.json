@@ -1,10 +1,17 @@
 {
   "id": "perpetual-heart",
+  "name_ru": "Сердце бесконечного механизма",
   "name_en": "Perpetual Heart",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Perpetual Mechanical Arrays"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Бесконечные механические массивы Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Perpetual_Heart"
+  "dropped_by": [
+    "perpetual-mechanical-array"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

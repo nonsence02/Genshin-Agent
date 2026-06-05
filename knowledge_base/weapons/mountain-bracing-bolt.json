@@ -1,48 +1,80 @@
 {
   "id": "mountain-bracing-bolt",
-  "name": "Mountain-Bracing Bolt",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mountain-Bracing_Bolt",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Decreases Climbing Stamina Consumption by and increases Elemental Skill DMG by. Also, after other nearby party members use Elemental Skills, the equipping character's Elemental Skill DMG will also increase by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Delirious Decadence of the Sacred Lord",
-        "Ignited Stone",
-        "Whopperflower Nectar",
-        "Delirious Desolation of the Sacred Lord",
-        "Ignited Seed of Life",
-        "Shimmering Nectar",
-        "Delirious Demeanor of the Sacred Lord",
-        "Ignited Seeing Eye",
-        "Energy Nectar",
-        "Delirious Divinity of the Sacred Lord"
-      ]
+  "name_ru": "Крепящий горы шип",
+  "name_en": "Mountain-Bracing Bolt",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.0667
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3063
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Надежда выше гор",
+  "passive_description_ru": "Снижает потребление выносливости при карабканье на 15% и повышает урон элементального навыка на 12%. Кроме того, после того как другие члены отряда поблизости используют элементальные навыки, урон элементального навыка экипированного персонажа повышается на 12% на 8 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "delirious-decadence-of-the-sacred-lord",
+        "name_ru": "Безумный декаданс Святого Мудреца",
+        "name_en": "Delirious Decadence of the Sacred Lord"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "delirious-desolation-of-the-sacred-lord",
+        "name_ru": "Безумное опустошение Святого Мудреца",
+        "name_en": "Delirious Desolation of the Sacred Lord"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "delirious-demeanor-of-the-sacred-lord",
+        "name_ru": "Безумный облик Святого Мудреца",
+        "name_en": "Delirious Demeanor of the Sacred Lord"
+      },
+      {
+        "id": "delirious-divinity-of-the-sacred-lord",
+        "name_ru": "Безумная духовность Святого Мудреца",
+        "name_en": "Delirious Divinity of the Sacred Lord"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "ignited-stone",
+        "name_ru": "Пламенный камень",
+        "name_en": "Ignited Stone"
+      },
+      {
+        "id": "ignited-seed-of-life",
+        "name_ru": "Пламенное семя жизни",
+        "name_en": "Ignited Seed of Life"
+      },
+      {
+        "id": "ignited-seeing-eye",
+        "name_ru": "Пламенное око",
+        "name_en": "Ignited Seeing Eye"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,10 +1,17 @@
 {
   "id": "remnant-of-the-dreadwing",
+  "name_ru": "Останки крыла ужаса",
   "name_en": "Remnant of the Dreadwing",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Lord of the Hidden Depths: Whisperer of Nightmares"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Повелитель скрытых глубин: Шёпот кошмаров Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Remnant_of_the_Dreadwing"
+  "dropped_by": [
+    "lord-of-the-hidden-depths-whisperer-of-nightmares"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

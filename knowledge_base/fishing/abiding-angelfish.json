@@ -1,0 +1,11 @@
+{
+  "id": "abiding-angelfish",
+  "kind": "fish",
+  "name_ru": "Вечная рыба-ангел",
+  "name_en": "Abiding Angelfish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

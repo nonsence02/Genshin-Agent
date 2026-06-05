@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-mastery-shadowed-legacy-i",
+  "name_ru": "Подземелье мастерства: Тень прошлого I",
+  "name_en": "Domain of Mastery: Shadowed Legacy I",
+  "type": "Повышение талантов",
+  "region": "Нод-Край",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "teachings-of-elysium"
+  ],
+  "coordinates": []
+}

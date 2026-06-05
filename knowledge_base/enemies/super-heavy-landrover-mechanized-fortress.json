@@ -1,0 +1,20 @@
+{
+  "id": "super-heavy-landrover-mechanized-fortress",
+  "name_ru": "Сверхтяжёлый сухопутный крейсер: Мобильная крепость",
+  "name_en": "Super-Heavy Landrover: Mechanized Fortress",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "cyclic-military-kuuvahki-core",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

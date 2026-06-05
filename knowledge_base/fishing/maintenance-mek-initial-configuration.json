@@ -1,0 +1,11 @@
+{
+  "id": "maintenance-mek-initial-configuration",
+  "kind": "fish",
+  "name_ru": "Ремонтный мек: Начальная конфигурация",
+  "name_en": "Maintenance Mek: Initial Configuration",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

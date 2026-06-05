@@ -1,0 +1,13 @@
+{
+  "id": "electro-specter",
+  "name_ru": "Электро призрак",
+  "name_en": "Electro Specter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "spectral-nucleus",
+    "spectral-heart",
+    "spectral-husk"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eremite-ravenbeak-halberdier",
+  "name_ru": "Алебардщик Пустынников",
+  "name_en": "Eremite Ravenbeak Halberdier",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

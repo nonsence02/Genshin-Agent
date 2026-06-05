@@ -1,10 +1,25 @@
 {
   "id": "broken-drive-shaft",
+  "name_ru": "Сломанный вал",
   "name_en": "Broken Drive Shaft",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Landcruisers"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сухопутные крейсеры",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Broken_Drive_Shaft"
+  "dropped_by": [
+    "close-combat-scout-landcruiser",
+    "close-combat-storm-landcruiser",
+    "cutting-edge-all-purpose-scout-landcruiser",
+    "cutting-edge-all-purpose-storm-landcruiser",
+    "cutting-edge-fire-support-ground-effect-landcruiser",
+    "force-recon-ground-effect-landcruiser",
+    "force-recon-scout-landcruiser",
+    "force-recon-storm-landcruiser"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "iktomisaurus",
+  "name_ru": "Иктомизавр",
+  "name_en": "Iktomisaurus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "tyrants-fang",
+    "seasoned-fang",
+    "juvenile-fang"
+  ],
+  "coordinates": []
+}

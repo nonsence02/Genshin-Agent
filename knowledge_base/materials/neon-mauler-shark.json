@@ -1,0 +1,15 @@
+{
+  "id": "neon-mauler-shark",
+  "name_ru": "Свирепая радужная акула",
+  "name_en": "Neon Mauler Shark",
+  "type": "exchange",
+  "type_text_ru": "Рыба",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыбалка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

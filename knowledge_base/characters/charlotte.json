@@ -1,94 +1,81 @@
 {
   "id": "charlotte",
-  "name": "Charlotte",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Charlotte",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Cryo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Using the keen instincts of an ace reporter, Charlotte uses her photography skills to produce different effects based on whether the ability is Tapped or Held. Tap Takes a snapshot using Monsieur Verite, dealing AoE Cryo DMG to opponents in front of her and applying Snappy Silhouette to a maximum of opponents. During this effect's duration, it will deal Cryo DMG to affected opponents at intervals. Hold Popping Monsieur Verite's viewfinder open, Charlotte enters Composition Mode, and during this time, the viewfinder will expand as you hold until you reach a Finisher Frame state. In this state, Charlotte can move and change direction freely. When the hold state ends, Monsieur Verite will deal...",
-    "elemental_burst": "Condensing ice to create The Steambird's signature, Charlotte creates a Newsflash Field that will deal AoE Cryo DMG and restores HP for all nearby party members based on Charlotte's ATK. Newsflash Field While the ability is active, Monsieur Verite will deal Cryo DMG at intervals to opponents within its AoE. Will continuously restore HP to active character(s) within its AoE based on Charlotte's ATK. Newsflash Field's DMG and healing effects activate a total of times. The interval between most activations is. However, the interval between the and activations is only. Constellation Effects Constellation Level, A Need to Verify Facts: \"After Still Photo: Comprehensive Confirmation heals a..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Meshing Gear",
-        "Mechanical Spur Gear",
-        "Artificed Dynamic Gear"
-      ],
-      "special": [
-        "Beryl Conch",
-        "\"Tourbillon Device\""
-      ]
+  "name_ru": "Шарлотта",
+  "name_en": "Charlotte",
+  "element": "Cryo",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 902.6731,
+      "atk": 14.5135,
+      "def": 45.78
     },
-    "talents": {
-      "books": [
-        "Teachings of Justice",
-        "Guide to Justice",
-        "Philosophies of Justice"
-      ],
-      "mob_drops": [
-        "Meshing Gear",
-        "Mechanical Spur Gear",
-        "Artificed Dynamic Gear"
-      ],
-      "weekly_boss": [
-        "Lightless Silk String"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10766.1657,
+      "atk": 173.1037,
+      "def": 546.0172
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Съёмка в холодных тонах",
+      "description_ru": "Обычная атака:\nШарлотта наводит на цель свою особую камеру - Господина Верите, и производит до 3 атак, которые наносят Крио урон.\n\nЗаряженная атака:\nТратит определённое количество выносливости, и после недолгой подготовки размещает Господина Верите, который наносит Крио урон по площади.\n\nАтака в падении:\nСобирает силу Крио и стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Крио урон по площади.\n\nАрхэ: Пневма\nПосле заряженной атаки, с некоторым интервалом, появляется пронзающая врагов Игла дыхания душ, которая наносит Крио урон пневмы по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Съёмка: Композиция точки замерзания",
+      "description_ru": "Полагаясь на острое чутьё первоклассного репортёра, Шарлотта использует своё умение фотографии, чтобы добиться разных эффектов в зависимости от того, было ли совершено быстрое или долгое нажатие навыка.\n\nБыстрое нажатие:\nДелает фотографию с помощью Господина Верите, нанося Крио урон по площади врагам перед собой, и накладывает Скоростной силуэт на макс. 5 врагов. Во время действия этого эффекта, он периодически наносит противникам Крио урон.\n\nДолгое нажатие:\nОткрывает видоискатель Господина Верите и переходит в режим композиции, в котором по мере удержания кнопки видоискатель увеличивается, пока не будет достигнуто состояние Великого кадра. В этом состоянии Шарлотта может свободно перемещаться и менять направление движения.\nКогда удерживание прекращается, Господин Верите наносит Крио урон всем противникам, которые захвачены видоискателем, и накладывает на них тот же эффект Скоростного силуэта, что и быстрое нажатие. Если вы отпустите кнопку после достижения Великого кадра, то вместо этого накладывается Сфокусированное впечатление, которое длится дольше и наносит больше урона, но также увеличивает время отката.\nРежим композиции длится макс. 15 сек., и в нём можно выделить до 5 противников."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Стоп-кадр: Всестороннее подтверждение",
+      "description_ru": "Шарлотта создаёт вывеску «Паровой птицы», концентрируя лёд, и создаёт Место происшествия, которое наносит Крио урон по площади и восстанавливает HP всем членам отряда поблизости пропорционально силе атаки Шарлотты.\n\nМесто происшествия\n·Во время действия способности Господин Верите периодически наносит Крио урон противникам в зоне действия.\n·Постоянно восстанавливает HP активным персонажам в зоне действия пропорционально силе атаки Шарлотты."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Момент удара",
+      "description_ru": "Когда противник, отмеченный Сфокусированным впечатлением, повержен, откат Съёмки: Композиция точки замерзания уменьшается на 2 сек. Откат элементального навыка этим способом можно снизить не более 4 раз в 12 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Многостороннее исследование",
+      "description_ru": "Когда в отряде, кроме самой Шарлотты, есть 1/2/3 персонажа из Фонтейна, Шарлотта получает 5%/10%/15% бонус лечения. Когда в отряде есть 1/2/3 персонажа не из Фонтейна, Шарлотта получает 5%/10%/15% бонус Крио урона."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Затвор от первого лица",
+      "description_ru": "Когда Шарлотта активирует Зум-объектив особого анализа, долгое нажатие элементального навыка Съёмка: Композиция точки замерзания больше не активирует изначальные эффекты, но фотографии теперь можно делать особенным способом..."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Точность как обязательство",
+      "description_ru": "После того как Стоп-кадр: Всестороннее подтверждение исцеляет персонажа, он помечается Верификацией, которая исцеляет его раз в 2 сек. на 80% от силы атаки Шарлотты. Этот эффект длится 6 сек."
+    },
+    {
+      "name_ru": "Стремление к истине как долг",
+      "description_ru": "При использовании Съёмки: Композиция точки замерзания, когда Господин Верите поражает 1/2/3 (или более) противников, собственная сила атаки Шарлотты увеличивается на 10%/20%/30% на 12 сек."
+    },
+    {
+      "name_ru": "Независимость как необходимость",
+      "description_ru": "Увеличивает уровень навыка Стоп-кадр: Всестороннее подтверждение на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Мотивация как долг",
+      "description_ru": "Когда Стоп-кадр: Всестороннее подтверждение попадает по противнику, отмеченному Скоростным силуэтом или Сфокусированным впечатлением, он наносит на 10% больше урона и восстанавливает Шарлотте 2 ед. энергии. Это восстановление может быть вызвано до 5 раз каждые 20 сек."
+    },
+    {
+      "name_ru": "Интуиция как принцип",
+      "description_ru": "Увеличивает уровень навыка Съёмка: Композиция точки замерзания на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Любопытство как суть",
+      "description_ru": "Когда обычные или заряженные атаки активного персонажа попадают по противнику, отмеченному Сфокусированным впечатлением Съёмки: Композиция точки замерзания, Господин Верите инициирует совместную атаку, которая наносит Крио урон по площади в размере 180% от силы атаки Шарлотты и исцеляет активных персонажей в зоне действия навыка в размере 42% от силы атаки Шарлотты. Этот эффект может возникнуть один раз в 6 сек. Этот урон и исцеление считаются нанесёнными взрывом стихии Шарлотты."
+    }
+  ],
+  "coordinates": []
 }

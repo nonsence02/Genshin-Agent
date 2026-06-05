@@ -1,10 +1,16 @@
 {
   "id": "moonfall-silver",
+  "name_ru": "Серебро захода луны",
   "name_en": "Moonfall Silver",
-  "type": "Local Specialty (Nod-Krai)",
-  "days": [],
-  "source": [
-    "Found in Hiisi Island"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Нод-Края",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Остров Хийси",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Moonfall_Silver"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,23 @@
+{
+  "id": "a-prize-catch",
+  "name_ru": "Экстремальная рыбалка",
+  "name_en": "A Prize Catch",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 282 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "crab",
+      "count": 4
+    },
+    {
+      "material_id": "calla-lily",
+      "count": 1
+    },
+    {
+      "material_id": "mint",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

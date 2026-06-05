@@ -1,0 +1,31 @@
+{
+  "id": "il-dottore",
+  "name_ru": "Дотторе",
+  "name_en": "Il Dottore",
+  "type": "BOSS",
+  "type_ru": "Враги, достойные упоминания",
+  "drops": [
+    "counterfeit-resin",
+    "twisted-withered-branch",
+    "profaned-sprout",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver",
+    "dream-solvent",
+    "midlander-sword-billet",
+    "midlander-bow-billet",
+    "midlander-claymore-billet",
+    "midlander-catalyst-billet",
+    "midlander-polearm-billet"
+  ],
+  "coordinates": []
+}

@@ -1,14 +1,24 @@
 {
   "id": "oasis-gardens-reminiscence",
+  "name_ru": "Воспоминания цветущего оазиса",
   "name_en": "Oasis Garden's Reminiscence",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Tower of Abject Pride (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Oasis_Garden%27s_Reminiscence"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-obsession-i",
+    "domain-of-forgery-obsession-ii",
+    "domain-of-forgery-obsession-iii",
+    "domain-of-forgery-obsession-iv"
+  ],
+  "source_domain": "domain-of-forgery-obsession-i",
+  "coordinates": []
 }

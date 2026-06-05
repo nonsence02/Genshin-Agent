@@ -1,94 +1,81 @@
 {
   "id": "xiao",
-  "name": "Xiao",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Xiao",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Anemo",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Xiao lunges forward, dealing Anemo DMG to opponents in his path. Can be used in mid-air. Starts with charges. When this skill hits at least one enemy, it generates Elemental Particles. No elemental particles are generated while the Elemental Burst Bane of All Evil is active. A Plunging Attack can be performed immediately after using this skill if it was used after jumping, regardless of Xiao's altitude. When this skill is used above water from a height that is double the jump height and waiting till the ending animation of the skill is played before using the skill again, Wet will be applied to Xiao despite not being close to the water. Passive Effects Passive Talent, Dissolution Eon:...",
-    "elemental_burst": "Xiao dons the Yaksha Mask that set gods and demons trembling millennia ago. Yaksha's Mask Greatly increases Xiao's jumping ability. Increases his attack AoE and attack DMG. Converts attack DMG into Anemo DMG, which cannot be overridden by any other elemental infusion. In this state, Xiao will continuously lose HP. The effects of this skill end when Xiao leaves the field. While donning the Yaksha Mask, Xiao's Interruption Resistance is also increased. The increase to Xiao's jumping ability not only increases the jump height, but increases the speed of him jumping upwards. This does not increase his falling speed. Xiao can perform about Plunging Attacks over this skill's duration. Xiao's..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "special": [
-        "Qingxin",
-        "Juvenile Jade"
-      ]
+  "name_ru": "Сяо",
+  "name_en": "Xiao",
+  "element": "Anemo",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 991.4528,
+      "atk": 27.1852,
+      "def": 62.2232
     },
-    "talents": {
-      "books": [
-        "Teachings of Prosperity",
-        "Guide to Prosperity",
-        "Philosophies of Prosperity"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "weekly_boss": [
-        "Shadow of the Warrior"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12735.7472,
+      "atk": 349.2004,
+      "def": 799.2965
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Вихревой удар",
+      "description_ru": "Обычная атака:\nДо шести быстрых ударов копьём.\n\nЗаряженная атака:\nПроводит воздушную атаку, для которой тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади.\nСяо не получает урона от проведения атаки в падении."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Лемниската ветра",
+      "description_ru": "Сяо совершает выпад вперёд, нанося Анемо урон врагам на пути.\nМожно совершить в воздухе.\nИзначально имеет два заряда."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Истребление всего зла",
+      "description_ru": "Сяо надевает маску Яксы, заставлявшую трепетать от страха богов и демонов тысячи лет назад.\n\nМаска Яксы:\n· Значительно усиливает прыжки Сяо.\n· Увеличивает область и урон его атак.\n· Конвертирует урон от атак в Анемо урон. Этот эффект не может быть отменён какой-либо элементальной инфузией.\n\nНаходясь в этой форме, Сяо периодически теряет HP.\nЭффекты этого навыка заканчиваются, когда Сяо покидает поле боя."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Завоеватель зла: Усмиряющий демонов",
+      "description_ru": "При использовании навыка Истребление всего зла урон Сяо увеличивается на 5%. После этого его урон продолжает увеличиваться на 5% каждые 3 сек. до окончания действия навыка.\nМакс. увеличение урона - 25%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Эра распада: Падение небес",
+      "description_ru": "В течение 7 сек. после использования навыка Лемниската ветра увеличивает урон следующего использования навыка Лемниската ветра на 15%.\nЭффект длится 7 сек. и может складываться до трёх раз. Длительность обнуляется с каждым новым складыванием."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Трансценденция: Отрицание гравитации",
+      "description_ru": "Уменьшает потребление выносливости активного персонажа во время карабканья на 20%.\nНе суммируется с пассивными талантами, дающими точно такие же эффекты."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Эра распада: Сокрушитель миров",
+      "description_ru": "Увеличивает количество зарядов навыка Лемниската ветра на 1."
+    },
+    {
+      "name_ru": "Эра истребления: Расцвет Калейдоса",
+      "description_ru": "Когда Сяо в отряде, но не является активным персонажем, его энергия восстанавливается на 25% быстрее."
+    },
+    {
+      "name_ru": "Завоеватель зла: Бог гнева",
+      "description_ru": "Увеличивает уровень навыка Лемниската ветра на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Трансценденция: Исчезновение страданий",
+      "description_ru": "Когда HP Сяо опускается ниже 50%, его защита увеличивается на 100%."
+    },
+    {
+      "name_ru": "Эра эволюции: Истоки невежества",
+      "description_ru": "Увеличивает уровень навыка Истребление всего зла на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Завоеватель зла: Защитник Якса",
+      "description_ru": "Попадание атакой в падении по двум и более врагам в форме навыка Истребление всего зла добавляет один заряд навыку Лемниската ветра, после чего в течение 1 сек. его можно активировать, игнорируя время отката."
+    }
+  ],
+  "coordinates": []
 }

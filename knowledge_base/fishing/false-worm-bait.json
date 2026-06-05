@@ -1,0 +1,17 @@
+{
+  "id": "false-worm-bait",
+  "kind": "bait",
+  "name_ru": "Фальшивый червь",
+  "name_en": "False Worm Bait",
+  "recipe": [
+    {
+      "material_id": "slime-condensate",
+      "count": 1
+    },
+    {
+      "material_id": "berry",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

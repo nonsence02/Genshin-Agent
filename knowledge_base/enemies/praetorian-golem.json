@@ -1,0 +1,13 @@
+{
+  "id": "praetorian-golem",
+  "name_ru": "Преторианец",
+  "name_en": "Praetorian Golem",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "still-smoldering-hilt",
+    "splintered-hilt",
+    "ruined-hilt"
+  ],
+  "coordinates": []
+}

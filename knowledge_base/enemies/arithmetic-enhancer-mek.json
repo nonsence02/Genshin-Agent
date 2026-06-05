@@ -1,0 +1,13 @@
+{
+  "id": "arithmetic-enhancer-mek",
+  "name_ru": "Мек: Улучшение вычислений",
+  "name_en": "Arithmetic Enhancer Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

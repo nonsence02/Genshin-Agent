@@ -1,0 +1,11 @@
+{
+  "id": "bitter-pufferfish",
+  "kind": "fish",
+  "name_ru": "Горький иглобрюх",
+  "name_en": "Bitter Pufferfish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

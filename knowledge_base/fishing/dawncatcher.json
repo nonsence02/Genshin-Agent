@@ -1,0 +1,11 @@
+{
+  "id": "dawncatcher",
+  "kind": "fish",
+  "name_ru": "Ловец зари",
+  "name_en": "Dawncatcher",
+  "bait_id": "fruit-paste-bait",
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

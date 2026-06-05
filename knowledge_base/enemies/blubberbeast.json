@@ -1,0 +1,13 @@
+{
+  "id": "blubberbeast",
+  "name_ru": "Пухлень",
+  "name_en": "Blubberbeast",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "xenochromatic-crystal",
+    "transoceanic-chunk",
+    "transoceanic-pearl"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,70 @@
+{
+  "id": "charlotte",
+  "name_en": "Charlotte",
+  "element": "Cryo",
+  "weapon": "Catalyst",
+  "region": "Fontaine",
+  "rarity": 4,
+  "description": "Charlotte is a playable Pneuma -aligned Cryo character in Genshin Impact .\n\nA journalist from The Steambird , Charlotte is always on the prowl for an exclusive scoop. Ever so relentless and indefatigable, she won't stop until she finds out the truth, even if she comes closer to danger.",
+  "role_summary": "Charlotte is a playable Pneuma -aligned Cryo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Cool-Color Capture",
+      "description": "Normal Attack Taking aim at targets using Monsieur Verite, her custom Kamera, Charlotte performs up to 3 consecutive attacks, dealing Cryo DMG . Charged Attack Consumes a fixed amount of Stamina, and after a moment's preparation, will deploy Monsieur Verite to deal AoE Cryo DMG . Plunging Attack Gathering the power of Cryo, Charlotte plunges toward the ground, dealing DMG to all opponents in her path and dealing AoE Cryo DMG upon landing. Arkhe: Pneuma At certain intervals, upon using a Charged Attack, Charlotte will cause a Spiritbreath Thorn to descend and pierce opponents, dealing Pneuma-aligned AoE Cryo DMG ."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Framing: Freezing Point Composition",
+      "description": "Using the keen instincts of an ace reporter, Charlotte uses her photography skills to produce different effects based on whether the ability is Tapped or Held. Tap Takes a snapshot using Monsieur Verite, dealing AoE Cryo DMG to opponents in front of her and applying Snappy Silhouette to a maximum of 5 opponents. During this effect's duration, it will deal Cryo DMG to affected opponents at intervals. Hold Popping Monsieur Verite's viewfinder open, Charlotte enters Composition Mode, and during this time, the viewfinder will expand as you hold until you reach a Finisher Frame state. In this state, Charlotte can move and change direction freely. When the hold state ends, Monsieur Verite will deal Cryo DMG to all opponents locked on within the viewfinder, and apply the same Snappy Silhouette as Tap Mode does to them. If you unleash this ability only after reaching Finisher Frame, you will instead apply Focused Impression, which lasts longer and deals more DMG, although the Skill CD will be longer. Composition Mode lasts a maximum of 15s and allows a maximum of 5 opponents to be selected."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Still Photo: Comprehensive Confirmation",
+      "description": "Condensing ice to create The Steambird's signature, Charlotte creates a Newsflash Field that will deal AoE Cryo DMG and restores HP for all nearby party members based on Charlotte's ATK. Newsflash Field While the ability is active, Monsieur Verite will deal Cryo DMG at intervals to opponents within its AoE. Will continuously restore HP to active character(s) within its AoE based on Charlotte's ATK."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Moment of Impact",
+      "description": "When opponents marked by \"Focused Impression\" are defeated, Framing: Freezing Point Composition's CD will be decreased by 2s. This CD decrease can be triggered 4 times every 12s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Diversified Investigation",
+      "description": "When the party contains 1/2/3 Fontainians other than herself, Charlotte gains a 5%/10%/15% Healing Bonus. When the party contains 1/2/3 non-Fontainians, Charlotte gains a 5%/10%/15% Cryo DMG Bonus."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "First-Person Shutter",
+      "description": "After activating the Special Analysis Zoom Lens , Charlotte's \" Framing: Freezing Point Composition \" Hold Mode cannot trigger its original effects, but instead enables her to take photos in a rather unique manner..."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "A Need to Verify Facts",
+      "effect": "After Still Photo: Comprehensive Confirmation heals a character, it will mark them with Verification, which will heal them once every 2s for 80% of Charlotte's ATK. This effect lasts 6s."
+    },
+    "c2": {
+      "name": "A Duty to Pursue Truth",
+      "effect": "When using Framing: Freezing Point Composition, when Monsieur Verite hits 1/2/3 (or more) opponents, Charlotte's own ATK will be increased by 10%/20%/30% for 12s."
+    },
+    "c3": {
+      "name": "An Imperative to Independence",
+      "effect": "Increases the Level of Still Photo: Comprehensive Confirmation by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "A Responsibility to Oversee",
+      "effect": "When Still Photo: Comprehensive Confirmation hits an opponent marked by Snappy Silhouette or Focused Impression, it will deal 10% more DMG and restore 2 Energy to Charlotte. This restoration can be triggered 5 times every 20s."
+    },
+    "c5": {
+      "name": "A Principle of Conscience",
+      "effect": "Increases the Level of Framing: Freezing Point Composition by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "A Summation of Interest",
+      "effect": "Description Advanced Properties When the active character's Normal and Charged Attacks hit an opponent marked by Framing: Freezing Point Composition's Focused Impression, Monsieur Verite will initiate a coordinated attack that deals 180% of Charlotte's ATK as AoE Cryo DMG and heals active character(s) within the AoE for 42% of Charlotte's ATK. This effect can be triggered once every 6s and both DMG and healing dealt in this way will be considered as having been done by Charlotte's Elemental Burst. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Coordinated Attack 1U No ICD 100 Light 200 0 ✘"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Charlotte",
+  "ai_tags": "Main DPS, Хиллер"
+}

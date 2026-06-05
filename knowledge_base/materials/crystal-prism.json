@@ -1,10 +1,19 @@
 {
   "id": "crystal-prism",
+  "name_ru": "Кристальная призма",
   "name_en": "Crystal Prism",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Mirror Maidens"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Зеркальные девы Фатуи Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Crystal_Prism"
+  "dropped_by": [
+    "mirror-maiden"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

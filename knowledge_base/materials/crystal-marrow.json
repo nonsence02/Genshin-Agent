@@ -1,10 +1,16 @@
 {
   "id": "crystal-marrow",
+  "name_ru": "Кристальный костный мозг",
   "name_en": "Crystal Marrow",
-  "type": "Local Specialty (Inazuma)",
-  "days": [],
-  "source": [
-    "Found on Orobashi 's bones on Yashiori Island and Tatarasuna"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Инадзумы",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Остров Ясиори",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Crystal_Marrow"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

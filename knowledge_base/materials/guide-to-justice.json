@@ -1,14 +1,23 @@
 {
   "id": "guide-to-justice",
+  "name_ru": "Указания о «Справедливости»",
   "name_en": "Guide to Justice",
-  "type": "Character Talent Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Pale Forgotten Glory (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Justice"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-admonishing-engraving-ii",
+    "domain-of-mastery-admonishing-engraving-iii",
+    "domain-of-mastery-admonishing-engraving-iv"
+  ],
+  "source_domain": "domain-of-mastery-admonishing-engraving-ii",
+  "coordinates": []
 }

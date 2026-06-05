@@ -1,10 +1,18 @@
 {
   "id": "cold-cracked-shellshard",
+  "name_ru": "Холодный осколок панциря",
   "name_en": "Cold-Cracked Shellshard",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Furnace Shell Mountain Weasels"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Термопанцирные горные хори",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Cold-Cracked_Shellshard"
+  "dropped_by": [
+    "furnace-shell-mountain-weasel"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

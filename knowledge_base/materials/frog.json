@@ -1,0 +1,15 @@
+{
+  "id": "frog",
+  "name_ru": "Лягушка",
+  "name_en": "Frog",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рядом с пресной водой"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

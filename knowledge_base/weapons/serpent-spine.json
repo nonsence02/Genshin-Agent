@@ -1,48 +1,80 @@
 {
   "id": "serpent-spine",
-  "name": "Serpent Spine",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Serpent_Spine",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "Every a character is on the field, they will deal more DMG and take more DMG. This has a maximum of stacks and will not be reset if the character leaves the field, but will be reduced by stack when the character takes DMG.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Fragile Bone Shard",
-        "Whopperflower Nectar",
-        "Piece of Aerosiderite",
-        "Sturdy Bone Shard",
-        "Shimmering Nectar",
-        "Bit of Aerosiderite",
-        "Fossilized Bone Shard",
-        "Energy Nectar",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Меч драконьей кости",
+  "name_en": "Serpent Spine",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Рассекающий волны",
+  "passive_description_ru": "Каждые 4 сек. увеличивает наносимый персонажем урон на 6% и получаемый им урон на 3%, пока тот активен. Может складываться до 5 раз, не сбрасывается при смене персонажа, при получении урона снижается на 1 уровень складывания.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fragile-bone-shard",
+        "name_ru": "Хрупкие останки",
+        "name_en": "Fragile Bone Shard"
+      },
+      {
+        "id": "sturdy-bone-shard",
+        "name_ru": "Крепкие останки",
+        "name_en": "Sturdy Bone Shard"
+      },
+      {
+        "id": "fossilized-bone-shard",
+        "name_ru": "Окаменевшие останки",
+        "name_en": "Fossilized Bone Shard"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

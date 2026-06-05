@@ -1,0 +1,27 @@
+{
+  "id": "right-at-home",
+  "name_ru": "«Дом вдали от дома»",
+  "name_en": "Right at Home",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "rice",
+      "count": 2
+    },
+    {
+      "material_id": "ham",
+      "count": 2
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 1
+    },
+    {
+      "material_id": "bamboo-shoot",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "wooden-shieldwall-mitachurl",
+  "name_ru": "Митачурл с деревянным щитом",
+  "name_en": "Wooden Shieldwall Mitachurl",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "black-crystal-horn",
+    "black-bronze-horn",
+    "heavy-horn",
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

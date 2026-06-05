@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-gravedigger",
+  "name_ru": "Похитители сокровищ: Могильщик",
+  "name_en": "Treasure Hoarders: Gravedigger",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

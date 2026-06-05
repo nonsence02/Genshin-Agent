@@ -1,0 +1,27 @@
+{
+  "id": "magmic-ode",
+  "name_ru": "Магматическая ода",
+  "name_en": "Magmic Ode",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "grainfruit",
+      "count": 4
+    },
+    {
+      "material_id": "potato",
+      "count": 2
+    },
+    {
+      "material_id": "onion",
+      "count": 2
+    },
+    {
+      "material_id": "fish",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

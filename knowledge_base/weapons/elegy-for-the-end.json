@@ -1,44 +1,80 @@
 {
   "id": "elegy-for-the-end",
-  "name": "Elegy for the End",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Elegy_for_the_End",
-  "profile": {
-    "type": "Bow",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases Elemental Mastery by. When the Elemental Skills or Elemental Bursts of the character wielding this weapon hit opponents, that character gains a Sigil of Remembrance. This can be triggered once every and can be triggered even if said character is not on the field. When you possess Sigils of Remembrance, all of them will be consumed and all nearby party members will obtain the \"Millennial Movement: Farewell Song\" for. \"Millennial Movement: Farewell Song\" increases Elemental Mastery by and increases ATK by. Once this is triggered, you will not gain Sigils of Remembrance for. Of the many effects of the \"Millennial...",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Heavy Horn",
-        "Recruit's Insignia",
-        "Black Bronze Horn",
-        "Sergeant's Insignia",
-        "Black Crystal Horn",
-        "Lieutenant's Insignia"
-      ]
+  "name_ru": "Элегия погибели",
+  "name_en": "Elegy for the End",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.12
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.5513
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Песнь разлуки",
+  "passive_description_ru": "Часть Тысячелетней симфонии, что блуждает среди ветров. Увеличивает мастерство стихий на 60 ед. При попадании элементальным навыком или взрывом стихии по противнику персонаж получает один Талисман воспоминаний. Он может возникнуть раз в 0,2 сек., даже когда персонаж в отряде, но не активен. Четыре собранных Талисмана воспоминаний пропадают, на 12 сек. наделяя ближайших членов отряда эффектом «Тысячелетняя симфония: Прощальный гимн». Их мастерство стихии повышается на 100 ед., а сила атаки - на 20%. В течение 20 сек. после активации эффекта Талисманы воспоминаний появляться не будут. Тысячелетняя симфония с эффектами, влияющими на те же навыки, не складывается.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "heavy-horn",
+        "name_ru": "Тяжёлый рог",
+        "name_en": "Heavy Horn"
+      },
+      {
+        "id": "black-bronze-horn",
+        "name_ru": "Чёрный бронзовый рог",
+        "name_en": "Black Bronze Horn"
+      },
+      {
+        "id": "black-crystal-horn",
+        "name_ru": "Чёрный кристаллический рог",
+        "name_en": "Black Crystal Horn"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "recruits-insignia",
+        "name_ru": "Шеврон рядового",
+        "name_en": "Recruit's Insignia"
+      },
+      {
+        "id": "sergeants-insignia",
+        "name_ru": "Шеврон сержанта",
+        "name_en": "Sergeant's Insignia"
+      },
+      {
+        "id": "lieutenants-insignia",
+        "name_ru": "Шеврон офицера",
+        "name_en": "Lieutenant's Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

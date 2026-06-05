@@ -1,0 +1,27 @@
+{
+  "id": "cold-cut-platter",
+  "name_ru": "Мясное ассорти",
+  "name_en": "Cold Cut Platter",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает физ. урон всех членов отряда на 40% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "ham",
+      "count": 1
+    },
+    {
+      "material_id": "bacon",
+      "count": 1
+    },
+    {
+      "material_id": "sausage",
+      "count": 1
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

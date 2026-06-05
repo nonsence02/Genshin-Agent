@@ -1,0 +1,13 @@
+{
+  "id": "thundercraven-rifthound-whelp",
+  "name_ru": "Щенок Разрыва: Громоед",
+  "name_en": "Thundercraven Rifthound Whelp",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "concealed-talon",
+    "concealed-unguis",
+    "concealed-claw"
+  ],
+  "coordinates": []
+}

@@ -1,14 +1,23 @@
 {
   "id": "unyielding-delusion-of-the-far-north-scions",
+  "name_ru": "Упрямое заблуждение последователей крайнего севера",
   "name_en": "Unyielding Delusion of the Far-North Scions",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Lost Mooncourt (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Unyielding_Delusion_of_the_Far-North_Scions"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-lunar-oblation-ii",
+    "domain-of-forgery-lunar-oblation-iii",
+    "domain-of-forgery-lunar-oblation-iv"
+  ],
+  "source_domain": "domain-of-forgery-lunar-oblation-ii",
+  "coordinates": []
 }

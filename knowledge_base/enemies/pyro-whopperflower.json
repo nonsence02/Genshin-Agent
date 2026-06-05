@@ -1,0 +1,13 @@
+{
+  "id": "pyro-whopperflower",
+  "name_ru": "Пиро попрыгунья",
+  "name_en": "Pyro Whopperflower",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "energy-nectar",
+    "shimmering-nectar",
+    "whopperflower-nectar"
+  ],
+  "coordinates": []
+}

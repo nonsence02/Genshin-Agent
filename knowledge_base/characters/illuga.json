@@ -1,94 +1,86 @@
 {
   "id": "illuga",
-  "name": "Illuga",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Illuga",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Hydro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Summons the trusty messenger bird, \"Aedon.\" Different effects are produced depending on whether the skill is Tapped or Held. Tap Aedon dashes towards enemies in front, dealing Geo DMG to enemies it comes into contact with. Hold Enter aiming mode, and command Aedon to dash towards opponents being aimed at, dealing Geo DMG to opponents it comes into contact with. When this skill hits at least one enemy, it generates Elemental Particles. Passive Effects Passive Talent, Torchforger's Covenant: \"After unleashing Elemental Skill Dawnbearing Songbird Dawnbearing Songbird Summons the trusty messenger bird, 'Aedon.' Different effects are produced depending on whether the skill is Tapped or Held. Tap...",
-    "elemental_burst": "Light the lamp, dealing AoE Geo DMG, and gain Haunted Night's Oriole-Song effect for. When this effect is active, Illuga gains stacks of Nightingale's Song Nightingale's Song The effect gained after Illuga unleashes his Elemental Burst Shadowless Reflection. It can increase the Geo DMG inflicted by current active characters.. When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal Geo DMG to opponents, stack of Nightingale’s Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga’s Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further. When Geo DMG dealt..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Prithiva Topaz Sliver",
-        "Prithiva Topaz Fragment",
-        "Prithiva Topaz Chunk",
-        "Prithiva Topaz Gemstone"
-      ],
-      "mob_drops": [
-        "Broken Drive Shaft",
-        "Reinforced Drive Shaft",
-        "Precision Drive Shaft"
-      ],
-      "special": [
-        "Pine Amber",
-        "Cyclic Military Kuuvahki Core"
-      ]
+  "name_ru": "Иллуги",
+  "name_en": "Illuga",
+  "element": "Geo",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1002.9701,
+      "atk": 16.0272,
+      "def": 68.2122
     },
-    "talents": {
-      "books": [
-        "Teachings of Elysium",
-        "Guide to Elysium",
-        "Philosophies of Elysium"
-      ],
-      "mob_drops": [
-        "Broken Drive Shaft",
-        "Reinforced Drive Shaft",
-        "Precision Drive Shaft"
-      ],
-      "weekly_boss": [
-        "Eroded Horn"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 11962.4065,
+      "atk": 191.1575,
+      "def": 813.5657
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Копьё хранителя клятвы",
+      "description_ru": "Обычная атака:\nДо четырёх ударов копьём.\n\nЗаряженная атака:\nВыпад вперёд, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Рассветное пение иволги",
+      "description_ru": "Призывает своего верного соратника, почтовую птицу Аэдона, который производит разные эффекты в зависимости от быстрого или долгого нажатия навыка.\n\nБыстрое нажатие\nАэдон устремляется к противнику впереди и при соприкосновении с ним наносит Гео урон.\n\nДолгое нажатие\nПозволяет прицелиться. Аэдон устремляется к противнику, в которого вы прицелились, и при соприкосновении с ним наносит Гео урон."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Отражение без тени",
+      "description_ru": "Зажигает фонарь, наносит Гео урон по площади и на 20 сек. получает эффект Соловьиная трель ночного кошмара: во время его действия Иллуги получает 21 уровень **Соловьиной трели**. Когда обычная атака, заряженная атака, атака в падении, элементальный навык или взрыв стихии активного персонажа отряда поблизости наносят врагам Гео урон, 1 уровень Соловьиной трели расходуется и повышает наносимый урон пропорционально мастерству стихий Иллуги. Если этот урон наносится реакцией Лунный кристалл, то он повышается ещё больше.\nЕсли Гео урон, наносимый перечисленными способами, поражает несколько врагов одновременно, то количество уровней Соловьиной трели расходуется согласно количеству поражённых врагов.\n\nКроме того, если Иллуги применяет взрыв стихии, и при этом на поле существуют Гео конструкции, созданные персонажами отряда поблизости, либо члены отряда поблизости создают Гео конструкции во время действия Соловьиной трели ночного кошмара, то каждая Гео конструкция на поле дополнительно предоставляет Иллуги 5 уровней Соловьиной трели. Иллуги таким способом может дополнительно получить до 15 уровней Соловьиной трели в течение 20 сек. после применения взрыва стихии.\n\nКогда уровни Соловьиной трели исчерпываются или их длительность завершается, эффект Соловьиной трели ночного кошмара снимается."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Завет Литейщика факелов",
+      "description_ru": "После применения элементального навыка **Рассветное пение иволги** или взрыва стихии **Отражение без тени** остальные персонажи отряда поблизости на 20 сек. получают эффект Клятвы светоносца: шанс крит. попадания и крит. урон наносимого врагам Гео урона повышаются на 5% и 10% соответственно.\n\nЛунное знамение - Высшее сияние\nМастерство стихий персонажей под действием Клятвы светоносца повышается на 50 ед."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Сумерки охотника на демонов",
+      "description_ru": "**Соловьиная трель** получает усиление: когда в отряде 1/2/3 Гидро или Гео персонажа, Соловьиная трель дополнительно повышает наносимый урон на 7%/14%/24% от мастерства стихий Иллуги. Если этот урон наносится реакцией Лунный кристалл, то увеличение составляет 48%/96%/160% от мастерства стихий Иллуги."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Дар лунного знамения: Не увядая зимой",
+      "description_ru": "Когда Иллуги в отряде, уровень Лунного знамения отряда повышается на 1."
+    },
+    {
+      "type": "пассивный талант 4",
+      "name_ru": "Стремительность ночного дозорного",
+      "description_ru": "В ночное время (18:00 - 06:00) персонажи вашего отряда обретают эффект Стремительного шага, который увеличивает их скорость передвижения на 10%.\nВ подземельях, Витой Бездне и Подземельях наказания он не действует. Стремительный шаг не суммируется.\nКроме того, Иллуги понимает, о чём шепчет Дикая Охота..."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Бдительный страж",
+      "description_ru": "После того как Иллуги, будучи активным персонажем, активирует Гео реакции, он восстанавливает 12 ед. энергии. Этот эффект может возникнуть один раз в 15 сек."
+    },
+    {
+      "name_ru": "Олень с острыми рогами",
+      "description_ru": "Когда Соловьиная трель ночного кошмара взрыва стихии **Отражение без тени** активна, Иллуги за каждые 7 израсходованных уровней **Соловьиной трели** призывает Аэдона, который один раз наносит Гео урон одному противнику поблизости. Этот урон равен 400% от мастерства стихий и 200% от защиты Иллуги. Такой урон считается уроном взрыва стихии."
+    },
+    {
+      "name_ru": "Сотрясающий землю рёв",
+      "description_ru": "Увеличивает уровень навыка **Отражение без тени** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Преследующий солнце волк",
+      "description_ru": "Во время действия Соловьиной трели ночного кошмара взрыва стихии **Отражение без тени** защита активных персонажей отряда поблизости повышается на 200 ед."
+    },
+    {
+      "name_ru": "Ураганный скакун",
+      "description_ru": "Увеличивает уровень навыка **Рассветное пение иволги** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Соловьи Ночного Кошмара",
+      "description_ru": "Клятва светоносца таланта возвышения **Завет Литейщика факелов** получает усиление: шанс крит. попадания наносимого врагам Гео урона повышается на 10%, а крит. урон - на 30%.\n\nЛунное знамение - Высшее сияние\nМастерство стихий персонажей под воздействием Клятвы светоносца повышается на 80 ед.\nТребуется разблокировать талант возвышения Завет Литейщика факелов."
+    }
+  ],
+  "coordinates": []
 }

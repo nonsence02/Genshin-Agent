@@ -1,48 +1,80 @@
 {
   "id": "athame-artis",
-  "name": "Athame Artis",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Athame_Artis",
-  "profile": {
-    "type": "Sword",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "CRIT DMG from Elemental Bursts is increased by. When an Elemental Burst hits an opponent, gain the Blade of the Daylight Hours: ATK is increased by. Nearby active party members other than the equipping character have their ATK increased by for. Additionally, when the party possesses Hexerei: Secret Rite effects, the effects of Blade of the Daylight Hours are increased by an additional. This can be triggered even if the equipping character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Tile of Decarabian's Tower",
-        "Frostnight's Glimmer",
-        "Broken Drive Shaft",
-        "Debris of Decarabian's City",
-        "Frostnight's Glow",
-        "Reinforced Drive Shaft",
-        "Fragment of Decarabian's Epic",
-        "Frostnight's Glory",
-        "Precision Drive Shaft",
-        "Scattered Piece of Decarabian's Dream"
-      ]
+  "name_ru": "Атаме артис",
+  "name_en": "Athame Artis",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.072
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.3308
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Пылающая слава Короля Дня",
+  "passive_description_ru": "Крит. урон взрыва стихии повышается на 16%. При попадании взрыва стихии по противнику создаётся эффект Лезвие белого дня: сила атаки повышается на 20%, а сила атаки активных персонажей отряда поблизости (кроме экипированного персонажа) повышается на 16% на 3 сек.\nКроме того, когда в отряде действует эффект Ведьмовство: Тайный обряд, Лезвие белого дня дополнительно усиливается на 75%. Эти эффекты срабатывают, даже когда экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "tile-of-decarabians-tower",
+        "name_ru": "Плитка башни Декарабиана",
+        "name_en": "Tile of Decarabian's Tower"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "debris-of-decarabians-city",
+        "name_ru": "Обломок стены Декарабиана",
+        "name_en": "Debris of Decarabian's City"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "fragment-of-decarabians-epic",
+        "name_ru": "Фрагмент эпоса Декарабиана",
+        "name_en": "Fragment of Decarabian's Epic"
+      },
+      {
+        "id": "scattered-piece-of-decarabians-dream",
+        "name_ru": "Осколок мечты Декарабиана",
+        "name_en": "Scattered Piece of Decarabian's Dream"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "frostnights-glimmer",
+        "name_ru": "Мерцание морозной ночи",
+        "name_en": "Frostnight's Glimmer"
+      },
+      {
+        "id": "frostnights-glow",
+        "name_ru": "Сияние морозной ночи",
+        "name_en": "Frostnight's Glow"
+      },
+      {
+        "id": "frostnights-glory",
+        "name_ru": "Слава морозной ночи",
+        "name_en": "Frostnight's Glory"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "broken-drive-shaft",
+        "name_ru": "Сломанный вал",
+        "name_en": "Broken Drive Shaft"
+      },
+      {
+        "id": "reinforced-drive-shaft",
+        "name_ru": "Усиленный вал",
+        "name_en": "Reinforced Drive Shaft"
+      },
+      {
+        "id": "precision-drive-shaft",
+        "name_ru": "Высокоточный вал",
+        "name_en": "Precision Drive Shaft"
+      }
+    ]
+  },
+  "coordinates": []
 }

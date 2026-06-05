@@ -1,0 +1,15 @@
+{
+  "id": "sweet-flower-medaka",
+  "name_ru": "Сахарная оризия",
+  "name_en": "Sweet-Flower Medaka",
+  "type": "exchange",
+  "type_text_ru": "Рыба",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыбалка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

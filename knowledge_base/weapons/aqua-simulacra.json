@@ -1,48 +1,80 @@
 {
   "id": "aqua-simulacra",
-  "name": "Aqua Simulacra",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Aqua_Simulacra",
-  "profile": {
-    "type": "Bow",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "HP is increased by. When there are opponents nearby, the DMG dealt by the wielder of this weapon is increased by. This will take whether the character is on-field or not.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Luminous Sands from Guyun",
-        "Gloomy Statuette",
-        "Spectral Husk",
-        "Lustrous Stone from Guyun",
-        "Dark Statuette",
-        "Spectral Heart",
-        "Relic from Guyun",
-        "Deathly Statuette",
-        "Spectral Nucleus",
-        "Divine Body from Guyun"
-      ]
+  "name_ru": "Аква симулякрум",
+  "name_en": "Aqua Simulacra",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.192
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.882
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Очищающая форма",
+  "passive_description_ru": "Увеличивает HP на 16%. Когда рядом есть враги, урон, наносимый персонажем, экипированным этим оружием, увеличивается на 20%. Эффект срабатывает, даже когда персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "luminous-sands-from-guyun",
+        "name_ru": "Светящийся песок Гуюнь",
+        "name_en": "Luminous Sands from Guyun"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "lustrous-stone-from-guyun",
+        "name_ru": "Блестящий камень Гуюнь",
+        "name_en": "Lustrous Stone from Guyun"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "relic-from-guyun",
+        "name_ru": "Реликвия Гуюнь",
+        "name_en": "Relic from Guyun"
+      },
+      {
+        "id": "divine-body-from-guyun",
+        "name_ru": "Останки богов Гуюнь",
+        "name_en": "Divine Body from Guyun"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "gloomy-statuette",
+        "name_ru": "Мрачная статуэтка",
+        "name_en": "Gloomy Statuette"
+      },
+      {
+        "id": "dark-statuette",
+        "name_ru": "Тёмная статуэтка",
+        "name_en": "Dark Statuette"
+      },
+      {
+        "id": "deathly-statuette",
+        "name_ru": "Смертельная статуэтка",
+        "name_en": "Deathly Statuette"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

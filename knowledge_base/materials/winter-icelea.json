@@ -1,10 +1,18 @@
 {
   "id": "winter-icelea",
+  "name_ru": "Шпороцветник",
   "name_en": "Winter Icelea",
-  "type": "Local Specialty (Nod-Krai)",
-  "days": [],
-  "source": [
-    "Found at the Pillar of Embla"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Нод-Края",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Столб Эмблы",
+    "У озера Амсвартнир",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Winter_Icelea"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

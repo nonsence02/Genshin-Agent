@@ -1,48 +1,80 @@
 {
   "id": "festering-desire",
-  "name": "Festering Desire",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Festering_Desire",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Increases Elemental Skill DMG by and Elemental Skill CRIT Rate by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Heavy Horn",
-        "Recruit's Insignia",
-        "Chains of the Dandelion Gladiator",
-        "Black Bronze Horn",
-        "Sergeant's Insignia",
-        "Shackles of the Dandelion Gladiator",
-        "Black Crystal Horn",
-        "Lieutenant's Insignia",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Осквернённое желание",
+  "name_en": "Festering Desire",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.4594
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Бессмертное восхищение",
+  "passive_description_ru": "Увеличивает урон элементального навыка на 16%, и его шанс крит. попадания - на 6%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "heavy-horn",
+        "name_ru": "Тяжёлый рог",
+        "name_en": "Heavy Horn"
+      },
+      {
+        "id": "black-bronze-horn",
+        "name_ru": "Чёрный бронзовый рог",
+        "name_en": "Black Bronze Horn"
+      },
+      {
+        "id": "black-crystal-horn",
+        "name_ru": "Чёрный кристаллический рог",
+        "name_en": "Black Crystal Horn"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "recruits-insignia",
+        "name_ru": "Шеврон рядового",
+        "name_en": "Recruit's Insignia"
+      },
+      {
+        "id": "sergeants-insignia",
+        "name_ru": "Шеврон сержанта",
+        "name_en": "Sergeant's Insignia"
+      },
+      {
+        "id": "lieutenants-insignia",
+        "name_ru": "Шеврон офицера",
+        "name_en": "Lieutenant's Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

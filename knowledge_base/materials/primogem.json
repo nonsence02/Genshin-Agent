@@ -1,0 +1,13 @@
+{
+  "id": "primogem",
+  "name_ru": "Камень Истока",
+  "name_en": "Primogem",
+  "type": "adsorbate",
+  "type_text_ru": "Особая валюта",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,10 +1,16 @@
 {
   "id": "spring-of-the-first-dewdrop",
+  "name_ru": "Источник первой росы",
   "name_en": "Spring of the First Dewdrop",
-  "type": "Local Specialty (Fontaine)",
-  "days": [],
-  "source": [
-    "Found underwater surrounding the Tower of Ipsissimus in Morte Region"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Фонтейна",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Подводная часть Морта",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Spring_of_the_First_Dewdrop"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

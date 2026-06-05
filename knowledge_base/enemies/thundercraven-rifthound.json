@@ -1,0 +1,13 @@
+{
+  "id": "thundercraven-rifthound",
+  "name_ru": "Гончая Разрыва: Громоед",
+  "name_en": "Thundercraven Rifthound",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "concealed-talon",
+    "concealed-unguis",
+    "concealed-claw"
+  ],
+  "coordinates": []
+}

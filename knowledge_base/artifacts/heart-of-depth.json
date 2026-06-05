@@ -1,0 +1,10 @@
+{
+  "id": "heart-of-depth",
+  "name_ru": "Сердце глубин",
+  "name_en": "Heart of Depth",
+  "max_rarity": 5,
+  "bonus_2pc": "Даёт 15% бонус Гидро урона.",
+  "bonus_4pc": "Увеличивает урон обычной и заряженной атаки на 30% в течение 15 сек. после использования элементального навыка.",
+  "source_domain": "domain-of-blessing-elegiac-rime-i",
+  "coordinates": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-frozen-abyss-ii",
+  "name_ru": "Мастерство: Ледяная Бездна II",
+  "name_en": "Domain of Mastery: Frozen Abyss II",
+  "type": "Повышение талантов",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-resistance",
+    "teachings-of-resistance"
+  ],
+  "coordinates": []
+}

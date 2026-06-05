@@ -1,0 +1,27 @@
+{
+  "id": "lotus-flower-crisp",
+  "name_ru": "Печенье лотоса",
+  "name_en": "Lotus Flower Crisp",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "almond",
+      "count": 4
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "butter",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-machine-nest-iii",
+  "name_ru": "Подземелье благословения: Механическое гнездо III",
+  "name_en": "Domain of Blessing: Machine Nest III",
+  "type": "Артефакты",
+  "region": "Ли Юэ",
+  "days_of_week": [],
+  "rewards": [
+    "vermillion-hereafter",
+    "echoes-of-an-offering",
+    "martial-artist",
+    "gambler"
+  ],
+  "coordinates": []
+}

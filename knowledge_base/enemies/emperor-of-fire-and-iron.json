@@ -1,0 +1,16 @@
+{
+  "id": "emperor-of-fire-and-iron",
+  "name_ru": "Император огня и железа",
+  "name_en": "Emperor of Fire and Iron",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "emperors-resolution",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

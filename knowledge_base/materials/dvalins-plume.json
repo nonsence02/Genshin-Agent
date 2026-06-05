@@ -1,10 +1,18 @@
 {
   "id": "dvalins-plume",
+  "name_ru": "Перо из хвоста Двалина",
   "name_en": "Dvalin's Plume",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ Confront Stormterror Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Ужас Бури Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dvalin%27s_Plume"
+  "dropped_by": [
+    "stormterror"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

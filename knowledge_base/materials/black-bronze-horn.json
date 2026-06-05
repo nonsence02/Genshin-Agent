@@ -1,10 +1,27 @@
 {
   "id": "black-bronze-horn",
+  "name_ru": "Чёрный бронзовый рог",
   "name_en": "Black Bronze Horn",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Mitachurls"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Митачурлы Ур. 40+",
+    "Лавачурлы Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Black_Bronze_Horn"
+  "dropped_by": [
+    "blazing-axe-mitachurl",
+    "crackling-axe-mitachurl",
+    "frostarm-lawachurl",
+    "ice-shieldwall-mitachurl",
+    "rock-shieldwall-mitachurl",
+    "stonehide-lawachurl",
+    "thunderhelm-lawachurl",
+    "wooden-shieldwall-mitachurl"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

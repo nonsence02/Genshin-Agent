@@ -1,0 +1,31 @@
+{
+  "id": "the-doctor",
+  "name_ru": "Доктор",
+  "name_en": "The Doctor",
+  "type": "BOSS",
+  "type_ru": "Враги, достойные упоминания",
+  "drops": [
+    "mask-of-the-virtuous-doctor",
+    "madmans-restraint",
+    "elixir-of-the-heretic",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver",
+    "dream-solvent",
+    "borderland-sword-billet",
+    "borderland-bow-billet",
+    "borderland-claymore-billet",
+    "borderland-catalyst-billet",
+    "borderland-polearm-billet"
+  ],
+  "coordinates": []
+}

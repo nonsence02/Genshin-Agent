@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-mastery-witticism-i",
+  "name_ru": "Мастерство: Умные речи I",
+  "name_en": "Domain of Mastery: Witticism I",
+  "type": "Повышение талантов",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "teachings-of-ingenuity"
+  ],
+  "coordinates": []
+}

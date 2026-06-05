@@ -1,0 +1,13 @@
+{
+  "id": "shadowy-husk-defender",
+  "name_ru": "Чёрный доспех: Гвардеец",
+  "name_en": "Shadowy Husk: Defender",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "deathly-statuette",
+    "dark-statuette",
+    "gloomy-statuette"
+  ],
+  "coordinates": []
+}

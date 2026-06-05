@@ -1,0 +1,70 @@
+{
+  "id": "xiangling",
+  "name_en": "Xiangling",
+  "element": "Pyro",
+  "weapon": "Polearm",
+  "region": "Liyue",
+  "rarity": 4,
+  "description": "Mao Xiangling ( Chinese : 卯香菱 Mǎo Xiānglíng ) is a playable Pyro character in Genshin Impact .\n\nShe is the Head Chef at the Wanmin Restaurant and runs it alongside her father Chef Mao . As a chef, Xiangling isn't afraid to try out different recipes or \"exotic\" ingredients, making her dishes sometimes quite unique.",
+  "role_summary": "Mao Xiangling ( Chinese : 卯香菱 Mǎo Xiānglíng ) is a playable Pyro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Dough-Fu",
+      "description": "Normal Attack Performs up to five consecutive spear strikes. Charged Attack Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Guoba Attack",
+      "description": "Summons Guoba , who will continuously breathe fire at opponents, dealing AoE Pyro DMG ."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Pyronado",
+      "description": "Displaying her mastery over both fire and polearms, Xiangling sends a Pyronado whirling around her. The Pyronado will move with your character for the ability's duration, dealing Pyro DMG to all opponents in its path."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Crossfire",
+      "description": "Increases the flame range of Guoba by 20%."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Beware, It's Super Hot!",
+      "description": "When Guoba Attack 's effects end, Guoba leaves a chili pepper on the spot where it disappeared. Picking up a chili pepper increases ATK by 10% for 10s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Chef de Cuisine",
+      "description": "When Xiangling cooks an ATK-boosting dish perfectly, she has a 12% chance to receive double the product."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Crispy Outside, Tender Inside",
+      "effect": "Description Gameplay Notes Opponents hit by Guoba's attacks have their Pyro RES reduced by 15% for 6s. This constellation also applies to some Wildlife . Forest Boars in Serenitea Pots also appear to have their Pyro RES reduced, although they cannot be killed."
+    },
+    "c2": {
+      "name": "Oil Meets Fire",
+      "effect": "Description Gameplay Notes Advanced Properties The last attack in a Normal Attack sequence applies the Implode status onto the opponent for 2s. An explosion will occur once this duration ends, dealing 75% of Xiangling's ATK as AoE Pyro DMG . Although cats , dogs , and Serenitea Pot animals cannot take damage, they can be briefly set on fire with this Constellation, unlike other sources of Pyro. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Implode 1U No ICD 8.8 Light 200 0 ✘"
+    },
+    "c3": {
+      "name": "Deepfry",
+      "effect": "Increases the Level of Pyronado by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Slowbake",
+      "effect": "Description Gameplay Notes Pyronado 's duration is increased by 40%. With this constellation, Pyronado will last 14 seconds."
+    },
+    "c5": {
+      "name": "Guoba Mad",
+      "effect": "Increases the Level of Guoba Attack by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Condensed Pyronado",
+      "effect": "Description Gameplay Notes For the duration of Pyronado , all party members receive a 15% Pyro DMG Bonus . This effect will not buff Xiangling's own Pyronado when cast."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xiangling",
+  "ai_tags": "Main DPS, Пиро аппликатор"
+}

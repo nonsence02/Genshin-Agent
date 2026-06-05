@@ -1,0 +1,13 @@
+{
+  "id": "black-serpent-knight-windcutter",
+  "name_ru": "Рыцарь Чёрного Змея: Разрезающий ветер",
+  "name_en": "Black Serpent Knight: Windcutter",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "deathly-statuette",
+    "dark-statuette",
+    "gloomy-statuette"
+  ],
+  "coordinates": []
+}

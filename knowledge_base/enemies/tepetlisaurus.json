@@ -1,0 +1,13 @@
+{
+  "id": "tepetlisaurus",
+  "name_ru": "Тепетлизавр",
+  "name_en": "Tepetlisaurus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "tyrants-fang",
+    "seasoned-fang",
+    "juvenile-fang"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "traveler-hydro",
+  "name_en": "Traveler (Hydro)",
+  "element": "Hydro",
+  "weapon": "",
+  "region": "",
+  "rarity": null,
+  "description": "Hydro is the fifth Element the Traveler acquires by resonating with the Statue of The Seven in Fontaine . It is aligned with Pneuma .",
+  "role_summary": "Hydro is the fifth Element the Traveler acquires by resonating with the Statue of The Seven in Fontaine . It is aligned with Pneuma .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Foreign Stream",
+      "description": "Normal Attack Performs up to 5 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Aquacrest Saber",
+      "description": "Unleashes a torrent that can cleanse the world. Press Sends a Torrent Surge forward that will deal Hydro DMG to opponents it comes into contact with. Hold Enter Aiming Mode and constantly fire off Dewdrops in the direction in which you are aiming, dealing Hydro DMG to opponents they hit. When the skill ends, it will send a Torrent Surge forward that will deal Hydro DMG to opponents it comes into contact with. Suffusion: When using the Hold configuration of this skill, if the Traveler's HP is higher than 50%, the DMG dealt by Dewdrops will increase based on the Traveler's Max HP, and the Traveler will lose a fixed amount of HP every second. Arkhe: Pneuma At certain intervals, after using Torrent Surge, this skill will unleash a Spiritbreath Thorn that pierces opponents, dealing Pneuma -aligned Hydro DMG ."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Rising Waters",
+      "description": "Unleashes a slow-moving floating bubble that deals continuous Hydro DMG to nearby opponents."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Spotless Waters",
+      "description": "After the Dewdrop fired by the Hold Mode of the Aquacrest Saber hits an opponent, a Sourcewater Droplet will be generated near to the Traveler. If the Traveler picks it up, they will restore 7% HP. 1 Droplet can be created this way every second, and each use of Aquacrest Saber can create 4 Droplets at most."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Clear Waters",
+      "description": "If HP has been consumed via Suffusion while using the Hold Mode Aquacrest Saber, the Torrent Surge at the skill's end will deal Bonus DMG equal to 45% of the total HP the Traveler has consumed in this skill use via Suffusion. The maximum DMG Bonus that can be gained this way is 5,000."
+    },
+    {
+      "type": "Additional Talent",
+      "name": "Foreign Aqualis",
+      "description": "Draw new strength from journeys past. For every element you have resonated with, you gain additional buffs Additional Buff Effects The Traveler gains an attribute bonus for every element they have resonated with: Anemo : CRIT Rate is increased by 10%, Geo : DEF is increased by 20%, Electro : Energy Recharge is increased by 20%, Dendro : Elemental Mastery is increased by 60, Hydro : HP is increased by 20%, Pyro : ATK is increased by 20%, Cryo : CRIT DMG is increased by 20%. . Additionally, when nearby party members' current HP increases or decreases by 5%, Traveler will receive 1 stack of Blade of Many Waters. You can gain 1 stack of Blade of Many Waters this way once every 4s, max 3 stacks. After obtaining 3 stacks of Blade of Many Waters, performing a Charged Attack will consume all stacks of Blade of Many Waters and transform into the special Charged Attack: Tidebound . Charged Attack: Tidebound Each Charged Attack hit deals increased Hydro DMG . Increase in DMG is equal to 150% of Traveler's ATK, When Traveler's HP is no less than 50%, 10% of Traveler's Max HP will be consumed to increase DMG inflicted by each Charged Attack hit by 100% of Traveler's ATK. When Traveler's HP i..."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Swelling Lake",
+      "effect": "Picking up a Sourcewater Droplet will restore 2 Energy to the Traveler. You must first unlock the Ascension Talent \"Spotless Waters.\""
+    },
+    "c2": {
+      "name": "Trickling Purity",
+      "effect": "Description Gameplay Notes The Movement SPD of Rising Waters' bubble will be decreased by 30%, and its duration increased by 3s. The duration of Rising Waters' bubble is increased to 7 seconds."
+    },
+    "c3": {
+      "name": "Turbulent Ripples",
+      "effect": "Increases the Level of Aquacrest Saber by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Pouring Descent",
+      "effect": "When using Aquacrest Saber , an Aquacrest Aegis that can absorb 10% of the Traveler's Max HP in DMG will be created and will absorb Hydro DMG with 250% effectiveness. It will persist until the Traveler finishes using the skill. Once every 2s, after a Dewdrop hits an opponent, if the Traveler is being protected by Aquacrest Aegis, the DMG Absorption of the Aegis will be restored to 10% of the Traveler's Max HP. If the Traveler is not presently being protected by an Aegis, one will be redeployed."
+    },
+    "c5": {
+      "name": "Churning Whirlpool",
+      "effect": "Increases the Level of Rising Waters by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Tides of Justice",
+      "effect": "When the Traveler picks up a Sourcewater Droplet, they will restore HP to the nearest party member with the lowest HP percentage remaining based on 6% of their Max HP."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Hydro)"
+}

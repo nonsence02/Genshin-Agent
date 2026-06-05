@@ -1,0 +1,10 @@
+{
+  "id": "brave-heart",
+  "name_ru": "Душа храбреца",
+  "name_en": "Brave Heart",
+  "max_rarity": 4,
+  "bonus_2pc": "Увеличивает силу атаки на 18%.",
+  "bonus_4pc": "Увеличивает на 30% урон против врагов с HP выше 50%.",
+  "source_domain": "domain-of-blessing-desert-citadel-i",
+  "coordinates": []
+}

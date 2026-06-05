@@ -1,10 +1,17 @@
 {
   "id": "perpetual-caliber",
+  "name_ru": "Вечный механизм",
   "name_en": "Perpetual Caliber",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Aeonblight Drake"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Драконы вечных бедствий Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Perpetual_Caliber"
+  "dropped_by": [
+    "aeonblight-drake"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

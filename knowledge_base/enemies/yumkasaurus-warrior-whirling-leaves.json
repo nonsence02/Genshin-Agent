@@ -1,0 +1,13 @@
+{
+  "id": "yumkasaurus-warrior-whirling-leaves",
+  "name_ru": "Юмказавр-воин: Кружащая листва",
+  "name_en": "Yumkasaurus Warrior: Whirling Leaves",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

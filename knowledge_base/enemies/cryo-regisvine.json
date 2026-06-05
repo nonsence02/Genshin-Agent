@@ -1,0 +1,15 @@
+{
+  "id": "cryo-regisvine",
+  "name_ru": "Крио папоротник",
+  "name_en": "Cryo Regisvine",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "hoarfrost-core",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver"
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,23 @@
 {
   "id": "nagadus-emerald-gemstone",
+  "name_ru": "Драгоценный изумруд Нагадус",
   "name_en": "Nagadus Emerald Gemstone",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses (Lv. 75+)"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Nagadus_Emerald_Gemstone"
+  "dropped_by": [
+    "dendro-hypostasis",
+    "gluttonous-yumkasaur-mountain-king",
+    "guardian-of-apeps-oasis",
+    "jadeplume-terrorshroom",
+    "radiant-moonfly"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

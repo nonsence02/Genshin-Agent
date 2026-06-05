@@ -1,0 +1,13 @@
+{
+  "id": "hydro-hilichurl-rogue",
+  "name_ru": "Гидро хиличурл-изгой",
+  "name_en": "Hydro Hilichurl Rogue",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "wanderers-blooming-flower",
+    "treasured-flower",
+    "a-flower-yet-to-bloom"
+  ],
+  "coordinates": []
+}

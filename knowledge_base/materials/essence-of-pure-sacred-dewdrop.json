@@ -1,14 +1,21 @@
 {
   "id": "essence-of-pure-sacred-dewdrop",
+  "name_ru": "Эссенция чистой капли росы",
   "name_en": "Essence of Pure Sacred Dewdrop",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Echoes of the Deep Tides (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Essence_of_Pure_Sacred_Dewdrop"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-artisanship-iv"
+  ],
+  "source_domain": "domain-of-forgery-artisanship-iv",
+  "coordinates": []
 }

@@ -1,0 +1,19 @@
+{
+  "id": "puffed-grainfruit-bars",
+  "name_ru": "Батончики из злакофрукта",
+  "name_en": "Puffed Grainfruit Bars",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 24% от макс. HP + 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "grainfruit",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

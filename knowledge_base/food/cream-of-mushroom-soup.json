@@ -1,0 +1,19 @@
+{
+  "id": "cream-of-mushroom-soup",
+  "name_ru": "Грибной крем-суп",
+  "name_en": "Cream of Mushroom Soup",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 550 HP.",
+  "recipe": [
+    {
+      "material_id": "mushroom",
+      "count": 3
+    },
+    {
+      "material_id": "cream",
+      "count": 3
+    }
+  ],
+  "coordinates": []
+}

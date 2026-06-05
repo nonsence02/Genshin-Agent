@@ -1,10 +1,33 @@
 {
   "id": "fungal-spores",
+  "name_ru": "Споры плесенника",
   "name_en": "Fungal Spores",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Fungi"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Плесенники",
+    "Некоторые плесенники в состоянии Оживления",
+    "Некоторые плесенники в состоянии Обожжения",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fungal_Spores"
+  "dropped_by": [
+    "floating-anemo-fungus",
+    "floating-dendro-fungus",
+    "floating-hydro-fungus",
+    "grounded-geoshroom",
+    "grounded-hydroshroom",
+    "stretchy-anemo-fungus",
+    "stretchy-electro-fungus",
+    "stretchy-geo-fungus",
+    "stretchy-pyro-fungus",
+    "whirling-cryo-fungus",
+    "whirling-electro-fungus",
+    "whirling-pyro-fungus",
+    "winged-cryoshroom",
+    "winged-dendroshroom"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

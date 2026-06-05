@@ -1,44 +1,80 @@
 {
   "id": "dialogues-of-the-desert-sages",
-  "name": "Dialogues of the Desert Sages",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dialogues_of_the_Desert_Sages",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "HP"
-  },
-  "passive": "When the wielder performs healing, restore Energy. This can be triggered once every and can occur even when the character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Feathery Fin",
-        "Spectral Husk",
-        "Lunar Fin",
-        "Spectral Heart",
-        "Chasmlight Fin",
-        "Spectral Nucleus"
-      ]
+  "name_ru": "Диалог пустынных мудрецов",
+  "name_en": "Dialogues of the Desert Sages",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Принцип равновесия",
+  "passive_description_ru": "Экипированный персонаж, исцеляя персонажей отряда, восстанавливает 8 ед. энергии. Эффект может возникнуть один раз в 10 сек. и срабатывает, даже когда персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "copper-talisman-of-the-forest-dew",
+        "name_ru": "Медный амулет лесной росы",
+        "name_en": "Copper Talisman of the Forest Dew"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "iron-talisman-of-the-forest-dew",
+        "name_ru": "Железный амулет лесной росы",
+        "name_en": "Iron Talisman of the Forest Dew"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-talisman-of-the-forest-dew",
+        "name_ru": "Серебряный амулет лесной росы",
+        "name_en": "Silver Talisman of the Forest Dew"
+      },
+      {
+        "id": "golden-talisman-of-the-forest-dew",
+        "name_ru": "Золотой амулет лесной росы",
+        "name_en": "Golden Talisman of the Forest Dew"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "feathery-fin",
+        "name_ru": "Перьевой плавник",
+        "name_en": "Feathery Fin"
+      },
+      {
+        "id": "lunar-fin",
+        "name_ru": "Лунный плавник",
+        "name_en": "Lunar Fin"
+      },
+      {
+        "id": "chasmlight-fin",
+        "name_ru": "Глубинный плавник",
+        "name_en": "Chasmlight Fin"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

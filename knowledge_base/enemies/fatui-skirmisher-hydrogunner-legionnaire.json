@@ -1,0 +1,13 @@
+{
+  "id": "fatui-skirmisher-hydrogunner-legionnaire",
+  "name_ru": "Застрельщик Фатуи: Гидро бомбардир",
+  "name_en": "Fatui Skirmisher - Hydrogunner Legionnaire",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "lieutenants-insignia",
+    "sergeants-insignia",
+    "recruits-insignia"
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,34 @@
 {
   "id": "crystalline-cyst-dust",
+  "name_ru": "Пыль кристаллоцистов",
   "name_en": "Crystalline Cyst Dust",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Fungi"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Плесенники Ур. 60+",
+    "Некоторые плесенники в состоянии Оживления Ур. 60+",
+    "Некоторые плесенники в состоянии Обожжения Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Crystalline_Cyst_Dust"
+  "dropped_by": [
+    "floating-anemo-fungus",
+    "floating-dendro-fungus",
+    "floating-hydro-fungus",
+    "grounded-geoshroom",
+    "grounded-hydroshroom",
+    "stretchy-anemo-fungus",
+    "stretchy-electro-fungus",
+    "stretchy-geo-fungus",
+    "stretchy-pyro-fungus",
+    "whirling-cryo-fungus",
+    "whirling-electro-fungus",
+    "whirling-pyro-fungus",
+    "winged-cryoshroom",
+    "winged-dendroshroom"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

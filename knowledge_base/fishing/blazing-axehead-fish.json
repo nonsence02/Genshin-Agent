@@ -1,0 +1,11 @@
+{
+  "id": "blazing-axehead-fish",
+  "kind": "fish",
+  "name_ru": "Пламенная рыба-топор",
+  "name_en": "Blazing Axehead Fish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

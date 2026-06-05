@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-realm-of-slumber-iv",
+  "name_ru": "Мастерство: Царство снов IV",
+  "name_en": "Domain of Mastery: Realm of Slumber IV",
+  "type": "Повышение талантов",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-ballad",
+    "guide-to-ballad",
+    "teachings-of-ballad"
+  ],
+  "coordinates": []
+}

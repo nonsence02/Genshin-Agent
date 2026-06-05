@@ -1,0 +1,24 @@
+{
+  "id": "teachings-of-resistance",
+  "name_ru": "Учения о «Борьбе»",
+  "name_en": "Teachings of Resistance",
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "source_ru": [
+    "Сувенирная лавка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-frozen-abyss-i",
+    "domain-of-mastery-frozen-abyss-ii",
+    "domain-of-mastery-frozen-abyss-iii",
+    "domain-of-mastery-frozen-abyss-iv"
+  ],
+  "source_domain": "domain-of-mastery-frozen-abyss-i",
+  "coordinates": []
+}

@@ -1,0 +1,70 @@
+{
+  "id": "thoma",
+  "name_en": "Thoma",
+  "element": "Pyro",
+  "weapon": "Polearm",
+  "region": "Inazuma (in-game) Mondstadt (in lore)",
+  "rarity": 4,
+  "description": "Thoma is a playable Pyro character in Genshin Impact .\n\nHailing from Mondstadt , Thoma is the sociable and responsible housekeeper for the Kamisato Clan and a well-known \"fixer\" in Inazuma . Having amassed a powerful network of people, Thoma defends the rights and interests of the Yashiro Commission with utmost seriousness.",
+  "role_summary": "Thoma is a playable Pyro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Swiftshatter Spear",
+      "description": "Normal Attack Performs up to 4 consecutive spear strikes. Charged Attack Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Blazing Blessing",
+      "description": "Thoma vaults forward with his polearm and delivers a flame-filled flying kick that deals AoE Pyro DMG , while also summoning a defensive Blazing Barrier. At the moment of casting, Thoma's Elemental Skill applies Pyro to himself. The DMG Absorption of the Blazing Barrier scales off Thoma's Max HP. The Blazing Barrier has the following traits: Absorbs Pyro DMG 250% more effectively. When a new Blazing Barrier is obtained, the remaining DMG Absorption of an existing Blazing Barrier will stack and its duration will be refreshed. The maximum DMG Absorprtion of the Blazing Barrier will not exceed a certain percentage of Thoma's Max HP."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Crimson Ooyoroi",
+      "description": "Thoma spins his polearm, slicing at his foes with roaring flames that deal AoE Pyro DMG and weave themselves into a Scorching Ooyoroi. Scorching Ooyoroi While Scorching Ooyoroi is in effect, the active character's Normal Attacks will trigger Fiery Collapse, dealing AoE Pyro DMG and summoning a Blazing Barrier. Fiery Collapse can be triggered once every 1s. Except for the amount of DMG they can absorb, the Blazing Barriers created in this way are identical to those created by Thoma's Elemental Skill, Blazing Blessing: Absorbs Pyro DMG 250% more effectively. When a new Blazing Barrier is obtained, the remaining DMG Absorption of an existing Blazing Barrier will stack and its duration will be refreshed. The maximum DMG Absorption of the Blazing Barrier will not exceed a certain percentage of Thoma's Max HP. If Thoma falls, the effects of Scorching Ooyoroi will be cleared."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Imbricated Armor",
+      "description": "When your current active character obtains or refreshes a Blazing Barrier , this character's Shield Strength will increase by 5% for 6s. This effect can be triggered once every 0.3 seconds. Max 5 stacks."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Flaming Assault",
+      "description": "DMG dealt by Crimson Ooyoroi 's Fiery Collapse is increased by 2.2% of Thoma's Max HP."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Snap and Swing",
+      "description": "When you fish successfully in Inazuma , Thoma's help grants a 20% chance of scoring a double catch."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "A Comrade's Duty",
+      "effect": "Description Preview When a character protected by Thoma's own Blazing Barrier (Thoma excluded) is attacked, Thoma's own Blazing Blessing CD is decreased by 3s, while his own Crimson Ooyoroi 's CD is decreased by 3s. This effect can be triggered once every 20s. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Constellation A Comrade's Duty.mp4"
+    },
+    "c2": {
+      "name": "A Subordinate's Skills",
+      "effect": "Crimson Ooyoroi 's duration is increased by 3s."
+    },
+    "c3": {
+      "name": "Fortified Resolve",
+      "effect": "Increases the Level of Blazing Blessing by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Long-Term Planning",
+      "effect": "After using Crimson Ooyoroi , 15 Energy will be restored to Thoma."
+    },
+    "c5": {
+      "name": "Raging Wildfire",
+      "effect": "Increases the Level of Crimson Ooyoroi by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Burning Heart",
+      "effect": "When a Blazing Barrier is obtained or refreshed, the DMG dealt by all party members' Normal, Charged, and Plunging Attacks is increased by 15% for 6s."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Thoma",
+  "ai_tags": "Пиро аппликатор, Баффер"
+}

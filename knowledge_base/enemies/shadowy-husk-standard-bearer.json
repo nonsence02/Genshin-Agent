@@ -1,0 +1,13 @@
+{
+  "id": "shadowy-husk-standard-bearer",
+  "name_ru": "Чёрный доспех: Знаменосец",
+  "name_en": "Shadowy Husk: Standard Bearer",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "deathly-statuette",
+    "dark-statuette",
+    "gloomy-statuette"
+  ],
+  "coordinates": []
+}

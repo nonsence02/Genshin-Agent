@@ -1,48 +1,80 @@
 {
   "id": "song-of-broken-pines",
-  "name": "Song of Broken Pines",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Song_of_Broken_Pines",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "5★",
-    "base_atk": "49 - 741",
-    "secondary_stat": "Physical DMG Bonus"
-  },
-  "passive": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases ATK by, and when Normal or Charged Attacks hit opponents, the character gains a Sigil of Whispers. This can be triggered once every. When you possess four Sigils of Whispers, all of them will be consumed and all nearby party members will obtain the \"Millennial Movement: Banner-Hymn\" for. \"Millennial Movement: Banner-Hymn\" increases Normal ATK SPD by and increases ATK by. Once this is triggered, you will not gain Sigils of Whispers for. Of the many effects of the \"Millennial Movement\", buffs of the same type will not stack.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Tile of Decarabian's Tower",
-        "Heavy Horn",
-        "Damaged Mask",
-        "Debris of Decarabian's City",
-        "Black Bronze Horn",
-        "Stained Mask",
-        "Fragment of Decarabian's Epic",
-        "Black Crystal Horn",
-        "Ominous Mask",
-        "Scattered Piece of Decarabian's Dream"
-      ]
+  "name_ru": "Песнь разбитых сосен",
+  "name_en": "Song of Broken Pines",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 49.1377,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.045
+    },
+    "level_90": {
+      "base_atk": 740.5802,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.2067
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Гимн мятежников",
+  "passive_description_ru": "Часть Тысячелетней симфонии, что блуждает среди ветров. Увеличивает силу атаки на 16% и при попадании обычной или заряженной атакой даёт персонажу Печать шёпота. Этот эффект может возникнуть раз в 0,3 сек. После получения 4-ой Печати шёпота все они тратятся, и все окружающие члены отряда получают эффект «Тысячелетняя симфония: Гимн знамени» на 12 сек. «Тысячелетняя симфония: Гимн знамени» увеличивает скорость обычной атаки на 12% и силу атаки на 20%. После активации этого эффекта вы не сможете получать Печати шёпота в течение 20 сек. При наличии нескольких эффектов Тысячелетней симфонии усиления одного типа не складываются.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "tile-of-decarabians-tower",
+        "name_ru": "Плитка башни Декарабиана",
+        "name_en": "Tile of Decarabian's Tower"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "debris-of-decarabians-city",
+        "name_ru": "Обломок стены Декарабиана",
+        "name_en": "Debris of Decarabian's City"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "fragment-of-decarabians-epic",
+        "name_ru": "Фрагмент эпоса Декарабиана",
+        "name_en": "Fragment of Decarabian's Epic"
+      },
+      {
+        "id": "scattered-piece-of-decarabians-dream",
+        "name_ru": "Осколок мечты Декарабиана",
+        "name_en": "Scattered Piece of Decarabian's Dream"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "heavy-horn",
+        "name_ru": "Тяжёлый рог",
+        "name_en": "Heavy Horn"
+      },
+      {
+        "id": "black-bronze-horn",
+        "name_ru": "Чёрный бронзовый рог",
+        "name_en": "Black Bronze Horn"
+      },
+      {
+        "id": "black-crystal-horn",
+        "name_ru": "Чёрный кристаллический рог",
+        "name_en": "Black Crystal Horn"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "damaged-mask",
+        "name_ru": "Разбитая маска",
+        "name_en": "Damaged Mask"
+      },
+      {
+        "id": "stained-mask",
+        "name_ru": "Грязная маска",
+        "name_en": "Stained Mask"
+      },
+      {
+        "id": "ominous-mask",
+        "name_ru": "Зловещая маска",
+        "name_en": "Ominous Mask"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "geo-slime",
+  "name_ru": "Гео слайм",
+  "name_en": "Geo Slime",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "slime-concentrate",
+    "slime-secretions",
+    "slime-condensate"
+  ],
+  "coordinates": []
+}

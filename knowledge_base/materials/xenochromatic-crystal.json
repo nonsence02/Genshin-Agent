@@ -1,10 +1,28 @@
 {
   "id": "xenochromatic-crystal",
+  "name_ru": "Ксенохромный кристалл",
   "name_en": "Xenochromatic Crystal",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Fontemer Aberrants"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Инороды Фонтмера Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Xenochromatic_Crystal"
+  "dropped_by": [
+    "angelic-sea-hare",
+    "armored-crab",
+    "ball-octopus",
+    "blubberbeast",
+    "bubbler-seahorse",
+    "bubbly-seahorse",
+    "cherubic-sea-hare",
+    "hat-jellyfish",
+    "hunters-ray",
+    "sternshield-crab"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

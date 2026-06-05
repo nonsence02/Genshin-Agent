@@ -1,14 +1,24 @@
 {
   "id": "echo-of-scorching-might",
+  "name_ru": "Эхо пылающей мощи",
   "name_en": "Echo of Scorching Might",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Tower of Abject Pride (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Echo_of_Scorching_Might"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-leading-karma-i",
+    "domain-of-forgery-leading-karma-ii",
+    "domain-of-forgery-leading-karma-iii",
+    "domain-of-forgery-leading-karma-iv"
+  ],
+  "source_domain": "domain-of-forgery-leading-karma-i",
+  "coordinates": []
 }

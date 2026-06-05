@@ -1,0 +1,27 @@
+{
+  "id": "moon-pie",
+  "name_ru": "Лунный пирог",
+  "name_en": "Moon Pie",
+  "rarity": 4,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 35% и защиту на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 4
+    },
+    {
+      "material_id": "butter",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

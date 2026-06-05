@@ -1,0 +1,15 @@
+{
+  "id": "fermented-juice",
+  "name_ru": "Забродивший сок",
+  "name_en": "Fermented Juice",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Торговые лавки Фонтейна"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

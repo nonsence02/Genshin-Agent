@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-cryo-potioneer",
+  "name_ru": "Похитители сокровищ: Крио химик",
+  "name_en": "Treasure Hoarders: Cryo Potioneer",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

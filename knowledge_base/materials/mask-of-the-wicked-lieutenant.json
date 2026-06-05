@@ -1,14 +1,24 @@
 {
   "id": "mask-of-the-wicked-lieutenant",
+  "name_ru": "Маска злого военачальника",
   "name_en": "Mask of the Wicked Lieutenant",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Court of Flowing Sand (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mask_of_the_Wicked_Lieutenant"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-sand-burial-i",
+    "domain-of-forgery-sand-burial-ii",
+    "domain-of-forgery-sand-burial-iii",
+    "domain-of-forgery-sand-burial-iv"
+  ],
+  "source_domain": "domain-of-forgery-sand-burial-i",
+  "coordinates": []
 }

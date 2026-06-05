@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-forgery-ruins-of-thirsting-capital-i",
+  "name_ru": "Воля: Руины жаждущего города I",
+  "name_en": "Domain of Forgery: Ruins of Thirsting Capital I",
+  "type": "Возвышение оружия",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "fetters-of-the-dandelion-gladiator"
+  ],
+  "coordinates": []
+}

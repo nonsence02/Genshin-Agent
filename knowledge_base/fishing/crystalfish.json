@@ -1,0 +1,11 @@
+{
+  "id": "crystalfish",
+  "kind": "fish",
+  "name_ru": "Кристальная рыба",
+  "name_en": "Crystalfish",
+  "bait_id": "fruit-paste-bait",
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

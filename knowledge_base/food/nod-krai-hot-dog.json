@@ -1,0 +1,27 @@
+{
+  "id": "nod-krai-hot-dog",
+  "name_ru": "Нод-крайский хот-дог",
+  "name_en": "Nod-Krai Hot Dog",
+  "rarity": 2,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 12% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 1
+    },
+    {
+      "material_id": "onion",
+      "count": 1
+    },
+    {
+      "material_id": "tomato",
+      "count": 1
+    },
+    {
+      "material_id": "sausage",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

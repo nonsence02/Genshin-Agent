@@ -1,44 +1,80 @@
 {
   "id": "missive-windspear",
-  "name": "Missive Windspear",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Missive_Windspear",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Within after an Elemental Reaction is triggered, ATK is increased by and Elemental Mastery is increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Gloomy Statuette",
-        "Slime Condensate",
-        "Dark Statuette",
-        "Slime Secretions",
-        "Deathly Statuette",
-        "Slime Concentrate"
-      ]
+  "name_ru": "Копьё послания ветров",
+  "name_en": "Missive Windspear",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Недошедший ветер",
+  "passive_description_ru": "В течение 10 сек. после активации элементальной реакции сила атаки повысится на 12%, мастерство стихий - на 48 ед.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "gloomy-statuette",
+        "name_ru": "Мрачная статуэтка",
+        "name_en": "Gloomy Statuette"
+      },
+      {
+        "id": "dark-statuette",
+        "name_ru": "Тёмная статуэтка",
+        "name_en": "Dark Statuette"
+      },
+      {
+        "id": "deathly-statuette",
+        "name_ru": "Смертельная статуэтка",
+        "name_en": "Deathly Statuette"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "slime-condensate",
+        "name_ru": "Слизь слайма",
+        "name_en": "Slime Condensate"
+      },
+      {
+        "id": "slime-secretions",
+        "name_ru": "Выделения слайма",
+        "name_en": "Slime Secretions"
+      },
+      {
+        "id": "slime-concentrate",
+        "name_ru": "Концентрат слайма",
+        "name_en": "Slime Concentrate"
+      }
+    ]
+  },
+  "coordinates": []
 }

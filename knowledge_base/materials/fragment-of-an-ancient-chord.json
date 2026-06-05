@@ -1,14 +1,24 @@
 {
   "id": "fragment-of-an-ancient-chord",
+  "name_ru": "Фрагмент отзвука древней струны",
   "name_en": "Fragment of an Ancient Chord",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Echoes of the Deep Tides (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fragment_of_an_Ancient_Chord"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-robotic-ruse-i",
+    "domain-of-forgery-robotic-ruse-ii",
+    "domain-of-forgery-robotic-ruse-iii",
+    "domain-of-forgery-robotic-ruse-iv"
+  ],
+  "source_domain": "domain-of-forgery-robotic-ruse-i",
+  "coordinates": []
 }

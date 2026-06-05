@@ -1,0 +1,13 @@
+{
+  "id": "hat-jellyfish",
+  "name_ru": "Шляповидная медуза",
+  "name_en": "Hat Jellyfish",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "xenochromatic-crystal",
+    "transoceanic-chunk",
+    "transoceanic-pearl"
+  ],
+  "coordinates": []
+}

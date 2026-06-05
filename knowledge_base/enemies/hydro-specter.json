@@ -1,0 +1,13 @@
+{
+  "id": "hydro-specter",
+  "name_ru": "Гидро призрак",
+  "name_en": "Hydro Specter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "spectral-nucleus",
+    "spectral-heart",
+    "spectral-husk"
+  ],
+  "coordinates": []
+}

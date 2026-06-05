@@ -1,0 +1,13 @@
+{
+  "id": "ball-octopus",
+  "name_ru": "Шаровидный осьминог",
+  "name_en": "Ball Octopus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "xenochromatic-crystal",
+    "transoceanic-chunk",
+    "transoceanic-pearl"
+  ],
+  "coordinates": []
+}

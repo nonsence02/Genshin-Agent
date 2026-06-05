@@ -1,0 +1,10 @@
+{
+  "id": "emblem-of-severed-fate",
+  "name_ru": "Эмблема рассечённой судьбы",
+  "name_en": "Emblem of Severed Fate",
+  "max_rarity": 5,
+  "bonus_2pc": "Увеличивает скорость восстановления энергии на 20%.",
+  "bonus_4pc": "Увеличивает урон взрыва стихий на величину, равную 25% от значения восстановления энергии. Эффект можно увеличить максимум до 75%.",
+  "source_domain": "domain-of-blessing-autumn-hunt-i",
+  "coordinates": []
+}

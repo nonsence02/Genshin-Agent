@@ -1,10 +1,27 @@
 {
   "id": "black-crystal-horn",
+  "name_ru": "Чёрный кристаллический рог",
   "name_en": "Black Crystal Horn",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Mitachurls"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Митачурлы Ур. 60+",
+    "Лавачурлы Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Black_Crystal_Horn"
+  "dropped_by": [
+    "blazing-axe-mitachurl",
+    "crackling-axe-mitachurl",
+    "frostarm-lawachurl",
+    "ice-shieldwall-mitachurl",
+    "rock-shieldwall-mitachurl",
+    "stonehide-lawachurl",
+    "thunderhelm-lawachurl",
+    "wooden-shieldwall-mitachurl"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

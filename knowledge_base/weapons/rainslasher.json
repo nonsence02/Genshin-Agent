@@ -1,48 +1,80 @@
 {
   "id": "rainslasher",
-  "name": "Rainslasher",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Rainslasher",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Increases DMG against opponents affected by Hydro or Electro by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mist Veiled Lead Elixir",
-        "Mist Grass Pollen",
-        "Divining Scroll",
-        "Mist Veiled Mercury Elixir",
-        "Mist Grass",
-        "Sealed Scroll",
-        "Mist Veiled Gold Elixir",
-        "Mist Grass Wick",
-        "Forbidden Curse Scroll",
-        "Mist Veiled Primo Elixir"
-      ]
+  "name_ru": "Дождерез",
+  "name_en": "Rainslasher",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 36
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 165.384
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Погибель бури и волны",
+  "passive_description_ru": "Увеличивает на 20% урон против врагов, находящихся под действием Гидро или Электро элементов.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mist-veiled-lead-elixir",
+        "name_ru": "Свинцовая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Lead Elixir"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mist-veiled-mercury-elixir",
+        "name_ru": "Ртутная пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Mercury Elixir"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mist-veiled-gold-elixir",
+        "name_ru": "Золотая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Gold Elixir"
+      },
+      {
+        "id": "mist-veiled-primo-elixir",
+        "name_ru": "Примо эликсир Заоблачного моря",
+        "name_en": "Mist Veiled Primo Elixir"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mist-grass-pollen",
+        "name_ru": "Пыльца туманной травы",
+        "name_en": "Mist Grass Pollen"
+      },
+      {
+        "id": "mist-grass",
+        "name_ru": "Мешочек с туманной травой",
+        "name_en": "Mist Grass"
+      },
+      {
+        "id": "mist-grass-wick",
+        "name_ru": "Пучок туманной травы",
+        "name_en": "Mist Grass Wick"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

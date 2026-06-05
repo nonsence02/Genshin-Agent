@@ -1,0 +1,13 @@
+{
+  "id": "ruin-scout",
+  "name_ru": "Руинный шпион",
+  "name_en": "Ruin Scout",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "chaos-oculus",
+    "chaos-axis",
+    "chaos-gear"
+  ],
+  "coordinates": []
+}

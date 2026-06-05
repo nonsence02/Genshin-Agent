@@ -1,10 +1,17 @@
 {
   "id": "mourning-flower",
+  "name_ru": "Цветы скорби",
   "name_en": "Mourning Flower",
-  "type": "Local Specialty (Sumeru)",
-  "days": [],
-  "source": [
-    "Found in the deserts of Sumeru"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Сумеру",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пустыня Сумеру",
+    "Болото Асипаттравана",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mourning_Flower"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

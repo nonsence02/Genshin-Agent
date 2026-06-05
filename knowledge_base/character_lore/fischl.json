@@ -1,0 +1,75 @@
+{
+  "id": "fischl",
+  "name_en": "Fischl",
+  "element": "Electro",
+  "weapon": "Bow",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "description": "Fischl von Luftschloss Narfidort is a playable Electro character in Genshin Impact .\n\nShe is an investigator for Mondstadt 's Adventurers' Guild , accompanied by the night raven Oz . A daring adventurer with seemingly outlandish theories that happen to turn out to be true, she claims to hail from a world beyond Teyvat .",
+  "role_summary": "Fischl von Luftschloss Narfidort is a playable Electro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Bolts of Downfall",
+      "description": "Normal Attack Performs up to 5 consecutive shots with a bow. Charged Attack Performs a more precise Aimed Shot with increased DMG. While aiming, the dark lightning spirits of Immernachtreich shall heed the call of their Prinzessin and indwell the enchanted arrowhead. When fully indwelt, the Rachsüchtig Blitz shall deal immense Electro DMG . Plunging Attack Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Nightrider",
+      "description": "Summons Oz. The night raven forged of darkness and lightning descends upon the land, dealing Electro DMG in a small AoE . For the ability's duration , Oz will continuously attack nearby opponents with Freikugel . Hold to adjust the location Oz will be summoned to. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) again any time during the ability's duration to once again summon him to Fischl's side."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Midnight Phantasmagoria",
+      "description": "Summons Oz to spread his twin wings of twilight and defend Fischl. Has the following properties during the ability's duration : Fischl takes on Oz's form, greatly increasing her Movement Speed . Strikes nearby opponents with lightning, dealing Electro DMG to opponents she comes into contact with. Each opponent can only be struck once. Once this ability's effects end, Oz will remain on the battlefield and attack his Prinzessin's foes. If Oz is already on the field, then this will reset the duration of his presence."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Stellar Predator",
+      "description": "When Fischl hits Oz with a fully-charged Aimed Shot , Oz brings down Thundering Retribution, dealing AoE Electro DMG equal to 152.7% of the arrow's DMG."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Undone Be Thy Sinful Hex",
+      "description": "If your active character triggers an Electro -related Elemental Reaction when Oz is on the field, the opponent shall be stricken with Thundering Retribution that deals Electro DMG equal to 80% of Fischl's ATK."
+    },
+    {
+      "type": "Witch's Eve Rite Passive",
+      "name": "Phantasmal Nocturne",
+      "description": "After completing Witch's Homework : Of the Unexpected , Fischl will become a Hexerei character. When the party includes at least 2 Hexerei characters, you will gain the Hexerei: Secret Rite effect, which enhances Hexerei characters. Hexerei: Secret Rite Hark, Prince Nachtraben, Ozvaldo Hrafnavins , he who has witnessed the fall of countless worlds. Sing now the starry septet for your sovereign, for this is the moment of deepest sin, when the gathered souls at the end of causality shatter the darkness of fate. Additionally, when Oz is on the field, party members will gain additional buff effects: After a nearby party member triggers an Overloaded reaction, Fischl and other nearby active party members have their ATK increased by 22.5% for 10s. After a nearby party member triggers an Electro-Charged or Lunar-Charged reaction, Fischl and other nearby active party members have their Elemental Mastery increased by 90 for 10s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Mein Hausgarten",
+      "description": "When dispatched on an expedition in Mondstadt , time consumed is reduced by 25%."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Gaze of the Deep",
+      "effect": "Description Gameplay Notes Advanced Properties Preview Even when Oz is not present in combat, he can still watch over Fischl through his raven eyes. When Fischl performs a Normal Attack against an opponent, Oz fires a coordinated attack, dealing DMG equal to 22% of Fischl's ATK. The additional attack is fired from the orb near Fischl's shoulder and is only fired on Normal Attacks that have locked on to an enemy, regardless if it is blocked by obstacles or missed. The attack has homing capability and may bypass obstacles. The joint attack from Oz is considered Normal Attack DMG. Oz's attack will deal Physical DMG , not Electro DMG . Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizont..."
+    },
+    "c2": {
+      "name": "Devourer of All Sins",
+      "effect": "When Nightrider is used, it deals an additional 200% ATK as DMG, and its AoE is increased by 50%."
+    },
+    "c3": {
+      "name": "Wings of Nightmare",
+      "effect": "Increases the Level of Nightrider by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "1U",
+      "effect": ""
+    },
+    "c5": {
+      "name": "Against the Fleeing Light",
+      "effect": "Increases the Level of Midnight Phantasmagoria by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Evernight Raven",
+      "effect": "Description Hexerei Buff Gameplay Notes Advanced Properties Extends the duration of Oz's presence on the field by 2s. Additionally, Oz performs coordinated attacks with your active character when present, dealing 30% of Fischl's ATK as Electro DMG . Extends the duration of Oz's presence on the field by 2s. Additionally, Oz performs coordinated attacks with your active character when present, dealing 30% of Fischl's ATK as Electro DMG . After Oz performs a coordinated attack, the increased ATK and Elemental Mastery effects of Witch's Eve Rite: Phantasmal Nocturne are further increased by 100% for 10s. DMG dealt by joint attacks is considered Elemental Skill DMG. This constellation is triggered by every execution of a Normal Attack regardless if it hits, as long as the enemy is within a certain range that is slightly higher than Oz's attacks in Fischl's regular Elemental Skill . This co..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Fischl",
+  "ai_tags": "Main DPS, Enabler"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "oprichniki-hailstorm-cannoneer",
+  "name_ru": "Опричник: Град-канонир",
+  "name_en": "Oprichniki Hailstorm Cannoneer",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "frost-etched-warrant",
+    "immaculate-warrant",
+    "tattered-warrant"
+  ],
+  "coordinates": []
+}

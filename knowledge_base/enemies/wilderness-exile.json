@@ -1,0 +1,13 @@
+{
+  "id": "wilderness-exile",
+  "name_ru": "Изгнанник пустошей",
+  "name_en": "Wilderness Exile",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "mistshroud-helmet",
+    "mistshroud-plate",
+    "mistshroud-manifestation"
+  ],
+  "coordinates": []
+}

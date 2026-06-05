@@ -1,0 +1,13 @@
+{
+  "id": "koholasaurus-warrior-reefsplitter",
+  "name_ru": "Кохолазавр-воин: Дробящая рифы",
+  "name_en": "Koholasaurus Warrior: Reefsplitter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

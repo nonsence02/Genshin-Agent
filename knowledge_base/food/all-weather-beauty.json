@@ -1,0 +1,19 @@
+{
+  "id": "all-weather-beauty",
+  "name_ru": "Всепогодная красота",
+  "name_en": "All-Weather Beauty",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 16% HP + 1350 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 1
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

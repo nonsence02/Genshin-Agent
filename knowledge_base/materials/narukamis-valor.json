@@ -1,14 +1,21 @@
 {
   "id": "narukamis-valor",
+  "name_ru": "Доблесть Наруками",
   "name_en": "Narukami's Valor",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Court of Flowing Sand (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Narukami%27s_Valor"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-altar-of-sands-iv"
+  ],
+  "source_domain": "domain-of-forgery-altar-of-sands-iv",
+  "coordinates": []
 }

@@ -1,10 +1,18 @@
 {
   "id": "tusk-of-monoceros-caeli",
+  "name_ru": "Рог небесного кита",
   "name_en": "Tusk of Monoceros Caeli",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ Enter the Golden House Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Чайльд Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Tusk_of_Monoceros_Caeli"
+  "dropped_by": [
+    "childe"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

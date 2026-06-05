@@ -1,10 +1,17 @@
 {
   "id": "cleansing-heart",
+  "name_ru": "Очищающее сердце",
   "name_en": "Cleansing Heart",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Oceanids"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Океаниды Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Cleansing_Heart"
+  "dropped_by": [
+    "oceanid"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,15 @@
+{
+  "id": "lord-of-the-hidden-depths-whisperer-of-nightmares",
+  "name_ru": "Повелитель скрытых глубин: Шёпот кошмаров",
+  "name_en": "Lord of the Hidden Depths: Whisperer of Nightmares",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "remnant-of-the-dreadwing",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver"
+  ],
+  "coordinates": []
+}

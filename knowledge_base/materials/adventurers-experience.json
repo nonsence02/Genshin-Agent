@@ -1,0 +1,41 @@
+{
+  "id": "adventurers-experience",
+  "name_ru": "Опыт искателя приключений",
+  "name_en": "Adventurer's Experience",
+  "type": "character_exp",
+  "type_text_ru": "Опыт персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Исследование мира и приключения",
+    "Активация Цветов озарения"
+  ],
+  "dropped_by": [
+    "algorithm-of-semi-intransient-matrix-of-overseer-network",
+    "dendro-hypostasis",
+    "emperor-of-fire-and-iron",
+    "gluttonous-yumkasaur-mountain-king",
+    "goldflame-qucusaur-tyrant",
+    "hydro-hypostasis",
+    "hydro-tulpa",
+    "jadeplume-terrorshroom",
+    "lava-dragon-statue",
+    "legatus-golem",
+    "oceanid",
+    "pyro-hypostasis",
+    "pyro-regisvine",
+    "radiant-moonfly",
+    "secret-source-automaton-overseer-device",
+    "super-heavy-landrover-mechanized-fortress",
+    "tenebrous-papilla-type-i"
+  ],
+  "obtained_from_domains": [
+    "domain-of-blessing-fires-of-purification-i",
+    "domain-of-blessing-fires-of-purification-ii",
+    "domain-of-blessing-fires-of-purification-iii",
+    "domain-of-blessing-fires-of-purification-iv",
+    "domain-of-blessing-fires-of-purification-v",
+    "domain-of-blessing-fires-of-purification-vi"
+  ],
+  "source_domain": "domain-of-blessing-fires-of-purification-i",
+  "coordinates": []
+}

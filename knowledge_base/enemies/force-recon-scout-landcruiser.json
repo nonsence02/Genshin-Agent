@@ -1,0 +1,13 @@
+{
+  "id": "force-recon-scout-landcruiser",
+  "name_ru": "Сухопутный крейсер: Разведчик наблюдения",
+  "name_en": "Force Recon Scout Landcruiser",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "precision-drive-shaft",
+    "reinforced-drive-shaft",
+    "broken-drive-shaft"
+  ],
+  "coordinates": []
+}

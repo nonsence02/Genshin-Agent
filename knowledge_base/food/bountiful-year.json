@@ -1,0 +1,27 @@
+{
+  "id": "bountiful-year",
+  "name_ru": "Благополучие и процветание",
+  "name_en": "Bountiful Year",
+  "rarity": 4,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 320 ед. и шанс крит. попадания на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 4
+    },
+    {
+      "material_id": "carrot",
+      "count": 4
+    },
+    {
+      "material_id": "onion",
+      "count": 2
+    },
+    {
+      "material_id": "violetgrass",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

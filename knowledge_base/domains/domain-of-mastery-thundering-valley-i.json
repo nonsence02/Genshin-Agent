@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-mastery-thundering-valley-i",
+  "name_ru": "Мастерство: Ущелье весеннего грома I",
+  "name_en": "Domain of Mastery: Thundering Valley I",
+  "type": "Повышение талантов",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "teachings-of-elegance"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "electro-slime",
+  "name_ru": "Электро слайм",
+  "name_en": "Electro Slime",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "slime-concentrate",
+    "slime-secretions",
+    "slime-condensate"
+  ],
+  "coordinates": []
+}

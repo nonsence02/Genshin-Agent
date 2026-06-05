@@ -1,0 +1,10 @@
+{
+  "id": "berserker",
+  "name_ru": "Берсерк",
+  "name_en": "Berserker",
+  "max_rarity": 4,
+  "bonus_2pc": "Увеличивает шанс крит. попадания на 12%.",
+  "bonus_4pc": "Увеличивает шанс крит. попадания на 24% при HP ниже 70%.",
+  "source_domain": "domain-of-blessing-flower-feast-i",
+  "coordinates": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "magma-rapidfighting-fish",
+  "kind": "fish",
+  "name_ru": "Магмовая рыба-боец стремнин",
+  "name_en": "Magma Rapidfighting Fish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

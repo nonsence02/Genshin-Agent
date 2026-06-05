@@ -1,0 +1,11 @@
+{
+  "id": "rusty-koi",
+  "kind": "fish",
+  "name_ru": "Стальной лжедракон",
+  "name_en": "Rusty Koi",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

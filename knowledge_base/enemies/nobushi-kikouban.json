@@ -1,0 +1,13 @@
+{
+  "id": "nobushi-kikouban",
+  "name_ru": "Нобуси: Кикобан",
+  "name_en": "Nobushi: Kikouban",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "famed-handguard",
+    "kageuchi-handguard",
+    "old-handguard"
+  ],
+  "coordinates": []
+}

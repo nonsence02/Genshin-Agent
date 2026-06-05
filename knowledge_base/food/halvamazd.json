@@ -1,0 +1,27 @@
+{
+  "id": "halvamazd",
+  "name_ru": "Халвамазд",
+  "name_en": "Halvamazd",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 282 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "ajilenakh-nut",
+      "count": 4
+    },
+    {
+      "material_id": "almond",
+      "count": 2
+    },
+    {
+      "material_id": "butter",
+      "count": 2
+    },
+    {
+      "material_id": "sumeru-rose",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

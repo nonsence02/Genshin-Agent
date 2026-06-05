@@ -1,48 +1,80 @@
 {
   "id": "nightweavers-looking-glass",
-  "name": "Nightweaver's Looking Glass",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Nightweaver%27s_Looking_Glass",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by for. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by for. When both Prayer of the Far North and New Moon Verse are in, all nearby party members' Bloom DMG is increased by, their Hyperbloom and Burgeon DMG is increased by, and their Lunar-Bloom DMG is increased by. This cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Artful Device Fragment",
-        "Frostnight's Glimmer",
-        "Broken Drive Shaft",
-        "Artful Device Replica",
-        "Frostnight's Glow",
-        "Reinforced Drive Shaft",
-        "Artful Device Inheritance",
-        "Frostnight's Glory",
-        "Precision Drive Shaft",
-        "Artful Device Wish"
-      ]
+  "name_ru": "Зеркало прядильщицы ночи",
+  "name_en": "Nightweaver's Looking Glass",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 57.6
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 264.6144
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Тысячелетний гимн",
+  "passive_description_ru": "Нанося Гидро или Дендро урон элементальным навыком, экипированный персонаж получает эффект Молитва крайнего севера: мастерство стихий повышается на 60 ед. на 4,5 сек. Когда персонажи отряда поблизости активируют реакцию Лунная бутонизация, экипированный персонаж получает эффект Стих новолуния: мастерство стихий повышается на 60 ед. на 10 сек. Если Молитва крайнего севера и Стих новолуния действуют одновременно, урон реакции Бутонизация всех персонажей отряда поблизости повышается на 120%, реакций Вегетация и Цветение - на 80%, а реакции Лунная бутонизация - на 40%. Этот эффект не складывается. Описанные эффекты срабатывают, даже когда экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "artful-device-fragment",
+        "name_ru": "Фрагмент чудесного устройства",
+        "name_en": "Artful Device Fragment"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "artful-device-replica",
+        "name_ru": "Образец чудесного устройства",
+        "name_en": "Artful Device Replica"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "artful-device-inheritance",
+        "name_ru": "Наследие чудесного устройства",
+        "name_en": "Artful Device Inheritance"
+      },
+      {
+        "id": "artful-device-wish",
+        "name_ru": "Мечта чудесного устройства",
+        "name_en": "Artful Device Wish"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "frostnights-glimmer",
+        "name_ru": "Мерцание морозной ночи",
+        "name_en": "Frostnight's Glimmer"
+      },
+      {
+        "id": "frostnights-glow",
+        "name_ru": "Сияние морозной ночи",
+        "name_en": "Frostnight's Glow"
+      },
+      {
+        "id": "frostnights-glory",
+        "name_ru": "Слава морозной ночи",
+        "name_en": "Frostnight's Glory"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "broken-drive-shaft",
+        "name_ru": "Сломанный вал",
+        "name_en": "Broken Drive Shaft"
+      },
+      {
+        "id": "reinforced-drive-shaft",
+        "name_ru": "Усиленный вал",
+        "name_en": "Reinforced Drive Shaft"
+      },
+      {
+        "id": "precision-drive-shaft",
+        "name_ru": "Высокоточный вал",
+        "name_en": "Precision Drive Shaft"
+      }
+    ]
+  },
+  "coordinates": []
 }

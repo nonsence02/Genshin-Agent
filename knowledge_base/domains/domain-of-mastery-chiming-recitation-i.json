@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-mastery-chiming-recitation-i",
+  "name_ru": "Мастерство: Мелодичная декламация I",
+  "name_en": "Domain of Mastery: Chiming Recitation I",
+  "type": "Повышение талантов",
+  "region": "Фонтейн",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "teachings-of-order"
+  ],
+  "coordinates": []
+}

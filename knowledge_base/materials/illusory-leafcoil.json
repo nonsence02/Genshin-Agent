@@ -1,10 +1,17 @@
 {
   "id": "illusory-leafcoil",
+  "name_ru": "Иллюзорная листовая спираль",
   "name_en": "Illusory Leafcoil",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by 60+ Tenebrous Mimesis"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сумрачная мимифлора ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Illusory_Leafcoil"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

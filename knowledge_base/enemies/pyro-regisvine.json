@@ -1,0 +1,16 @@
+{
+  "id": "pyro-regisvine",
+  "name_ru": "Пиро орхидея",
+  "name_en": "Pyro Regisvine",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "everflame-seed",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

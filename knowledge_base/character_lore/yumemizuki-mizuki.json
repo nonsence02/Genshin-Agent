@@ -1,0 +1,70 @@
+{
+  "id": "yumemizuki-mizuki",
+  "name_en": "Yumemizuki Mizuki",
+  "element": "Anemo",
+  "weapon": "Catalyst",
+  "region": "Inazuma",
+  "rarity": 5,
+  "description": "Yumemizuki Mizuki ( Japanese : 夢見月瑞希 Yumemizuki Mizuki ) is a playable Anemo character in Genshin Impact .\n\nShe is a renowned clinical psychologist from Inazuma . After returning from Natlan , she became the core founding investor and major shareholder of Aisa Bathhouse . As a yumekui-baku , she has the ability to devour her patients' nightmares, helping them to improve their mental health.",
+  "role_summary": "Yumemizuki Mizuki ( Japanese : 夢見月瑞希 Yumemizuki Mizuki ) is a playable Anemo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Pure Heart, Pure Dreams",
+      "description": "Normal Attack Performs up to 3 attacks, dealing Anemo DMG . Charged Attack Consumes a certain amount of Stamina and deals AoE Anemo DMG after a short casting time. Plunging Attack Calling upon the power of Anemo, she plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Anemo DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Aisa Utamakura Pilgrimage",
+      "description": "Weaves memories of lovely dreams, entering a Dreamdrifter state where she floats above the ground, and dealing 1 instance of AoE Anemo DMG to nearby opponents. Dreamdrifter While in the Dreamdrifter state, Yumemizuki Mizuki will continuously drift forward, dealing AoE Anemo DMG to nearby opponents at regular intervals. During this time, Yumemizuki Mizuki can control her direction of drift, and the pick-up distance of Yumemi Style Special Snacks from the Elemental Burst Anraku Secret Spring Therapy will be increased. Increases the Swirl DMG that nearby party members deal based on Yumemizuki Mizuki's Elemental Mastery . Dreamdrifter will end when Mizuki leaves the field or uses her Elemental Skill again."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Anraku Secret Spring Therapy",
+      "description": "Summons forth countless lovely dreams and nightmares that pull in nearby objects and opponents, dealing AoE Anemo DMG and summoning a Mini Baku. Mini Baku: Follows the current active character. At regular intervals, the Mini Baku will create 1 Yumemi Style Special Snack nearby. After a nearby active character picks up a Special Snack, if their HP is higher than 70%, the Snack will explode and unleash a Munen Shockwave, dealing 1 instance of AoE Anemo DMG to nearby opponents. Otherwise, it will heal the one who picked it up based on Yumemizuki Mizuki's Elemental Mastery . When Yumemizuki Mizuki triggers healing by picking up a Yumemi Style Special Snack, the amount of healing is increased by 100%. If some time passes without a Snack being picked up, it will explode and release a Munen Shockwave, dealing 1 instance of AoE Anemo DMG to surrounding opponents."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Bright Moon's Restless Voice",
+      "description": "When Yumemizuki Mizuki triggers Swirl while in her Dreamdrifter state, Dreamdrifter's duration increases by 2.5s. This effect can trigger once every 0.3s for a maximum of 2 times per Dreamdrifter state."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Thoughts by Day Bring Dreams by Night",
+      "description": "While Yumemizuki Mizuki is in the Dreamdrifter state, when other nearby party members hit opponents with Pyro , Hydro , Cryo , or Electro attacks, her Elemental Mastery will increase by 100 for 4s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "All Ailments Banished",
+      "description": "When Yumemizuki Mizuki is in the party , party members have a chance to recover 30% additional HP when using healing foods that do not have reviving properties. The trigger chance for this effect increases with the corresponding character's Friendship Level . (This effect will always trigger if the Traveler is the character consuming healing food.)"
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "In Mist-Like Waters",
+      "effect": "Description Gameplay Notes When Yumemizuki Mizuki is in the Dreamdrifter state, she will continuously apply the \"Twenty-Three Nights' Awaiting\" effect to nearby opponents for 3s every 3.5s. When an opponent is affected by Anemo DMG-triggered Swirl reactions while the aforementioned effect is active, the effect will be canceled and this Swirl instance has its DMG against this opponent increased by 1,100% of Mizuki's Elemental Mastery. The DMG increase provided by this Constellation is inserted to the Swirl DMG calculation as follows: DMG Swirl = × RES Multiplier Target {\\displaystyle {\\begin{aligned}{\\text{DMG}}_{\\text{Swirl}}=&\\times {\\text{RES Multiplier}}_{\\text{Target}}\\end{aligned}}}"
+    },
+    "c2": {
+      "name": "Your Echo I Meet in Dreams",
+      "effect": "When Yumemizuki Mizuki enters the Dreamdrifter state, every Elemental Mastery point she has will increase all nearby party members' Pyro , Hydro , Cryo , and Electro DMG Bonuses by 0.04% until the Dreamdrifter state ends."
+    },
+    "c3": {
+      "name": "Till Dawn's Moon Ends Night",
+      "effect": "Increases the Level of Aisa Utamakura Pilgrimage by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Buds Warm Lucid Springs",
+      "effect": "Picking up a Yumemi Style Special Snack from the Elemental Burst Anraku Secret Spring Therapy will both deal DMG and heal, and will restore 5 Energy to Yumemizuki Mizuki. Energy can be restored this way 4 times per Anraku Secret Spring Therapy duration."
+    },
+    "c5": {
+      "name": "As Setting Moon Brings Year's End",
+      "effect": "Increases the Level of Anraku Secret Spring Therapy by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "The Heart Lingers Long",
+      "effect": "While Yumemizuki Mizuki is in the Dreamdrifter state, Swirl DMG dealt by nearby party members can Crit, with CRIT Rate fixed at 30%, and CRIT DMG fixed at 100%."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Yumemizuki_Mizuki",
+  "ai_tags": "Main DPS, Anemo аппликатор"
+}

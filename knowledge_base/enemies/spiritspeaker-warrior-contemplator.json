@@ -1,0 +1,13 @@
+{
+  "id": "spiritspeaker-warrior-contemplator",
+  "name_ru": "Говорящий с духами воин: Размышляющий",
+  "name_en": "Spiritspeaker Warrior: Contemplator",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

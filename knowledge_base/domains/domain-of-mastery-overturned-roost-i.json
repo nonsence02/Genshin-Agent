@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-mastery-overturned-roost-i",
+  "name_ru": "Подземелье мастерства: Опрокинутое гнездо I",
+  "name_en": "Domain of Mastery: Overturned Roost I",
+  "type": "Повышение талантов",
+  "region": "Нод-Край",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "teachings-of-vagrancy"
+  ],
+  "coordinates": []
+}

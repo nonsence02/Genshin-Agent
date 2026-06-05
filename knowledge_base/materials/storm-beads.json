@@ -1,10 +1,17 @@
 {
   "id": "storm-beads",
+  "name_ru": "Штормовой жемчуг",
   "name_en": "Storm Beads",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Thunder Manifestations"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Манифестации грома Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Storm_Beads"
+  "dropped_by": [
+    "thunder-manifestation"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

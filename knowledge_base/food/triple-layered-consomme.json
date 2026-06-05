@@ -1,0 +1,27 @@
+{
+  "id": "triple-layered-consomme",
+  "name_ru": "Суп «Три вкуса»",
+  "name_en": "Triple-Layered Consommé",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 30% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "ham",
+      "count": 2
+    },
+    {
+      "material_id": "fowl",
+      "count": 2
+    },
+    {
+      "material_id": "bamboo-shoot",
+      "count": 1
+    },
+    {
+      "material_id": "mushroom",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

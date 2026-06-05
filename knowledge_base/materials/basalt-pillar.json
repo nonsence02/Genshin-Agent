@@ -1,10 +1,17 @@
 {
   "id": "basalt-pillar",
+  "name_ru": "Базальтовая колонна",
   "name_en": "Basalt Pillar",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Geo Hypostasis"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Гео гипостазисы Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Basalt_Pillar"
+  "dropped_by": [
+    "geo-hypostasis"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

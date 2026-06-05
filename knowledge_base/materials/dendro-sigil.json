@@ -1,0 +1,15 @@
+{
+  "id": "dendro-sigil",
+  "name_ru": "Печать Дендро",
+  "name_en": "Dendro Sigil",
+  "type": "consume",
+  "type_text_ru": "Символ города",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Исследование Сумеру"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

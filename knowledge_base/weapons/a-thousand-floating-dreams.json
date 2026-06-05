@@ -1,47 +1,80 @@
 {
   "id": "a-thousand-floating-dreams",
-  "name": "A Thousand Floating Dreams",
-  "source_url": "https://genshin-impact.fandom.com/wiki/A_Thousand_Floating_Dreams",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Party members other than the equipping character will provide the equipping character with buffs based on whether their Elemental Type is the same as the latter or not. If their Elemental Types are the same, increase Elemental Mastery by. If not, increase the equipping character's DMG Bonus from their Elemental Type by. Each of the aforementioned effects can have up to stacks. Additionally, all nearby party members other than the equipping character will have their Elemental Mastery increased by. Multiple such effects from multiple such weapons can stack.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Oasis Garden's Reminiscence",
-        "Damaged Prism",
-        "Oasis Garden's Kindness",
-        "Turbid Prism",
-        "Luminescent Pollen",
-        "Oasis Garden's Mourning",
-        "Radiant Prism",
-        "Crystalline Cyst Dust",
-        "Oasis Garden's Truth"
-      ]
+  "name_ru": "Сновидения тысячи ночей",
+  "name_en": "A Thousand Floating Dreams",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 57.6
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 264.6144
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Песнь тысячи рассветов",
+  "passive_description_ru": "Другие члены отряда предоставляют экипированному этим оружием персонажу усиления в зависимости от того, совпадают их элементы, или нет. Если элементы совпадают, мастерство стихий повышается на 32 ед. Если не совпадают, экипированный этим оружием персонаж получает 10% бонус урона своего элемента. Данные эффекты складываются до 3 раз. Вдобавок мастерство стихий всех персонажей отряда поблизости (кроме экипированного этим оружием персонажа) увеличивается на 40 единиц. Если этим оружием обладают и другие члены отряда, эффект суммируется.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "oasis-gardens-reminiscence",
+        "name_ru": "Воспоминания цветущего оазиса",
+        "name_en": "Oasis Garden's Reminiscence"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "oasis-gardens-kindness",
+        "name_ru": "Милость цветущего оазиса",
+        "name_en": "Oasis Garden's Kindness"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "oasis-gardens-mourning",
+        "name_ru": "Печаль цветущего оазиса",
+        "name_en": "Oasis Garden's Mourning"
+      },
+      {
+        "id": "oasis-gardens-truth",
+        "name_ru": "Истина цветущего оазиса",
+        "name_en": "Oasis Garden's Truth"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "damaged-prism",
+        "name_ru": "Сломанная призма",
+        "name_en": "Damaged Prism"
+      },
+      {
+        "id": "turbid-prism",
+        "name_ru": "Загрязнённая призма",
+        "name_en": "Turbid Prism"
+      },
+      {
+        "id": "radiant-prism",
+        "name_ru": "Блестящая призма",
+        "name_en": "Radiant Prism"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "fungal-spores",
+        "name_ru": "Споры плесенника",
+        "name_en": "Fungal Spores"
+      },
+      {
+        "id": "luminescent-pollen",
+        "name_ru": "Светящаяся пыльца",
+        "name_en": "Luminescent Pollen"
+      },
+      {
+        "id": "crystalline-cyst-dust",
+        "name_ru": "Пыль кристаллоцистов",
+        "name_en": "Crystalline Cyst Dust"
+      }
+    ]
+  },
+  "coordinates": []
 }

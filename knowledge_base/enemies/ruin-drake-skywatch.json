@@ -1,0 +1,13 @@
+{
+  "id": "ruin-drake-skywatch",
+  "name_ru": "Дракон руин: Страж небес",
+  "name_en": "Ruin Drake: Skywatch",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "chaos-bolt",
+    "chaos-module",
+    "chaos-storage"
+  ],
+  "coordinates": []
+}

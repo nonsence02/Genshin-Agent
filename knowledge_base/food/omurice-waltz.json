@@ -1,0 +1,27 @@
+{
+  "id": "omurice-waltz",
+  "name_ru": "Вальс рисового омлета",
+  "name_en": "Omurice Waltz",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время спринта и карабканья на 25% в течение 1500 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "bird-egg",
+      "count": 4
+    },
+    {
+      "material_id": "rice",
+      "count": 3
+    },
+    {
+      "material_id": "tomato",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

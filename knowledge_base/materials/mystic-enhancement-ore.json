@@ -1,0 +1,16 @@
+{
+  "id": "mystic-enhancement-ore",
+  "name_ru": "Волшебная руда усиления",
+  "name_en": "Mystic Enhancement Ore",
+  "type": "weapon_exp",
+  "type_text_ru": "Улучшение оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Ковка",
+    "Случайные события"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

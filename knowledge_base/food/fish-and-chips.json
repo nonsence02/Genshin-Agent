@@ -1,0 +1,27 @@
+{
+  "id": "fish-and-chips",
+  "name_ru": "Рыба с картофелем во фритюре",
+  "name_en": "Fish and Chips",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 100 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "potato",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

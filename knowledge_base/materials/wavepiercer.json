@@ -1,0 +1,15 @@
+{
+  "id": "wavepiercer",
+  "name_ru": "Волнорез",
+  "name_en": "Wavepiercer",
+  "type": "fish_rod",
+  "type_text_ru": "Удочка",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Обмен в Ассоциации рыболовов Фонтейна"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

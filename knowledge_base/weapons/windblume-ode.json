@@ -1,48 +1,80 @@
 {
   "id": "windblume-ode",
-  "name": "Windblume Ode",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Windblume_Ode",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Dead Ley Line Branch",
-        "Whopperflower Nectar",
-        "Chains of the Dandelion Gladiator",
-        "Dead Ley Line Leaves",
-        "Shimmering Nectar",
-        "Shackles of the Dandelion Gladiator",
-        "Ley Line Sprout",
-        "Energy Nectar",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Ода анемонии",
+  "name_en": "Windblume Ode",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 36
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 165.384
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Желание анемонии",
+  "passive_description_ru": "Использование элементального навыка накладывает Древнее желание анемонии, которое увеличивает силу атаки на 16% в течение 6 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

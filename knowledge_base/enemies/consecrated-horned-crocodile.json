@@ -1,0 +1,13 @@
+{
+  "id": "consecrated-horned-crocodile",
+  "name_ru": "Священный рогатый крокодил",
+  "name_en": "Consecrated Horned Crocodile",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "marked-shell",
+    "sturdy-shell",
+    "desiccated-shell"
+  ],
+  "coordinates": []
+}

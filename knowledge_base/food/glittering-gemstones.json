@@ -1,0 +1,27 @@
+{
+  "id": "glittering-gemstones",
+  "name_ru": "«Сверкающие самоцветы»",
+  "name_en": "Glittering Gemstones",
+  "rarity": 4,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Небольшой сюрприз Детей Эха.",
+  "recipe": [
+    {
+      "material_id": "cacahuatl",
+      "count": 1
+    },
+    {
+      "material_id": "spinel-fruit",
+      "count": 1
+    },
+    {
+      "material_id": "grainfruit",
+      "count": 1
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

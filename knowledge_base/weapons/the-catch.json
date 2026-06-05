@@ -1,48 +1,80 @@
 {
   "id": "the-catch",
-  "name": "\"The Catch\"",
-  "source_url": "https://genshin-impact.fandom.com/wiki/%22The_Catch%22",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Increases Elemental Burst DMG by and Elemental Burst CRIT Rate by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mask of the Wicked Lieutenant",
-        "Chaos Gear",
-        "Spectral Husk",
-        "Mask of the Tiger's Bite",
-        "Chaos Axis",
-        "Spectral Heart",
-        "Mask of the One-Horned",
-        "Chaos Oculus",
-        "Spectral Nucleus",
-        "Mask of the Kijin"
-      ]
+  "name_ru": "«Улов»",
+  "name_en": "\"The Catch\"",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.4594
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Песня матроса",
+  "passive_description_ru": "Повышает урон взрыва стихии на 16% и его шанс крит. попадания на 6%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mask-of-the-wicked-lieutenant",
+        "name_ru": "Маска злого военачальника",
+        "name_en": "Mask of the Wicked Lieutenant"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mask-of-the-tigers-bite",
+        "name_ru": "Маска тигриной пасти",
+        "name_en": "Mask of the Tiger's Bite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mask-of-the-one-horned",
+        "name_ru": "Маска однорогого",
+        "name_en": "Mask of the One-Horned"
+      },
+      {
+        "id": "mask-of-the-kijin",
+        "name_ru": "Маска кидзин",
+        "name_en": "Mask of the Kijin"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-gear",
+        "name_ru": "Механизм хаоса",
+        "name_en": "Chaos Gear"
+      },
+      {
+        "id": "chaos-axis",
+        "name_ru": "Ось хаоса",
+        "name_en": "Chaos Axis"
+      },
+      {
+        "id": "chaos-oculus",
+        "name_ru": "Око хаоса",
+        "name_en": "Chaos Oculus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

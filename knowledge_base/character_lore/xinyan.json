@@ -1,0 +1,70 @@
+{
+  "id": "xinyan",
+  "name_en": "Xinyan",
+  "element": "Pyro",
+  "weapon": "Claymore",
+  "region": "Liyue",
+  "rarity": 4,
+  "description": "Xinyan ( Chinese : 辛焱 Xīnyàn ) is a playable Pyro character in Genshin Impact .\n\nRock 'n' roll is a relatively unpopular style of music in Liyue , having recently been brought over from Fontaine . Xinyan, however, loves the sound — and she's slowly but surely amassing a fanbase of her own as she performs throughout Liyue Harbor .",
+  "role_summary": "Xinyan ( Chinese : 辛焱 Xīnyàn ) is a playable Pyro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Dance on Fire",
+      "description": "Normal Attack Performs up to 4 consecutive strikes. Charged Attack Drains Stamina over time to perform continuous spinning attacks against all nearby opponents. At the end of the sequence, performs a more powerful slash. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Sweeping Fervor",
+      "description": "Xinyan brandishes her instrument, dealing Pyro DMG on nearby opponents, forming a shield made out of her audience's passion. The shield's DMG Absorption scales based on Xinyan's DEF and on the number of opponents hit. Hitting 0 – 1 opponents grants Shield"
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Riff Revolution",
+      "description": "Strumming rapidly, Xinyan launches nearby opponents and deals Physical DMG to them, hyping up the crowd. The sheer intensity of the atmosphere will cause explosions that deal Pyro DMG to nearby opponents."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "\"The Show Goes On, Even Without An Audience...\"",
+      "description": "Decreases the number of opponents Sweeping Fervor must hit to trigger each level of shielding. Shield"
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "\"...Now That's Rock 'N' Roll!\"",
+      "description": "Characters shielded by Sweeping Fervor deal 15% increased Physical DMG ."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "A Rad Recipe",
+      "description": "When a Perfect Cooking is achieved on a DEF-boosting dish , Xinyan has a 12% chance to obtain double the product."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Fatal Acceleration",
+      "effect": "Description Preview Upon scoring a CRIT Hit, increases ATK SPD of Xinyan's Normal and Charged Attacks by 12% for 5s. Can only occur once every 5s. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Constellation Fatal Acceleration.mp4"
+    },
+    "c2": {
+      "name": "Impromptu Opening",
+      "effect": "Description Gameplay Notes Preview Riff Revolution 's Physical DMG has its CRIT Rate increased by 100%, and will form a shield at Shield"
+    },
+    "c3": {
+      "name": "Double-Stop",
+      "effect": "Increases the Level of Sweeping Fervor by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Wildfire Rhythm",
+      "effect": "Sweeping Fervor 's swing DMG decreases opponent's Physical RES by 15% for 12s."
+    },
+    "c5": {
+      "name": "Screamin' for an Encore",
+      "effect": "Increases the Level of Riff Revolution by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Rockin' in a Flaming World",
+      "effect": "Description Gameplay Notes Decreases the Stamina Consumption of Xinyan's Charged Attacks by 30%. Additionally, Xinyan's Charged Attacks gain an ATK Bonus equal to 50% of her DEF. The ATK Bonus is added to Xinyan's ATK for the duration of her Charged Attack animation, thus her other attacks during this animation can also benefit from this ATK Bonus."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xinyan",
+  "ai_tags": "Main DPS, Пиро аппликатор"
+}

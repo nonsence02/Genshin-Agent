@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-equity",
+  "name_ru": "Учения о «Беспристрастии»",
   "name_en": "Teachings of Equity",
-  "type": "Character Talent Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Pale Forgotten Glory (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Equity"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-rhyming-rhythm-i",
+    "domain-of-mastery-rhyming-rhythm-ii",
+    "domain-of-mastery-rhyming-rhythm-iii",
+    "domain-of-mastery-rhyming-rhythm-iv"
+  ],
+  "source_domain": "domain-of-mastery-rhyming-rhythm-i",
+  "coordinates": []
 }

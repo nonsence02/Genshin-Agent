@@ -1,0 +1,11 @@
+{
+  "id": "golden-bass",
+  "kind": "fish",
+  "name_ru": "Золотистый окунь",
+  "name_en": "Golden Bass",
+  "bait_id": null,
+  "locations": [
+    "Можно создать: {0}"
+  ],
+  "coordinates": []
+}

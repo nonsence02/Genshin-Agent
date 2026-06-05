@@ -1,0 +1,15 @@
+{
+  "id": "fish",
+  "name_ru": "Рыба",
+  "name_en": "Fish",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Ловля рыбы"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

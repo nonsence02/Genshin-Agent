@@ -1,0 +1,11 @@
+{
+  "id": "frosted-axehead-fish",
+  "kind": "fish",
+  "name_ru": "Морозная рыба-топор",
+  "name_en": "Frosted Axehead Fish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

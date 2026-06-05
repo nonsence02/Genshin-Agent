@@ -1,94 +1,81 @@
 {
   "id": "lynette",
-  "name": "Lynette",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lynette",
-  "profile": {
-    "weapon": "Sword",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Flicks her mantle and executes an Enigma Thrust, dealing Anemo DMG. When the Enigma Thrust hits an opponent, it will restore Lynette's HP based on her Max HP, and in the afterward, she will lose a certain amount of HP per second. Based on whether you (‍ press Text for mouse and keyboard and controller ‍/‍ tap Text for touch screen ‍) or hold this ability, she will use Enigma Thrust differently. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) She swiftly uses an Enigma Thrust. Hold Lynette will enter a high-speed Pilfering Shadow state and apply Shadowsign to a nearby opponent. You can control her movement direction during this state, and you can end it...",
-    "elemental_burst": "Lynette raises her mantle high, dealing AoE Anemo DMG, using skillful sleight of hand to make a giant Bogglecat Box appear! Bogglecat Box Taunts nearby opponents, attracting their attacks. Deals Anemo DMG to nearby opponents at intervals. When the Bogglecat Box comes into contact with Hydro / Pyro / Cryo / Electro, it will gain the corresponding element and additionally fire Vivid Shots that will deal DMG from that element at intervals. Elemental Absorption of this kind will only occur once during this ability's duration. From s after casting the skill, Bogglecat Box deals Anemo DMG to nearby opponents every second and fires a Vivid Shot every seconds for a total of instances of Anemo DMG..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Meshing Gear",
-        "Mechanical Spur Gear",
-        "Artificed Dynamic Gear"
-      ],
-      "special": [
-        "Lumidouce Bell",
-        "Artificed Spare Clockwork Component — Coppelia"
-      ]
+  "name_ru": "Линетт",
+  "name_en": "Lynette",
+  "element": "Anemo",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1039.4418,
+      "atk": 19.4107,
+      "def": 59.6857
     },
-    "talents": {
-      "books": [
-        "Teachings of Order",
-        "Guide to Order",
-        "Philosophies of Order"
-      ],
-      "mob_drops": [
-        "Meshing Gear",
-        "Mechanical Spur Gear",
-        "Artificed Dynamic Gear"
-      ],
-      "weekly_boss": [
-        "Everamber"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12397.4036,
+      "atk": 231.5129,
+      "def": 711.87
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Стремительная церемониальная рапира",
+      "description_ru": "Обычная атака:\nДо четырёх быстрых ударов.\n\nЗаряженная атака:\nТратит определённое количество выносливости на два быстрых взмаха мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Таинственный трюк с исчезновением",
+      "description_ru": "Взмахивает плащом и выполняет Выпад тени, который наносит Анемо урон.\nПри попадании во врага Выпад тени восстанавливает HP Линетт пропорционально её макс. HP, и в течение 4 сек. после этого отнимает определённое количество HP каждую секунду.\nПри долгом нажатии способ активации навыка меняется.\n\nБыстрое нажатие\nВыполняет стремительный Выпад тени.\n\nДолгое нажатие\nЛинетт быстро движется в облике Бегущей тени и накладывает Знак тени на врага поблизости. В это время можно контролировать направление её движения. При повторном использовании навыка движение прекращается.\nПосле окончания стремительного передвижения Линетт наносит Выпад тени. Если поблизости есть враг со Знаком тени, перед выполнением Выпада тени Линетт мгновенно приблизится к нему.\n\nЛинетт может наложить Знак тени на не более чем 1 врага. На слишком большом расстоянии персонажа от противника Знак тени исчезает.\n\nАрхэ: Усия\nС некоторым интервалом, выполняя Выпад тени, Линетт призывает Клинок бурных вод, который наносит Анемо урон усии."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Фокус: Удивительное превращение",
+      "description_ru": "Линетт высоко поднимает плащ и наносит Анемо урон по площади, с поразительным мастерством являя зрителям Изумительную кошачью коробку!\n\nИзумительная кошачья коробка\n· Дразнит врагов, отвлекая их атаки на себя.\n· Периодически наносит Анемо урон врагам поблизости.\n· При контакте с Гидро, Пиро, Крио или Электро Изумительная кошачья коробка поглощает данный элемент и периодически производит во врагов дополнительные Яркие выстрелы, которые наносят урон этим элементом.\nЗа каждое использование навыка поглощение элементов происходит только один раз."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Изощрённая синергия",
+      "description_ru": "Когда в отряде есть персонажи с 1/2/3/4 типами элементов, активация навыка Фокус: Удивительное превращение соответственно увеличивает силу атаки всех персонажей отряда на 8%/12%/16%/20% на 10 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Полный реквизит",
+      "description_ru": "Когда призванная навыком Фокус: Удивительное превращение Изумительная кошачья коробка поглощает элемент, урон взрыва стихии Линетт увеличивается на 15%. Эффект действует до окончания длительности Изумительной кошачьей коробки."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Точечная мнемоника",
+      "description_ru": "Расположение сфер восстановления будет отображаться на вашей мини-карте. Прикосновение к сферам будет восстанавливать на 25% больше водной выносливости и HP."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Лезвие хладной тени",
+      "description_ru": "Попадание Выпада тени навыка Таинственный трюк с исчезновением по врагу со Знаком тени создаёт на его позиции вихрь, который притягивает противников поблизости."
+    },
+    {
+      "name_ru": "Бесконечные загадки",
+      "description_ru": "Когда призванная навыком Фокус: Удивительное превращение Изумительная кошачья коробка совершает Яркий выстрел, будет дополнительно произведён ещё один Яркий выстрел."
+    },
+    {
+      "name_ru": "Зрение искажённого разума",
+      "description_ru": "Увеличивает уровень навыка Фокус: Удивительное превращение на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Безмолвное единомыслие",
+      "description_ru": "Увеличивает количество зарядов навыка Таинственный трюк с исчезновением на 1."
+    },
+    {
+      "name_ru": "Покров заблуждений",
+      "description_ru": "Увеличивает уровень навыка Таинственный трюк с исчезновением на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Око прозрения истины",
+      "description_ru": "Активируя Выпад тени навыка Таинственный трюк с исчезновением, Линетт получает инфузию Анемо, а бонус Анемо урона увеличивается на 20% на 6 сек."
+    }
+  ],
+  "coordinates": []
 }

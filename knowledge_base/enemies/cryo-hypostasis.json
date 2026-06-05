@@ -1,0 +1,15 @@
+{
+  "id": "cryo-hypostasis",
+  "name_ru": "Крио гипостазис",
+  "name_en": "Cryo Hypostasis",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "crystalline-bloom",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver"
+  ],
+  "coordinates": []
+}

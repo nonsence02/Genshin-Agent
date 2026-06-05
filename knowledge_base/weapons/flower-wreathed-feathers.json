@@ -1,48 +1,80 @@
 {
   "id": "flower-wreathed-feathers",
-  "name": "Flower-Wreathed Feathers",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Flower-Wreathed_Feathers",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Decreases Gliding Stamina consumption by. When using Aimed Shots, the DMG dealt by Charged Attacks increases by every. This can stack up to times and will be removed after leaving Aiming Mode.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Night-Wind's Mystic Consideration",
-        "Ignited Stone",
-        "Sentry's Wooden Whistle",
-        "Night-Wind's Mystic Premonition",
-        "Ignited Seed of Life",
-        "Warrior's Metal Whistle",
-        "Night-Wind's Mystic Augury",
-        "Ignited Seeing Eye",
-        "Saurian-Crowned Warrior's Golden Whistle",
-        "Night-Wind's Mystic Revelation"
-      ]
+  "name_ru": "Украшенные цветами перья",
+  "name_en": "Flower-Wreathed Feathers",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Недостижимое цветение",
+  "passive_description_ru": "Уменьшает потребление выносливости во время полёта на 15%. Урон заряженных атак при выполнении прицельных выстрелов увеличивается на 6% каждые 0,5 сек. Этот эффект может складываться до 6 раз и исчезает через 10 сек. после выхода из режима прицеливания.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "night-winds-mystic-consideration",
+        "name_ru": "Загадочные размышления ночного ветра",
+        "name_en": "Night-Wind's Mystic Consideration"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "night-winds-mystic-premonition",
+        "name_ru": "Загадочные предчувствия ночного ветра",
+        "name_en": "Night-Wind's Mystic Premonition"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "night-winds-mystic-augury",
+        "name_ru": "Загадочные предзнаменования ночного ветра",
+        "name_en": "Night-Wind's Mystic Augury"
+      },
+      {
+        "id": "night-winds-mystic-revelation",
+        "name_ru": "Загадочные откровения ночного ветра",
+        "name_en": "Night-Wind's Mystic Revelation"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "ignited-stone",
+        "name_ru": "Пламенный камень",
+        "name_en": "Ignited Stone"
+      },
+      {
+        "id": "ignited-seed-of-life",
+        "name_ru": "Пламенное семя жизни",
+        "name_en": "Ignited Seed of Life"
+      },
+      {
+        "id": "ignited-seeing-eye",
+        "name_ru": "Пламенное око",
+        "name_en": "Ignited Seeing Eye"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "sentrys-wooden-whistle",
+        "name_ru": "Деревянный свисток дозорного",
+        "name_en": "Sentry's Wooden Whistle"
+      },
+      {
+        "id": "warriors-metal-whistle",
+        "name_ru": "Металлический свисток воина",
+        "name_en": "Warrior's Metal Whistle"
+      },
+      {
+        "id": "saurian-crowned-warriors-golden-whistle",
+        "name_ru": "Золотой свисток коронованного заврианами воина",
+        "name_en": "Saurian-Crowned Warrior's Golden Whistle"
+      }
+    ]
+  },
+  "coordinates": []
 }

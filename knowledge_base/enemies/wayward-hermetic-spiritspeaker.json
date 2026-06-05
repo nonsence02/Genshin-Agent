@@ -1,0 +1,15 @@
+{
+  "id": "wayward-hermetic-spiritspeaker",
+  "name_ru": "Говорящая с духами отшельница",
+  "name_en": "Wayward Hermetic Spiritspeaker",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "talisman-of-the-enigmatic-land",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver"
+  ],
+  "coordinates": []
+}

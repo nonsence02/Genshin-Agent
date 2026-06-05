@@ -1,0 +1,19 @@
+{
+  "id": "yummy-yum-cha",
+  "name_ru": "Неспешный глоток",
+  "name_en": "Yummy Yum Cha",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 14% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 350 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

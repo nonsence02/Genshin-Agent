@@ -1,0 +1,15 @@
+{
+  "id": "electro-regisvine",
+  "name_ru": "Электро папоротник",
+  "name_en": "Electro Regisvine",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "thunderclap-fruitcore",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver"
+  ],
+  "coordinates": []
+}

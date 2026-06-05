@@ -1,0 +1,15 @@
+{
+  "id": "maintenance-mek-gold-leader",
+  "name_ru": "Ремонтный мек: Золотой лидер",
+  "name_en": "Maintenance Mek: Gold Leader",
+  "type": "exchange",
+  "type_text_ru": "Рыба",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыбалка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

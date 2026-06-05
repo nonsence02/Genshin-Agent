@@ -1,0 +1,75 @@
+{
+  "id": "xiao",
+  "name_en": "Xiao",
+  "element": "Anemo",
+  "weapon": "Polearm",
+  "region": "Liyue",
+  "rarity": 5,
+  "description": "Xiao ( Chinese : 魈 Xiāo ) is a playable Anemo character in Genshin Impact .\n\nHe is an adeptus , under the name Alatus ( Chinese : 金鹏 Jīnpéng ), and the sole surviving member of the five foremost Yakshas dispatched by Morax to subdue the demonic spirits that plagued Liyue . He currently resides at Wangshu Inn and mostly restrains himself from large crowds and social interactions.",
+  "role_summary": "Xiao ( Chinese : 魈 Xiāo ) is a playable Anemo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Whirlwind Thrust",
+      "description": "Normal Attack Performs up to 6 consecutive spear strikes. Charged Attack Consumes a certain amount of Stamina to perform an upward thrust. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact. Xiao does not take DMG from performing Plunging Attacks ."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Lemniscatic Wind Cycling",
+      "description": "Xiao lunges forward, dealing Anemo DMG to opponents in his path. Can be used in mid-air. Starts with 2 charges ."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Bane of All Evil",
+      "description": "Xiao dons the Yaksha Mask that set gods and demons trembling millennia ago. Yaksha's Mask Greatly increases Xiao's jumping ability. Increases his attack AoE and attack DMG. Converts attack DMG into Anemo DMG , which cannot be overridden by any other elemental infusion. In this state, Xiao will continuously lose HP. The effects of this skill end when Xiao leaves the field."
+    },
+    {
+      "type": "2% Current HP Per Second",
+      "name": "2.5% Current HP Per Second",
+      "description": "15s"
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Conqueror of Evil: Tamer of Demons",
+      "description": "While under the effects of Bane of All Evil , all DMG dealt by Xiao increases by 5%. DMG increases by a further 5% for every 3s the ability persists. The maximum DMG Bonus is 25%."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Dissolution Eon: Heaven Fall",
+      "description": "Using Lemniscatic Wind Cycling increases the DMG of subsequent uses of Lemniscatic Wind Cycling by 15%. This effect lasts for 7s, and has a maximum of 3 stacks. Gaining a new stack refreshes the effect's duration ."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Transcension: Gravity Defier",
+      "description": "Decreases climbing Stamina consumption for your own party members by 20%. Not stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Dissolution Eon: Destroyer of Worlds",
+      "effect": "Increases Lemniscatic Wind Cycling 's charges by 1."
+    },
+    "c2": {
+      "name": "Annihilation Eon: Blossom of Kaleidos",
+      "effect": "When in the party and not on the field, Xiao's Energy Recharge is increased by 25%."
+    },
+    "c3": {
+      "name": "Conqueror of Evil: Wrath Deity",
+      "effect": "Increases the Level of Lemniscatic Wind Cycling by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Transcension: Extinction of Suffering",
+      "effect": "Description Preview When Xiao's HP falls below 50%, he gains a 100% DEF Bonus. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Transcension Extinction of Suffering Preview.mp4"
+    },
+    "c5": {
+      "name": "Evolution Eon: Origin of Ignorance",
+      "effect": "Increases the Level of Bane of All Evil by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Conqueror of Evil: Guardian Yaksha",
+      "effect": "Description Preview While under the effects of Bane of All Evil , hitting at least 2 opponents with Xiao's Plunging Attack will immediately grant him 1 charge of Lemniscatic Wind Cycling , and for the next 1s, he may use Lemniscatic Wind Cycling while ignoring its CD . Hover over previews to view in higher quality. ( Preview Preferences ) Media:Conqueror of Evil Guardian Yaksha.mp4"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Xiao",
+  "ai_tags": "Main DPS, Anemo аппликатор"
+}

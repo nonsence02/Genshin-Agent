@@ -1,48 +1,80 @@
 {
   "id": "waveriding-whirl",
-  "name": "Waveriding Whirl",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Waveriding_Whirl",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Decreases Swimming Stamina consumption by. In addition, for after using an Elemental Skill, Max HP is increased by. For every Hydro Elemental character in the party, Max HP is increased by another, and the maximum increase that can be achieved in this way is. Can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Blazing Sacrificial Heart's Terror",
-        "Shard of a Shattered Will",
-        "Juvenile Fang",
-        "Blazing Sacrificial Heart's Hesitance",
-        "Locus of a Clear Will",
-        "Seasoned Fang",
-        "Blazing Sacrificial Heart's Resolve",
-        "Sigil of a Striding Will",
-        "Tyrant's Fang",
-        "Blazing Sacrificial Heart's Splendor"
-      ]
+  "name_ru": "Вихрь на волнах",
+  "name_en": "Waveriding Whirl",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1333
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.6125
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Мечущиеся клыки",
+  "passive_description_ru": "Уменьшает потребление выносливости во время плавания на 15%. Кроме того, увеличивает макс. HP на 20% на 10 сек. после применения элементального навыка. За каждого Гидро персонажа в отряде макс. HP дополнительно повышается на 12%. Максимальное увеличение, получаемое таким способом, составляет 24%. Этот эффект может возникнуть один раз в 15 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "blazing-sacrificial-hearts-terror",
+        "name_ru": "Ужас пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Terror"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "blazing-sacrificial-hearts-hesitance",
+        "name_ru": "Сомнение пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Hesitance"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "blazing-sacrificial-hearts-resolve",
+        "name_ru": "Решимость пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Resolve"
+      },
+      {
+        "id": "blazing-sacrificial-hearts-splendor",
+        "name_ru": "Великолепие пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Splendor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "shard-of-a-shattered-will",
+        "name_ru": "Осколок разбитой воли",
+        "name_en": "Shard of a Shattered Will"
+      },
+      {
+        "id": "locus-of-a-clear-will",
+        "name_ru": "Образ ясной воли",
+        "name_en": "Locus of a Clear Will"
+      },
+      {
+        "id": "sigil-of-a-striding-will",
+        "name_ru": "Талисман странствующей воли",
+        "name_en": "Sigil of a Striding Will"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "juvenile-fang",
+        "name_ru": "Молодой клык",
+        "name_en": "Juvenile Fang"
+      },
+      {
+        "id": "seasoned-fang",
+        "name_ru": "Клык взрослого",
+        "name_en": "Seasoned Fang"
+      },
+      {
+        "id": "tyrants-fang",
+        "name_ru": "Клык тирана",
+        "name_en": "Tyrant's Fang"
+      }
+    ]
+  },
+  "coordinates": []
 }

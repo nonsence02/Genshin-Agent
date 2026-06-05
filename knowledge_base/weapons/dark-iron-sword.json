@@ -1,48 +1,80 @@
 {
   "id": "dark-iron-sword",
-  "name": "Dark Iron Sword",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dark_Iron_Sword",
-  "profile": {
-    "type": "Sword",
-    "rarity": "3★",
-    "base_atk": "39 - 401",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Upon causing an Overloaded, Superconduct, Electro-Charged, Quicken, Aggravate, Hyperbloom, Lunar-Charged, or Electro-infused Swirl reaction, ATK is increased by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Luminous Sands from Guyun",
-        "Hunter's Sacrificial Knife",
-        "Damaged Mask",
-        "Lustrous Stone from Guyun",
-        "Agent's Sacrificial Knife",
-        "Stained Mask",
-        "Relic from Guyun",
-        "Inspector's Sacrificial Knife",
-        "Ominous Mask",
-        "Divine Body from Guyun"
-      ]
+  "name_ru": "Тёмный железный меч",
+  "name_en": "Dark Iron Sword",
+  "weapon_type": "Sword",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 38.7413,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 30.6
+    },
+    "level_90": {
+      "base_atk": 401.2936,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 140.5764
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Перегружен",
+  "passive_description_ru": "Увеличивает силу атаки на 20% на 12 сек. после активации реакций Перегрузка, Сверхпроводник, Заряжен, Стимуляция, Обострение, Вегетация, Лунный заряд или Электро Рассеивание.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "luminous-sands-from-guyun",
+        "name_ru": "Светящийся песок Гуюнь",
+        "name_en": "Luminous Sands from Guyun"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "lustrous-stone-from-guyun",
+        "name_ru": "Блестящий камень Гуюнь",
+        "name_en": "Lustrous Stone from Guyun"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "relic-from-guyun",
+        "name_ru": "Реликвия Гуюнь",
+        "name_en": "Relic from Guyun"
+      },
+      {
+        "id": "divine-body-from-guyun",
+        "name_ru": "Останки богов Гуюнь",
+        "name_en": "Divine Body from Guyun"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "hunters-sacrificial-knife",
+        "name_ru": "Церемониальный нож охотника",
+        "name_en": "Hunter's Sacrificial Knife"
+      },
+      {
+        "id": "agents-sacrificial-knife",
+        "name_ru": "Церемониальный нож агента",
+        "name_en": "Agent's Sacrificial Knife"
+      },
+      {
+        "id": "inspectors-sacrificial-knife",
+        "name_ru": "Церемониальный нож инспектора",
+        "name_en": "Inspector's Sacrificial Knife"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "damaged-mask",
+        "name_ru": "Разбитая маска",
+        "name_en": "Damaged Mask"
+      },
+      {
+        "id": "stained-mask",
+        "name_ru": "Грязная маска",
+        "name_en": "Stained Mask"
+      },
+      {
+        "id": "ominous-mask",
+        "name_ru": "Зловещая маска",
+        "name_en": "Ominous Mask"
+      }
+    ]
+  },
+  "coordinates": []
 }

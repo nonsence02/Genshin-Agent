@@ -1,10 +1,18 @@
 {
   "id": "ruined-hilt",
+  "name_ru": "Сломанный эфес",
   "name_en": "Ruined Hilt",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Praetorian Golem"
+  "type": "avatar_material",
+  "type_text_ru": "Материал улучшения персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Преторианцы",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ruined_Hilt"
+  "dropped_by": [
+    "praetorian-golem"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

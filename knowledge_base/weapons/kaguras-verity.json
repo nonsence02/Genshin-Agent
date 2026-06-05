@@ -1,48 +1,80 @@
 {
   "id": "kaguras-verity",
-  "name": "Kagura's Verity",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kagura%27s_Verity",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "Gains the Kagura Dance when using an Elemental Skill, causing the Elemental Skill DMG of the character wielding this weapon to increase by for. Max stacks. This character will gain All Elemental DMG Bonus when they possess stacks.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mask of the Wicked Lieutenant",
-        "Concealed Claw",
-        "Spectral Husk",
-        "Mask of the Tiger's Bite",
-        "Concealed Unguis",
-        "Spectral Heart",
-        "Mask of the One-Horned",
-        "Concealed Talon",
-        "Spectral Nucleus",
-        "Mask of the Kijin"
-      ]
+  "name_ru": "Истина кагура",
+  "name_en": "Kagura's Verity",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.144
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.6615
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Кагура Священной сакуры",
+  "passive_description_ru": "Использование элементального навыка наделяет экипированного этим оружием персонажа эффектом «Танец кагура», который увеличивает урон его элементального навыка на 12%. Этот эффект длится 16 сек. и может складываться до 3 раз. На 3 уровне эффекта персонаж получает 12% бонус урона всеми элементами.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mask-of-the-wicked-lieutenant",
+        "name_ru": "Маска злого военачальника",
+        "name_en": "Mask of the Wicked Lieutenant"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mask-of-the-tigers-bite",
+        "name_ru": "Маска тигриной пасти",
+        "name_en": "Mask of the Tiger's Bite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mask-of-the-one-horned",
+        "name_ru": "Маска однорогого",
+        "name_en": "Mask of the One-Horned"
+      },
+      {
+        "id": "mask-of-the-kijin",
+        "name_ru": "Маска кидзин",
+        "name_en": "Mask of the Kijin"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "concealed-claw",
+        "name_ru": "Скрытый коготь",
+        "name_en": "Concealed Claw"
+      },
+      {
+        "id": "concealed-unguis",
+        "name_ru": "Скрытый заточенный коготь",
+        "name_en": "Concealed Unguis"
+      },
+      {
+        "id": "concealed-talon",
+        "name_ru": "Скрытый дьявольский коготь",
+        "name_en": "Concealed Talon"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

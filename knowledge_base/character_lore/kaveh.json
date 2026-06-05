@@ -1,0 +1,70 @@
+{
+  "id": "kaveh",
+  "name_en": "Kaveh",
+  "element": "Dendro",
+  "weapon": "Claymore",
+  "region": "Sumeru",
+  "rarity": 4,
+  "description": "Kaveh is a playable Dendro character in Genshin Impact .\n\nThe architect behind the Palace of Alcazarzaray , Kaveh was a student of the Kshahrewar Darshan of the Sumeru Akademiya and graduated with honors, earning the moniker \"Light of Kshahrewar.\" Having become insolvent after the construction of the Palace of Alcazarzaray, he was forced to reside with Alhaitham , whom he has a complicated relationship with. In spite of the illustrious façade he maintains to outsiders, Kaveh is often saddled with guilt for his father 's death, ashamed of his poverty, and struggling with realizing his ideals.",
+  "role_summary": "Kaveh is a playable Dendro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Schematic Setup",
+      "description": "Normal Attack Uses Mehrak to perform up to 4 consecutive attacks. Charged Attack Drains Stamina over time to perform continuous slashes. At the end of the sequence, performs a more powerful slash. Plunging Attack Plunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Artistic Ingenuity",
+      "description": "Uses Mehrak 's mapping ability for offensive purposes, initiating a radial scan that deals AoE Dendro DMG . It will also scan all Dendro Cores in its AoE and cause them to immediately burst."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Painted Dome",
+      "description": "Completely unleashes Mehrak 's energy and creates a cubic scanned space, dealing AoE Dendro DMG to all opponents within it, causing all Dendro Cores in its AoE to immediately burst, and granting Kaveh the following enhanced combat abilities for a specific duration: Increases Kaveh's Normal, Charged, and Plunging Attack AoE, and converts his attack DMG to Dendro DMG that cannot be overridden. All Dendro Cores created by all your own party members through Bloom and Lunar-Bloom reactions will deal additional DMG when they burst. Increases Kaveh's resistance to interruption. These effects will be canceled once Kaveh leaves the field."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "An Architect's Undertaking",
+      "description": "When DMG dealt by a Dendro Core (including DMG from Burgeon and Hyperbloom) hits Kaveh, Kaveh will regain HP equal to 300% of his Elemental Mastery . This effect can be triggered once every 0.5s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "A Craftsman's Curious Conceptions",
+      "description": "During Painted Dome , after Kaveh's Normal, Charged, or Plunging Attacks hit opponents, his Elemental Mastery will increase by 25. This effect can be triggered once every 0.1s. Max 4 stacks. This effect will be canceled when Painted Dome's effects end."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "The Art of Budgeting",
+      "description": "When Kaveh crafts Landscape , Building , and Courtyard -type Furnishings , he has a 100% chance to refund a portion of the materials used."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Sublime Salutations",
+      "effect": "Within 3s after using Artistic Ingenuity , Kaveh's Dendro RES and Incoming Healing Bonus will be increased by 50% and 25% respectively."
+    },
+    "c2": {
+      "name": "Grace of Royal Roads",
+      "effect": "Kaveh's Normal Attack SPD increases by 15% during Painted Dome ."
+    },
+    "c3": {
+      "name": "Profferings of Dur Untash",
+      "effect": "Increases the Level of Painted Dome by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Feast of Apadana",
+      "effect": "Dendro Cores created from Bloom and Lunar-Bloom reactions Kaveh triggers will deal 60% more DMG when they burst."
+    },
+    "c5": {
+      "name": "Treasures of Bonkhanak",
+      "effect": "Increases the Level of Artistic Ingenuity by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Pairidaeza's Dreams",
+      "effect": "When Kaveh's Normal, Charged, or Plunging Attacks hit opponents during Painted Dome , they will unleash Pairidaeza's Light upon the opponent's position, dealing 61.8% of Kaveh's ATK as AoE Dendro DMG and causing all Dendro Cores within that AoE to burst. This effect can be triggered once every 3s."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kaveh",
+  "ai_tags": "Дерево аппликатор, Аб illenator"
+}

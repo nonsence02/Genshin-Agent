@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-marksman",
+  "name_ru": "Похитители сокровищ: Стрелок",
+  "name_en": "Treasure Hoarders: Marksman",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

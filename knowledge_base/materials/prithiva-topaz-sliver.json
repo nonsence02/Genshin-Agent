@@ -1,10 +1,29 @@
 {
   "id": "prithiva-topaz-sliver",
+  "name_ru": "Осколок топаза Притхива",
   "name_en": "Prithiva Topaz Sliver",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses and Weekly Bosses"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сувенирные лавки",
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Prithiva_Topaz_Sliver"
+  "dropped_by": [
+    "azhdaha",
+    "experimental-field-generator",
+    "geo-hypostasis",
+    "golden-wolflord",
+    "legatus-golem",
+    "lupus-boreas-dominator-of-wolves",
+    "perpetual-mechanical-array",
+    "primo-geovishap",
+    "radiant-moongecko",
+    "ruin-serpent",
+    "watcher-fallen-vigil"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

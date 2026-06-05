@@ -1,10 +1,16 @@
 {
   "id": "starconch",
+  "name_ru": "Звёздная ракушка",
   "name_en": "Starconch",
-  "type": "Local Specialty (Liyue)",
-  "days": [],
-  "source": [
-    "Found on the beaches of Liyue and Dragonspine"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Ли Юэ",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "На побережьях Ли Юэ",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Starconch"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

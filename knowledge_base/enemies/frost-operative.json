@@ -1,0 +1,13 @@
+{
+  "id": "frost-operative",
+  "name_ru": "Оперативник мороза",
+  "name_en": "Frost Operative",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "operatives-constancy",
+    "operatives-standard-pocket-watch",
+    "old-operatives-pocket-watch"
+  ],
+  "coordinates": []
+}

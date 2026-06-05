@@ -1,0 +1,23 @@
+{
+  "id": "dew-dipped-shrimp",
+  "name_ru": "Креветки в росе",
+  "name_en": "Dew-Dipped Shrimp",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 35% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "shrimp-meat",
+      "count": 4
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "snapdragon",
+      "count": 3
+    }
+  ],
+  "coordinates": []
+}

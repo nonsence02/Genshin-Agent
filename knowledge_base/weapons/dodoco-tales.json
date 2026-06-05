@@ -1,44 +1,80 @@
 {
   "id": "dodoco-tales",
-  "name": "Dodoco Tales",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dodoco_Tales",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Normal Attack hits on opponents increase Charged Attack DMG by for. Charged Attack hits on opponents increase ATK by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Damaged Mask",
-        "Dead Ley Line Leaves",
-        "Stained Mask",
-        "Ley Line Sprout",
-        "Ominous Mask"
-      ]
+  "name_ru": "Истории Додоко",
+  "name_en": "Dodoco Tales",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.12
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.5513
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Додоприключения!",
+  "passive_description_ru": "Попадания обычной атакой увеличивают урон заряженной атаки на 16% в течение 6 сек., а попадания заряженной атакой увеличивают силу атаки на 8% в течение 6 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "damaged-mask",
+        "name_ru": "Разбитая маска",
+        "name_en": "Damaged Mask"
+      },
+      {
+        "id": "stained-mask",
+        "name_ru": "Грязная маска",
+        "name_en": "Stained Mask"
+      },
+      {
+        "id": "ominous-mask",
+        "name_ru": "Зловещая маска",
+        "name_en": "Ominous Mask"
+      }
+    ]
+  },
+  "coordinates": []
 }

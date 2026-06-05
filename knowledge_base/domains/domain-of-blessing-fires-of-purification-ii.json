@@ -1,0 +1,13 @@
+{
+  "id": "domain-of-blessing-fires-of-purification-ii",
+  "name_ru": "Подземелье благословения: Пламя очищения II",
+  "name_en": "Domain of Blessing: Fires of Purification II",
+  "type": "Артефакты",
+  "region": "Мондштадт",
+  "days_of_week": [],
+  "rewards": [
+    "resolution-of-sojourner",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

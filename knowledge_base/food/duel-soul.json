@@ -1,0 +1,27 @@
+{
+  "id": "duel-soul",
+  "name_ru": "Душа поединка",
+  "name_en": "Duel Soul",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 34% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 980 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "rice",
+      "count": 4
+    },
+    {
+      "material_id": "fowl",
+      "count": 2
+    },
+    {
+      "material_id": "fish",
+      "count": 2
+    },
+    {
+      "material_id": "padisarah",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

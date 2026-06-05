@@ -1,10 +1,17 @@
 {
   "id": "quelled-creeper",
+  "name_ru": "Подавленная лоза",
   "name_en": "Quelled Creeper",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Dendro Hypostasis"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дендро гипостазисы Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Quelled_Creeper"
+  "dropped_by": [
+    "dendro-hypostasis"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

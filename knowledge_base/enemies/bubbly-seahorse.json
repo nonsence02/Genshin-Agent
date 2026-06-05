@@ -1,0 +1,13 @@
+{
+  "id": "bubbly-seahorse",
+  "name_ru": "Конёк-пузырёк",
+  "name_en": "Bubbly Seahorse",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "xenochromatic-crystal",
+    "transoceanic-chunk",
+    "transoceanic-pearl"
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,22 @@
 {
   "id": "old-handguard",
+  "name_ru": "Старая гарда",
   "name_en": "Old Handguard",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Nobushi"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Нобуси",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Old_Handguard"
+  "dropped_by": [
+    "kairagi-dancing-thunder",
+    "kairagi-fiery-might",
+    "nobushi-hitsukeban",
+    "nobushi-jintouban",
+    "nobushi-kikouban"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

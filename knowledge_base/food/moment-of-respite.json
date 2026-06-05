@@ -1,0 +1,27 @@
+{
+  "id": "moment-of-respite",
+  "name_ru": "Короткая передышка",
+  "name_en": "Moment of Respite",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время полёта и спринта на 25% в течение 1800 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 2
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "fish",
+      "count": 2
+    },
+    {
+      "material_id": "grainfruit",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

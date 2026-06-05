@@ -1,10 +1,20 @@
 {
   "id": "shard-of-a-shattered-will",
+  "name_ru": "Осколок разбитой воли",
   "name_en": "Shard of a Shattered Will",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Wayob Manifestations"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Воплощение Вайоб",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Shard_of_a_Shattered_Will"
+  "dropped_by": [
+    "flow-inverted-wayob-manifestation",
+    "foliar-swift-wayob-manifestation",
+    "rock-cavernous-wayob-manifestation"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

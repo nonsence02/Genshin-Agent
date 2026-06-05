@@ -1,10 +1,18 @@
 {
   "id": "the-meaning-of-aeons",
+  "name_ru": "Смысл эонов",
   "name_en": "The Meaning of Aeons",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ End of the Oneiric Euthymia Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Защитник вечности Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/The_Meaning_of_Aeons"
+  "dropped_by": [
+    "magatsu-mitake-narukami-no-mikoto"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

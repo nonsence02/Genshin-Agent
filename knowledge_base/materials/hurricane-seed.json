@@ -1,10 +1,17 @@
 {
   "id": "hurricane-seed",
+  "name_ru": "Семя урагана",
   "name_en": "Hurricane Seed",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Anemo Hypostasis"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Анемо гипостазисы Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Hurricane_Seed"
+  "dropped_by": [
+    "anemo-hypostasis"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,15 @@
+{
+  "id": "cacahuatl",
+  "name_ru": "Какауатль",
+  "name_en": "Cacahuatl",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

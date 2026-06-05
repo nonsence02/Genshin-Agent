@@ -1,0 +1,10 @@
+{
+  "id": "traveling-doctor",
+  "name_ru": "Целитель",
+  "name_en": "Traveling Doctor",
+  "max_rarity": 3,
+  "bonus_2pc": "Увеличивает получаемое лечение на 20%.",
+  "bonus_4pc": "Использование взрыва стихии восстанавливает 20% HP.",
+  "source_domain": "domain-of-blessing-dance-of-steel-i",
+  "coordinates": []
+}

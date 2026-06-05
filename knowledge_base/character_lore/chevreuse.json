@@ -1,0 +1,70 @@
+{
+  "id": "chevreuse",
+  "name_en": "Chevreuse",
+  "element": "Pyro",
+  "weapon": "Polearm",
+  "region": "Fontaine",
+  "rarity": 4,
+  "description": "Chevreuse is a playable Ousia -aligned Pyro character in Genshin Impact .\n\nShe is the captain of the Maison Gardiennage 's Special Security and Surveillance Patrol with an unorthodox yet firm sense of justice and approach to law enforcement.",
+  "role_summary": "Chevreuse is a playable Ousia -aligned Pyro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Line Bayonet Thrust EX",
+      "description": "Normal Attack Performs up to 4 consecutive spear strikes. Charged Attack Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Short-Range Rapid Interdiction Fire",
+      "description": "Chevreuse quickly shoulders her musket and fires at her opponent(s), dealing AoE Pyro DMG . For a short duration after Chevreuse fires a shot, she will continuously restore HP to the active character on the field. The amount healed is based on her Max HP. Hold to fire in a different fashion. Hold Enter Aiming Mode, locking a target in her sights to fire a precise interdiction shot. If Chevreuse has an Overcharged Ball, then she will fire the Overcharged Ball instead, dealing greater Pyro DMG in a larger area. Chevreuse gains 1 Overcharged Ball every time a nearby character in the party triggers an Overloaded reaction, and can have up to 1 Overcharged Ball at a time. Arkhe: Ousia Periodically, after Chevreuse's Short-Range Rapid Interdiction Fire hits, a Surging Blade will be called forth that deals Ousia -aligned Pyro DMG ."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Ring of Bursting Grenades",
+      "description": "Chevreuse fires an explosive grenade at opponents with her musket, dealing AoE Pyro DMG. After the projectile hits, it will split into many secondary explosive shells. The secondary explosive shells will burst after a short interval, dealing Pyro DMG to nearby opponents."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Vanguard's Coordinated Tactics",
+      "description": "When all party members are Pyro and Electro characters and there is at least one Pyro and one Electro character each in the party: Chevreuse grants \"Coordinated Tactics\" to nearby party members: After a character triggers the Overloaded reaction, the Pyro and Electro RES of the opponent(s) affected by this Overloaded reaction will be decreased by 40% for 6s. The \"Coordinated Tactics\" effect will be removed when the Elemental Types of the characters in the party do not meet the basic requirements for the Ascension Talent."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Vertical Force Coordination",
+      "description": "After Chevreuse fires an Overcharged Ball using Short-Range Rapid Interdiction Fire , nearby Pyro and Electro characters in the party gain 1% increased ATK for every 1,000 Max HP Chevreuse has for 30s. ATK can be increased by up to 40% in this way."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Double Time March",
+      "description": "Decreases sprinting Stamina consumption for your own party members by 20%. Not stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Stable Front Line's Resolve",
+      "effect": "When the active character with the \"Coordinated Tactics\" status (not including Chevreuse herself) triggers the Overloaded reaction, they will recover 6 Energy. This effect can be triggered once every 10s. You must first unlock the Ascension Talent \" Vanguard's Coordinated Tactics .\""
+    },
+    "c2": {
+      "name": "1U",
+      "effect": "Practiced Field Stripping Technique"
+    },
+    "c3": {
+      "name": "Practiced Field Stripping Technique",
+      "effect": "Increases the Level of Short-Range Rapid Interdiction Fire by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "The Secret to Rapid-Fire Multishots",
+      "effect": "After using Ring of Bursting Grenades , the Hold mode of Short-Range Rapid Interdiction Fire will not go on cooldown when Chevreuse uses it. This effect is removed after Short-Range Rapid Interdiction Fire has been fired twice using Hold or after 6s."
+    },
+    "c5": {
+      "name": "Enhanced Incendiary Firepower",
+      "effect": "Increases the Level of Ring of Bursting Grenades by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "In Pursuit of Ending Evil",
+      "effect": "After 12s of the healing effect from Short-Range Rapid Interdiction Fire , all nearby party members recover HP equivalent to 10% of Chevreuse's Max HP once. After a party member is healed by Short-Range Rapid Interdiction Fire, they gain a 20% Pyro DMG Bonus and Electro DMG Bonus for 8s. Max 3 stacks. Each stack's duration is counted independently."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Chevreuse",
+  "ai_tags": "Хиллер, Баффер"
+}

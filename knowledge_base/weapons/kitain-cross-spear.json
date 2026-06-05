@@ -1,48 +1,80 @@
 {
   "id": "kitain-cross-spear",
-  "name": "Kitain Cross Spear",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kitain_Cross_Spear",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Increases Elemental Skill DMG by. After Elemental Skill hits an opponent, the character loses Energy but regenerates Energy every for the next. This can occur once every. Can be triggered even when the character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mask of the Wicked Lieutenant",
-        "Chaos Gear",
-        "Treasure Hoarder Insignia",
-        "Mask of the Tiger's Bite",
-        "Chaos Axis",
-        "Silver Raven Insignia",
-        "Mask of the One-Horned",
-        "Chaos Oculus",
-        "Golden Raven Insignia",
-        "Mask of the Kijin"
-      ]
+  "name_ru": "Крест-копьё Китаин",
+  "name_en": "Kitain Cross Spear",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 24
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 110.256
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Мастерство самурая",
+  "passive_description_ru": "Увеличивает урон элементального навыка на 6%. Когда элементальный навык поражает противника, персонаж теряет 3 единицы энергии, но восстанавливает 3 единицы энергии каждые 2 сек. в течение следующих 6 сек. Эффект может возникнуть один раз в 10 сек. Эффект может сработать, даже когда персонаж не находится на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mask-of-the-wicked-lieutenant",
+        "name_ru": "Маска злого военачальника",
+        "name_en": "Mask of the Wicked Lieutenant"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mask-of-the-tigers-bite",
+        "name_ru": "Маска тигриной пасти",
+        "name_en": "Mask of the Tiger's Bite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mask-of-the-one-horned",
+        "name_ru": "Маска однорогого",
+        "name_en": "Mask of the One-Horned"
+      },
+      {
+        "id": "mask-of-the-kijin",
+        "name_ru": "Маска кидзин",
+        "name_en": "Mask of the Kijin"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-gear",
+        "name_ru": "Механизм хаоса",
+        "name_en": "Chaos Gear"
+      },
+      {
+        "id": "chaos-axis",
+        "name_ru": "Ось хаоса",
+        "name_en": "Chaos Axis"
+      },
+      {
+        "id": "chaos-oculus",
+        "name_ru": "Око хаоса",
+        "name_en": "Chaos Oculus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

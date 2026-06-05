@@ -1,0 +1,27 @@
+{
+  "id": "tulumba",
+  "name_ru": "Тулумба",
+  "name_en": "Tulumba",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время полёта и спринта на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "bird-egg",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 2
+    },
+    {
+      "material_id": "coffee-beans",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

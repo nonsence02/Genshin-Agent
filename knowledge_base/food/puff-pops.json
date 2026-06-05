@@ -1,0 +1,27 @@
+{
+  "id": "puff-pops",
+  "name_ru": "«Бам-бум»",
+  "name_en": "Puff Pops",
+  "rarity": 4,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Небольшой сюрприз Потомков Крон.",
+  "recipe": [
+    {
+      "material_id": "grainfruit",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    },
+    {
+      "material_id": "pepper",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

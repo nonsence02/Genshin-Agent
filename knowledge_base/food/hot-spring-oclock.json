@@ -1,0 +1,27 @@
+{
+  "id": "hot-spring-oclock",
+  "name_ru": "«Время для горячего источника»",
+  "name_en": "Hot Spring O'Clock",
+  "rarity": 4,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Небольшой сюрприз Народа Родников.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 1
+    },
+    {
+      "material_id": "grainfruit",
+      "count": 1
+    },
+    {
+      "material_id": "cacahuatl",
+      "count": 1
+    },
+    {
+      "material_id": "cheese",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

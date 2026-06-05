@@ -1,0 +1,27 @@
+{
+  "id": "haggis",
+  "name_ru": "Хаггис",
+  "name_en": "Haggis",
+  "rarity": 4,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 308 ед. и эффективность лечения на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "potato",
+      "count": 3
+    },
+    {
+      "material_id": "radish",
+      "count": 3
+    },
+    {
+      "material_id": "marcotte",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

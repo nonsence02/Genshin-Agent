@@ -1,0 +1,27 @@
+{
+  "id": "nine-fruit-nectar",
+  "name_ru": "Нектар девяти фруктов",
+  "name_en": "Nine-Fruit Nectar",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "zaytun-peach",
+      "count": 2
+    },
+    {
+      "material_id": "sunsettia",
+      "count": 2
+    },
+    {
+      "material_id": "apple",
+      "count": 2
+    },
+    {
+      "material_id": "berry",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

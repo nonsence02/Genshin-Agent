@@ -1,0 +1,13 @@
+{
+  "id": "qucusaurus-chick",
+  "name_ru": "Детёныш кукузавра",
+  "name_en": "Qucusaurus Chick",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "tyrants-fang",
+    "seasoned-fang",
+    "juvenile-fang"
+  ],
+  "coordinates": []
+}

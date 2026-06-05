@@ -1,113 +1,86 @@
 {
   "id": "flins",
-  "name": "Flins",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Flins",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Flins summons forth the ancient power concealed within his lamp and switches to his Manifest Flame form. This form has the following characteristics: Flins's Normal and Charged Attacks deal Electro DMG that cannot be overridden by other Elemental infusions, and he is unable to perform Plunging Attacks. His interruption resistance is increased. His Elemental Skill Ancient Rite: Arcane Light is replaced with the special Elemental Skill Northland Spearstorm. Northland Spearstorm Flins summons a flurry of spears in front, dealing AoE Electro DMG and causing his Elemental Burst Ancient Ritual: Cometh the Night to be replaced with the special Elemental Burst Thunderous Symphony Thunderous...",
-    "elemental_burst": "Flins unleashes the true power of his lamp, dealing AoE Electro DMG and, after a short delay, dealing instances of middle-phase and instance of final-phase AoE Electro DMG, all of which are considered Lunar-Charged DMG. Moonsign: Ascendant Gleam: Flins's Skill is enhanced: If there are thunderclouds nearby, Flins will deal an additional instances of middle-phase Lunar-Charged AoE Electro DMG. After using the special Elemental Skill Northland Spearstorm, Flins's Elemental Burst Ancient Ritual: Cometh the Night will be replaced with the special Elemental Burst Thunderous Symphony for the next. Thunderous Symphony Consume less Elemental Energy to unleash a special Elemental Burst. Flins deals..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Broken Drive Shaft",
-        "Reinforced Drive Shaft",
-        "Precision Drive Shaft"
-      ],
-      "special": [
-        "Frostlamp Flower",
-        "Precision Kuuvahki Stamping Die",
-        "Elemental Gauge Theory",
-        "Interruption Resistance",
-        "Interruption resistance",
-        "CD",
-        "Enemy",
-        "Elemental Particle",
-        "Party",
-        "Elemental Mastery",
-        "Moonsign Benediction Passive",
-        "Electro-Charged",
-        "Lunar-Charged",
-        "Moonsign",
-        "Utility Passive",
-        "Mini-map",
-        "Wild Hunt",
-        "Miniaturized Detection Sensor",
-        "Aino",
-        "Prayers for the Forest",
-        "Lauma",
-        "Wilderness Exile",
-        "Wilderness Hunter"
-      ]
+  "name_ru": "Флинс",
+  "name_en": "Flins",
+  "element": "Electro",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 972.3864,
+      "atk": 27.3714,
+      "def": 62.9412
     },
-    "talents": {
-      "books": [
-        "Teachings of Vagrancy",
-        "Guide to Vagrancy",
-        "Philosophies of Vagrancy"
-      ],
-      "mob_drops": [
-        "Broken Drive Shaft",
-        "Reinforced Drive Shaft",
-        "Precision Drive Shaft"
-      ],
-      "weekly_boss": [],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12490.829,
+      "atk": 351.5922,
+      "def": 808.5192
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Демоническое копьё",
+      "description_ru": "Обычная атака:\nДо пяти последовательных ударов копьём.\n\nЗаряженная атака:\nТратит определённое количество выносливости и бросает копьё вперёд.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Древний обряд: Тайный свет",
+      "description_ru": "Флинс призывает древнюю силу, заключённую в его фонаре, и переходит в режим Явления пламени. У этого режима следующие особенности:\n· Обычная и заряженная атаки Флинса наносят Электро урон, который не может быть отменён другими инфузиями. Он не может выполнять атаки в падении.\n· Сопротивление прерыванию Флинса повышается.\n· Элементальный навык Древний обряд: Тайный свет сменяется на особый элементальный навык Шторм северных копий.\n\nШторм северных копий\nФлинс призывает град копий перед собой, нанося Электро урон по площади и на последующие 6 сек. заменяя взрыв стихии Древний ритуал: Наступает ночь на особый взрыв стихии **Громогласная симфония**.\nБазовый откат Шторма северных копий составляет 6 сек. и не подвергается влиянию других эффектов."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Древний ритуал: Наступает ночь",
+      "description_ru": "Флинс высвобождает истинную силу своего фонаря, наносит Электро урон по площади и через короткий промежуток времени наносит 2 промежуточных и 1 финальный этап Электро урона по площади, который считается уроном реакции Лунный заряд.\nЛунное знамение - Высшее сияние: навык получает усиление - если поблизости есть грозовые тучи, Флинс наносит 2 дополнительных промежуточных этапа Электро урона по площади, который считается уроном реакции Лунный заряд.\n\nНа 6 сек. после применения особого элементального навыка Шторм северных копий взрыв стихии Флинса Древний ритуал: Наступает ночь сменяется на особый взрыв стихии Громогласная симфония.\n\nГромогласная симфония\nОсобый взрыв стихии расходует меньше энергии. Флинс 1 раз наносит Электро урон по площади, который считается уроном реакции Лунный заряд.\nЛунное знамение - Высшее сияние: навык получает усиление - если поблизости есть грозовые тучи, Флинс 1 дополнительный раз наносит Электро урон по площади, который считается уроном реакции Лунный заряд."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Симфония зимы",
+      "description_ru": "В зависимости от Лунного знамения отряда Флинс получает соответствующие усиления.\n\nЛунное знамение - Высшее сияние: урон реакции Лунный заряд Флинса увеличивается на 20%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Шепчущее пламя",
+      "description_ru": "Мастерство стихий Флинса повышается на 8% от его силы атаки. Полученное таким образом увеличение может составлять до 160 ед."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Дар лунного знамения: Секреты старого мира",
+      "description_ru": "Когда персонажи отряда активируют реакцию Заряжен, она превращается в Лунный заряд, а базовый урон реакции Лунный заряд увеличивается на 0,7% за каждые 100 ед. силы атаки Флинса. Максимальное увеличение урона, которое можно получить таким образом, составляет 14%.\n\nКроме того, когда Флинс в отряде, уровень Лунного знамения отряда повышается на 1."
+    },
+    {
+      "type": "пассивный талант 4",
+      "name_ru": "Свет во тьме",
+      "description_ru": "Отмечает диковинки Нод-Края на мини-карте.\nКроме того, Флинс понимает, о чём шепчет Дикая Охота..."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Отстраняя снежную завесу",
+      "description_ru": "Базовый откат особого элементального навыка Шторм северных копий сокращается до 4 сек.\nКроме того, когда персонажи вашего отряда активируют реакцию Лунный заряд, Флинс восстанавливает 8 ед. энергии. Этот эффект может возникнуть один раз в 5,5 сек."
+    },
+    {
+      "name_ru": "Стена дьявола",
+      "description_ru": "На 6 сек. после применения особого элементального навыка Шторм северных копий следующая обычная атака Флинса, поражая врага, наносит дополнительный Электро урон по площади, равный 50% от силы атаки Флинса. Такой урон считается уроном реакции Лунный заряд.\nЛунное знамение - Высшее сияние: когда Флинс на поле, после того как его Электро атаки поражают врага, Электро сопротивление этого врага снижается на 25% на 7 сек."
+    },
+    {
+      "name_ru": "Путник в ночи",
+      "description_ru": "Увеличивает уровень навыка **Древний ритуал: Наступает ночь** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Ночь на Лысой горе",
+      "description_ru": "Сила атаки Флинса повышается на 20%.\nКроме того, его талант возвышения **Шепчущее пламя** получает усиление: мастерство стихий Флинса повышается на 10% от его силы атаки. Полученное таким образом увеличение может составлять до 220 ед."
+    },
+    {
+      "name_ru": "Тень изгнанника",
+      "description_ru": "Увеличивает уровень навыка **Древний обряд: Тайный свет** на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Песни и пляски смерти",
+      "description_ru": "Урон, который наносит Лунный заряд Флинса врагам, **возвышается** на 35%.\nЛунное знамение - Высшее сияние: урон Лунного заряда всех членов отряда поблизости возвышается на 10%."
+    }
+  ],
+  "coordinates": []
 }

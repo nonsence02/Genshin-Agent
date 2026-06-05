@@ -1,0 +1,17 @@
+{
+  "id": "fruit-paste-bait",
+  "kind": "bait",
+  "name_ru": "Фруктовая бражка",
+  "name_en": "Fruit Paste Bait",
+  "recipe": [
+    {
+      "material_id": "sunsettia",
+      "count": 1
+    },
+    {
+      "material_id": "wheat",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

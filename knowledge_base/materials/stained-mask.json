@@ -1,10 +1,49 @@
 {
   "id": "stained-mask",
+  "name_ru": "Грязная маска",
   "name_en": "Stained Mask",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Hilichurls"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Хиличурлы Ур. 40+",
+    "Некоторые хиличурлы-стрелки Ур. 40+",
+    "Некоторые шамачурлы Ур. 40+",
+    "Некоторые митачурлы Ур. 40+",
+    "Некоторые лавачурлы Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Stained_Mask"
+  "dropped_by": [
+    "anemo-samachurl",
+    "blazing-axe-mitachurl",
+    "crackling-axe-mitachurl",
+    "cryo-hilichurl-grenadier",
+    "cryo-hilichurl-shooter",
+    "cryo-samachurl",
+    "dendro-samachurl",
+    "electro-hilichurl-grenadier",
+    "electro-hilichurl-shooter",
+    "electro-samachurl",
+    "frostarm-lawachurl",
+    "geo-samachurl",
+    "hilichurl",
+    "hilichurl-berserker",
+    "hilichurl-fighter",
+    "hilichurl-grenadier",
+    "hilichurl-shooter",
+    "hydro-samachurl",
+    "ice-shield-hilichurl-guard",
+    "ice-shieldwall-mitachurl",
+    "pyro-hilichurl-shooter",
+    "rock-shield-hilichurl-guard",
+    "rock-shieldwall-mitachurl",
+    "stonehide-lawachurl",
+    "thunderhelm-lawachurl",
+    "wooden-shield-hilichurl-guard",
+    "wooden-shieldwall-mitachurl"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

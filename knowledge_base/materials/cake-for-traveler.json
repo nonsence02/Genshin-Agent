@@ -1,0 +1,13 @@
+{
+  "id": "cake-for-traveler",
+  "name_ru": "Тортик для тебя",
+  "name_en": "Cake for Traveler",
+  "type": "consume",
+  "type_text_ru": "Особый предмет",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

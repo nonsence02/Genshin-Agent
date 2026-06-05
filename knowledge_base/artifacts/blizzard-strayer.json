@@ -1,0 +1,10 @@
+{
+  "id": "blizzard-strayer",
+  "name_ru": "Заблудший в метели",
+  "name_en": "Blizzard Strayer",
+  "max_rarity": 5,
+  "bonus_2pc": "Даёт 15% бонус Крио урона.",
+  "bonus_4pc": "Атаки по противникам с эффектом Крио увеличивают шанс крит. попадания на 20%. Если противник имеет статус Заморозка, то дополнительно увеличивает шанс крит. попадания на 20%.",
+  "source_domain": "domain-of-blessing-elegiac-rime-i",
+  "coordinates": []
+}

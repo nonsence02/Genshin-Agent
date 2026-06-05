@@ -1,94 +1,81 @@
 {
   "id": "arataki-itto",
-  "name": "Arataki Itto",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Arataki_Itto",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Geo",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Hurls Ushi, the young akaushi bull and auxiliary member of the Arataki Gang, dealing Geo DMG to opponents on hit. When Ushi hits opponents, Arataki Itto gains stack of Superlative Superstrength. Ushi will remain on the field and provide support in the following ways: Taunts surrounding opponents and draws their attacks. Inherits HP based on a percentage of Arataki Itto's Max HP. When Ushi takes DMG, Arataki Itto gains stack of Superlative Superstrength. Only stack can be gained in this way. Ushi will flee when its HP reaches or its duration ends. It will grant Arataki Itto stack of Superlative Superstrength when it leaves. Hold Adjust throwing angle. Ushi is considered a Geo construct....",
-    "elemental_burst": "Time to show 'em the might of the Arataki Gang! For a time, Itto lets out his inner Raging Oni King, wielding his Oni King's Kanabou in battle. This state has the following special properties: Converts Itto's Normal, Charged, and Plunging Attacks to Geo DMG. This cannot be overridden. Increases Itto's Normal Attack SPD. Also increases his ATK based on his DEF. On hit, the and strikes of his attack combo will each grant Arataki Itto stack of Superlative Superstrength. Decreases Itto's Elemental and Physical RES by"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Prithiva Topaz Sliver",
-        "Prithiva Topaz Fragment",
-        "Prithiva Topaz Chunk",
-        "Prithiva Topaz Gemstone"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "special": [
-        "Onikabuto",
-        "Riftborn Regalia"
-      ]
+  "name_ru": "Аратаки Итто",
+  "name_en": "Arataki Itto",
+  "element": "Geo",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1000.986,
+      "atk": 17.689,
+      "def": 74.6678
     },
-    "talents": {
-      "books": [
-        "Teachings of Elegance",
-        "Guide to Elegance",
-        "Philosophies of Elegance"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "weekly_boss": [
-        "Ashen Heart"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12858.2067,
+      "atk": 227.2195,
+      "def": 959.1559
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Легенда бойцовского клуба",
+      "description_ru": "Обычная атака\nДо четырёх рубящих ударов.\nПри попадании второго удара по врагу персонаж получает 1 ур. эффекта Невероятная сила, при попадании четвёртого удара - 2 ур.\nНевероятная сила может складываться до 5 раз. При каждом срабатывании длительность обновляется для всех уровней Невероятной силы.\n\nКроме этого, комбо обычных атак не сбрасывается в течение короткого периода после запуска элементального навыка Масацу дзэцуги: Взрыв акауси или спринта.\n\nЗаряженная атака\nЕсли у персонажа есть Невероятная сила, то, удерживая кнопку заряженной атаки, можно наносить рубящие удары Аратаки кэсагири, не расходуя выносливость. Каждый удар Аратаки кэсагири расходует 1 ур. Невероятной силы. При расходе последнего уровня Невероятной силы Итто наносит особенно мощный удар.\nЕсли нет накопленных уровней Невероятной силы, Итто выполняет одиночный рубящий удар Сайтимондзи.\n\nАтака в падении\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Масацу дзэцуги: Взрыв акауси!",
+      "description_ru": "Забрасывает Уси, бычка породы акауси и внештатного бойца банды Аратаки, который наносит врагам Гео урон! Когда Уси попадает во врага, Аратаки Итто получает 1 ур. Невероятной силы.\n\nУси остаётся на поле боя для поддержки:\n· Уси дразнит врагов, отвлекая их на себя.\n· Его макс. HP зависит от макс. HP Аратаки Итто.\n· Когда Уси получает урон, Аратаки Итто получает 1 ур. Невероятной силы (не чаще чем раз в 2 сек.).\n· Когда у Уси заканчивается HP или время его действия подходит к концу, он убегает, добавляя Аратаки Итто 1 ур. Невероятной силы.\n\nДолгое нажатие\nПозволяет отрегулировать направление заброски Уси.\n\nУси считается Гео конструкцией. У Аратаки может быть только один свой Уси одновременно."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Явление короля: Итто Жестокий!",
+      "description_ru": "Пора показать врагам силу банды Аратаки! На некоторое время Итто позволяет проявиться своему внутреннему Яростному королю óни и использует в бою Канабо короля óни.\nЭтот статус характеризуется следующими свойствами:\n· Обычные и заряженные атаки, а также атаки в падении наносят Гео урон. Этот эффект не может быть отменён другими инфузиями.\n· Увеличивается скорость обычных атак Аратаки Итто, сила атаки возрастает пропорционально его защите.\n· У Аратаки Итто прибавляется по одному уровню Невероятной силы за попадание по врагу первым или третьим ударом комбо-атаки.\n· Все виды элементального сопротивления и физ. сопротивление Аратаки Итто снижаются на 20%.\n\nСтатус Яростного короля óни снимается, если Аратаки Итто покидает поле боя."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Аратаки итибан",
+      "description_ru": "Когда Аратаки Итто выполняет серию выпадов Аратаки кэсагири, действуют следующие эффекты:\n· Каждый выпад увеличивает скорость атаки следующего выпада в серии на 10%. Максимальное увеличение скорости атаки - 30%.\n· Увеличивается сопротивление прерыванию.\n\nЭти эффекты исчезают, когда серия прерывается."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Наследие Багрового Óни",
+      "description_ru": "Урон Аратаки кэсагири увеличивается на 35% от защиты Аратаки Итто."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Дровосек",
+      "description_ru": "У участников отряда есть шанс 25% получить дополнительную древесину при рубке деревьев."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Слушай мой наказ",
+      "description_ru": "При запуске Явления короля: Итто Жестокий! Аратаки Итто получает 2 ур. Невероятной силы. Через 1 сек. после запуска Аратаки Итто начинает получать по 1 ур. Невероятной силы каждые 0,5 сек. в течение 1,5 сек."
+    },
+    {
+      "name_ru": "Все в круг для драки!",
+      "description_ru": "После активации навыка Явление короля: Итто Жестокий! за каждого члена отряда с элементом Гео время отката навыка уменьшается на 1,5 сек., а Аратаки Итто восстанавливает 6 ед. элементальной энергии.\nЭтим способом можно снизить откат не более чем на 4,5 сек. и восстановить не более 18 ед. энергии."
+    },
+    {
+      "name_ru": "Быка за рога",
+      "description_ru": "Увеличивает уровень навыка Масацу дзэцуги: Взрыв акауси! на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Тюремное угощение",
+      "description_ru": "После окончания действия статуса Яростный король óни от навыка Явление короля: Итто Жестокий! на 10 сек. у всех членов отряда поблизости защита повышается на 20%, атака также повышается на 20%."
+    },
+    {
+      "name_ru": "10 лет славы Ханамидзаки",
+      "description_ru": "Увеличивает уровень навыка Явление короля: Итто Жестокий! на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Аратаки Итто к вашим услугам!",
+      "description_ru": "Крит. урон заряженных атак Аратаки Итто повышается на 70%. С вероятностью 50% запуск Аратаки кэсагири не расходует Невероятную силу."
+    }
+  ],
+  "coordinates": []
 }

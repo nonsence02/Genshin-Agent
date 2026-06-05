@@ -1,0 +1,13 @@
+{
+  "id": "eremite-sword-dancer",
+  "name_ru": "Мечник Пустынников",
+  "name_en": "Eremite Sword-Dancer",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

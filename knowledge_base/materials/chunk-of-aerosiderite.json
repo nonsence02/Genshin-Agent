@@ -1,14 +1,21 @@
 {
   "id": "chunk-of-aerosiderite",
+  "name_ru": "Обломок чёрного сидерита",
   "name_en": "Chunk of Aerosiderite",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Hidden Palace of Lianshan Formula (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Chunk_of_Aerosiderite"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-trial-grounds-of-thunder-iv"
+  ],
+  "source_domain": "domain-of-forgery-trial-grounds-of-thunder-iv",
+  "coordinates": []
 }

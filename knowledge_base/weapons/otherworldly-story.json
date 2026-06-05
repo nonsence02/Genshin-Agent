@@ -1,47 +1,80 @@
 {
   "id": "otherworldly-story",
-  "name": "Otherworldly Story",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Otherworldly_Story",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "3★",
-    "base_atk": "39 - 401",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Each Elemental Orb or Particle collected restores HP.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Damaged Mask",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Stained Mask",
-        "Shackles of the Dandelion Gladiator",
-        "Ominous Mask",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Потусторонняя история",
+  "name_en": "Otherworldly Story",
+  "weapon_type": "Catalyst",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 38.7413,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.085
+    },
+    "level_90": {
+      "base_atk": 401.2936,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3905
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Дождь энергии",
+  "passive_description_ru": "Подобранные элементальные сферы и частицы восстанавливают 1% HP.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "damaged-mask",
+        "name_ru": "Разбитая маска",
+        "name_en": "Damaged Mask"
+      },
+      {
+        "id": "stained-mask",
+        "name_ru": "Грязная маска",
+        "name_en": "Stained Mask"
+      },
+      {
+        "id": "ominous-mask",
+        "name_ru": "Зловещая маска",
+        "name_en": "Ominous Mask"
+      }
+    ]
+  },
+  "coordinates": []
 }

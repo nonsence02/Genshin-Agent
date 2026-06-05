@@ -1,94 +1,81 @@
 {
   "id": "barbara",
-  "name": "Barbara",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Barbara",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Dendro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Summons water droplets resembling musical notes that form a Melody Loop, dealing Hydro DMG to surrounding opponents and applying the Wet status to them. Melody Loop On hit, Barbara's Normal Attacks heal your own party members and nearby teammates for a certain amount of HP, which scales with Barbara's Max HP. On hit, Barbara's Charged Attack generates times the amount of healing. Periodically regenerates your own active character's HP. Applies the Wet status to the character and to opponents who come in contact with them. This skill does not generate any Elemental Particles. This skill deals instances of damage at the start of the skill. While this skill is active, Normal and Charged...",
-    "elemental_burst": "Heals your own party members and nearby teammates for a large amount of HP that scales with Barbara's Max HP. Constellation Effects Constellation Level, Star of Tomorrow: Increases this talent's level by, up to a maximum of. Talent Levels past require Elemental Burst Level Increase methods, such as Constellations and Event bonuses."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Varunada Lazurite Sliver",
-        "Varunada Lazurite Fragment",
-        "Varunada Lazurite Chunk",
-        "Varunada Lazurite Gemstone"
-      ],
-      "mob_drops": [
-        "Divining Scroll",
-        "Sealed Scroll",
-        "Forbidden Curse Scroll"
-      ],
-      "special": [
-        "Philanemo Mushroom",
-        "Cleansing Heart"
-      ]
+  "name_ru": "Барбара",
+  "name_en": "Barbara",
+  "element": "Hydro",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 820.6119,
+      "atk": 13.356,
+      "def": 56.0805
     },
-    "talents": {
-      "books": [
-        "Teachings of Freedom",
-        "Guide to Freedom",
-        "Philosophies of Freedom"
-      ],
-      "mob_drops": [
-        "Divining Scroll",
-        "Sealed Scroll",
-        "Forbidden Curse Scroll"
-      ],
-      "weekly_boss": [
-        "Ring of Boreas"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9787.4236,
+      "atk": 159.2979,
+      "def": 668.8711
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Шёпот воды",
+      "description_ru": "Обычная атака:\nДо четырёх ударов пузырями, наносящих Гидро урон.\n\nЗаряженная атака:\nКороткое заклинание, наносящее Гидро урон по площади, на которое тратится определённое количество выносливости.\n\nАтака в падении:\nНакопив энергию воды, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Гидро урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Да начнётся шоу♪",
+      "description_ru": "Создаёт водяные пузыри в форме музыкальных нот, которые складываются в кольцо и наносят Гидро урон окружающим врагам, а также накладывают на них статус Мокрый.\n\nКольцо мелодии:\n· Обычные атаки Барбары восстанавливают всем членам отряда и ближайшим союзникам определённое количество HP, которое зависит от макс. HP Барбары;\n· Заряженная атака восстанавливает в 4 раза больше HP;\n· Регулярно восстанавливает определённое количество HP вашему активному персонажу;\n· При касании с союзниками и врагами накладывает на них статус Мокрый."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Чудесное сияние♪",
+      "description_ru": "Восстанавливает всем союзникам и членам отряда определённое количество HP, которое зависит от макс. HP Барбары."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Урожайный сезон",
+      "description_ru": "Уменьшает потребление выносливости персонажей в Кольце мелодии навыка Да начнётся шоу♪ на 12%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "На бис",
+      "description_ru": "Подобранные вашими персонажами элементальные сферы и частицы увеличивают длительность Кольца мелодии навыка Да начнётся шоу♪ на 1 сек.\nНельзя увеличить больше чем на 5 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Со всей душой♪",
+      "description_ru": "При приготовлении идеального блюда с восстанавливающими свойствами имеет 12% шанс получить дополнительное блюдо."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Баллада счастья",
+      "description_ru": "Барбара каждые 10 сек. восстанавливает 1 ед. энергии."
+    },
+    {
+      "name_ru": "Прилив сил",
+      "description_ru": "Уменьшает время отката навыка Да начнётся шоу♪ на 15%;\nПока навык активен, ваш текущий персонаж получает 15% бонус Гидро урона."
+    },
+    {
+      "name_ru": "Утренняя звезда",
+      "description_ru": "Увеличивает уровень навыка Чудесное сияние♪ на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Магия усердия",
+      "description_ru": "При каждом попадании заряженной атакой Барбара восстанавливает 1 единицу энергии.\nНе более 5 ед. энергии за раз."
+    },
+    {
+      "name_ru": "Воля к жизни",
+      "description_ru": "Увеличивает уровень навыка Да начнётся шоу♪ на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "В твою честь",
+      "description_ru": "Когда член отряда Барбары погибает, и она не находится на поле боя:\nАвтоматически воскрешает павшего персонажа вашего отряда;\nВосстанавливает его HP до 100%.\nМожет возникнуть раз в 15 мин."
+    }
+  ],
+  "coordinates": []
 }

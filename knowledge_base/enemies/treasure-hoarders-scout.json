@@ -1,0 +1,13 @@
+{
+  "id": "treasure-hoarders-scout",
+  "name_ru": "Похитители сокровищ: Разведчик",
+  "name_en": "Treasure Hoarders: Scout",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "golden-raven-insignia",
+    "silver-raven-insignia",
+    "treasure-hoarder-insignia"
+  ],
+  "coordinates": []
+}

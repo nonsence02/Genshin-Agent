@@ -1,10 +1,17 @@
 {
   "id": "cyclic-military-kuuvahki-core",
+  "name_ru": "Циклическое военное ядро куувяки",
   "name_en": "Cyclic Military Kuuvahki Core",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Super-Heavy Landrover: Mechanized Fortress"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сверхтяжёлый сухопутный крейсер: Мобильная крепость Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Cyclic_Military_Kuuvahki_Core"
+  "dropped_by": [
+    "super-heavy-landrover-mechanized-fortress"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

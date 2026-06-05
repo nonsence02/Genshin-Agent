@@ -1,0 +1,11 @@
+{
+  "id": "neon-mauler-shark",
+  "kind": "fish",
+  "name_ru": "Свирепая радужная акула",
+  "name_en": "Neon Mauler Shark",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

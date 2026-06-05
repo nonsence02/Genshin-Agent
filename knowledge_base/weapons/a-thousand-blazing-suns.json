@@ -1,48 +1,80 @@
 {
   "id": "a-thousand-blazing-suns",
-  "name": "A Thousand Blazing Suns",
-  "source_url": "https://genshin-impact.fandom.com/wiki/A_Thousand_Blazing_Suns",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "5★",
-    "base_atk": "49 - 741",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "Gain the \"Scorching Brilliance\" when using an Elemental Skill or Burst: CRIT DMG increased by and ATK increased by for. This can trigger once every. While a \"Scorching Brilliance\" instance is active, its duration is increased by after Normal or Charged attacks deal Elemental DMG. This can trigger once every second, and the max duration increase is. Additionally, when the equipping character is in the Nightsoul's Blessing state, \"Scorching Brilliance\" effects are increased by, and its duration will not count down when the equipping character is off—field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Blazing Sacrificial Heart's Terror",
-        "Axis of the Secret Source",
-        "Juvenile Fang",
-        "Blazing Sacrificial Heart's Hesitance",
-        "Sheath of the Secret Source",
-        "Seasoned Fang",
-        "Blazing Sacrificial Heart's Resolve",
-        "Heart of the Secret Source",
-        "Tyrant's Fang",
-        "Blazing Sacrificial Heart's Splendor"
-      ]
+  "name_ru": "Тысяча ослепительных солнц",
+  "name_en": "A Thousand Blazing Suns",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 49.1377,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.024
+    },
+    "level_90": {
+      "base_atk": 740.5802,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.1103
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Закат распаляет рассвет",
+  "passive_description_ru": "При использовании элементального навыка или взрыва стихии наделяет Палящим сиянием: повышает крит. урон на 20% и силу атаки на 28% на 6 сек. Эффект может возникнуть 1 раз в 10 сек.\nНанесение элементального урона обычной или заряженной атакой во время действия Палящего сияния продлевает длительность данного эффекта на 2 сек. Продление его действия может сработать 1 раз в 1 сек., а максимум продления составляет 6 сек.\nКроме того, эффекты Палящего сияния усиливаются на 75%, если экипированный персонаж находится в состоянии Благословения Ночного духа, а его длительность не отсчитывается, когда экипированный персонаж вне поля боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "blazing-sacrificial-hearts-terror",
+        "name_ru": "Ужас пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Terror"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "blazing-sacrificial-hearts-hesitance",
+        "name_ru": "Сомнение пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Hesitance"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "blazing-sacrificial-hearts-resolve",
+        "name_ru": "Решимость пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Resolve"
+      },
+      {
+        "id": "blazing-sacrificial-hearts-splendor",
+        "name_ru": "Великолепие пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Splendor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "axis-of-the-secret-source",
+        "name_ru": "Ось таинственного источника",
+        "name_en": "Axis of the Secret Source"
+      },
+      {
+        "id": "sheath-of-the-secret-source",
+        "name_ru": "Оболочка таинственного источника",
+        "name_en": "Sheath of the Secret Source"
+      },
+      {
+        "id": "heart-of-the-secret-source",
+        "name_ru": "Ядро таинственного источника",
+        "name_en": "Heart of the Secret Source"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "juvenile-fang",
+        "name_ru": "Молодой клык",
+        "name_en": "Juvenile Fang"
+      },
+      {
+        "id": "seasoned-fang",
+        "name_ru": "Клык взрослого",
+        "name_en": "Seasoned Fang"
+      },
+      {
+        "id": "tyrants-fang",
+        "name_ru": "Клык тирана",
+        "name_en": "Tyrant's Fang"
+      }
+    ]
+  },
+  "coordinates": []
 }

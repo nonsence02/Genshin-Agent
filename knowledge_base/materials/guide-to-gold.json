@@ -1,14 +1,23 @@
 {
   "id": "guide-to-gold",
+  "name_ru": "Указания о «Золоте»",
   "name_en": "Guide to Gold",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Taishan Mansion (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Gold"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-circle-of-embers-ii",
+    "domain-of-mastery-circle-of-embers-iii",
+    "domain-of-mastery-circle-of-embers-iv"
+  ],
+  "source_domain": "domain-of-mastery-circle-of-embers-ii",
+  "coordinates": []
 }

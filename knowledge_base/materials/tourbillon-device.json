@@ -1,10 +1,17 @@
 {
   "id": "tourbillon-device",
-  "name_en": "Tourbillon Device",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Experimental Field Generator"
+  "name_ru": "Турбийон",
+  "name_en": "\"Tourbillon Device\"",
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Экспериментальные генераторы поля Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Tourbillon_Device"
+  "dropped_by": [
+    "experimental-field-generator"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

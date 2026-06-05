@@ -1,10 +1,17 @@
 {
   "id": "skysplit-gembloom",
+  "name_ru": "Заоблачный камнелист",
   "name_en": "Skysplit Gembloom",
-  "type": "Local Specialty (Natlan)",
-  "days": [],
-  "source": [
-    "Found in Natlan"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Натлана",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Атокпан",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Skysplit_Gembloom"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

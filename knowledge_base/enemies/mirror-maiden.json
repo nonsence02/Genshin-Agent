@@ -1,0 +1,13 @@
+{
+  "id": "mirror-maiden",
+  "name_ru": "Зеркальная дева Фатуи",
+  "name_en": "Mirror Maiden",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "polarizing-prism",
+    "crystal-prism",
+    "dismal-prism"
+  ],
+  "coordinates": []
+}

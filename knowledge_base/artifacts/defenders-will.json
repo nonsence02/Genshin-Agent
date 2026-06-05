@@ -1,0 +1,10 @@
+{
+  "id": "defenders-will",
+  "name_ru": "Воля защитника",
+  "name_en": "Defender's Will",
+  "max_rarity": 4,
+  "bonus_2pc": "Увеличивает защиту на 30%.",
+  "bonus_4pc": "За каждого члена вашего отряда с неповторяющимся элементом повышает сопротивление к соответствующему элементу на 30%.",
+  "source_domain": "domain-of-blessing-elegiac-rime-i",
+  "coordinates": []
+}

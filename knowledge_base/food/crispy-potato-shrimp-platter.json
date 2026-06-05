@@ -1,0 +1,27 @@
+{
+  "id": "crispy-potato-shrimp-platter",
+  "name_ru": "Хрустящие креветки с картофелем",
+  "name_en": "Crispy Potato Shrimp Platter",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 30% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 790 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "mint",
+      "count": 4
+    },
+    {
+      "material_id": "shrimp-meat",
+      "count": 4
+    },
+    {
+      "material_id": "potato",
+      "count": 3
+    },
+    {
+      "material_id": "berry",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

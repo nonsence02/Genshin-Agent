@@ -1,47 +1,80 @@
 {
   "id": "tulaytullahs-remembrance",
-  "name": "Tulaytullah's Remembrance",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Tulaytullah%27s_Remembrance",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "48 - 674",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "Normal Attack SPD is increased by. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by every second for. After this character hits an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by. This increase can be triggered once every. The maximum Normal Attack DMG increase per single duration of the overall is. The will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Echo of Scorching Might",
-        "Inactivated Fungal Nucleus",
-        "Remnant Glow of Scorching Might",
-        "Dormant Fungal Nucleus",
-        "Luminescent Pollen",
-        "Dream of Scorching Might",
-        "Robust Fungal Nucleus",
-        "Crystalline Cyst Dust",
-        "Olden Days of Scorching Might"
-      ]
+  "name_ru": "Воспоминания Тулайтуллы",
+  "name_en": "Tulaytullah's Remembrance",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.096
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.441
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Ушедшая сапфировая слеза",
+  "passive_description_ru": "Скорость обычной атаки повышается на 10%. После активации экипированным этим оружием персонажем элементального навыка урон обычной атаки будет повышаться на 4,8% в секунду в течение 14 сек. Пока этот эффект активен, каждое попадание по противнику мгновенно увеличивает урон обычной атаки на 9,6%. Увеличение может возникнуть один раз в 0,3 сек. Во время действия одного такого эффекта урон обычной атаки может быть увеличен максимум на 48%. Эффект будет снят, если персонаж покинет поле боя, а повторная активация элементального навыка сбросит увеличение урона.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "echo-of-scorching-might",
+        "name_ru": "Эхо пылающей мощи",
+        "name_en": "Echo of Scorching Might"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "remnant-glow-of-scorching-might",
+        "name_ru": "Отсветы пылающей мощи",
+        "name_en": "Remnant Glow of Scorching Might"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "dream-of-scorching-might",
+        "name_ru": "Грёзы пылающей мощи",
+        "name_en": "Dream of Scorching Might"
+      },
+      {
+        "id": "olden-days-of-scorching-might",
+        "name_ru": "Прошлое пылающей мощи",
+        "name_en": "Olden Days of Scorching Might"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "inactivated-fungal-nucleus",
+        "name_ru": "Неактивное ядро плесенника",
+        "name_en": "Inactivated Fungal Nucleus"
+      },
+      {
+        "id": "dormant-fungal-nucleus",
+        "name_ru": "Спящее ядро плесенника",
+        "name_en": "Dormant Fungal Nucleus"
+      },
+      {
+        "id": "robust-fungal-nucleus",
+        "name_ru": "Здоровое ядро плесенника",
+        "name_en": "Robust Fungal Nucleus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "fungal-spores",
+        "name_ru": "Споры плесенника",
+        "name_en": "Fungal Spores"
+      },
+      {
+        "id": "luminescent-pollen",
+        "name_ru": "Светящаяся пыльца",
+        "name_en": "Luminescent Pollen"
+      },
+      {
+        "id": "crystalline-cyst-dust",
+        "name_ru": "Пыль кристаллоцистов",
+        "name_en": "Crystalline Cyst Dust"
+      }
+    ]
+  },
+  "coordinates": []
 }

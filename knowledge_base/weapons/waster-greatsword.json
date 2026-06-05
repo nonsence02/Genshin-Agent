@@ -1,42 +1,65 @@
 {
   "id": "waster-greatsword",
-  "name": "Waster Greatsword",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Waster_Greatsword",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "1★",
-    "base_atk": "23 - 185",
-    "secondary_stat": "Не найдено"
-  },
-  "passive": "A sturdy sheet of iron that may be powerful enough to break apart mountains, if wielded with enough willpower.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Slime Condensate",
-        "Dead Ley Line Leaves",
-        "Slime Secretions"
-      ]
+  "name_ru": "Двуручный меч богатыря",
+  "name_en": "Waster Greatsword",
+  "weapon_type": "Claymore",
+  "rarity": 1,
+  "stats": {
+    "level_1": {
+      "base_atk": 23.245,
+      "secondary_stat": null,
+      "secondary_stat_value": 0
+    },
+    "level_90": {
+      "base_atk": null,
+      "secondary_stat": null,
+      "secondary_stat_value": null
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "",
+  "passive_description_ru": "",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "slime-condensate",
+        "name_ru": "Слизь слайма",
+        "name_en": "Slime Condensate"
+      },
+      {
+        "id": "slime-secretions",
+        "name_ru": "Выделения слайма",
+        "name_en": "Slime Secretions"
+      }
+    ]
+  },
+  "coordinates": []
 }

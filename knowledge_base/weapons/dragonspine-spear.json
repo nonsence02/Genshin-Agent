@@ -1,44 +1,80 @@
 {
   "id": "dragonspine-spear",
-  "name": "Dragonspine Spear",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dragonspine_Spear",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "Physical DMG Bonus"
-  },
-  "passive": "Hitting an opponent with Normal and Charged Attacks has a chance of forming and dropping an Everfrost Icicle above them, dealing AoE ATK DMG. Opponents affected by Cryo are dealt ATK DMG instead by the icicle. Can only occur once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mist Grass Pollen",
-        "Recruit's Insignia",
-        "Mist Grass",
-        "Sergeant's Insignia",
-        "Mist Grass Wick",
-        "Lieutenant's Insignia"
-      ]
+  "name_ru": "Копьё Драконьего хребта",
+  "name_en": "Dragonspine Spear",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.1501
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.6897
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Морозное погребение",
+  "passive_description_ru": "Попадания обычной или заряженной атакой имеют 60% шанс создать над противником ледяной кристалл и уронить его, нанося 80% урона силы атаки по площади. Если противник имеет эффект Крио, то наносит ему 200% урона силы атаки. Может возникнуть раз в 10 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mist-grass-pollen",
+        "name_ru": "Пыльца туманной травы",
+        "name_en": "Mist Grass Pollen"
+      },
+      {
+        "id": "mist-grass",
+        "name_ru": "Мешочек с туманной травой",
+        "name_en": "Mist Grass"
+      },
+      {
+        "id": "mist-grass-wick",
+        "name_ru": "Пучок туманной травы",
+        "name_en": "Mist Grass Wick"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "recruits-insignia",
+        "name_ru": "Шеврон рядового",
+        "name_en": "Recruit's Insignia"
+      },
+      {
+        "id": "sergeants-insignia",
+        "name_ru": "Шеврон сержанта",
+        "name_en": "Sergeant's Insignia"
+      },
+      {
+        "id": "lieutenants-insignia",
+        "name_ru": "Шеврон офицера",
+        "name_en": "Lieutenant's Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

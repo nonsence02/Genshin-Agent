@@ -1,48 +1,80 @@
 {
   "id": "skyrider-greatsword",
-  "name": "Skyrider Greatsword",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Skyrider_Greatsword",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "3★",
-    "base_atk": "39 - 401",
-    "secondary_stat": "Physical DMG Bonus"
-  },
-  "passive": "On hit, Normal or Charged Attacks increase ATK by for. Max stacks. Can only occur once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Fragile Bone Shard",
-        "Treasure Hoarder Insignia",
-        "Piece of Aerosiderite",
-        "Sturdy Bone Shard",
-        "Silver Raven Insignia",
-        "Bit of Aerosiderite",
-        "Fossilized Bone Shard",
-        "Golden Raven Insignia",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Большой меч небесного всадника",
+  "name_en": "Skyrider Greatsword",
+  "weapon_type": "Claymore",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 38.7413,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.0956
+    },
+    "level_90": {
+      "base_atk": 401.2936,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.4392
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Храбрый",
+  "passive_description_ru": "При попадании обычной или заряженной атакой сила атаки увеличивается на 6% в течение 6 сек. Эффект может складываться до 4 раз. Может возникнуть раз в 0,5 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fragile-bone-shard",
+        "name_ru": "Хрупкие останки",
+        "name_en": "Fragile Bone Shard"
+      },
+      {
+        "id": "sturdy-bone-shard",
+        "name_ru": "Крепкие останки",
+        "name_en": "Sturdy Bone Shard"
+      },
+      {
+        "id": "fossilized-bone-shard",
+        "name_ru": "Окаменевшие останки",
+        "name_en": "Fossilized Bone Shard"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

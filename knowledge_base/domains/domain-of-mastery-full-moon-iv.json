@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-full-moon-iv",
+  "name_ru": "Мастерство: Полная луна IV",
+  "name_en": "Domain of Mastery: Full Moon IV",
+  "type": "Повышение талантов",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-admonition",
+    "guide-to-admonition",
+    "teachings-of-admonition"
+  ],
+  "coordinates": []
+}

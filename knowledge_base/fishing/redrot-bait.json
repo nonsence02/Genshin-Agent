@@ -1,0 +1,17 @@
+{
+  "id": "redrot-bait",
+  "kind": "bait",
+  "name_ru": "Красная болтушка",
+  "name_en": "Redrot Bait",
+  "recipe": [
+    {
+      "material_id": "dendrobium",
+      "count": 1
+    },
+    {
+      "material_id": "fowl",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

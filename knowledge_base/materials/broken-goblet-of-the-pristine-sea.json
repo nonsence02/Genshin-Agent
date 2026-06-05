@@ -1,14 +1,24 @@
 {
   "id": "broken-goblet-of-the-pristine-sea",
+  "name_ru": "Разбитая чаша непорочного моря",
   "name_en": "Broken Goblet of the Pristine Sea",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Echoes of the Deep Tides (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Broken_Goblet_of_the_Pristine_Sea"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-curious-contraptions-i",
+    "domain-of-forgery-curious-contraptions-ii",
+    "domain-of-forgery-curious-contraptions-iii",
+    "domain-of-forgery-curious-contraptions-iv"
+  ],
+  "source_domain": "domain-of-forgery-curious-contraptions-i",
+  "coordinates": []
 }

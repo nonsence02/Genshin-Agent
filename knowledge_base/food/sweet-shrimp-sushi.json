@@ -1,0 +1,19 @@
+{
+  "id": "sweet-shrimp-sushi",
+  "name_ru": "Суши с креветками",
+  "name_en": "Sweet Shrimp Sushi",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 150 HP.",
+  "recipe": [
+    {
+      "material_id": "shrimp-meat",
+      "count": 2
+    },
+    {
+      "material_id": "rice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

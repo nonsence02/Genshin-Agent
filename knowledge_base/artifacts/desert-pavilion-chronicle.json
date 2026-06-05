@@ -1,0 +1,10 @@
+{
+  "id": "desert-pavilion-chronicle",
+  "name_ru": "Хроники Чертогов в пустыне",
+  "name_en": "Desert Pavilion Chronicle",
+  "max_rarity": 5,
+  "bonus_2pc": "Даёт 15% бонус Анемо урона.",
+  "bonus_4pc": "Попадание заряженной атакой на 15 сек. повышает скорость обычной атаки на 10%, а урон обычной атаки, заряженной атаки и атаки в падении - на 40%.",
+  "source_domain": "domain-of-blessing-desert-citadel-i",
+  "coordinates": []
+}

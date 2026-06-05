@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-myriad-illusions-iv",
+  "name_ru": "Подземелье мастерства: Иллюзии IV",
+  "name_en": "Domain of Mastery: Myriad Illusions IV",
+  "type": "Повышение талантов",
+  "region": "Натлан",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-kindling",
+    "guide-to-kindling",
+    "teachings-of-kindling"
+  ],
+  "coordinates": []
+}

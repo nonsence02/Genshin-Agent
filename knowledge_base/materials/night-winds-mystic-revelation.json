@@ -1,14 +1,21 @@
 {
   "id": "night-winds-mystic-revelation",
+  "name_ru": "Загадочные откровения ночного ветра",
   "name_en": "Night-Wind's Mystic Revelation",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Ancient Watchtower (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Night-Wind%27s_Mystic_Revelation"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-estimation-iv"
+  ],
+  "source_domain": "domain-of-forgery-estimation-iv",
+  "coordinates": []
 }

@@ -1,0 +1,27 @@
+{
+  "id": "gold-standard-healthy-meal",
+  "name_ru": "Эталонное здоровое блюдо",
+  "name_en": "Gold-Standard Healthy Meal",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 15% от макс. HP + 550 HP.",
+  "recipe": [
+    {
+      "material_id": "grainfruit",
+      "count": 2
+    },
+    {
+      "material_id": "tomato",
+      "count": 1
+    },
+    {
+      "material_id": "onion",
+      "count": 1
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

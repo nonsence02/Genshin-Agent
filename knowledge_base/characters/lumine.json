@@ -1,0 +1,24 @@
+{
+  "id": "lumine",
+  "name_ru": "Люмин",
+  "name_en": "Lumine",
+  "element": "None",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 911.791,
+      "atk": 17.808,
+      "def": 57.225
+    },
+    "level_90": {
+      "hp": 10874.9149,
+      "atk": 212.3972,
+      "def": 682.5215
+    }
+  },
+  "talents": [],
+  "passive_talents": [],
+  "constellations": [],
+  "coordinates": []
+}

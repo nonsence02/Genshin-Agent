@@ -1,0 +1,27 @@
+{
+  "id": "humbly-enough",
+  "name_ru": "«Радость жизни»",
+  "name_en": "Humbly Enough",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 30% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 790 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "tofu",
+      "count": 2
+    },
+    {
+      "material_id": "jueyun-chili",
+      "count": 2
+    },
+    {
+      "material_id": "flour",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,48 +1,80 @@
 {
   "id": "mailed-flower",
-  "name": "Mailed Flower",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mailed_Flower",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Within after the character's Elemental Skill hits an opponent or the character triggers an Elemental Reaction, their ATK and Elemental Mastery will be increased by and respectively.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Desiccated Shell",
-        "Spectral Husk",
-        "Chains of the Dandelion Gladiator",
-        "Sturdy Shell",
-        "Spectral Heart",
-        "Shackles of the Dandelion Gladiator",
-        "Marked Shell",
-        "Spectral Nucleus",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Цветок в латах",
+  "name_en": "Mailed Flower",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 24
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 110.256
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Тайный язык ветра и цветов",
+  "passive_description_ru": "После попадания элементальным навыком по противнику или активации элементальной реакции, на 8 сек. сила атаки повышается на 12%, а мастерство стихий - на 48 ед.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "desiccated-shell",
+        "name_ru": "Опустошённая оболочка",
+        "name_en": "Desiccated Shell"
+      },
+      {
+        "id": "sturdy-shell",
+        "name_ru": "Прочная оболочка",
+        "name_en": "Sturdy Shell"
+      },
+      {
+        "id": "marked-shell",
+        "name_ru": "Меченая оболочка",
+        "name_en": "Marked Shell"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "assault-specialist-mek",
+  "name_ru": "Спецмек: Штурм",
+  "name_en": "Assault Specialist Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "tonkotsu-ramen",
+  "name_ru": "Тонкоцу рамэн",
+  "name_en": "Tonkotsu Ramen",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 34% HP + 1900 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "bamboo-shoot",
+      "count": 2
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

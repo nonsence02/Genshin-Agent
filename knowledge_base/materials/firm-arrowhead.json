@@ -1,10 +1,21 @@
 {
   "id": "firm-arrowhead",
+  "name_ru": "Прочный наконечник стрелы",
   "name_en": "Firm Arrowhead",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Hilichurl Shooters"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Хиличурлы-стрелки",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Firm_Arrowhead"
+  "dropped_by": [
+    "cryo-hilichurl-shooter",
+    "electro-hilichurl-shooter",
+    "hilichurl-shooter",
+    "pyro-hilichurl-shooter"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

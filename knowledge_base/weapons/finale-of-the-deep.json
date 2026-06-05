@@ -1,48 +1,80 @@
 {
   "id": "finale-of-the-deep",
-  "name": "Finale of the Deep",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Finale_of_the_Deep",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "When using an Elemental Skill, ATK will be increased by for, and a Bond of Life worth of Max HP will be granted. This can be triggered once every. When the Bond of Life is cleared, a maximum of ATK will be gained based on of the total amount of the Life Bond cleared, lasting for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dross of Pure Sacred Dewdrop",
-        "Drop of Tainted Water",
-        "Old Handguard",
-        "Sublimation of Pure Sacred Dewdrop",
-        "Scoop of Tainted Water",
-        "Kageuchi Handguard",
-        "Spring of Pure Sacred Dewdrop",
-        "Newborn Tainted Hydro Phantasm",
-        "Famed Handguard",
-        "Essence of Pure Sacred Dewdrop"
-      ]
+  "name_ru": "Грандиозный финал глубин",
+  "name_en": "Finale of the Deep",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Финальное благородство",
+  "passive_description_ru": "Активация элементального навыка повышает силу атаки на 12% на 15 сек. и накладывает Долг жизни, равный 25% от макс. HP. Эффект может возникнуть один раз в 10 сек. Когда Долг жизни снимается, сила атаки повышается на 2,4% от отданного значения Долга жизни (макс. 150 ед.) на 15 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "dross-of-pure-sacred-dewdrop",
+        "name_ru": "Осадок чистой капли росы",
+        "name_en": "Dross of Pure Sacred Dewdrop"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "sublimation-of-pure-sacred-dewdrop",
+        "name_ru": "Конденсат чистой капли росы",
+        "name_en": "Sublimation of Pure Sacred Dewdrop"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "spring-of-pure-sacred-dewdrop",
+        "name_ru": "Источник чистой капли росы",
+        "name_en": "Spring of Pure Sacred Dewdrop"
+      },
+      {
+        "id": "essence-of-pure-sacred-dewdrop",
+        "name_ru": "Эссенция чистой капли росы",
+        "name_en": "Essence of Pure Sacred Dewdrop"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "drop-of-tainted-water",
+        "name_ru": "Мутная капля",
+        "name_en": "Drop of Tainted Water"
+      },
+      {
+        "id": "scoop-of-tainted-water",
+        "name_ru": "Мутная лужица",
+        "name_en": "Scoop of Tainted Water"
+      },
+      {
+        "id": "newborn-tainted-hydro-phantasm",
+        "name_ru": "Новорождённый фантазм мутных вод",
+        "name_en": "Newborn Tainted Hydro Phantasm"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

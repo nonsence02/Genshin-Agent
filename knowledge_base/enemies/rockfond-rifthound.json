@@ -1,0 +1,13 @@
+{
+  "id": "rockfond-rifthound",
+  "name_ru": "Гончая Разрыва: Камнегрыз",
+  "name_en": "Rockfond Rifthound",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "concealed-talon",
+    "concealed-unguis",
+    "concealed-claw"
+  ],
+  "coordinates": []
+}

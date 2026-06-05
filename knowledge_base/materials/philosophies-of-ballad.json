@@ -1,14 +1,21 @@
 {
   "id": "philosophies-of-ballad",
+  "name_ru": "Философия о «Поэзии»",
   "name_en": "Philosophies of Ballad",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Forsaken Rift (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Philosophies_of_Ballad"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-realm-of-slumber-iv"
+  ],
+  "source_domain": "domain-of-mastery-realm-of-slumber-iv",
+  "coordinates": []
 }

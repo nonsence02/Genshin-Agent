@@ -1,0 +1,23 @@
+{
+  "id": "fontainian-foie-gras",
+  "name_ru": "Фуа-гра по-фонтейнски",
+  "name_en": "Fontainian Foie Gras",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 2
+    },
+    {
+      "material_id": "jam",
+      "count": 1
+    },
+    {
+      "material_id": "marcotte",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

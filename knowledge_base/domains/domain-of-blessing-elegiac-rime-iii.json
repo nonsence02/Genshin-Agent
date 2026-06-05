@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-elegiac-rime-iii",
+  "name_ru": "Подземелье благословения: Элегия инея III",
+  "name_en": "Domain of Blessing: Elegiac Rime III",
+  "type": "Артефакты",
+  "region": "Мондштадт",
+  "days_of_week": [],
+  "rewards": [
+    "blizzard-strayer",
+    "heart-of-depth",
+    "defenders-will",
+    "gambler"
+  ],
+  "coordinates": []
+}

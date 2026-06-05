@@ -1,10 +1,22 @@
 {
   "id": "dead-ley-line-leaves",
+  "name_ru": "Листья артерий земли",
   "name_en": "Dead Ley Line Leaves",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Abyss Mages"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Маги Бездны Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dead_Ley_Line_Leaves"
+  "dropped_by": [
+    "cryo-abyss-mage",
+    "electro-abyss-mage",
+    "hydro-abyss-mage",
+    "pyro-abyss-mage"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,23 @@
+{
+  "id": "mt-mushroom-for-one",
+  "name_ru": "«Грибная гора» (порция на одного)",
+  "name_en": "Mt. Mushroom (For One)",
+  "rarity": 2,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 16% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "red-berryshroom",
+      "count": 2
+    },
+    {
+      "material_id": "grainfruit",
+      "count": 1
+    },
+    {
+      "material_id": "cheese",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

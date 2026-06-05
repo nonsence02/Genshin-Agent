@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-realm-of-slumber-iii",
+  "name_ru": "Мастерство: Царство снов III",
+  "name_en": "Domain of Mastery: Realm of Slumber III",
+  "type": "Повышение талантов",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-ballad",
+    "teachings-of-ballad"
+  ],
+  "coordinates": []
+}

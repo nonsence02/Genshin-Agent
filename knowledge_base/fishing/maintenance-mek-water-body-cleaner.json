@@ -1,0 +1,11 @@
+{
+  "id": "maintenance-mek-water-body-cleaner",
+  "kind": "fish",
+  "name_ru": "Ремонтный мек: Водоочиститель",
+  "name_en": "Maintenance Mek: Water Body Cleaner",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

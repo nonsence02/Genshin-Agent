@@ -1,0 +1,15 @@
+{
+  "id": "pepper",
+  "name_ru": "Перец",
+  "name_en": "Pepper",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Торговые лавки"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

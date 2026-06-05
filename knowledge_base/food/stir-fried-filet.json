@@ -1,0 +1,19 @@
+{
+  "id": "stir-fried-filet",
+  "name_ru": "Жаренное в воке мясо",
+  "name_en": "Stir-Fried Filet",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 150 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 1
+    },
+    {
+      "material_id": "jueyun-chili",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

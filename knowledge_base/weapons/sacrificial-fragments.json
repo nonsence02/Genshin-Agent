@@ -1,47 +1,80 @@
 {
   "id": "sacrificial-fragments",
-  "name": "Sacrificial Fragments",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sacrificial_Fragments",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "After dealing damage to an opponent with an Elemental Skill, the skill has a chance to end its own CD. Can only occur once every s.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Treasure Hoarder Insignia",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Silver Raven Insignia",
-        "Shackles of the Dandelion Gladiator",
-        "Golden Raven Insignia",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Церемониальные мемуары",
+  "name_en": "Sacrificial Fragments",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 48
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 220.512
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Безмятежный",
+  "passive_description_ru": "Когда элементальный навык наносит урон, есть 40% вероятность, что его откат моментально восстановится. Может возникнуть раз в 30 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

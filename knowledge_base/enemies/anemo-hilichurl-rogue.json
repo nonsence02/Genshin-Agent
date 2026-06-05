@@ -1,0 +1,13 @@
+{
+  "id": "anemo-hilichurl-rogue",
+  "name_ru": "Анемо хиличурл-изгой",
+  "name_en": "Anemo Hilichurl Rogue",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "wanderers-blooming-flower",
+    "treasured-flower",
+    "a-flower-yet-to-bloom"
+  ],
+  "coordinates": []
+}

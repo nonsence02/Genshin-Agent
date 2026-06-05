@@ -1,14 +1,22 @@
 {
   "id": "blazing-sacrificial-hearts-resolve",
+  "name_ru": "Решимость пылающего жертвенного сердца",
   "name_en": "Blazing Sacrificial Heart's Resolve",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Ancient Watchtower (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Blazing_Sacrificial_Heart%27s_Resolve"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-scrying-shadows-iii",
+    "domain-of-forgery-scrying-shadows-iv"
+  ],
+  "source_domain": "domain-of-forgery-scrying-shadows-iii",
+  "coordinates": []
 }

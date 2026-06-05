@@ -1,48 +1,80 @@
 {
   "id": "cashflow-supervision",
-  "name": "Cashflow Supervision",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Cashflow_Supervision",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "48 - 674",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "ATK is increased by. When current HP increases or decreases, Normal Attack DMG will be increased by and Charged Attack DMG will be increased by for. Max stacks. This can be triggered once every. When the wielder has stacks, ATK SPD will be increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Broken Goblet of the Pristine Sea",
-        "Old Operative's Pocket Watch",
-        "Transoceanic Pearl",
-        "Wine Goblet of the Pristine Sea",
-        "Operative's Standard Pocket Watch",
-        "Transoceanic Chunk",
-        "Silver Goblet of the Pristine Sea",
-        "Operative's Constancy",
-        "Xenochromatic Crystal",
-        "Golden Goblet of the Pristine Sea"
-      ]
+  "name_ru": "Казначейский надзор",
+  "name_en": "Cashflow Supervision",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.048
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.2205
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Золотая волна крови",
+  "passive_description_ru": "Увеличивает силу атаки на 16%. Когда текущее HP персонажа повышается или понижается, на 4 сек. урон обычной атаки увеличивается на 16%, а заряженной атаки - на 14%. Эффект складывается до 3 раз и возникает не чаще, чем 1 раз в 0,3 сек. При получении экипированным персонажем 3 уровней скорость атаки увеличивается на 8%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "broken-goblet-of-the-pristine-sea",
+        "name_ru": "Разбитая чаша непорочного моря",
+        "name_en": "Broken Goblet of the Pristine Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "wine-goblet-of-the-pristine-sea",
+        "name_ru": "Чаша непорочного моря",
+        "name_en": "Wine Goblet of the Pristine Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-goblet-of-the-pristine-sea",
+        "name_ru": "Серебряный кубок непорочного моря",
+        "name_en": "Silver Goblet of the Pristine Sea"
+      },
+      {
+        "id": "golden-goblet-of-the-pristine-sea",
+        "name_ru": "Золотой кубок непорочного моря",
+        "name_en": "Golden Goblet of the Pristine Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "old-operatives-pocket-watch",
+        "name_ru": "Старые карманные часы сенешаля",
+        "name_en": "Old Operative's Pocket Watch"
+      },
+      {
+        "id": "operatives-standard-pocket-watch",
+        "name_ru": "Штатные карманные часы сенешаля",
+        "name_en": "Operative's Standard Pocket Watch"
+      },
+      {
+        "id": "operatives-constancy",
+        "name_ru": "Постоянство сенешаля",
+        "name_en": "Operative's Constancy"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "transoceanic-pearl",
+        "name_ru": "Жемчужина иноморья",
+        "name_en": "Transoceanic Pearl"
+      },
+      {
+        "id": "transoceanic-chunk",
+        "name_ru": "Обломок из иноморья",
+        "name_en": "Transoceanic Chunk"
+      },
+      {
+        "id": "xenochromatic-crystal",
+        "name_ru": "Ксенохромный кристалл",
+        "name_en": "Xenochromatic Crystal"
+      }
+    ]
+  },
+  "coordinates": []
 }

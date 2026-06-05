@@ -1,0 +1,13 @@
+{
+  "id": "close-combat-scout-landcruiser",
+  "name_ru": "Сухопутный крейсер: Разведчик ближнего боя",
+  "name_en": "Close Combat Scout Landcruiser",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "precision-drive-shaft",
+    "reinforced-drive-shaft",
+    "broken-drive-shaft"
+  ],
+  "coordinates": []
+}

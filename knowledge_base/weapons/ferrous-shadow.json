@@ -1,48 +1,80 @@
 {
   "id": "ferrous-shadow",
-  "name": "Ferrous Shadow",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ferrous_Shadow",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "3★",
-    "base_atk": "39 - 401",
-    "secondary_stat": "HP"
-  },
-  "passive": "When HP falls below, increases Charged Attack DMG by, and Charged Attacks become much harder to interrupt.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Tile of Decarabian's Tower",
-        "Heavy Horn",
-        "Whopperflower Nectar",
-        "Debris of Decarabian's City",
-        "Black Bronze Horn",
-        "Shimmering Nectar",
-        "Fragment of Decarabian's Epic",
-        "Black Crystal Horn",
-        "Energy Nectar",
-        "Scattered Piece of Decarabian's Dream"
-      ]
+  "name_ru": "Металлическая тень",
+  "name_en": "Ferrous Shadow",
+  "weapon_type": "Claymore",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 38.7413,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.0766
+    },
+    "level_90": {
+      "base_atk": 401.2936,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.3519
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Непоколебимый",
+  "passive_description_ru": "При HP ниже 70% врагу становится труднее прервать заряженную атаку. Также увеличивает урон заряженной атаки на 30%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "tile-of-decarabians-tower",
+        "name_ru": "Плитка башни Декарабиана",
+        "name_en": "Tile of Decarabian's Tower"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "debris-of-decarabians-city",
+        "name_ru": "Обломок стены Декарабиана",
+        "name_en": "Debris of Decarabian's City"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "fragment-of-decarabians-epic",
+        "name_ru": "Фрагмент эпоса Декарабиана",
+        "name_en": "Fragment of Decarabian's Epic"
+      },
+      {
+        "id": "scattered-piece-of-decarabians-dream",
+        "name_ru": "Осколок мечты Декарабиана",
+        "name_en": "Scattered Piece of Decarabian's Dream"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "heavy-horn",
+        "name_ru": "Тяжёлый рог",
+        "name_en": "Heavy Horn"
+      },
+      {
+        "id": "black-bronze-horn",
+        "name_ru": "Чёрный бронзовый рог",
+        "name_en": "Black Bronze Horn"
+      },
+      {
+        "id": "black-crystal-horn",
+        "name_ru": "Чёрный кристаллический рог",
+        "name_en": "Black Crystal Horn"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

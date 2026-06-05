@@ -1,0 +1,18 @@
+{
+  "id": "cabbage",
+  "name_ru": "Капуста",
+  "name_en": "Cabbage",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Торговые лавки"
+  ],
+  "dropped_by": [
+    "unusual-hilichurl"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

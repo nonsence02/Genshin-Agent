@@ -1,0 +1,75 @@
+{
+  "id": "prune",
+  "name_en": "Prune",
+  "element": "Anemo",
+  "weapon": "Catalyst",
+  "region": "Mondstadt (in-game) Nod-Krai (in lore)",
+  "rarity": 4,
+  "description": "Prune is a playable Anemo character in Genshin Impact .\n\nA self-proclaimed \"Witch Hunter\" who traveled from Nod-Krai to Mondstadt to look for Alice after she \"kidnapped\" her imaginary friend Descartes . There, Prune meets Alice's daughter, Klee , and plasters Mondstadt with posters antagonizing Alice, which no one takes seriously.",
+  "role_summary": "Prune is an Anemo support character who provides DMG bonuses to her teammates. After casting her Elemental Skill , Prune strikes the \"Witchlure Bell,\" dealing Anemo DMG. If this attack triggers a Swirl reaction, then for a short duration, the element involved in that Swirl will cause the \"Banehunter Oathhammer\" to undergo Elemental Conversion. Prune can then tap the skill again to unleash an attack dealing DMG of the corresponding Elemental Type. After casting her Elemental Burst , the \"Witchlure Bell\" enters the \"Hunter-Seeker\" mode, periodically attacking nearby enemies. After unlocking the Ascension Talent Verdict and Punishment , if these attacks deal DMG and trigger a Swirl reaction, a \"Banehunter Oathhammer\" with the corresponding Elemental Conversion will be summoned before the enemy, slamming down and dealing corresponding Elemental DMG. After unlocking the Ascension Talent Tolling Synchronicity , whenever Prune deals DMG using an Elemental Converted \"Banehunter Oathhammer,\" all nearby party members gain the \"Tolling Rally\" effect, increasing their DMG.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Badaboom! Hexbuster Hammer",
+      "description": "Normal Attack Performs up to 3 attacks by swinging the Banehunter Oathhammer, dealing Anemo DMG . Charged Attack Consumes a certain amount of Stamina and performs an upward hammer swing, dealing Anemo DMG to opponents in front. Plunging Attack Calling upon the power of Anemo, she plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Anemo DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Ring-A-Ding-Ding! Hexhunter Chime",
+      "description": "Unleash the wind's might to defeat the evil witch and save Descartes! Prune strikes the Witchlure Bell with her Banehunter Oathhammer, dealing Anemo DMG . If Prune triggers Swirl on an opponent using this attack, Ring-A-Ding-Ding! Hexhunter Chime will be changed to Clang Clang! Witch-tribution Comes! for the next 6s. Clang Clang! Witch-tribution Comes! Prune's hammer is now enshrouded by the element involved in the previous Swirl reaction, causing Banehunter Oathhammer Banehunter Oathhammer A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type. Prune can summon the Banehunter Oathhammer that has undergone Elemental Conversion in the following ways: For a certain time after triggering a Swirl Reaction on an opponent with the Elemental Skill Ring-A-Ding-Ding! Hexhunter Chime, Prune can unleash the special Elemental Skill Clang Clang! Witch-tribution Comes!. When using this special Elemental Skill, the Banehunter Oathhammer will be converted to the other Elemental Type involved in the aforementioned Swirl Reaction. After the Ascension Talent \"Verdict an..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "The Bell Tolls! The Hunt Is On!",
+      "description": "Prune gently swings the Witchlure Bell, dealing Anemo DMG to nearby opponents. After this, the Bell will enter the Hunter-Seeker mode. Witchlure Bell: Hunter-Seeker In this mode, the Witchlure Bell will follow the current active character, attacking surrounding opponents at intervals and dealing AoE Anemo DMG . This DMG is considered Elemental Burst DMG."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Verdict and Punishment",
+      "description": "During the Elemental Burst The Bell Tolls! The Hunt Is On! , after the Witchlure Bell in Hunter-Seeker mode deals DMG to an opponent, if this DMG triggers Swirl on an opponent, it will also summon a Banehunter Oathhammer Banehunter Oathhammer A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type. Prune can summon the Banehunter Oathhammer that has undergone Elemental Conversion in the following ways: For a certain time after triggering a Swirl Reaction on an opponent with the Elemental Skill Ring-A-Ding-Ding! Hexhunter Chime, Prune can unleash the special Elemental Skill Clang Clang! Witch-tribution Comes!. When using this special Elemental Skill, the Banehunter Oathhammer will be converted to the other Elemental Type involved in the aforementioned Swirl Reaction. After the Ascension Talent \"Verdict and Punishment\" is unlocked, when the Witchlure Bell in Hunter-Seeker mode triggers Swirl on an opponent, it will summon a Banehunter Oathhammer that has undergone the corresponding Elemental Conversion to attack the opponent. that will deal 150% of Prune..."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Tolling Synchronicity",
+      "description": "After Prune hits an opponent with the Banehunter Oathhammer Banehunter Oathhammer A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type. Prune can summon the Banehunter Oathhammer that has undergone Elemental Conversion in the following ways: For a certain time after triggering a Swirl Reaction on an opponent with the Elemental Skill Ring-A-Ding-Ding! Hexhunter Chime, Prune can unleash the special Elemental Skill Clang Clang! Witch-tribution Comes!. When using this special Elemental Skill, the Banehunter Oathhammer will be converted to the other Elemental Type involved in the aforementioned Swirl Reaction. After the Ascension Talent \"Verdict and Punishment\" is unlocked, when the Witchlure Bell in Hunter-Seeker mode triggers Swirl on an opponent, it will summon a Banehunter Oathhammer that has undergone the corresponding Elemental Conversion to attack the opponent. that has undergone Elemental Conversion , other nearby party members will gain the Tolling Rally effect for 5s: When Normal, Charged, or Plunging Attacks, or Elemental Skills and Bursts dea..."
+    },
+    {
+      "type": "Witch's Eve Rite Passive",
+      "name": "Witchseeker's Vow",
+      "description": "After completing Witch's Homework : Of What Is Contested , Prune becomes a Hexerei character. When the party includes at least 2 Hexerei characters, you gain the Hexerei: Secret Rite effect, which enhances Hexerei characters. Hexerei: Secret Rite After a Hexerei character in the party affected by the Tolling Rally effect triggers an Elemental Reaction on an opponent, Prune's ATK is increased by 60% for 5s. If the Elemental Reaction triggered is a Swirl Reaction, the triggering character's ATK will additionally be increased by 30% for 5s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Tinker-Tink, Clank, and Bang!",
+      "description": "Has a 10% chance to get 1 regional Character Talent Material (base material excluded) when crafting. The rarity is the same as the resulting material."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "With a Vow to Rescue, the Journey Begins",
+      "effect": "After the Banehunter Oathhammer Banehunter Oathhammer A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type. Prune can summon the Banehunter Oathhammer that has undergone Elemental Conversion in the following ways: For a certain time after triggering a Swirl Reaction on an opponent with the Elemental Skill Ring-A-Ding-Ding! Hexhunter Chime, Prune can unleash the special Elemental Skill Clang Clang! Witch-tribution Comes!. When using this special Elemental Skill, the Banehunter Oathhammer will be converted to the other Elemental Type involved in the aforementioned Swirl Reaction. After the Ascension Talent \"Verdict and Punishment\" is unlocked, when the Witchlure Bell in Hunter-Seeker mode triggers Swirl on an opponent, it will summon a Banehunter Oathhammer..."
+    },
+    "c2": {
+      "name": "Useful for Cleaning Messy Baggage, Elemental Powers Are Indeed",
+      "effect": "During the Elemental Burst The Bell Tolls! The Hunt Is On! , when the Witchlure Bell is in Hunter-Seeker mode, Prune gains the Hunt the Witch effect: Prune's ATK increases by 10%, and when the Witchlure Bell and the Banehunter Oathhammer Banehunter Oathhammer A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type. Prune can summon the Banehunter Oathhammer that has undergone Elemental Conversion in the following ways: For a certain time after triggering a Swirl Reaction on an opponent with the Elemental Skill Ring-A-Ding-Ding! Hexhunter Chime, Prune can unleash the special Elemental Skill Clang Clang! Witch-tribution Comes!. When using this special Elemental Skill, the Banehunter Oathhammer will be converted to the other Elemental Type involved in the afore..."
+    },
+    "c3": {
+      "name": "The Caravan Exits the Mountain Pass, the Scenery Once More Changed",
+      "effect": "Increases the Level of The Bell Tolls! The Hunt Is On! by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Looking Back Following the Wind, One's Shadow Still Halved",
+      "effect": "After the Banehunter Oathhammer Banehunter Oathhammer A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type. Prune can summon the Banehunter Oathhammer that has undergone Elemental Conversion in the following ways: For a certain time after triggering a Swirl Reaction on an opponent with the Elemental Skill Ring-A-Ding-Ding! Hexhunter Chime, Prune can unleash the special Elemental Skill Clang Clang! Witch-tribution Comes!. When using this special Elemental Skill, the Banehunter Oathhammer will be converted to the other Elemental Type involved in the aforementioned Swirl Reaction. After the Ascension Talent \"Verdict and Punishment\" is unlocked, when the Witchlure Bell in Hunter-Seeker mode triggers Swirl on an opponent, it will summon a Banehunter Oathhammer..."
+    },
+    "c5": {
+      "name": "100 Defeats? No Problem, Tomorrow, We Go Again",
+      "effect": "Increases the Level of Ring-A-Ding-Ding! Hexhunter Chime by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "And That's the Story! Share It With Your Friends!",
+      "effect": "The duration of the Witchlure Bell's Hunter-Seeker mode from the Elemental Burst The Bell Tolls! The Hunt Is On! is extended by 4s. Additionally, after party members affected by Tolling Rally trigger any Elemental Reaction, they will cause Prune and the other current active character(s) affected by Tolling Rally to gain 350 ATK for 5s."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Prune",
+  "ai_tags": "Main DPS, Elemental Conversion, Enabler"
+}

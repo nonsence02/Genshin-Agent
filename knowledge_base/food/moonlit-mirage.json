@@ -1,0 +1,27 @@
+{
+  "id": "moonlit-mirage",
+  "name_ru": "Лунный мираж",
+  "name_en": "Moonlit Mirage",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает макс. HP всех членов отряда на 30% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "nocturnal-blossom",
+      "count": 2
+    },
+    {
+      "material_id": "winter-icelea",
+      "count": 2
+    },
+    {
+      "material_id": "midsommar-berry",
+      "count": 2
+    },
+    {
+      "material_id": "lakkaberry",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

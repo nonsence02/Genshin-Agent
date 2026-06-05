@@ -1,0 +1,30 @@
+{
+  "id": "dream-solvent",
+  "name_ru": "Растворитель снов",
+  "name_en": "Dream Solvent",
+  "type": "consume",
+  "type_text_ru": "Расходный предмет",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Награда испытания Подземелья наказания и Волка Севера"
+  ],
+  "dropped_by": [
+    "all-devouring-narwhal",
+    "azhdaha",
+    "childe",
+    "guardian-of-apeps-oasis",
+    "il-dottore",
+    "la-signora",
+    "lord-of-eroded-primal-fire",
+    "lupus-boreas-dominator-of-wolves",
+    "magatsu-mitake-narukami-no-mikoto",
+    "shouki-no-kami-the-prodigal",
+    "stormterror",
+    "the-doctor",
+    "the-game-before-the-gate",
+    "the-knave"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

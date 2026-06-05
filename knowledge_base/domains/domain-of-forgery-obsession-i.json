@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-forgery-obsession-i",
+  "name_ru": "Воля: Искушение I",
+  "name_en": "Domain of Forgery: Obsession I",
+  "type": "Возвышение оружия",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "oasis-gardens-reminiscence"
+  ],
+  "coordinates": []
+}

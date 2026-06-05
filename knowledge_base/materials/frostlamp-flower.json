@@ -1,10 +1,18 @@
 {
   "id": "frostlamp-flower",
+  "name_ru": "Инеевый цветок",
   "name_en": "Frostlamp Flower",
-  "type": "Local Specialty (Nod-Krai)",
-  "days": [],
-  "source": [
-    "Found in Nod-Krai"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Нод-Края",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Кладбище ночи",
+    "У Анклава Морозной Луны",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Frostlamp_Flower"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

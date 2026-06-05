@@ -1,48 +1,80 @@
 {
   "id": "everlasting-moonglow",
-  "name": "Everlasting Moonglow",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Everlasting_Moonglow",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "HP"
-  },
-  "passive": "Healing Bonus increased by, Normal Attack DMG is increased by of the Max HP of the character equipping this weapon. For after using an Elemental Burst, Normal Attacks that hit opponents will restore Energy. Energy can be restored this way once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Coral Branch of a Distant Sea",
-        "Dismal Prism",
-        "Spectral Husk",
-        "Jeweled Branch of a Distant Sea",
-        "Crystal Prism",
-        "Spectral Heart",
-        "Jade Branch of a Distant Sea",
-        "Polarizing Prism",
-        "Spectral Nucleus",
-        "Golden Branch of a Distant Sea"
-      ]
+  "name_ru": "Вечное лунное сияние",
+  "name_en": "Everlasting Moonglow",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.108
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.4962
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Бякуя когэцу",
+  "passive_description_ru": "Увеличивает бонус лечения на 10%, а также повышает урон обычной атаки на 1% от макс. HP экипированного этим оружием персонажа. В течение 12 сек. после использования взрыва стихии попадания обычной атакой по противнику восстанавливают 0,6 ед. энергии. Энергию можно восстановить не чаще чем раз в 0,1 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "coral-branch-of-a-distant-sea",
+        "name_ru": "Коралловая ветвь внешних морей",
+        "name_en": "Coral Branch of a Distant Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "jeweled-branch-of-a-distant-sea",
+        "name_ru": "Драгоценная ветвь внешних морей",
+        "name_en": "Jeweled Branch of a Distant Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "jade-branch-of-a-distant-sea",
+        "name_ru": "Нефритовая ветвь внешних морей",
+        "name_en": "Jade Branch of a Distant Sea"
+      },
+      {
+        "id": "golden-branch-of-a-distant-sea",
+        "name_ru": "Золотая ветвь внешних морей",
+        "name_en": "Golden Branch of a Distant Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dismal-prism",
+        "name_ru": "Тёмная призма",
+        "name_en": "Dismal Prism"
+      },
+      {
+        "id": "crystal-prism",
+        "name_ru": "Кристальная призма",
+        "name_en": "Crystal Prism"
+      },
+      {
+        "id": "polarizing-prism",
+        "name_ru": "Поляризационная призма",
+        "name_en": "Polarizing Prism"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

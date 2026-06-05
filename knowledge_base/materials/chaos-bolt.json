@@ -1,10 +1,20 @@
 {
   "id": "chaos-bolt",
+  "name_ru": "Анкер хаоса",
   "name_en": "Chaos Bolt",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Ruin Drakes"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Драконы руин Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Chaos_Bolt"
+  "dropped_by": [
+    "ruin-drake-earthguard",
+    "ruin-drake-skywatch"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

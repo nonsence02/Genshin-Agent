@@ -1,10 +1,17 @@
 {
   "id": "radiant-antler",
+  "name_ru": "Сияющий рог",
   "name_en": "Radiant Antler",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Frostnight Herra"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Повелители морозной ночи Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Radiant_Antler"
+  "dropped_by": [
+    "frostnight-herra"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

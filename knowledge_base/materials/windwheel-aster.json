@@ -1,10 +1,18 @@
 {
   "id": "windwheel-aster",
+  "name_ru": "Ветряная астра",
   "name_en": "Windwheel Aster",
-  "type": "Local Specialty (Mondstadt)",
-  "days": [],
-  "source": [
-    "Found near the Statue of The Seven at Windrise and Dawn Winery , and all around Stormterror's Lair"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Мондштадта",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "У статуи Анемо Архонта в долине Ветров",
+    "Логово Ужаса Бури",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Windwheel_Aster"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

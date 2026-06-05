@@ -1,0 +1,19 @@
+{
+  "id": "abyssal-bounty",
+  "name_ru": "«Сокровище бездны»",
+  "name_en": "\"Abyssal Bounty\"",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 16% HP + 1350 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 1
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

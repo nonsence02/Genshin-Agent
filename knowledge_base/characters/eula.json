@@ -1,92 +1,81 @@
 {
   "id": "eula",
-  "name": "Eula",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Eula",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Cryo",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Sharp frost, swift blade. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Slashes swiftly, dealing Cryo DMG. When it hits an opponent, Eula gains a stack of Grimheart that stacks up to times. These stacks can only be gained once. Grimheart Increases Eula's resistance to interruption and DEF. Hold Wielding her sword, Eula consumes all the stacks of Grimheart and lashes forward, dealing AoE Cryo DMG to opponents in front of her. If Grimheart stacks are consumed, surrounding opponents will have their Physical RES and Cryo RES decreased. Each consumed stack of Grimheart will be converted into an Icewhirl Brand that deals Cryo DMG to nearby opponents. When...",
-    "elemental_burst": "Brandishes her greatsword, dealing Cryo DMG to nearby opponents and creating a Lightfall Sword that follows her around for a duration of up to. While present, the Lightfall Sword increases Eula's resistance to interruption. When Eula's own Normal Attack, Elemental Skill, and Elemental Burst deal DMG to opponents, they will charge the Lightfall Sword, which can gain an energy stack once. Once its duration ends, the Lightfall Sword will descend and explode violently, dealing Physical DMG to nearby opponents. This DMG scales on the number of energy stacks the Lightfall Sword has accumulated. If Eula leaves the field, the Lightfall Sword will explode immediately. This Elemental Burst drains..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "special": [
-        "Dandelion Seed",
-        "Crystalline Bloom"
-      ]
+  "name_ru": "Эола",
+  "name_en": "Eula",
+  "element": "Cryo",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1029.5856,
+      "atk": 26.6266,
+      "def": 58.4539
     },
-    "talents": {
-      "books": [
-        "Teachings of Resistance",
-        "Guide to Resistance",
-        "Philosophies of Resistance"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "weekly_boss": [
-        "Dragon Lord's Crown"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 13225.5836,
+      "atk": 342.0251,
+      "def": 750.8776
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Фехтовальный стиль Фавония: Знать",
+      "description_ru": "Обычная атака:\nДо пяти рубящих ударов мечом.\n\nЗаряженная атака:\nКомбо-атака, на которую непрерывно тратится выносливость.\nПосле комбо-атаки проводит дополнительную мощную атаку мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Ледяной прибой",
+      "description_ru": "Ледяной воздух, стремительный меч.\n\nБыстрое нажатие:\nБыстрый взмах, который наносит Крио урон.\nПри попадании по врагу Эола получает один уровень Холодного сердца. Складывается до 2 раз, может возникнуть 1 раз в 0,3 сек.\n\nХолодное сердце\nПовышает сопротивление прерыванию и защиту Эолы.\n\nДолгое нажатие:\nТратит все уровни Холодного сердца и совершает рубящий удар мечом, который наносит Крио урон врагам перед собой.\nЕсли было потрачено Холодное сердце, то Эола снижает физическое сопротивление и Крио сопротивление врагов поблизости.\nКаждый потраченный уровень Холодного сердца превращается в один Меч вихря, который наносит врагам поблизости Крио урон."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Сумеречный меч",
+      "description_ru": "Эола яростно взмахивает мечом, нанося окружающим врагам Крио урон и создавая Меч света, который следует за ней до 7 сек.\nПока Меч света существует, он повышает сопротивление прерыванию Эолы. Когда обычные атаки, элементальные навыки и взрывы стихии Эолы наносят врагам урон, Меч света получает энергию. Он может получить максимум одну единицу каждые 0,1 сек.\nКогда длительность Меча света заканчивается, он падает и взрывается, нанося врагам поблизости физический урон.\nНаносимый урон зависит от количества накопленной Мечом света энергии.\nМеч света взрывается сам при смене персонажа."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Дрожащий иней",
+      "description_ru": "Если при долгом нажатии навыка Ледяной прибой за раз тратится два уровня Холодного сердца, то появляется сломанный Меч света, который тут же взрывается и в виде физического урона наносит 50% от базового урона Меча света, создаваемого Сумеречным мечом."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Прилив войны",
+      "description_ru": "Использование Сумеречного меча сбрасывает откат Ледяного прибоя и даёт Эоле один уровень Холодного сердца."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Рефлексия аристократа",
+      "description_ru": "При создании материалов повышения талантов персонажей есть 10% шанс создать дополнительный предмет."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Иллюзия прибоя",
+      "description_ru": "Когда Эола тратит Холодное сердце во время Ледяного прибоя её бонус физического урона увеличивается на 30% в течение 6 сек.\nКаждое потраченное Холодное сердце увеличивает длительность эффекта на 6 сек. Длительность не может превышать 18 сек."
+    },
+    {
+      "name_ru": "Дева морской пены",
+      "description_ru": "Уменьшает время отката заряженного режима Ледяного прибоя, делая его равным времени отката незаряженного варианта."
+    },
+    {
+      "name_ru": "Кровь Лоуренсов",
+      "description_ru": "Увеличивает уровень навыка Сумеречный меч на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Упрямство толпы",
+      "description_ru": "Меч света наносит на 25% больше урона против врагов с HP ниже 50%."
+    },
+    {
+      "name_ru": "Рыцарская суть",
+      "description_ru": "Увеличивает уровень навыка Ледяной прибой на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Долг благородных",
+      "description_ru": "Меч света, который создаёт талант Сумеречный меч, сразу получает 5 единиц энергии. Когда обычная атака, элементальный навык или взрыв стихии даёт Мечу света энергию, у него есть 50% шанс дополнительно получить ещё одну единицу энергии."
+    }
+  ],
+  "coordinates": []
 }

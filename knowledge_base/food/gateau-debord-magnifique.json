@@ -1,0 +1,27 @@
+{
+  "id": "gateau-debord-magnifique",
+  "name_ru": "Торт «Дебор»: Великолепие",
+  "name_en": "Gateau Debord: Magnifique",
+  "rarity": 4,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 384 ед. и шанс крит. попадания на 14% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "romaritime-flower",
+      "count": 3
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "cream",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

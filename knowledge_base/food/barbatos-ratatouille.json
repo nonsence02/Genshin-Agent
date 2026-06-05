@@ -1,0 +1,23 @@
+{
+  "id": "barbatos-ratatouille",
+  "name_ru": "Солянка Архонта",
+  "name_en": "Barbatos Ratatouille",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время полёта и спринта на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "carrot",
+      "count": 4
+    },
+    {
+      "material_id": "potato",
+      "count": 4
+    },
+    {
+      "material_id": "onion",
+      "count": 4
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,70 @@
+{
+  "id": "kaeya",
+  "name_en": "Kaeya",
+  "element": "Cryo",
+  "weapon": "Sword",
+  "region": "Mondstadt (in-game) Khaenri'ah (in lore)",
+  "rarity": 4,
+  "description": "Kaeya Alberich is a playable Cryo character in Genshin Impact .\n\nKaeya is the Cavalry Captain of the Knights of Favonius . He is held in high regard by the people of Mondstadt — even with all his eccentricities and secrets.\n\nHe is obtained for free in the Archon Quest Crash Course in Prologue : Act I - The Outlander Who Caught the Wind .",
+  "role_summary": "Kaeya Alberich is a playable Cryo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Ceremonial Bladework",
+      "description": "Normal Attack Performs up to 5 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Frostgnaw",
+      "description": "Unleashes a frigid blast, dealing Cryo DMG to opponents in front of Kaeya."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Glacial Waltz",
+      "description": "Coalescing the frost in the air, Kaeya summons 3 icicles that revolve around him. These icicles will follow the character around and deal Cryo DMG to opponents in their path for the ability's duration."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Cold-Blooded Strike",
+      "description": "Every hit with Frostgnaw regenerates HP for Kaeya equal to 15% of his ATK."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Glacial Heart",
+      "description": "Opponents Frozen by Frostgnaw will drop additional Elemental Particles . Frostgnaw may only produce a maximum of 2 additional Elemental Particles per use."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Hidden Strength",
+      "description": "Decreases sprinting Stamina consumption for your own party members by 20%. Not stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Excellent Blood",
+      "effect": "The CRIT Rate of Kaeya's Normal and Charge Attacks against opponents affected by Cryo is increased by 15%."
+    },
+    "c2": {
+      "name": "Never-Ending Performance",
+      "effect": "Description Gameplay Notes When Glacial Waltz is in effect, for each opponent defeated, its base duration is increased by 2.5s, up to a maximum of 15s. This constellation can extend Glacial Waltz 's duration for an additional 7 seconds. (max 15 seconds) A total of 3 enemies needed to be defeated while Glacial Waltz is in effect to get the max duration increased. ( 2.5 seconds/enemy)"
+    },
+    "c3": {
+      "name": "Dance of Frost",
+      "effect": "Increases the Level of Frostgnaw by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Frozen Kiss",
+      "effect": "Description Gameplay Notes Preview Triggers automatically when Kaeya's HP falls below 20%: Creates a shield that absorbs damage equal to 30% of Kaeya's Max HP. Lasts for 20s. This shield absorbs Cryo DMG with 250% efficiency. Can only occur once every 60s. If the shield is not on cooldown and Kaeya takes damage that kills him, the shield will be triggered but will not prevent his death. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Constellation Frozen Kiss.mp4"
+    },
+    "c5": {
+      "name": "Frostbiting Embrace",
+      "effect": "Increases the Level of Glacial Waltz by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Glacial Whirlwind",
+      "effect": "Description Preview Glacial Waltz will generate 1 additional icicle, and will regenerate 15 Energy when cast. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Constellation Glacial Whirlwind.mp4"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kaeya",
+  "ai_tags": "Main DPS, Cryo аппликатор"
+}

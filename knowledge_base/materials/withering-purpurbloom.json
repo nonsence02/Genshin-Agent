@@ -1,10 +1,16 @@
 {
   "id": "withering-purpurbloom",
+  "name_ru": "Сухой пурпурник",
   "name_en": "Withering Purpurbloom",
-  "type": "Local Specialty (Natlan)",
-  "days": [],
-  "source": [
-    "Found in Natlan"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Натлана",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Очканатлан",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Withering_Purpurbloom"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

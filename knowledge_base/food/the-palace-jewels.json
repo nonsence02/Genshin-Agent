@@ -1,0 +1,27 @@
+{
+  "id": "the-palace-jewels",
+  "name_ru": "«Богатство и роскошь»",
+  "name_en": "The Palace Jewels",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает макс. HP всех членов отряда на 25% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "shrimp-meat",
+      "count": 3
+    },
+    {
+      "material_id": "crab-roe",
+      "count": 1
+    },
+    {
+      "material_id": "snapdragon",
+      "count": 1
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

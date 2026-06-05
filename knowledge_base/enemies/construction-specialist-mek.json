@@ -1,0 +1,13 @@
+{
+  "id": "construction-specialist-mek",
+  "name_ru": "Спецмек: Строительство",
+  "name_en": "Construction Specialist Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

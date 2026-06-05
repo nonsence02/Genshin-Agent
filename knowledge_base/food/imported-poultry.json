@@ -1,0 +1,27 @@
+{
+  "id": "imported-poultry",
+  "name_ru": "Птица по-заморски",
+  "name_en": "Imported Poultry",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 4
+    },
+    {
+      "material_id": "lavender-melon",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

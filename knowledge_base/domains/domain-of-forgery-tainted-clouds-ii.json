@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-forgery-tainted-clouds-ii",
+  "name_ru": "Воля: Скверные тучи II",
+  "name_en": "Domain of Forgery: Tainted Clouds II",
+  "type": "Возвышение оружия",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "iron-talisman-of-the-forest-dew",
+    "copper-talisman-of-the-forest-dew"
+  ],
+  "coordinates": []
+}

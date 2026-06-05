@@ -1,0 +1,27 @@
+{
+  "id": "fruity-duet",
+  "name_ru": "Фруктовый дуэт",
+  "name_en": "Fruity Duet",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 228 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "sunsettia",
+      "count": 1
+    },
+    {
+      "material_id": "jam",
+      "count": 1
+    },
+    {
+      "material_id": "qingxin",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

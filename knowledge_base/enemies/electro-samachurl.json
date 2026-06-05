@@ -1,0 +1,16 @@
+{
+  "id": "electro-samachurl",
+  "name_ru": "Электро шамачурл",
+  "name_en": "Electro Samachurl",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "forbidden-curse-scroll",
+    "sealed-scroll",
+    "divining-scroll",
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

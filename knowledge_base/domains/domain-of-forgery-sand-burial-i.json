@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-forgery-sand-burial-i",
+  "name_ru": "Воля: Песчаная могила I",
+  "name_en": "Domain of Forgery: Sand Burial I",
+  "type": "Возвышение оружия",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "mask-of-the-wicked-lieutenant"
+  ],
+  "coordinates": []
+}

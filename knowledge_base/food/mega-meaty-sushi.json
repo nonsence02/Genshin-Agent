@@ -1,0 +1,23 @@
+{
+  "id": "mega-meaty-sushi",
+  "name_ru": "Мегамясные суши",
+  "name_en": "Mega-Meaty Sushi",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 34% HP + 1900 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "rice",
+      "count": 3
+    },
+    {
+      "material_id": "radish",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

@@ -1,48 +1,80 @@
 {
   "id": "ballad-of-the-fjords",
-  "name": "Ballad of the Fjords",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ballad_of_the_Fjords",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "When there are at least different Elemental Types in your party, Elemental Mastery will be increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Broken Goblet of the Pristine Sea",
-        "A Flower Yet to Bloom",
-        "Whopperflower Nectar",
-        "Wine Goblet of the Pristine Sea",
-        "Treasured Flower",
-        "Shimmering Nectar",
-        "Silver Goblet of the Pristine Sea",
-        "Wanderer's Blooming Flower",
-        "Energy Nectar",
-        "Golden Goblet of the Pristine Sea"
-      ]
+  "name_ru": "Баллада фьордов",
+  "name_en": "Ballad of the Fjords",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Истории тундры",
+  "passive_description_ru": "Если в отряде не менее 3 персонажей разных элементов, мастерство стихий увеличивается на 120 ед.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "broken-goblet-of-the-pristine-sea",
+        "name_ru": "Разбитая чаша непорочного моря",
+        "name_en": "Broken Goblet of the Pristine Sea"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "wine-goblet-of-the-pristine-sea",
+        "name_ru": "Чаша непорочного моря",
+        "name_en": "Wine Goblet of the Pristine Sea"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-goblet-of-the-pristine-sea",
+        "name_ru": "Серебряный кубок непорочного моря",
+        "name_en": "Silver Goblet of the Pristine Sea"
+      },
+      {
+        "id": "golden-goblet-of-the-pristine-sea",
+        "name_ru": "Золотой кубок непорочного моря",
+        "name_en": "Golden Goblet of the Pristine Sea"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "a-flower-yet-to-bloom",
+        "name_ru": "Нераспустившийся цветок",
+        "name_en": "A Flower Yet to Bloom"
+      },
+      {
+        "id": "treasured-flower",
+        "name_ru": "Заветный цветок",
+        "name_en": "Treasured Flower"
+      },
+      {
+        "id": "wanderers-blooming-flower",
+        "name_ru": "Распустившийся цветок странника",
+        "name_en": "Wanderer's Blooming Flower"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

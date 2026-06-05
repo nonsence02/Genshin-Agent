@@ -1,48 +1,80 @@
 {
   "id": "memory-of-dust",
-  "name": "Memory of Dust",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Memory_of_Dust",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Increases Shield Strength by. Scoring hits on opponents increases ATK by for. Max stacks. Can only occur once every. While protected by a shield, this ATK increase is increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Fragile Bone Shard",
-        "Damaged Mask",
-        "Piece of Aerosiderite",
-        "Sturdy Bone Shard",
-        "Stained Mask",
-        "Bit of Aerosiderite",
-        "Fossilized Bone Shard",
-        "Ominous Mask",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Память о пыли",
+  "name_en": "Memory of Dust",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.108
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4962
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Золочёное величество",
+  "passive_description_ru": "Увеличивает прочность щита на 20%. При попадании увеличивает силу атаки на 4% в течение 8 сек. Эффект может складываться до 5 раз и возникнуть раз в 0,3 сек. Кроме того, под защитой щита бонус силы атаки данного эффекта увеличивается на 100%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "fragile-bone-shard",
+        "name_ru": "Хрупкие останки",
+        "name_en": "Fragile Bone Shard"
+      },
+      {
+        "id": "sturdy-bone-shard",
+        "name_ru": "Крепкие останки",
+        "name_en": "Sturdy Bone Shard"
+      },
+      {
+        "id": "fossilized-bone-shard",
+        "name_ru": "Окаменевшие останки",
+        "name_en": "Fossilized Bone Shard"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "damaged-mask",
+        "name_ru": "Разбитая маска",
+        "name_en": "Damaged Mask"
+      },
+      {
+        "id": "stained-mask",
+        "name_ru": "Грязная маска",
+        "name_en": "Stained Mask"
+      },
+      {
+        "id": "ominous-mask",
+        "name_ru": "Зловещая маска",
+        "name_en": "Ominous Mask"
+      }
+    ]
+  },
+  "coordinates": []
 }

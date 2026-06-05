@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-kindling",
+  "name_ru": "Учения о «Сжигании»",
   "name_en": "Teachings of Kindling",
-  "type": "Character Talent Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Blazing Ruins (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Kindling"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-myriad-illusions-i",
+    "domain-of-mastery-myriad-illusions-ii",
+    "domain-of-mastery-myriad-illusions-iii",
+    "domain-of-mastery-myriad-illusions-iv"
+  ],
+  "source_domain": "domain-of-mastery-myriad-illusions-i",
+  "coordinates": []
 }

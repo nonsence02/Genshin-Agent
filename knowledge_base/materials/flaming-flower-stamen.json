@@ -1,0 +1,16 @@
+{
+  "id": "flaming-flower-stamen",
+  "name_ru": "Пылающий цветок (тычинка)",
+  "name_en": "Flaming Flower Stamen",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Храм Тысячи ветров"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

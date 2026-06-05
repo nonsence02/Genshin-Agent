@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-deepfire-construct-iv",
+  "name_ru": "Подземелье благословения: Постройка глубинного огня IV",
+  "name_en": "Domain of Blessing: Deepfire Construct IV",
+  "type": "Артефакты",
+  "region": "Натлан",
+  "days_of_week": [],
+  "rewards": [
+    "long-nights-oath",
+    "finale-of-the-deep-galleries",
+    "tiny-miracle",
+    "shackles-of-the-dandelion-gladiator"
+  ],
+  "coordinates": []
+}

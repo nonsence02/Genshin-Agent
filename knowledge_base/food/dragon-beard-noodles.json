@@ -1,0 +1,27 @@
+{
+  "id": "dragon-beard-noodles",
+  "name_ru": "Лапша «Борода дракона»",
+  "name_en": "Dragon Beard Noodles",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 228 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 4
+    },
+    {
+      "material_id": "fowl",
+      "count": 2
+    },
+    {
+      "material_id": "mushroom",
+      "count": 2
+    },
+    {
+      "material_id": "ham",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

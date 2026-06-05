@@ -1,94 +1,81 @@
 {
   "id": "yae-miko",
-  "name": "Yae Miko",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Yae_Miko",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "To Yae, such dull tasks as can be accomplished by driving spirits out need not be done personally. Moves swiftly, leaving a Sesshou Sakura behind. Sesshou Sakura Has the following properties: Periodically strikes one nearby opponent with lightning, dealing Electro DMG When there are other Sesshou Sakura nearby, their level will increase, boosting the DMG dealt by these lightning strikes. This skill has three charges. A maximum of Sesshou Sakura can exist simultaneously. The initial level of each Sesshou Sakura is, and the initial highest level each sakura can reach is. If a new Sesshou Sakura is created too close to an existing one, the existing one will be destroyed. When this skill hits...",
-    "elemental_burst": "Legends of \"kitsunetsuki,\" or the manifestations of a kitsune's might, are common in Inazuma's folktales. One that particularly captures the imagination is that of the Sky Kitsune, said to cause lightning to fall down upon the foes of the Grand Narukami Shrine. Summons a lightning strike, dealing AoE Electro DMG. When she uses this skill, Yae Miko will unseal nearby Sesshou Sakura, destroying their outer forms and transforming them into Tenko Thunderbolts that descend from the skies, dealing AoE Electro DMG. Each Sesshou Sakura destroyed in this way will create one Tenko Thunderbolt. Great Secret Art: Tenko Kenshin does not snapshot and will be affected by changes in Yae Miko's stats after..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Old Handguard",
-        "Kageuchi Handguard",
-        "Famed Handguard"
-      ],
-      "special": [
-        "Sea Ganoderma",
-        "Dragonheir's False Fin"
-      ]
+  "name_ru": "Яэ Мико",
+  "name_en": "Yae Miko",
+  "element": "Electro",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 807.462,
+      "atk": 26.4404,
+      "def": 44.2742
     },
-    "talents": {
-      "books": [
-        "Teachings of Light",
-        "Guide to Light",
-        "Philosophies of Light"
-      ],
-      "mob_drops": [
-        "Old Handguard",
-        "Kageuchi Handguard",
-        "Famed Handguard"
-      ],
-      "weekly_boss": [
-        "The Meaning of Aeons"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10372.2865,
+      "atk": 339.6333,
+      "def": 568.7302
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Пожирающая грехи кицунэ",
+      "description_ru": "Обычная атака:\nСовершает до трёх ударов, призывая духов кицунэ, наносящих Электро урон.\n\nЗаряженная атака:\nКороткое заклинание, наносящее Электро урон по площади, на которое тратится определённое количество выносливости.\n\nАтака в падении:\nНакопив энергию молнии, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Электро урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Проклятие якан: Сакура сэссё",
+      "description_ru": "Для Яэ хлопотами вроде изгнания духов нет нужды заниматься лично.\nСтремительно передвигается, оставляя за собой Сакуру сэссё.\n\nСакура сэссё\nОбладает следующими свойствами:\n· Периодически бьёт врага поблизости молнией, нанося Электро урон.\n· Наличие других Сакур сэссё поблизости повышает их уровень и наносимый ими урон.\n\nУ навыка 3 заряда.\nНа поле боя может быть до 3 Сакур сэссё. Изначально создаёт Сакуры 1-го уровня, они могут быть улучшены максимум до 3-го уровня. Если создать Сакуру слишком близко к уже существующей, то последняя уничтожится."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Великое тайное искусство: Тэнко кэнсин",
+      "description_ru": "В Инадзуме существуют легенды о кицунэцуки - людях, в которых вселился дух кицунэ. Из них весьма особенными считаются Небесные кицунэ, которые поражают молниями врагов Великого храма Наруками, нанося Электро урон по площади.\nПри активации этого навыка Яэ Мико высвобождает Сакуры сэссё поблизости, разрушая их внешнюю форму и обращая в молнии Небесной кицунэ, которые наносят Электро урон по площади. Каждая разрушенная таким образом Сакура сэссё даёт одну молнию Небесной кицунэ."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Божественная тень святилища",
+      "description_ru": "Каждая Сакура сэссё, разрушенная навыком Великое тайное искусство: Тэнко кэнсин, сбрасывает откат одного заряда навыка Проклятие якан: Сакура сэссё."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Просветлённое благословение",
+      "description_ru": "Каждая единица мастерства стихий Яэ Мико увеличивает урон Сакуры сэссё на 0,15%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Медитация яко",
+      "description_ru": "Создание материалов повышения талантов: 25% шанс получить другой доп. материал того же региона и той же редкости, как у исходных."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Подношения яко",
+      "description_ru": "При каждой активации удара молнии Небесной кицунэ навыком Великое тайное искусство: Тэнко кэнсин Яэ Мико восстанавливает себе 8 ед. элементальной энергии."
+    },
+    {
+      "name_ru": "Лунный зов лисы",
+      "description_ru": "Сакура сэссё создаётся уже 2-го уровня. Максимальный уровень повышен до 4, а радиус её атак увеличен на 60%."
+    },
+    {
+      "name_ru": "Семь чудесных превращений",
+      "description_ru": "Увеличивает уровень навыка Проклятие якан: Сакура сэссё на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Молния алой вишни",
+      "description_ru": "Попадание по врагу ударом молнии Сакуры сэссё наделяет всех персонажей поблизости 20% бонусом Электро урона длительностью 5 сек."
+    },
+    {
+      "name_ru": "Бесконечные насмешки",
+      "description_ru": "Увеличивает уровень навыка Великое тайное искусство: Тэнко кэнсин на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Запрещённое искусство: Дайсэссё",
+      "description_ru": "Атаки Сакур сэссё игнорируют 60% от защиты противника."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-fires-of-purification-iii",
+  "name_ru": "Подземелье благословения: Пламя очищения III",
+  "name_en": "Domain of Blessing: Fires of Purification III",
+  "type": "Артефакты",
+  "region": "Мондштадт",
+  "days_of_week": [],
+  "rewards": [
+    "thundering-fury",
+    "thundersoother",
+    "resolution-of-sojourner",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

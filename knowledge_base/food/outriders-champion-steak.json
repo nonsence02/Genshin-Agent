@@ -1,0 +1,15 @@
+{
+  "id": "outriders-champion-steak",
+  "name_ru": "Стейк скаута-чемпиона!",
+  "name_en": "Outrider's Champion Steak!",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 10% от макс. HP + 150 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

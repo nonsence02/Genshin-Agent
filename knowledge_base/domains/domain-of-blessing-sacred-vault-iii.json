@@ -1,0 +1,15 @@
+{
+  "id": "domain-of-blessing-sacred-vault-iii",
+  "name_ru": "Подземелье благословения: Святилище III",
+  "name_en": "Domain of Blessing: Sacred Vault III",
+  "type": "Артефакты",
+  "region": "Нод-Край",
+  "days_of_week": [],
+  "rewards": [
+    "aubade-of-morningstar-and-moon",
+    "a-day-carved-from-rising-winds",
+    "tiny-miracle",
+    "instructor"
+  ],
+  "coordinates": []
+}

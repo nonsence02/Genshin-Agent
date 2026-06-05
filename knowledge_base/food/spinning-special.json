@@ -1,0 +1,27 @@
+{
+  "id": "spinning-special",
+  "name_ru": "Суперкрутилка",
+  "name_en": "Spinning Special",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время спринта и карабканья на 25% в течение 1500 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "lakkaberry",
+      "count": 3
+    },
+    {
+      "material_id": "midsommar-berry",
+      "count": 3
+    },
+    {
+      "material_id": "nocturnal-blossom",
+      "count": 2
+    },
+    {
+      "material_id": "mint",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "masterless-starglitter",
+  "name_ru": "Блуждающий звёздный блеск",
+  "name_en": "Masterless Starglitter",
+  "type": "consume",
+  "type_text_ru": "Элитный билет обмена",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Молитва"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

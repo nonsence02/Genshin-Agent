@@ -1,0 +1,16 @@
+{
+  "id": "jadeplume-terrorshroom",
+  "name_ru": "Пернатый плесенник",
+  "name_en": "Jadeplume Terrorshroom",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "majestic-hooked-beak",
+    "nagadus-emerald-gemstone",
+    "nagadus-emerald-chunk",
+    "nagadus-emerald-fragment",
+    "nagadus-emerald-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

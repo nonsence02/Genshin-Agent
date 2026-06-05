@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-circle-of-embers-iv",
+  "name_ru": "Мастерство: Палящий круг IV",
+  "name_en": "Domain of Mastery: Circle of Embers IV",
+  "type": "Повышение талантов",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-gold",
+    "guide-to-gold",
+    "teachings-of-gold"
+  ],
+  "coordinates": []
+}

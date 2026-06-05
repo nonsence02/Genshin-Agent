@@ -1,0 +1,13 @@
+{
+  "id": "swiftstep-storm-scout",
+  "name_ru": "Стремительный воин: Разведчик ветра",
+  "name_en": "Swiftstep Storm Scout",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

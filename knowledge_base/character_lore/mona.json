@@ -1,0 +1,85 @@
+{
+  "id": "mona",
+  "name_en": "Mona",
+  "element": "Hydro",
+  "weapon": "Catalyst",
+  "region": "Mondstadt",
+  "rarity": 5,
+  "description": "Astrologist Mona Megistus is a playable Hydro character in Genshin Impact .\n\nAn astrologist of knowledgeable skill and high pride, Mona has settled in Mondstadt to avoid suffering the ire of her master after unwittingly reading the latter's diary.",
+  "role_summary": "Astrologist Mona Megistus is a playable Hydro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Ripple of Fate",
+      "description": "Normal Attack Performs up to 4 water splash attacks that deal Hydro DMG . Charged Attack Consumes a certain amount of Stamina to deal AoE Hydro DMG after a short casting time. Plunging Attack Gathering the might of Hydro, Mona plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Hydro DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Mirror Reflection of Doom",
+      "description": "Creates an illusory Phantom of Fate from coalesced waterspouts. Phantom Has the following special properties: Continuously taunts nearby opponents, attracting their fire. Continuously deals Hydro DMG to nearby opponents. When its duration expires, the Phantom explodes, dealing AoE Hydro DMG . Hold Utilizes water currents to move backwards swiftly before conjuring a Phantom. Only one Phantom created by Mirror Reflection of Doom can exist at any time."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Stellaris Phantasm",
+      "description": "Mona summons the sparkling waves and creates a reflection of the starry sky, applying the Illusory Bubble status to opponents in a large AoE . Illusory Bubble Traps opponents inside a pocket of destiny and also makes them Wet . Renders weaker opponents immobile. When an opponent affected by Illusory Bubble sustains DMG, it has the following effects: Applies an Omen to the opponent, which gives a DMG Bonus, also increasing the DMG of the attack that causes it. Removes the Illusory Bubble, dealing Hydro DMG in the process. Omen During its duration, increases DMG taken by opponents."
+    },
+    {
+      "type": "5s",
+      "name": "4.5s",
+      "description": "15s"
+    },
+    {
+      "type": "Alternate Sprint",
+      "name": "Illusory Torrent",
+      "description": "Alternate Sprint Mona cloaks herself within the water's flow, consuming stamina to move rapidly. When under the effect of Illusory Torrent, Mona can move at high speed on water. Applies the Wet status to nearby opponents when she reappears."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "\"Come 'n' Get Me, Hag!\"",
+      "description": "After she has used Illusory Torrent for 2s, if there are any opponents nearby, Mona will automatically create a Phantom. A Phantom created in this manner lasts for 2s, and its explosion DMG is equal to 50% of Mirror Reflection of Doom ."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Waterborne Destiny",
+      "description": "Increases Mona's Hydro DMG Bonus by a degree equivalent to 20% of her Energy Recharge rate."
+    },
+    {
+      "type": "Witch's Eve Rite Passive",
+      "name": "Genesis of Starsigns",
+      "description": "After completing Witch's Homework : Of Untested Insight , Mona will become a Hexerei character. When the party includes at least 2 Hexerei characters, you will gain the Hexerei: Secret Rite effect, which enhances Hexerei characters. Hexerei: Secret Rite When Mona's Normal Attacks or Charged Attacks hit an opponent, she gains 1 stack of Astral Glow of Mercury, for 8s. Max 3 stacks. This effect can grant at most one stack every 0.1s. When other party members trigger a Vaporize reaction on an enemy, all Astral Glow of Mercury stacks are consumed. Each stack consumed increases the damage of that Vaporize reaction by 5%. Additionally, when Mona's Normal Attacks or Charged Attacks hit an opponent, the enemy's Omen duration is extended by 2s. This effect can trigger at most once every 0.5s, and can extend the Omen by up to 8s through this method."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Principium of Astrology",
+      "description": "When Mona crafts Weapon Ascension Materials , she has a 25% chance to refund a portion of the crafting materials used."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Prophecy of Submersion",
+      "effect": "Description Hexerei Buff Gameplay Notes Preview When any of your own party members hits an opponent affected by an Omen, the effects of Hydro-related Elemental Reactions are enhanced for 8s: Electro-Charged DMG increases by 15%. Lunar-Charged DMG increases by 15%. Vaporize DMG increases by 15%. Hydro Swirl DMG increases by 15%. Lunar-Crystallize DMG increases by 15%. Frozen duration is extended by 15%. When any of your own party members hits an opponent affected by an Omen, the effects of Hydro-related Elemental Reactions are enhanced for 8s: Electro-Charged DMG increases by 15%. Lunar-Charged DMG increases by 15%. Vaporize DMG increases by 15%. Hydro Swirl DMG increases by 15%. Lunar-Crystallize DMG increases by 15%. Frozen duration is extended by 15%. Additionally, when your off-field party members trigger the above effect, the DMG Bonus to the above Hydro-related Elemental Reaction..."
+    },
+    "c2": {
+      "name": "Lunar Chain",
+      "effect": "Description Hexerei Buff Gameplay Notes Advanced Properties Preview When a Normal Attack hits, there is a 20% chance that it will be automatically followed by a Charged Attack . This effect can only occur once every 5s. When a Normal Attack hits, there is a 20% chance that it will be automatically followed by a Charged Attack. Additionally, within 5s after Mona unleashes her Elemental Burst Stellaris Phantasm, her next Normal Attack that hits an enemy will automatically trigger a Charged Attack. This Charged Attack effect can only occur once every 5s. When Mona's Charged Attack hits an opponent, all nearby party members will have their Elemental Mastery increased by 80 for 12s. The automatic Charged Attack does not consume stamina . The Charged Attack created from this constellation does not interrupt the Normal Attack sequence. Once the constellation is triggered, player or third-par..."
+    },
+    "c3": {
+      "name": "Restless Revolution",
+      "effect": "Increases the Level of Stellaris Phantasm by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Prophecy of Oblivion",
+      "effect": "Description Hexerei Buff When any party member attacks an opponent affected by an Omen, their CRIT Rate is increased by 15%. When any party member attacks an opponent affected by an Omen, their CRIT Rate is increased by 15%. When any Hexerei party member attacks an opponent affected by an Omen, their CRIT DMG is increased by 15%."
+    },
+    "c5": {
+      "name": "Mockery of Fortuna",
+      "effect": "Increases the Level of Mirror Reflection of Doom by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Rhetorics of Calamitas",
+      "effect": "Description Hexerei Buff Gameplay Notes Preview Upon entering Illusory Torrent , Mona gains a 60% increase to the DMG of her next Charged Attack per second of movement. A maximum DMG Bonus of 180% can be achieved in this manner. The effect lasts for no more than 8s. While Mona is the active character, when she enters Illusory Torrent or there are opponents affected by an Omen nearby, she gains a 60% increase to the DMG of her next Charged Attack per second. A maximum DMG Bonus of 180% can be achieved in this manner. The effect lasts for no more than 8s. Additionally, the DMG Mona's Charged Attacks deal to opponents affected by an Omen will be increased to 200% of the original DMG. When this effect is ready, a flashing blue light will appear on Mona's left wrist, and an icon will be displayed next to Mona's HP bar. Hover over previews to view in higher quality. ( Preview Preferences )..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Mona",
+  "ai_tags": "Хиллер, Карманный урон"
+}

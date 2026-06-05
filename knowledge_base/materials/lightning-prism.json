@@ -1,10 +1,17 @@
 {
   "id": "lightning-prism",
+  "name_ru": "Призма молнии",
   "name_en": "Lightning Prism",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Electro Hypostasis"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Электро гипостазисы Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lightning_Prism"
+  "dropped_by": [
+    "electro-hypostasis"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

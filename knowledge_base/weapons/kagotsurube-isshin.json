@@ -1,48 +1,80 @@
 {
   "id": "kagotsurube-isshin",
-  "name": "Kagotsurube Isshin",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kagotsurube_Isshin",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "ATK"
-  },
-  "passive": "When a Normal, Charged, or Plunging Attack hits an opponent, it will whip up a Hewing Gale, dealing AoE DMG equal to of ATK and increasing ATK by for. This can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mask of the Wicked Lieutenant",
-        "Gloomy Statuette",
-        "Spectral Husk",
-        "Mask of the Tiger's Bite",
-        "Dark Statuette",
-        "Spectral Heart",
-        "Mask of the One-Horned",
-        "Deathly Statuette",
-        "Spectral Nucleus",
-        "Mask of the Kijin"
-      ]
+  "name_ru": "Кагоцурубэ Иссин",
+  "name_en": "Kagotsurube Isshin",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Ясность искусства Иссин",
+  "passive_description_ru": "Попадания обычной атакой, заряженной атакой или атакой в падении поднимают Секущий ветер, который наносит урон по площади, равный 180% от силы атаки, а также повышает силу атаки на 15% на 8 сек. Этот эффект может возникнуть раз в 8 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mask-of-the-wicked-lieutenant",
+        "name_ru": "Маска злого военачальника",
+        "name_en": "Mask of the Wicked Lieutenant"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mask-of-the-tigers-bite",
+        "name_ru": "Маска тигриной пасти",
+        "name_en": "Mask of the Tiger's Bite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mask-of-the-one-horned",
+        "name_ru": "Маска однорогого",
+        "name_en": "Mask of the One-Horned"
+      },
+      {
+        "id": "mask-of-the-kijin",
+        "name_ru": "Маска кидзин",
+        "name_en": "Mask of the Kijin"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "gloomy-statuette",
+        "name_ru": "Мрачная статуэтка",
+        "name_en": "Gloomy Statuette"
+      },
+      {
+        "id": "dark-statuette",
+        "name_ru": "Тёмная статуэтка",
+        "name_en": "Dark Statuette"
+      },
+      {
+        "id": "deathly-statuette",
+        "name_ru": "Смертельная статуэтка",
+        "name_en": "Deathly Statuette"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

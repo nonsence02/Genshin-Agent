@@ -1,0 +1,27 @@
+{
+  "id": "pour-la-justice",
+  "name_ru": "«Пор ля Жюстис»",
+  "name_en": "\"Pour la Justice\"",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает макс. HP всех членов отряда на 30% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "bird-egg",
+      "count": 4
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "coffee-beans",
+      "count": 3
+    },
+    {
+      "material_id": "almond",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

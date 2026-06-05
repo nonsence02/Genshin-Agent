@@ -1,0 +1,13 @@
+{
+  "id": "rock-cavernous-wayob-manifestation",
+  "name_ru": "Воплощение Вайоб пещер и скал",
+  "name_en": "Rock-Cavernous Wayob Manifestation",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "sigil-of-a-striding-will",
+    "locus-of-a-clear-will",
+    "shard-of-a-shattered-will"
+  ],
+  "coordinates": []
+}

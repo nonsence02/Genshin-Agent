@@ -1,0 +1,15 @@
+{
+  "id": "electro-hypostasis",
+  "name_ru": "Электро гипостазис",
+  "name_en": "Electro Hypostasis",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "lightning-prism",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver"
+  ],
+  "coordinates": []
+}

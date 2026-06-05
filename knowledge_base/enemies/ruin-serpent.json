@@ -1,0 +1,15 @@
+{
+  "id": "ruin-serpent",
+  "name_ru": "Змей руин",
+  "name_en": "Ruin Serpent",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "runic-fang",
+    "prithiva-topaz-gemstone",
+    "prithiva-topaz-chunk",
+    "prithiva-topaz-fragment",
+    "prithiva-topaz-sliver"
+  ],
+  "coordinates": []
+}

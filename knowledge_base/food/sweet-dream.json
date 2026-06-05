@@ -1,0 +1,23 @@
+{
+  "id": "sweet-dream",
+  "name_ru": "«Сладкий сон»",
+  "name_en": "\"Sweet Dream\"",
+  "rarity": 2,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 114 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "milk",
+      "count": 3
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    },
+    {
+      "material_id": "almond",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

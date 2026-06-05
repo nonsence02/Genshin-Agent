@@ -1,0 +1,70 @@
+{
+  "id": "diluc",
+  "name_en": "Diluc",
+  "element": "Pyro",
+  "weapon": "Claymore",
+  "region": "Mondstadt",
+  "rarity": 5,
+  "description": "Diluc Ragnvindr is a playable Pyro character in Genshin Impact .\n\nBorn into the affluent Ragnvindr Clan , Diluc is the current owner of the Dawn Winery and a nobleman of high esteem in Mondstadt . While a past incident caused him to split ways with the Knights of Favonius , he continues to protect Mondstadt in his own way.",
+  "role_summary": "Diluc Ragnvindr is a playable Pyro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Tempered Sword",
+      "description": "Normal Attack Performs up to 4 consecutive strikes. Charged Attack Drains Stamina over time to perform continuous slashes. At the end of the sequence, performs a more powerful slash. Plunging Attack Plunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Searing Onslaught",
+      "description": "Performs a forward slash that deals Pyro DMG . This skill can be consecutively used 3 times. Enters CD if not cast again within a short period."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Dawn",
+      "description": "Releases intense flames to knock back nearby opponents, dealing Pyro DMG . The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive Pyro DMG to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of AoE Pyro DMG . The searing flames that run down his blade cause it to be infused with Pyro ."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Relentless",
+      "description": "Diluc's Charged Attack Stamina Cost is decreased by 50%, and its duration is increased by 3s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Blessing of Phoenix",
+      "description": "The Pyro Infusion provided by Dawn lasts for 4s longer. Additionally, Diluc gains 20% Pyro DMG Bonus during the duration of this effect."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Tradition of the Dawn Knight",
+      "description": "Refunds 15% of the ore used when crafting Claymore -type weapons."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Conviction",
+      "effect": "Diluc deals 15% more DMG to opponents whose HP is above 50%."
+    },
+    "c2": {
+      "name": "Searing Ember",
+      "effect": "Description Gameplay Notes When Diluc takes DMG, his ATK increases by 10% and his ATK SPD increases by 5%. Lasts for 10s. This effect can stack up to 3 times and can only occur once every 1.5s. When Diluc takes damage while having a shield, the effects of this constellation will still activate. This constellation can be triggered by damageless hits from teammates, such as Dori 's Electro application , Kujou Sara 's buff application , and Aura Checks from Anemo characters capable of Elemental Absorption . When Diluc's HP is reduced by HP Loss effects, such as Furina 's Elemental Skill or the Corrosion status, the effects of this constellation will not activate."
+    },
+    "c3": {
+      "name": "Fire and Steel",
+      "effect": "Increases the Level of Searing Onslaught by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Flowing Flame",
+      "effect": "Description Gameplay Notes Preview Casting Searing Onslaught in rhythm greatly increases damage dealt. 2s after casting Searing Onslaught , casting the next Searing Onslaught in the combo deals 40% additional DMG. This effect lasts for 2s. With Flowing Flame, Diluc's hands will be ignited with Pyro after casting Searing Onslaught . Visual effects while Flowing Flame is active"
+    },
+    "c5": {
+      "name": "Phoenix, Harbinger of Dawn",
+      "effect": "Increases the Level of Dawn by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Flaming Sword, Nemesis of the Dark",
+      "effect": "Description Preview After casting Searing Onslaught , the next 2 Normal Attacks within the next 6s will have their DMG and ATK SPD increased by 30%. Additionally, Searing Onslaught will not interrupt the Normal Attack combo. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Flaming Sword, Nemesis of the Dark Preview.mp4 Using Elemental Skill without interrupting Normal Attack combo"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Diluc",
+  "ai_tags": "Main DPS, Пиро аппликатор"
+}

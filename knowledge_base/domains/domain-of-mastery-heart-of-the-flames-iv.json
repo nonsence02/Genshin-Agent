@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-heart-of-the-flames-iv",
+  "name_ru": "Мастерство: Сердце пламени IV",
+  "name_en": "Domain of Mastery: Heart of the Flames IV",
+  "type": "Повышение талантов",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-diligence",
+    "guide-to-diligence",
+    "teachings-of-diligence"
+  ],
+  "coordinates": []
+}

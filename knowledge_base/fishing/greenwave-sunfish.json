@@ -1,0 +1,11 @@
+{
+  "id": "greenwave-sunfish",
+  "kind": "fish",
+  "name_ru": "Рыба-солнце зелёной волны",
+  "name_en": "Greenwave Sunfish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

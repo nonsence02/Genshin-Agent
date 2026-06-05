@@ -1,10 +1,22 @@
 {
   "id": "frostnights-glory",
+  "name_ru": "Слава морозной ночи",
   "name_en": "Frostnight's Glory",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Frostnight Scions"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Потомки морозной ночи Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Frostnight%27s_Glory"
+  "dropped_by": [
+    "blazing-brilliance-frostnight-scion",
+    "gleaming-charge-frostnight-scion",
+    "icy-crystal-frostnight-scion",
+    "tangled-vines-frostnight-scion"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

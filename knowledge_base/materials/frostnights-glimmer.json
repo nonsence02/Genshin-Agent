@@ -1,10 +1,21 @@
 {
   "id": "frostnights-glimmer",
+  "name_ru": "Мерцание морозной ночи",
   "name_en": "Frostnight's Glimmer",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Frostnight Scions"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Потомки морозной ночи",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Frostnight%27s_Glimmer"
+  "dropped_by": [
+    "blazing-brilliance-frostnight-scion",
+    "gleaming-charge-frostnight-scion",
+    "icy-crystal-frostnight-scion",
+    "tangled-vines-frostnight-scion"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

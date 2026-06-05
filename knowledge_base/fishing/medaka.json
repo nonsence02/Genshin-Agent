@@ -1,0 +1,11 @@
+{
+  "id": "medaka",
+  "kind": "fish",
+  "name_ru": "Оризия",
+  "name_en": "Medaka",
+  "bait_id": "fruit-paste-bait",
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,70 @@
+{
+  "id": "yelan",
+  "name_en": "Yelan",
+  "element": "Hydro",
+  "weapon": "Bow",
+  "region": "Liyue",
+  "rarity": 5,
+  "description": "Yelan ( Chinese : 夜兰 Yèlán ) is a playable Hydro character in Genshin Impact .\n\nShe is a mysterious person who claims to work for the Ministry of Civil Affairs , but comes out as a non-entity on their list. She also claims to work for the Yanshang Teahouse , but only uses it for her true job, an intelligence agent collaborating with Ningguang .",
+  "role_summary": "Yelan ( Chinese : 夜兰 Yèlán ) is a playable Hydro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Stealthy Bowshot",
+      "description": "Normal Attack Performs up to 4 consecutive shots with a bow. Charged Attack Perform a more precise Aimed Shot with increased DMG. While aiming, flowing water will accumulate on the arrowhead. A fully charged torrential arrow will deal Hydro DMG . Breakthrough Yelan will enter a \"Breakthrough\" state after spending 5s out of combat, which will cause her next Charged Aimed Shot to have 80% decreased charge time, and once charged, she can fire a \"Breakthrough Barb\" that will deal AoE Hydro DMG based on Yelan's Max HP. Plunging Attack Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Lingering Lifeline",
+      "description": "Fires off a Lifeline that allows her to move rapidly, entangling and marking opponents along its path. When this rapid movement ends, the Lifeline will explode, dealing Hydro DMG to the marked opponents based on Yelan's Max HP. Tap Moves a certain distance forward swiftly. Hold Engages in continuous, swift movement, during which Yelan's resistance to interruption is increased. During this time, Yelan can control this rapid movement and end it by using this Skill again. Additionally, each opponent marked by the Lifeline when it explodes grants Yelan a 34% chance to reset her Breakthrough state."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Depth-Clarion Dice",
+      "description": "Deals AoE Hydro DMG and creates an \"Exquisite Throw,\" which aids her in battle. Exquisite Throw Follows the character around and will initiate a coordinated attack under the following circumstances, dealing Hydro DMG based on Yelan's Max HP: Can occur once every second when your active character uses a Normal Attack . Will occur each time Yelan's Lifeline explodes and hits opponents."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Turn Control",
+      "description": "When the party has 1/2/3/4 Elemental Types, Yelan's Max HP is increased by 6%/12%/18%/30%."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Adapt With Ease",
+      "description": "So long as an Exquisite Throw is in play, your own active character deals 1% more DMG. This increases by a further 3.5% DMG every second. The maximum increase to DMG dealt is 50%. The pre-existing effect will be dispelled if Depth-Clarion Dice is recast during its duration."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Necessary Calculation",
+      "description": "Gains 25% more rewards when dispatched on a Liyue Expedition for 20 hours."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Enter the Plotters",
+      "effect": "Lingering Lifeline gains 1 additional charge ."
+    },
+    "c2": {
+      "name": "1U",
+      "effect": ""
+    },
+    "c3": {
+      "name": "Beware the Trickster's Dice",
+      "effect": "Increases the Level of Depth-Clarion Dice by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Bait-and-Switch",
+      "effect": "Description Gameplay Notes Increases all party members' Max HP by 10% for 25s for every opponent marked by Lifeline when the Lifeline explodes. A maximum increase of 40% Max HP can be attained in this manner. Separate casts of Lifeline can be used to stack this buff to maximum. The duration of all existing stacks is refreshed when this buff is obtained again. Characters' current HPs are adjusted such that they maintain the same ratio of current HP to Max HP when gaining or losing this buff."
+    },
+    "c5": {
+      "name": "Dealer's Sleight",
+      "effect": "Increases the Level of Lingering Lifeline by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Winner Takes All",
+      "effect": "Description Gameplay Notes Advanced Properties Preview After using Depth-Clarion Dice , Yelan will enter the Mastermind state. In this state, all of Yelan's Normal Attacks will be special Breakthrough Barbs. These Breakthrough Barbs will have similar abilities to normal ones and the DMG dealt will be considered Charged Attack DMG, dealing 156% of a normal Breakthrough Barb's DMG. The Mastermind state lasts 20s and will be cleared after Yelan fires 5 arrows. While in the Mastermind state, Yelan will gain a blue aura. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Converted Attacks 1U Charged Attack 2.5s/3 Hits 100 Light 200 0 ✘ Hover over previ..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Yelan",
+  "ai_tags": "Sub DPS, Хиллер"
+}

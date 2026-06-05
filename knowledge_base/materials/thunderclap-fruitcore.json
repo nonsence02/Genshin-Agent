@@ -1,10 +1,17 @@
 {
   "id": "thunderclap-fruitcore",
+  "name_ru": "Плод грома",
   "name_en": "Thunderclap Fruitcore",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Electro Regisvines"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Электро папоротники Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Thunderclap_Fruitcore"
+  "dropped_by": [
+    "electro-regisvine"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

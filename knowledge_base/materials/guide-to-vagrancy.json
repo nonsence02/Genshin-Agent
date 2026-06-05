@@ -1,14 +1,23 @@
 {
   "id": "guide-to-vagrancy",
+  "name_ru": "Указания о «Скитании»",
   "name_en": "Guide to Vagrancy",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Lightless Capital (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Vagrancy"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-overturned-roost-ii",
+    "domain-of-mastery-overturned-roost-iii",
+    "domain-of-mastery-overturned-roost-iv"
+  ],
+  "source_domain": "domain-of-mastery-overturned-roost-ii",
+  "coordinates": []
 }

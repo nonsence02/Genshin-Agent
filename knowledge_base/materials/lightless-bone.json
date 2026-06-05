@@ -1,10 +1,20 @@
 {
   "id": "lightless-bone",
+  "name_ru": "Потускневшая кость",
   "name_en": "Lightless Bone",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Radiant Beasts"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Лучезарные звери",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lightless_Bone"
+  "dropped_by": [
+    "radiant-antelope",
+    "radiant-bladehorn",
+    "radiant-lunapod"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

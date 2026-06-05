@@ -1,48 +1,80 @@
 {
   "id": "redhorn-stonethresher",
-  "name": "Redhorn Stonethresher",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Redhorn_Stonethresher",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "DEF is increased by. Normal and Charged Attack DMG is increased by of DEF.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Narukami's Wisdom",
-        "Concealed Claw",
-        "Old Handguard",
-        "Narukami's Joy",
-        "Concealed Unguis",
-        "Kageuchi Handguard",
-        "Narukami's Affection",
-        "Concealed Talon",
-        "Famed Handguard",
-        "Narukami's Valor"
-      ]
+  "name_ru": "Краснорогий камнеруб",
+  "name_en": "Redhorn Stonethresher",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.192
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.882
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Гокадайо Отогибанаси",
+  "passive_description_ru": "Защита повышается на 28%, урон обычных и заряженных атак повышается на 40% защиты.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "narukamis-wisdom",
+        "name_ru": "Мудрость Наруками",
+        "name_en": "Narukami's Wisdom"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "narukamis-joy",
+        "name_ru": "Радость Наруками",
+        "name_en": "Narukami's Joy"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "narukamis-affection",
+        "name_ru": "Милость Наруками",
+        "name_en": "Narukami's Affection"
+      },
+      {
+        "id": "narukamis-valor",
+        "name_ru": "Доблесть Наруками",
+        "name_en": "Narukami's Valor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "concealed-claw",
+        "name_ru": "Скрытый коготь",
+        "name_en": "Concealed Claw"
+      },
+      {
+        "id": "concealed-unguis",
+        "name_ru": "Скрытый заточенный коготь",
+        "name_en": "Concealed Unguis"
+      },
+      {
+        "id": "concealed-talon",
+        "name_ru": "Скрытый дьявольский коготь",
+        "name_en": "Concealed Talon"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "domain-of-blessing-spring-i",
+  "name_ru": "Подземелье благословения: Весна I",
+  "name_en": "Domain of Blessing: Spring I",
+  "type": "Артефакты",
+  "region": "Ли Юэ",
+  "days_of_week": [],
+  "rewards": [
+    "brave-heart",
+    "lucky-dog"
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,20 @@
 {
   "id": "treasured-flower",
+  "name_ru": "Заветный цветок",
   "name_en": "Treasured Flower",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Hilichurl Rogues"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Хиличурлы-изгои Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Treasured_Flower"
+  "dropped_by": [
+    "anemo-hilichurl-rogue",
+    "hydro-hilichurl-rogue"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

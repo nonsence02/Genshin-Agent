@@ -1,0 +1,16 @@
+{
+  "id": "floating-hydro-fungus",
+  "name_ru": "Парящий Гидро плесенник",
+  "name_en": "Floating Hydro Fungus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "robust-fungal-nucleus",
+    "dormant-fungal-nucleus",
+    "inactivated-fungal-nucleus",
+    "crystalline-cyst-dust",
+    "luminescent-pollen",
+    "fungal-spores"
+  ],
+  "coordinates": []
+}

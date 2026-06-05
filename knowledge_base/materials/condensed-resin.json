@@ -1,0 +1,15 @@
+{
+  "id": "condensed-resin",
+  "name_ru": "Густая смола",
+  "name_en": "Condensed Resin",
+  "type": "consume",
+  "type_text_ru": "Расходный предмет",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Алхимия"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

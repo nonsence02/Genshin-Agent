@@ -1,10 +1,18 @@
 {
   "id": "calla-lily",
+  "name_ru": "Лилия калла",
   "name_en": "Calla Lily",
-  "type": "Local Specialty (Mondstadt)",
-  "days": [],
-  "source": [
-    "Found near lakes in Mondstadt , especially Springvale"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Мондштадта",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "У озёр",
+    "Спрингвейл",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Calla_Lily"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,94 +1,81 @@
 {
   "id": "diona",
-  "name": "Diona",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Diona",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Cryo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Fires an Icy Paw that deals Cryo DMG to opponents and forms a shield on hit. The shield's DMG Absorption scales based on Diona's Max HP, and its duration scales off the number of Icy Paws that hit their target. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Rapidly fires off Icy Paws. Hold Dashes back quickly before firing Icy Paws. The shield created by a Hold attack will gain a",
-    "elemental_burst": "Tosses out a special cold brew that deals AoE Cryo DMG and creates a Drunken Mist in an AoE. Drunken Mist Deals continuous Cryo DMG to opponents within the AoE. Continuously regenerates the HP of characters within the AoE. This Elemental Burst drains energy later than most others. [ ] Drunken Mist first activates after casting and every afterwards for a total of activations dealing Cryo DMG to opponents and regenerating the HP of characters within its AoE. Passive Effects Passive Talent, Drunkards' Farce: \"Opponents who enter the AoE of Signature Mix have"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Firm Arrowhead",
-        "Sharp Arrowhead",
-        "Weathered Arrowhead"
-      ],
-      "special": [
-        "Calla Lily",
-        "Hoarfrost Core"
-      ]
+  "name_ru": "Диона",
+  "name_en": "Diona",
+  "element": "Cryo",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 802.3761,
+      "atk": 17.808,
+      "def": 50.358
     },
-    "talents": {
-      "books": [
-        "Teachings of Freedom",
-        "Guide to Freedom",
-        "Philosophies of Freedom"
-      ],
-      "mob_drops": [
-        "Firm Arrowhead",
-        "Sharp Arrowhead",
-        "Weathered Arrowhead"
-      ],
-      "weekly_boss": [
-        "Shard of a Foul Legacy"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9569.9253,
+      "atk": 212.3972,
+      "def": 600.6189
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Стиль котёнка",
+      "description_ru": "Обычная атака:\nДо пяти выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается холодом. Полностью заряженная холодом стрела наносит Крио урон.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Морозные коготочки",
+      "description_ru": "Выпускает Морозные коготочки, которые наносят противнику Крио урон и создают элементальный щит при ударе.\nПоглощение урона щитом зависит от макс. HP Дионы, а длительность его существования - от количества попавших в цель Морозных коготочков.\n\nБыстрое нажатие:\nМоментально выпускает два Морозных коготочка.\n\nДолгое нажатие:\nОтпрыгивая назад, выпускает пять Морозных коготочков.\nЩит, образованный заряженным навыком, даёт 75% бонус поглощения урона.\n\nЩит поглощает Крио урон с эффективностью 250%. Кроме того, при активации щит накладывает на персонажа кратковременный эффект Крио."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Авторский коктейль",
+      "description_ru": "Бросает приготовленный по особому рецепту ледяной коктейль, который наносит Крио урон по площади и создаёт область Прохладительной дымки.\n\nПрохладительная дымка:\n· Наносит Крио урон врагам, находящимся в области;\n· Периодически восстанавливает HP персонажам, находящимся в области."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Секретное меню",
+      "description_ru": "Щит навыка Морозные коготочки увеличивает скорость передвижения персонажа на 10% и уменьшает его потребление выносливости на 10%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Пьяный балаган",
+      "description_ru": "Уменьшает силу атаки вошедших в зону действия навыка Авторский коктейль врагов на 10% в течение 15 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "За счёт заведения",
+      "description_ru": "При приготовлении идеального блюда с восстанавливающими свойствами имеет 12% шанс получить дополнительное блюдо."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Затяжное послевкусие",
+      "description_ru": "После окончания эффектов навыка Авторский коктейль восстанавливает Дионе 15 ед. энергии."
+    },
+    {
+      "name_ru": "Взболтать, но не мурлыкать",
+      "description_ru": "Увеличивает урон и поглощение щита навыка Морозные коготочки на 15%.\nТакже при попадании навык создаёт другим находящимся неподалёку персонажам на 5 сек. щит, поглощение урона которого составляет 50% от поглощения щита навыка Морозные коготочки."
+    },
+    {
+      "name_ru": "Ещё стаканчик?",
+      "description_ru": "Увеличивает уровень навыка Авторский коктейль на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Конец винной индустрии",
+      "description_ru": "Нахождение в области навыка Авторский коктейль уменьшает время зарядки выстрела Дионы на 60%."
+    },
+    {
+      "name_ru": "Двойной шот со льдом",
+      "description_ru": "Увеличивает уровень навыка Морозные коготочки на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Мы закрываемся!",
+      "description_ru": "Персонажи, находящиеся в области навыка Авторский коктейль, получают следующие эффекты, зависящие от их HP:\n· При HP равном или ниже 50% увеличивает бонус получаемого лечения на 30%.\n· При HP выше 50% увеличивает мастерство стихий на 200 ед."
+    }
+  ],
+  "coordinates": []
 }

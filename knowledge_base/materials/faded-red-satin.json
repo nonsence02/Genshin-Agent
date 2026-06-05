@@ -1,10 +1,29 @@
 {
   "id": "faded-red-satin",
+  "name_ru": "Выцветший красный шёлк",
   "name_en": "Faded Red Satin",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by The Eremites"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пустынники",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Faded_Red_Satin"
+  "dropped_by": [
+    "eremite-axe-vanguard",
+    "eremite-crossbow",
+    "eremite-daythunder",
+    "eremite-desert-clearwater",
+    "eremite-floral-ring-dancer",
+    "eremite-galehunter",
+    "eremite-linebreaker",
+    "eremite-ravenbeak-halberdier",
+    "eremite-scorching-loremaster",
+    "eremite-stone-enchanter",
+    "eremite-sunfrost",
+    "eremite-sword-dancer"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

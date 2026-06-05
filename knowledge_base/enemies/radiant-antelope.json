@@ -1,0 +1,13 @@
+{
+  "id": "radiant-antelope",
+  "name_ru": "Лучезарная антилопа",
+  "name_en": "Radiant Antelope",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "radiant-exoskeleton",
+    "glowing-remains",
+    "lightless-bone"
+  ],
+  "coordinates": []
+}

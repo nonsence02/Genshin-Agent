@@ -1,0 +1,17 @@
+{
+  "id": "fake-fly-bait",
+  "kind": "bait",
+  "name_ru": "Фальшивая муха",
+  "name_en": "Fake Fly Bait",
+  "recipe": [
+    {
+      "material_id": "sakura-bloom",
+      "count": 1
+    },
+    {
+      "material_id": "horsetail",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

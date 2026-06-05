@@ -1,10 +1,18 @@
 {
   "id": "sprayfeather-gill",
+  "name_ru": "Морское перо",
   "name_en": "Sprayfeather Gill",
-  "type": "Local Specialty (Natlan)",
-  "days": [],
-  "source": [
-    "Found in Natlan"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Натлана",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Ручьи Тойек",
+    "Возле Народа Родников",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sprayfeather_Gill"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

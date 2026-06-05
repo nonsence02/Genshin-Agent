@@ -1,0 +1,19 @@
+{
+  "id": "domain-of-forgery-scrying-shadows-iv",
+  "name_ru": "Подземелье воли: Загробные тени IV",
+  "name_en": "Domain of Forgery: Scrying Shadows IV",
+  "type": "Возвышение оружия",
+  "region": "Натлан",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "blazing-sacrificial-hearts-splendor",
+    "blazing-sacrificial-hearts-resolve",
+    "blazing-sacrificial-hearts-hesitance",
+    "blazing-sacrificial-hearts-terror"
+  ],
+  "coordinates": []
+}

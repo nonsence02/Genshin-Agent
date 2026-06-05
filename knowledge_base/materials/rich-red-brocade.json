@@ -1,10 +1,30 @@
 {
   "id": "rich-red-brocade",
+  "name_ru": "Златотканый красный шёлк",
   "name_en": "Rich Red Brocade",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ The Eremites"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пустынники Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Rich_Red_Brocade"
+  "dropped_by": [
+    "eremite-axe-vanguard",
+    "eremite-crossbow",
+    "eremite-daythunder",
+    "eremite-desert-clearwater",
+    "eremite-floral-ring-dancer",
+    "eremite-galehunter",
+    "eremite-linebreaker",
+    "eremite-ravenbeak-halberdier",
+    "eremite-scorching-loremaster",
+    "eremite-stone-enchanter",
+    "eremite-sunfrost",
+    "eremite-sword-dancer"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

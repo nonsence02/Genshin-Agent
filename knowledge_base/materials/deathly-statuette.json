@@ -1,10 +1,23 @@
 {
   "id": "deathly-statuette",
+  "name_ru": "Смертельная статуэтка",
   "name_en": "Deathly Statuette",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Abyss Heralds , Abyss Lectors , and Shadowy Husks ."
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Чёрные Змеи Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Deathly_Statuette"
+  "dropped_by": [
+    "black-serpent-knight-rockbreaker-ax",
+    "black-serpent-knight-windcutter",
+    "shadowy-husk-defender",
+    "shadowy-husk-line-breaker",
+    "shadowy-husk-standard-bearer"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

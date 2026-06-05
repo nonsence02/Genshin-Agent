@@ -1,0 +1,16 @@
+{
+  "id": "stretchy-pyro-fungus",
+  "name_ru": "Растягивающийся Пиро плесенник",
+  "name_en": "Stretchy Pyro Fungus",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "robust-fungal-nucleus",
+    "dormant-fungal-nucleus",
+    "inactivated-fungal-nucleus",
+    "crystalline-cyst-dust",
+    "luminescent-pollen",
+    "fungal-spores"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "minty-fruit-tea",
+  "name_ru": "Фруктовый чай с мятой",
+  "name_en": "Minty Fruit Tea",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "mint",
+      "count": 3
+    },
+    {
+      "material_id": "sunsettia",
+      "count": 3
+    },
+    {
+      "material_id": "berry",
+      "count": 3
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

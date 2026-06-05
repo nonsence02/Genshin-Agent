@@ -1,47 +1,80 @@
 {
   "id": "freedom-sworn",
-  "name": "Freedom-Sworn",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Freedom-Sworn",
-  "profile": {
-    "type": "Sword",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases DMG by. When the character wielding this weapon triggers Elemental Reactions, they gain a Sigil of Rebellion. This can be triggered once every and can be triggered even if said character is not on the field. When you possess Sigils of Rebellion, all of them will be consumed and all nearby party members will obtain \"Millennial Movement: Song of Resistance\" for. \"Millennial Movement: Song of Resistance\" increases Normal, Charged, and Plunging Attack DMG by and increases ATK by. Once this is triggered, you will not gain Sigils of Rebellion for. Of the many effects of the \"Millennial Movement,\" buffs of the same type...",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fetters of the Dandelion Gladiator",
-        "Chaos Device",
-        "Divining Scroll",
-        "Chains of the Dandelion Gladiator",
-        "Chaos Circuit",
-        "Sealed Scroll",
-        "Shackles of the Dandelion Gladiator",
-        "Forbidden Curse Scroll",
-        "Dream of the Dandelion Gladiator"
-      ]
+  "name_ru": "Клятва свободы",
+  "name_en": "Freedom-Sworn",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 43.2
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 198.4608
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Песнь восстания",
+  "passive_description_ru": "Часть Тысячелетней симфонии, что блуждает среди ветров. Увеличивает наносимый урон на 10%. Вызов элементальной реакции даёт персонажу один Талисман воодушевления. Он может возникнуть раз в 0,5 сек., даже когда персонаж в отряде, но не активен. Два собранных Талисмана воодушевления пропадают, на 12 сек. наделяя ближайших членов отряда эффектом «Тысячелетняя симфония: Гимн восстания», который увеличивает урон, наносимый обычной атакой, заряженной атакой и атакой в падении, на 16%, а силу атаки - на 20%. В течение 20 сек. после активации эффекта Талисманы воодушевления появляться не будут. Тысячелетняя симфония с эффектами, влияющими на те же навыки, не складывается.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fetters-of-the-dandelion-gladiator",
+        "name_ru": "Кандалы львиного клыка",
+        "name_en": "Fetters of the Dandelion Gladiator"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chains-of-the-dandelion-gladiator",
+        "name_ru": "Цепи львиного клыка",
+        "name_en": "Chains of the Dandelion Gladiator"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "shackles-of-the-dandelion-gladiator",
+        "name_ru": "Оковы львиного клыка",
+        "name_en": "Shackles of the Dandelion Gladiator"
+      },
+      {
+        "id": "dream-of-the-dandelion-gladiator",
+        "name_ru": "Мечты львиного клыка",
+        "name_en": "Dream of the Dandelion Gladiator"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

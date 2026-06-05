@@ -1,0 +1,27 @@
+{
+  "id": "sin-the-kind-that-doesnt-need-to-be-dealt-with",
+  "name_ru": "Грех: Тот, с которым не борются",
+  "name_en": "Sin: The Kind that Doesn't Need to be Dealt With",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает бонус лечения всех членов отряда на 25% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "onion",
+      "count": 3
+    },
+    {
+      "material_id": "fowl",
+      "count": 3
+    },
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "potato",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

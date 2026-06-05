@@ -1,0 +1,27 @@
+{
+  "id": "millhavens-morning-plate",
+  "name_ru": "«Завтрак Мельничной Пристани»",
+  "name_en": "Millhaven's Morning Plate",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 100 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "sausage",
+      "count": 1
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 1
+    },
+    {
+      "material_id": "windrest-flower",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

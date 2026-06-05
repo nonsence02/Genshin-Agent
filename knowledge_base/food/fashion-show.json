@@ -1,0 +1,27 @@
+{
+  "id": "fashion-show",
+  "name_ru": "«Модный показ»",
+  "name_en": "\"Fashion Show\"",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 34% от макс. HP выбранному персонажу, затем в течение 30 сек. каждые 5 сек. восстанавливает 980 HP.",
+  "recipe": [
+    {
+      "material_id": "sunsettia",
+      "count": 3
+    },
+    {
+      "material_id": "milk",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

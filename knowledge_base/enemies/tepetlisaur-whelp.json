@@ -1,0 +1,13 @@
+{
+  "id": "tepetlisaur-whelp",
+  "name_ru": "Детёныш тепетлизавра",
+  "name_en": "Tepetlisaur Whelp",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "tyrants-fang",
+    "seasoned-fang",
+    "juvenile-fang"
+  ],
+  "coordinates": []
+}

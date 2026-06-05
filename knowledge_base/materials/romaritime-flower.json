@@ -1,10 +1,16 @@
 {
   "id": "romaritime-flower",
+  "name_ru": "Ромарин",
   "name_en": "Romaritime Flower",
-  "type": "Local Specialty (Fontaine)",
-  "days": [],
-  "source": [
-    "Found mainly in or around bodies of water in Fontaine"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Фонтейна",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Салосское морское плато",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Romaritime_Flower"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "geovishap",
+  "name_ru": "Геовишап",
+  "name_en": "Geovishap",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "fossilized-bone-shard",
+    "sturdy-bone-shard",
+    "fragile-bone-shard"
+  ],
+  "coordinates": []
+}

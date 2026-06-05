@@ -1,0 +1,80 @@
+{
+  "id": "cloudforged",
+  "name_ru": "Выкованный из облаков",
+  "name_en": "Cloudforged",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 36
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 165.384
+    }
+  },
+  "passive_name_ru": "Скальная кузница",
+  "passive_description_ru": "После понижения энергии мастерство стихий экипированного персонажа увеличивается на 40 ед. Эффект длится 18 сек. и складывается до 2 раз.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
+      },
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
+      },
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
+      }
+    ],
+    "elite_drops": [
+      {
+        "id": "ruined-hilt",
+        "name_ru": "Сломанный эфес",
+        "name_en": "Ruined Hilt"
+      },
+      {
+        "id": "splintered-hilt",
+        "name_ru": "Расщеплённый эфес",
+        "name_en": "Splintered Hilt"
+      },
+      {
+        "id": "still-smoldering-hilt",
+        "name_ru": "Неугасающий эфес",
+        "name_en": "Still-Smoldering Hilt"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "recruits-insignia",
+        "name_ru": "Шеврон рядового",
+        "name_en": "Recruit's Insignia"
+      },
+      {
+        "id": "sergeants-insignia",
+        "name_ru": "Шеврон сержанта",
+        "name_en": "Sergeant's Insignia"
+      },
+      {
+        "id": "lieutenants-insignia",
+        "name_ru": "Шеврон офицера",
+        "name_en": "Lieutenant's Insignia"
+      }
+    ]
+  },
+  "coordinates": []
+}

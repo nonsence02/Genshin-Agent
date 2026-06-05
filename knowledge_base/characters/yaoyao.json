@@ -1,94 +1,81 @@
 {
   "id": "yaoyao",
-  "name": "Yaoyao",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Yaoyao",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Dendro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Calls upon \"Yuegui: Throwing Mode,\" a special device created by a certain adeptus to help Yaoyao solve her problems. This skill will be used differently in Holding Mode. Hold Enters Aiming Mode to adjust the throw direction. Yuegui: Throwing Mode Throws out White Jade Radishes that will explode upon hitting characters or opponents, dealing Dendro DMG to opponents within a certain AoE, and healing characters within that same AoE based on Yaoyao's Max HP. If a radish does not hit either an opponent or a character, the radish will remain where it is and explode on contact with a character or opponent, or will explode after its duration expires. Yuegui: Throwing Mode will choose its...",
-    "elemental_burst": "At the enjoinment of a certain adeptus, Yuegui's full potential can be unleashed in an emergency, dealing Dendro DMG to nearby opponents and entering an (in some sense) unsurpassed Adeptal Legacy state. Adeptal Legacy White Jade Radishes generated will be changed to heal and deal DMG according to this skill. Explosions will heal all nearby party members, and the Dendro DMG that they deal will be viewed as Elemental Burst DMG instead. Summons \"Yuegui: Jumping Mode\" at intervals until their limit has been reached. The behavior of this version of Yuegui is the same as that of \"Yuegui: Throwing Mode\" in the Elemental Skill, Raphanus Sky Cluster. A maximum of Yuegui: Jumping Mode can exist at..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Nagadus Emerald Sliver",
-        "Nagadus Emerald Fragment",
-        "Nagadus Emerald Chunk",
-        "Nagadus Emerald Gemstone"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "special": [
-        "Jueyun Chili",
-        "Quelled Creeper"
-      ]
+  "name_ru": "Яо Яо",
+  "name_en": "Yaoyao",
+  "element": "Dendro",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1030.3239,
+      "atk": 17.808,
+      "def": 62.9475
     },
-    "talents": {
-      "books": [
-        "Teachings of Diligence",
-        "Guide to Diligence",
-        "Philosophies of Diligence"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "weekly_boss": [
-        "Daka's Bell"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12288.6544,
+      "atk": 212.3972,
+      "def": 750.7737
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Вращающееся копьё",
+      "description_ru": "Обычная атака:\nДо четырёх ударов копьём.\n\nЗаряженная атака:\nВыпад, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Небесное скопление редьки",
+      "description_ru": "Призывает на поле боя Бросающего Юэгуя - особый механизм, изобретение некоего Адепта, которое помогает Яо Яо справиться с неприятностями.\nПри долгом нажатии способ активации навыка меняется.\n\nДолгое нажатие\nПереходит в режим прицеливания, в котором можно выбрать направление бросков.\n\nБросающий Юэгуй\nБросает Редьку белого нефрита, которая при попадании в противников или персонажей взрывается, нанося противникам в определённой области Дендро урон и восстанавливая HP персонажам в этой же области пропорционально макс. HP Яо Яо. Если Редька белого нефрита не попадает в противника или персонажа, она остаётся на месте попадания и взрывается, если её коснётся персонаж или противник или истечёт время её действия.\nЦели для Редьки из белого нефрита выбираются в соответствии с обстановкой поблизости:\n· Если у всех персонажей рядом более 70% HP, целью для бросков станет ближайший противник.\n· Если у персонажей рядом 70% HP или менее, в качестве цели будет выбран персонаж рядом с наименьшим количеством HP. Если количество HP персонажей выше 70%, но ниже 100%, а противников рядом нет, броски также совершаются в персонажей. В противном случае броски совершаются в случайном направлении.\n\nОдновременно может существовать не более 2 Бросающих Юэгуев."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Сошествие лунной яшмы",
+      "description_ru": "По велению некоего Адепта в чрезвычайной ситуации высвобождает всю силу Юэгуя, нанося противникам поблизости Дендро урон, и входит во всепобеждающее (в некотором смысле) состояние Наследия Адептов.\n\nНаследие Адептов\n· Создаваемая Редька белого нефрита преобразуется для нанесения урона или лечения в соответствии с характеристиками данного навыка. Когда она взрывается, то восстанавливает HP всем персонажам поблизости, а наносимый Дендро урон считается уроном взрыва стихии.\n· Периодически призывает Прыгающих Юэгуев до тех пор, пока их количество не достигнет лимита. Прыгающий Юэгуй ведёт себя так же, как Бросающий Юэгуй, призываемый элементальным навыком Небесное скопление редьки. Одновременно может существовать не более 3 Прыгающих Юэгуев.\n· Повышает скорость передвижения Яо Яо на 15%.\n· Дендро сопротивление Яо Яо увеличивается. \n\nЕсли Яо Яо покинет поле боя, состояние Наследия Адептов прервётся. С завершением этого состояния все Прыгающие Юэгуи исчезнут."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Звёздная россыпь",
+      "description_ru": "Находясь в состоянии Наследия Адептов навыка Сошествие лунной яшмы, Яо Яо во время спринта, прыжков или бега постоянно бросает во врагов поблизости Редьку белого нефрита. Таким способом можно метать 1 редьку раз в 0,6 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Забота о ближнем",
+      "description_ru": "Когда Редька белого нефрита взрывается, то восстанавливает HP персонажам в области её действия каждую 1 сек. пропорционально 0,8% от макс. HP Яо Яо. Эффект длится 5 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Догоняя на цыпочках",
+      "description_ru": "Когда Яо Яо в отряде, ваши персонажи не будут при приближении спугивать кристальных бабочек и некоторые другие типы животных.\nСущества, на которых действует этот навык, указаны в подразделе «Прочие» раздела «Существа / Фауна» меню Архив."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Наставничество Адепта",
+      "description_ru": "Когда Редька белого нефрита взрывается, активные персонажи в области её действия получают 15% бонус Дендро урона на 8 сек., а также восстанавливают 15 ед. выносливости. Восстанавливать выносливость таким образом можно 1 раз в 5 сек."
+    },
+    {
+      "name_ru": "Беспорочность",
+      "description_ru": "Если взрывы Редьки белого нефрита наносят противникам урон, когда Яо Яо пребывает в состоянии Наследия Адептов навыка Сошествие лунной яшмы, то она восстанавливает 3 ед. энергии. Восстанавливать энергию таким образом можно 1 раз в 0,8 сек."
+    },
+    {
+      "name_ru": "Верность и доброта",
+      "description_ru": "Увеличивает уровень навыка Небесное скопление редьки на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Дружелюбие",
+      "description_ru": "После активации Небесного скопления редьки или Сошествия лунной яшмы мастерство стихий Яо Яо увеличивается пропорционально 0,3% от её макс. HP на 8 сек. Таким образом к мастерству стихий может прибавиться до 120 ед."
+    },
+    {
+      "name_ru": "Сострадательность",
+      "description_ru": "Увеличивает уровень навыка Сошествие лунной яшмы на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Благодетельность",
+      "description_ru": "С каждым третьим броском Редьки белого нефрита Бросающий Юэгуй дополнительно бросает 1 Мегаредьку, которая обладает большей зоной поражения и следующими эффектами при взрыве:\n· Наносит Дендро урон по площади, равный 75% от силы атаки Яо Яо.\n· Восстанавливает HP активного персонажа пропорционально 7,5% от макс. HP Яо Яо.\n\nКаждый Бросающий Юэгуй может бросить до 2 Мегаредек."
+    }
+  ],
+  "coordinates": []
 }

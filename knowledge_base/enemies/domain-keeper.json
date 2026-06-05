@@ -1,0 +1,13 @@
+{
+  "id": "domain-keeper",
+  "name_ru": "Хранитель измерения",
+  "name_en": "Domain Keeper",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "jeweled-flaming-hilt",
+    "fractured-flaming-hilt",
+    "faded-flaming-hilt"
+  ],
+  "coordinates": []
+}

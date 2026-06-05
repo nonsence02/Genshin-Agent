@@ -1,0 +1,19 @@
+{
+  "id": "domain-of-forgery-altar-of-sands-iv",
+  "name_ru": "Воля: Песчаный алтарь IV",
+  "name_en": "Domain of Forgery: Altar of Sands IV",
+  "type": "Возвышение оружия",
+  "region": "Инадзума",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "narukamis-valor",
+    "narukamis-affection",
+    "narukamis-joy",
+    "narukamis-wisdom"
+  ],
+  "coordinates": []
+}

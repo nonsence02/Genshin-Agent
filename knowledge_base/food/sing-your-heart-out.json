@@ -1,0 +1,27 @@
+{
+  "id": "sing-your-heart-out",
+  "name_ru": "«Радостное пение»",
+  "name_en": "Sing Your Heart Out",
+  "rarity": 4,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Небольшой сюрприз от клана Цветочного Пера.",
+  "recipe": [
+    {
+      "material_id": "mint",
+      "count": 1
+    },
+    {
+      "material_id": "embercore-flower",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    },
+    {
+      "material_id": "jam",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

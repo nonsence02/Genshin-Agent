@@ -1,0 +1,13 @@
+{
+  "id": "large-anemo-slime",
+  "name_ru": "Большой Анемо слайм",
+  "name_en": "Large Anemo Slime",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "slime-concentrate",
+    "slime-secretions",
+    "slime-condensate"
+  ],
+  "coordinates": []
+}

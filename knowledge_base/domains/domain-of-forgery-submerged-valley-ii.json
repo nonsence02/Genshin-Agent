@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-forgery-submerged-valley-ii",
+  "name_ru": "Воля: Затопленное ущелье II",
+  "name_en": "Domain of Forgery: Submerged Valley II",
+  "type": "Возвышение оружия",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "boreal-wolfs-cracked-tooth",
+    "boreal-wolfs-milk-tooth"
+  ],
+  "coordinates": []
+}

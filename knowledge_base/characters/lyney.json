@@ -1,94 +1,81 @@
 {
   "id": "lyney",
-  "name": "Lyney",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lyney",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Pyro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Lyney does a flourish with his hat, unleashing a firework surprise! When used, he will clear all current Prop Surplus stacks and deal AoE Pyro DMG to opponents in front of him. DMG will be increased according to the stacks cleared, and this will also regenerate Lyney's HP based on his Max HP. When a Grin-Malkin Hat created by Lyney is on the field, the fireworks will cause it to explode, dealing AoE Pyro DMG equal to that of a Pyrotechnic Strike. The DMG dealt through the Grin-Malkin Hat in this way is considered Charged Attack DMG. When this skill hits at least one enemy, it generates Elemental Particles. This Elemental Skill can be used in Aiming Mode. If used, Lyney will exit Aiming Mode.",
-    "elemental_burst": "Unleashing his magic, Lyney turns himself into a Grin-Malkin Cat that can move around quickly. (Not to be mistaken for the Grin-Malkin Hat. They're two different props!) When the Grin-Malkin Cat gets close to opponents, it will send flames falling down on them, dealing at most instance of Pyro DMG to each opponent. When the duration ends, he will dismiss the Grin-Malkin Cat and ignite fireworks that deal AoE Pyro DMG, summon Grin-Malkin Hat, and grant himself Prop Surplus stack. Grin-Malkin Cat can be actively canceled. While in the Grin-Malkin Cat state, Lyney gains a"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "special": [
-        "Rainbow Rose",
-        "Emperor's Resolution"
-      ]
+  "name_ru": "Лини",
+  "name_en": "Lyney",
+  "element": "Pyro",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 857.988,
+      "atk": 24.7646,
+      "def": 41.881
     },
-    "talents": {
-      "books": [
-        "Teachings of Equity",
-        "Guide to Equity",
-        "Philosophies of Equity"
-      ],
-      "mob_drops": [
-        "Recruit's Insignia",
-        "Sergeant's Insignia",
-        "Lieutenant's Insignia"
-      ],
-      "weekly_boss": [
-        "Primordial Greenbloom"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 11021.3196,
+      "atk": 318.1072,
+      "def": 537.9881
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Форсирование карты с подменой",
+      "description_ru": "Обычная атака\nПроизводит до четырёх последовательных выстрелов из лука.\n\nАтака в падении\nВыпускает град стрел, которые при приземлении персонажа наносят урон по площади.\n\nЗаряженная атака\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания на наконечнике стрелы собирается сила пламени. Эффект зависит от длительности заряда стрелы:\n· Уровень заряда 1: выпускает стрелу, наполненную силой Пиро, которая наносит Пиро урон.\n· Уровень заряда 2: выпускает стрелу-реквизит, которая наносит Пиро урон и при попадании вызывает Хохочущего котошляпа.\nЕсли во время выстрела стрелой-реквизитом у Лини более 60% HP, он жертвует частью HP и получает 1 уровень Избыточного реквизита. Эффект может складываться до 5 раз и пропадает через 30 сек. после того, как Лини покидает бой.\nПри использовании этого способа HP Лини не может опуститься ниже 60% от его макс. HP.\n\nХохочущий котошляп\n· Дразнит врагов, отвлекая их атаки на себя. Котошляп может дразнить каждого из врагов один раз в 5 сек.\n· Его прочность зависит от макс. HP Лини.\n· Если его уничтожают, либо если его время заканчивается, он выстреливает в 1 противника поблизости Пиротехническим снарядом, который наносит Пиро урон.\nОдновременно может существовать только 1 котошляп.\n\nАрхэ: Пневма\nС некоторым интервалом, на месте попадания стрелы-реквизита нисходит Игла дыхания душ, наносящая Пиро урон пневмы."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Ошеломляющие огни",
+      "description_ru": "Лини взмахивает шляпой, запуская сюрприз-фейерверк.\nПри активации снимаются все текущие уровни Избыточного реквизита и врагам впереди наносится Пиро урон по площади. В зависимости от количества снятых уровней эффекта урон увеличивается. Кроме того, HP Лини восстанавливается в зависимости от его макс. HP.\n\nЕсли на поле боя существует Хохочущий котошляп, созданный Лини, фейерверк заставит его взорваться и нанести Пиро урон по площади, пропорциональный урону Пиротехнического снаряда.\nУрон от взрыва котошляпа, наносимый таким образом, считается уроном заряженной атаки."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Великий фокус: Парад чудес",
+      "description_ru": "Лини по волшебству превращается в проворного Хохочущего шляпокота. (Не путать с Хохочущим котошляпом. Это другой реквизит!)\nПриблизившись к врагам, Хохочущий шляпокот низвергает на врагов пламя. Каждый из них получает Пиро урон не более 1 раза. После истечения времени действия Лини отбрасывает личину Хохочущего шляпокота и запускает великолепный фейерверк, наносит Пиро урон по площади, призывает 1 Хохочущего котошляпа и получает 1 уровень Избыточного реквизита.\n\nДействие Хохочущего шляпокота может быть прекращено произвольно."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Опасное выступление",
+      "description_ru": "Если выпущенная стрела-реквизит расходует HP Лини, призываемый ею Хохочущий котошляп, поразив цель, восстанавливает 3 ед. энергии Лини и увеличивает урон на 80% от силы атаки."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Заключительные овации",
+      "description_ru": "Урон Лини против врагов, находящихся под действием Пиро получает следующие усиления:\n· Увеличивает наносимый урон на 60%. \n· Каждый член отряда, чей элементальный тип - Пиро (за исключением самого Лини) увеличивает урон ещё на 20%.\nПовысить урон Лини против врагов под воздействием Пиро таким образом можно не более чем на 100%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Тривиальные наблюдения",
+      "description_ru": "Отмечает диковинки Фонтейна на мини-карте."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Взбалмошные чудеса",
+      "description_ru": "Допускает одновременное существование двух Хохочущих котошляпов.\nКроме того, стрела-реквизит при попадании будет призывать 2 Хохочущих котошляпов, а также наделять Лини 1 дополнительным уровнем Избыточного реквизита. Эффект может возникнуть один раз в 15 сек."
+    },
+    {
+      "name_ru": "Завлекательное фразёрство",
+      "description_ru": "Каждые 2 сек. на поле боя Лини получает 1 уровень Предельного внимания, которое повышает крит. урон Лини на 20%. Эффект складывается до 3 раз и исчезает, когда Лини покидает бой."
+    },
+    {
+      "name_ru": "Ловкость рук",
+      "description_ru": "Увеличивает уровень навыка Форсирование карты с подменой на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Заученный и отрепетированный план",
+      "description_ru": "Попадания заряженной атакой Пиро Лини понижают Пиро сопротивление поражённого врага на 20% на 6 сек."
+    },
+    {
+      "name_ru": "Проникновение в тайны",
+      "description_ru": "Увеличивает уровень навыка Великий фокус: Парад чудес на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Неискренняя улыбка",
+      "description_ru": "Выпустив стрелу-реквизит, Лини выстреливает Пиротехническим снарядом: Реприза, который наносит 80% урона Пиротехнического снаряда. Урон считается уроном заряженной атаки."
+    }
+  ],
+  "coordinates": []
 }

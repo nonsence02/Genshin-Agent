@@ -1,0 +1,27 @@
+{
+  "id": "poissonchant-pie",
+  "name_ru": "Пирог Пуассон-Шансон",
+  "name_en": "Poissonchant Pie",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 1
+    },
+    {
+      "material_id": "bacon",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

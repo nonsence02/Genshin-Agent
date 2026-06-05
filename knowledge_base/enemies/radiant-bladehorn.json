@@ -1,0 +1,13 @@
+{
+  "id": "radiant-bladehorn",
+  "name_ru": "Лучезарный мечерог",
+  "name_en": "Radiant Bladehorn",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "radiant-exoskeleton",
+    "glowing-remains",
+    "lightless-bone"
+  ],
+  "coordinates": []
+}

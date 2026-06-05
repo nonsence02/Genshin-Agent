@@ -1,0 +1,27 @@
+{
+  "id": "hearthfires-trail",
+  "name_ru": "Следы огня",
+  "name_en": "Hearthfire's Trail",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 40% от макс. HP + 2350 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 3
+    },
+    {
+      "material_id": "onion",
+      "count": 2
+    },
+    {
+      "material_id": "marcotte",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

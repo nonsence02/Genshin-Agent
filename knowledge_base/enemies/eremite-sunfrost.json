@@ -1,0 +1,13 @@
+{
+  "id": "eremite-sunfrost",
+  "name_ru": "Пустынник: Пылающий лёд",
+  "name_en": "Eremite Sunfrost",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "crispy-spring-rolls",
+  "name_ru": "Жареные весенние рулетики",
+  "name_en": "Crispy Spring Rolls",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 3
+    },
+    {
+      "material_id": "bamboo-shoot",
+      "count": 2
+    },
+    {
+      "material_id": "mushroom",
+      "count": 2
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

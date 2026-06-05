@@ -1,0 +1,16 @@
+{
+  "id": "cryo-samachurl",
+  "name_ru": "Крио шамачурл",
+  "name_en": "Cryo Samachurl",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "forbidden-curse-scroll",
+    "sealed-scroll",
+    "divining-scroll",
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

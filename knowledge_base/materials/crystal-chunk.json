@@ -1,0 +1,16 @@
+{
+  "id": "crystal-chunk",
+  "name_ru": "Обломок кристалла",
+  "name_en": "Crystal Chunk",
+  "type": "exchange",
+  "type_text_ru": "Руда для ковки",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Логово Ужаса Бури"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,14 +1,24 @@
 {
   "id": "teachings-of-moonlight",
+  "name_ru": "Учения о «Лунном свете»",
   "name_en": "Teachings of Moonlight",
-  "type": "Character Talent Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Lightless Capital (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Teachings_of_Moonlight"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-fallen-city-i",
+    "domain-of-mastery-fallen-city-ii",
+    "domain-of-mastery-fallen-city-iii",
+    "domain-of-mastery-fallen-city-iv"
+  ],
+  "source_domain": "domain-of-mastery-fallen-city-i",
+  "coordinates": []
 }

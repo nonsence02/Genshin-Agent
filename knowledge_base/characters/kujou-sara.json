@@ -1,92 +1,81 @@
 {
   "id": "kujou-sara",
-  "name": "Kujou Sara",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Kujou_Sara",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Retreats rapidly with the speed of a tengu, summoning the protection of the Crowfeather. Gains Crowfeather Cover for, and when Kujou Sara fires a fully-charged Aimed Shot, Crowfeather Cover will be consumed, and will leave a Crowfeather at the target location. Crowfeathers will trigger Tengu Juurai: Ambush after a short time, dealing Electro DMG and granting the active character within its AoE an ATK Bonus based on Kujou Sara's Base ATK. The ATK Bonuses from different Tengu Juurai will not stack, and their effects and duration will be determined by the last Tengu Juurai to take effect. When Tengu Juurai: Ambush hits at least one enemy, it generates Elemental Particles. When Crowfeather...",
-    "elemental_burst": "Casts down Tengu Juurai: Titanbreaker, dealing AoE Electro DMG. Afterwards, Tengu Juurai: Titanbreaker spreads out into consecutive bouts of Tengu Juurai: Stormcluster, dealing AoE Electro DMG. Tengu Juurai: Titanbreaker and Tengu Juurai: Stormcluster can provide the active character within their AoE with the same ATK Bonus as given by the Elemental Skill, Tengu Stormcall. The ATK Bonus provided by various kinds of Tengu Juurai will not stack, and their effects and duration will be determined by the last Tengu Juurai to take effect. This Elemental Burst drains energy later than most others. [ ] Tengu Juurai: Titanbreaker DMG and Tengu Juurai: Stormcluster DMG will snapshot Kujou Sara's..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "special": [
-        "Dendrobium",
-        "Storm Beads"
-      ]
+  "name_ru": "Кудзё Сара",
+  "name_en": "Kujou Sara",
+  "element": "Electro",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 802.3761,
+      "atk": 16.3834,
+      "def": 52.647
     },
-    "talents": {
-      "books": [
-        "Teachings of Elegance",
-        "Guide to Elegance",
-        "Philosophies of Elegance"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "weekly_boss": [
-        "Ashen Heart"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9569.9253,
+      "atk": 195.4054,
+      "def": 627.9198
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Стрелковое искусство тэнгу",
+      "description_ru": "Обычная атака:\nДо пяти выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания наконечник стрелы заряжается потрескивающей молнией. Полностью заряженная силой грозы стрела наносит Электро урон.\nКогда персонаж находится в состоянии Укрытия вороньего пера, полностью заряженный выстрел при попадании оставляет после себя Воронье перо.\n\nАтака в падении:\nВыпускает град стрел в воздухе, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Призыв грозы тэнгу",
+      "description_ru": "Быстро отступает со скоростью тэнгу и призывает защиту Вороньего пера.\nКудзё Сара получает Укрытие вороньего пера на 18 сек., и когда она совершает полностью заряженный прицельный выстрел, Укрытие вороньего пера тратится и оставляет на месте цели Воронье перо.\nЧерез короткое время Вороньи перья активируют Тэнгу дзюрай: Засада, которые наносят противникам в зоне действия Электро урон и дают активному персонажу, находящемуся в зоне действия, бонус атаки, зависящий от базовой атаки Кудзё Сары.\n\nБонусы атаки от разных Тэнгу дзюрай не складываются, а их эффекты и длительность считаются по последнему появившемуся Тэнгу дзюрай."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Подчинение: Коко сэндо",
+      "description_ru": "По позиции цели бьёт Тэнгу дзюрай: Крушитель титанов, который наносит Электро урон по площади. После этого Тэнгу дзюрай: Крушитель титанов разделяется на 4 линии последовательных Тэнгу дзюрай: Громокластер, которые наносят Электро урон по площади.\nТэнгу дзюрай: Крушитель титанов и Тэнгу дзюрай: Громокластер позволяют активному персонажу в зоне действия получить тот же бонус атаки, что и во время элементального навыка Призыв грозы тэнгу.\n\nБонусы атаки от разных Тэнгу дзюрай не складываются, а их эффекты и длительность считаются по последнему появившемуся Тэнгу дзюрай."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Недвижимая воля",
+      "description_ru": "Нахождение в состоянии Укрытия вороньего пера навыка Призыв грозы тэнгу уменьшает время заряда прицельного выстрела на 60%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Этикет",
+      "description_ru": "Когда Тэнгу дзюрай: Засада попадает атакой по противнику, Кудзё Сара восстанавливает 1,2 ед. энергии всем членам отряда за каждые 100% своего показателя восстановления энергии.\nЭтот эффект может возникнуть только 1 раз каждые 3 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Обзор местности",
+      "description_ru": "Уменьшает длительность экспедиций в Инадзуме на 25%."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Глаз ворона",
+      "description_ru": "Когда Тэнгу дзюрай дают персонажам бонус атаки или попадают по противнику, время отката навыка Призыв грозы тэнгу уменьшается на 1 сек.\nЭтот эффект может возникнуть только 1 раз каждые 3 сек."
+    },
+    {
+      "name_ru": "Тёмные крылья",
+      "description_ru": "Активация навыка Призыв грозы тэнгу оставляет на месте Кудзё Сары Воронье перо, которое призывает слабого Тэнгу дзюрай: Засада, наносящего 30% изначального урона."
+    },
+    {
+      "name_ru": "Внутренняя война",
+      "description_ru": "Увеличивает уровень навыка Подчинение: Коко сэндо на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Неоспоримое доказательство",
+      "description_ru": "Количество призванных навыком Подчинение: Коко сэндо Тэнгу дзюрай: Громокластер увеличено до 6."
+    },
+    {
+      "name_ru": "Заклинательная песнь",
+      "description_ru": "Увеличивает уровень навыка Призыв грозы тэнгу на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Грех гордыни",
+      "description_ru": "Критический Электро урон персонажей, получивших бонус атаки от Тэнгу дзюрай, увеличивается на 60%."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,10 +1,19 @@
 {
   "id": "mistshroud-manifestation",
+  "name_ru": "Туманное воплощение",
   "name_en": "Mistshroud Manifestation",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Wasteland Wild Hunts"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая Охота",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mistshroud_Manifestation"
+  "dropped_by": [
+    "wilderness-exile",
+    "wilderness-hunter"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

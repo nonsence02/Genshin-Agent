@@ -1,0 +1,69 @@
+{
+  "id": "traveler-anemo",
+  "name_en": "Traveler (Anemo)",
+  "element": "Anemo",
+  "weapon": "",
+  "region": "",
+  "rarity": null,
+  "description": "Anemo is the first Element the Traveler acquires by resonating with the Statue of The Seven in Mondstadt .",
+  "role_summary": "Anemo is the first Element the Traveler acquires by resonating with the Statue of The Seven in Mondstadt .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Foreign Ironwind",
+      "description": "Normal Attack Performs up to 5 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Palm Vortex",
+      "description": "Grasping the wind's might, you form a vortex of vacuum in your palm, causing continuous Anemo DMG to opponents in front of you. The vacuum vortex explodes when the skill duration ends, causing a greater amount of Anemo DMG over a larger area. Hold DMG and AoE will gradually increase. Elemental Absorption If the vortex comes into contact with Hydro / Pyro / Cryo / Electro , it will deal additional Elemental DMG of that type. Elemental Absorption may only occur once per use."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Gust Surge",
+      "description": "Guiding the path of the wind currents, you summon a forward-moving tornado that pulls objects and opponents towards itself, dealing continuous Anemo DMG . Elemental Absorption If the tornado comes into contact with Hydro / Pyro / Cryo / Electro , it will deal additional Elemental DMG of that type. Elemental Absorption may only occur once per use."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Slitting Wind",
+      "description": "The last hit of a Normal Attack combo unleashes a wind blade, dealing 60% of ATK as Anemo DMG to all opponents in its path."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Second Wind",
+      "description": "Palm Vortex kills regenerate 2% HP for 5s. This effect can only occur once every 5s."
+    },
+    {
+      "type": "Additional Talent",
+      "name": "Foreign Windwrath",
+      "description": "Draw new strength from journeys past. For every element you have resonated with, you gain additional buffs Additional Buff Effects The Traveler gains an attribute bonus for every element they have resonated with: Anemo : CRIT Rate is increased by 10%, Geo : DEF is increased by 20%, Electro : Energy Recharge is increased by 20%, Dendro : Elemental Mastery is increased by 60, Hydro : HP is increased by 20%, Pyro : ATK is increased by 20%, Cryo : CRIT DMG is increased by 20%. . Additionally, when Pyro , Hydro , Cryo , or Electro attacks from nearby party members hit opponents, Traveler will receive 1 stack of Blade of the Dawn Breeze. Each Elemental Type can grant 1 Blade of the Dawn Breeze stack. After obtaining at least 2 stacks of Blade of the Dawn Breeze, performing a Charged Attack will consume all stacks of Blade of the Dawn Breeze and transform into the special Charged Attack: Whirlwind . Charged Attack: Whirlwind Each Charged Attack hit deals increased Anemo DMG . Increase in DMG is equal to 60% of Traveler's ATK. Every time a Blade of the Dawn Breeze of a certain elemental type is consumed, a Blade Wind matching this elemental type will also be summoned, dealing elemental..."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Raging Vortex",
+      "effect": "Palm Vortex pulls in opponents and objects within a 5m radius."
+    },
+    "c2": {
+      "name": "Uprising Whirlwind",
+      "effect": "Increases Energy Recharge by 16%."
+    },
+    "c3": {
+      "name": "Sweeping Gust",
+      "effect": "Increases the Level of Gust Surge by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Cherishing Breezes",
+      "effect": "Description Gameplay Notes Reduces DMG taken while casting Palm Vortex by 10%. This Constellation also grants the Traveler Interruption Resistance while using Palm Vortex ."
+    },
+    "c5": {
+      "name": "Vortex Stellaris",
+      "effect": "Increases the Level of Palm Vortex by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Intertwined Winds",
+      "effect": "Description Gameplay Notes Targets who take DMG from Gust Surge have their Anemo RES decreased by 20%. If an Elemental Absorption occurred, then their RES towards the corresponding Element is also decreased by 20%. The RES decrease lasts for 10s after Gust Surge hits an opponent."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Traveler_(Anemo)"
+}

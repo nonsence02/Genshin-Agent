@@ -1,10 +1,17 @@
 {
   "id": "sea-ganoderma",
+  "name_ru": "Морской гриб",
   "name_en": "Sea Ganoderma",
-  "type": "Local Specialty (Inazuma)",
-  "days": [],
-  "source": [
-    "Found on beaches and tidal flats of Inazuma"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Инадзумы",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Акватория Инадзумы",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sea_Ganoderma"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

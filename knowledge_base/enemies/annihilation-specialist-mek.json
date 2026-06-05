@@ -1,0 +1,13 @@
+{
+  "id": "annihilation-specialist-mek",
+  "name_ru": "Спецмек: Ликвидация",
+  "name_en": "Annihilation Specialist Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

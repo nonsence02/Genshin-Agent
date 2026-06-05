@@ -1,0 +1,19 @@
+{
+  "id": "fruity-skewers",
+  "name_ru": "Фруктовые шашлыки",
+  "name_en": "Fruity Skewers",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 16% HP + 1350 HP.",
+  "recipe": [
+    {
+      "material_id": "mushroom",
+      "count": 1
+    },
+    {
+      "material_id": "fowl",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

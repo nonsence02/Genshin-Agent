@@ -1,94 +1,81 @@
 {
   "id": "nahida",
-  "name": "Nahida",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Nahida",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Sends forth karmic bonds of wood and tree from her side, dealing AoE Dendro DMG and marking up to opponents hit with the Seed of Skandha. When held, this skill will trigger differently. Hold Enters Aiming Mode, which will allow you to select a limited number of opponents within a limited area. During this time, Nahida's resistance to interruption will be increased. When released, this skill deals Dendro DMG to these opponents and marks them with the Seed of Skandha. Aiming Mode will last up to and can select a maximum of opponents. Seed of Skandha Opponents who have been marked by the Seed of Skandha will be linked to one another up till a certain distance. After you trigger Elemental...",
-    "elemental_burst": "Manifests the Court of Dreams and expands the Shrine of Maya. When the Shrine of Maya field is unleashed, the following effects will be separately unleashed based on the Elemental Types present within the party. Pyro: While Nahida remains within the Shrine of Maya, the DMG dealt by Tri-Karma Purification from \" All Schemes to Know \" is increased. Electro: While Nahida remains within the Shrine of Maya, the interval between each Tri-Karma Purification from \"All Schemes to Know\" is decreased. Hydro: The Shrine of Maya's duration is increased. If there are at least party members of the aforementioned Elemental Types present when the field is deployed, the aforementioned effects will be..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Nagadus Emerald Sliver",
-        "Nagadus Emerald Fragment",
-        "Nagadus Emerald Chunk",
-        "Nagadus Emerald Gemstone"
-      ],
-      "mob_drops": [
-        "Fungal Spores",
-        "Luminescent Pollen",
-        "Crystalline Cyst Dust"
-      ],
-      "special": [
-        "Kalpalata Lotus",
-        "Quelled Creeper"
-      ]
+  "name_ru": "Нахида",
+  "name_en": "Nahida",
+  "element": "Dendro",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 806.5087,
+      "atk": 23.275,
+      "def": 49.0606
     },
-    "talents": {
-      "books": [
-        "Teachings of Ingenuity",
-        "Guide to Ingenuity",
-        "Philosophies of Ingenuity"
-      ],
-      "mob_drops": [
-        "Fungal Spores",
-        "Luminescent Pollen",
-        "Crystalline Cyst Dust"
-      ],
-      "weekly_boss": [
-        "Puppet Strings"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10360.0405,
+      "atk": 298.973,
+      "def": 630.2146
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Акара",
+      "description_ru": "Обычная атака:\nДо четырёх ударов перед собой, наносящих Дендро урон.\n\nЗаряженная атака:\nКороткое заклинание, наносящее Дендро урон по площади впереди, на которое тратится определённое количество выносливости.\n\nАтака в падении:\nНакопив энергию растений, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Дендро урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Пелена знаний",
+      "description_ru": "Выпускает рядом с собой кармическую связь трав и деревьев, которая наносит Дендро урон по площади. До 8 поражённых противников получают Семя скандхи.\nПри долгом нажатии способ активации навыка меняется.\n\nДолгое нажатие\nПереходит в режим прицеливания, в котором можно выбрать нескольких противников в определённой области. В режиме прицеливания сопротивление прерыванию Нахиды увеличивается. По завершении прицеливания выбранные враги получат Дендро урон и Семя скандхи.\nРежим прицеливания длится до 5 сек., в нём можно выбрать до 8 противников.\n\nСемя скандхи\nМежду врагами с Семенем скандхи на определённом расстоянии устанавливается связь.\nЕсли помеченные Семенем скандхи враги подвергаются воздействию элементальных реакций или получают урон от Дендро ядер (включая урон от Цветения и Вегетации), Нахида выпускает Очищение трикармы, которое наносит им и всем связанным с ними врагам Дендро урон, зависящий от её силы атаки и мастерства стихий.\nОчищение трикармы может быть вызвано максимум один раз за определённый период."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Призрачное сердце",
+      "description_ru": "Являет миру Чертоги сновидений и создаёт Святилище Майи.\n\nПри этом, в зависимости от представленных в отряде элементов персонажей, отдельно друг от друга активируются соответствующие эффекты:\n·Пиро: Пока Нахида пребывает в Святилище Майи, урон Очищения трикармы её элементального навыка Пелена знаний увеличивается.\n·Электро: Пока Нахида пребывает в Святилище Майи, интервал активации Очищения трикармы её элементального навыка сокращается.\n·Гидро: Продлевает действие Святилища Майи.\n\nЕсли во время активации Святилища Майи в отряде 2 или больше персонажей соответствующего элемента, эффекты усилятся.\n\nЭти усиления действуют, пока отряд находится в Святилище Майи, даже если Нахида не на поле боя."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Просветлённое сострадание",
+      "description_ru": "При активации Призрачного сердца Святилище Майи получает следующие эффекты:\n· Мастерство стихий активного персонажа в области навыка повышается на 25% от мастерства стихий персонажа отряда с самым высоким его значением.\n· Мастерство стихий таким образом может быть увеличено максимум на 250 ед."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Озарённое пробуждение",
+      "description_ru": "За каждую единицу мастерства стихий Нахиды свыше 200 урон Очищения трикармы её Пелены знаний увеличивается на 0,1%, а шанс крит. попадания - на 0,03%.\nУрон Очищения трикармы может таким образом увеличиться на 80%, а шанс крит. попадания - на 24%."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Осмысление всего сущего",
+      "description_ru": "С помощью Пелены знаний Нахида может взаимодействовать с некоторыми подбираемыми предметами в определённой области.\nВозможно, у этого навыка есть и другие эффекты..."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Семя потаённых знаний",
+      "description_ru": "Когда активируется Святилище Майи, при подсчёте типов элементов персонажей к количеству Пиро, Электро и Гидро персонажей прибавляет по 1."
+    },
+    {
+      "name_ru": "Корень всей полноты",
+      "description_ru": "Враги, на которых наложены Семена скандхи самой Нахиды, подвергаются воздействию следующих эффектов:\n· Урон, получаемый от реакций Горение, Бутонизация, Вегетация и Цветение, может становиться критическим. Фиксированный шанс крит. попадания составляет 20%, а фиксированный крит. урон - 100%. Шанс крит. попадания, предоставляемый этим эффектом, может суммироваться с повышением шанса крит. попадания аналогичных эффектов, позволяющих элементальным реакциям наносить критические попадания.\n· На 8 сек. после воздействия реакций Стимуляция, Обострение и Разрастание защита понижается на 30%.\n· Шанс крит. попадания и крит. урон получаемого урона Лунной бутонизации повышаются на 10% и 20% соответственно."
+    },
+    {
+      "name_ru": "Росток перенятых успехов",
+      "description_ru": "Увеличивает уровень навыка Пелена знаний на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Стебель ясных заключений",
+      "description_ru": "Когда 1/2/3/4 и более противников попадают под воздействие Семян скандхи навыка Пелена знаний, мастерство стихий Нахиды увеличивается на 100/120/140/160 ед."
+    },
+    {
+      "name_ru": "Листья просветляющей речи",
+      "description_ru": "Увеличивает уровень навыка Призрачное сердце на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Плод апогея доводов",
+      "description_ru": "Если после активации Призрачного сердца Нахида поразит обычной или заряженной атакой врага, отмеченного Семенем скандхи навыка Пелена знаний, на него и всех связанных с ним противников будет наложено Очищение трикармы: Кармическое небытие, которое наносит Дендро урон равный 200% от силы атаки и 400% от мастерства стихий.\nУрон Очищения трикармы: Кармическое небытие считается уроном элементального навыка и может возникнуть один раз в 0,2 сек.\n Через 10 сек. либо после 6 активаций Очищения трикармы: Кармическое небытие эффект исчезнет."
+    }
+  ],
+  "coordinates": []
 }

@@ -1,48 +1,80 @@
 {
   "id": "surfs-up",
-  "name": "Surf's Up",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Surf%27s_Up",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "Max HP increased by. Once every, for the after using an Elemental Skill: Gain Scorching Summer stacks. Each stack increases Normal Attack DMG by. For the duration of the, every, lose stack after a Normal Attack hits an opponent; once every, gain stack after triggering a Vaporize reaction on an opponent. Max Scorching Summer stacks.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Blazing Sacrificial Heart's Terror",
-        "Shard of a Shattered Will",
-        "Juvenile Fang",
-        "Blazing Sacrificial Heart's Hesitance",
-        "Locus of a Clear Will",
-        "Seasoned Fang",
-        "Blazing Sacrificial Heart's Resolve",
-        "Sigil of a Striding Will",
-        "Tyrant's Fang",
-        "Blazing Sacrificial Heart's Splendor"
-      ]
+  "name_ru": "Лови волну",
+  "name_en": "Surf's Up",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.192
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.882
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Воспоминания воды",
+  "passive_description_ru": "Увеличивает макс. HP на 20%. Один раз в 15 сек. после использования элементального навыка на 14 сек. возникает следующий эффект: наделяет 4 уровнями Знойного лета. Каждый уровень увеличивает урон обычной атаки на 12%. Во время его действия один раз в 1,5 сек.: попадание обычной атаки по противнику снимает 1 уровень; 1 раз в 1,5 сек.: активация реакции Пар на противнике добавляет 1 уровень. Эффект Знойного лета складывается до 4 раз.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "blazing-sacrificial-hearts-terror",
+        "name_ru": "Ужас пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Terror"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "blazing-sacrificial-hearts-hesitance",
+        "name_ru": "Сомнение пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Hesitance"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "blazing-sacrificial-hearts-resolve",
+        "name_ru": "Решимость пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Resolve"
+      },
+      {
+        "id": "blazing-sacrificial-hearts-splendor",
+        "name_ru": "Великолепие пылающего жертвенного сердца",
+        "name_en": "Blazing Sacrificial Heart's Splendor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "shard-of-a-shattered-will",
+        "name_ru": "Осколок разбитой воли",
+        "name_en": "Shard of a Shattered Will"
+      },
+      {
+        "id": "locus-of-a-clear-will",
+        "name_ru": "Образ ясной воли",
+        "name_en": "Locus of a Clear Will"
+      },
+      {
+        "id": "sigil-of-a-striding-will",
+        "name_ru": "Талисман странствующей воли",
+        "name_en": "Sigil of a Striding Will"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "juvenile-fang",
+        "name_ru": "Молодой клык",
+        "name_en": "Juvenile Fang"
+      },
+      {
+        "id": "seasoned-fang",
+        "name_ru": "Клык взрослого",
+        "name_en": "Seasoned Fang"
+      },
+      {
+        "id": "tyrants-fang",
+        "name_ru": "Клык тирана",
+        "name_en": "Tyrant's Fang"
+      }
+    ]
+  },
+  "coordinates": []
 }

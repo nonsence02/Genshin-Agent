@@ -1,10 +1,20 @@
 {
   "id": "scoop-of-tainted-water",
+  "name_ru": "Мутная лужица",
   "name_en": "Scoop of Tainted Water",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Crafted"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Фантазмы мутных вод Ур. 40+",
+    "Звёздная пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Scoop_of_Tainted_Water"
+  "dropped_by": [
+    "tainted-water-splitting-phantasm",
+    "tainted-water-spouting-phantasm"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

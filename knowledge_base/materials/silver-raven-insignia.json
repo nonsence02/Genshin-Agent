@@ -1,10 +1,29 @@
 {
   "id": "silver-raven-insignia",
+  "name_ru": "Печать серебряного ворона",
   "name_en": "Silver Raven Insignia",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Treasure Hoarders"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Похитители сокровищ Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Silver_Raven_Insignia"
+  "dropped_by": [
+    "treasure-hoarders-crusher",
+    "treasure-hoarders-cryo-potioneer",
+    "treasure-hoarders-electro-potioneer",
+    "treasure-hoarders-gravedigger",
+    "treasure-hoarders-handyman",
+    "treasure-hoarders-hydro-potioneer",
+    "treasure-hoarders-marksman",
+    "treasure-hoarders-pugilist",
+    "treasure-hoarders-pyro-potioneer",
+    "treasure-hoarders-scout",
+    "treasure-hoarders-seaman"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

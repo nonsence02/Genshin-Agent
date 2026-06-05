@@ -1,0 +1,13 @@
+{
+  "id": "radiant-lunapod",
+  "name_ru": "Лучезарный лунапод",
+  "name_en": "Radiant Lunapod",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "radiant-exoskeleton",
+    "glowing-remains",
+    "lightless-bone"
+  ],
+  "coordinates": []
+}

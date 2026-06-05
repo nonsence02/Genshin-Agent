@@ -1,0 +1,15 @@
+{
+  "id": "setekh-wenut",
+  "name_ru": "Унут Сетеха",
+  "name_en": "Setekh Wenut",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "pseudo-stamens",
+    "vayuda-turquoise-gemstone",
+    "vayuda-turquoise-chunk",
+    "vayuda-turquoise-fragment",
+    "vayuda-turquoise-sliver"
+  ],
+  "coordinates": []
+}

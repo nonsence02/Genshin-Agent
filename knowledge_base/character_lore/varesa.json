@@ -1,0 +1,75 @@
+{
+  "id": "varesa",
+  "name_en": "Varesa",
+  "element": "Electro",
+  "weapon": "Catalyst",
+  "region": "Natlan",
+  "rarity": 5,
+  "description": "Varesa is a playable Electro character in Genshin Impact .\n\nAn orchard manager hailing from the Collective of Plenty , Varesa has a generally easy-going lifestyle. In battle, she is a warrior of great strength and speed, dubbed as the \"Masked Hero\" by the children within her tribe. She is known to enjoy competitive eating, finishing tremendous amounts of food with the help of her unusually large appetite.",
+  "role_summary": "Varesa is a playable Electro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "By the Horns",
+      "description": "Normal Attack Gotta try... to do battle like the greatest champion luchadors do! Varesa launches up to 3 strikes, dealing Electro DMG . Charged Attack Consumes a certain amount of Stamina to headbutt opponents in front, dealing Nightsoul-aligned Electro DMG and using the momentum to leap into the air. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing Nightsoul-aligned AoE Electro DMG upon impact. If Varesa is in a combat state upon landing, or if the shockwave from her plunging attack hits an opponent, she will gain 25 Nightsoul points . She enters the Fiery Passion state upon reaching maximum Nightsoul points through this method. Fiery Passion In this state, Varesa's Normal, Charged, and Plunging Attacks will gain corresponding buffs: Normal Attack Fight like a superstar champion luchador! Launches up to 3 fierce strikes, dealing greater Electro DMG . Charged Attack Consumes a certain amount of Stamina to slam into her opponents, dealing greater amounts of Nightsoul-aligned Electro DMG and using the momentum to leap into the air. Plunging Attack Consumes all her Nightsoul points and slams down on the ground from mid-a..."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Riding the Night-Rainbow",
+      "description": "With footwork swift as lightning and fierce as thunder, Varesa displays the true spirit of lucha libre, rushing forward a certain distance and dealing Nightsoul-aligned Electro DMG to opponents in her path. After using this Skill, Varesa gains 20 Nightsoul points and gains the \"Follow-Up Strike\" effect: Varesa has increased interruption resistance during this time, and upon pressing her Normal Attack, she will quickly unleash a Charged Attack that does not consume Stamina . \"Follow-Up Strike\" will be canceled after Varesa uses a Charged Attack. She will use different techniques based on whether the skill is Tapped or Held. Tap Quickly rush a certain distance forward. Hold Varesa enters the Nightsoul's Blessing state and switches to Sudden Onrush mode. Sudden Onrush Continuously consumes Nightsoul points. In this state, Varesa's Movement SPD and interruption resistance are increased. She can use terrain to execute flying leaps or consume additional Nightsoul points to traverse atop water or liquid Phlogiston while remaining immune to DMG from the latter. Nightsoul's Blessing: Varesa When she runs out of Nightsoul points, her Nightsoul's Blessing state will be canceled. When Vares..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Guardian Vent!",
+      "description": "Leaps into the air before using the momentum of the drop to unleash a powerful flying kick, dealing Nightsoul-aligned AoE Electro DMG to opponents — just like those heroes of justice in woven scrolls for kids! After using this Skill, Varesa's Nightsoul points will be restored to maximum and she will enter the Fiery Passion state. In the Fiery Passion state, Varesa's Elemental Burst will deal a greater amount of Nightsoul-aligned AoE Electro DMG . Additionally, she will briefly activate Apex Drive after using a Plunging Attack while in her Fiery Passion state. Apex Drive Increases Varesa's interruption resistance . While affected by Apex Drive, Varesa can ignore her Elemental Burst CD and consume less Energy to use her special Elemental Burst, \"Guardian Vent: Volcano Kablam\": This causes her to use the especially powerful Plunging Attack, the \"Thunderous Tornado Eruption,\" which deals Nightsoul-aligned AoE Electro DMG upon landing before causing her to exit Apex Drive. This DMG is considered Plunging Attack DMG. Varesa will exit Apex Drive after using her Elemental Skill ."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Tag-Team Triple Jump!",
+      "description": "After using the Elemental Skill Riding the Night-Rainbow , Varesa gains \"Rainbow Crash\" for 5s. During this time, when Varesa uses a Plunging Attack, the shockwave DMG dealt when she hits the ground is increased by 50% of her ATK . If Varesa is in the Fiery Passion state, this ground impact DMG is increased by 180% of her ATK instead. The Rainbow Crash effect will be canceled once a ground impact hits an opponent, or when its duration expires."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "The Hero Twice-Returned!",
+      "description": "When a nearby party member triggers a Nightsoul Burst , Varesa's ATK increases by 35% for 12s. Max 2 stacks. Each stack's duration is counted independently."
+    },
+    {
+      "type": "Night Realm's Gift Passive",
+      "name": "A Torch That Incinerates Evil",
+      "description": "After Nightsoul points have been fully depleted, Varesa will switch to using Phlogiston to maintain the Sudden Onrush mode from her Nightsoul's Blessing . While in an area with Phlogiston Mechanics within Natlan , Nightsoul Transmission : Varesa can be used. When the current active character is sprinting or in movement modes caused by certain Talents , or at a certain height in the air, switching to Varesa will trigger the following: Varesa enters the Nightsoul's Blessing state, switches to Sudden Onrush mode, and obtains 20 Nightsoul points. Nightsoul Transmission can be triggered once every 10s by your own party . While in an area with Phlogiston Mechanics within Natlan, Varesa will not take fall DMG when using terrain differences to make leaps."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Blazing Heart, Singular Advance!",
+      "description": "Varesa's Sprint speed is increased. When she is not in combat, her Sprint Stamina consumption will also increase. Additionally, while in an area with Phlogiston Mechanics within Natlan , your party members will restore 20 Phlogiston when consuming food. This effect can occur once every 10s and does not take effect in Domains , Trounce Domains , or the Spiral Abyss ."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Undying Passion",
+      "effect": "The effects of the Ascension Talent \" Tag-Team Triple Jump! \" are enhanced: When performing the Special Plunging Attack \"Thunderous Tornado Eruption,\" Varesa will also gain \"Rainbow Crash\" for 5s. When \"Rainbow Crash\" is in effect, Varesa's Plunging Attack ground impact DMG is increased by 180% of her ATK , whether she is in the Fiery Passion state or not. You must first unlock the Ascension Talent \"Tag-Team Triple Jump!\" to access the above effect. Additionally, when Varesa is in the Sudden Onrush mode of her Nightsoul's Blessing , she consumes 30% less Nightsoul points or Phlogiston."
+    },
+    "c2": {
+      "name": "Beyond the Edge of Light",
+      "effect": "Varesa will enter Apex Drive after using a Plunging Attack, regardless of whether she is in the Fiery Passion state or not. When Apex Drive is active, Varesa's interruption resistance will also further increase. Additionally, Varesa will restore 11.5 Energy when her Plunging Attack ground impact hits an opponent."
+    },
+    "c3": {
+      "name": "Unbowed Resolve",
+      "effect": "Increases the Level of Guardian Vent! by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "The Courage to Press On",
+      "effect": "Varesa will receive various buffs based on her state when using her Elemental Burst Guardian Vent! If Varesa: Has neither Fiery Passion nor Apex Drive active, she will gain Diligent Refinement for 15s, which will increase her Plunging Attack ground impact DMG by 500% of her ATK , with a maximum increase of 20,000 DMG. This effect will be canceled once the ground impact hits an opponent, or if its duration ends. If she has either Fiery Passion or Apex Drive active, this instance of her Elemental Burst Guardian Vent! deals 100% increased DMG."
+    },
+    "c5": {
+      "name": "Thoughts Floating on the Warm Breeze",
+      "effect": "Increases the Level of Normal Attack: By the Horns by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "A Hero of Justice's Triumph",
+      "effect": "Varesa restores 30 Energy when she enters Apex Drive. Her Plunging Attacks and Elemental Burst Guardian Vent! gain 10% CRIT Rate and 100% CRIT DMG . Additionally, when Varesa uses the Hold version of her Elemental Skill Riding the Night-Rainbow , or Taps her Elemental Skill while in the Sudden Onrush mode, she will restore Nightsoul points up to her maximum."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Varesa",
+  "ai_tags": "Main DPS, Карманный урон"
+}

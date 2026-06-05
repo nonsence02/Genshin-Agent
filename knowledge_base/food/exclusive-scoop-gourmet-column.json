@@ -1,0 +1,27 @@
+{
+  "id": "exclusive-scoop-gourmet-column",
+  "name_ru": "Эксклюзив: Колонка деликатесов",
+  "name_en": "Exclusive Scoop: Gourmet Column",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 130 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "potato",
+      "count": 3
+    },
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

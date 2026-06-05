@@ -1,0 +1,13 @@
+{
+  "id": "consecrated-scorpion",
+  "name_ru": "Священный скорпион",
+  "name_en": "Consecrated Scorpion",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "marked-shell",
+    "sturdy-shell",
+    "desiccated-shell"
+  ],
+  "coordinates": []
+}

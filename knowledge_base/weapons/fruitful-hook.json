@@ -1,48 +1,80 @@
 {
   "id": "fruitful-hook",
-  "name": "Fruitful Hook",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fruitful_Hook",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Increase Plunging Attack CRIT Rate by; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Night-Wind's Mystic Consideration",
-        "Axis of the Secret Source",
-        "Juvenile Fang",
-        "Night-Wind's Mystic Premonition",
-        "Sheath of the Secret Source",
-        "Seasoned Fang",
-        "Night-Wind's Mystic Augury",
-        "Heart of the Secret Source",
-        "Tyrant's Fang",
-        "Night-Wind's Mystic Revelation"
-      ]
+  "name_ru": "Плодотворный крюк",
+  "name_en": "Fruitful Hook",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Тяжесть падающих ветвей",
+  "passive_description_ru": "Увеличивает шанс крит. попадания атаки в падении на 16%. После того как атака в падении попадает по противнику, урон обычной атаки, заряженной атаки и атаки в падении увеличивается на 16% на 10 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "night-winds-mystic-consideration",
+        "name_ru": "Загадочные размышления ночного ветра",
+        "name_en": "Night-Wind's Mystic Consideration"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "night-winds-mystic-premonition",
+        "name_ru": "Загадочные предчувствия ночного ветра",
+        "name_en": "Night-Wind's Mystic Premonition"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "night-winds-mystic-augury",
+        "name_ru": "Загадочные предзнаменования ночного ветра",
+        "name_en": "Night-Wind's Mystic Augury"
+      },
+      {
+        "id": "night-winds-mystic-revelation",
+        "name_ru": "Загадочные откровения ночного ветра",
+        "name_en": "Night-Wind's Mystic Revelation"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "axis-of-the-secret-source",
+        "name_ru": "Ось таинственного источника",
+        "name_en": "Axis of the Secret Source"
+      },
+      {
+        "id": "sheath-of-the-secret-source",
+        "name_ru": "Оболочка таинственного источника",
+        "name_en": "Sheath of the Secret Source"
+      },
+      {
+        "id": "heart-of-the-secret-source",
+        "name_ru": "Ядро таинственного источника",
+        "name_en": "Heart of the Secret Source"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "juvenile-fang",
+        "name_ru": "Молодой клык",
+        "name_en": "Juvenile Fang"
+      },
+      {
+        "id": "seasoned-fang",
+        "name_ru": "Клык взрослого",
+        "name_en": "Seasoned Fang"
+      },
+      {
+        "id": "tyrants-fang",
+        "name_ru": "Клык тирана",
+        "name_en": "Tyrant's Fang"
+      }
+    ]
+  },
+  "coordinates": []
 }

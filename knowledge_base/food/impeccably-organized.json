@@ -1,0 +1,23 @@
+{
+  "id": "impeccably-organized",
+  "name_ru": "Идеальный порядок",
+  "name_en": "Impeccably Organized",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 26% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 570 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "grainfruit",
+      "count": 2
+    },
+    {
+      "material_id": "fowl",
+      "count": 1
+    },
+    {
+      "material_id": "cheese",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

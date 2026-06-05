@@ -1,0 +1,27 @@
+{
+  "id": "chicken-tofu-pudding",
+  "name_ru": "Куриный тофу",
+  "name_en": "Chicken Tofu Pudding",
+  "rarity": 4,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 320 ед. и шанс крит. попадания на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 4
+    },
+    {
+      "material_id": "ham",
+      "count": 2
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 2
+    },
+    {
+      "material_id": "snapdragon",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

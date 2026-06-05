@@ -1,0 +1,23 @@
+{
+  "id": "mint-bubblegum",
+  "name_ru": "Мятная жвачка",
+  "name_en": "Mint Bubblegum",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "mint",
+      "count": 2
+    },
+    {
+      "material_id": "valberry",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

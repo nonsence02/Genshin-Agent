@@ -1,0 +1,15 @@
+{
+  "id": "hydro-sigil",
+  "name_ru": "Печать Гидро",
+  "name_en": "Hydro Sigil",
+  "type": "consume",
+  "type_text_ru": "Символ города",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Исследование Фонтейна"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

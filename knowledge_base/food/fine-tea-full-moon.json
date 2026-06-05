@@ -1,0 +1,27 @@
+{
+  "id": "fine-tea-full-moon",
+  "name_ru": "«Вкусный чай, полная луна»",
+  "name_en": "Fine Tea, Full Moon",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 34% HP + 1900 HP.",
+  "recipe": [
+    {
+      "material_id": "chenyu-adeptea",
+      "count": 3
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 2
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

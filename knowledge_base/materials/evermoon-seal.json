@@ -1,0 +1,15 @@
+{
+  "id": "evermoon-seal",
+  "name_ru": "Печать Вечной Луны",
+  "name_en": "Evermoon Seal",
+  "type": "consume",
+  "type_text_ru": "Предмет приключения",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Исследование острова Хийси"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

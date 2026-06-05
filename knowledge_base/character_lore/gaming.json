@@ -1,0 +1,70 @@
+{
+  "id": "gaming",
+  "name_en": "Gaming",
+  "element": "Pyro",
+  "weapon": "Claymore",
+  "region": "Liyue",
+  "rarity": 4,
+  "description": "Yip Gaming ( Cantonese : 叶嘉明 Yip 6 Ga 1 Ming 4 ) is a playable Pyro character in Genshin Impact .\n\nBorn in Qiaoying Village , Gaming left his birthplace after an impasse with his father to pursue his passion and become a professional Wushou dancer, training constantly to make the dance popular throughout Teyvat . However, with his dream career turning out to be financially unsustainable by itself, he also took up a job as a guard for the Sword and Strongbox Secure Transport Agency, primarily escorting goods and people to and from Yilong Wharf . His diligence and friendliness have earned him renown, and he is considered to be the best guard in the agency.",
+  "role_summary": "Yip Gaming ( Cantonese : 叶嘉明 Yip 6 Ga 1 Ming 4 ) is a playable Pyro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Stellar Rend",
+      "description": "Normal Attack Performs up to 4 consecutive strikes. Charged Attack Drains Stamina over time to perform continuous spinning attacks against all nearby opponents. At the end of the sequence, performs a more powerful slash. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Bestial Ascent",
+      "description": "Pounces forward using the Wushou arts, leaping high into the air after coming into contact with a target or surface. After Gaming has used Bestial Ascent to rise into the air, he will use the especially powerful Plunging Attack: Charmed Cloudstrider when performing a Plunging Attack. Plunging Attack: Charmed Cloudstrider The DMG from Plunging Attacks caused by Bestial Ascent is converted to Pyro DMG that cannot be overridden by other elemental infusions. Upon landing, Gaming will consume a fixed amount of HP. Gaming's HP cannot be reduced below 10% by this method. Charmed Cloudstrider DMG is considered Plunging Attack DMG."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Suanni's Gilded Dance",
+      "description": "Gaming enters Wushou Stance, briefly applying Pyro to him, recovering a fixed amount of HP , and summons his companion, the Suanni Man Chai, to smash into his target, dealing AoE Pyro DMG . After bashing its target, Man Chai will roll to a nearby location before moving towards Gaming. When it links up with Gaming, Man Chai will leave the field and reset the CD for Gaming's Elemental Skill, Bestial Ascent . While Wushou Stance is active, his resistance to interruption is increased, and when Gaming lands with Charmed Cloudstrider attack or completes the forward pounce attack from Bestial Ascent with over 50% HP, he will summon Man Chai again. Each Gaming can only have 1 Man Chai on the field simultaneously. This effect will be canceled once Gaming leaves the field."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Dance of Amity",
+      "description": "After Bestial Ascent's Plunging Attack: Charmed Cloudstrider hits an opponent, Gaming will regain 1.5% of his Max HP once every 0.2s for 0.8s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Air of Prosperity",
+      "description": "When Gaming has less than 50% HP, he will receive a 20% Incoming Healing Bonus. When Gaming has 50% HP or more, Plunging Attack: Charmed Cloudstrider will deal 20% more DMG."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "The Striding Beast",
+      "description": "During the day (6:00 – 18:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%. Does not take effect in Domains , Trounce Domains , or Spiral Abyss . Swift Stride does not stack."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Bringer of Blessing",
+      "effect": "When the Suanni Man Chai from Suanni's Gilded Dance meets back up with Gaming, it will heal 15% of Gaming's HP."
+    },
+    "c2": {
+      "name": "Plum Blossoms Underfoot",
+      "effect": "When Gaming receives healing and this instance of healing overflows, his ATK will be increased by 20% for 5s."
+    },
+    "c3": {
+      "name": "Awakening Spirit",
+      "effect": "Increases the Level of Bestial Ascent by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Soar Across Mountains",
+      "effect": "When Bestial Ascent's Plunging Attack: Charmed Cloudstrider hits an opponent, it will restore 2 Energy to Gaming. This effect can be triggered once every 0.2s."
+    },
+    "c5": {
+      "name": "Evil-Daunting Roar",
+      "effect": "Increases the Level of Suanni's Gilded Dance by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "To Tame All Beasts",
+      "effect": "Description Gameplay Notes Preview Bestial Ascent 's Plunging Attack: Charmed Cloudstrider CRIT Rate increased by 20% and CRIT DMG increased by 40%, and its attack radius will be increased. The radius of Charmed Cloudstrider's AoE is increased from 4 meters to 6 meters. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Bestial Ascent Charmed Cloudstrider Preview.mp4 Without C6 Media:To Tame All Beasts Preview.mp4 With C6"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Gaming",
+  "ai_tags": "Main DPS, Пиро аппликатор"
+}

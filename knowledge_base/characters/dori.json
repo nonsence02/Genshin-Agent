@@ -1,94 +1,81 @@
 {
   "id": "dori",
-  "name": "Dori",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Dori",
-  "profile": {
-    "weapon": "Claymore",
-    "element": "Electro",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Directs a Spirit-Warding Lamp to fire off a Troubleshooter Shot at opponents, dealing Electro DMG. After the Troubleshooter Shot hits, it will create After-Sales Service Rounds that will automatically track nearby opponents and deal Electro DMG. When this skill hits at least one enemy, it generates Elemental Particles. Passive Effects Passive Talent, An Eye for Gold: Decreases the cooldown of this talent by after a character connected to the Jinni triggers an Elemental Reaction involving Electro. This effect can be triggered once. Passive Talent, Compound Interest: \"When the Troubleshooter Shots or After-Sales Service Rounds from Spirit-Warding Lamp: Troubleshooter Cannon hit opponents,...",
-    "elemental_burst": "Summons forth the Jinni within the lamp to give the client various kinds of aid. Jinni Connects to a nearby character. The connected character will: Continuously restore HP based on Dori's Max HP. Continuously regenerate Energy. Be affected by Electro. When the connector between the Jinni and the character touches opponents, it will deal one instance of Electro DMG to them. Only one Jinni can exist at one time. The Healing and Energy restoration effects occur every seconds. Connector DMG will snapshot Dori's stats on cast and will not be affected by changes in her stats that occur afterwards. The Electro application to the active character can trigger certain on-hit effects, such as that of..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vajrada Amethyst Sliver",
-        "Vajrada Amethyst Fragment",
-        "Vajrada Amethyst Chunk",
-        "Vajrada Amethyst Gemstone"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "special": [
-        "Kalpalata Lotus",
-        "Thunderclap Fruitcore"
-      ]
+  "name_ru": "Дори",
+  "name_en": "Dori",
+  "element": "Electro",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 1039.4418,
+      "atk": 18.6984,
+      "def": 60.6585
     },
-    "talents": {
-      "books": [
-        "Teachings of Ingenuity",
-        "Guide to Ingenuity",
-        "Philosophies of Ingenuity"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "weekly_boss": [
-        "Bloodjade Branch"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12397.4036,
+      "atk": 223.0171,
+      "def": 723.4728
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Чарующий танец мечей (модифицированный)",
+      "description_ru": "Обычная атака:\nДо трёх ударов мечом.\n\nЗаряженная атака:\nВращающаяся атака по окружающим врагам, на которую непрерывно тратится выносливость.\nПосле вращения проводит дополнительную мощную атаку мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Лампа усмирения духов: Устраняющая проблемы пушка",
+      "description_ru": "Направляет Лампу усмирения духов и выстреливает во врагов Устраняющим проблемы зарядом, нанося Электро урон.\nПри попадании Устраняющий проблемы заряд создаёт 2 Снаряда гарантийного обслуживания, которые самостоятельно находят цели поблизости и наносят Электро урон."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Дотошность Алькасар-сарая",
+      "description_ru": "Призывает джинна, который оказывает клиентам всевозможную помощь.\n\nДжинн\nУстанавливает связь с персонажем поблизости:\n· Восстанавливает его HP пропорционально макс. HP Дори.\n· Регенерирует его энергию.\n· Имеет статус Электро.\n\nКроме того, когда связь между джинном и персонажем касается противника, она каждые 0,4 сек. наносит ему однократный Электро урон.\n\nОдновременно может существовать только один джинн."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Золото в песках",
+      "description_ru": "После того как персонаж, у которого установлена связь с джинном, вызывает реакции Заряжен, Лунный заряд, Сверхпроводник, Перегрузка, Стимуляция, Обострение, Вегетация, Электро Рассеивание или Электро Кристалл, откат навыка Лампа усмирения духов: Устраняющая проблемы пушка уменьшается на 1 сек.\nЭффект может возникнуть раз в 3 сек."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Сложные проценты",
+      "description_ru": "Попадания Устраняющих проблемы зарядов и Снарядов гарантийного обслуживания навыка Лампа усмирения духов: Устраняющая проблемы пушка восстанавливают 5 ед. энергии Дори за каждые 100% от её значения восстановления энергии.\nКаждая активация навыка Лампа усмирения духов: Устраняющая проблемы пушка может восстановить энергию таким способом только один раз. Восстанавливает до 15 ед. энергии."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Неожиданный заказ",
+      "description_ru": "При создании материалов улучшения персонажей и оружия имеет 25% шанс восстановить часть использованных материалов."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Дополнительные вложения",
+      "description_ru": "Увеличивает количество Снарядов гарантийного обслуживания, создаваемых Устраняющими проблемы зарядами, на 1."
+    },
+    {
+      "name_ru": "Особая франшиза",
+      "description_ru": "В бою джинн, исцеляя связанного с ним персонажа, выстреливает с его позиции Зарядом джинна, который наносит урон размером 50% от силы атаки Дори."
+    },
+    {
+      "name_ru": "Непрекращающиеся чудеса",
+      "description_ru": "Увеличивает уровень навыка Дотошность Алькасар-сарая на 3.\nМакс. уровень: 15."
+    },
+    {
+      "name_ru": "Разумное распределение",
+      "description_ru": "Персонаж, у которого установлена связь с джинном, в зависимости от текущего HP и энергии может получить следующие усиления:\n· Если осталось не более 50% HP, бонус получаемого лечения повышается на 50%.\n· Если осталось не более 50% энергии, восстановление энергии увеличивается на 30%."
+    },
+    {
+      "name_ru": "Оправданные затраты",
+      "description_ru": "Увеличивает уровень навыка Лампа усмирения духов: Устраняющая проблемы пушка на 3.\nМакс. уровень: 15."
+    },
+    {
+      "name_ru": "Расточая богатство",
+      "description_ru": "На 3 сек. после активации навыка Лампа усмирения духов: Устраняющая проблемы пушка Дори получает следующие эффекты:\n· Инфузия Электро.\n· Попадания обычной атакой восстанавливают всем персонажам отряда поблизости HP, равное 4% от макс. HP Дори. Восстановить HP этим способом можно не чаще, чем раз в 0,1 сек."
+    }
+  ],
+  "coordinates": []
 }

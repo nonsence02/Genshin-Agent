@@ -1,0 +1,15 @@
+{
+  "id": "geo-hypostasis",
+  "name_ru": "Гео гипостазис",
+  "name_en": "Geo Hypostasis",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "basalt-pillar",
+    "prithiva-topaz-gemstone",
+    "prithiva-topaz-chunk",
+    "prithiva-topaz-fragment",
+    "prithiva-topaz-sliver"
+  ],
+  "coordinates": []
+}

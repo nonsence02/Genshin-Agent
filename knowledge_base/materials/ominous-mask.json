@@ -1,10 +1,49 @@
 {
   "id": "ominous-mask",
+  "name_ru": "Зловещая маска",
   "name_en": "Ominous Mask",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Hilichurls"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Хиличурлы Ур. 60+",
+    "Некоторые хиличурлы-стрелки Ур. 60+",
+    "Некоторые шамачурлы Ур. 60+",
+    "Некоторые митачурлы Ур. 60+",
+    "Некоторые лавачурлы Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ominous_Mask"
+  "dropped_by": [
+    "anemo-samachurl",
+    "blazing-axe-mitachurl",
+    "crackling-axe-mitachurl",
+    "cryo-hilichurl-grenadier",
+    "cryo-hilichurl-shooter",
+    "cryo-samachurl",
+    "dendro-samachurl",
+    "electro-hilichurl-grenadier",
+    "electro-hilichurl-shooter",
+    "electro-samachurl",
+    "frostarm-lawachurl",
+    "geo-samachurl",
+    "hilichurl",
+    "hilichurl-berserker",
+    "hilichurl-fighter",
+    "hilichurl-grenadier",
+    "hilichurl-shooter",
+    "hydro-samachurl",
+    "ice-shield-hilichurl-guard",
+    "ice-shieldwall-mitachurl",
+    "pyro-hilichurl-shooter",
+    "rock-shield-hilichurl-guard",
+    "rock-shieldwall-mitachurl",
+    "stonehide-lawachurl",
+    "thunderhelm-lawachurl",
+    "wooden-shield-hilichurl-guard",
+    "wooden-shieldwall-mitachurl"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

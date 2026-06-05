@@ -1,0 +1,13 @@
+{
+  "id": "blazing-brilliance-frostnight-scion",
+  "name_ru": "Пылающее сияние: Потомок морозной ночи",
+  "name_en": "Blazing Brilliance: Frostnight Scion",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "frostnights-glory",
+    "frostnights-glow",
+    "frostnights-glimmer"
+  ],
+  "coordinates": []
+}

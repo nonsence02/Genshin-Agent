@@ -1,48 +1,80 @@
 {
   "id": "footprint-of-the-rainbow",
-  "name": "Footprint of the Rainbow",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Footprint_of_the_Rainbow",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "DEF"
-  },
-  "passive": "Using an Elemental Skill increases DEF by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Delirious Decadence of the Sacred Lord",
-        "Axis of the Secret Source",
-        "Sentry's Wooden Whistle",
-        "Delirious Desolation of the Sacred Lord",
-        "Sheath of the Secret Source",
-        "Warrior's Metal Whistle",
-        "Delirious Demeanor of the Sacred Lord",
-        "Heart of the Secret Source",
-        "Saurian-Crowned Warrior's Golden Whistle",
-        "Delirious Divinity of the Sacred Lord"
-      ]
+  "name_ru": "След радуги",
+  "name_en": "Footprint of the Rainbow",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Защита",
+      "secondary_stat_value": 0.1126
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Защита",
+      "secondary_stat_value": 0.5173
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Обещание течений и родников",
+  "passive_description_ru": "Использование элементального навыка повышает защиту на 16% на 15 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "delirious-decadence-of-the-sacred-lord",
+        "name_ru": "Безумный декаданс Святого Мудреца",
+        "name_en": "Delirious Decadence of the Sacred Lord"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "delirious-desolation-of-the-sacred-lord",
+        "name_ru": "Безумное опустошение Святого Мудреца",
+        "name_en": "Delirious Desolation of the Sacred Lord"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "delirious-demeanor-of-the-sacred-lord",
+        "name_ru": "Безумный облик Святого Мудреца",
+        "name_en": "Delirious Demeanor of the Sacred Lord"
+      },
+      {
+        "id": "delirious-divinity-of-the-sacred-lord",
+        "name_ru": "Безумная духовность Святого Мудреца",
+        "name_en": "Delirious Divinity of the Sacred Lord"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "axis-of-the-secret-source",
+        "name_ru": "Ось таинственного источника",
+        "name_en": "Axis of the Secret Source"
+      },
+      {
+        "id": "sheath-of-the-secret-source",
+        "name_ru": "Оболочка таинственного источника",
+        "name_en": "Sheath of the Secret Source"
+      },
+      {
+        "id": "heart-of-the-secret-source",
+        "name_ru": "Ядро таинственного источника",
+        "name_en": "Heart of the Secret Source"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "sentrys-wooden-whistle",
+        "name_ru": "Деревянный свисток дозорного",
+        "name_en": "Sentry's Wooden Whistle"
+      },
+      {
+        "id": "warriors-metal-whistle",
+        "name_ru": "Металлический свисток воина",
+        "name_en": "Warrior's Metal Whistle"
+      },
+      {
+        "id": "saurian-crowned-warriors-golden-whistle",
+        "name_ru": "Золотой свисток коронованного заврианами воина",
+        "name_en": "Saurian-Crowned Warrior's Golden Whistle"
+      }
+    ]
+  },
+  "coordinates": []
 }

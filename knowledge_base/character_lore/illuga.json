@@ -1,0 +1,75 @@
+{
+  "id": "illuga",
+  "name_en": "Illuga",
+  "element": "Geo",
+  "weapon": "Polearm",
+  "region": "Nod-Krai",
+  "rarity": 4,
+  "description": "Illuga is a playable Geo character in Genshin Impact .\n\nIlluga is the current Squad Leader of a Lightkeeper investigation squad known as the Nightmare Orioles . His past experiences dealing with the Wild Hunt has driven him to care deeply for every squadmate under his command and ensure they never face the same tragedies he once endured.",
+  "role_summary": "Illuga is a Geo support character who can provide Geo-related buffs for the team. Tap Illuga's Elemental Skill to summon the messenger bird Aedon, who dashes towards the front, dealing Geo DMG to enemies. Hold Illuga's Elemental Skill to take aim. After unleashing his Elemental Burst , Illuga deals an instance of Geo DMG to nearby enemies and gains a set number of Nightingale's Song stacks, increasing the Geo DMG dealt by active characters' Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts. If the Geo DMG dealt is Lunar-Crystallize DMG, the DMG will be further enhanced. If there are Geo Construct(s) on the field when Illuga unleashes his Elemental Burst , or if Geo Construct(s) are created on the field within a certain duration after Illuga unleashes his Elemental Burst , Illuga will gain additional stacks of Nightingale's Song.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Oathkeeper's Spear",
+      "description": "Normal Attack Performs up to 4 consecutive spear strikes. Charged Attack Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Dawnbearing Songbird",
+      "description": "Summons the trusty messenger bird, \"Aedon.\" Different effects are produced depending on whether the skill is Tapped or Held. Tap Aedon dashes towards enemies in front, dealing Geo DMG to enemies it comes into contact with. Hold Enter aiming mode, and command Aedon to dash towards opponents being aimed at, dealing Geo DMG to opponents it comes into contact with."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Shadowless Reflection",
+      "description": "Light the lamp, dealing AoE Geo DMG , and gain Haunted Night's Oriole-Song effect for 20s. When this effect is active, Illuga gains 21 stacks of Nightingale's Song Nightingale's Song The effect gained after Illuga unleashes his Elemental Burst Shadowless Reflection . It can increase the Geo DMG inflicted by current active characters. . When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal Geo DMG to opponents, 1 stack of Nightingale’s Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga’s Elemental Mastery. If DMG is inflicted by Lunar-Crystallize , DMG dealt will increase further. When Geo DMG dealt in this manner hits multiple opponents, multiple stacks of Nightingale's Song will be consumed, depending on how many opponents are hit. Additionally, if there are Geo Constructs created by nearby party members on the battlefield while Illuga unleashes his Elemental Burst, or when nearby party members create Geo Constructs while Haunted Night's Oriole-Song is active, every Geo Construct on the battlefield will allow Illuga to gain 5 additional stacks of Nightingale's Song. Within 2..."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Torchforger's Covenant",
+      "description": "After unleashing Elemental Skill Dawnbearing Songbird Dawnbearing Songbird Summons the trusty messenger bird, \"Aedon.\" Different effects are produced depending on whether the skill is Tapped or Held. Tap Aedon dashes towards enemies in front, dealing Geo DMG to enemies it comes into contact with. Hold Enter aiming mode, and command Aedon to dash towards opponents being aimed at, dealing Geo DMG to opponents it comes into contact with. or Elemental Burst Shadowless Reflection Shadowless Reflection Light the lamp, dealing AoE Geo DMG , and gain Haunted Night's Oriole-Song effect for 20s. When this effect is active, Illuga gains 21 stacks of Nightingale's Song. It can increase the Geo DMG inflicted by current active characters. When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal Geo DMG to opponents, 1 stack of Nightingale’s Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga’s Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further. When Geo DMG dealt in this manner hits multiple opponents, multiple stacks of Nightingale's Song will be cons..."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Demonhunter's Dusk",
+      "description": "Nightingale's Song Nightingale's Song The effect gained after Illuga unleashes his Elemental Burst Shadowless Reflection . It can increase the Geo DMG inflicted by current active characters. 's effects are enhanced: When there are 1/2/3 Hydro or Geo characters in the party, Nightingale's Song will further increase DMG. Increase in DMG is equal to 7%/14%/24% of Illuga's Elemental Mastery. If this aforementioned DMG is inflicted by a Lunar-Crystallize reaction, increase in DMG is equal to 48%/96%/160% of Illuga's Elemental Mastery."
+    },
+    {
+      "type": "Moonsign Benediction Passive",
+      "name": "Unwithering in Winter",
+      "description": "When Illuga is in the party , the party's Moonsign will increase by 1 level."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Night Warden's Stride",
+      "description": "At night (18:00 – 06:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%. Does not take effect in Domains , Trounce Domains , or the Spiral Abyss . Swift Stride does not stack. Additionally, Illuga appears to be able to decipher the whispers of the Wild Hunt ..."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Vigilant Sentinel",
+      "effect": "After Illuga triggers a Geo-related Reaction on the field, he will regain 12 Elemental Energy. This effect can be triggered at most once every 15s."
+    },
+    "c2": {
+      "name": "Elk With Fanged Antlers",
+      "effect": "When Elemental Burst Shadowless Reflection Shadowless Reflection Light the lamp, dealing AoE Geo DMG , and gain Haunted Night's Oriole-Song effect for 20s. When this effect is active, Illuga gains 21 stacks of Nightingale's Song Nightingale's Song The effect gained after Illuga unleashes his Elemental Burst Shadowless Reflection. It can increase the Geo DMG inflicted by current active characters. . When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal Geo DMG to opponents, 1 stack of Nightingale's Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga's Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further. When Geo DMG dealt in this manner hits multiple opponents, multiple stacks of Nightingale's Song will be consumed, depending on how many oppon..."
+    },
+    "c3": {
+      "name": "Earthshaking Maw",
+      "effect": "Increases the Level of Elemental Burst Shadowless Reflection Shadowless Reflection Light the lamp, dealing AoE Geo DMG , and gain Haunted Night's Oriole-Song effect for 20s. When this effect is active, Illuga gains 21 stacks of Nightingale's Song Nightingale's Song The effect gained after Illuga unleashes his Elemental Burst Shadowless Reflection It can increase the Geo DMG inflicted by current active characters. . When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal Geo DMG to opponents, 1 stack of Nightingale's Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga's Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further. When Geo DMG dealt in this manner hits multiple opponents, multiple stacks of Nightingale's Song will be consumed, depending..."
+    },
+    "c4": {
+      "name": "Solarhunting Wolf",
+      "effect": "When Elemental Burst Shadowless Reflection Shadowless Reflection Light the lamp, dealing AoE Geo DMG , and gain Haunted Night's Oriole-Song effect for 20s. When this effect is active, Illuga gains 21 stacks of Nightingale's Song Nightingale's Song The effect gained after Illuga unleashes his Elemental Burst Shadowless Reflection. It can increase the Geo DMG inflicted by current active characters. . When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal Geo DMG to opponents, 1 stack of Nightingale's Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga's Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further. When Geo DMG dealt in this manner hits multiple opponents, multiple stacks of Nightingale's Song will be consumed, depending on how many oppon..."
+    },
+    "c5": {
+      "name": "Hurricane Steed",
+      "effect": "Increases the Level of Elemental Skill Dawnbearing Songbird Dawnbearing Songbird Summons the trusty messenger bird, \"Aedon.\" Different effects are produced depending on whether the skill is Tapped or Held. Tap Aedon dashes towards enemies in front, dealing Geo DMG to enemies it comes into contact with. Hold Enter aiming mode, and command Aedon to dash towards opponents being aimed at, dealing Geo DMG to opponents it comes into contact with. by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Nightmare Orioles",
+      "effect": "Enhances the Lightkeeper's Oath effect of the Ascension Talent Torchforger's Covenant Torchforger's Covenant After unleashing Elemental Skill Dawnbearing Songbird or Elemental Burst Shadowless Reflection , other nearby party members will gain the Lightkeeper's Oath effect for 20s: For Geo DMG dealt to opponents, CRIT Rate increases by 5% and CRIT DMG increases by 10%. Moonsign: Ascendant Gleam Party members affected by the Lightkeeper's Oath effect have their Elemental Mastery increased by 50. : For Geo DMG dealt to opponents, CRIT Rate is increased by 10%, CRIT DMG is increased by 30%. Moonsign: Ascendant Gleam When characters are affected by Lightkeeper's Oath, Elemental Mastery is increased by 80. You must first unlock the Ascension Talent \"Torchforger's Covenant.\""
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Illuga",
+  "ai_tags": "Enabler, Баффер"
+}

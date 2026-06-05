@@ -1,10 +1,19 @@
 {
   "id": "old-operatives-pocket-watch",
+  "name_ru": "Старые карманные часы сенешаля",
   "name_en": "Old Operative's Pocket Watch",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Wind Operatives and Frost Operatives"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сенешали Фатуи",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Old_Operative%27s_Pocket_Watch"
+  "dropped_by": [
+    "frost-operative",
+    "wind-operative"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,47 +1,80 @@
 {
   "id": "scion-of-the-blazing-sun",
-  "name": "Scion of the Blazing Sun",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Scion_of_the_Blazing_Sun",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing ATK as DMG, and applying the Heartsearer to the opponent damaged by said Arrow for. Opponents affected by Heartsearer take more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Echo of Scorching Might",
-        "A Flower Yet to Bloom",
-        "Remnant Glow of Scorching Might",
-        "Treasured Flower",
-        "Luminescent Pollen",
-        "Dream of Scorching Might",
-        "Wanderer's Blooming Flower",
-        "Crystalline Cyst Dust",
-        "Olden Days of Scorching Might"
-      ]
+  "name_ru": "Наследник слепящего солнца",
+  "name_en": "Scion of the Blazing Sun",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.04
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.1838
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Путь слепящего солнца",
+  "passive_description_ru": "Попадания заряженной атакой обрушивают на поражённого ею врага Стрелу слепящего солнца, которая наносит 60% урона от силы атаки. Кроме того, на врага, получившего урон от Стрелы слепящего солнца, на 10 сек. накладывается эффект Пылающего сердца. Урон заряженной атаки экипированного персонажа по противнику под воздействием Пылающего сердца повышается на 28%. Стрела слепящего солнца может возникнуть один раз в 10 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "echo-of-scorching-might",
+        "name_ru": "Эхо пылающей мощи",
+        "name_en": "Echo of Scorching Might"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "remnant-glow-of-scorching-might",
+        "name_ru": "Отсветы пылающей мощи",
+        "name_en": "Remnant Glow of Scorching Might"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "dream-of-scorching-might",
+        "name_ru": "Грёзы пылающей мощи",
+        "name_en": "Dream of Scorching Might"
+      },
+      {
+        "id": "olden-days-of-scorching-might",
+        "name_ru": "Прошлое пылающей мощи",
+        "name_en": "Olden Days of Scorching Might"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "a-flower-yet-to-bloom",
+        "name_ru": "Нераспустившийся цветок",
+        "name_en": "A Flower Yet to Bloom"
+      },
+      {
+        "id": "treasured-flower",
+        "name_ru": "Заветный цветок",
+        "name_en": "Treasured Flower"
+      },
+      {
+        "id": "wanderers-blooming-flower",
+        "name_ru": "Распустившийся цветок странника",
+        "name_en": "Wanderer's Blooming Flower"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "fungal-spores",
+        "name_ru": "Споры плесенника",
+        "name_en": "Fungal Spores"
+      },
+      {
+        "id": "luminescent-pollen",
+        "name_ru": "Светящаяся пыльца",
+        "name_en": "Luminescent Pollen"
+      },
+      {
+        "id": "crystalline-cyst-dust",
+        "name_ru": "Пыль кристаллоцистов",
+        "name_en": "Crystalline Cyst Dust"
+      }
+    ]
+  },
+  "coordinates": []
 }

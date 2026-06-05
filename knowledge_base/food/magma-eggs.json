@@ -1,0 +1,15 @@
+{
+  "id": "magma-eggs",
+  "name_ru": "Магмовые яйца",
+  "name_en": "Magma Eggs",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% от макс. HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "bird-egg",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

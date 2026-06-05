@@ -1,0 +1,19 @@
+{
+  "id": "rimebiter-bathysmal-vishap",
+  "name_ru": "Вишап глубин: Ледогрыз",
+  "name_en": "Rimebiter Bathysmal Vishap",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "dragonheirs-false-fin",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver"
+  ],
+  "coordinates": []
+}

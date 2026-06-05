@@ -1,47 +1,80 @@
 {
   "id": "staff-of-the-scarlet-sands",
-  "name": "Staff of the Scarlet Sands",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Staff_of_the_Scarlet_Sands",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "The equipping character gains of their Elemental Mastery as bonus ATK. When an Elemental Skill hits opponents, the Dream of the Scarlet Sands will be gained for: The equipping character will gain of their Elemental Mastery as bonus ATK. Max stacks.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Oasis Garden's Reminiscence",
-        "Chaos Storage",
-        "Oasis Garden's Kindness",
-        "Chaos Module",
-        "Luminescent Pollen",
-        "Oasis Garden's Mourning",
-        "Chaos Bolt",
-        "Crystalline Cyst Dust",
-        "Oasis Garden's Truth"
-      ]
+  "name_ru": "Посох алых песков",
+  "name_en": "Staff of the Scarlet Sands",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.096
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.441
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Марево на горизонте",
+  "passive_description_ru": "Экипированный этим оружием персонаж получает бонус атаки, равный 52% от его мастерства стихий. Попадание по врагу элементальным навыком на 10 сек. наделяет Сном алых песков: экипированный этим оружием персонаж получает бонус атаки, равный 28% от мастерства стихий. Эффект складывается до 3 раз.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "oasis-gardens-reminiscence",
+        "name_ru": "Воспоминания цветущего оазиса",
+        "name_en": "Oasis Garden's Reminiscence"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "oasis-gardens-kindness",
+        "name_ru": "Милость цветущего оазиса",
+        "name_en": "Oasis Garden's Kindness"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "oasis-gardens-mourning",
+        "name_ru": "Печаль цветущего оазиса",
+        "name_en": "Oasis Garden's Mourning"
+      },
+      {
+        "id": "oasis-gardens-truth",
+        "name_ru": "Истина цветущего оазиса",
+        "name_en": "Oasis Garden's Truth"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-storage",
+        "name_ru": "Сосуд хаоса",
+        "name_en": "Chaos Storage"
+      },
+      {
+        "id": "chaos-module",
+        "name_ru": "Модуль хаоса",
+        "name_en": "Chaos Module"
+      },
+      {
+        "id": "chaos-bolt",
+        "name_ru": "Анкер хаоса",
+        "name_en": "Chaos Bolt"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "fungal-spores",
+        "name_ru": "Споры плесенника",
+        "name_en": "Fungal Spores"
+      },
+      {
+        "id": "luminescent-pollen",
+        "name_ru": "Светящаяся пыльца",
+        "name_en": "Luminescent Pollen"
+      },
+      {
+        "id": "crystalline-cyst-dust",
+        "name_ru": "Пыль кристаллоцистов",
+        "name_en": "Crystalline Cyst Dust"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,15 @@
+{
+  "id": "golden-koi",
+  "name_ru": "Золотой лжедракон",
+  "name_en": "Golden Koi",
+  "type": "exchange",
+  "type_text_ru": "Рыба",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыбалка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

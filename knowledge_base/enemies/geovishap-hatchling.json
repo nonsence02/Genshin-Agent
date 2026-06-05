@@ -1,0 +1,13 @@
+{
+  "id": "geovishap-hatchling",
+  "name_ru": "Детёныш геовишапа",
+  "name_en": "Geovishap Hatchling",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "fossilized-bone-shard",
+    "sturdy-bone-shard",
+    "fragile-bone-shard"
+  ],
+  "coordinates": []
+}

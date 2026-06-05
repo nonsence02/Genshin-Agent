@@ -1,10 +1,21 @@
 {
   "id": "concealed-claw",
+  "name_ru": "Скрытый коготь",
   "name_en": "Concealed Claw",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Riftwolves"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Волки Разрыва",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Concealed_Claw"
+  "dropped_by": [
+    "rockfond-rifthound",
+    "rockfond-rifthound-whelp",
+    "thundercraven-rifthound",
+    "thundercraven-rifthound-whelp"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

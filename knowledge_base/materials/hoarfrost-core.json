@@ -1,10 +1,17 @@
 {
   "id": "hoarfrost-core",
+  "name_ru": "Инеевое ядро",
   "name_en": "Hoarfrost Core",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Cryo Regisvines"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Крио папоротники Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Hoarfrost_Core"
+  "dropped_by": [
+    "cryo-regisvine"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

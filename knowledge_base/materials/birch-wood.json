@@ -1,0 +1,18 @@
+{
+  "id": "birch-wood",
+  "name_ru": "Берёза",
+  "name_en": "Birch Wood",
+  "type": "wood",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Нагорье Ревущих ветров",
+    "Куплено в разделе древесины Сокровищницы обители",
+    "Конвертация древесины"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "lakkaberry-pie",
+  "name_ru": "Пирог с ягодами лакка",
+  "name_en": "Lakkaberry Pie",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 100 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "lakkaberry",
+      "count": 3
+    },
+    {
+      "material_id": "midsommar-berry",
+      "count": 3
+    },
+    {
+      "material_id": "rye-flour",
+      "count": 2
+    },
+    {
+      "material_id": "smetana",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

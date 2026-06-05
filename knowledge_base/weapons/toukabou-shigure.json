@@ -1,48 +1,80 @@
 {
   "id": "toukabou-shigure",
-  "name": "Toukabou Shigure",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Toukabou_Shigure",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "After an attack hits opponents, it will inflict an instance of Cursed Parasol upon one of them for. This can be triggered once every. If this opponent is defeated during Cursed Parasol's duration, Cursed Parasol's CD will be refreshed immediately. The character wielding this weapon will deal more DMG to the opponent affected by Cursed Parasol.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Narukami's Wisdom",
-        "Damaged Prism",
-        "Old Handguard",
-        "Narukami's Joy",
-        "Turbid Prism",
-        "Kageuchi Handguard",
-        "Narukami's Affection",
-        "Radiant Prism",
-        "Famed Handguard",
-        "Narukami's Valor"
-      ]
+  "name_ru": "Токабо сигурэ",
+  "name_en": "Toukabou Shigure",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 36
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 165.384
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Кайдан: Объединяющий землю и дождь",
+  "passive_description_ru": "При попадании по противникам на 10 сек. накладывает на одного из них Проклятый зонт. Этот эффект может возникнуть один раз в 15 сек. Если поражённый Проклятым зонтом противник погибнет до его окончания, откат эффекта немедленно обновится. Урон, который наносит экипированный этим оружием персонаж поражённым Проклятым зонтом противникам, увеличивается на 16%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "narukamis-wisdom",
+        "name_ru": "Мудрость Наруками",
+        "name_en": "Narukami's Wisdom"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "narukamis-joy",
+        "name_ru": "Радость Наруками",
+        "name_en": "Narukami's Joy"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "narukamis-affection",
+        "name_ru": "Милость Наруками",
+        "name_en": "Narukami's Affection"
+      },
+      {
+        "id": "narukamis-valor",
+        "name_ru": "Доблесть Наруками",
+        "name_en": "Narukami's Valor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "damaged-prism",
+        "name_ru": "Сломанная призма",
+        "name_en": "Damaged Prism"
+      },
+      {
+        "id": "turbid-prism",
+        "name_ru": "Загрязнённая призма",
+        "name_en": "Turbid Prism"
+      },
+      {
+        "id": "radiant-prism",
+        "name_ru": "Блестящая призма",
+        "name_en": "Radiant Prism"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

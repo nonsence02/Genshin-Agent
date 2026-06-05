@@ -1,0 +1,19 @@
+{
+  "id": "mondstadt-grilled-fish",
+  "name_ru": "Рыбный шашлычок",
+  "name_en": "Mondstadt Grilled Fish",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Воскрешает персонажа и восстанавливает ему 150 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 1
+    },
+    {
+      "material_id": "pepper",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

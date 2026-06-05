@@ -1,0 +1,27 @@
+{
+  "id": "super-magnificent-pizza",
+  "name_ru": "Супервеликолепная пицца",
+  "name_en": "Super Magnificent Pizza",
+  "rarity": 4,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает физ. урон всех членов отряда на 45% и шанс крит. попадания на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "ham",
+      "count": 2
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "cheese",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

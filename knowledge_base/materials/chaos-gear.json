@@ -1,10 +1,21 @@
 {
   "id": "chaos-gear",
+  "name_ru": "Механизм хаоса",
   "name_en": "Chaos Gear",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Ruin Sentinels"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Часовые руин",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Chaos_Gear"
+  "dropped_by": [
+    "ruin-cruiser",
+    "ruin-defender",
+    "ruin-destroyer",
+    "ruin-scout"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

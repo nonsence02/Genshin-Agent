@@ -1,0 +1,23 @@
+{
+  "id": "fried-radish-balls",
+  "name_ru": "Редисовые шарики",
+  "name_en": "Fried Radish Balls",
+  "rarity": 2,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 95 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 3
+    },
+    {
+      "material_id": "radish",
+      "count": 2
+    },
+    {
+      "material_id": "pepper",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

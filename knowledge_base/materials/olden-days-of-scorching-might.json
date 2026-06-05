@@ -1,14 +1,21 @@
 {
   "id": "olden-days-of-scorching-might",
+  "name_ru": "Прошлое пылающей мощи",
   "name_en": "Olden Days of Scorching Might",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Tower of Abject Pride (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Olden_Days_of_Scorching_Might"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-leading-karma-iv"
+  ],
+  "source_domain": "domain-of-forgery-leading-karma-iv",
+  "coordinates": []
 }

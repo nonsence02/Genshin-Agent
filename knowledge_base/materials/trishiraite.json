@@ -1,10 +1,17 @@
 {
   "id": "trishiraite",
+  "name_ru": "Тришираит",
   "name_en": "Trishiraite",
-  "type": "Local Specialty (Sumeru)",
-  "days": [],
-  "source": [
-    "Found in the deserts of Sumeru"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Сумеру",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пустыня Сумеру",
+    "Горы Темир",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Trishiraite"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

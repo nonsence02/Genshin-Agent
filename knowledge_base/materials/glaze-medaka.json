@@ -1,0 +1,15 @@
+{
+  "id": "glaze-medaka",
+  "name_ru": "Глазурная оризия",
+  "name_en": "Glaze Medaka",
+  "type": "exchange",
+  "type_text_ru": "Рыба",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Рыбалка"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

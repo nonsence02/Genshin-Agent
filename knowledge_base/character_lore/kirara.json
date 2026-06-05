@@ -1,0 +1,70 @@
+{
+  "id": "kirara",
+  "name_en": "Kirara",
+  "element": "Dendro",
+  "weapon": "Sword",
+  "region": "Inazuma",
+  "rarity": 4,
+  "description": "Kirara ( Japanese : 綺良々 Kirara ) is a playable Dendro character in Genshin Impact .\n\nA youkai — a nekomata, specifically — Kirara is the Gold Level Courier of the Inazuma -based Komaniya Express . Her diligence in ensuring every package would be delivered to the right place has increased her company's renown and hers, making her the sole courier handling international deliveries. She enjoys every delivery she makes as she considers these outings for herself.",
+  "role_summary": "Kirara ( Japanese : 綺良々 Kirara ) is a playable Dendro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Boxcutter",
+      "description": "Normal Attack Performs up to 4 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 3 rapid claw strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Meow-teor Kick",
+      "description": "(‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Leaps into the air with all the agility of a cat passing through the bushes, and thwacks her foes with a flying kick that deals AoE Dendro DMG while creating a Shield of Safe Transport. This will also briefly apply Dendro to Kirara. The shield will absorb Dendro DMG with 250% effectiveness. The shield's DMG absorption will be based on Kirara's Max HP and will not exceed a certain percentage of that Max HP. The remaining DMG absorption on a Shield of Safe Transport will stack on a new one when it is created, and its duration will reset. Hold Out of her desire to \"deliver within half a day,\" Kirara deploys a Shield of Safe Transport identical to the one that can be created by (‍ pressing Text for mouse and keyboard and controller ‍/‍ tapping Text for touch screen ‍) the skill. She will also curl up into a special express delivery box, entering the Urgent Neko Parcel state in order to move and fight more swiftly. Urgent Neko Parcel Deals Dendro DMG to opponents she crashes into. This effect can be triggered once on each opponent every 0.5s. When in this state, Kirara's movement speed, climbing spee..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Secret Art: Surprise Dispatch",
+      "description": "Smash opponents with a Special Delivery Package used for punishing parcel thieves, dealing AoE Dendro DMG . After the Special Delivery Package explodes, it will split up into many Cat Grass Cardamoms that will explode either upon contact with opponents or after a period of time, dealing AoE Dendro DMG ."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Bewitching, Betwitching Tails",
+      "description": "When Kirara is in the Urgent Neko Parcel state of Meow-teor Kick , each impact against an opponent will grant her a stack of Reinforced Packaging. This effect can be triggered once for each opponent hit every 0.5s. Max 3 stacks. When the Urgent Neko Parcel state ends, each stack of Reinforced Packaging will create 1 Shield of Safe Transport for Kirara. The shields that are created this way will have 20% of the DMG absorption that the Shield of Safe Transport produced by Meow-teor Kick would have. If Kirara is already protected by a Shield of Safe Transport created by Meow-teor Kick, its DMG absorption will stack with these shields and its duration will reset."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Pupillary Variance",
+      "description": "Every 1,000 Max HP Kirara possesses will increase the DMG dealt by Meow-teor Kick by 0.4%, and the DMG dealt by Secret Art: Surprise Dispatch by 0.3%."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Cat's Creeping Carriage",
+      "description": "When Kirara is in the party, animals who produce Fowl , Raw Meat , or Chilled Meat will not be startled when party members approach them."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Material Circulation",
+      "effect": "Every 8,000 Max HP Kirara possesses will cause her to create 1 extra Cat Grass Cardamom when she uses Secret Art: Surprise Dispatch . A maximum of 4 extra can be created this way."
+    },
+    "c2": {
+      "name": "1U",
+      "effect": ""
+    },
+    "c3": {
+      "name": "Universal Recognition",
+      "effect": "Increases the Level of Meow-teor Kick by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Steed of Skanda",
+      "effect": "Description Advanced Properties After active character(s) protected by Shields of Safe Transport or Critical Transport Shields hit opponents with Normal, Charged, or Plunging Attacks, Kirara will perform a coordinated attack with them using Small Cat Grass Cardamoms, dealing 200% of her ATK as Dendro DMG . DMG dealt this way is considered Elemental Burst DMG. This effect can be triggered once every 3.8s. This CD is shared between all party members. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Small Cat Grass Cardamom 1U Elemental Burst 2.5s/3 Hits 25 Light 200 0 ✘"
+    },
+    "c5": {
+      "name": "A Thousand Miles in a Day",
+      "effect": "Increases the Level of Secret Art: Surprise Dispatch by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Countless Sights to See",
+      "effect": "All nearby party members will gain 12% All Elemental DMG Bonus within 15s after Kirara uses her Elemental Skill or Burst."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kirara",
+  "ai_tags": "Карманный урон, Дендро аппликатор"
+}

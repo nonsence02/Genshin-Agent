@@ -1,10 +1,17 @@
 {
   "id": "cecilia",
+  "name_ru": "Сесилия",
   "name_en": "Cecilia",
-  "type": "Local Specialty (Mondstadt)",
-  "days": [],
-  "source": [
-    "Found in the wild on Starsnatch Cliff"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Мондштадта",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Утёс Звездолова",
+    "Садоводство в Чайнике безмятежности",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Cecilia"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

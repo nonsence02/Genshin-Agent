@@ -1,10 +1,27 @@
 {
   "id": "vayuda-turquoise-fragment",
+  "name_ru": "Фрагмент бирюзы Вайюда",
   "name_en": "Vayuda Turquoise Fragment",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses and Weekly Bosses (Lv. 40+)"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Vayuda_Turquoise_Fragment"
+  "dropped_by": [
+    "algorithm-of-semi-intransient-matrix-of-overseer-network",
+    "anemo-hypostasis",
+    "icewind-suite",
+    "maguu-kenki",
+    "setekh-wenut",
+    "shouki-no-kami-the-prodigal",
+    "solitary-suanni",
+    "stormterror",
+    "tenebrous-papilla-type-i"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

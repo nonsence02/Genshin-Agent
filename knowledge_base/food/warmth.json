@@ -1,0 +1,19 @@
+{
+  "id": "warmth",
+  "name_ru": "«Теплота»",
+  "name_en": "\"Warmth\"",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 14% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 350 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "tofu",
+      "count": 1
+    },
+    {
+      "material_id": "seagrass",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

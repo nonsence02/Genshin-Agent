@@ -1,0 +1,15 @@
+{
+  "id": "wishmaker",
+  "name_ru": "Доброволец",
+  "name_en": "Wishmaker",
+  "type": "fish_rod",
+  "type_text_ru": "Удочка",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Обмен в Ассоциации рыболовов Ли Юэ"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

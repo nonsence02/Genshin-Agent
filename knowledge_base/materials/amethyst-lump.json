@@ -1,0 +1,16 @@
+{
+  "id": "amethyst-lump",
+  "name_ru": "Кусок аметиста",
+  "name_en": "Amethyst Lump",
+  "type": "exchange",
+  "type_text_ru": "Руда для ковки",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Остров Наруками"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

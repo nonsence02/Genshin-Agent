@@ -1,10 +1,33 @@
 {
   "id": "varunada-lazurite-fragment",
+  "name_ru": "Фрагмент лазурита Варунада",
   "name_en": "Varunada Lazurite Fragment",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses and Weekly Bosses (Lv. 40+)"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Varunada_Lazurite_Fragment"
+  "dropped_by": [
+    "aeonblight-drake",
+    "all-devouring-narwhal",
+    "childe",
+    "frostnight-herra",
+    "hydro-hypostasis",
+    "hydro-tulpa",
+    "iniquitous-baptist",
+    "oceanid",
+    "primo-geovishap",
+    "secret-source-automaton-overseer-device",
+    "shouki-no-kami-the-prodigal",
+    "solitary-suanni",
+    "stormterror",
+    "the-doctor",
+    "the-game-before-the-gate"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

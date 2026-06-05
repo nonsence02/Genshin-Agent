@@ -1,10 +1,28 @@
 {
   "id": "tyrants-fang",
+  "name_ru": "Клык тирана",
   "name_en": "Tyrant's Fang",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Natlan Saurians"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Заврианы Натлана Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Tyrant%27s_Fang"
+  "dropped_by": [
+    "iktomisaurus",
+    "iktomisaurus-chick",
+    "koholasaur-whelp",
+    "koholasaurus",
+    "qucusaurus",
+    "qucusaurus-chick",
+    "tepetlisaur-whelp",
+    "tepetlisaurus",
+    "yumkasaur-whelp",
+    "yumkasaurus"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,44 +1,80 @@
 {
   "id": "thrilling-tales-of-dragon-slayers",
-  "name": "Thrilling Tales of Dragon Slayers",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Thrilling_Tales_of_Dragon_Slayers",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "3★",
-    "base_atk": "39 - 401",
-    "secondary_stat": "HP"
-  },
-  "passive": "When switching characters, the new character taking the field has their ATK increased by for. This can only occur once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Divining Scroll",
-        "Dead Ley Line Leaves",
-        "Sealed Scroll",
-        "Ley Line Sprout",
-        "Forbidden Curse Scroll"
-      ]
+  "name_ru": "Эпос о драконоборцах",
+  "name_en": "Thrilling Tales of Dragon Slayers",
+  "weapon_type": "Catalyst",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 38.7413,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.0766
+    },
+    "level_90": {
+      "base_atk": 401.2936,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.3519
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Наследие",
+  "passive_description_ru": "При переключении персонажа увеличивает силу атаки вошедшего на поле боя персонажа на 24% в течение 10 сек. Может возникнуть раз в 20 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

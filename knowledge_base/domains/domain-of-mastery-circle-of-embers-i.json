@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-mastery-circle-of-embers-i",
+  "name_ru": "Мастерство: Палящий круг I",
+  "name_en": "Domain of Mastery: Circle of Embers I",
+  "type": "Повышение талантов",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "teachings-of-gold"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "prosperous-peace",
+  "name_ru": "«Мир и процветание»",
+  "name_en": "Prosperous Peace",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 40% от макс. HP + 2350 HP.",
+  "recipe": [
+    {
+      "material_id": "rice",
+      "count": 4
+    },
+    {
+      "material_id": "lotus-head",
+      "count": 2
+    },
+    {
+      "material_id": "carrot",
+      "count": 2
+    },
+    {
+      "material_id": "berry",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

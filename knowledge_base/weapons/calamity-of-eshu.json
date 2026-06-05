@@ -1,48 +1,80 @@
 {
   "id": "calamity-of-eshu",
-  "name": "Calamity of Eshu",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Calamity_of_Eshu",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by, and Normal and Charged Attack CRIT Rate is increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Delirious Decadence of the Sacred Lord",
-        "Refractive Bud",
-        "Sentry's Wooden Whistle",
-        "Delirious Desolation of the Sacred Lord",
-        "Bewildering Broadleaf",
-        "Warrior's Metal Whistle",
-        "Delirious Demeanor of the Sacred Lord",
-        "Illusory Leafcoil",
-        "Saurian-Crowned Warrior's Golden Whistle",
-        "Delirious Divinity of the Sacred Lord"
-      ]
+  "name_ru": "Бедствие Эшу",
+  "name_en": "Calamity of Eshu",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Надвигающийся рубеж",
+  "passive_description_ru": "Повышает урон обычной и заряженной атаки на 20%, а также шанс крит. попадания обычной и заряженной атаки на 8%, если персонаж защищён щитом.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "delirious-decadence-of-the-sacred-lord",
+        "name_ru": "Безумный декаданс Святого Мудреца",
+        "name_en": "Delirious Decadence of the Sacred Lord"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "delirious-desolation-of-the-sacred-lord",
+        "name_ru": "Безумное опустошение Святого Мудреца",
+        "name_en": "Delirious Desolation of the Sacred Lord"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "delirious-demeanor-of-the-sacred-lord",
+        "name_ru": "Безумный облик Святого Мудреца",
+        "name_en": "Delirious Demeanor of the Sacred Lord"
+      },
+      {
+        "id": "delirious-divinity-of-the-sacred-lord",
+        "name_ru": "Безумная духовность Святого Мудреца",
+        "name_en": "Delirious Divinity of the Sacred Lord"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "refractive-bud",
+        "name_ru": "Преломляющий бутон",
+        "name_en": "Refractive Bud"
+      },
+      {
+        "id": "bewildering-broadleaf",
+        "name_ru": "Ошеломляющий широколист",
+        "name_en": "Bewildering Broadleaf"
+      },
+      {
+        "id": "illusory-leafcoil",
+        "name_ru": "Иллюзорная листовая спираль",
+        "name_en": "Illusory Leafcoil"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "sentrys-wooden-whistle",
+        "name_ru": "Деревянный свисток дозорного",
+        "name_en": "Sentry's Wooden Whistle"
+      },
+      {
+        "id": "warriors-metal-whistle",
+        "name_ru": "Металлический свисток воина",
+        "name_en": "Warrior's Metal Whistle"
+      },
+      {
+        "id": "saurian-crowned-warriors-golden-whistle",
+        "name_ru": "Золотой свисток коронованного заврианами воина",
+        "name_en": "Saurian-Crowned Warrior's Golden Whistle"
+      }
+    ]
+  },
+  "coordinates": []
 }

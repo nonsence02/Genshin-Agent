@@ -1,0 +1,45 @@
+{
+  "id": "wonderland-manekin",
+  "name_en": "Wonderland Manekin",
+  "element": "None",
+  "weapon": "Sword",
+  "region": "",
+  "rarity": 5,
+  "description": "The Wonderland Manekin is a playable character in Genshin Impact , serving as the primary playable character of the Miliastra Wonderland gameplay mode.\n\nAfter unlocking Miliastra Wonderland, players will gain access to two versions of the Manekin: Manekin (male) and Manekina (female). The Manekins can be named, customized with Cosmetic Plans , and used in Miliastra Wonderland and Teyvat .\n\nIn Miliastra Wonderland, players can freely swap between the Manekin and the Manekina at any time. In Teyvat, players have both Manekins simultaneously as separate characters but they cannot both be used in the same team. The Manekin can be used in the open world and most domains, but not in gameplay modes such as the Spiral Abyss , Imaginarium Theater , and Stygian Onslaught . Their element is set to the Traveler 's current element.",
+  "role_summary": "The Manekin is a DMG dealer who attacks by frequently manipulating the distance between themselves and their opponents. Using their Elemental Skill can increase the distance between them and their opponents. Using their Elemental Burst will create a field that will deal DMG to opponents each time they enter it. When the Manekin uses Elemental Skills and Elemental Bursts, they will switch to a random cosmetic from among the available Cosmetic Plans.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Outlander Arts: Vigilant Watch",
+      "description": "Normal Attack Performs up to 4 consecutive sword strikes. Charged Attack Consumes a certain amount of Stamina to perform 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Punishing Barrage",
+      "description": "The Manekin attacks nearby opponents once, dealing AoE DMG corresponding to their own Elemental Type before pulling back rapidly. After unleashing an Elemental Skill, the Manekin's Normal Attacks , Charged Attacks , and Plunging Attacks are converted to deal the corresponding elemental DMG, which cannot be overridden by other Elemental infusions , for a period of time. This effect will disappear when the Manekin leaves the field. Has 2 charges."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "No Entry",
+      "description": "The Manekin summons a \"Restricted Area\" that follows them around, dealing 1 instance of DMG corresponding to the Manekin's Elemental Type to nearby opponents. Additionally, when opponents enter the Restricted Area, they will receive 1 instance of DMG corresponding to the Manekin's Elemental Type. This effect can trigger once every 0.5s. The Restricted Area will disappear when the Manekin leaves the field."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Battlelines Redrawn",
+      "description": "When the Manekin leaves the field, if a Restricted Area that they summoned is still active, it will explode, dealing AoE DMG of the Manekin's Elemental Type equal to 200% of the Manekin's ATK ."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Combat Readiness",
+      "description": "When the Manekin is not on the field and their Elemental Energy is below 30%, they will recover 2 Elemental Energy per second."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Agile Stance",
+      "description": "When the Manekin unleashes an Elemental Skill or Burst , it will change to one of its existing ensembles at random."
+    }
+  ],
+  "constellations": {},
+  "source_url": "https://genshin-impact.fandom.com/wiki/Wonderland_Manekin",
+  "ai_tags": "Main DPS, Элемент аппликатор"
+}

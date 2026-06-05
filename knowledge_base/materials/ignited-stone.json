@@ -1,10 +1,19 @@
 {
   "id": "ignited-stone",
+  "name_ru": "Пламенный камень",
   "name_en": "Ignited Stone",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Avatars of Lava"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Воплощение лавы",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Ignited_Stone"
+  "dropped_by": [
+    "eroding-avatar-of-lava",
+    "fluid-avatar-of-lava"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

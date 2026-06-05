@@ -1,94 +1,81 @@
 {
   "id": "gorou",
-  "name": "Gorou",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Gorou",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Geo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Deals AoE Geo DMG and sets up a General's War Banner. General's War Banner Provides up to buffs to active characters within the skill's AoE based on the number of Geo characters in the party at the time of casting: Geo character: Adds \"Standing Firm\" - DEF Bonus. Geo characters: Adds \"Impregnable\" - Increased resistance to interruption. Geo characters: Adds \"Crunch\" - Geo DMG Bonus. Gorou can deploy only General's War Banner on the field at any one time. Characters can only benefit from General's War Banner at a time. When a party member leaves the field, the active buff will last for. Hold Adjust the location of the skill. When this skill hits at least one enemy, it generates Elemental...",
-    "elemental_burst": "Displaying his valor as a general, Gorou deals Aoe Geo DMG and creates a field known as General's Glory to embolden his comrades. General's Glory This field has the following properties: Like the General's War Banner created by Inuzaka All-Round Defense, provides buffs to active characters within the skill's AoE based on the number of Geo characters in the party. Also moves together with your active character. Generates Crystal Collapse every that deals AoE Geo DMG to opponent within the skill's AoE. Pulls elemental shard in the skill's AoE to your active character's position every (elemental shards are created by Crystallize reactions). If a General's War Banner created by Gorou currently..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Prithiva Topaz Sliver",
-        "Prithiva Topaz Fragment",
-        "Prithiva Topaz Chunk",
-        "Prithiva Topaz Gemstone"
-      ],
-      "mob_drops": [
-        "Spectral Husk",
-        "Spectral Heart",
-        "Spectral Nucleus"
-      ],
-      "special": [
-        "Sango Pearl",
-        "Perpetual Heart"
-      ]
+  "name_ru": "Горо",
+  "name_en": "Gorou",
+  "element": "Geo",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 802.3761,
+      "atk": 15.3149,
+      "def": 54.3638
     },
-    "talents": {
-      "books": [
-        "Teachings of Light",
-        "Guide to Light",
-        "Philosophies of Light"
-      ],
-      "mob_drops": [
-        "Spectral Husk",
-        "Spectral Heart",
-        "Spectral Nucleus"
-      ],
-      "weekly_boss": [
-        "Molten Moment"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9569.9253,
+      "atk": 182.6616,
+      "def": 648.3954
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Клыкастое оперение",
+      "description_ru": "Обычная атака\nДо четырёх выстрелов из лука.\n\nЗаряженная атака\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания стрела накапливает энергию земли. Полностью заряженная энергией земли стрела наносит Гео урон.\n\nАтака в падении\nВыпускает град стрел, которые при приземлении персонажа наносят урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Всесторонняя защита Инудзаки",
+      "description_ru": "Наносит Гео урон по площади и устанавливает Боевой штандарт генерала.\n\nБоевой штандарт генерала\nДаёт усиления активному персонажу в области действия штандарта в зависимости от числа персонажей Гео в отряде:\n· Если в отряде есть один персонаж Гео, даётся эффект Стойкость, увеличивающий защиту.\n· При наличии двух персонажей Гео в отряде действует Крепость: к эффекту Стойкости добавляется сопротивление прерыванию.\n· Три персонажа Гео в отряде дают эффект Ярость: к прошлым эффектам прибавляется бонус Гео урона.\n\nГоро не может установить больше одного своего Боевого штандарта генерала на поле боя одновременно. Персонажи могут одновременно использовать эффекты только одного Боевого штандарта генерала. Эффект области действует в течение 2 сек. после выхода из области.\n\nДолгое нажатие\nИспользуется для выбора места действия навыка."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Дзюга: Вперёд к победе",
+      "description_ru": "Демонстрируя свой талант полководца, Горо наносит Гео урон по площади и создаёт область Влияния генерала для поддержки соратников.\n\nВлияние генерала\nОбладает следующими свойствами:\n· Даёт те же эффекты, что элементальный навык «Всесторонняя защита Инудзаки», в зависимости от количества Гео персонажей в отряде на момент запуска. Область перемещается вместе с активным персонажем.\n· Каждые 1,5 сек. запускает Кристальный обвал, нанося Гео урон по площади.\n· Каждые 1,5 сек. 1 элементальный осколок, созданный реакцией Кристалл притягивается к активному персонажу.\n\nЕсли при запуске Влияния генерала на поле есть установленный самим Горо Боевой штандарт генерала, штандарт исчезает. Если Горо запускает элементальный навык Всесторонняя защита Инудзаки во время действия Влияния генерала, Боевой штандарт не создаётся.\nСобственный эффект Влияния генерала Горо исчезает, если Горо повержен."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Бросая вызов стихии",
+      "description_ru": "В течение 12 сек. после запуска навыка Дзюга: Вперёд к победе защита всех членов отряда поблизости увеличивается на 25%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Ответная услуга",
+      "description_ru": "Урон атак Горо увеличивается пропорционально его защите:\n· Урон навыка Всесторонняя защита Инудзаки повышается на 156% защиты.\n· Урон навыка Дзюга: Вперёд к победе и кристального обвала увеличивается на 15,6% защиты."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Искатель сияния",
+      "description_ru": "Отмечает диковинки Инадзумы на мини-карте."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Бег собаки: Скорость ветра",
+      "description_ru": "Когда активный персонаж (не Горо), находясь под действием созданного самим Горо Боевого штандарта генерала или области Влияния генерала, наносит Гео урон врагу, время отката Всесторонней защиты Инудзаки Горо снижается на 2 сек.\nЭффект возникает раз в 10 сек."
+    },
+    {
+      "name_ru": "Ожидание собаки: Точность часов",
+      "description_ru": "Если активный персонаж поблизости во время действия Влияния генерала получает элементальный осколок, созданный реакцией Кристалл, либо активирует реакцию Лунный кристалл, то длительность Влияния генерала Горо увеличивается на 1 сек.\nЭффект может возникнуть раз в 0,1 сек. Нельзя увеличить длительность больше чем на 3 сек."
+    },
+    {
+      "name_ru": "Укус собаки: Ярость огня",
+      "description_ru": "Увеличивает уровень навыка Всесторонняя защита Инудзаки на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Забота собаки: Нежность воды",
+      "description_ru": "У активного персонажа в области Влияния генерала при наличии эффектов Крепость или Ярость каждые 1,5 сек. восстанавливается HP в размере 50% защиты самого Горо."
+    },
+    {
+      "name_ru": "Удар собаки: Сила грома",
+      "description_ru": "Увеличивает уровень навыка Дзюга: Вперёд к победе на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Доблесть собаки: Надёжность гор",
+      "description_ru": "В течение 12 сек. после запуска Всесторонней защиты Инудзаки или Дзюга: Вперёд к победе у всех членов отряда поблизости увеличивается крит. Гео урон в соответствии с уровнем области:\n· Стойкость - на 10%;\n· Крепость - на 20%;\n· Ярость - на 40%.\n\nЭффект не складывается, действует последний сработавший эффект."
+    }
+  ],
+  "coordinates": []
 }

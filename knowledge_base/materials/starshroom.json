@@ -1,0 +1,15 @@
+{
+  "id": "starshroom",
+  "name_ru": "Гриб-звезда",
+  "name_en": "Starshroom",
+  "type": "notice_add_hp",
+  "type_text_ru": "Еда",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

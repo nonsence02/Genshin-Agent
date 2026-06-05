@@ -1,44 +1,80 @@
 {
   "id": "deathmatch",
-  "name": "Deathmatch",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Deathmatch",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "If there are at least opponents nearby, ATK is increased by and DEF is increased by. If there are fewer than opponents nearby, ATK is increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Whopperflower Nectar",
-        "Dead Ley Line Leaves",
-        "Shimmering Nectar",
-        "Ley Line Sprout",
-        "Energy Nectar"
-      ]
+  "name_ru": "Смертельный бой",
+  "name_en": "Deathmatch",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.08
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.3675
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Гладиатор",
+  "passive_description_ru": "Если рядом 2 врага и более, сила атаки и защита увеличиваются на 16%; если рядом менее 2 врагов, сила атаки увеличивается на 24%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

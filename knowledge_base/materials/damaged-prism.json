@@ -1,10 +1,20 @@
 {
   "id": "damaged-prism",
+  "name_ru": "Сломанная призма",
   "name_en": "Damaged Prism",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Primal Constructs"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Первозданные конструкции",
+    "Покупается за Звёздную пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Damaged_Prism"
+  "dropped_by": [
+    "primal-construct-prospector",
+    "primal-construct-repulsor",
+    "primal-construct-reshaper"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

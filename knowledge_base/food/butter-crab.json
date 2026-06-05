@@ -1,0 +1,27 @@
+{
+  "id": "butter-crab",
+  "name_ru": "Краб в масле",
+  "name_en": "Butter Crab",
+  "rarity": 4,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 308 ед. и эффективность лечения на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "butter",
+      "count": 4
+    },
+    {
+      "material_id": "crab",
+      "count": 4
+    },
+    {
+      "material_id": "seagrass",
+      "count": 2
+    },
+    {
+      "material_id": "matsutake",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

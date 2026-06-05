@@ -1,0 +1,16 @@
+{
+  "id": "mist-flower-corolla",
+  "name_ru": "Туманный цветок (венчик)",
+  "name_en": "Mist Flower Corolla",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Винокурня «Рассвет»"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

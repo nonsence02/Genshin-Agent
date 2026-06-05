@@ -1,0 +1,10 @@
+{
+  "id": "martial-artist",
+  "name_ru": "Воин",
+  "name_en": "Martial Artist",
+  "max_rarity": 4,
+  "bonus_2pc": "Увеличивает урон обычной и заряженной атаки на 15%.",
+  "bonus_4pc": "Увеличивает урон обычной и заряженной атаки на 25% в течение 8 сек. после использования элементального навыка.",
+  "source_domain": "domain-of-blessing-crumbling-assembly-i",
+  "coordinates": []
+}

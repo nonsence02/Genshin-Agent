@@ -1,0 +1,70 @@
+{
+  "id": "rosaria",
+  "name_en": "Rosaria",
+  "element": "Cryo",
+  "weapon": "Polearm",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "description": "Rosaria is a playable Cryo character in Genshin Impact .\n\nThe least devout among the nuns of the Church of Favonius , Rosaria prefers acting in the shadows rather than participating in the activities of the Church.",
+  "role_summary": "Rosaria is a playable Cryo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Spear of the Church",
+      "description": "Normal Attack Performs up to 5 consecutive spear strikes. Charged Attack Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Ravaging Confession",
+      "description": "Rosaria swiftly shifts her position to appear behind her opponent, then stabs and slashes them with her polearm, dealing Cryo DMG . This ability cannot be used to travel behind opponents of a larger build."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Rites of Termination",
+      "description": "Rosaria's unique take on this prayer ritual: First, she swings her weapon to slash surrounding opponents; then, she summons a frigid Ice Lance that strikes the ground. Both actions deal Cryo DMG . While active, the Ice Lance periodically releases a blast of cold air, dealing Cryo DMG to surrounding opponents."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Regina Probationum",
+      "description": "When Rosaria strikes an opponent from behind using Ravaging Confession , Rosaria's CRIT Rate increases by 12% for 5s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Shadow Samaritan",
+      "description": "Casting Rites of Termination increases CRIT Rate of all nearby party members (except Rosaria herself) by 15% of Rosaria's CRIT Rate for 10s. CRIT Rate Bonus gained this way cannot exceed 15%."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Night Walk",
+      "description": "At night (18:00 – 6:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%. Does not take effect in Domains , Trounce Domains , or Spiral Abyss . Swift Stride does not stack."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Unholy Revelation",
+      "effect": "When Rosaria deals a CRIT Hit, her ATK SPD increases by 10% and her Normal Attack DMG increases by 10% for 4s."
+    },
+    "c2": {
+      "name": "Land Without Promise",
+      "effect": "The duration of the Ice Lance created by Rites of Termination is increased by 4s."
+    },
+    "c3": {
+      "name": "The Wages of Sin",
+      "effect": "Increases the Level of Ravaging Confession by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Painful Grace",
+      "effect": "Ravaging Confession 's CRIT Hits regenerate 5 Energy for Rosaria. Can only be triggered once each time Ravaging Confession is cast."
+    },
+    "c5": {
+      "name": "Last Rites",
+      "effect": "Increases the Level of Rites of Termination by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Divine Retribution",
+      "effect": "Rites of Termination 's attack decreases opponents' Physical RES by 20% for 10s."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Rosaria",
+  "ai_tags": "Main DPS, Cryo аппликатор"
+}

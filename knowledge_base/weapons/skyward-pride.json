@@ -1,44 +1,80 @@
 {
   "id": "skyward-pride",
-  "name": "Skyward Pride",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Skyward_Pride",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "5★",
-    "base_atk": "48 - 674",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Increases all DMG by. After using an Elemental Burst, a vacuum blade that does of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for or vacuum blades.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Slime Condensate",
-        "Dead Ley Line Leaves",
-        "Slime Secretions",
-        "Ley Line Sprout",
-        "Slime Concentrate"
-      ]
+  "name_ru": "Небесное величие",
+  "name_en": "Skyward Pride",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.08
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.3675
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Дракон, пронзивший небо",
+  "passive_description_ru": "Увеличивает наносимый урон на 8%. После активации взрыва стихий попадания обычными или заряженными атаками запускают неосязаемое лезвие, которое наносит 80% урона всем врагам на своём пути. Длится 20 сек. или 8 неосязаемых лезвий.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "slime-condensate",
+        "name_ru": "Слизь слайма",
+        "name_en": "Slime Condensate"
+      },
+      {
+        "id": "slime-secretions",
+        "name_ru": "Выделения слайма",
+        "name_en": "Slime Secretions"
+      },
+      {
+        "id": "slime-concentrate",
+        "name_ru": "Концентрат слайма",
+        "name_en": "Slime Concentrate"
+      }
+    ]
+  },
+  "coordinates": []
 }

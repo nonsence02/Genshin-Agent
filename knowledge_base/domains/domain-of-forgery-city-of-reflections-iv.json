@@ -1,0 +1,19 @@
+{
+  "id": "domain-of-forgery-city-of-reflections-iv",
+  "name_ru": "Воля: Город отражений IV",
+  "name_en": "Domain of Forgery: City of Reflections IV",
+  "type": "Возвышение оружия",
+  "region": "Мондштадт",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "scattered-piece-of-decarabians-dream",
+    "fragment-of-decarabians-epic",
+    "debris-of-decarabians-city",
+    "tile-of-decarabians-tower"
+  ],
+  "coordinates": []
+}

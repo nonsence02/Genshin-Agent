@@ -1,0 +1,19 @@
+{
+  "id": "domain-of-forgery-thundercloud-altar-iv",
+  "name_ru": "Воля: Алтарь грозовых туч IV",
+  "name_en": "Domain of Forgery: Thundercloud Altar IV",
+  "type": "Возвышение оружия",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "divine-body-from-guyun",
+    "relic-from-guyun",
+    "lustrous-stone-from-guyun",
+    "luminous-sands-from-guyun"
+  ],
+  "coordinates": []
+}

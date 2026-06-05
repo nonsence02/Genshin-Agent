@@ -1,0 +1,27 @@
+{
+  "id": "trembling-strings-and-rushing-reeds",
+  "name_ru": "«Трепет струн и шелест тростника»",
+  "name_en": "Trembling Strings and Rushing Reeds",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "ham",
+      "count": 2
+    },
+    {
+      "material_id": "fowl",
+      "count": 1
+    },
+    {
+      "material_id": "pepper",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

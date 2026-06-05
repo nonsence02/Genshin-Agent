@@ -1,0 +1,13 @@
+{
+  "id": "fatui-skirmisher-anemoboxer-vanguard",
+  "name_ru": "Застрельщик Фатуи: Анемо борец",
+  "name_en": "Fatui Skirmisher - Anemoboxer Vanguard",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "lieutenants-insignia",
+    "sergeants-insignia",
+    "recruits-insignia"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tepetlisaurus-warrior-shard-striker",
+  "name_ru": "Тепетлизавр-воин: Крушитель осколков",
+  "name_en": "Tepetlisaurus Warrior: Shard Striker",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "saurian-crowned-warriors-golden-whistle",
+    "warriors-metal-whistle",
+    "sentrys-wooden-whistle"
+  ],
+  "coordinates": []
+}

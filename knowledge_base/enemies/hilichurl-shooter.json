@@ -1,0 +1,16 @@
+{
+  "id": "hilichurl-shooter",
+  "name_ru": "Хиличурл-стрелок",
+  "name_en": "Hilichurl Shooter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "weathered-arrowhead",
+    "sharp-arrowhead",
+    "firm-arrowhead",
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

@@ -1,48 +1,80 @@
 {
   "id": "lightbearing-moonshard",
-  "name": "Lightbearing Moonshard",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lightbearing_Moonshard",
-  "profile": {
-    "type": "Sword",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "Increases DEF by. DMG inflicted by Lunar-Crystallize reactions increases by for after the equipping character uses an Elemental Skill.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Grain of Aerosiderite",
-        "Mistshroud Manifestation",
-        "Broken Drive Shaft",
-        "Piece of Aerosiderite",
-        "Mistshroud Plate",
-        "Reinforced Drive Shaft",
-        "Bit of Aerosiderite",
-        "Mistshroud Helmet",
-        "Precision Drive Shaft",
-        "Chunk of Aerosiderite"
-      ]
+  "name_ru": "Светоносный осколок луны",
+  "name_en": "Lightbearing Moonshard",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.192
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.882
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Наследие Лан-гань",
+  "passive_description_ru": "Увеличивает защиту на 20%. На 5 сек. после того, как экипированный персонаж использует элементальный навык, урон реакции Лунный кристалл увеличивается на 64%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "grain-of-aerosiderite",
+        "name_ru": "Зерно чёрного сидерита",
+        "name_en": "Grain of Aerosiderite"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "piece-of-aerosiderite",
+        "name_ru": "Кусочек чёрного сидерита",
+        "name_en": "Piece of Aerosiderite"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "bit-of-aerosiderite",
+        "name_ru": "Осколок чёрного сидерита",
+        "name_en": "Bit of Aerosiderite"
+      },
+      {
+        "id": "chunk-of-aerosiderite",
+        "name_ru": "Обломок чёрного сидерита",
+        "name_en": "Chunk of Aerosiderite"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mistshroud-manifestation",
+        "name_ru": "Туманное воплощение",
+        "name_en": "Mistshroud Manifestation"
+      },
+      {
+        "id": "mistshroud-plate",
+        "name_ru": "Туманная пластина",
+        "name_en": "Mistshroud Plate"
+      },
+      {
+        "id": "mistshroud-helmet",
+        "name_ru": "Туманный шлем",
+        "name_en": "Mistshroud Helmet"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "broken-drive-shaft",
+        "name_ru": "Сломанный вал",
+        "name_en": "Broken Drive Shaft"
+      },
+      {
+        "id": "reinforced-drive-shaft",
+        "name_ru": "Усиленный вал",
+        "name_en": "Reinforced Drive Shaft"
+      },
+      {
+        "id": "precision-drive-shaft",
+        "name_ru": "Высокоточный вал",
+        "name_en": "Precision Drive Shaft"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,15 @@
+{
+  "id": "lizard-tail",
+  "name_ru": "Хвост ящерицы",
+  "name_en": "Lizard Tail",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Охота на ящериц"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

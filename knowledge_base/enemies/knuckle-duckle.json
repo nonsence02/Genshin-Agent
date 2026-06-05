@@ -1,0 +1,15 @@
+{
+  "id": "knuckle-duckle",
+  "name_ru": "Железный утёнок",
+  "name_en": "Knuckle Duckle",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "precision-kuuvahki-stamping-die",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "raimei-angelfish",
+  "kind": "fish",
+  "name_ru": "Рыба-ангел раймэй",
+  "name_en": "Raimei Angelfish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

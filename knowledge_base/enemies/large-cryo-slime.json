@@ -1,0 +1,13 @@
+{
+  "id": "large-cryo-slime",
+  "name_ru": "Большой Крио слайм",
+  "name_en": "Large Cryo Slime",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "slime-concentrate",
+    "slime-secretions",
+    "slime-condensate"
+  ],
+  "coordinates": []
+}

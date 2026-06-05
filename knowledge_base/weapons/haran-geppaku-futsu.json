@@ -1,48 +1,80 @@
 {
   "id": "haran-geppaku-futsu",
-  "name": "Haran Geppaku Futsu",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Haran_Geppaku_Futsu",
-  "profile": {
-    "type": "Sword",
-    "rarity": "5★",
-    "base_atk": "46 - 608",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "Obtain All Elemental DMG Bonus. When other nearby party members use Elemental Skills, the character equipping this weapon will gain Wavespike stack. Max stacks. This can be triggered once every. When the character equipping this weapon uses an Elemental Skill, all stacks of Wavespike will be consumed to gain Rippling Upheaval: each stack of Wavespike consumed will increase Normal Attack DMG by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Narukami's Wisdom",
-        "Gloomy Statuette",
-        "Old Handguard",
-        "Narukami's Joy",
-        "Dark Statuette",
-        "Kageuchi Handguard",
-        "Narukami's Affection",
-        "Deathly Statuette",
-        "Famed Handguard",
-        "Narukami's Valor"
-      ]
+  "name_ru": "Харан гэппаку фуцу",
+  "name_en": "Haran Geppaku Futsu",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 45.9364,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.072
+    },
+    "level_90": {
+      "base_atk": 608.0746,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.3308
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Поток клинков",
+  "passive_description_ru": "Даёт 12% бонус урона всеми элементами. Когда другие члены отряда поблизости активируют элементальные навыки, экипированный этим оружием персонаж получает 1 уровень Волны-шипа. Эффект возникает не чаще, чем один раз в 0,3 сек. Всего можно получить не более 2 уровней. Когда персонаж с этим оружием применяет элементальный навык, все уровни Волны-шипа тратятся, и он получает Хаос волн, который повышает урон обычной атаки согласно количеству уровней. Каждый уровень этого эффекта повышает урон обычной атаки на 20% в течение 8 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "narukamis-wisdom",
+        "name_ru": "Мудрость Наруками",
+        "name_en": "Narukami's Wisdom"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "narukamis-joy",
+        "name_ru": "Радость Наруками",
+        "name_en": "Narukami's Joy"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "narukamis-affection",
+        "name_ru": "Милость Наруками",
+        "name_en": "Narukami's Affection"
+      },
+      {
+        "id": "narukamis-valor",
+        "name_ru": "Доблесть Наруками",
+        "name_en": "Narukami's Valor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "gloomy-statuette",
+        "name_ru": "Мрачная статуэтка",
+        "name_en": "Gloomy Statuette"
+      },
+      {
+        "id": "dark-statuette",
+        "name_ru": "Тёмная статуэтка",
+        "name_en": "Dark Statuette"
+      },
+      {
+        "id": "deathly-statuette",
+        "name_ru": "Смертельная статуэтка",
+        "name_en": "Deathly Statuette"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "old-handguard",
+        "name_ru": "Старая гарда",
+        "name_en": "Old Handguard"
+      },
+      {
+        "id": "kageuchi-handguard",
+        "name_ru": "Гарда кагэути",
+        "name_en": "Kageuchi Handguard"
+      },
+      {
+        "id": "famed-handguard",
+        "name_ru": "Прославленная гарда",
+        "name_en": "Famed Handguard"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,11 @@
+{
+  "id": "sandstorm-angler",
+  "kind": "fish",
+  "name_ru": "Песчаный иглобрюх",
+  "name_en": "Sandstorm Angler",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

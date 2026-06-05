@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-forgery-thundering-ruins-iii",
+  "name_ru": "Воля: Рокочущие руины III",
+  "name_en": "Domain of Forgery: Thundering Ruins III",
+  "type": "Возвышение оружия",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "mist-veiled-gold-elixir",
+    "mist-veiled-mercury-elixir",
+    "mist-veiled-lead-elixir"
+  ],
+  "coordinates": []
+}

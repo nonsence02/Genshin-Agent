@@ -1,10 +1,17 @@
 {
   "id": "majestic-hooked-beak",
+  "name_ru": "Клюв короля плесенников",
   "name_en": "Majestic Hooked Beak",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv.30+ Jadeplume Terrorshrooms"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Пернатые плесенники Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Majestic_Hooked_Beak"
+  "dropped_by": [
+    "jadeplume-terrorshroom"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

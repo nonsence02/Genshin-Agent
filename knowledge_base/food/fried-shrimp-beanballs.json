@@ -1,0 +1,27 @@
+{
+  "id": "fried-shrimp-beanballs",
+  "name_ru": "Фрикадельки из креветок с фасолью",
+  "name_en": "Fried Shrimp Beanballs",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает прочность щита всех членов отряда на 30% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "glabrous-beans",
+      "count": 4
+    },
+    {
+      "material_id": "flour",
+      "count": 4
+    },
+    {
+      "material_id": "shrimp-meat",
+      "count": 3
+    },
+    {
+      "material_id": "onion",
+      "count": 3
+    }
+  ],
+  "coordinates": []
+}

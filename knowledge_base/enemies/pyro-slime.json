@@ -1,0 +1,13 @@
+{
+  "id": "pyro-slime",
+  "name_ru": "Пиро слайм",
+  "name_en": "Pyro Slime",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "slime-concentrate",
+    "slime-secretions",
+    "slime-condensate"
+  ],
+  "coordinates": []
+}

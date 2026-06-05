@@ -1,0 +1,22 @@
+{
+  "id": "foreign-synapse",
+  "name_ru": "Иноземный обломок",
+  "name_en": "Foreign Synapse",
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Протогены расщелин Ур. 40+",
+    "Звёздная пыль",
+    "Можно создать: {0}"
+  ],
+  "dropped_by": [
+    "large-overgrown-breacher-primus",
+    "large-shatterstone-breacher-primus",
+    "overgrown-breacher-primus",
+    "shatterstone-breacher-primus"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

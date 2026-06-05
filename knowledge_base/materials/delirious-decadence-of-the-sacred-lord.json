@@ -1,14 +1,24 @@
 {
   "id": "delirious-decadence-of-the-sacred-lord",
+  "name_ru": "Безумный декаданс Святого Мудреца",
   "name_en": "Delirious Decadence of the Sacred Lord",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Ancient Watchtower (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Delirious_Decadence_of_the_Sacred_Lord"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-attentive-observation-i",
+    "domain-of-forgery-attentive-observation-ii",
+    "domain-of-forgery-attentive-observation-iii",
+    "domain-of-forgery-attentive-observation-iv"
+  ],
+  "source_domain": "domain-of-forgery-attentive-observation-i",
+  "coordinates": []
 }

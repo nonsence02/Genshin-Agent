@@ -1,48 +1,80 @@
 {
   "id": "makhaira-aquamarine",
-  "name": "Makhaira Aquamarine",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Makhaira_Aquamarine",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "The following will trigger every: The equipping character will gain of their Elemental Mastery as bonus ATK for, with nearby party members gaining of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This will still trigger even if the character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Echo of Scorching Might",
-        "Chaos Storage",
-        "Treasure Hoarder Insignia",
-        "Remnant Glow of Scorching Might",
-        "Chaos Module",
-        "Silver Raven Insignia",
-        "Dream of Scorching Might",
-        "Chaos Bolt",
-        "Golden Raven Insignia",
-        "Olden Days of Scorching Might"
-      ]
+  "name_ru": "Аквамарин Махайры",
+  "name_en": "Makhaira Aquamarine",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 36
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 165.384
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Чертоги в пустыне",
+  "passive_description_ru": "Каждые 10 сек. срабатывает следующий эффект: сила атаки экипированного этим оружием персонажа увеличивается на 24% от мастерства стихий на 12 сек. Члены отряда поблизости получают 30% этого эффекта. Если этим оружием обладают и другие члены отряда, эффект суммируется. Этот эффект срабатывает, даже если экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "echo-of-scorching-might",
+        "name_ru": "Эхо пылающей мощи",
+        "name_en": "Echo of Scorching Might"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "remnant-glow-of-scorching-might",
+        "name_ru": "Отсветы пылающей мощи",
+        "name_en": "Remnant Glow of Scorching Might"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "dream-of-scorching-might",
+        "name_ru": "Грёзы пылающей мощи",
+        "name_en": "Dream of Scorching Might"
+      },
+      {
+        "id": "olden-days-of-scorching-might",
+        "name_ru": "Прошлое пылающей мощи",
+        "name_en": "Olden Days of Scorching Might"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-storage",
+        "name_ru": "Сосуд хаоса",
+        "name_en": "Chaos Storage"
+      },
+      {
+        "id": "chaos-module",
+        "name_ru": "Модуль хаоса",
+        "name_en": "Chaos Module"
+      },
+      {
+        "id": "chaos-bolt",
+        "name_ru": "Анкер хаоса",
+        "name_en": "Chaos Bolt"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

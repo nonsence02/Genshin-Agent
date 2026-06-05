@@ -1,0 +1,27 @@
+{
+  "id": "shrimp-bisque",
+  "name_ru": "Биск с креветками",
+  "name_en": "Shrimp Bisque",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает бонус лечения всех членов отряда на 20% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "shrimp-meat",
+      "count": 4
+    },
+    {
+      "material_id": "onion",
+      "count": 3
+    },
+    {
+      "material_id": "potato",
+      "count": 3
+    },
+    {
+      "material_id": "grainfruit",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

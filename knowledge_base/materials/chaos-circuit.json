@@ -1,10 +1,22 @@
 {
   "id": "chaos-circuit",
+  "name_ru": "Цепь хаоса",
   "name_en": "Chaos Circuit",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Humanoid Ruin Machines"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Стражи руин Ур. 40+",
+    "Руинные охотники Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Chaos_Circuit"
+  "dropped_by": [
+    "ruin-grader",
+    "ruin-guard",
+    "ruin-hunter"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

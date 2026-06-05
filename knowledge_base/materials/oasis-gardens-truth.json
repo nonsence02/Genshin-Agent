@@ -1,14 +1,21 @@
 {
   "id": "oasis-gardens-truth",
+  "name_ru": "Истина цветущего оазиса",
   "name_en": "Oasis Garden's Truth",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Tower of Abject Pride (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Oasis_Garden%27s_Truth"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-obsession-iv"
+  ],
+  "source_domain": "domain-of-forgery-obsession-iv",
+  "coordinates": []
 }

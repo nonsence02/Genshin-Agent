@@ -1,0 +1,13 @@
+{
+  "id": "ruin-destroyer",
+  "name_ru": "Руинный крушитель",
+  "name_en": "Ruin Destroyer",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "chaos-oculus",
+    "chaos-axis",
+    "chaos-gear"
+  ],
+  "coordinates": []
+}

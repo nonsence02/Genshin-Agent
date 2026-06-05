@@ -1,0 +1,10 @@
+{
+  "id": "instructor",
+  "name_ru": "Инструктор",
+  "name_en": "Instructor",
+  "max_rarity": 4,
+  "bonus_2pc": "Увеличивает мастерство стихий на 80 ед.",
+  "bonus_4pc": "Вызов элементальной реакции увеличивает мастерство стихий всех членов отряда на 120 ед. в течение 8 сек.",
+  "source_domain": "domain-of-blessing-sacred-vault-i",
+  "coordinates": []
+}

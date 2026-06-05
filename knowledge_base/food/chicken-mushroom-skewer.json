@@ -1,0 +1,19 @@
+{
+  "id": "chicken-mushroom-skewer",
+  "name_ru": "Куриный шашлычок с грибами",
+  "name_en": "Chicken-Mushroom Skewer",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "mushroom",
+      "count": 1
+    },
+    {
+      "material_id": "fowl",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

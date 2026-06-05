@@ -1,0 +1,13 @@
+{
+  "id": "eremite-crossbow",
+  "name_ru": "Арбалетчик Пустынников",
+  "name_en": "Eremite Crossbow",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

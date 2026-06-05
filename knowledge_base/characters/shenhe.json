@@ -1,92 +1,81 @@
 {
   "id": "shenhe",
-  "name": "Shenhe",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Shenhe",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Cryo",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "The frosted dew, silvery and dense, shall exorcise all demons. Grants all nearby party members the Icy Quill effect and deals Cryo DMG in different ways based on whether it is (‍ pressed Text for mouse and keyboard and controller ‍/‍ tapped Text for touch screen ‍) or held. (‍ Press Text for mouse and keyboard and controller ‍/‍ Tap Text for touch screen ‍) Rushes forward together with a Talisman Spirit, dealing Cryo DMG to opponents along the path. Hold Commands the Talisman Spirit to deal AoE Cryo DMG. Icy Quill When Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts deal Cryo DMG to opponents, the DMG dealt is increased based on Shenhe's current ATK. The Icy...",
-    "elemental_burst": "Unleashes the power of the Talisman Spirit, allowing it to roam free in this plane, dealing AoE Cryo DMG. The Talisman Spirit then creates a field that decreases the Cryo RES and Physical RES of opponents within it. It also deals periodic Cryo DMG to opponents within the field. The DoT hits times. Inflicts a total damage (including the initial hit) of:"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Whopperflower Nectar",
-        "Shimmering Nectar"
-      ],
-      "special": [
-        "Qingxin",
-        "Dragonheir's False Fin"
-      ]
+  "name_ru": "Шэнь Хэ",
+  "name_en": "Shenhe",
+  "element": "Cryo",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 1011.4725,
+      "atk": 23.6474,
+      "def": 64.6164
     },
-    "talents": {
-      "books": [
-        "Teachings of Prosperity",
-        "Guide to Prosperity",
-        "Philosophies of Prosperity"
-      ],
-      "mob_drops": [
-        "Whopperflower Nectar",
-        "Shimmering Nectar"
-      ],
-      "weekly_boss": [
-        "Hellfire Butterfly"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12992.9114,
+      "atk": 303.7565,
+      "def": 830.0387
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Пронзая звёзды",
+      "description_ru": "Обычная атака:\nДо пяти ударов копьём.\n\nЗаряженная атака:\nВыпад, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Призыв духа",
+      "description_ru": "Иней застывшего серебра изгоняет всех демонов.\nНакладывает эффект Ледяное перо на всех окружающих членов отряда и наносит разное количество Крио урона в зависимости от того, была ли использована форма быстрого или долгого нажатия навыка.\n\nБыстрое нажатие:\nБросается вперёд вместе с Духом талисмана, нанося Крио урон противникам на пути.\n\nДолгое нажатие:\nПриказывает Духу талисмана нанести Крио урон по площади.\n\nЛедяное перо:\nКогда обычные атаки, заряженные атаки, атаки в падении, элементальные навыки или взрывы стихии наносят противникам Крио урон, то наносимый урон увеличивается в зависимости от текущей силы атаки Шэнь Хэ.\n\nЭффект Ледяное перо будет снят по окончании его действия или после израсходования определённого количества зарядов. Долгое нажатие даст большую продолжительность и большее количество зарядов, чем быстрое.\n\nКогда Крио урон от одного удара наносится одновременно нескольким противникам, заряды будут расходоваться в зависимости от количества поражённых противников. Количество зарядов Ледяного пера каждого члена отряда подсчитывается отдельно."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Таинство освобождения",
+      "description_ru": "Высвобождает силу Духа талисмана, позволяет ему свободно бродить в этом мире, нанося Крио урон по площади.\nДух талисмана создаёт поле, внутри которого снижается Крио сопротивление и физ. сопротивление противников, а также им периодически наносится Крио урон."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Божественная заповедь",
+      "description_ru": "У активного персонажа в области навыка Таинство освобождения бонус Крио урона увеличивается на 15%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Печать духовного единения",
+      "description_ru": "После того как Шэнь Хэ использует навык Призыв духа, все окружающие члены отряда получают следующие эффекты:\n· Быстрое нажатие: урон элементального навыка и взрыва стихии увеличивается на 15% в течение 10 сек.\n· Долгое нажатие: урон обычной атаки, заряженной атаки и атаки в падении увеличивается на 15% в течение 15 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Своевременное прибытие",
+      "description_ru": "На 25% увеличивает награду экспедиций в Ли Юэ длительностью 20 ч."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Душевная чистота",
+      "description_ru": "Увеличивает количество зарядов навыка Призыв духа на 1."
+    },
+    {
+      "name_ru": "Духовная концентрация",
+      "description_ru": "Длительность эффекта навыка Таинство освобождения увеличивается на 6 сек. Активные члены отряда, находящиеся в области навыка, наносят на 15% больше крит. Крио урона."
+    },
+    {
+      "name_ru": "Уход от мира",
+      "description_ru": "Увеличивает уровень навыка Призыв духа на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Прозрение",
+      "description_ru": "Когда персонажи под действием вызванного Шэнь Хэ эффекта Ледяное перо запускают бонусы урона Ледяного пера, Шэнь Хэ получает один уровень эффекта Мантра морозных небес:\n· Когда Шэнь Хэ использует навык Призыв духа, эффект Мантра морозных небес сбрасывается, а урон от использования навыка Призыв духа в этот раз увеличивается на 5% за каждый из накопленных уровней эффекта Мантра морозных небес.\n· Может складываться до 50 раз, длится 60 сек."
+    },
+    {
+      "name_ru": "Обретение божественности",
+      "description_ru": "Увеличивает уровень навыка Таинство освобождения на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Забытое таинство",
+      "description_ru": "Когда персонажи вызывают эффект Ледяное перо нанесением урона обычной или заряженной атакой, количество действующих уровней эффекта Ледяное перо не уменьшается."
+    }
+  ],
+  "coordinates": []
 }

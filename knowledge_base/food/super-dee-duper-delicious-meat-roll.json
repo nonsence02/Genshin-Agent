@@ -1,0 +1,23 @@
+{
+  "id": "super-dee-duper-delicious-meat-roll",
+  "name_ru": "Ароматный мясной рулетик",
+  "name_en": "Super-Dee-Duper Delicious Meat Roll",
+  "rarity": 2,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 114 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 2
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    },
+    {
+      "material_id": "spice",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,44 +1,80 @@
 {
   "id": "light-of-foliar-incision",
-  "name": "Light of Foliar Incision",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Light_of_Foliar_Incision",
-  "profile": {
-    "type": "Sword",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "CRIT Rate is increased by. After Normal Attacks deal Elemental DMG, the Foliar Incision will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by of Elemental Mastery. This will disappear after DMG instances or. You can obtain Foliar Incision once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Desiccated Shell",
-        "Faded Red Satin",
-        "Sturdy Shell",
-        "Trimmed Red Silk",
-        "Marked Shell",
-        "Rich Red Brocade"
-      ]
+  "name_ru": "Свет лиственного разреза",
+  "name_en": "Light of Foliar Incision",
+  "weapon_type": "Sword",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.192
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.882
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Остриё белой луны",
+  "passive_description_ru": "Шанс крит. попадания увеличивается на 4%. Когда обычная атака наносит элементальный урон, она даёт эффект Лиственного выреза: урон обычных атак и элементальных навыков повышается на 120% от мастерства стихий. После 28 активаций или через 12 сек. эффект исчезнет. Лиственный вырез можно получить не чаще одного раза в 12 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "copper-talisman-of-the-forest-dew",
+        "name_ru": "Медный амулет лесной росы",
+        "name_en": "Copper Talisman of the Forest Dew"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "iron-talisman-of-the-forest-dew",
+        "name_ru": "Железный амулет лесной росы",
+        "name_en": "Iron Talisman of the Forest Dew"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "silver-talisman-of-the-forest-dew",
+        "name_ru": "Серебряный амулет лесной росы",
+        "name_en": "Silver Talisman of the Forest Dew"
+      },
+      {
+        "id": "golden-talisman-of-the-forest-dew",
+        "name_ru": "Золотой амулет лесной росы",
+        "name_en": "Golden Talisman of the Forest Dew"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "desiccated-shell",
+        "name_ru": "Опустошённая оболочка",
+        "name_en": "Desiccated Shell"
+      },
+      {
+        "id": "sturdy-shell",
+        "name_ru": "Прочная оболочка",
+        "name_en": "Sturdy Shell"
+      },
+      {
+        "id": "marked-shell",
+        "name_ru": "Меченая оболочка",
+        "name_en": "Marked Shell"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "faded-red-satin",
+        "name_ru": "Выцветший красный шёлк",
+        "name_en": "Faded Red Satin"
+      },
+      {
+        "id": "trimmed-red-silk",
+        "name_ru": "Окаймлённый красный шёлк",
+        "name_en": "Trimmed Red Silk"
+      },
+      {
+        "id": "rich-red-brocade",
+        "name_ru": "Златотканый красный шёлк",
+        "name_en": "Rich Red Brocade"
+      }
+    ]
+  },
+  "coordinates": []
 }

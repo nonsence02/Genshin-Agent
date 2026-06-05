@@ -1,48 +1,80 @@
 {
   "id": "fang-of-the-mountain-king",
-  "name": "Fang of the Mountain King",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fang_of_the_Mountain_King",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "5★",
-    "base_atk": "49 - 741",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "Gain stack of Canopy's Favor after hitting an opponent with an Elemental Skill. This can be triggered once every. After a nearby party member triggers a Burning or Burgeon reaction, the equipping character will gain stacks. This can be triggered once every and can be triggered even when the triggering party member is off-field. Canopy's Favor: Elemental Skill and Burst DMG is increased by for. Max stacks. Each stack is counted independently.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Delirious Decadence of the Sacred Lord",
-        "Ignited Stone",
-        "Sentry's Wooden Whistle",
-        "Delirious Desolation of the Sacred Lord",
-        "Ignited Seed of Life",
-        "Warrior's Metal Whistle",
-        "Delirious Demeanor of the Sacred Lord",
-        "Ignited Seeing Eye",
-        "Saurian-Crowned Warrior's Golden Whistle",
-        "Delirious Divinity of the Sacred Lord"
-      ]
+  "name_ru": "Клык Горного короля",
+  "name_en": "Fang of the Mountain King",
+  "weapon_type": "Claymore",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 49.1377,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.024
+    },
+    "level_90": {
+      "base_atk": 740.5802,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.1103
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Бирюзовая охота",
+  "passive_description_ru": "Попадание элементального навыка по противнику наделяет 1 уровнем Благоволения Крон. Этот эффект может возникнуть 1 раз в 0,5 сек. После того как член отряда поблизости активирует реакции Горение или Цветение, экипированный персонаж получает 3 уровня Благоволения Крон. Данный эффект может возникнуть 1 раз в 2 сек. и срабатывает, даже когда персонаж не на поле боя. Благоволение Крон: урон элементального навыка и взрыва стихии увеличивается на 10% на 6 сек. и складывается до 6 раз. Длительность каждого уровня рассчитывается отдельно.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "delirious-decadence-of-the-sacred-lord",
+        "name_ru": "Безумный декаданс Святого Мудреца",
+        "name_en": "Delirious Decadence of the Sacred Lord"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "delirious-desolation-of-the-sacred-lord",
+        "name_ru": "Безумное опустошение Святого Мудреца",
+        "name_en": "Delirious Desolation of the Sacred Lord"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "delirious-demeanor-of-the-sacred-lord",
+        "name_ru": "Безумный облик Святого Мудреца",
+        "name_en": "Delirious Demeanor of the Sacred Lord"
+      },
+      {
+        "id": "delirious-divinity-of-the-sacred-lord",
+        "name_ru": "Безумная духовность Святого Мудреца",
+        "name_en": "Delirious Divinity of the Sacred Lord"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "ignited-stone",
+        "name_ru": "Пламенный камень",
+        "name_en": "Ignited Stone"
+      },
+      {
+        "id": "ignited-seed-of-life",
+        "name_ru": "Пламенное семя жизни",
+        "name_en": "Ignited Seed of Life"
+      },
+      {
+        "id": "ignited-seeing-eye",
+        "name_ru": "Пламенное око",
+        "name_en": "Ignited Seeing Eye"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "sentrys-wooden-whistle",
+        "name_ru": "Деревянный свисток дозорного",
+        "name_en": "Sentry's Wooden Whistle"
+      },
+      {
+        "id": "warriors-metal-whistle",
+        "name_ru": "Металлический свисток воина",
+        "name_en": "Warrior's Metal Whistle"
+      },
+      {
+        "id": "saurian-crowned-warriors-golden-whistle",
+        "name_ru": "Золотой свисток коронованного заврианами воина",
+        "name_en": "Saurian-Crowned Warrior's Golden Whistle"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,27 @@
+{
+  "id": "apple-stew-trial-version",
+  "name_ru": "Тушёное мясо с яблоками (пробная версия)",
+  "name_en": "Apple Stew (Trial Version)",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 40% от макс. HP + 2350 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "apple",
+      "count": 3
+    },
+    {
+      "material_id": "butter",
+      "count": 1
+    },
+    {
+      "material_id": "pepper",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

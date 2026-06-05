@@ -1,0 +1,13 @@
+{
+  "id": "underwater-survey-mek",
+  "name_ru": "Мек: Подводное исследование",
+  "name_en": "Underwater Survey Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "pyro-sigil",
+  "name_ru": "Печать Пиро",
+  "name_en": "Pyro Sigil",
+  "type": "consume",
+  "type_text_ru": "Символ города",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Исследование Натлана"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

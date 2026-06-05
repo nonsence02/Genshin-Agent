@@ -1,0 +1,17 @@
+{
+  "id": "heros-wit",
+  "name_ru": "Опыт героя",
+  "name_en": "Hero's Wit",
+  "type": "character_exp",
+  "type_text_ru": "Опыт персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Награда случайного события",
+    "Обмен Сокровищницы обители",
+    "Активация Цветов озарения"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

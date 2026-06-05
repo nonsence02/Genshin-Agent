@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-forgery-leading-karma-ii",
+  "name_ru": "Воля: Ведущая карма II",
+  "name_en": "Domain of Forgery: Leading Karma II",
+  "type": "Возвышение оружия",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "remnant-glow-of-scorching-might",
+    "echo-of-scorching-might"
+  ],
+  "coordinates": []
+}

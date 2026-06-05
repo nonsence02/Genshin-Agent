@@ -1,48 +1,80 @@
 {
   "id": "mouuns-moon",
-  "name": "Mouun's Moon",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mouun%27s_Moon",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "ATK"
-  },
-  "passive": "For every point of the entire party's combined maximum Energy capacity, the Elemental Burst DMG of the character equipping this weapon is increased by. A maximum of increased Elemental Burst DMG can be achieved this way.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Narukami's Wisdom",
-        "Dismal Prism",
-        "Spectral Husk",
-        "Narukami's Joy",
-        "Crystal Prism",
-        "Spectral Heart",
-        "Narukami's Affection",
-        "Polarizing Prism",
-        "Spectral Nucleus",
-        "Narukami's Valor"
-      ]
+  "name_ru": "Луна Моун",
+  "name_en": "Mouun's Moon",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Укротитель волн Ватацуми",
+  "passive_description_ru": "Урон взрыва стихии экипированного этим оружием персонажа увеличивается на 0,12% за каждую единицу суммы макс. энергии каждого члена отряда. Бонус урона не может превышать 40%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "narukamis-wisdom",
+        "name_ru": "Мудрость Наруками",
+        "name_en": "Narukami's Wisdom"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "narukamis-joy",
+        "name_ru": "Радость Наруками",
+        "name_en": "Narukami's Joy"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "narukamis-affection",
+        "name_ru": "Милость Наруками",
+        "name_en": "Narukami's Affection"
+      },
+      {
+        "id": "narukamis-valor",
+        "name_ru": "Доблесть Наруками",
+        "name_en": "Narukami's Valor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dismal-prism",
+        "name_ru": "Тёмная призма",
+        "name_en": "Dismal Prism"
+      },
+      {
+        "id": "crystal-prism",
+        "name_ru": "Кристальная призма",
+        "name_en": "Crystal Prism"
+      },
+      {
+        "id": "polarizing-prism",
+        "name_ru": "Поляризационная призма",
+        "name_en": "Polarizing Prism"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "spectral-husk",
+        "name_ru": "Призрачная оболочка",
+        "name_en": "Spectral Husk"
+      },
+      {
+        "id": "spectral-heart",
+        "name_ru": "Призрачное сердце",
+        "name_en": "Spectral Heart"
+      },
+      {
+        "id": "spectral-nucleus",
+        "name_ru": "Призрачное ядро",
+        "name_en": "Spectral Nucleus"
+      }
+    ]
+  },
+  "coordinates": []
 }

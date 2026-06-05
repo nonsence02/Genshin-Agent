@@ -1,0 +1,27 @@
+{
+  "id": "mini-asha-pockets",
+  "name_ru": "Мини-мешочки аши",
+  "name_en": "Mini Asha Pockets",
+  "rarity": 4,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Небольшой сюрприз от курорта «Оазис отдыха».",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 1
+    },
+    {
+      "material_id": "onion",
+      "count": 1
+    },
+    {
+      "material_id": "flour",
+      "count": 1
+    },
+    {
+      "material_id": "cheese",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

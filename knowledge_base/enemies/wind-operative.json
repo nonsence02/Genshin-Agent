@@ -1,0 +1,13 @@
+{
+  "id": "wind-operative",
+  "name_ru": "Оперативник ветра",
+  "name_en": "Wind Operative",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "operatives-constancy",
+    "operatives-standard-pocket-watch",
+    "old-operatives-pocket-watch"
+  ],
+  "coordinates": []
+}

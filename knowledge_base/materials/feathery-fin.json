@@ -1,10 +1,18 @@
 {
   "id": "feathery-fin",
+  "name_ru": "Перьевой плавник",
   "name_en": "Feathery Fin",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Xuanwen Beasts"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Звери Сюаньвэнь",
+    "Звёздная пыль"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Feathery_Fin"
+  "dropped_by": [
+    "xuanwen-beast"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

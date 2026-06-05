@@ -1,48 +1,80 @@
 {
   "id": "hamayumi",
-  "name": "Hamayumi",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Hamayumi",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "41 - 454",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Increases Normal Attack DMG by and Charged Attack DMG by. When the equipping character's Energy reaches, this is increased by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Narukami's Wisdom",
-        "Dismal Prism",
-        "Firm Arrowhead",
-        "Narukami's Joy",
-        "Crystal Prism",
-        "Sharp Arrowhead",
-        "Narukami's Affection",
-        "Polarizing Prism",
-        "Weathered Arrowhead",
-        "Narukami's Valor"
-      ]
+  "name_ru": "Хамаюми",
+  "name_en": "Hamayumi",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 41.0671,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.12
+    },
+    "level_90": {
+      "base_atk": 454.3632,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.5513
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Ничья",
+  "passive_description_ru": "Увеличивает урон обычной атаки на 16% и урон заряженной атаки на 12%. Когда элементальная энергия персонажа с этим оружием достигает 100%, эффект увеличивается на 100%.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "narukamis-wisdom",
+        "name_ru": "Мудрость Наруками",
+        "name_en": "Narukami's Wisdom"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "narukamis-joy",
+        "name_ru": "Радость Наруками",
+        "name_en": "Narukami's Joy"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "narukamis-affection",
+        "name_ru": "Милость Наруками",
+        "name_en": "Narukami's Affection"
+      },
+      {
+        "id": "narukamis-valor",
+        "name_ru": "Доблесть Наруками",
+        "name_en": "Narukami's Valor"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dismal-prism",
+        "name_ru": "Тёмная призма",
+        "name_en": "Dismal Prism"
+      },
+      {
+        "id": "crystal-prism",
+        "name_ru": "Кристальная призма",
+        "name_en": "Crystal Prism"
+      },
+      {
+        "id": "polarizing-prism",
+        "name_ru": "Поляризационная призма",
+        "name_en": "Polarizing Prism"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "firm-arrowhead",
+        "name_ru": "Прочный наконечник стрелы",
+        "name_en": "Firm Arrowhead"
+      },
+      {
+        "id": "sharp-arrowhead",
+        "name_ru": "Острый наконечник стрелы",
+        "name_en": "Sharp Arrowhead"
+      },
+      {
+        "id": "weathered-arrowhead",
+        "name_ru": "Старый наконечник стрелы",
+        "name_en": "Weathered Arrowhead"
+      }
+    ]
+  },
+  "coordinates": []
 }

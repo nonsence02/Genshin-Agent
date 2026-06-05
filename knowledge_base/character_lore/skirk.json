@@ -1,0 +1,70 @@
+{
+  "id": "skirk",
+  "name_en": "Skirk",
+  "element": "Cryo",
+  "weapon": "Sword",
+  "region": "",
+  "rarity": 5,
+  "description": "Skirk is a playable Cryo character in Genshin Impact .­­­\n\nA mysterious swordswoman hailing from the sea of stars , she was Tartaglia 's master during his time in the Abyss and is the disciple of Surtalogi — one of the Five Sinners of Khaenri'ah .",
+  "role_summary": "Skirk is a Cryo DMG dealer who uses Serpent's Subtlety to attack opponents. She can either deal continuous DMG or burst DMG, depending on how her abilities are used. When she uses her Elemental Skill , she can obtain Serpent's Subtlety to help her sustain her special mode \"Seven-Phase Flash\" or use her Elemental Burst \" Havoc: Ruin .\" Additionally, when party members trigger Frozen, Superconduct, Cryo Swirl, or Cryo Crystallize reactions, they will also create Void Rifts on the field. Skirk can absorb these Void Rifts through specialized means, which will allow her to obtain additional Serpent's Subtlety.",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Havoc: Sunder",
+      "description": "Normal Attack Performs up to 5 consecutive attacks. Charged Attack Consumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Havoc: Warp",
+      "description": "Imitates the combat style of \"The Foul.\" Produces different effects depending on whether you Tap or Hold. Tap Skirk gains 45 Serpent's Subtlety Serpent's Subtlety Skirk can consume Serpent's Subtlety to maintain her Seven-Phase Flash mode or to use her Elemental Burst, Havoc: Ruin. Skirk can gain Serpent's Subtlety points in the following ways: After using her Elemental Skill, Havoc: Warp. After triggering the effect of her Ascension Talent, Reason Beyond Reason, and absorbing Void Rifts. When Skirk leaves the field while in Seven-Phase Flash mode or when Seven-Phase Flash ends, her Serpent's Subtlety points will be removed. and switches to Seven-Phase Flash Seven-Phase Flash Skirk will switch to this mode for a fixed time when using the Elemental Skill Havoc: Warp. This mode has the following properties: Continuously consumes Serpent's Subtlety. Increases Normal and Charged Attack AoE and Skirk's interruption resistance. Normal, Charged, and Plunging Attacks are converted to Cryo DMG that cannot be overridden by other Elemental infusions. Her Elemental Burst, Havoc: Ruin is converted to the special Elemental Burst Havoc: Extinction. Skirk can move on water when she Sprints. Ski..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Havoc: Ruin",
+      "description": "Skirk's Elemental Burst is not reliant on Elemental Energy but instead on Serpent's Subtlety Serpent's Subtlety Skirk can consume Serpent's Subtlety to maintain her Seven-Phase Flash mode or to use her Elemental Burst, Havoc: Ruin. Skirk can gain Serpent's Subtlety points in the following ways: After using her Elemental Skill, Havoc: Warp. After triggering the effect of her Ascension Talent, Reason Beyond Reason, and absorbing Void Rifts. When Skirk leaves the field while in Seven-Phase Flash mode or when Seven-Phase Flash ends, her Serpent's Subtlety points will be removed. . When Skirk has at least 50 Serpent's Subtlety, she can expend all her Serpent's Subtlety to unleash her Elemental Burst, ripping the space before her apart and using rapid consecutive slashes that deal AoE Cryo DMG . At the same time, the DMG dealt by an instance of this Elemental Burst will be increased by every point of Serpent's Subtlety over 50 when it is unleashed. Up to 12 points can be counted for this purpose. When Skirk is in Seven-Phase Flash Seven-Phase Flash Skirk will switch to this mode for a fixed time when using the Elemental Skill Havoc: Warp. This mode has the following properties: Contin..."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Reason Beyond Reason",
+      "description": "When nearby party members trigger Frozen, Superconduct, Cryo Swirl, or Cryo Crystallize reactions against opponents, a Void Rift will be created near this opponent. This effect can be triggered once every 2.5s. 3 Void Rifts created by Skirk herself can exist on the field at once. Skirk can use the following methods to absorb nearby Void Rifts: When she hits an opponent with a Charged Attack in her Seven-Phase Flash Seven-Phase Flash Skirk will switch to this mode for a fixed time when using the Elemental Skill Havoc: Warp. This mode has the following properties: Continuously consumes Serpent's Subtlety. Increases Normal and Charged Attack AoE and Skirk's interruption resistance. Normal, Charged, and Plunging Attacks are converted to Cryo DMG that cannot be overridden by other Elemental infusions. Her Elemental Burst, Havoc: Ruin is converted to the special Elemental Burst Havoc: Extinction. Skirk can move on water when she Sprints. Skirk will exit this mode when Serpent's Subtlety is fully depleted or its duration ends. Then, the Elemental Skill will go on cooldown. mode. When she uses the special Elemental Burst Havoc: Extinction while in Seven-Phase Flash mode. When she Holds..."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Return to Oblivion",
+      "description": "When nearby Hydro party members' Hydro attacks hit opponents, or when nearby Cryo party members apart from Skirk hit opponents with Cryo attacks, Skirk will gain the \"Death's Crossing\" effect for 20s. Max 3 stacks, each stack's duration is counted independently. Each character can grant Skirk at most 1 \"Death's Crossing\" stack by this means. Each \"Death's Crossing\" stack increases the Normal Attack DMG dealt by Skirk in Seven-Phase Flash Seven-Phase Flash Skirk will switch to this mode for a fixed time when using the Elemental Skill Havoc: Warp. This mode has the following properties: Continuously consumes Serpent's Subtlety. Increases Normal and Charged Attack AoE and Skirk's interruption resistance. Normal, Charged, and Plunging Attacks are converted to Cryo DMG that cannot be overridden by other Elemental infusions. Her Elemental Burst, Havoc: Ruin is converted to the special Elemental Burst Havoc: Extinction. Skirk can move on water when she Sprints. Skirk will exit this mode when Serpent's Subtlety is fully depleted or its duration ends. Then, the Elemental Skill will go on cooldown. mode to 110%/120%/170% of its original DMG and the DMG dealt when using her Elemental Burst..."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Mutual Weapons Mentorship",
+      "description": "When all party members are either Hydro or Cryo , and if there is at least 1 Hydro and 1 Cryo character, your own party members' Elemental Skill Level is increased by 1."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Far to Fall",
+      "effect": "Description Advanced Properties Enhances the effects of the Ascension Talent Reason Beyond Reason Reason Beyond Reason When nearby party members trigger Frozen, Superconduct, Cryo Swirl, or Cryo Crystallize reactions against opponents, a Void Rift will be created near this opponent. This effect can be triggered once every 2.5s. A maximum of 3 Void Rifts created by Skirk herself can exist on the field at once. Skirk can use the following methods to absorb nearby Void Rifts: When she hits an opponent with a Charged Attack in her Seven-Phase Flash mode. When she uses the special Elemental Burst Havoc: Extinction while in Seven-Phase Flash mode. When she Holds her Elemental Skill Havoc: Warp to engage in rapid movement. Each Rift absorbed will grant her 8 Serpent's Subtlety points. : Every Void Rift absorbed will summon a crystal blade to attack nearby opponents, dealing 500% of Skirk's A..."
+    },
+    "c2": {
+      "name": "1U",
+      "effect": ""
+    },
+    "c3": {
+      "name": "Serendipitous Sin",
+      "effect": "Increases the Level of Havoc: Ruin by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Fractured Flow",
+      "effect": "Enhances the effects of the Ascension Talent Return to Oblivion Return to Oblivion When nearby Hydro party members' Hydro attacks hit opponents, or when nearby Cryo party members apart from Skirk hit opponents with Cryo attacks, Skirk will gain the \"Death's Crossing\" effect for 20s. Max 3 stacks, each stack's duration is counted independently. Each character can grant Skirk at most 1 \"Death's Crossing\" stack by this means. Each \"Death's Crossing\" stack increases the Normal Attack DMG dealt by Skirk in Seven-Phase Flash mode to 110%/120%/170% of its original DMG and the DMG dealt when using her Elemental Burst Havoc: Ruin to 105%/115%/160% of its original DMG. : Each Death's Crossing stack also increases Skirk's ATK by 10%/20%/40%. You must first unlock the Ascension Talent Return to Oblivion."
+    },
+    "c5": {
+      "name": "End of Wishes",
+      "effect": "Increases the Level of Havoc: Warp by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "To the Source",
+      "effect": "Description Advanced Properties Each Void Rift Skirk absorbs via the effects of the Ascension Talent Reason Beyond Reason Reason Beyond Reason When nearby party members trigger Frozen, Superconduct, Cryo Swirl, or Cryo Crystallize reactions against opponents, a Void Rift will be created near this opponent. This effect can be triggered once every 2.5s. A maximum of 3 Void Rifts created by Skirk herself can exist on the field at once. Skirk can use the following methods to absorb nearby Void Rifts: When she hits an opponent with a Charged Attack in her Seven-Phase Flash mode. When she uses the special Elemental Burst Havoc: Extinction while in Seven-Phase Flash mode. When she Holds her Elemental Skill Havoc: Warp to engage in rapid movement. Each Rift absorbed will grant her 8 Serpent's Subtlety points. will grant her 1 Havoc: Sever stack. She can consume such stacks to initiate coordin..."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Skirk",
+  "ai_tags": "Main DPS, Карманный урон"
+}

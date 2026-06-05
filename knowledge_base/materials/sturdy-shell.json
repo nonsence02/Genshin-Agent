@@ -1,10 +1,23 @@
 {
   "id": "sturdy-shell",
+  "name_ru": "Прочная оболочка",
   "name_en": "Sturdy Shell",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Consecrated Beasts"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Священные хищники Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sturdy_Shell"
+  "dropped_by": [
+    "consecrated-fanged-beast",
+    "consecrated-flying-serpent",
+    "consecrated-horned-crocodile",
+    "consecrated-red-vulture",
+    "consecrated-scorpion"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,27 @@
+{
+  "id": "whisper-in-the-woods",
+  "name_ru": "Шёпот в лесу",
+  "name_en": "Whisper in the Woods",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 34% от макс. HP выбранному персонажу, затем в течение 30 сек. каждые 5 сек. восстанавливает 980 HP.",
+  "recipe": [
+    {
+      "material_id": "midsommar-berry",
+      "count": 3
+    },
+    {
+      "material_id": "lakkaberry",
+      "count": 2
+    },
+    {
+      "material_id": "nocturnal-blossom",
+      "count": 2
+    },
+    {
+      "material_id": "mushroom",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

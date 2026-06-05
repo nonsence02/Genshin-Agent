@@ -1,10 +1,19 @@
 {
   "id": "inspectors-sacrificial-knife",
+  "name_ru": "Церемониальный нож инспектора",
   "name_en": "Inspector's Sacrificial Knife",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Fatui Pyro Agents"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Агенты Фатуи Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Inspector%27s_Sacrificial_Knife"
+  "dropped_by": [
+    "fatui-pyro-agent"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

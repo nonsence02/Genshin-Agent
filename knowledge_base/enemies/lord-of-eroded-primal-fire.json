@@ -1,0 +1,23 @@
+{
+  "id": "lord-of-eroded-primal-fire",
+  "name_ru": "Владыка истлевшего первобытного пламени",
+  "name_en": "Lord of Eroded Primal Fire",
+  "type": "BOSS",
+  "type_ru": "Враги, достойные упоминания",
+  "drops": [
+    "eroded-horn",
+    "eroded-sunfire",
+    "eroded-scale-feather",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "dream-solvent",
+    "borderland-sword-billet",
+    "borderland-bow-billet",
+    "borderland-claymore-billet",
+    "borderland-catalyst-billet",
+    "borderland-polearm-billet"
+  ],
+  "coordinates": []
+}

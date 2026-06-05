@@ -1,0 +1,11 @@
+{
+  "id": "true-fruit-angler",
+  "kind": "fish",
+  "name_ru": "Плодовый иглобрюх",
+  "name_en": "True Fruit Angler",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

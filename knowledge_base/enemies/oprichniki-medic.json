@@ -1,0 +1,13 @@
+{
+  "id": "oprichniki-medic",
+  "name_ru": "Опричник: Санитар",
+  "name_en": "Oprichniki Medic",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "frost-etched-warrant",
+    "immaculate-warrant",
+    "tattered-warrant"
+  ],
+  "coordinates": []
+}

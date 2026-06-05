@@ -1,0 +1,13 @@
+{
+  "id": "hilichurl-berserker",
+  "name_ru": "Хиличурл-берсерк",
+  "name_en": "Hilichurl Berserker",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

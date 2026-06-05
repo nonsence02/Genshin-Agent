@@ -1,47 +1,80 @@
 {
   "id": "wandering-evenstar",
-  "name": "Wandering Evenstar",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Wandering_Evenstar",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "The following will trigger every: The equipping character will gain of their Elemental Mastery as bonus ATK for, with nearby party members gaining of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This will still trigger even if the character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Oasis Garden's Reminiscence",
-        "Inactivated Fungal Nucleus",
-        "Oasis Garden's Kindness",
-        "Dormant Fungal Nucleus",
-        "Luminescent Pollen",
-        "Oasis Garden's Mourning",
-        "Robust Fungal Nucleus",
-        "Crystalline Cyst Dust",
-        "Oasis Garden's Truth"
-      ]
+  "name_ru": "Скитающаяся звезда",
+  "name_en": "Wandering Evenstar",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 36
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 165.384
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Звезда диких лесов",
+  "passive_description_ru": "Каждые 10 сек. срабатывает следующий эффект: сила атаки экипированного этим оружием персонажа увеличивается на 24% от мастерства стихий на 12 сек. Члены отряда поблизости получают 30% этого эффекта. Если этим оружием обладают и другие члены отряда, эффект суммируется. Этот эффект срабатывает, даже если экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "oasis-gardens-reminiscence",
+        "name_ru": "Воспоминания цветущего оазиса",
+        "name_en": "Oasis Garden's Reminiscence"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "oasis-gardens-kindness",
+        "name_ru": "Милость цветущего оазиса",
+        "name_en": "Oasis Garden's Kindness"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "oasis-gardens-mourning",
+        "name_ru": "Печаль цветущего оазиса",
+        "name_en": "Oasis Garden's Mourning"
+      },
+      {
+        "id": "oasis-gardens-truth",
+        "name_ru": "Истина цветущего оазиса",
+        "name_en": "Oasis Garden's Truth"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "inactivated-fungal-nucleus",
+        "name_ru": "Неактивное ядро плесенника",
+        "name_en": "Inactivated Fungal Nucleus"
+      },
+      {
+        "id": "dormant-fungal-nucleus",
+        "name_ru": "Спящее ядро плесенника",
+        "name_en": "Dormant Fungal Nucleus"
+      },
+      {
+        "id": "robust-fungal-nucleus",
+        "name_ru": "Здоровое ядро плесенника",
+        "name_en": "Robust Fungal Nucleus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "fungal-spores",
+        "name_ru": "Споры плесенника",
+        "name_en": "Fungal Spores"
+      },
+      {
+        "id": "luminescent-pollen",
+        "name_ru": "Светящаяся пыльца",
+        "name_en": "Luminescent Pollen"
+      },
+      {
+        "id": "crystalline-cyst-dust",
+        "name_ru": "Пыль кристаллоцистов",
+        "name_en": "Crystalline Cyst Dust"
+      }
+    ]
+  },
+  "coordinates": []
 }

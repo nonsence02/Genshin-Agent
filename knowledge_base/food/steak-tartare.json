@@ -1,0 +1,27 @@
+{
+  "id": "steak-tartare",
+  "name_ru": "Тартар из стейка",
+  "name_en": "Steak Tartare",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 34% HP + 1900 HP.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 3
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 3
+    },
+    {
+      "material_id": "onion",
+      "count": 2
+    },
+    {
+      "material_id": "marcotte",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

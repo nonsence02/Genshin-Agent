@@ -1,0 +1,19 @@
+{
+  "id": "dry-braised-salted-fish",
+  "name_ru": "Вяленая рыба на углях",
+  "name_en": "Dry-Braised Salted Fish",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 10% HP + 1200 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 1
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

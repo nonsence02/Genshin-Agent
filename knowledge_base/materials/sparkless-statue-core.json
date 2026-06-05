@@ -1,10 +1,17 @@
 {
   "id": "sparkless-statue-core",
+  "name_ru": "Ядро безумной статуи",
   "name_en": "Sparkless Statue Core",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Lava Dragon Statue"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Статуя лавового дракона Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sparkless_Statue_Core"
+  "dropped_by": [
+    "lava-dragon-statue"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

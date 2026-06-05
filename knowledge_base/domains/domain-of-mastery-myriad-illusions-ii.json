@@ -1,0 +1,17 @@
+{
+  "id": "domain-of-mastery-myriad-illusions-ii",
+  "name_ru": "Подземелье мастерства: Иллюзии II",
+  "name_en": "Domain of Mastery: Myriad Illusions II",
+  "type": "Повышение талантов",
+  "region": "Натлан",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "guide-to-kindling",
+    "teachings-of-kindling"
+  ],
+  "coordinates": []
+}

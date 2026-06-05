@@ -1,0 +1,17 @@
+{
+  "id": "sour-bait",
+  "kind": "bait",
+  "name_ru": "Кислая наживка",
+  "name_en": "Sour Bait",
+  "recipe": [
+    {
+      "material_id": "bulle-fruit",
+      "count": 1
+    },
+    {
+      "material_id": "wheat",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

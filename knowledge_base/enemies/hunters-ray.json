@@ -1,0 +1,13 @@
+{
+  "id": "hunters-ray",
+  "name_ru": "Остроскат",
+  "name_en": "Hunter's Ray",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "xenochromatic-crystal",
+    "transoceanic-chunk",
+    "transoceanic-pearl"
+  ],
+  "coordinates": []
+}

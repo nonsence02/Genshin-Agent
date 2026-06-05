@@ -1,0 +1,17 @@
+{
+  "id": "berry-bait",
+  "kind": "bait",
+  "name_ru": "Ягодная наживка",
+  "name_en": "Berry Bait",
+  "recipe": [
+    {
+      "material_id": "midsommar-berry",
+      "count": 1
+    },
+    {
+      "material_id": "flour",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

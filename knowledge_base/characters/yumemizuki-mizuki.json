@@ -1,94 +1,81 @@
 {
   "id": "yumemizuki-mizuki",
-  "name": "Yumemizuki Mizuki",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Yumemizuki_Mizuki",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Electro",
-    "rarity": "5★"
-  },
-  "skills": {
-    "elemental_skill": "Weaves memories of lovely dreams, entering a Dreamdrifter state where she floats above the ground, and dealing instance of AoE Anemo DMG to nearby opponents. Dreamdrifter While in the Dreamdrifter state, Yumemizuki Mizuki will continuously drift forward, dealing AoE Anemo DMG to nearby opponents at regular intervals. During this time, Yumemizuki Mizuki can control her direction of drift, and the pick-up distance of Yumemi Style Special Snacks from the Elemental Burst Anraku Secret Spring Therapy will be increased. Increases the Swirl DMG that nearby party members deal based on Yumemizuki Mizuki's Elemental Mastery. Dreamdrifter will end when Mizuki leaves the field or uses her Elemental...",
-    "elemental_burst": "Summons forth countless lovely dreams and nightmares that pull in nearby objects and opponents, dealing AoE Anemo DMG and summoning a Mini Baku. Mini Baku: Follows the current active character. At regular intervals, the Mini Baku will create Yumemi Style Special Snack nearby. After a nearby active character picks up a Special Snack, if their HP is higher than"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Old Handguard",
-        "Kageuchi Handguard",
-        "Famed Handguard"
-      ],
-      "special": [
-        "Sea Ganoderma",
-        "Talisman of the Enigmatic Land"
-      ]
+  "name_ru": "Мидзуки",
+  "name_en": "Yumemizuki Mizuki",
+  "element": "Anemo",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "hp": 991.4528,
+      "atk": 16.758,
+      "def": 58.9325
     },
-    "talents": {
-      "books": [
-        "Teachings of Transience",
-        "Guide to Transience",
-        "Philosophies of Transience"
-      ],
-      "mob_drops": [
-        "Old Handguard",
-        "Kageuchi Handguard",
-        "Famed Handguard"
-      ],
-      "weekly_boss": [
-        "Fading Candle"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 12735.7472,
+      "atk": 215.2605,
+      "def": 757.0261
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Чистое сердце, чистые сны",
+      "description_ru": "Обычная атака:\nДо трёх ударов, наносящих Анемо урон.\n\nЗаряженная атака:\nКороткое заклинание, наносящее Анемо урон по площади, на которое тратится определённое количество выносливости.\n\nАтака в падении:\nВзывая к силе ветра, стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит Анемо урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Паломничество аиса утамакура",
+      "description_ru": "Плетя воспоминания о прекрасных снах, входит в состояние Парящей по сновидениям, в котором она парит над землёй, и один раз наносит Анемо урон по площади врагам поблизости.\n\nПарящая по сновидениям\n· Пребывая в состоянии Парящей по сновидениям, Юмэмидзуки Мидзуки постоянно парит вперёд и периодически наносит врагам поблизости Анемо урон по площади.\n· В это время Юмэмидзуки Мидзуки может управлять направлением парения, а расстояние сбора Закусок в стиле юмэми взрыва стихии Терапия тайных источников анраку увеличивается.\n· Урон реакции Рассеивание, активируемой членами отряда поблизости, повышается пропорционально мастерству стихий Юмэмидзуки Мидзуки.\n· Состояние Парящей по сновидениям завершается, когда Мидзуки покидает поле боя, или навык используется повторно."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Терапия тайных источников анраку",
+      "description_ru": "Призывает бесчисленные прекрасные сны и кошмары, которые затягивают предметы и врагов поблизости, наносит Анемо урон по площади и призывает мини-баку.\n\nМини-баку\nСледует за активным персонажем. Периодически мини-баку создаёт рядом 1 Закуску в стиле юмэми. Если Закуску в стиле юмэми подберёт персонаж из вашего отряда с HP выше 70%, она взорвётся и выпустит Волну мунэн, один раз нанося врагам поблизости Анемо урон по площади. В противном случае подобравший её восстанавливает HP пропорционально мастерству стихий Юмэмидзуки Мидзуки. Когда Юмэмидзуки Мидзуки подбирает Закуску в стиле юмэми и активирует лечение, объём лечения повышается на 100%. Если Закуску в стиле юмэми не подобрать в течение некоторого времени, она взорвётся и выпустит Волну мунэн, один раз нанося врагам поблизости Анемо урон по площади."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Беспокойный голос яркой луны",
+      "description_ru": "Когда Юмэмидзуки Мидзуки вызывает реакцию Рассеивание, пребывая в состоянии Парящей по сновидениям, длительность состояния увеличивается на 2,5 сек. Этот эффект может возникнуть один раз в 0,3 сек. и до 2 раз в течение одного состояния Парящей по сновидениям."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "На уме днём, в сновидениях ночью",
+      "description_ru": "Когда Пиро, Гидро, Крио или Электро атаки других персонажей отряда поблизости поражают противников, а Юмэмидзуки Мидзуки при этом пребывает в состоянии Парящей по сновидениям, то её мастерство стихий повышается на 100 ед. на 4 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Искоренены все недуги",
+      "description_ru": "Когда Юмэмидзуки Мидзуки в отряде, блюда с восстанавливающими (но не воскрешающими) свойствами могут восстановить на 30% HP больше. Вероятность того, что этот эффект сработает, пропорциональна уровню дружбы с соответствующим персонажем (для путешественника этот эффект срабатывает всегда)."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "В туманных водах",
+      "description_ru": "Когда Юмэмидзуки Мидзуки пребывает в состоянии Парящей по сновидениям, на 3 сек. она каждые 3,5 сек. накладывает на врагов поблизости эффект Двадцать три ночи ожидания. Когда враг под воздействием эффекта Двадцать три ночи получает Анемо урон, который активирует реакцию Рассеивание, эффект снимается, а урон данной реакции Рассеивание по этому противнику повышается на 1100% от мастерства стихий Мидзуки."
+    },
+    {
+      "name_ru": "Сон явит твой силуэт...",
+      "description_ru": "Каждая единица мастерства стихий Юмэмидзуки Мидзуки при переходе в состояние Парящей по сновидениям предоставляет 0,04% бонус Пиро, Гидро, Крио и Электро урона всем другим персонажам отряда поблизости вплоть до завершения этого состояния."
+    },
+    {
+      "name_ru": "С зарёй ушла ночь",
+      "description_ru": "Увеличивает уровень навыка Паломничество аиса утамакура на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Цветы у воды",
+      "description_ru": "Если подобрать Закуску в стиле юмэми взрыва стихии Терапия тайных источников анраку, то одновременно будет нанесён урон, получено лечение и восстановлено 5 ед. энергии Юмэмидзуки Мидзуки. Восстанавливать энергию таким способом можно до 4 раз в течение одной Тайной родниковой терапии анраку."
+    },
+    {
+      "name_ru": "Под уходящей луной...",
+      "description_ru": "Увеличивает уровень навыка Терапия тайных источников анраку на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Томится сердце",
+      "description_ru": "Когда Юмэмидзуки Мидзуки пребывает в состоянии Парящей по сновидениям, урон реакции Рассеивание, вызываемой членами отряда поблизости, может наносить критический урон. Шанс крит. попадания составляет 30%, а крит. урон - 100%."
+    }
+  ],
+  "coordinates": []
 }

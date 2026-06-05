@@ -1,48 +1,80 @@
 {
   "id": "talking-stick",
-  "name": "Talking Stick",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Talking_Stick",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "4★",
-    "base_atk": "44 - 565",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "ATK will be increased by for after being affected by Pyro. This can be triggered once every. All Elemental DMG Bonus will be increased by for after being affected by Hydro, Cryo, Electro, or Dendro. This can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Oasis Garden's Reminiscence",
-        "Desiccated Shell",
-        "Slime Condensate",
-        "Oasis Garden's Kindness",
-        "Sturdy Shell",
-        "Slime Secretions",
-        "Oasis Garden's Mourning",
-        "Marked Shell",
-        "Slime Concentrate",
-        "Oasis Garden's Truth"
-      ]
+  "name_ru": "Говорящая палица",
+  "name_en": "Talking Stick",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 43.7349,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.04
+    },
+    "level_90": {
+      "base_atk": 564.7837,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.1838
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "«Острый язык»",
+  "passive_description_ru": "Повышает силу атаки на 16% на 15 сек. после получения эффекта Пиро. Этот эффект может возникнуть один раз в 12 сек. После получения эффектов Гидро, Крио, Электро или Дендро бонус элементального урона на 15 сек. увеличивается на 12%. Может возникнуть раз в 12 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "oasis-gardens-reminiscence",
+        "name_ru": "Воспоминания цветущего оазиса",
+        "name_en": "Oasis Garden's Reminiscence"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "oasis-gardens-kindness",
+        "name_ru": "Милость цветущего оазиса",
+        "name_en": "Oasis Garden's Kindness"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "oasis-gardens-mourning",
+        "name_ru": "Печаль цветущего оазиса",
+        "name_en": "Oasis Garden's Mourning"
+      },
+      {
+        "id": "oasis-gardens-truth",
+        "name_ru": "Истина цветущего оазиса",
+        "name_en": "Oasis Garden's Truth"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "desiccated-shell",
+        "name_ru": "Опустошённая оболочка",
+        "name_en": "Desiccated Shell"
+      },
+      {
+        "id": "sturdy-shell",
+        "name_ru": "Прочная оболочка",
+        "name_en": "Sturdy Shell"
+      },
+      {
+        "id": "marked-shell",
+        "name_ru": "Меченая оболочка",
+        "name_en": "Marked Shell"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "slime-condensate",
+        "name_ru": "Слизь слайма",
+        "name_en": "Slime Condensate"
+      },
+      {
+        "id": "slime-secretions",
+        "name_ru": "Выделения слайма",
+        "name_en": "Slime Secretions"
+      },
+      {
+        "id": "slime-concentrate",
+        "name_ru": "Концентрат слайма",
+        "name_en": "Slime Concentrate"
+      }
+    ]
+  },
+  "coordinates": []
 }

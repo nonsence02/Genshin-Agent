@@ -1,0 +1,11 @@
+{
+  "id": "brown-shirakodai",
+  "kind": "fish",
+  "name_ru": "Бурая рыба-бабочка",
+  "name_en": "Brown Shirakodai",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

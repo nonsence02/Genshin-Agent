@@ -1,47 +1,80 @@
 {
   "id": "wolf-fang",
-  "name": "Wolf-Fang",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Wolf-Fang",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "DMG dealt by Elemental Skill and Elemental Burst is increased by. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by. Both of these effects last separately, have max stacks, and can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Tile of Decarabian's Tower",
-        "Chaos Device",
-        "Damaged Mask",
-        "Debris of Decarabian's City",
-        "Chaos Circuit",
-        "Stained Mask",
-        "Fragment of Decarabian's Epic",
-        "Ominous Mask",
-        "Scattered Piece of Decarabian's Dream"
-      ]
+  "name_ru": "Волчий клык",
+  "name_en": "Wolf-Fang",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.06
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.2756
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Волк северного ветра",
+  "passive_description_ru": "Увеличивает урон элементального навыка и взрыва стихии на 16%. Когда элементальный навык попадает по врагу, шанс крит. попадания элементального навыка увеличивается на 2%. Когда взрыв стихии попадает по врагу, шанс крит. попадания взрыва стихии увеличивается на 2%. Эти эффекты действуют независимо друг от друга. Каждый из эффектов длится 10 сек., складывается до 4 раз и может возникнуть один раз в 0,1 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "tile-of-decarabians-tower",
+        "name_ru": "Плитка башни Декарабиана",
+        "name_en": "Tile of Decarabian's Tower"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "debris-of-decarabians-city",
+        "name_ru": "Обломок стены Декарабиана",
+        "name_en": "Debris of Decarabian's City"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "fragment-of-decarabians-epic",
+        "name_ru": "Фрагмент эпоса Декарабиана",
+        "name_en": "Fragment of Decarabian's Epic"
+      },
+      {
+        "id": "scattered-piece-of-decarabians-dream",
+        "name_ru": "Осколок мечты Декарабиана",
+        "name_en": "Scattered Piece of Decarabian's Dream"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "chaos-device",
+        "name_ru": "Устройство хаоса",
+        "name_en": "Chaos Device"
+      },
+      {
+        "id": "chaos-circuit",
+        "name_ru": "Цепь хаоса",
+        "name_en": "Chaos Circuit"
+      },
+      {
+        "id": "chaos-core",
+        "name_ru": "Ядро хаоса",
+        "name_en": "Chaos Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "damaged-mask",
+        "name_ru": "Разбитая маска",
+        "name_en": "Damaged Mask"
+      },
+      {
+        "id": "stained-mask",
+        "name_ru": "Грязная маска",
+        "name_en": "Stained Mask"
+      },
+      {
+        "id": "ominous-mask",
+        "name_ru": "Зловещая маска",
+        "name_en": "Ominous Mask"
+      }
+    ]
+  },
+  "coordinates": []
 }

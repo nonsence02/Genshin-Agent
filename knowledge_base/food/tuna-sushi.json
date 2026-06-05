@@ -1,0 +1,19 @@
+{
+  "id": "tuna-sushi",
+  "name_ru": "Суши с тунцом",
+  "name_en": "Tuna Sushi",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 24% HP + 1500 HP.",
+  "recipe": [
+    {
+      "material_id": "fish",
+      "count": 3
+    },
+    {
+      "material_id": "rice",
+      "count": 3
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "miso-soup",
+  "name_ru": "Мисо-суп",
+  "name_en": "Miso Soup",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 10% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 300 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "tofu",
+      "count": 1
+    },
+    {
+      "material_id": "seagrass",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

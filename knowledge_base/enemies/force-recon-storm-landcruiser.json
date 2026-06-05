@@ -1,0 +1,13 @@
+{
+  "id": "force-recon-storm-landcruiser",
+  "name_ru": "Сухопутный крейсер: Штурмовой разведчик",
+  "name_en": "Force Recon Storm Landcruiser",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "precision-drive-shaft",
+    "reinforced-drive-shaft",
+    "broken-drive-shaft"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "extravagant-slumber",
+  "name_ru": "Удивительный сон",
+  "name_en": "Extravagant Slumber",
+  "rarity": 2,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 26% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 570 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "milk",
+      "count": 2
+    },
+    {
+      "material_id": "sumeru-rose",
+      "count": 2
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,10 +1,17 @@
 {
   "id": "plume-of-the-fallen-watcher",
+  "name_ru": "Перо падшего созерцателя",
   "name_en": "Plume of the Fallen Watcher",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Watcher: Fallen Vigil"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Созерцатель: Падший страж Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Plume_of_the_Fallen_Watcher"
+  "dropped_by": [
+    "watcher-fallen-vigil"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

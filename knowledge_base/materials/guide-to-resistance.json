@@ -1,0 +1,23 @@
+{
+  "id": "guide-to-resistance",
+  "name_ru": "Указания о «Борьбе»",
+  "name_en": "Guide to Resistance",
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "source_ru": [
+    "Можно создать: {0}"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-frozen-abyss-ii",
+    "domain-of-mastery-frozen-abyss-iii",
+    "domain-of-mastery-frozen-abyss-iv"
+  ],
+  "source_domain": "domain-of-mastery-frozen-abyss-ii",
+  "coordinates": []
+}

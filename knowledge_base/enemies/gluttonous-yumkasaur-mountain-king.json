@@ -1,0 +1,16 @@
+{
+  "id": "gluttonous-yumkasaur-mountain-king",
+  "name_ru": "Прожорливый Горный король-юмказавр",
+  "name_en": "Gluttonous Yumkasaur Mountain King",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "overripe-flamegranate",
+    "nagadus-emerald-gemstone",
+    "nagadus-emerald-chunk",
+    "nagadus-emerald-fragment",
+    "nagadus-emerald-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

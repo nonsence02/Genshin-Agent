@@ -1,0 +1,19 @@
+{
+  "id": "domain-of-forgery-thundering-ruins-iv",
+  "name_ru": "Воля: Рокочущие руины IV",
+  "name_en": "Domain of Forgery: Thundering Ruins IV",
+  "type": "Возвышение оружия",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "mist-veiled-primo-elixir",
+    "mist-veiled-gold-elixir",
+    "mist-veiled-mercury-elixir",
+    "mist-veiled-lead-elixir"
+  ],
+  "coordinates": []
+}

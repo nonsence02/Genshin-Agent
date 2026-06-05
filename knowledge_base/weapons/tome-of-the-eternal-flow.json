@@ -1,45 +1,80 @@
 {
   "id": "tome-of-the-eternal-flow",
-  "name": "Tome of the Eternal Flow",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Tome_of_the_Eternal_Flow",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT DMG"
-  },
-  "passive": "HP is increased by. When current HP increases or decreases, Charged Attack DMG will be increased by for. Max stacks, can be triggered once every. When you have stacks or refresh a third stack's duration, Energy will be restored. This Energy restoration can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dross of Pure Sacred Dewdrop",
-        "Meshing Gear",
-        "Sublimation of Pure Sacred Dewdrop",
-        "Mechanical Spur Gear",
-        "Spring of Pure Sacred Dewdrop",
-        "Artificed Dynamic Gear",
-        "Essence of Pure Sacred Dewdrop"
-      ]
+  "name_ru": "Обряд вечного течения",
+  "name_en": "Tome of the Eternal Flow",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.192
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Крит. урон",
+      "secondary_stat_value": 0.882
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Волна вечности",
+  "passive_description_ru": "Увеличивает HP на 16%. Когда текущее HP персонажа повышается или понижается, урон заряженной атаки увеличивается на 14% на 4 сек. Эффект складывается до 3 раз и возникает не чаще, чем 1 раз в 0,3 сек. При получении 3 уровней или обновлении времени длительности 3 уровня восстанавливается 8 ед. энергии. Восстанавливать энергию таким образом можно 1 раз в 12 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "dross-of-pure-sacred-dewdrop",
+        "name_ru": "Осадок чистой капли росы",
+        "name_en": "Dross of Pure Sacred Dewdrop"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "sublimation-of-pure-sacred-dewdrop",
+        "name_ru": "Конденсат чистой капли росы",
+        "name_en": "Sublimation of Pure Sacred Dewdrop"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "spring-of-pure-sacred-dewdrop",
+        "name_ru": "Источник чистой капли росы",
+        "name_en": "Spring of Pure Sacred Dewdrop"
+      },
+      {
+        "id": "essence-of-pure-sacred-dewdrop",
+        "name_ru": "Эссенция чистой капли росы",
+        "name_en": "Essence of Pure Sacred Dewdrop"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "rift-core",
+        "name_ru": "Ядро расщелины",
+        "name_en": "Rift Core"
+      },
+      {
+        "id": "foreign-synapse",
+        "name_ru": "Иноземный обломок",
+        "name_en": "Foreign Synapse"
+      },
+      {
+        "id": "alien-life-core",
+        "name_ru": "Чужеродное ядро",
+        "name_en": "Alien Life Core"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "meshing-gear",
+        "name_ru": "Сцепляющаяся шестерня",
+        "name_en": "Meshing Gear"
+      },
+      {
+        "id": "mechanical-spur-gear",
+        "name_ru": "Шестерня механизма",
+        "name_en": "Mechanical Spur Gear"
+      },
+      {
+        "id": "artificed-dynamic-gear",
+        "name_ru": "Изощрённая динамическая шестерня",
+        "name_en": "Artificed Dynamic Gear"
+      }
+    ]
+  },
+  "coordinates": []
 }

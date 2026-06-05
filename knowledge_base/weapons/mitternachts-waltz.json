@@ -1,48 +1,80 @@
 {
   "id": "mitternachts-waltz",
-  "name": "Mitternachts Waltz",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Mitternachts_Waltz",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Physical DMG Bonus"
-  },
-  "passive": "Normal Attack hits on opponents increase Elemental Skill DMG by for. Elemental Skill hits on opponents increase Normal Attack DMG by for.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Tile of Decarabian's Tower",
-        "Heavy Horn",
-        "Treasure Hoarder Insignia",
-        "Debris of Decarabian's City",
-        "Black Bronze Horn",
-        "Silver Raven Insignia",
-        "Fragment of Decarabian's Epic",
-        "Black Crystal Horn",
-        "Golden Raven Insignia",
-        "Scattered Piece of Decarabian's Dream"
-      ]
+  "name_ru": "Вальс Нирваны Ночи",
+  "name_en": "Mitternachts Waltz",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.1126
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Бонус физ. урона",
+      "secondary_stat_value": 0.5173
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Дуэт полярной ночи",
+  "passive_description_ru": "Попадания обычной атакой увеличивают урон элементального навыка на 20% в течение 5 сек., а попадания элементальным навыком увеличивают урон обычной атаки на 20% в течение 5 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "tile-of-decarabians-tower",
+        "name_ru": "Плитка башни Декарабиана",
+        "name_en": "Tile of Decarabian's Tower"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "debris-of-decarabians-city",
+        "name_ru": "Обломок стены Декарабиана",
+        "name_en": "Debris of Decarabian's City"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "fragment-of-decarabians-epic",
+        "name_ru": "Фрагмент эпоса Декарабиана",
+        "name_en": "Fragment of Decarabian's Epic"
+      },
+      {
+        "id": "scattered-piece-of-decarabians-dream",
+        "name_ru": "Осколок мечты Декарабиана",
+        "name_en": "Scattered Piece of Decarabian's Dream"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "heavy-horn",
+        "name_ru": "Тяжёлый рог",
+        "name_en": "Heavy Horn"
+      },
+      {
+        "id": "black-bronze-horn",
+        "name_ru": "Чёрный бронзовый рог",
+        "name_en": "Black Bronze Horn"
+      },
+      {
+        "id": "black-crystal-horn",
+        "name_ru": "Чёрный кристаллический рог",
+        "name_en": "Black Crystal Horn"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "treasure-hoarder-insignia",
+        "name_ru": "Печать Похитителей сокровищ",
+        "name_en": "Treasure Hoarder Insignia"
+      },
+      {
+        "id": "silver-raven-insignia",
+        "name_ru": "Печать серебряного ворона",
+        "name_en": "Silver Raven Insignia"
+      },
+      {
+        "id": "golden-raven-insignia",
+        "name_ru": "Печать золотого ворона",
+        "name_en": "Golden Raven Insignia"
+      }
+    ]
+  },
+  "coordinates": []
 }

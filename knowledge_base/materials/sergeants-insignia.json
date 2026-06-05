@@ -1,10 +1,29 @@
 {
   "id": "sergeants-insignia",
+  "name_ru": "Шеврон сержанта",
   "name_en": "Sergeant's Insignia",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Fatui Skirmishers"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Застрельщики Фатуи Ур. 40+",
+    "Некоторые агенты Фатуи Ур. 40+",
+    "Некоторые маги цицинов Фатуи Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sergeant%27s_Insignia"
+  "dropped_by": [
+    "fatui-cryo-cicin-mage",
+    "fatui-electro-cicin-mage",
+    "fatui-pyro-agent",
+    "fatui-skirmisher-anemoboxer-vanguard",
+    "fatui-skirmisher-cryogunner-legionnaire",
+    "fatui-skirmisher-electrohammer-vanguard",
+    "fatui-skirmisher-geochanter-bracer",
+    "fatui-skirmisher-hydrogunner-legionnaire",
+    "fatui-skirmisher-pyroslinger-bracer"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-mastery-witticism-iv",
+  "name_ru": "Мастерство: Умные речи IV",
+  "name_en": "Domain of Mastery: Witticism IV",
+  "type": "Повышение талантов",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "philosophies-of-ingenuity",
+    "guide-to-ingenuity",
+    "teachings-of-ingenuity"
+  ],
+  "coordinates": []
+}

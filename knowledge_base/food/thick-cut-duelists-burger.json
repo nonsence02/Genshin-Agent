@@ -1,0 +1,27 @@
+{
+  "id": "thick-cut-duelists-burger",
+  "name_ru": "Толсто нарезанный бургер «Дуэлянт»",
+  "name_en": "Thick-Cut Duelist's Burger",
+  "rarity": 4,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 320 ед. и шанс крит. попадания на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 3
+    },
+    {
+      "material_id": "cheese",
+      "count": 2
+    },
+    {
+      "material_id": "flour",
+      "count": 2
+    }
+  ],
+  "coordinates": []
+}

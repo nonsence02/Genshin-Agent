@@ -1,0 +1,16 @@
+{
+  "id": "domain-of-forgery-prayers-sung-i",
+  "name_ru": "Подземелье воли: Вознесённые молитвы I",
+  "name_en": "Domain of Forgery: Prayers Sung I",
+  "type": "Возвышение оружия",
+  "region": "Нод-Край",
+  "days_of_week": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "ember-of-long-night-flint"
+  ],
+  "coordinates": []
+}

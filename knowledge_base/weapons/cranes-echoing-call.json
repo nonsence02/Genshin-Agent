@@ -1,48 +1,80 @@
 {
   "id": "cranes-echoing-call",
-  "name": "Crane's Echoing Call",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Crane%27s_Echoing_Call",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "5★",
-    "base_atk": "49 - 741",
-    "secondary_stat": "ATK"
-  },
-  "passive": "After the equipping character hits an opponent with a Plunging Attack, all nearby party members' Plunging Attacks will deal increased DMG for. When nearby party members hit opponents with Plunging Attacks, they will restore Energy to the equipping character. Energy can be restored this way every. This energy regain can be triggered even if the equipping character is not on the field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mist Veiled Lead Elixir",
-        "Feathery Fin",
-        "Divining Scroll",
-        "Mist Veiled Mercury Elixir",
-        "Lunar Fin",
-        "Sealed Scroll",
-        "Mist Veiled Gold Elixir",
-        "Chasmlight Fin",
-        "Forbidden Curse Scroll",
-        "Mist Veiled Primo Elixir"
-      ]
+  "name_ru": "Звонкий клич журавля",
+  "name_en": "Crane's Echoing Call",
+  "weapon_type": "Catalyst",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 49.1377,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.036
+    },
+    "level_90": {
+      "base_atk": 740.5802,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.1654
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Секрет облачных канонов",
+  "passive_description_ru": "После того как атака в падении экипированного персонажа поражает врага, урон атак в падении членов отряда поблизости повышается на 28% на 20 сек. Попадания атак в падении членов отряда поблизости восстанавливают 2,5 ед. энергии экипированного персонажа. Восстанавливать энергию таким образом можно 1 раз в 0,7 сек. Эффект восстановления энергии срабатывает, даже если экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mist-veiled-lead-elixir",
+        "name_ru": "Свинцовая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Lead Elixir"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mist-veiled-mercury-elixir",
+        "name_ru": "Ртутная пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Mercury Elixir"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mist-veiled-gold-elixir",
+        "name_ru": "Золотая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Gold Elixir"
+      },
+      {
+        "id": "mist-veiled-primo-elixir",
+        "name_ru": "Примо эликсир Заоблачного моря",
+        "name_en": "Mist Veiled Primo Elixir"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "feathery-fin",
+        "name_ru": "Перьевой плавник",
+        "name_en": "Feathery Fin"
+      },
+      {
+        "id": "lunar-fin",
+        "name_ru": "Лунный плавник",
+        "name_en": "Lunar Fin"
+      },
+      {
+        "id": "chasmlight-fin",
+        "name_ru": "Глубинный плавник",
+        "name_en": "Chasmlight Fin"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "divining-scroll",
+        "name_ru": "Свиток божественной магии",
+        "name_en": "Divining Scroll"
+      },
+      {
+        "id": "sealed-scroll",
+        "name_ru": "Свиток печати",
+        "name_en": "Sealed Scroll"
+      },
+      {
+        "id": "forbidden-curse-scroll",
+        "name_ru": "Свиток запретного проклятья",
+        "name_en": "Forbidden Curse Scroll"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,27 @@
+{
+  "id": "candied-ajilenakh-nut",
+  "name_ru": "Засахаренные орехи аджиленах",
+  "name_en": "Candied Ajilenakh Nut",
+  "rarity": 3,
+  "food_type": "Блюдо для защиты",
+  "effect_ru": "Увеличивает защиту всех членов отряда на 235 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "ajilenakh-nut",
+      "count": 4
+    },
+    {
+      "material_id": "almond",
+      "count": 2
+    },
+    {
+      "material_id": "butter",
+      "count": 2
+    },
+    {
+      "material_id": "sumeru-rose",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

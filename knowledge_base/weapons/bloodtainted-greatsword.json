@@ -1,44 +1,80 @@
 {
   "id": "bloodtainted-greatsword",
-  "name": "Bloodtainted Greatsword",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Bloodtainted_Greatsword",
-  "profile": {
-    "type": "Claymore",
-    "rarity": "3★",
-    "base_atk": "38 - 354",
-    "secondary_stat": "Elemental Mastery"
-  },
-  "passive": "Increases DMG against opponents affected by Pyro or Electro by.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Dead Ley Line Branch",
-        "Firm Arrowhead",
-        "Dead Ley Line Leaves",
-        "Sharp Arrowhead",
-        "Ley Line Sprout",
-        "Weathered Arrowhead"
-      ]
+  "name_ru": "Меч драконьей крови",
+  "name_en": "Bloodtainted Greatsword",
+  "weapon_type": "Claymore",
+  "rarity": 3,
+  "stats": {
+    "level_1": {
+      "base_atk": 37.6075,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 40.8
+    },
+    "level_90": {
+      "base_atk": 354.3794,
+      "secondary_stat": "Мастерство стихий",
+      "secondary_stat_value": 187.4352
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Погибель огня и грома",
+  "passive_description_ru": "Увеличивает на 12% урон против врагов, находящихся под действием Пиро или Электро элементов.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "boreal-wolfs-milk-tooth",
+        "name_ru": "Молочный зуб арктического волка",
+        "name_en": "Boreal Wolf's Milk Tooth"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "boreal-wolfs-cracked-tooth",
+        "name_ru": "Треснувший зуб арктического волка",
+        "name_en": "Boreal Wolf's Cracked Tooth"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "boreal-wolfs-broken-fang",
+        "name_ru": "Сломанный клык арктического волка",
+        "name_en": "Boreal Wolf's Broken Fang"
+      },
+      {
+        "id": "boreal-wolfs-nostalgia",
+        "name_ru": "Ностальгия арктического волка",
+        "name_en": "Boreal Wolf's Nostalgia"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "dead-ley-line-branch",
+        "name_ru": "Ветви артерий земли",
+        "name_en": "Dead Ley Line Branch"
+      },
+      {
+        "id": "dead-ley-line-leaves",
+        "name_ru": "Листья артерий земли",
+        "name_en": "Dead Ley Line Leaves"
+      },
+      {
+        "id": "ley-line-sprout",
+        "name_ru": "Ростки артерий земли",
+        "name_en": "Ley Line Sprout"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "firm-arrowhead",
+        "name_ru": "Прочный наконечник стрелы",
+        "name_en": "Firm Arrowhead"
+      },
+      {
+        "id": "sharp-arrowhead",
+        "name_ru": "Острый наконечник стрелы",
+        "name_en": "Sharp Arrowhead"
+      },
+      {
+        "id": "weathered-arrowhead",
+        "name_ru": "Старый наконечник стрелы",
+        "name_en": "Weathered Arrowhead"
+      }
+    ]
+  },
+  "coordinates": []
 }

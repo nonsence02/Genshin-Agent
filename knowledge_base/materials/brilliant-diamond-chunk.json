@@ -1,10 +1,15 @@
 {
   "id": "brilliant-diamond-chunk",
+  "name_ru": "Кусок бриллианта",
   "name_en": "Brilliant Diamond Chunk",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Adventure Rank 35 Reward (×3)"
+  "type": "avatar_material",
+  "type_text_ru": "Материал возвышения персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Награда Ранга приключений"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Brilliant_Diamond_Chunk"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

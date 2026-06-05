@@ -1,47 +1,80 @@
 {
   "id": "fruit-of-fulfillment",
-  "name": "Fruit of Fulfillment",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fruit_of_Fulfillment",
-  "profile": {
-    "type": "Catalyst",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "Energy Recharge"
-  },
-  "passive": "Obtain the \"Wax and Wane\" after an Elemental Reaction is triggered, gaining Elemental Mastery while losing ATK. For every, stack of Wax and Wane can be gained. Max stacks. For every that go by without an Elemental Reaction being triggered, stack will be lost. This can be triggered even when the character is off-field.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Oasis Garden's Reminiscence",
-        "Gloomy Statuette",
-        "Oasis Garden's Kindness",
-        "Dark Statuette",
-        "Luminescent Pollen",
-        "Oasis Garden's Mourning",
-        "Deathly Statuette",
-        "Crystalline Cyst Dust",
-        "Oasis Garden's Truth"
-      ]
+  "name_ru": "Плод восполнения",
+  "name_en": "Fruit of Fulfillment",
+  "weapon_type": "Catalyst",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.1
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Восст. энергии",
+      "secondary_stat_value": 0.4594
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Полный круг",
+  "passive_description_ru": "Вызов элементальной реакции наделяет персонажа эффектом Роста и убыли, который увеличивает мастерство стихий на 24 ед., но понижает силу атаки на 5%. Эффект может возникнуть один раз в 0,3 сек. и складывается до 5 раз. Если не вызывать элементальные реакции, каждые 6 сек. теряется по одному уровню эффекта. Этот эффект срабатывает, даже если экипированный персонаж не на поле боя.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "oasis-gardens-reminiscence",
+        "name_ru": "Воспоминания цветущего оазиса",
+        "name_en": "Oasis Garden's Reminiscence"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "oasis-gardens-kindness",
+        "name_ru": "Милость цветущего оазиса",
+        "name_en": "Oasis Garden's Kindness"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "oasis-gardens-mourning",
+        "name_ru": "Печаль цветущего оазиса",
+        "name_en": "Oasis Garden's Mourning"
+      },
+      {
+        "id": "oasis-gardens-truth",
+        "name_ru": "Истина цветущего оазиса",
+        "name_en": "Oasis Garden's Truth"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "gloomy-statuette",
+        "name_ru": "Мрачная статуэтка",
+        "name_en": "Gloomy Statuette"
+      },
+      {
+        "id": "dark-statuette",
+        "name_ru": "Тёмная статуэтка",
+        "name_en": "Dark Statuette"
+      },
+      {
+        "id": "deathly-statuette",
+        "name_ru": "Смертельная статуэтка",
+        "name_en": "Deathly Statuette"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "fungal-spores",
+        "name_ru": "Споры плесенника",
+        "name_en": "Fungal Spores"
+      },
+      {
+        "id": "luminescent-pollen",
+        "name_ru": "Светящаяся пыльца",
+        "name_en": "Luminescent Pollen"
+      },
+      {
+        "id": "crystalline-cyst-dust",
+        "name_ru": "Пыль кристаллоцистов",
+        "name_en": "Crystalline Cyst Dust"
+      }
+    ]
+  },
+  "coordinates": []
 }

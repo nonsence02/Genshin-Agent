@@ -1,10 +1,19 @@
 {
   "id": "jeweled-flaming-hilt",
+  "name_ru": "Рукоять пламенного меча с камнем",
   "name_en": "Jeweled Flaming Hilt",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Level 60+ Domain Keepers"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Хранитель измерения Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Jeweled_Flaming_Hilt"
+  "dropped_by": [
+    "domain-keeper"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

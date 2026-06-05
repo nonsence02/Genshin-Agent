@@ -1,0 +1,13 @@
+{
+  "id": "primal-construct-reshaper",
+  "name_ru": "Первозданная конструкция: Формирователь",
+  "name_en": "Primal Construct: Reshaper",
+  "type": "Elite",
+  "type_ru": "Элитные",
+  "drops": [
+    "radiant-prism",
+    "turbid-prism",
+    "damaged-prism"
+  ],
+  "coordinates": []
+}

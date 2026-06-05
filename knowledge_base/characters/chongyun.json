@@ -1,92 +1,81 @@
 {
   "id": "chongyun",
-  "name": "Chongyun",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Chongyun",
-  "profile": {
-    "weapon": "Catalyst",
-    "element": "Cryo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Chongyun strikes the ground with his greatsword, causing a Cryo explosion in a circular AoE in front of him that deals Cryo DMG. After a short delay, the cold air created by the Cryo explosion will coalesce into a Chonghua Frost Field, within which all Sword, Claymore and Polearm-wielding characters' weapons will be infused with Cryo. When this skill hits at least one enemy, it generates Elemental Particles. The infusion is applied every second to active characters within the field. This skill can override certain elemental infusions. (See Overriding Infusions for details) Passive Effects Passive Talent, Steady Breathing: \"Sword, Claymore, or Polearm-wielding characters within the field...",
-    "elemental_burst": "Performing the secret hand seals, Chongyun summons giant spirit blades in mid-air that fall to the earth one by one after a short delay, exploding as they hit the ground. When the spirit blades explode, they will deal AoE Cryo DMG and launch opponents. Skill DMG refers to the damage per blade. Constellation Effects Constellation Level, Cloudburst: Increases this talent's level by, up to a maximum of. Constellation Level, Rally of Four Blades: \" Spirit Blade: Cloud-Parting Star deals"
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Shivada Jade Sliver",
-        "Shivada Jade Fragment",
-        "Shivada Jade Chunk",
-        "Shivada Jade Gemstone"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "special": [
-        "Cor Lapis",
-        "Hoarfrost Core"
-      ]
+  "name_ru": "Чун Юнь",
+  "name_en": "Chongyun",
+  "element": "Cryo",
+  "weapon_type": "Claymore",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 920.9089,
+      "atk": 18.6984,
+      "def": 54.3638
     },
-    "talents": {
-      "books": [
-        "Teachings of Diligence",
-        "Guide to Diligence",
-        "Philosophies of Diligence"
-      ],
-      "mob_drops": [
-        "Stained Mask",
-        "Ominous Mask"
-      ],
-      "weekly_boss": [
-        "Dvalin's Sigh"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10983.6643,
+      "atk": 223.0171,
+      "def": 648.3954
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Искоренение зла",
+      "description_ru": "Обычная атака:\nДо четырёх рубящих ударов мечом.\n\nЗаряженная атака:\nВращающаяся атака по окружающим врагам, на которую непрерывно тратится выносливость.\nПосле вращения проводит дополнительную мощную атаку мечом.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Духовное лезвие: Холод Чунхуа",
+      "description_ru": "Чун Юнь совершает удар мечом по земле, вызывая перед собой в круглой области взрыв холода, который наносит Крио урон.\nСпустя некоторое время холодный воздух, образованный взрывом, собирается в область Холода Чунхуа. Оружие находящихся в этой области персонажей, экипированных одноручным мечом, двуручным мечом или древковым оружием, наделяется инфузией Крио."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Духовное лезвие: Падение с небес",
+      "description_ru": "С помощью особых жестов Чун Юнь призывает в воздух три гигантских Духовных лезвия, которые после некоторого времени падают на землю один за другим и взрываются.\nПосле взрыва Духовное лезвие наносит Крио урон по площади и подбрасывает врагов."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Ровное дыхание",
+      "description_ru": "Увеличивает скорость обычной атаки одноручным, двуручным и древковым оружием в области навыка Духовное лезвие: Холод Чунхуа на 8%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Лезвие ледяного хищника",
+      "description_ru": "После исчезновения области Холода Чунхуа призывает Духовное лезвие, которое наносит 100% урона навыка Духовное лезвие: Холод Чунхуа в качестве Крио урона по площади. Понижает Крио сопротивление врагов, получивших урон от Духовного лезвия, на 10% в течение 8 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Великий добытчик",
+      "description_ru": "Уменьшает длительность экспедиций в Ли Юэ на 25%."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Вольные льды",
+      "description_ru": "Последний удар обычной атаки Чун Юня выпускает 3 ледяных клинка. Каждый клинок наносит Крио урон, равный 50% от силы атаки Чун Юня."
+    },
+    {
+      "name_ru": "Циркуляция воздуха",
+      "description_ru": "Уменьшает время отката элементальных навыков и взрывов стихии, активированных в области навыка Духовное лезвие: Холод Чунхуа, на 15%."
+    },
+    {
+      "name_ru": "Облачный раскат",
+      "description_ru": "Увеличивает уровень навыка Духовное лезвие: Падение с небес на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Замёрзшие небеса",
+      "description_ru": "При попадании по врагу с эффектом Крио Чун Юнь восстанавливает 1 ед. энергии.\nМожет возникнуть раз в 2 сек."
+    },
+    {
+      "name_ru": "Истинный порядок вещей",
+      "description_ru": "Увеличивает уровень навыка Духовное лезвие: Холод Чунхуа на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Молитва четырём духам",
+      "description_ru": "На 15% увеличивает урон навыка Духовное лезвие: Падение с небес по врагам, у которых меньше процентов HP, чем у Чун Юня;\nТакже активация этого навыка призывает одно дополнительное Духовное лезвие."
+    }
+  ],
+  "coordinates": []
 }

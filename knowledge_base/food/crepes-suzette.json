@@ -1,0 +1,27 @@
+{
+  "id": "crepes-suzette",
+  "name_ru": "Креп-сюзетт",
+  "name_en": "Crepes Suzette",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Уменьшает потребление выносливости всеми членами отряда во время полёта и спринта на 25% на 900 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "bulle-fruit",
+      "count": 2
+    },
+    {
+      "material_id": "cream",
+      "count": 1
+    },
+    {
+      "material_id": "jam",
+      "count": 1
+    },
+    {
+      "material_id": "flour",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

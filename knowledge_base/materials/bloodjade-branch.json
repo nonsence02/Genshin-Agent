@@ -1,10 +1,18 @@
 {
   "id": "bloodjade-branch",
+  "name_ru": "Ветвь кровавой яшмы",
   "name_en": "Bloodjade Branch",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ Beneath the Dragon-Queller Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Аждаха Ур. 70+",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Bloodjade_Branch"
+  "dropped_by": [
+    "azhdaha"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "eremite-scorching-loremaster",
+  "name_ru": "Пустынник: Пылающий повествователь",
+  "name_en": "Eremite Scorching Loremaster",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "rich-red-brocade",
+    "trimmed-red-silk",
+    "faded-red-satin"
+  ],
+  "coordinates": []
+}

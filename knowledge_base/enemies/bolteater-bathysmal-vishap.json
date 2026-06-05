@@ -1,0 +1,19 @@
+{
+  "id": "bolteater-bathysmal-vishap",
+  "name_ru": "Вишап глубин: Громоглот",
+  "name_en": "Bolteater Bathysmal Vishap",
+  "type": "BOSS",
+  "type_ru": "Мистические звери",
+  "drops": [
+    "dragonheirs-false-fin",
+    "shivada-jade-gemstone",
+    "shivada-jade-chunk",
+    "shivada-jade-fragment",
+    "shivada-jade-sliver",
+    "vajrada-amethyst-gemstone",
+    "vajrada-amethyst-chunk",
+    "vajrada-amethyst-fragment",
+    "vajrada-amethyst-sliver"
+  ],
+  "coordinates": []
+}

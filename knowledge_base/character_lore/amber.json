@@ -1,0 +1,70 @@
+{
+  "id": "amber",
+  "name_en": "Amber",
+  "element": "Pyro",
+  "weapon": "Bow",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "description": "Amber is a playable Pyro character in Genshin Impact .\n\nAs the only remaining Outrider of the Knights of Favonius , she is always ready to help the citizens of Mondstadt — whether it be something simple or perhaps a more challenging task.\n\nShe can be obtained for free in the Archon Quest Wind-Riding Knight in Prologue : Act I - The Outlander Who Caught the Wind .",
+  "role_summary": "Amber is a playable Pyro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Sharpshooter",
+      "description": "Normal Attack Performs up to 5 consecutive shots with a bow. Charged Attack Perform a more precise Aimed Shot with increased DMG. While aiming, flames will accumulate on the arrowhead. A fully charged flaming arrow will deal Pyro DMG . Plunging Attack Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Explosive Puppet",
+      "description": "The ever-reliable Baron Bunny takes the stage. Baron Bunny Continuously taunts the enemy, drawing their fire. Baron Bunny's HP scales with Amber's Max HP. When destroyed or when its timer expires, Baron Bunny explodes, dealing AoE Pyro DMG . Hold Adjusts the throwing direction of Baron Bunny. The longer the button is held, the further the throw."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Fiery Rain",
+      "description": "Fires off a shower of arrows, dealing continuous AoE Pyro DMG ."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Every Arrow Finds Its Target",
+      "description": "Increases the CRIT Rate of Fiery Rain by 10% and widens its AoE by 30%."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Precise Shot",
+      "description": "Aimed Shot hits on weak spots increase ATK by 15% for 10s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Gliding Champion",
+      "description": "Decreases gliding Stamina consumption for your own party members by 20%. Not stackable with Passive Talents that provide the exact same effects."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "One Arrow to Rule Them All",
+      "effect": "Description Advanced Properties Fires 2 arrows per Aimed Shot. The second arrow deals 20% of the first arrow's DMG. Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Extra Arrow 1U Charged Attack 1s/3 Hits 2 Light 200 0 ✘"
+    },
+    "c3": {
+      "name": "It Burns!",
+      "effect": "Increases the Level of Fiery Rain by 3. Maximum upgrade level is 15."
+    },
+    "c2": {
+      "name": "Bunny Triggered",
+      "effect": "Description Gameplay Notes Baron Bunny, new and improved! Hitting Baron Bunny 's foot with a fully-charged Aimed Shot manually detonates it. Explosion via manual detonation deals 200% additional DMG. Baron Bunny manual detonation: Only Amber with this Constellation can manually detonate Baron Bunny; other archers cannot. In Co-Op Mode, this Constellation enables the player to detonate other players' Baron Bunnies, even if they have not unlocked this Constellation. The foot's hitbox is extended to the narrow nearby ground, allowing for easier detonation. However, the hitbox is not extended upward, so hitting the upper half of Baron Bunny does not manually detonate. Shallow water can cover up Baron Bunny's foot and nearby ground, preventing manual detonation. The second arrow from One Arrow to Rule Them All cannot trigger detonation. Transformative Reactions triggered by Amber's Aimed S..."
+    },
+    "c4": {
+      "name": "It's Not Just Any Doll...",
+      "effect": "Decreases Explosive Puppet 's CD by 20%. Adds 1 additional charge ."
+    },
+    "c5": {
+      "name": "It's Baron Bunny!",
+      "effect": "Increases the Level of Explosive Puppet by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Wildfire",
+      "effect": "Fiery Rain increases all party members' Movement SPD by 15% and ATK by 15% for 10s."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Amber",
+  "ai_tags": "Main DPS"
+}

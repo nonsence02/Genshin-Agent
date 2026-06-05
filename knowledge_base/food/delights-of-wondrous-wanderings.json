@@ -1,0 +1,27 @@
+{
+  "id": "delights-of-wondrous-wanderings",
+  "name_ru": "«Восхитительные странствия»",
+  "name_en": "Delights of Wondrous Wanderings",
+  "rarity": 3,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает выбранному персонажу 34% HP + 1900 HP.",
+  "recipe": [
+    {
+      "material_id": "flour",
+      "count": 1
+    },
+    {
+      "material_id": "bird-egg",
+      "count": 1
+    },
+    {
+      "material_id": "butter",
+      "count": 1
+    },
+    {
+      "material_id": "jam",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "floral-rapidfighting-fish",
+  "kind": "fish",
+  "name_ru": "Цветочная рыба-боец стремнин",
+  "name_en": "Floral Rapidfighting Fish",
+  "bait_id": null,
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

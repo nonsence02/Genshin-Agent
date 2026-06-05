@@ -1,48 +1,80 @@
 {
   "id": "hunters-path",
-  "name": "Hunter's Path",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Hunter%27s_Path",
-  "profile": {
-    "type": "Bow",
-    "rarity": "5★",
-    "base_atk": "44 - 542",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "Gain All Elemental DMG Bonus. Obtain the Tireless Hunt after hitting an opponent with a Charged Attack. This increases Charged Attack DMG by of Elemental Mastery. This will be removed after Charged Attacks or. Only instance of Tireless Hunt can be gained every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Echo of Scorching Might",
-        "Inactivated Fungal Nucleus",
-        "Faded Red Satin",
-        "Remnant Glow of Scorching Might",
-        "Dormant Fungal Nucleus",
-        "Trimmed Red Silk",
-        "Dream of Scorching Might",
-        "Robust Fungal Nucleus",
-        "Rich Red Brocade",
-        "Olden Days of Scorching Might"
-      ]
+  "name_ru": "Охотничья тропа",
+  "name_en": "Hunter's Path",
+  "weapon_type": "Bow",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 44.3358,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.096
+    },
+    "level_90": {
+      "base_atk": 541.8298,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.441
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Конец звериной тропы",
+  "passive_description_ru": "Даёт 12% бонус урона всеми элементами. Попадание заряженной атакой наделяет персонажа эффектом Непрестанной охоты, который увеличивает урон заряженных атак на 160% от мастерства стихий. Через 10 сек. либо после 12 активаций эффект исчезает. Может возникнуть один раз в 12 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "echo-of-scorching-might",
+        "name_ru": "Эхо пылающей мощи",
+        "name_en": "Echo of Scorching Might"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "remnant-glow-of-scorching-might",
+        "name_ru": "Отсветы пылающей мощи",
+        "name_en": "Remnant Glow of Scorching Might"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "dream-of-scorching-might",
+        "name_ru": "Грёзы пылающей мощи",
+        "name_en": "Dream of Scorching Might"
+      },
+      {
+        "id": "olden-days-of-scorching-might",
+        "name_ru": "Прошлое пылающей мощи",
+        "name_en": "Olden Days of Scorching Might"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "inactivated-fungal-nucleus",
+        "name_ru": "Неактивное ядро плесенника",
+        "name_en": "Inactivated Fungal Nucleus"
+      },
+      {
+        "id": "dormant-fungal-nucleus",
+        "name_ru": "Спящее ядро плесенника",
+        "name_en": "Dormant Fungal Nucleus"
+      },
+      {
+        "id": "robust-fungal-nucleus",
+        "name_ru": "Здоровое ядро плесенника",
+        "name_en": "Robust Fungal Nucleus"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "faded-red-satin",
+        "name_ru": "Выцветший красный шёлк",
+        "name_en": "Faded Red Satin"
+      },
+      {
+        "id": "trimmed-red-silk",
+        "name_ru": "Окаймлённый красный шёлк",
+        "name_en": "Trimmed Red Silk"
+      },
+      {
+        "id": "rich-red-brocade",
+        "name_ru": "Златотканый красный шёлк",
+        "name_en": "Rich Red Brocade"
+      }
+    ]
+  },
+  "coordinates": []
 }

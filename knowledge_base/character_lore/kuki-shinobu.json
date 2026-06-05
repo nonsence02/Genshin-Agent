@@ -1,0 +1,70 @@
+{
+  "id": "kuki-shinobu",
+  "name_en": "Kuki Shinobu",
+  "element": "Electro",
+  "weapon": "Sword",
+  "region": "Inazuma",
+  "rarity": 4,
+  "description": "Kuki Shinobu ( Japanese : 久岐忍 Kuki Shinobu ) is a playable Electro character in Genshin Impact .\n\nA former shrine maiden of the Grand Narukami Shrine , she is the sidekick of Arataki Itto and Deputy Leader of the Arataki Gang . Due to her professionalism and certifications, Kuki Shinobu has helped the Arataki Gang out of many problems, and has even expanded the gang's business scope outside of the regular mischief and delinquency.",
+  "role_summary": "Kuki Shinobu ( Japanese : 久岐忍 Kuki Shinobu ) is a playable Electro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Shinobu's Shadowsword",
+      "description": "Normal Attack Performs up to 4 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Sanctifying Ring",
+      "description": "Creates a Grass Ring of Sanctification at the cost of part of her HP , dealing Electro DMG to nearby opponents. Grass Ring of Sanctification Follows your current active character around. Deals Electro DMG to nearby opponents every 1.5s and restores HP for the active character(s) within the ring's AoE based on Kuki Shinobu's Max HP. The HP consumption from using this skill can only bring her to 20% HP."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Gyoei Narukami Kariyama Rite",
+      "description": "Stabs an evil-excoriating blade into the ground, creating a field that cleanses the area of all that is foul, dealing continuous Electro DMG to opponents within its AoE based on Shinobu's Max HP . If Shinobu's HP is less than or equal to 50% when this skill is used, the field will last longer."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Breaking Free",
+      "description": "When Shinobu's HP is not higher than 50%, her Healing Bonus is increased by 15%."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Heart's Repose",
+      "description": "Sanctifying Ring 's abilities will be boosted based on Shinobu's Elemental Mastery : Healing amount will be increased by 75% of Elemental Mastery. DMG dealt is increased by 25% of Elemental Mastery."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Protracted Prayers",
+      "description": "Gains 25% more rewards when dispatched on an Inazuma Expedition for 20 hours."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "To Cloister Compassion",
+      "effect": "Description Preview Gyoei Narukami Kariyama Rite 's AoE is increased by 50%. Hover over previews to view in higher quality. ( Preview Preferences ) Media:To Cloister Compassion Preview.mp4 C1 AoE Media:To Cloister Compassion Preview 2.mp4 C0 AoE for reference"
+    },
+    "c2": {
+      "name": "To Forsake Fortune",
+      "effect": "Description Gameplay Notes Grass Ring of Sanctification 's duration is increased by 3s. This Constellation adds 2 ticks to Sanctifying Ring , for a total of 10 ticks."
+    },
+    "c3": {
+      "name": "To Sequester Sorrow",
+      "effect": "Increases the Level of Sanctifying Ring by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "To Sever Sealing",
+      "effect": "Description Gameplay Notes Advanced Properties Preview When the Normal, Charged, or Plunging Attacks of the character affected by Shinobu's Grass Ring of Sanctification hit opponents, a Thundergrass Mark will land on the opponent's position and deal AoE Electro DMG based on 9.7% of Shinobu's Max HP . This effect can occur once every 5s. When Thundergrass Mark hits at least one enemy , it generates 0.45 Elemental Particles . This particle generation shares a 0.2 seconds cooldown with the Skill DMG and Grass Ring of Sanctification DMG from Sanctifying Ring . Gauge Units Internal Cooldown Poise Damage Stagger Effect Blunt ‍ Tag Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ Type Attacks with the same ICD Tag and the same ICD Type will share ICD. ‍ ‍ S. L. Stagger Level ‍ ‍ H. F. Horizontal Force ‍ ‍ V. F. Vertical Force ‍ Thundergrass Mark 1U No ICD 20 Light 200..."
+    },
+    "c5": {
+      "name": "To Cease Courtesies",
+      "effect": "Increases the Level of Gyoei Narukami Kariyama Rite by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "To Ward Weakness",
+      "effect": "Description Preview When Kuki Shinobu takes lethal DMG, this instance of DMG will not take her down. This effect will automatically trigger when her HP reaches 1 and will trigger once every 60s. When Shinobu's HP drops below 25%, she will gain 150 Elemental Mastery for 15s. This effect will trigger once every 60s. Hover over previews to view in higher quality. ( Preview Preferences ) Media:To Ward Weakness Preview.mp4"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Kuki_Shinobu",
+  "ai_tags": "Хиллер, Баффер"
+}

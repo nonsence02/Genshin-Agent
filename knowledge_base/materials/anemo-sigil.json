@@ -1,0 +1,15 @@
+{
+  "id": "anemo-sigil",
+  "name_ru": "Печать Анемо",
+  "name_en": "Anemo Sigil",
+  "type": "consume",
+  "type_text_ru": "Символ города",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Исследование Мондштадта"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

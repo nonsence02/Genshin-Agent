@@ -1,94 +1,81 @@
 {
   "id": "xiangling",
-  "name": "Xiangling",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Xiangling",
-  "profile": {
-    "weapon": "Polearm",
-    "element": "Anemo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Summons Guoba, who will continuously breathe fire at opponents, dealing AoE Pyro DMG. When each breath hits at least one enemy, it generates Elemental Particle. After from skill activation, Guoba will breathe fire at opponents every, times. Guoba exists on-field for a total of. After Xiangling gains her first Passive Talent, Crossfire, Guoba's breath attack hits in a -meter-long cone in front of him with a diameter of approximately meters at max range. Unlike Explosive Puppet and Jumpy Dumpty, this skill can not activate pressure plates. Guoba can be picked up by Gust Surge. Flame DMG will snapshot Xiangling's stats on cast and will not be affected by changes in her stats that occur...",
-    "elemental_burst": "Displaying her mastery over both fire and polearms, Xiangling sends a Pyronado whirling around her. The Pyronado will move with your character for the ability's duration, dealing Pyro DMG to all opponents in its path. Pyronado DMG will snapshot Xiangling's stats at the third swing during casting and will not be affected by changes in her stats that occur afterwards. Pyronado takes to complete one cycle if the character has no motion. Once a Pyronado deals DMG, it has a cooldown before being able to deal DMG to the same target again. It can deal DMG more than once per rotation if its hitbox remains in contact with an enemy for more than. This can be accomplished against enemies with large..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Agnidus Agate Sliver",
-        "Agnidus Agate Fragment",
-        "Agnidus Agate Chunk",
-        "Agnidus Agate Gemstone"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "special": [
-        "Jueyun Chili",
-        "Everflame Seed"
-      ]
+  "name_ru": "Сян Лин",
+  "name_en": "Xiangling",
+  "element": "Pyro",
+  "weapon_type": "Polearm",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 911.791,
+      "atk": 18.8765,
+      "def": 56.0805
     },
-    "talents": {
-      "books": [
-        "Teachings of Diligence",
-        "Guide to Diligence",
-        "Philosophies of Diligence"
-      ],
-      "mob_drops": [
-        "Slime Condensate",
-        "Slime Secretions",
-        "Slime Concentrate"
-      ],
-      "weekly_boss": [
-        "Dvalin's Claw"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 10874.9149,
+      "atk": 225.141,
+      "def": 668.8711
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Кунг-тесто",
+      "description_ru": "Обычная атака:\nДо пяти ударов копьём.\n\nЗаряженная атака:\nВыпад, наносящий урон противникам на пути, на который тратится определённое количество выносливости.\n\nАтака в падении:\nСтремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Атака Гобы",
+      "description_ru": "Призывает панду по имени Гоба, который длительное время дышит огнём, нанося Пиро урон по площади."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Огневихрь",
+      "description_ru": "Используя свои умения Пиро и древкового оружия, Сян Лин закручивает вокруг себя огненный вихрь.\nОн следует за активным персонажем и наносит Пиро урон врагам, которых касается."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Перекрёстный огонь",
+      "description_ru": "Дистанция огненного дыхания Гобы увеличивается на 20%."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Острота!!!",
+      "description_ru": "После окончания навыка Атака Гобы на месте его исчезновения остаётся перец. Этот перец увеличивает силу атаки на 10% в течение 10 сек."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Народный выбор",
+      "description_ru": "При приготовлении идеального блюда, повышающего силу атаки, имеет 12% шанс получить дополнительное блюдо."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Внешность обманчива",
+      "description_ru": "Попадания атакой Гобы понижают Пиро сопротивление врагов на 15% в течение 6 сек."
+    },
+    {
+      "name_ru": "Масло в огонь",
+      "description_ru": "Последний удар обычной атаки накладывает на врага статус Возгорание на 2 сек. По истечении этого времени происходит взрыв, который наносит Пиро урон по площади, равный 75% от силы атаки Сян Лин."
+    },
+    {
+      "name_ru": "Жарка в масле",
+      "description_ru": "Увеличивает уровень навыка Огневихрь на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "На маленьком огне",
+      "description_ru": "Увеличивает длительность навыка Огневихрь на 40%."
+    },
+    {
+      "name_ru": "Гоба зол",
+      "description_ru": "Увеличивает уровень навыка Атака Гобы на 3.\nМакс. уровень: 15"
+    },
+    {
+      "name_ru": "Усиленный огневихрь",
+      "description_ru": "При активном Огневихре все члены отряда получают 15% бонус Пиро урона."
+    }
+  ],
+  "coordinates": []
 }

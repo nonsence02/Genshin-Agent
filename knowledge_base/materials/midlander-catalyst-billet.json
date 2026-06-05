@@ -1,0 +1,21 @@
+{
+  "id": "midlander-catalyst-billet",
+  "name_ru": "Заготовка катализатора центральных земель",
+  "name_en": "Midlander Catalyst Billet",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Испытание Подземелья наказания региона Сумеру, Фонтейн"
+  ],
+  "dropped_by": [
+    "all-devouring-narwhal",
+    "guardian-of-apeps-oasis",
+    "il-dottore",
+    "shouki-no-kami-the-prodigal",
+    "the-knave"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

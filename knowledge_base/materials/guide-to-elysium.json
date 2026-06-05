@@ -1,14 +1,23 @@
 {
   "id": "guide-to-elysium",
+  "name_ru": "Указания о «Рае»",
   "name_en": "Guide to Elysium",
-  "type": "Character Talent Materials",
-  "days": [
-    "Tuesday",
-    "Friday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Вторник",
+    "Пятница",
+    "Воскресенье"
   ],
-  "source": [
-    "Lightless Capital (Tuesday/Friday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Guide_to_Elysium"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-shadowed-legacy-ii",
+    "domain-of-mastery-shadowed-legacy-iii",
+    "domain-of-mastery-shadowed-legacy-iv"
+  ],
+  "source_domain": "domain-of-mastery-shadowed-legacy-ii",
+  "coordinates": []
 }

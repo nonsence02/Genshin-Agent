@@ -1,0 +1,13 @@
+{
+  "id": "electro-hilichurl-grenadier",
+  "name_ru": "Электро хиличурл-гренадёр",
+  "name_en": "Electro Hilichurl Grenadier",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "ominous-mask",
+    "stained-mask",
+    "damaged-mask"
+  ],
+  "coordinates": []
+}

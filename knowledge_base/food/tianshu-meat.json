@@ -1,0 +1,27 @@
+{
+  "id": "tianshu-meat",
+  "name_ru": "Мясо «Тяньшу»",
+  "name_en": "Tianshu Meat",
+  "rarity": 4,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает физ. урон всех членов отряда на 45% и шанс крит. попадания на 10% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "sugar",
+      "count": 2
+    },
+    {
+      "material_id": "qingxin",
+      "count": 1
+    },
+    {
+      "material_id": "matsutake",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

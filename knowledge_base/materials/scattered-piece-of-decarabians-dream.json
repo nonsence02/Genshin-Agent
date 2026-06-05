@@ -1,14 +1,21 @@
 {
   "id": "scattered-piece-of-decarabians-dream",
+  "name_ru": "Осколок мечты Декарабиана",
   "name_en": "Scattered Piece of Decarabian's Dream",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Monday",
-    "Thursday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Понедельник",
+    "Четверг",
+    "Воскресенье"
   ],
-  "source": [
-    "Cecilia Garden (Monday/Thursday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Scattered_Piece_of_Decarabian%27s_Dream"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-city-of-reflections-iv"
+  ],
+  "source_domain": "domain-of-forgery-city-of-reflections-iv",
+  "coordinates": []
 }

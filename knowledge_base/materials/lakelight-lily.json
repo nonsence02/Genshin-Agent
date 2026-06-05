@@ -1,10 +1,16 @@
 {
   "id": "lakelight-lily",
+  "name_ru": "Лилия озёрного света",
   "name_en": "Lakelight Lily",
-  "type": "Local Specialty (Fontaine)",
-  "days": [],
-  "source": [
-    "Found near bodies of water in Erinnyes Forest"
+  "type": "local_specialty",
+  "type_text_ru": "Диковинка Фонтейна",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Лес Эриний",
+    "Области сбора"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Lakelight_Lily"
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

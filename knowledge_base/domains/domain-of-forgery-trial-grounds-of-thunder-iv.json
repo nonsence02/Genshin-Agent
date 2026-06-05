@@ -1,0 +1,19 @@
+{
+  "id": "domain-of-forgery-trial-grounds-of-thunder-iv",
+  "name_ru": "Воля: Древние испытания молнии IV",
+  "name_en": "Domain of Forgery: Trial Grounds of Thunder IV",
+  "type": "Возвышение оружия",
+  "region": "Ли Юэ",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "chunk-of-aerosiderite",
+    "bit-of-aerosiderite",
+    "piece-of-aerosiderite",
+    "grain-of-aerosiderite"
+  ],
+  "coordinates": []
+}

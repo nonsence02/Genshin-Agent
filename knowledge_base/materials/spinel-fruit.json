@@ -1,0 +1,15 @@
+{
+  "id": "spinel-fruit",
+  "name_ru": "Корундин",
+  "name_en": "Spinel Fruit",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Зоны с жидким флогистоном"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

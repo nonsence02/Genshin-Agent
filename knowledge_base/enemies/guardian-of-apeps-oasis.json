@@ -1,0 +1,23 @@
+{
+  "id": "guardian-of-apeps-oasis",
+  "name_ru": "Страж оазиса Апеп",
+  "name_en": "Guardian of Apep's Oasis",
+  "type": "BOSS",
+  "type_ru": "Враги, достойные упоминания",
+  "drops": [
+    "worldspan-fern",
+    "primordial-greenbloom",
+    "everamber",
+    "nagadus-emerald-gemstone",
+    "nagadus-emerald-chunk",
+    "nagadus-emerald-fragment",
+    "nagadus-emerald-sliver",
+    "dream-solvent",
+    "midlander-sword-billet",
+    "midlander-bow-billet",
+    "midlander-claymore-billet",
+    "midlander-catalyst-billet",
+    "midlander-polearm-billet"
+  ],
+  "coordinates": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "jueyun-chili-chicken",
+  "name_ru": "Острая курица на пару",
+  "name_en": "Jueyun Chili Chicken",
+  "rarity": 2,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает шанс крит. попадания всех членов отряда на 12% на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "fowl",
+      "count": 2
+    },
+    {
+      "material_id": "jueyun-chili",
+      "count": 1
+    },
+    {
+      "material_id": "pepper",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

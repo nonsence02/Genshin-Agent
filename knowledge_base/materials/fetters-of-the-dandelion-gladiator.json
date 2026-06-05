@@ -1,14 +1,25 @@
 {
   "id": "fetters-of-the-dandelion-gladiator",
+  "name_ru": "Кандалы львиного клыка",
   "name_en": "Fetters of the Dandelion Gladiator",
-  "type": "Weapon Ascension Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "weapon_material",
+  "type_text_ru": "Возвышение оружия",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Cecilia Garden (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Сувенирная лавка Мондштадта",
+    "Сувенирная лавка"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Fetters_of_the_Dandelion_Gladiator"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-forgery-ruins-of-thirsting-capital-i",
+    "domain-of-forgery-ruins-of-thirsting-capital-ii",
+    "domain-of-forgery-ruins-of-thirsting-capital-iii",
+    "domain-of-forgery-ruins-of-thirsting-capital-iv"
+  ],
+  "source_domain": "domain-of-forgery-ruins-of-thirsting-capital-i",
+  "coordinates": []
 }

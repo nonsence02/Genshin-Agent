@@ -1,0 +1,27 @@
+{
+  "id": "gilded-chest",
+  "name_ru": "Позолоченный сундук",
+  "name_en": "Gilded Chest",
+  "rarity": 3,
+  "food_type": "Блюдо для приключений",
+  "effect_ru": "Восстанавливает 130 ед. выносливости.",
+  "recipe": [
+    {
+      "material_id": "tofu",
+      "count": 4
+    },
+    {
+      "material_id": "raw-meat",
+      "count": 4
+    },
+    {
+      "material_id": "mushroom",
+      "count": 2
+    },
+    {
+      "material_id": "salt",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

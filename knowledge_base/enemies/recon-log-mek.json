@@ -1,0 +1,13 @@
+{
+  "id": "recon-log-mek",
+  "name_ru": "Мек: Протокол разведки",
+  "name_en": "Recon Log Mek",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "artificed-dynamic-gear",
+    "mechanical-spur-gear",
+    "meshing-gear"
+  ],
+  "coordinates": []
+}

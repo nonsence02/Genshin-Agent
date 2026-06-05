@@ -1,0 +1,13 @@
+{
+  "id": "hydro-slime",
+  "name_ru": "Гидро слайм",
+  "name_en": "Hydro Slime",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "slime-concentrate",
+    "slime-secretions",
+    "slime-condensate"
+  ],
+  "coordinates": []
+}

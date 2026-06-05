@@ -1,10 +1,18 @@
 {
   "id": "eroded-horn",
+  "name_ru": "Истлевший рог",
   "name_en": "Eroded Horn",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Lv. 70+ Lord of Eroded Primal Fire Reward"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Владыка истлевшего первобытного пламени (Ур. 70+)",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Eroded_Horn"
+  "dropped_by": [
+    "lord-of-eroded-primal-fire"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

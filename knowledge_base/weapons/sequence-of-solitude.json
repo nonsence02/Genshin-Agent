@@ -1,48 +1,80 @@
 {
   "id": "sequence-of-solitude",
-  "name": "Sequence of Solitude",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sequence_of_Solitude",
-  "profile": {
-    "type": "Bow",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "HP"
-  },
-  "passive": "When an attack hits an opponent, deal AoE DMG equal to of Max HP at the target location. This can be triggered once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fragment of an Ancient Chord",
-        "Cold-Cracked Shellshard",
-        "Meshing Gear",
-        "Chapter of an Ancient Chord",
-        "Warm Back-Shell",
-        "Mechanical Spur Gear",
-        "Movement of an Ancient Chord",
-        "Blazing Prismshell",
-        "Artificed Dynamic Gear",
-        "Echo of an Ancient Chord"
-      ]
+  "name_ru": "Каденция одиночества",
+  "name_en": "Sequence of Solitude",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "HP",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Бесшумный спуск",
+  "passive_description_ru": "При попадании атаки по противнику на позиции цели наносится урон по площади, равный 40% от макс. HP. Этот эффект может возникнуть один раз в 15 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fragment-of-an-ancient-chord",
+        "name_ru": "Фрагмент отзвука древней струны",
+        "name_en": "Fragment of an Ancient Chord"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chapter-of-an-ancient-chord",
+        "name_ru": "Незаконченный отзвук древней струны",
+        "name_en": "Chapter of an Ancient Chord"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "movement-of-an-ancient-chord",
+        "name_ru": "Песнь отзвука древней струны",
+        "name_en": "Movement of an Ancient Chord"
+      },
+      {
+        "id": "echo-of-an-ancient-chord",
+        "name_ru": "Эхо отзвука древней струны",
+        "name_en": "Echo of an Ancient Chord"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "cold-cracked-shellshard",
+        "name_ru": "Холодный осколок панциря",
+        "name_en": "Cold-Cracked Shellshard"
+      },
+      {
+        "id": "warm-back-shell",
+        "name_ru": "Тёплый панцирь",
+        "name_en": "Warm Back-Shell"
+      },
+      {
+        "id": "blazing-prismshell",
+        "name_ru": "Пылающий призмопанцирь",
+        "name_en": "Blazing Prismshell"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "meshing-gear",
+        "name_ru": "Сцепляющаяся шестерня",
+        "name_en": "Meshing Gear"
+      },
+      {
+        "id": "mechanical-spur-gear",
+        "name_ru": "Шестерня механизма",
+        "name_en": "Mechanical Spur Gear"
+      },
+      {
+        "id": "artificed-dynamic-gear",
+        "name_ru": "Изощрённая динамическая шестерня",
+        "name_en": "Artificed Dynamic Gear"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,0 +1,16 @@
+{
+  "id": "coffee-beans",
+  "name_ru": "Кофейные зёрна",
+  "name_en": "Coffee Beans",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Кафе Сумеру",
+    "Кафе Фонтейна"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

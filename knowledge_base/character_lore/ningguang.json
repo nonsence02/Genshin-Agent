@@ -1,0 +1,70 @@
+{
+  "id": "ningguang",
+  "name_en": "Ningguang",
+  "element": "Geo",
+  "weapon": "Catalyst",
+  "region": "Liyue",
+  "rarity": 4,
+  "description": "Ningguang ( Chinese : 凝光 Níngguāng ) is a playable Geo character in Genshin Impact .\n\nThe Tianquan of the Liyue Qixing and owner of the floating Jade Chamber in the skies of Liyue , Ningguang is a mogul who shakes the very foundations of business circles. Even grabbing a few scraps from the documents she shreds from the Jade Chamber will gift one an invaluable fragment of her wisdom, enough to stay a step or two from one's peers.",
+  "role_summary": "Ningguang ( Chinese : 凝光 Níngguāng ) is a playable Geo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Sparkling Scatter",
+      "description": "Normal Attack Shoots gems that deal Geo DMG . Upon hit, this grants Ningguang 1 Star Jade. Charged Attack Consumes a certain amount of stamina to fire off a giant gem that deals Geo DMG . If Ningguang has any Star Jades, unleashing a Charged Attack will cause the Star Jades to be fired at the enemy as well, dealing additional DMG. Plunging Attack Gathering the might of Geo, Ningguang plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Geo DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Jade Screen",
+      "description": "Ningguang creates a Jade Screen out of gold, obsidian and her great opulence, dealing AoE Geo DMG . Jade Screen Blocks opponents' projectiles. Endurance scales based on Ningguang's Max HP. Jade Screen is considered a Geo Construct and can be used to block certain attacks, but cannot be climbed. Only one Jade Screen may exist at any one time."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Starshatter",
+      "description": "Gathering a great number of gems, Ningguang scatters them all at once, sending homing projectiles at her opponents that deal massive Geo DMG . If Starshatter is cast when a Jade Screen is nearby, the Jade Screen will fire additional gem projectiles at the same time."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Backup Plan",
+      "description": "When Ningguang is in possession of Star Jades , her Charged Attack does not consume Stamina."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Strategic Reserve",
+      "description": "A character that passes through the Jade Screen will gain a 12% Geo DMG Bonus for 10s."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Trove of Marvelous Treasures",
+      "description": "Displays the location of nearby ore veins used in forging on the mini-map ."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Piercing Fragments",
+      "effect": "Description Gameplay Notes When a Normal Attack hits, it deals AoE DMG. Charged Attacks (including any Star Jades fired) are not affected."
+    },
+    "c2": {
+      "name": "2",
+      "effect": "Description Gameplay Notes Preview When Jade Screen is shattered, its CD will reset. Can occur once every 6s. The effect can trigger any time the Jade Screen is destroyed, including: When the Jade Screen's HP is reduced to 0 (e.g. by enemy attacks). When Ningguang uses Starshatter . When Ningguang casts Jade Screen while another Jade Screen is still active (since only one may exist at a time). The effect does not produce a visual indicator on top of the character. The second Jade Screen will not produce any Elemental Particles if used within 6 seconds after the first. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Constellation Shock Effect.mp4"
+    },
+    "c3": {
+      "name": "Majesty Be the Array of Stars",
+      "effect": "Increases the Level of Starshatter by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Exquisite be the Jade, Outshining All Beneath",
+      "effect": "Jade Screen increases nearby characters' Elemental RES by 10%."
+    },
+    "c5": {
+      "name": "Invincible Be the Jade Screen",
+      "effect": "Increases the Level of Jade Screen by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Grandeur Be the Seven Stars",
+      "effect": "Description Gameplay Notes Preview When Starshatter is used, Ningguang gains 7 Star Jades. Unlike the regular Star Jades from her Normal Attacks , the seven Star Jades gained from using her burst will expire over a certain duration if not used. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Starshatter C6 Preview.mp4 Jade Stacks Media:Starshatter C6 Charged Preview.mp4 Charged Attack"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ningguang",
+  "ai_tags": "Баффер, Щитовик"
+}

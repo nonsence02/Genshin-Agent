@@ -1,0 +1,16 @@
+{
+  "id": "pyro-hypostasis",
+  "name_ru": "Пиро гипостазис",
+  "name_en": "Pyro Hypostasis",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "smoldering-pearl",
+    "agnidus-agate-gemstone",
+    "agnidus-agate-chunk",
+    "agnidus-agate-fragment",
+    "agnidus-agate-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

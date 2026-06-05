@@ -1,0 +1,23 @@
+{
+  "id": "fragrant-mashed-potatoes",
+  "name_ru": "Ароматное пюре",
+  "name_en": "Fragrant Mashed Potatoes",
+  "rarity": 3,
+  "food_type": "Блюдо для атаки",
+  "effect_ru": "Увеличивает силу атаки всех членов отряда на 228 ед. на 300 сек. В совместном режиме этот эффект применяется только к вашим персонажам.",
+  "recipe": [
+    {
+      "material_id": "potato",
+      "count": 6
+    },
+    {
+      "material_id": "cream",
+      "count": 4
+    },
+    {
+      "material_id": "pepper",
+      "count": 3
+    }
+  ],
+  "coordinates": []
+}

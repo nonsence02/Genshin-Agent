@@ -1,10 +1,27 @@
 {
   "id": "vayuda-turquoise-sliver",
+  "name_ru": "Осколок бирюзы Вайюда",
   "name_en": "Vayuda Turquoise Sliver",
-  "type": "Character Ascension Materials",
-  "days": [],
-  "source": [
-    "Dropped by Normal Bosses and Weekly Bosses"
+  "type": "character_ascension_material",
+  "type_text_ru": "Возвышение персонажей",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Сувенирные лавки",
+    "Вкладка «Враги» в лицензии искателя приключений",
+    "Вкладка создания алхимического верстака"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Vayuda_Turquoise_Sliver"
+  "dropped_by": [
+    "algorithm-of-semi-intransient-matrix-of-overseer-network",
+    "anemo-hypostasis",
+    "icewind-suite",
+    "maguu-kenki",
+    "setekh-wenut",
+    "shouki-no-kami-the-prodigal",
+    "solitary-suanni",
+    "stormterror",
+    "tenebrous-papilla-type-i"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

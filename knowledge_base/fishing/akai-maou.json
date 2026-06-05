@@ -1,0 +1,11 @@
+{
+  "id": "akai-maou",
+  "kind": "fish",
+  "name_ru": "Алый дьявол",
+  "name_en": "Akai Maou",
+  "bait_id": "redrot-bait",
+  "locations": [
+    "Рыбалка"
+  ],
+  "coordinates": []
+}

@@ -1,14 +1,21 @@
 {
   "id": "philosophies-of-order",
+  "name_ru": "Философия о «Порядке»",
   "name_en": "Philosophies of Order",
-  "type": "Character Talent Materials",
-  "days": [
-    "Wednesday",
-    "Saturday",
-    "Sunday"
+  "type": "talent_material",
+  "type_text_ru": "Таланты персонажей",
+  "days_of_week_ru": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
   ],
-  "source": [
-    "Pale Forgotten Glory (Wednesday/Saturday/Sunday)"
+  "source_ru": [
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Philosophies_of_Order"
+  "dropped_by": [],
+  "obtained_from_domains": [
+    "domain-of-mastery-chiming-recitation-iv"
+  ],
+  "source_domain": "domain-of-mastery-chiming-recitation-iv",
+  "coordinates": []
 }

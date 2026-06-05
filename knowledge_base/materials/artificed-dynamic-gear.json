@@ -1,10 +1,30 @@
 {
   "id": "artificed-dynamic-gear",
+  "name_ru": "Изощрённая динамическая шестерня",
   "name_en": "Artificed Dynamic Gear",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 60+ Clockwork Meka"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Меки Ур. 60+",
+    "Покупается за звёздную пыль: можно создать после обмена",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Artificed_Dynamic_Gear"
+  "dropped_by": [
+    "annihilation-specialist-mek",
+    "area-alert-mek",
+    "arithmetic-enhancer-mek",
+    "assault-specialist-mek",
+    "construction-specialist-mek",
+    "deepwater-assault-mek",
+    "geological-survey-mek",
+    "nimble-harvester-mek",
+    "recon-log-mek",
+    "suppression-specialist-mek",
+    "underwater-patrol-mek",
+    "underwater-survey-mek"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

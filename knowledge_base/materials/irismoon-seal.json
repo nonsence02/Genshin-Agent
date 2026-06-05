@@ -1,0 +1,15 @@
+{
+  "id": "irismoon-seal",
+  "name_ru": "Печать Радужной Луны",
+  "name_en": "Irismoon Seal",
+  "type": "consume",
+  "type_text_ru": "Предмет приключения",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Исследование Моря Пустоты"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

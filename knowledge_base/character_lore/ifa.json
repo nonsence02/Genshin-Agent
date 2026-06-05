@@ -1,0 +1,75 @@
+{
+  "id": "ifa",
+  "name_en": "Ifa",
+  "element": "Anemo",
+  "weapon": "Catalyst",
+  "region": "Natlan",
+  "rarity": 4,
+  "description": "Ifa is a playable Anemo character in Genshin Impact .\n\nIfa is a renowned Saurian veterinarian from the Flower-Feather Clan . He is friends with Ororon and often delivers vegetables to Citlali on his behalf.\n\nWhen Ororon was avoiding her during his collaboration with Capitano , Citlali asked Ifa to deliver the gem replacement for the talisman that keeps his soul stable. This was actually a ploy to copy Ororon's memories onto the old gem, but Ifa, not knowing anything, agreed to do the delivery without asking any questions.\n\nCacucu is a Qucusaurus assistant of Ifa's at his clinic and also considers himself Ifa's \"brother.\" Cacucu learned several of Ifa's catchphrases and despite fully understanding the human language, can only repeat these catchphrases to communicate due to the limited nature of his vocal cords.",
+  "role_summary": "Ifa is a playable Anemo character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Rite of Dispelling Winds",
+      "description": "Normal Attack Performs up to 3 attacks, dealing Anemo DMG . Charged Attack Consumes a certain amount of Stamina and fires off a shot, dealing AoE Anemo DMG . Plunging Attack Plunges towards the ground from mid-air, damaging all opponents along the path. Deals AoE Anemo DMG upon impact with the ground."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Airborne Disease Prevention",
+      "description": "It's time for the real bash bros to step up! Ifa calls Cacucu in as backup. After using this skill, Ifa gains 80 Nightsoul points and enters the Nightsoul's Blessing Nightsoul's Blessing: Ifa Continuously consumes Nightsoul points. This state will end when Ifa runs out of Nightsoul points or if he uses this skill again. His Nightsoul's Blessing state has the following properties: Hovers with Cacucu's help, increasing Ifa's Movement SPD and interruption resistance. In this state, Ifa will continuously consume Nightsoul points to maintain this hovering state. If he sprints or accelerates, he will consume additional points. When he uses Normal Attacks, he will use different kinds of Supporting Fire depending on whether you Tap or Hold. state. In the Nightsoul's Blessing state, Ifa will hover with Cacucu's help. When he uses Normal Attacks in this state, he will use different kinds of Supporting Fire Supporting Fire In the Nightsoul's Blessing State, Ifa's Normal Attacks will turn into Supporting Fire. Tap Fires a Tonicshot. Hold Continuously fires Tonicshots. Tonicshot Deals Nightsoul-aligned Anemo DMG , and will heal all nearby party members based on Ifa's Elemental Mastery upon h..."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Compound Sedation Field",
+      "description": "Fires a Therapeutic Sedative at a (temporarily aggressive) opponent. The sedative will explode on impact, creating a restraining wind current that pulls nearby objects and opponents in while dealing Nightsoul-aligned AoE Anemo DMG . When the Therapeutic Sedative hits an opponent affected by Hydro / Pyro / Cryo / Electro , it will apply a Sedation Mark Sedation Mark This effect will explode after a short delay and disappear, dealing AoE DMG aligned with the corresponding element. The Therapeutic Sedative can apply Sedation Marks to a maximum of 4 hit opponents. A single opponent cannot receive Marks of different elements simultaneously. to them."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "Field Medic's Vision",
+      "description": "When Ifa is in the Nightsoul's Blessing state, every 1 Nightsoul point out of the total in his entire party will grant him 1 Rescue Essentials Rescue Essentials Max 150 points. Each Rescue Essentials point Ifa has will increase the Swirl and Electro-Charged DMG dealt by nearby party members by 1.5%, and their Lunar-Charged DMG dealt by 0.2%. These points will be cleared when his Nightsoul's Blessing state ends. point. Rescue Essentials will increase the Swirl, Electro-Charged, and Lunar-Charged DMG dealt by all nearby party members."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Mutual Aid Agreement",
+      "description": "When nearby party members trigger Nightsoul Bursts , Ifa's Elemental Mastery increases by 80 for 10s."
+    },
+    {
+      "type": "Night Realm's Gift Passive",
+      "name": "Focused Emergency Rescue",
+      "description": "After his Nightsoul points are exhausted, Ifa will switch to consuming Phlogiston to maintain his Nightsoul's Blessing . While in an area with Phlogiston Mechanics within Natlan , he can use Nightsoul Transmission : Ifa. When the active character is a certain height in the air, the following will occur when switching to Ifa: Ifa will enter the Nightsoul's Blessing state and gain 32 Nightsoul points. Nightsoul Transmission can be triggered once every 10s by your own team."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Tactical Warm Compress Bandaging",
+      "description": "While in an area with Phlogiston Mechanics within Natlan , when the current active party member or indwelt saurian has less than 40% HP , Ifa will consume 10 Phlogiston and restore 40% of their HP. This effect can trigger once every 10s, and does not take effect in Domains, Trounce Domains, or the Spiral Abyss."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Vitiferous Elixir's Concoction",
+      "effect": "When Supporting Fire Supporting Fire In the Nightsoul's Blessing State, Ifa's Normal Attacks will turn into Supporting Fire. Tap Fires a Tonicshot. Hold Continuously fires Tonicshots. Tonicshot Deals Nightsoul-aligned Anemo DMG , and will heal all nearby party members based on Ifa's Elemental Mastery upon hitting an opponent. hits an opponent, it will restore 6 Energy for Ifa. One such Energy restoration can be triggered once every 8s."
+    },
+    "c2": {
+      "name": "Guiding Spirit of Ballistic Prayer",
+      "effect": "When Ifa is in the Nightsoul's Blessing state, every Nightsoul point the party has above a total of 60 will grant Ifa 4 additional Rescue Essentials Rescue Essentials Max 150 points. Each Rescue Essentials point Ifa has will increase the Swirl and Electro-Charged DMG dealt by nearby party members by 1.5%, and their Lunar-Charged DMG dealt by 0.2%. These points will be cleared when his Nightsoul's Blessing state ends. points. Additionally, Ifa's Rescue Essentials limit is increased by 50. You must first unlock the Ascension Talent Field Medic's Vision."
+    },
+    "c3": {
+      "name": "Rebuttal in Negotiations With the Night",
+      "effect": "Increases the Level of Airborne Disease Prevention by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Decayed Vessel's Permutation",
+      "effect": "The restraining wind current created by the Elemental Burst Compound Sedation Field has its duration extended to 3s. Additionally, Ifa gains 100 Elemental Mastery for 15s after using his Elemental Burst Compound Sedation Field."
+    },
+    "c5": {
+      "name": "Vow of Universal Coexistence",
+      "effect": "Increases the Level of Compound Sedation Field by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Oath on a Feathered Knot",
+      "effect": "When Ifa uses the Hold version of his Supporting Fire Supporting Fire In the Nightsoul's Blessing State, Ifa's Normal Attacks will turn into Supporting Fire. Tap Fires a Tonicshot. Hold Continuously fires Tonicshots. Tonicshot Deals Nightsoul-aligned Anemo DMG , and will heal all nearby party members based on Ifa's Elemental Mastery upon hitting an opponent. , there is a 50% chance that he will fire an additional Tonicshot that deals 120% of Ifa's ATK as Anemo DMG. This DMG is considered Normal Attack DMG. Additionally, when he is not in combat, Ifa will consume 20% less Nightsoul points and Phlogiston in his Nightsoul's Blessing state."
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Ifa",
+  "ai_tags": "Баффер, Хиллер"
+}

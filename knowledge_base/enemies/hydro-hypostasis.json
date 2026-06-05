@@ -1,0 +1,16 @@
+{
+  "id": "hydro-hypostasis",
+  "name_ru": "Гидро гипостазис",
+  "name_en": "Hydro Hypostasis",
+  "type": "Boss",
+  "type_ru": "Боссы",
+  "drops": [
+    "dew-of-repudiation",
+    "varunada-lazurite-gemstone",
+    "varunada-lazurite-chunk",
+    "varunada-lazurite-fragment",
+    "varunada-lazurite-sliver",
+    "adventurers-experience"
+  ],
+  "coordinates": []
+}

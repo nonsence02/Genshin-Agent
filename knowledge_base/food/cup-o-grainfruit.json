@@ -1,0 +1,19 @@
+{
+  "id": "cup-o-grainfruit",
+  "name_ru": "Чаша злакофруктов",
+  "name_en": "Cup O' Grainfruit",
+  "rarity": 1,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Восстанавливает 10% от макс. HP выбранному персонажу, затем каждые 5 сек. восстанавливает 300 HP в течение 30 сек.",
+  "recipe": [
+    {
+      "material_id": "grainfruit",
+      "count": 1
+    },
+    {
+      "material_id": "embercore-flower",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

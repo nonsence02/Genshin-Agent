@@ -1,0 +1,18 @@
+{
+  "id": "domain-of-forgery-leading-karma-iii",
+  "name_ru": "Воля: Ведущая карма III",
+  "name_en": "Domain of Forgery: Leading Karma III",
+  "type": "Возвышение оружия",
+  "region": "Сумеру",
+  "days_of_week": [
+    "Среда",
+    "Суббота",
+    "Воскресенье"
+  ],
+  "rewards": [
+    "dream-of-scorching-might",
+    "remnant-glow-of-scorching-might",
+    "echo-of-scorching-might"
+  ],
+  "coordinates": []
+}

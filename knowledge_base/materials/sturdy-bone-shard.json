@@ -1,10 +1,23 @@
 {
   "id": "sturdy-bone-shard",
+  "name_ru": "Крепкие останки",
   "name_en": "Sturdy Bone Shard",
-  "type": "Character and Weapon Enhancement Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 40+ Vishaps"
+  "type": "common_drop",
+  "type_text_ru": "Улучшение персонажей/оружия",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Детёныши геовишапа Ур. 40+",
+    "Геовишапы Ур. 40+",
+    "Вишапы глубин Ур. 40+",
+    "Покупается за Звёздную пыль",
+    "Можно создать: {0}"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sturdy_Bone_Shard"
+  "dropped_by": [
+    "geovishap",
+    "geovishap-hatchling",
+    "primordial-bathysmal-vishap"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

@@ -1,48 +1,80 @@
 {
   "id": "calamity-queller",
-  "name": "Calamity Queller",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Calamity_Queller",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "49 - 741",
-    "secondary_stat": "ATK"
-  },
-  "passive": "Gain All Elemental DMG Bonus. Obtain Consummation for after using an Elemental Skill, causing ATK to increase by per second. This ATK increase has a maximum of stacks. When the character equipped with this weapon is not on the field, Consummation's ATK increase is doubled.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Mist Veiled Lead Elixir",
-        "Mist Grass Pollen",
-        "Whopperflower Nectar",
-        "Mist Veiled Mercury Elixir",
-        "Mist Grass",
-        "Shimmering Nectar",
-        "Mist Veiled Gold Elixir",
-        "Mist Grass Wick",
-        "Energy Nectar",
-        "Mist Veiled Primo Elixir"
-      ]
+  "name_ru": "Усмиритель бед",
+  "name_en": "Calamity Queller",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 49.1377,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.036
+    },
+    "level_90": {
+      "base_atk": 740.5802,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.1654
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Завет погибели",
+  "passive_description_ru": "Даёт 12% бонус урона всеми элементами. Запуск элементального навыка накладывает Совершенствование на 20 сек., в результате чего сила атаки увеличивается на 3,2% в секунду. Может складываться до 6 раз. Когда персонаж, экипированный этим оружием, не на поле боя, бонус атаки от Совершенствования удваивается.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "mist-veiled-lead-elixir",
+        "name_ru": "Свинцовая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Lead Elixir"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "mist-veiled-mercury-elixir",
+        "name_ru": "Ртутная пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Mercury Elixir"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "mist-veiled-gold-elixir",
+        "name_ru": "Золотая пилюля Заоблачного моря",
+        "name_en": "Mist Veiled Gold Elixir"
+      },
+      {
+        "id": "mist-veiled-primo-elixir",
+        "name_ru": "Примо эликсир Заоблачного моря",
+        "name_en": "Mist Veiled Primo Elixir"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mist-grass-pollen",
+        "name_ru": "Пыльца туманной травы",
+        "name_en": "Mist Grass Pollen"
+      },
+      {
+        "id": "mist-grass",
+        "name_ru": "Мешочек с туманной травой",
+        "name_en": "Mist Grass"
+      },
+      {
+        "id": "mist-grass-wick",
+        "name_ru": "Пучок туманной травы",
+        "name_en": "Mist Grass Wick"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "whopperflower-nectar",
+        "name_ru": "Нектар попрыгуньи",
+        "name_en": "Whopperflower Nectar"
+      },
+      {
+        "id": "shimmering-nectar",
+        "name_ru": "Мерцающий нектар",
+        "name_en": "Shimmering Nectar"
+      },
+      {
+        "id": "energy-nectar",
+        "name_ru": "Элементальный нектар",
+        "name_en": "Energy Nectar"
+      }
+    ]
+  },
+  "coordinates": []
 }

@@ -1,10 +1,17 @@
 {
   "id": "pseudo-stamens",
+  "name_ru": "Псевдотычинки",
   "name_en": "Pseudo-Stamens",
-  "type": "Character Level-Up Materials",
-  "days": [],
-  "source": [
-    "Dropped by Lv. 30+ Setekh Wenut"
+  "type": "avatar_material",
+  "type_text_ru": "Развитие персонажа",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Унут Сетеха Ур. 30+"
   ],
-  "source_url": "https://genshin-impact.fandom.com/wiki/Pseudo-Stamens"
+  "dropped_by": [
+    "setekh-wenut"
+  ],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
 }

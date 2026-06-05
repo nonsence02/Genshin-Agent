@@ -1,94 +1,81 @@
 {
   "id": "faruzan",
-  "name": "Faruzan",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Faruzan",
-  "profile": {
-    "weapon": "Bow",
-    "element": "Anemo",
-    "rarity": "4★"
-  },
-  "skills": {
-    "elemental_skill": "Faruzan deploys a polyhedron that deals AoE Anemo DMG to nearby opponents. She will also enter the Manifest Gale state. While in the Manifest Gale state, Faruzan's next fully charged shot will consume this state and will become a Hurricane Arrow that contains high-pressure currents. This arrow deals Anemo DMG based on the DMG of a fully charged Aimed Shot from \" Normal Attack: Parthian Shot.\" Pressurized Collapse The Hurricane Arrow will apply a Pressurized Collapse effect to the opponent or character hit. This effect will be removed after a short delay, creating a vortex that deals AoE Anemo DMG and pulls nearby objects and opponents in. If the Hurricane Arrow does not hit any opponent or...",
-    "elemental_burst": "Faruzan deploys a Dazzling Polyhedron that unleashes a Whirlwind Pulse and deals AoE Anemo DMG. While the Dazzling Polyhedron persists, it will continuously move along a triangular path. Once it reaches each corner of that triangular path, it will unleash more Whirlwind Pulse. Whirlwind Pulse When the Whirlwind Pulse is unleashed, it will apply Perfidious Wind's Bale to nearby opponents, decreasing their Anemo RES. The Whirlwind Pulse will also apply Prayerful Wind's Benefit to all nearby party members when it is unleashed, granting them an Anemo DMG Bonus. Dazzling Polyhedron unleashes a Whirlwind Pulse on use, and another one every seconds. The skill lasts seconds, for a total of Pulses..."
-  },
-  "materials": {
-    "ascension": {
-      "stones": [
-        "Vayuda Turquoise Sliver",
-        "Vayuda Turquoise Fragment",
-        "Vayuda Turquoise Chunk",
-        "Vayuda Turquoise Gemstone"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "special": [
-        "Henna Berry",
-        "Light Guiding Tetrahedron"
-      ]
+  "name_ru": "Фарузан",
+  "name_en": "Faruzan",
+  "element": "Anemo",
+  "weapon_type": "Bow",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "hp": 802.3761,
+      "atk": 16.4724,
+      "def": 52.647
     },
-    "talents": {
-      "books": [
-        "Teachings of Admonition",
-        "Guide to Admonition",
-        "Philosophies of Admonition"
-      ],
-      "mob_drops": [
-        "Faded Red Satin",
-        "Trimmed Red Silk",
-        "Rich Red Brocade"
-      ],
-      "weekly_boss": [
-        "Puppet Strings"
-      ],
-      "crown": "Crown of Insight"
+    "level_90": {
+      "hp": 9569.9253,
+      "atk": 196.4674,
+      "def": 627.9198
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "specialty": 168,
-      "boss": 46,
-      "stones": {
-        "sliver": 1,
-        "fragment": 9,
-        "chunk": 9,
-        "gemstone": 6
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 30,
-        "high": 36
-      }
+  "talents": [
+    {
+      "type": "обычная",
+      "name_ru": "Парфянский выстрел",
+      "description_ru": "Обычная атака:\nДо четырёх выстрелов из лука.\n\nЗаряженная атака:\nБолее меткий прицельный выстрел с увеличенным уроном.\nВо время прицеливания на наконечнике стрелы собирается могучий ветер. Полностью заряженная могучим ветром стрела наносит Анемо урон.\n\nАтака в падении:\nВыпускает град стрел в воздухе и стремительно падает на землю, атакуя всех врагов на пути. Приземлившись, наносит урон по площади."
     },
-    "talent_10": {
-      "books": {
-        "low": 3,
-        "mid": 21,
-        "high": 38
-      },
-      "mob_drops": {
-        "low": 6,
-        "mid": 22,
-        "high": 31
-      },
-      "weekly_boss": 6,
-      "crown": 1
+    {
+      "type": "навык",
+      "name_ru": "Царство ветров насамджнин",
+      "description_ru": "Фарузан вызывает многогранник, который наносит противникам поблизости Анемо урон по площади, и переходит в состояние Проявления бури.\nВо время действия Проявления бури следующий заряженный прицельный выстрел Фарузан расходует это состояние и превращается в стрелу урагана, которая несёт потоки высокого давления и наносит Анемо урон, пропорциональный урону полностью заряженного прицельного Парфянского выстрела.\n\nОбвал под давлением\nСтрела урагана накладывает на поражённого врага или персонажа Обвал под давлением. После небольшой задержки эффект исчезает и вызывает воронку, которая наносит Анемо урон по площади и притягивает к себе предметы и противников поблизости. Если стрела урагана не попадёт в противников или персонажей, на поражённое ею место будет наложен Обвал под давлением.\nУрон воронки считается уроном элементального навыка."
     },
-    "three_talents_10": {
-      "books": {
-        "low": 9,
-        "mid": 63,
-        "high": 114
-      },
-      "mob_drops": {
-        "low": 18,
-        "mid": 66,
-        "high": 93
-      },
-      "weekly_boss": 18,
-      "crown": 3
+    {
+      "type": "ульта",
+      "name_ru": "Тайные тропы ветров",
+      "description_ru": "Фарузан стремительно развёртывает Ослепительный многогранник, который выпускает одну Штормовую волну и наносит Анемо урон по площади.\nНаходясь на поле боя, Ослепительный многогранник непрерывно перемещается по треугольной траектории. Каждый раз, достигая вершин треугольной траектории, он выпускает одну Штормовую волну.\n\nШтормовая волна\n· При активации Штормовая волна накладывает на противников поблизости Бич коварных ветров, который снижает их Анемо сопротивление.\n· Также Штормовая волна при активации накладывает на персонажей поблизости Дар молитвенного ветра, предоставляя им бонус Анемо урона."
     }
-  }
+  ],
+  "passive_talents": [
+    {
+      "type": "пассивный талант 1",
+      "name_ru": "Стремительный поток",
+      "description_ru": "Когда Фарузан пребывает в состоянии Проявления бури навыка Царство ветров насамджнин, время заряда прицельного выстрела уменьшается на 60%, а на врагов при попадании воронки Обвала под давлением накладывается Бич коварных ветров навыка Тайные тропы ветров."
+    },
+    {
+      "type": "пассивный талант 2",
+      "name_ru": "Утраченная мудрость семи пещер",
+      "description_ru": "Когда персонажи под воздействием Дара молитвенного ветра навыка Тайные тропы ветров наносят Анемо урон обычными атаками, заряженными атаками, атаками в падении, а также элементальными навыками и взрывом стихии, они получают Покровительство ураганов: наносимый урон увеличивается на 32% от базовой атаки Фарузан. Этот эффект возникает не чаще одного раза в 0,8 сек. и после завершения Дара молитвенного ветра или однократной активации эффект исчезает."
+    },
+    {
+      "type": "пассивный талант 3",
+      "name_ru": "Фолианты освещают путь",
+      "description_ru": "На 25% увеличивает награду экспедиций в Сумеру длительностью 20 ч."
+    }
+  ],
+  "constellations": [
+    {
+      "name_ru": "Истина любым путём",
+      "description_ru": "Во время действия одного и того же Проявления бури навыка Царство ветров насамджнин Фарузан полностью заряженными прицельными выстрелами может выпустить до 2 стрел урагана."
+    },
+    {
+      "name_ru": "Восторженный разум",
+      "description_ru": "Ослепительный многогранник навыка Тайные тропы ветров существует на 6 сек. дольше."
+    },
+    {
+      "name_ru": "Прогулка по саду духов",
+      "description_ru": "Увеличивает уровень навыка Царство ветров насамджнин на 3. Макс. уровень: 15"
+    },
+    {
+      "name_ru": "Божественное постижение",
+      "description_ru": "В зависимости от количества поражённых противников воронка эффекта Обвал под давлением восстанавливает энергию Фарузан: попадание по одному противнику восстанавливает 2 ед. энергии, а попадание по каждому последующему противнику - 0,5 ед. энергии.\nОдна воронка таким образом может восстановить до 4 ед. энергии Фарузан."
+    },
+    {
+      "name_ru": "Чудесный мир размышлений",
+      "description_ru": "Увеличивает уровень навыка Тайные тропы ветров на 3. Макс. уровень: 15"
+    },
+    {
+      "name_ru": "Дивный путь истины",
+      "description_ru": "Когда персонажи под воздействием Дара молитвенного ветра навыка Тайные тропы ветров наносят Анемо урон, их крит. урон повышается на 40%. Если активный персонаж под воздействием Дара молитвенного ветра наносит урон, на поражённого противника будет наложен Обвал под давлением, этот эффект возникает не чаще одного раза в 3 сек. Его откат общий для всего отряда."
+    }
+  ],
+  "coordinates": []
 }

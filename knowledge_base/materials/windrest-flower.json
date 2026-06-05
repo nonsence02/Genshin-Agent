@@ -1,0 +1,16 @@
+{
+  "id": "windrest-flower",
+  "name_ru": "Ветроцвет",
+  "name_en": "Windrest Flower",
+  "type": "exchange",
+  "type_text_ru": "Кухонный ингредиент",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Мельничная Пристань"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

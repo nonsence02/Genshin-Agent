@@ -1,0 +1,13 @@
+{
+  "id": "nobushi-hitsukeban",
+  "name_ru": "Нобуси: Хицукэбан",
+  "name_en": "Nobushi: Hitsukeban",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "famed-handguard",
+    "kageuchi-handguard",
+    "old-handguard"
+  ],
+  "coordinates": []
+}

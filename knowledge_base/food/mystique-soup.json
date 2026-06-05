@@ -1,0 +1,27 @@
+{
+  "id": "mystique-soup",
+  "name_ru": "Чудо-суп",
+  "name_en": "Mystique Soup",
+  "rarity": 4,
+  "food_type": "Восстанавливающее блюдо",
+  "effect_ru": "Небольшой сюрприз от Повелителей Ночного Ветра.",
+  "recipe": [
+    {
+      "material_id": "grainfruit",
+      "count": 1
+    },
+    {
+      "material_id": "embercore-flower",
+      "count": 1
+    },
+    {
+      "material_id": "sugar",
+      "count": 1
+    },
+    {
+      "material_id": "jam",
+      "count": 1
+    }
+  ],
+  "coordinates": []
+}

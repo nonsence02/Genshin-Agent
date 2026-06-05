@@ -1,0 +1,13 @@
+{
+  "id": "cryo-specter",
+  "name_ru": "Крио призрак",
+  "name_en": "Cryo Specter",
+  "type": "Common",
+  "type_ru": "Обычные",
+  "drops": [
+    "spectral-nucleus",
+    "spectral-heart",
+    "spectral-husk"
+  ],
+  "coordinates": []
+}

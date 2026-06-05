@@ -1,48 +1,80 @@
 {
   "id": "sword-of-narzissenkreuz",
-  "name": "Sword of Narzissenkreuz",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Sword_of_Narzissenkreuz",
-  "profile": {
-    "type": "Sword",
-    "rarity": "4★",
-    "base_atk": "42 - 510",
-    "secondary_stat": "ATK"
-  },
-  "passive": "When the equipping character does not have an Arkhe: When Normal Attacks, Charged Attacks, or Plunging Attacks strike, a Pneuma or Ousia energy blast will be unleashed, dealing of ATK as DMG. This can be triggered once every. The energy blast type is determined by the current type of the Sword of Narzissenkreuz.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Fragment of an Ancient Chord",
-        "Old Operative's Pocket Watch",
-        "Transoceanic Pearl",
-        "Chapter of an Ancient Chord",
-        "Operative's Standard Pocket Watch",
-        "Transoceanic Chunk",
-        "Movement of an Ancient Chord",
-        "Operative's Constancy",
-        "Xenochromatic Crystal",
-        "Echo of an Ancient Chord"
-      ]
+  "name_ru": "Меч Нарциссенкрейца",
+  "name_en": "Sword of Narzissenkreuz",
+  "weapon_type": "Sword",
+  "rarity": 4,
+  "stats": {
+    "level_1": {
+      "base_atk": 42.401,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.09
+    },
+    "level_90": {
+      "base_atk": 509.6059,
+      "secondary_stat": "Сила атаки",
+      "secondary_stat_value": 0.4135
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Меч героя",
+  "passive_description_ru": "Если у экипированного персонажа нет архэ, при попадании обычной атакой, заряженной атакой или атакой в падении происходит энергетический взрыв пневмы или усии, который наносит урон в 160% силы атаки. Эффект может возникнуть один раз в 12 сек. Тип энергетического взрыва зависит от текущего типа Меча Нарциссенкрейца.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "fragment-of-an-ancient-chord",
+        "name_ru": "Фрагмент отзвука древней струны",
+        "name_en": "Fragment of an Ancient Chord"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "chapter-of-an-ancient-chord",
+        "name_ru": "Незаконченный отзвук древней струны",
+        "name_en": "Chapter of an Ancient Chord"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "movement-of-an-ancient-chord",
+        "name_ru": "Песнь отзвука древней струны",
+        "name_en": "Movement of an Ancient Chord"
+      },
+      {
+        "id": "echo-of-an-ancient-chord",
+        "name_ru": "Эхо отзвука древней струны",
+        "name_en": "Echo of an Ancient Chord"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "old-operatives-pocket-watch",
+        "name_ru": "Старые карманные часы сенешаля",
+        "name_en": "Old Operative's Pocket Watch"
+      },
+      {
+        "id": "operatives-standard-pocket-watch",
+        "name_ru": "Штатные карманные часы сенешаля",
+        "name_en": "Operative's Standard Pocket Watch"
+      },
+      {
+        "id": "operatives-constancy",
+        "name_ru": "Постоянство сенешаля",
+        "name_en": "Operative's Constancy"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "transoceanic-pearl",
+        "name_ru": "Жемчужина иноморья",
+        "name_en": "Transoceanic Pearl"
+      },
+      {
+        "id": "transoceanic-chunk",
+        "name_ru": "Обломок из иноморья",
+        "name_en": "Transoceanic Chunk"
+      },
+      {
+        "id": "xenochromatic-crystal",
+        "name_ru": "Ксенохромный кристалл",
+        "name_en": "Xenochromatic Crystal"
+      }
+    ]
+  },
+  "coordinates": []
 }

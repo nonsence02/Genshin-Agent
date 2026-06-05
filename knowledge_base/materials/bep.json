@@ -1,0 +1,13 @@
+{
+  "id": "bep",
+  "name_ru": "Опыт Боевого пропуска",
+  "name_en": "BEP",
+  "type": "consume",
+  "type_text_ru": "Опыт Боевого пропуска",
+  "days_of_week_ru": [],
+  "source_ru": [],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

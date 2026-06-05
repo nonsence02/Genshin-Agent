@@ -1,48 +1,80 @@
 {
   "id": "bloodsoaked-ruins",
-  "name": "Bloodsoaked Ruins",
-  "source_url": "https://genshin-impact.fandom.com/wiki/Bloodsoaked_Ruins",
-  "profile": {
-    "type": "Polearm",
-    "rarity": "5★",
-    "base_atk": "48 - 674",
-    "secondary_stat": "CRIT Rate"
-  },
-  "passive": "For after using an Elemental Burst, the equipping character's Lunar-Charged DMG dealt to opponents is increased by. Additionally, after triggering a Lunar-Charged reaction, the equipping character will gain Requiem of Ruin: CRIT DMG is increased by for. They will also regain Elemental Energy. Elemental Energy can be restored this way once every.",
-  "materials": {
-    "ascension": {
-      "items": [
-        "Ember of Long Night Flint",
-        "Mistshroud Manifestation",
-        "Tattered Warrant",
-        "Afterglow of Long Night Flint",
-        "Mistshroud Plate",
-        "Immaculate Warrant",
-        "Flare of Long Night Flint",
-        "Mistshroud Helmet",
-        "Frost-Etched Warrant",
-        "Blaze of Long Night Flint"
-      ]
+  "name_ru": "Окровавленные руины",
+  "name_en": "Bloodsoaked Ruins",
+  "weapon_type": "Polearm",
+  "rarity": 5,
+  "stats": {
+    "level_1": {
+      "base_atk": 47.537,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.048
+    },
+    "level_90": {
+      "base_atk": 674.3345,
+      "secondary_stat": "Шанс крит. попадания",
+      "secondary_stat_value": 0.2205
     }
   },
-  "standard_costs": {
-    "ascension_90": {
-      "domain_materials": {
-        "green": 5,
-        "blue": 14,
-        "purple": 14,
-        "gold": 6
+  "passive_name_ru": "Дань скорби",
+  "passive_description_ru": "После применения взрыва стихии повышает урон реакции Лунный заряд экипированного персонажа, наносимый врагу, на 36% на 3,5 сек. Кроме того, после активации реакции Лунный заряд экипированным персонажем активируется эффект Реквием руин: крит. урон повышается на 28% на 6 сек., а также экипированный персонаж восстанавливает 12 ед. энергии. Восстанавливать энергию таким способом можно раз в 14 сек.",
+  "ascension_materials": {
+    "domain_materials": [
+      {
+        "id": "ember-of-long-night-flint",
+        "name_ru": "Искра кремня долгой ночи",
+        "name_en": "Ember of Long Night Flint"
       },
-      "elite_drops": {
-        "low": 15,
-        "mid": 18,
-        "high": 27
+      {
+        "id": "afterglow-of-long-night-flint",
+        "name_ru": "Отблеск кремня долгой ночи",
+        "name_en": "Afterglow of Long Night Flint"
       },
-      "common_drops": {
-        "low": 10,
-        "mid": 15,
-        "high": 18
+      {
+        "id": "flare-of-long-night-flint",
+        "name_ru": "Вспышка кремня долгой ночи",
+        "name_en": "Flare of Long Night Flint"
+      },
+      {
+        "id": "blaze-of-long-night-flint",
+        "name_ru": "Пламя кремня долгой ночи",
+        "name_en": "Blaze of Long Night Flint"
       }
-    }
-  }
+    ],
+    "elite_drops": [
+      {
+        "id": "mistshroud-manifestation",
+        "name_ru": "Туманное воплощение",
+        "name_en": "Mistshroud Manifestation"
+      },
+      {
+        "id": "mistshroud-plate",
+        "name_ru": "Туманная пластина",
+        "name_en": "Mistshroud Plate"
+      },
+      {
+        "id": "mistshroud-helmet",
+        "name_ru": "Туманный шлем",
+        "name_en": "Mistshroud Helmet"
+      }
+    ],
+    "common_drops": [
+      {
+        "id": "tattered-warrant",
+        "name_ru": "Потрёпанный мандат",
+        "name_en": "Tattered Warrant"
+      },
+      {
+        "id": "immaculate-warrant",
+        "name_ru": "Безупречный мандат",
+        "name_en": "Immaculate Warrant"
+      },
+      {
+        "id": "frost-etched-warrant",
+        "name_ru": "Заиндевевший мандат",
+        "name_en": "Frost-Etched Warrant"
+      }
+    ]
+  },
+  "coordinates": []
 }

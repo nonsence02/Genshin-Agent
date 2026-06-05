@@ -1,0 +1,16 @@
+{
+  "id": "electro-crystal",
+  "name_ru": "Электро кристалл",
+  "name_en": "Electro Crystal",
+  "type": "exchange",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "У подножья скал",
+    "Мыс Веры"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

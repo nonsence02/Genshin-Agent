@@ -1,0 +1,18 @@
+{
+  "id": "yumemiru-wood",
+  "name_ru": "Юмэмиру",
+  "name_en": "Yumemiru Wood",
+  "type": "wood",
+  "type_text_ru": "Материал",
+  "days_of_week_ru": [],
+  "source_ru": [
+    "Дикая природа",
+    "Остров Наруками",
+    "Куплено в разделе древесины Сокровищницы обители",
+    "Конвертация древесины"
+  ],
+  "dropped_by": [],
+  "obtained_from_domains": [],
+  "source_domain": null,
+  "coordinates": []
+}

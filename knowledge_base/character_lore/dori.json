@@ -1,0 +1,70 @@
+{
+  "id": "dori",
+  "name_en": "Dori",
+  "element": "Electro",
+  "weapon": "Claymore",
+  "region": "Sumeru",
+  "rarity": 4,
+  "description": "Dori Sangemah Bay is a playable Electro character in Genshin Impact .\n\nThe owner of The Palace of Alcazarzaray and a merchant of high regard, \"Lord Sangemah Bay\" is well known for her ability to obtain anything a person needs, as long as they have enough Mora to afford her jaw-dropping prices.",
+  "role_summary": "Dori Sangemah Bay is a playable Electro character in Genshin Impact .",
+  "talents": [
+    {
+      "type": "Normal Attack",
+      "name": "Marvelous Sword-Dance (Modified)",
+      "description": "Normal Attack Performs up to 3 consecutive strikes. Charged Attack Drains Stamina over time to perform continuous spinning attacks against all nearby opponents. At the end of the sequence, performs a more powerful slash. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    },
+    {
+      "type": "Elemental Skill",
+      "name": "Spirit-Warding Lamp: Troubleshooter Cannon",
+      "description": "Directs a Spirit-Warding Lamp to fire off a Troubleshooter Shot at opponents, dealing Electro DMG . After the Troubleshooter Shot hits, it will create 2 After-Sales Service Rounds that will automatically track nearby opponents and deal Electro DMG ."
+    },
+    {
+      "type": "Elemental Burst",
+      "name": "Alcazarzaray's Exactitude",
+      "description": "Summons forth the Jinni within the lamp to give the client various kinds of aid. Jinni Connects to a nearby character. The connected character will: Continuously restore HP based on Dori's Max HP. Continuously regenerate Energy . Be affected by Electro . When the connector between the Jinni and the character touches opponents, it will deal one instance of Electro DMG to them every 0.4s. Only one Jinni can exist at one time."
+    },
+    {
+      "type": "1st Ascension Passive",
+      "name": "An Eye for Gold",
+      "description": "After a character connected to the Jinni triggers an Electro-Charged , Lunar-Charged , Superconduct , Overloaded , Quicken , Aggravate , Hyperbloom , or an Electro Swirl or Crystallize reaction, the CD of Spirit-Warding Lamp: Troubleshooter Cannon is decreased by 1s. This effect can be triggered once every 3s."
+    },
+    {
+      "type": "4th Ascension Passive",
+      "name": "Compound Interest",
+      "description": "When the Troubleshooter Shots or After-Sales Service Rounds from Spirit-Warding Lamp: Troubleshooter Cannon hit opponents, Dori will restore 5 Elemental Energy for every 100% Energy Recharge possessed. Per Spirit-Warding Lamp: Troubleshooter Cannon, only one instance of Energy restoration can be triggered and a maximum of 15 Energy can be restored this way."
+    },
+    {
+      "type": "Utility Passive",
+      "name": "Unexpected Order",
+      "description": "Has a 25% chance to recover some of the materials used when crafting Character and Weapon Materials ."
+    }
+  ],
+  "constellations": {
+    "c1": {
+      "name": "Additional Investment",
+      "effect": "Description Preview The number of After-Sales Service Rounds created by Troubleshooter Shots is increased by 1. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Additional Investment Preview.mp4"
+    },
+    "c2": {
+      "name": "1U",
+      "effect": ""
+    },
+    "c3": {
+      "name": "Wonders Never Cease",
+      "effect": "Increases the Level of Alcazarzaray's Exactitude by 3. Maximum upgrade level is 15."
+    },
+    "c4": {
+      "name": "Discretionary Supplement",
+      "effect": "The character connected to the Jinni will obtain the following buffs based on their current HP and Energy: When their HP is lower than 50%, they gain 50% Incoming Healing Bonus . When their Energy is less than 50%, they gain 30% Energy Recharge ."
+    },
+    "c5": {
+      "name": "Value for Mora",
+      "effect": "Increases the Level of Spirit-Warding Lamp: Troubleshooter Cannon by 3. Maximum upgrade level is 15."
+    },
+    "c6": {
+      "name": "Sprinkling Weight",
+      "effect": "Description Preview Dori gains the following effects for 3s after using Spirit-Warding Lamp: Troubleshooter Cannon : Electro Infusion . When Normal Attacks hit opponents, all nearby party members will heal HP equivalent to 4% of Dori's Max HP. This type of healing can occur once every 0.1s. Hover over previews to view in higher quality. ( Preview Preferences ) Media:Springkling Weight Preview Normal.mp4 Normal Media:Springkling Weight Preview Charged.mp4 Charged"
+    }
+  },
+  "source_url": "https://genshin-impact.fandom.com/wiki/Dori",
+  "ai_tags": "Main DPS, Элемент аппликатор"
+}
