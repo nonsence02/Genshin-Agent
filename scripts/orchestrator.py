@@ -83,6 +83,12 @@ SYSTEM_PROMPT += (
     "- Для вопросов об итоговых характеристиках персонажа (HP, АТК, DEF, криты, МС, восстановление энергии) "
     "используй get_character_stats. Не считай статы самостоятельно.\n"
 )
+SYSTEM_PROMPT += (
+    "- КРИТИЧЕСКИ ВАЖНО: При вызове инструментов передавай имя персонажа ТОЧНО ТАК, как его написал пользователь. "
+    "НЕ переводи, НЕ исправляй ошибки, НЕ склоняй, НЕ заменяй на похожие имена. "
+    "Категорически запрещено заменять 'Сяо' на 'Сян Лин' или любое другое похожее имя. "
+    "Извлекай строку имени как есть из пользовательского запроса.\n"
+)
 
 TOOLS: list[dict[str, Any]] = [
     {
@@ -340,7 +346,11 @@ def main() -> int:
         return 0
 
     for tool_call in tool_calls:
-        print(f"[⚙️ Нейросеть вызвала инструмент: {tool_call.function.name}. Считаю...]", flush=True)
+        tool_args = parse_tool_arguments_for_log(tool_call)
+        print(
+            f"[⚙️ Нейросеть вызвала инструмент: {tool_call.function.name} с аргументами: {tool_args}]",
+            flush=True,
+        )
         tool_result = execute_tool_call(tool_call)
         messages.append(
             {
@@ -413,6 +423,13 @@ def execute_tool_call(tool_call: Any) -> Any:
         "error": "unknown_tool",
         "message": f"Unknown tool requested: {function_name}",
     }
+
+
+def parse_tool_arguments_for_log(tool_call: Any) -> Any:
+    try:
+        return json.loads(tool_call.function.arguments or "{}")
+    except json.JSONDecodeError:
+        return {"raw_arguments": tool_call.function.arguments}
 
 
 def extract_character_names(arguments: dict[str, Any]) -> list[str]:
