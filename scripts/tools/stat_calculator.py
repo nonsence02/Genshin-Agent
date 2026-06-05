@@ -14,6 +14,7 @@ from scripts.tools.weapon_info import get_weapon_record, load_weapons_db
 
 PROCESSED_CHARACTERS_PATH = PROJECT_ROOT / "data" / "processed" / "characters.json"
 CHARACTERS_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
+ARTIFACTS_DIR = PROJECT_ROOT / "knowledge_base" / "artifacts"
 
 MAIN_STAT_5_STAR_LEVEL_20 = {
     "hp": 4780.0,
@@ -112,6 +113,24 @@ WEAPON_PASSIVE_STATS = {
     "elegy-for-the-end": {"enerRech_": 0.0},
 }
 
+SET_BONUSES = {
+    "gladiators-finale": {"atk_": 0.18},
+    "shimenawas-reminiscence": {"atk_": 0.18},
+    "vermillion-hereafter": {"atk_": 0.18},
+    "echoes-of-an-offering": {"atk_": 0.18},
+    "nighttime-whispers-in-the-echoing-woods": {"atk_": 0.18},
+    "fragment-of-harmonic-whimsy": {"atk_": 0.18},
+    "night-of-the-skys-unveiling": {"atk_": 0.18},
+    "tenacity-of-the-millelith": {"hp_": 0.20},
+    "vourukashas-glow": {"hp_": 0.20},
+    "emblem-of-severed-fate": {"enerRech_": 0.20},
+    "wanderers-troupe": {"eleMas": 80.0},
+    "gilded-dreams": {"eleMas": 80.0},
+    "flower-of-paradise-lost": {"eleMas": 80.0},
+    "viridescent-venerer": {"anemo_dmg_": 0.15},
+    "desert-pavilion-chronicle": {"anemo_dmg_": 0.15},
+}
+
 
 def calculate_character_full_stats(character_id: str) -> str:
     """Calculate current visible stats using processed account equipment."""
@@ -136,7 +155,10 @@ def calculate_character_full_stats(character_id: str) -> str:
 
     weapon = profile.get("equipped_weapon") if isinstance(profile.get("equipped_weapon"), dict) else {}
     weapon_stats = calculate_weapon_stats(weapon)
-    artifact_stats = collect_artifact_stats(profile.get("equipped_artifacts", []))
+    equipped_artifacts = profile.get("equipped_artifacts", [])
+    artifact_stats = collect_artifact_stats(equipped_artifacts)
+    set_bonuses = calculate_artifact_set_bonuses(equipped_artifacts)
+    artifact_stats = merge_bonus_buckets(artifact_stats, set_bonuses)
 
     ascension_bonuses = classify_ascension_bonus(character_kb.get("substat", {}), character_base.get("ascension_bonus", 0))
     weapon_bonuses = merge_bonus_buckets(
@@ -160,7 +182,7 @@ def calculate_character_full_stats(character_id: str) -> str:
         1 + artifact_stats["def_pct"] + weapon_bonuses["def_pct"] + ascension_bonuses["def_pct"]
     ) + artifact_stats["def_flat"]
 
-    base_crit_rate = as_float(constants.get("crit_rate"), 0.05)
+    base_crit_rate = as_float(constants.get("crit_rate"), 0.0)
     base_crit_dmg = as_float(constants.get("crit_dmg"), 0.5)
     base_energy_recharge = as_float(constants.get("energy_recharge"), 1.0)
     total_crit_rate = base_crit_rate + ascension_bonuses["crit_rate"] + weapon_bonuses["crit_rate"] + artifact_stats["crit_rate"]
@@ -196,7 +218,7 @@ def calculate_character_full_stats(character_id: str) -> str:
         lines.extend(["", "## Дополнительные бонусы", *extra_bonuses])
 
     lines.extend(["", "## Артефакты"])
-    lines.extend(format_artifact_breakdown(profile.get("equipped_artifacts", [])))
+    lines.extend(format_artifact_breakdown(equipped_artifacts))
     return "\n".join(lines)
 
 
@@ -326,6 +348,27 @@ def collect_artifact_stats(artifacts: Any) -> dict[str, float]:
         for key, value in extract_substats(artifact):
             add_stat_value(totals, key, value)
     return totals
+
+
+def calculate_artifact_set_bonuses(artifacts: Any) -> dict[str, float]:
+    bonuses = empty_bonus_bucket()
+    if not isinstance(artifacts, list):
+        return bonuses
+
+    set_counts: dict[str, int] = {}
+    for artifact in artifacts:
+        if not isinstance(artifact, dict):
+            continue
+        set_id = get_artifact_set_id(artifact)
+        if set_id:
+            set_counts[set_id] = set_counts.get(set_id, 0) + 1
+
+    for set_id, count in set_counts.items():
+        if count < 2:
+            continue
+        for stat_key, value in SET_BONUSES.get(set_id, {}).items():
+            add_stat_value(bonuses, stat_key, value)
+    return bonuses
 
 
 def add_artifact_main_stat(totals: dict[str, float], artifact: dict[str, Any]) -> None:
@@ -519,6 +562,23 @@ def build_extra_bonus_lines(*buckets: dict[str, float]) -> list[str]:
     return [f"- {STAT_LABELS.get(key, key)}: {format_percent(value)}" for key, value in sorted(totals.items())]
 
 
+def get_artifact_set_id(artifact: dict[str, Any]) -> str:
+    for key in ("set_name", "set_id", "source_set_key", "setKey", "set"):
+        raw_value = artifact.get(key)
+        if raw_value:
+            return slugify(raw_value)
+    return ""
+
+
+def get_artifact_set_display_name(artifact: dict[str, Any]) -> str:
+    set_id = get_artifact_set_id(artifact)
+    if not set_id:
+        return "СЃРµС‚ РЅРµ РЅР°Р№РґРµРЅ"
+
+    artifact_record = load_json_object(ARTIFACTS_DIR / f"{set_id}.json")
+    return artifact_record.get("name_ru") or artifact_record.get("name_en") or set_id
+
+
 def format_artifact_breakdown(artifacts: Any) -> list[str]:
     if not isinstance(artifacts, list) or not artifacts:
         return ["- Не надеты"]
@@ -530,6 +590,7 @@ def format_artifact_breakdown(artifacts: Any) -> list[str]:
         substats = extract_substats(artifact)
         cv = sum(stat_value_as_percent(v) for k, v in substats if normalize_stat(k) == "crit_rate") * 2
         cv += sum(stat_value_as_percent(v) for k, v in substats if normalize_stat(k) == "crit_dmg")
+        artifact = {**artifact, "set_id": get_artifact_set_display_name(artifact)}
         lines.append(
             f"- {names.get(slot, slot)}: {artifact.get('set_id') or artifact.get('source_set_key') or 'сет не найден'}, "
             f"+{artifact.get('level', '?')}, мейн {artifact.get('main_stat') or artifact.get('mainStatKey') or '?'}, CV {cv:.1f}"
