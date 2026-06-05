@@ -108,7 +108,6 @@ ASCENSION_SUBSTAT_BY_TYPE = {
 WEAPON_PASSIVE_STATS = {
     "tome-of-the-eternal-flow": {"hp_": 0.16},
     "staff-of-homa": {"hp_": 0.20},
-    "primordial-jade-winged-spear": {"atk_": 0.032},
     "primordial-jade-cutter": {"hp_": 0.20},
     "elegy-for-the-end": {"enerRech_": 0.0},
 }
@@ -160,7 +159,11 @@ def calculate_character_full_stats(character_id: str) -> str:
     set_bonuses = calculate_artifact_set_bonuses(equipped_artifacts)
     artifact_stats = merge_bonus_buckets(artifact_stats, set_bonuses)
 
-    ascension_bonuses = classify_ascension_bonus(character_kb.get("substat", {}), character_base.get("ascension_bonus", 0))
+    ascension_bonus_key = get_ascension_bonus_key(character_kb.get("substat", {}))
+    ascension_bonuses = classify_ascension_bonus(
+        character_kb.get("substat", {}),
+        character_base.get("ascension_bonus", 0),
+    )
     weapon_bonuses = merge_bonus_buckets(
         classify_weapon_substat(weapon_stats),
         get_weapon_passive_bonuses(weapon),
@@ -182,9 +185,11 @@ def calculate_character_full_stats(character_id: str) -> str:
         1 + artifact_stats["def_pct"] + weapon_bonuses["def_pct"] + ascension_bonuses["def_pct"]
     ) + artifact_stats["def_flat"]
 
-    base_crit_rate = as_float(constants.get("crit_rate"), 0.0)
-    base_crit_dmg = as_float(constants.get("crit_dmg"), 0.5)
-    base_energy_recharge = as_float(constants.get("energy_recharge"), 1.0)
+    base_crit_rate = 0.0 if ascension_bonus_key == "crit_rate" else as_float(constants.get("crit_rate"), 0.05)
+    base_crit_dmg = 0.0 if ascension_bonus_key == "crit_dmg" else as_float(constants.get("crit_dmg"), 0.5)
+    base_energy_recharge = (
+        0.0 if ascension_bonus_key == "energy_recharge" else as_float(constants.get("energy_recharge"), 1.0)
+    )
     total_crit_rate = base_crit_rate + ascension_bonuses["crit_rate"] + weapon_bonuses["crit_rate"] + artifact_stats["crit_rate"]
     total_crit_dmg = base_crit_dmg + ascension_bonuses["crit_dmg"] + weapon_bonuses["crit_dmg"] + artifact_stats["crit_dmg"]
     total_er = base_energy_recharge + ascension_bonuses["energy_recharge"] + weapon_bonuses["energy_recharge"] + artifact_stats["energy_recharge"]
@@ -438,14 +443,19 @@ def add_stat_value(totals: dict[str, float], raw_key: Any, raw_value: Any) -> No
 
 def classify_ascension_bonus(substat: Any, value: Any) -> dict[str, float]:
     bonuses = empty_bonus_bucket()
-    if not isinstance(substat, dict):
-        return bonuses
-    bonus_key = ASCENSION_SUBSTAT_BY_TYPE.get(str(substat.get("type") or ""))
-    if not bonus_key:
-        bonus_key = infer_stat_bucket(substat.get("name_en") or substat.get("name_ru"))
+    bonus_key = get_ascension_bonus_key(substat)
     if bonus_key:
         bonuses[bonus_key] = as_float(value)
     return bonuses
+
+
+def get_ascension_bonus_key(substat: Any) -> str:
+    if not isinstance(substat, dict):
+        return ""
+    bonus_key = ASCENSION_SUBSTAT_BY_TYPE.get(str(substat.get("type") or ""))
+    if bonus_key:
+        return bonus_key
+    return infer_stat_bucket(substat.get("name_en") or substat.get("name_ru"))
 
 
 def classify_weapon_substat(weapon_stats: dict[str, Any]) -> dict[str, float]:
