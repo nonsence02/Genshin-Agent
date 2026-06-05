@@ -1,4 +1,4 @@
-"""Interactive tool-calling orchestrator for Genshin-Agent."""
+"""Interactive Gemini tool-calling orchestrator for Genshin-Agent."""
 
 from __future__ import annotations
 
@@ -8,14 +8,21 @@ import sys
 from pathlib import Path
 from typing import Any
 
+import google.generativeai as genai
+
+try:
+    from dotenv import load_dotenv
+except ImportError:  # pragma: no cover - optional convenience dependency.
+    load_dotenv = None
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from scripts.tools.calculator import calculate_characters_requirements, resolve_character_id  # noqa: E402
 from scripts.tools.artifact_info import get_artifact_set_details  # noqa: E402
 from scripts.tools.artifact_scorer import recommend_best_artifacts  # noqa: E402
+from scripts.tools.calculator import calculate_characters_requirements, resolve_character_id  # noqa: E402
 from scripts.tools.character_info import get_character_lore  # noqa: E402
 from scripts.tools.equipped_gear import get_character_equipment  # noqa: E402
 from scripts.tools.stat_calculator import calculate_character_full_stats  # noqa: E402
@@ -24,111 +31,62 @@ from scripts.tools.weapon_info import get_weapon_details  # noqa: E402
 from scripts.tools.weapon_recommender import recommend_best_weapon  # noqa: E402
 
 
-DEFAULT_BASE_URL = os.getenv("GENSHIN_LLM_BASE_URL", "http://localhost:11434/v1")
-DEFAULT_MODEL = os.getenv("GENSHIN_LLM_MODEL", "qwen2.5:7b-instruct-q4_K_M")
-DEFAULT_API_KEY = os.getenv("GENSHIN_LLM_API_KEY", "ollama")
+DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
 
-SYSTEM_PROMPT = """Ты — ИИ-ассистент по Genshin Impact.
+SYSTEM_PROMPT = """
+Ты — Genshin Impact Агент. Твоя задача — отвечать на вопросы пользователя о его аккаунте,
+экипировке, статах, ресурсах, оружии, артефактах и развитии персонажей.
 
-Твоя задача — помогать пользователю с планированием ресурсов.
+КРИТИЧЕСКИ ВАЖНО:
+- Если пользователь спрашивает статы, экипировку или рекомендации для персонажа, ты ОБЯЗАН вызвать соответствующий инструмент.
+- Если пользователь спрашивает итоговые HP/АТК/DEF/криты/МС/восстановление энергии, вызови get_character_stats.
+- Если пользователь спрашивает, что надето на персонаже, вызови get_equipped_gear.
+- Если пользователь просит подобрать артефакт, вызови recommend_artifacts.
+- Если пользователь просит подобрать оружие, вызови recommend_weapon.
+- Если пользователь спрашивает материалы прокачки персонажа, вызови calculate_resources.
+- Если пользователь спрашивает оружие, его пассивку, статы или материалы, вызови get_weapon_info или calculate_weapon_resources.
+- Если пользователь спрашивает сет артефактов, вызови get_artifact_info.
+- Если пользователь спрашивает отряды, синергию, роль или способности персонажей, вызови get_character_info.
 
-ВАЖНО:
-- ВНИМАНИЕ: Для любых расчетов прокачки ты ОБЯЗАН вызвать функцию calculate_resources. Для вопросов об отрядах, синергии, роли, элементах, оружии, созвездиях или механике персонажа сначала вызывай get_character_info.
-- Для вопросов о характеристиках оружия, пассивке, сабстате или материалах возвышения оружия используй get_weapon_info.
-- Для точного подсчета материалов возвышения оружия до 90 уровня используй calculate_weapon_resources. Не считай материалы оружия самостоятельно.
-- При вызове get_weapon_info передавай название оружия без склонений, как именительный падеж или как ключ из инвентаря.
-- При вызове инструмента НИКОГДА не пытайся перевести имя персонажа на английский или угадать его ID. Передавай в аргумент "character_names" РОВНО те слова, которые написал пользователь на русском языке (например, ["рейзор", "ризли", "флинс"]).
-- ПРАВИЛО ИМЕН: При вызове инструмента get_character_info ОБЯЗАТЕЛЬНО передавай имена персонажей строго в ИМЕНИТЕЛЬНОМ ПАДЕЖЕ с большой буквы (например, "Варка", а не "Варк" или "Варки", "Айно", а не "Айне").
-- ПРАВИЛО ПАКЕТНОЙ ОБРАБОТКИ: Если пользователь просит посчитать ресурсы для нескольких персонажей, ОБЯЗАТЕЛЬНО передай их всех списком в аргумент "character_names" (например, ["рейзор", "шеврез"]).
-- ПРАВИЛО ТАЛАНТОВ: Если пользователь просит ТОЛЬКО уровень или возвышение до 90 и ничего не говорит про таланты, СТРОГО передавай "calculate_talents": false. Если пользователь упоминает таланты, короны, уровни навыков или 10/10/10, передавай "calculate_talents": true.
-- ПРАВИЛО СИНЕРГИИ: Если пользователь просит посоветовать отряд или обсудить синергию, СНАЧАЛА вызови get_character_info для нужных персонажей. Строй советы ТОЛЬКО на основе их реальных элементов (Пиро, Гидро, Электро и т.д.), поля role_summary и описания скиллов. Запрещено называть элементы "Огонь", "Вода", "Ветер".
-- ПРАВИЛО ТЕРМИНОЛОГИИ: Всегда используй ОФИЦИАЛЬНЫЕ названия элементов (Пиро, Гидро, Электро и т.д.). Для реакций используй только официальные термины игры: Перегрузка (Pyro+Electro), Заряжен (Hydro+Electro), Пар (Hydro+Pyro), Таяние (Cryo+Pyro), Заморозка (Hydro+Cryo), Сверхпроводник (Cryo+Electro), Бутонизация (Dendro+Hydro), Обострение/Разрастание и т.д. Никаких "гидро-электрических реакций"!
-- Никогда не считай ресурсы самостоятельно.
-- Никогда не вычитай инвентарь самостоятельно.
-- Никогда не вспоминай материалы персонажа из памяти.
-- Для расчетов всегда используй инструмент calculate_resources.
-- Твоя роль после вызова инструмента — красиво оформить готовые цифры, которые вернул Python.
-- Инструмент вернет тебе JSON с точными расчетами. Используй поле "осталось_дофармить", чтобы сказать пользователю, сколько конкретно предметов ему еще нужно собрать.
-- Используй поля "предмет", "категория", "нужно_всего", "есть_в_инвентаре", "осталось_дофармить" из результата инструмента.
-- Не меняй числа из результата инструмента.
-- Не придумывай материалы, которых нет в результате инструмента.
-- СТРОГОЕ ПРАВИЛО: При выводе ответа НИКОГДА не придумывай фразы вроде "у вас их нет в инвентаре", если не уверен. Строго копируй данные из полей "есть_в_инвентаре" и "осталось_дофармить".
-- СТРОГОЕ ПРАВИЛО 2: Общайся ТОЛЬКО на русском языке. Запрещено использовать китайский.
-- Если инструмент вернул информацию о днях фарма ("дни_фарма") и источниках ("где_найти"), обязательно переведи эти данные на русский язык в финальном ответе и посоветуй пользователю, в какие дни лучше идти в подземелья.
-- ПРАВИЛО РАСПИСАНИЯ: Если в данных предмета указан "режим_сбора" (например, "Ежедневно" или "1 раз в неделю"), СТРОГО указывай это пользователю. НИКОГДА не говори "следите за днями фарма" или "не упустите дни" для диковинок, обычных мобов и обычных боссов — они доступны всегда. Расписание по дням недели существует ТОЛЬКО для книг талантов и материалов оружия.
-- Для подбора лучшего свободного оружия из инвентаря используй recommend_weapon. Передавай персонажа без склонений или как ID; Python сам распознает персонажа, проверит тип оружия, свободные варианты и ручные настройки билда.
+ПРАВИЛО ИМЕН:
+- Передавай имя персонажа строго в оригинальном виде из пользовательского запроса.
+- НЕ переводи, НЕ исправляй ошибки, НЕ склоняй, НЕ заменяй на похожие имена.
+- Например, если пользователь написал "Сяо", передай "Сяо". Категорически запрещено заменять "Сяо" на "Сян Лин".
+- Python-инструменты сами распознают ID персонажа.
 
-ПРАВИЛА ОБРАБОТКИ ОШИБОК И ОТСУТСТВИЯ ДАННЫХ:
-- Если инструмент возвращает сообщение о том, что данные не найдены, список пуст или произошла ошибка — КАТЕГОРИЧЕСКИ ЗАПРЕЩАЕТСЯ выдумывать (галлюцинировать) названия оружия, персонажей, артефактов или предметов.
-- ЗАПРЕЩАЕТСЯ предлагать "альтернативные варианты" из своей внутренней базы знаний, если они не были возвращены инструментом.
-- Если в цепочке вызовов один из инструментов вернул пустой результат или ошибку (например, оружие не найдено), НЕМЕДЛЕННО ПРЕРВИ выполнение следующих логических шагов. Не вызывай калькулятор для несуществующего или случайного оружия.
-- Отвечай пользователю честно: "Инструмент не нашел подходящих данных в вашем инвентаре/базе".
-
-- Отвечай на русском языке, кратко и практично, в Markdown.
-"""
-
-SYSTEM_PROMPT += (
-    "\n- Для вопросов о сетах артефактов, бонусах 2/4 частей или редкости сета "
-    "используй get_artifact_info. Передавай название сета без склонений.\n"
-)
-SYSTEM_PROMPT += (
-    "- Для подбора лучших свободных артефактов из инвентаря используй recommend_artifacts. "
-    "Передавай character_id без склонений или как ID и один слот: flower, plume, sands, goblet, circlet.\n"
-)
-SYSTEM_PROMPT += (
-    "- Чтобы посмотреть текущее оружие и уже надетые артефакты персонажа, используй get_equipped_gear. "
-    "Не придумывай экипировку из памяти.\n"
-)
-SYSTEM_PROMPT += (
-    "- Для вопросов об итоговых характеристиках персонажа (HP, АТК, DEF, криты, МС, восстановление энергии) "
-    "используй get_character_stats. Не считай статы самостоятельно.\n"
-)
-SYSTEM_PROMPT += (
-    "- КРИТИЧЕСКИ ВАЖНО: При вызове инструментов передавай имя персонажа ТОЧНО ТАК, как его написал пользователь. "
-    "НЕ переводи, НЕ исправляй ошибки, НЕ склоняй, НЕ заменяй на похожие имена. "
-    "Категорически запрещено заменять 'Сяо' на 'Сян Лин' или любое другое похожее имя. "
-    "Извлекай строку имени как есть из пользовательского запроса.\n"
-)
+ПРАВИЛА ОТВЕТА:
+- Отвечай строго на русском языке.
+- Не придумывай данные, которых не вернул инструмент.
+- Если инструмент вернул ошибку или пустой результат, честно скажи, что данных не найдено.
+- Числа, статы и списки предметов бери только из результата инструмента.
+- Финальный ответ форматируй в Markdown, кратко и практично.
+""".strip()
 
 TOOLS: list[dict[str, Any]] = [
     {
         "type": "function",
         "function": {
             "name": "calculate_resources",
-            "description": (
-                "Высчитывает точную нехватку материалов для прокачки персонажа "
-                "с учетом сырого Inventory Camera GOOD inventory.json и JSON базы знаний."
-            ),
+            "description": "Точно рассчитать нехватку материалов для прокачки одного или нескольких персонажей с учетом инвентаря.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "character_names": {
                         "type": "array",
-                        "description": "Список имен персонажей ровно как написал пользователь. Не переводи на английский и не угадывай ID. Примеры: [\"рейзор\", \"шеврез\"], [\"ризли\"], [\"флинс\", \"aino\"].",
-                        "items": {
-                            "type": "string",
-                        },
-                        "minItems": 1,
+                        "items": {"type": "string"},
+                        "description": "Имена персонажей ровно как написал пользователь.",
                     },
                     "calculate_talents": {
                         "type": "boolean",
-                        "description": "False, если пользователь просит только уровень/возвышение до 90 и не говорит про таланты. True, если пользователь упоминает таланты, короны, уровни навыков или 10/10/10.",
+                        "description": "False, если пользователь просит только уровень/возвышение. True, если упоминает таланты.",
                     },
                     "target_talents": {
                         "type": "array",
-                        "description": "Целевые уровни трех талантов в порядке [обычная атака, элементальный навык, взрыв стихии]. Например [1, 9, 8]. Если пользователь просит все таланты на 10, передай [10, 10, 10].",
-                        "items": {
-                            "type": "integer",
-                            "minimum": 1,
-                            "maximum": 10,
-                        },
-                        "minItems": 3,
-                        "maxItems": 3,
-                        "default": [10, 10, 10],
+                        "items": {"type": "integer"},
+                        "description": "Цели талантов [обычная атака, навык, ульта], например [1, 9, 8] или [10, 10, 10].",
                     },
                 },
                 "required": ["character_names", "calculate_talents"],
-                "additionalProperties": False,
             },
         },
     },
@@ -136,29 +94,17 @@ TOOLS: list[dict[str, Any]] = [
         "type": "function",
         "function": {
             "name": "get_character_info",
-            "description": (
-                "Используй этот инструмент, чтобы узнать элемент, тип оружия, роль, созвездия "
-                "и описание способностей персонажа(ей). Обязательно вызывай его ПЕРЕД тем, "
-                "как советовать отряды или обсуждать синергию."
-            ),
+            "description": "Получить элемент, оружие, роль, таланты, пассивки и созвездия персонажа.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "character_names": {
                         "type": "array",
-                        "description": (
-                            "Список имен персонажей ровно как написал пользователь. "
-                            "Не переводи на английский и не угадывай ID. "
-                            "Примеры: [\"шеврез\"], [\"рейзор\", \"беннет\"]."
-                        ),
-                        "items": {
-                            "type": "string",
-                        },
-                        "minItems": 1,
+                        "items": {"type": "string"},
+                        "description": "Имена персонажей ровно как написал пользователь.",
                     },
                 },
                 "required": ["character_names"],
-                "additionalProperties": False,
             },
         },
     },
@@ -166,23 +112,13 @@ TOOLS: list[dict[str, Any]] = [
         "type": "function",
         "function": {
             "name": "get_weapon_info",
-            "description": (
-                "Получить характеристики оружия (базовая атака, сабстат на 90 уровне), "
-                "описание пассивного эффекта и материалы возвышения."
-            ),
+            "description": "Получить характеристики оружия, пассивный эффект и материалы возвышения.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "weapon_name": {
-                        "type": "string",
-                        "description": (
-                            "Название оружия в именительном падеже или ключ оружия из инвентаря. "
-                            "Примеры: AstralVulturesCrimsonPlumage, Astral Vulture's Crimson Plumage."
-                        ),
-                    },
+                    "weapon_name": {"type": "string", "description": "Название или ключ оружия."},
                 },
                 "required": ["weapon_name"],
-                "additionalProperties": False,
             },
         },
     },
@@ -190,17 +126,13 @@ TOOLS: list[dict[str, Any]] = [
         "type": "function",
         "function": {
             "name": "get_artifact_info",
-            "description": "Получить информацию о сете артефактов (бонусы 2-х и 4-х частей, редкость).",
+            "description": "Получить информацию о сете артефактов: бонусы 2/4 частей и редкость.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "set_name": {
-                        "type": "string",
-                        "description": "Название сета артефактов без склонений. Примеры: Archaic Petra, Архаичный камень, gladiators-finale.",
-                    },
+                    "set_name": {"type": "string", "description": "Название сета артефактов."},
                 },
                 "required": ["set_name"],
-                "additionalProperties": False,
             },
         },
     },
@@ -208,22 +140,21 @@ TOOLS: list[dict[str, Any]] = [
         "type": "function",
         "function": {
             "name": "recommend_artifacts",
-            "description": "Подобрать лучшие свободные артефакты из инвентаря для персонажа на конкретный слот (flower, plume, sands, goblet, circlet) с учетом полезных статов.",
+            "description": "Подобрать лучшие свободные артефакты для персонажа на конкретный слот.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "character_id": {
                         "type": "string",
-                        "description": "Имя персонажа без склонений или его ID. Примеры: Арлекино, Нёвиллет, arlecchino, neuvillette.",
+                        "description": "Имя персонажа ровно как написал пользователь или ID.",
                     },
                     "slot": {
                         "type": "string",
-                        "description": "Слот артефакта: flower, plume, sands, goblet или circlet.",
                         "enum": ["flower", "plume", "sands", "goblet", "circlet"],
+                        "description": "Слот: flower, plume, sands, goblet или circlet.",
                     },
                 },
                 "required": ["character_id", "slot"],
-                "additionalProperties": False,
             },
         },
     },
@@ -231,17 +162,16 @@ TOOLS: list[dict[str, Any]] = [
         "type": "function",
         "function": {
             "name": "get_equipped_gear",
-            "description": "Посмотреть, какое оружие и артефакты сейчас надеты на конкретном персонаже.",
+            "description": "Посмотреть текущее оружие и артефакты персонажа.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "character_name": {
                         "type": "string",
-                        "description": "Имя персонажа без склонений или его ID. Примеры: Xiangling, Сян Лин, hu-tao.",
+                        "description": "Имя персонажа ровно как написал пользователь.",
                     },
                 },
                 "required": ["character_name"],
-                "additionalProperties": False,
             },
         },
     },
@@ -249,23 +179,16 @@ TOOLS: list[dict[str, Any]] = [
         "type": "function",
         "function": {
             "name": "recommend_weapon",
-            "description": (
-                "Подобрать лучшее свободное оружие для персонажа на основе инвентаря пользователя "
-                "и предпочтений по статам."
-            ),
+            "description": "Подобрать лучшее свободное оружие для персонажа на основе инвентаря и билд-настроек.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "character_id": {
                         "type": "string",
-                        "description": (
-                            "Имя персонажа без склонений или его ID. Примеры: Айно, Рейзор, aino, razor. "
-                            "Не передавай название оружия, только персонажа."
-                        ),
+                        "description": "Имя персонажа ровно как написал пользователь или ID.",
                     },
                 },
                 "required": ["character_id"],
-                "additionalProperties": False,
             },
         },
     },
@@ -273,17 +196,16 @@ TOOLS: list[dict[str, Any]] = [
         "type": "function",
         "function": {
             "name": "get_character_stats",
-            "description": "Посчитать и вывести точные итоговые характеристики персонажа (HP, ATK, DEF, Криты, МС, Восстановление) с учетом уровня, оружия и артефактов.",
+            "description": "Посчитать точные итоговые характеристики персонажа с учетом уровня, оружия и артефактов.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "character_id": {
                         "type": "string",
-                        "description": "Имя персонажа без склонений или его ID. Примеры: Николь, xiangling, hu-tao.",
+                        "description": "Имя персонажа ровно как написал пользователь или ID.",
                     },
                 },
                 "required": ["character_id"],
-                "additionalProperties": False,
             },
         },
     },
@@ -291,20 +213,13 @@ TOOLS: list[dict[str, Any]] = [
         "type": "function",
         "function": {
             "name": "calculate_weapon_resources",
-            "description": "Рассчитать количество материалов, необходимых для возвышения оружия до 90 уровня.",
+            "description": "Рассчитать материалы возвышения оружия до 90 уровня.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "weapon_name": {
-                        "type": "string",
-                        "description": (
-                            "Название оружия в именительном падеже или ключ оружия из инвентаря. "
-                            "Примеры: PrototypeArchaic, Prototype Archaic, AstralVulturesCrimsonPlumage."
-                        ),
-                    },
+                    "weapon_name": {"type": "string", "description": "Название или ключ оружия."},
                 },
                 "required": ["weapon_name"],
-                "additionalProperties": False,
             },
         },
     },
@@ -312,81 +227,129 @@ TOOLS: list[dict[str, Any]] = [
 
 
 def main() -> int:
-    try:
-        from openai import OpenAI
-    except ImportError as exc:
-        raise RuntimeError("Install `openai` first: pip install openai") from exc
+    load_environment()
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY не найден. Добавьте его в .env или переменные окружения.")
+
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel(
+        DEFAULT_MODEL,
+        system_instruction=SYSTEM_PROMPT,
+        tools=build_gemini_tools(),
+        generation_config={"temperature": 0.1},
+    )
+    chat = model.start_chat(enable_automatic_function_calling=False)
 
     user_request = input("Введите вашу задачу: ").strip()
     if not user_request:
-        user_request = "Посчитай ресурсы для прокачки персонажа."
+        user_request = "Посчитай статы персонажа."
 
-    client = OpenAI(base_url=DEFAULT_BASE_URL, api_key=DEFAULT_API_KEY)
-    messages: list[dict[str, Any]] = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": user_request},
-    ]
-
-    print("[⏳ Ожидание ответа от нейросети...]", flush=True)
-    first_response = client.chat.completions.create(
-        model=DEFAULT_MODEL,
-        messages=messages,
-        tools=TOOLS,
-        tool_choice="auto",
-        temperature=0.1,
-    )
-    assistant_message = first_response.choices[0].message
-    messages.append(assistant_message.model_dump(exclude_none=True))
-
-    tool_calls = assistant_message.tool_calls or []
-    if not tool_calls:
-        print("\n--- Ответ агента ---\n")
-        content = assistant_message.content or "Модель не вызвала инструмент. Уточните ID персонажа, например: aino."
-        print(content)
-        return 0
-
-    for tool_call in tool_calls:
-        tool_args = parse_tool_arguments_for_log(tool_call)
-        print(
-            f"[⚙️ Нейросеть вызвала инструмент: {tool_call.function.name} с аргументами: {tool_args}]",
-            flush=True,
-        )
-        tool_result = execute_tool_call(tool_call)
-        messages.append(
-            {
-                "role": "tool",
-                "tool_call_id": tool_call.id,
-                "name": tool_call.function.name,
-                "content": json.dumps(tool_result, ensure_ascii=False),
-            }
-        )
+    print("[⏳ Ожидание ответа от Gemini...]", flush=True)
+    response = chat.send_message(user_request)
+    final_response = handle_gemini_response(chat, response)
 
     print("\n--- Ответ агента ---\n")
-    stream = client.chat.completions.create(
-        model=DEFAULT_MODEL,
-        messages=messages,
-        temperature=0.2,
-        stream=True,
-    )
-    for chunk in stream:
-        delta = chunk.choices[0].delta.content
-        if delta:
-            print(delta, end="", flush=True)
-    print()
+    print(extract_text(final_response) or "Gemini не вернул текстовый ответ.")
     return 0
 
 
-def execute_tool_call(tool_call: Any) -> Any:
-    function_name = tool_call.function.name
-    try:
-        arguments = json.loads(tool_call.function.arguments or "{}")
-    except json.JSONDecodeError as exc:
-        return {
-            "error": "invalid_tool_arguments",
-            "message": f"Could not parse tool arguments as JSON: {exc}",
-            "raw_arguments": tool_call.function.arguments,
-        }
+def load_environment() -> None:
+    if load_dotenv is not None:
+        load_dotenv(PROJECT_ROOT / ".env")
 
+
+def build_gemini_tools() -> list[dict[str, Any]]:
+    declarations = []
+    for tool in TOOLS:
+        function = tool["function"]
+        declarations.append(
+            {
+                "name": function["name"],
+                "description": function["description"],
+                "parameters": clean_schema_for_gemini(function["parameters"]),
+            }
+        )
+    return [{"function_declarations": declarations}]
+
+
+def clean_schema_for_gemini(schema: Any) -> Any:
+    if isinstance(schema, list):
+        return [clean_schema_for_gemini(item) for item in schema]
+    if not isinstance(schema, dict):
+        return schema
+
+    cleaned = {}
+    for key, value in schema.items():
+        if key in {"additionalProperties", "default"}:
+            continue
+        cleaned[key] = clean_schema_for_gemini(value)
+    return cleaned
+
+
+def handle_gemini_response(chat: Any, response: Any, max_rounds: int = 5) -> Any:
+    current_response = response
+    for _ in range(max_rounds):
+        function_calls = extract_function_calls(current_response)
+        if not function_calls:
+            return current_response
+
+        response_parts = []
+        for function_name, arguments in function_calls:
+            print(f"[⚙️ Gemini вызвал инструмент: {function_name} с аргументами: {arguments}]", flush=True)
+            tool_result = execute_tool(function_name, arguments)
+            response_parts.append(
+                genai.protos.Part(
+                    function_response=genai.protos.FunctionResponse(
+                        name=function_name,
+                        response={"result": serialize_tool_result(tool_result)},
+                    )
+                )
+            )
+
+        current_response = chat.send_message(response_parts)
+
+    return current_response
+
+
+def extract_function_calls(response: Any) -> list[tuple[str, dict[str, Any]]]:
+    calls: list[tuple[str, dict[str, Any]]] = []
+    for part in get_response_parts(response):
+        function_call = getattr(part, "function_call", None)
+        if not function_call or not getattr(function_call, "name", ""):
+            continue
+        calls.append((function_call.name, dict(function_call.args or {})))
+    return calls
+
+
+def get_response_parts(response: Any) -> list[Any]:
+    try:
+        return list(response.parts)
+    except (AttributeError, ValueError):
+        pass
+
+    parts: list[Any] = []
+    for candidate in getattr(response, "candidates", []) or []:
+        content = getattr(candidate, "content", None)
+        parts.extend(getattr(content, "parts", []) or [])
+    return parts
+
+
+def extract_text(response: Any) -> str:
+    try:
+        return response.text
+    except (AttributeError, ValueError):
+        pass
+
+    text_parts = []
+    for part in get_response_parts(response):
+        text = getattr(part, "text", "")
+        if text:
+            text_parts.append(text)
+    return "\n".join(text_parts).strip()
+
+
+def execute_tool(function_name: str, arguments: dict[str, Any]) -> Any:
     if function_name == "calculate_resources":
         return calculate_resources(
             character_names=extract_character_names(arguments),
@@ -413,9 +376,7 @@ def execute_tool_call(tool_call: Any) -> Any:
     if function_name == "calculate_weapon_resources":
         return calculate_weapon_ascension(str(arguments.get("weapon_name") or "").strip())
     if function_name == "recommend_weapon":
-        raw_character = str(
-            arguments.get("character_id") or arguments.get("character_name") or ""
-        ).strip()
+        raw_character = str(arguments.get("character_id") or arguments.get("character_name") or "").strip()
         resolved_character_id = resolve_character_id(raw_character) or raw_character
         return recommend_best_weapon(resolved_character_id)
 
@@ -425,11 +386,10 @@ def execute_tool_call(tool_call: Any) -> Any:
     }
 
 
-def parse_tool_arguments_for_log(tool_call: Any) -> Any:
-    try:
-        return json.loads(tool_call.function.arguments or "{}")
-    except json.JSONDecodeError:
-        return {"raw_arguments": tool_call.function.arguments}
+def serialize_tool_result(value: Any) -> Any:
+    if isinstance(value, (dict, list, str, int, float, bool)) or value is None:
+        return value
+    return str(value)
 
 
 def extract_character_names(arguments: dict[str, Any]) -> list[str]:
@@ -453,13 +413,6 @@ def extract_target_talents(arguments: dict[str, Any]) -> list[int]:
         while len(normalized) < 3:
             normalized.append(1)
         return normalized
-
-    if "talents_count" in arguments:
-        try:
-            talents_count = max(0, min(3, int(arguments.get("talents_count", 3))))
-        except (TypeError, ValueError):
-            talents_count = 3
-        return [10 if index < talents_count else 1 for index in range(3)]
 
     return [10, 10, 10]
 
