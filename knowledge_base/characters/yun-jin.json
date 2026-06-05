@@ -5,17 +5,109 @@
   "element": "Geo",
   "weapon_type": "Polearm",
   "rarity": 4,
+  "substat": {
+    "type": "FIGHT_PROP_CHARGE_EFFICIENCY",
+    "name_ru": "Восст. энергии",
+    "name_en": "Energy Recharge"
+  },
   "stats": {
-    "level_1": {
-      "hp": 893.5552,
-      "atk": 16.0272,
-      "def": 61.5741
+    "base_stats_constants": {
+      "crit_rate": 0.05,
+      "crit_dmg": 0.5,
+      "energy_recharge": 1
     },
-    "level_90": {
-      "hp": 10657.4169,
-      "atk": 191.1575,
-      "def": 734.3932
-    }
+    "progression": [
+      {
+        "key": "level_1_a0",
+        "label": "Уровень 1 (A0)",
+        "level": 1,
+        "ascension": 0,
+        "hp": 893.5552,
+        "atk": 16.0272,
+        "def": 61.5741,
+        "ascension_bonus": 0
+      },
+      {
+        "key": "level_20_a0",
+        "label": "Уровень 20 (A0)",
+        "level": 20,
+        "ascension": 0,
+        "hp": 2295.5433,
+        "atk": 41.1739,
+        "def": 158.1839,
+        "ascension_bonus": 0
+      },
+      {
+        "key": "level_20_a1",
+        "label": "Уровень 20+ (A1)",
+        "level": 20,
+        "ascension": 1,
+        "hp": 2963.0748,
+        "atk": 53.1473,
+        "def": 204.1829,
+        "ascension_bonus": 0
+      },
+      {
+        "key": "level_40_a2",
+        "label": "Уровень 40+ (A2)",
+        "level": 40,
+        "ascension": 2,
+        "hp": 4912.6331,
+        "atk": 88.1156,
+        "def": 338.5252,
+        "ascension_bonus": 0.0667
+      },
+      {
+        "key": "level_50_a3",
+        "label": "Уровень 50+ (A3)",
+        "level": 50,
+        "ascension": 3,
+        "hp": 6283.1079,
+        "atk": 112.6973,
+        "def": 432.9634,
+        "ascension_bonus": 0.1333
+      },
+      {
+        "key": "level_60_a4",
+        "label": "Уровень 60+ (A4)",
+        "level": 60,
+        "ascension": 4,
+        "hp": 7495.4831,
+        "atk": 134.4432,
+        "def": 516.5071,
+        "ascension_bonus": 0.1333
+      },
+      {
+        "key": "level_70_a5",
+        "label": "Уровень 70+ (A5)",
+        "level": 70,
+        "ascension": 5,
+        "hp": 8706.9649,
+        "atk": 156.1731,
+        "def": 599.9892,
+        "ascension_bonus": 0.2
+      },
+      {
+        "key": "level_80_a6",
+        "label": "Уровень 80+ (A6)",
+        "level": 80,
+        "ascension": 6,
+        "hp": 9919.3403,
+        "atk": 177.919,
+        "def": 683.533,
+        "ascension_bonus": 0.2667
+      },
+      {
+        "key": "level_90_a6",
+        "label": "Уровень 90 (A6)",
+        "level": 90,
+        "ascension": 6,
+        "hp": 10657.4169,
+        "atk": 191.1575,
+        "def": 734.3932,
+        "ascension_bonus": 0.2667
+      }
+    ]
   },
   "talents": [
     {

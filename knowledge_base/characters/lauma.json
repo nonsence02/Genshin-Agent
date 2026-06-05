@@ -5,17 +5,109 @@
   "element": "Dendro",
   "weapon_type": "Catalyst",
   "rarity": 5,
+  "substat": {
+    "type": "FIGHT_PROP_ELEMENT_MASTERY",
+    "name_ru": "Мастерство стихий",
+    "name_en": "Elemental Mastery"
+  },
   "stats": {
-    "level_1": {
-      "hp": 829.3884,
-      "atk": 19.8489,
-      "def": 52.0521
+    "base_stats_constants": {
+      "crit_rate": 0.05,
+      "crit_dmg": 0.5,
+      "energy_recharge": 1
     },
-    "level_90": {
-      "hp": 10653.9424,
-      "atk": 254.9642,
-      "def": 668.6423
-    }
+    "progression": [
+      {
+        "key": "level_1_a0",
+        "label": "Уровень 1 (A0)",
+        "level": 1,
+        "ascension": 0,
+        "hp": 829.3884,
+        "atk": 19.8489,
+        "def": 52.0521,
+        "ascension_bonus": 0
+      },
+      {
+        "key": "level_20_a0",
+        "label": "Уровень 20 (A0)",
+        "level": 20,
+        "ascension": 0,
+        "hp": 2151.4335,
+        "atk": 51.4881,
+        "def": 135.0231,
+        "ascension_bonus": 0
+      },
+      {
+        "key": "level_20_a1",
+        "label": "Уровень 20+ (A1)",
+        "level": 20,
+        "ascension": 1,
+        "hp": 2862.5591,
+        "atk": 68.5055,
+        "def": 179.6541,
+        "ascension_bonus": 0
+      },
+      {
+        "key": "level_40_a2",
+        "label": "Уровень 40+ (A2)",
+        "level": 40,
+        "ascension": 2,
+        "hp": 4788.5747,
+        "atk": 114.598,
+        "def": 300.5309,
+        "ascension_bonus": 28.8
+      },
+      {
+        "key": "level_50_a3",
+        "label": "Уровень 50+ (A3)",
+        "level": 50,
+        "ascension": 3,
+        "hp": 6183.0113,
+        "atk": 147.9685,
+        "def": 388.0462,
+        "ascension_bonus": 57.6
+      },
+      {
+        "key": "level_60_a4",
+        "label": "Уровень 60+ (A4)",
+        "level": 60,
+        "ascension": 4,
+        "hp": 7416.4878,
+        "atk": 177.4872,
+        "def": 465.4594,
+        "ascension_bonus": 57.6
+      },
+      {
+        "key": "level_70_a5",
+        "label": "Уровень 70+ (A5)",
+        "level": 70,
+        "ascension": 5,
+        "hp": 8656.5993,
+        "atk": 207.1646,
+        "def": 543.2891,
+        "ascension_bonus": 86.4
+      },
+      {
+        "key": "level_80_a6",
+        "label": "Уровень 80+ (A6)",
+        "level": 80,
+        "ascension": 6,
+        "hp": 9905.0047,
+        "atk": 237.0406,
+        "def": 621.6393,
+        "ascension_bonus": 115.2
+      },
+      {
+        "key": "level_90_a6",
+        "label": "Уровень 90 (A6)",
+        "level": 90,
+        "ascension": 6,
+        "hp": 10653.9424,
+        "atk": 254.9642,
+        "def": 668.6423,
+        "ascension_bonus": 115.2
+      }
+    ]
   },
   "talents": [
     {
