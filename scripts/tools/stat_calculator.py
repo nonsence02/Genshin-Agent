@@ -15,18 +15,24 @@ from scripts.tools.weapon_info import get_weapon_record, load_weapons_db
 PROCESSED_CHARACTERS_PATH = PROJECT_ROOT / "data" / "processed" / "characters.json"
 CHARACTERS_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
 
+MAIN_STAT_5_STAR_LEVEL_20 = {
+    "hp": 4780.0,
+    "atk": 311.0,
+    "hp_": 0.466,
+    "atk_": 0.466,
+    "def_": 0.583,
+    "eleMas": 187.0,
+    "enerRech_": 0.518,
+    "critRate_": 0.311,
+    "critDMG_": 0.622,
+    "heal_": 0.359,
+    "*_dmg_": 0.466,
+    "physical_dmg_": 0.583,
+}
+
 MAIN_STAT_MAX_VALUES = {
     5: {
-        "hp": 4780.0,
-        "atk": 311.0,
-        "hp_": 0.466,
-        "atk_": 0.466,
-        "def_": 0.583,
-        "eleMas": 187.0,
-        "enerRech_": 0.518,
-        "critRate_": 0.311,
-        "critDMG_": 0.622,
-        "heal_": 0.359,
+        **MAIN_STAT_5_STAR_LEVEL_20,
         "pyro_dmg_": 0.466,
         "hydro_dmg_": 0.466,
         "cryo_dmg_": 0.466,
@@ -193,6 +199,7 @@ def calculate_weapon_stats(weapon: dict[str, Any]) -> dict[str, Any]:
         "base_atk": interpolated.get("base_atk", 0.0),
         "secondary_stat": interpolated.get("secondary_stat", ""),
         "secondary_stat_value": interpolated.get("secondary_stat_value", 0.0),
+        "secondary_stat_key": interpolated.get("secondary_stat_key", ""),
     }
 
 
@@ -238,7 +245,7 @@ def interpolate_weapon_stats(stats: Any, level: int) -> dict[str, Any]:
         match = re.search(r"(\d+)", str(key))
         if not match:
             continue
-        points.append({"level": int(match.group(1)), **value})
+        points.append({"level": int(match.group(1)), **normalize_weapon_stat_point(value)})
 
     if not points:
         return {"base_atk": 0.0, "secondary_stat": "", "secondary_stat_value": 0.0}
@@ -263,12 +270,30 @@ def interpolate_weapon_stats(stats: Any, level: int) -> dict[str, Any]:
     return {
         "base_atk": lerp(as_float(lower.get("base_atk")), as_float(upper.get("base_atk")), ratio),
         "secondary_stat": upper.get("secondary_stat") or lower.get("secondary_stat") or "",
+        "secondary_stat_key": upper.get("secondary_stat_key") or lower.get("secondary_stat_key") or "",
         "secondary_stat_value": lerp(
             as_float(lower.get("secondary_stat_value")),
             as_float(upper.get("secondary_stat_value")),
             ratio,
         ),
     }
+
+
+def normalize_weapon_stat_point(point: dict[str, Any]) -> dict[str, Any]:
+    normalized = dict(point)
+    normalized["base_atk"] = point.get("base_atk", point.get("atk", point.get("attack", 0.0)))
+    if point.get("secondary_stat_key"):
+        return normalized
+
+    ignored_keys = {"level", "base_atk", "atk", "attack", "secondary_stat", "secondary_stat_value"}
+    for key, value in point.items():
+        if key in ignored_keys or not isinstance(value, (int, float)):
+            continue
+        if infer_stat_bucket(key):
+            normalized["secondary_stat_key"] = key
+            normalized["secondary_stat_value"] = value
+            break
+    return normalized
 
 
 def collect_artifact_stats(artifacts: Any) -> dict[str, float]:
@@ -286,18 +311,34 @@ def collect_artifact_stats(artifacts: Any) -> dict[str, float]:
 
 
 def add_artifact_main_stat(totals: dict[str, float], artifact: dict[str, Any]) -> None:
-    key = str(artifact.get("main_stat") or artifact.get("mainStatKey") or artifact.get("mainStat") or "")
+    key = normalize_main_stat_key(artifact.get("main_stat") or artifact.get("mainStatKey") or artifact.get("mainStat"))
     if not key:
         return
     rarity = safe_int(artifact.get("rarity"), 5)
     level = max(0, safe_int(artifact.get("level"), 0))
-    max_value = MAIN_STAT_MAX_VALUES.get(rarity, MAIN_STAT_MAX_VALUES[5]).get(key)
+    max_value = get_main_stat_max_value(key, rarity)
     if max_value is None:
         return
 
     max_level = ARTIFACT_MAX_LEVEL_BY_RARITY.get(rarity, 20)
     value = max_value * min(level, max_level) / max_level if max_level else max_value
     add_stat_value(totals, key, value)
+
+
+def normalize_main_stat_key(value: Any) -> str:
+    key = str(value or "").strip()
+    if key:
+        return key
+    return ""
+
+
+def get_main_stat_max_value(key: str, rarity: int) -> float | None:
+    values = MAIN_STAT_MAX_VALUES.get(rarity, MAIN_STAT_MAX_VALUES[5])
+    if key in values:
+        return values[key]
+    if key.endswith("_dmg_") and key != "physical_dmg_":
+        return values.get("*_dmg_")
+    return None
 
 
 def add_stat_value(totals: dict[str, float], raw_key: Any, raw_value: Any) -> None:
@@ -348,7 +389,7 @@ def classify_ascension_bonus(substat: Any, value: Any) -> dict[str, float]:
 
 def classify_weapon_substat(weapon_stats: dict[str, Any]) -> dict[str, float]:
     bonuses = empty_bonus_bucket()
-    stat_key = infer_stat_bucket(weapon_stats.get("secondary_stat"))
+    stat_key = infer_stat_bucket(weapon_stats.get("secondary_stat_key")) or infer_stat_bucket(weapon_stats.get("secondary_stat"))
     if stat_key:
         bonuses[stat_key] = as_float(weapon_stats.get("secondary_stat_value"))
     return bonuses
@@ -379,6 +420,42 @@ def infer_stat_bucket(value: Any) -> str:
         if element in compact:
             return f"{element}_dmg"
     return ""
+
+
+def infer_stat_bucket(value: Any) -> str:
+    text = repair_text(value).casefold()
+    compact = re.sub(r"[\W_]+", "", text, flags=re.UNICODE)
+    if "critrate" in compact or "criticalrate" in compact or "шанкрит" in compact or "критпопад" in compact:
+        return "crit_rate"
+    if "critdmg" in compact or "critdamage" in compact or "критурон" in compact:
+        return "crit_dmg"
+    if "energyrecharge" in compact or "восст" in compact:
+        return "energy_recharge"
+    if "elementalmastery" in compact or "мастерствостих" in compact:
+        return "elemental_mastery"
+    if compact in {"atk", "attack"} or "силаатаки" in compact:
+        return "atk_pct"
+    if compact == "hp":
+        return "hp_pct"
+    if compact in {"def", "defense"} or "защит" in compact:
+        return "def_pct"
+    if "healing" in compact or "лечен" in compact:
+        return "healing_bonus"
+    if "physical" in compact or "физ" in compact:
+        return "physical_dmg"
+    for element in ("pyro", "hydro", "cryo", "electro", "anemo", "geo", "dendro"):
+        if element in compact:
+            return f"{element}_dmg"
+    return ""
+
+
+def repair_text(value: Any) -> str:
+    text = str(value or "")
+    try:
+        repaired = text.encode("cp1251").decode("utf-8")
+    except UnicodeError:
+        return text
+    return repaired if repaired else text
 
 
 def build_extra_bonus_lines(*buckets: dict[str, float]) -> list[str]:
