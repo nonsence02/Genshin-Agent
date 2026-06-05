@@ -1,4 +1,4 @@
-"""Merge HoYoLAB and Inventory Kamera imports into one account JSON."""
+"""Split HoYoLAB and Inventory Kamera imports into processed account files."""
 
 from __future__ import annotations
 
@@ -20,7 +20,11 @@ from scripts.utils.name_resolver import normalize_weapon_name, resolve_artifact_
 
 RAW_IMPORTS_DIR = PROJECT_ROOT / "data" / "raw" / "user_imports"
 PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
-OUTPUT_PATH = PROCESSED_DIR / "unified_account.json"
+
+CHARACTERS_OUTPUT = PROCESSED_DIR / "characters.json"
+ARTIFACTS_OUTPUT = PROCESSED_DIR / "artifacts.json"
+WEAPONS_OUTPUT = PROCESSED_DIR / "weapons.json"
+MATERIALS_OUTPUT = PROCESSED_DIR / "materials.json"
 
 CHARACTERS_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
 ARTIFACTS_DIR = PROJECT_ROOT / "knowledge_base" / "artifacts"
@@ -32,38 +36,34 @@ def main() -> int:
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
     context = ResolverContext()
-    unified = {
-        "characters": {},
-        "inventory": {
-            "weapons": [],
-            "artifacts": [],
-            "materials": [],
-        },
-    }
-
     hoyolab_profile = load_optional_json(RAW_IMPORTS_DIR / "hoyolab_profile.json")
-    good_payload = load_good_payload()
+    good_payload = load_optional_json(RAW_IMPORTS_DIR / "good.json")
+    weapons_payload = load_optional_json(RAW_IMPORTS_DIR / "weapons.json")
 
-    merge_hoyolab_characters(unified, hoyolab_profile, context)
-    merge_good_characters(unified, good_payload, context, only_if_missing=bool(hoyolab_profile))
-    merge_kamera_artifacts(unified, good_payload, context)
-    merge_kamera_weapons(unified, good_payload, context)
-    merge_kamera_materials(unified, good_payload, context)
+    characters = load_hoyolab_characters(hoyolab_profile, context)
+    artifacts = load_kamera_artifacts(good_payload, context)
+    weapons = load_kamera_weapons(good_payload, weapons_payload, context)
+    materials = load_kamera_materials(good_payload, context)
 
-    OUTPUT_PATH.write_text(json.dumps(unified, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Unified account saved: {OUTPUT_PATH}")
-    print(f"Characters: {len(unified['characters'])}")
-    print(f"Weapons in inventory: {len(unified['inventory']['weapons'])}")
-    print(f"Artifacts in inventory: {len(unified['inventory']['artifacts'])}")
-    print(f"Materials in inventory: {len(unified['inventory']['materials'])}")
+    attach_equipped_artifacts(characters, artifacts, context)
+
+    write_json(CHARACTERS_OUTPUT, characters)
+    write_json(ARTIFACTS_OUTPUT, artifacts)
+    write_json(WEAPONS_OUTPUT, weapons)
+    write_json(MATERIALS_OUTPUT, materials)
+
+    print(f"Characters saved: {CHARACTERS_OUTPUT} ({len(characters)})")
+    print(f"Artifacts saved: {ARTIFACTS_OUTPUT} ({len(artifacts)})")
+    print(f"Weapons saved: {WEAPONS_OUTPUT} ({len(weapons)})")
+    print(f"Materials saved: {MATERIALS_OUTPUT} ({len(materials)})")
     return 0
 
 
 class ResolverContext:
     def __init__(self) -> None:
         self.weapons_db = load_weapons_db()
-        self.material_index = build_entity_index(MATERIALS_DIR)
         self.character_index = build_entity_index(CHARACTERS_DIR)
+        self.material_index = build_entity_index(MATERIALS_DIR)
 
     def resolve_character(self, value: Any) -> str:
         text = str(value or "").strip()
@@ -100,157 +100,130 @@ class ResolverContext:
         return self.material_index.get(normalized, slugify(text))
 
 
-def merge_hoyolab_characters(unified: dict[str, Any], profile: dict[str, Any], context: ResolverContext) -> None:
-    characters = profile.get("characters", {}) if isinstance(profile, dict) else {}
-    if not isinstance(characters, dict):
-        return
+def load_hoyolab_characters(profile: Any, context: ResolverContext) -> dict[str, Any]:
+    raw_characters = profile.get("characters", {}) if isinstance(profile, dict) else {}
+    if not isinstance(raw_characters, dict):
+        return {}
 
-    for source_id, raw_character in characters.items():
-        if not isinstance(raw_character, dict):
-            continue
-        character_id = raw_character.get("id") or source_id
-        character_id = context.resolve_character(character_id if character_id != "unknown" else raw_character.get("name_ru", ""))
-        if not character_id:
-            continue
-
-        character = ensure_character(unified, character_id)
-        character.update(
-            {
-                "id": character_id,
-                "name_ru": raw_character.get("name_ru", character.get("name_ru", "")),
-                "level": raw_character.get("level", character.get("level")),
-                "rarity": raw_character.get("rarity", character.get("rarity")),
-                "constellation": raw_character.get("constellation", character.get("constellation")),
-                "talents": raw_character.get("talents", character.get("talents", {})),
-            }
-        )
-
-        weapon = normalize_hoyolab_weapon(raw_character.get("equipped_weapon"), context)
-        if weapon:
-            character["equipped_weapon"] = weapon
-
-        character.setdefault("equipped_artifacts", [])
-
-
-def merge_good_characters(
-    unified: dict[str, Any],
-    good_payload: dict[str, Any],
-    context: ResolverContext,
-    only_if_missing: bool,
-) -> None:
-    for raw_character in as_list(good_payload.get("characters", [])):
+    characters: dict[str, Any] = {}
+    for source_id, raw_character in raw_characters.items():
         if not isinstance(raw_character, dict):
             continue
 
-        character_id = context.resolve_character(raw_character.get("key"))
+        character_id_source = raw_character.get("id") or source_id
+        if character_id_source == "unknown":
+            character_id_source = raw_character.get("name_ru") or raw_character.get("name_en") or source_id
+
+        character_id = context.resolve_character(character_id_source)
         if not character_id:
             continue
-        if only_if_missing and character_id in unified["characters"]:
-            continue
 
-        character = ensure_character(unified, character_id)
-        character.update(
-            {
-                "id": character_id,
-                "level": raw_character.get("level", character.get("level")),
-                "constellation": raw_character.get("constellation", character.get("constellation")),
-                "talents": normalize_good_talents(raw_character.get("talent")),
-            }
-        )
+        character = dict(raw_character)
+        character["id"] = character_id
+        character["equipped_artifacts"] = []
+
+        weapon = character.get("equipped_weapon")
+        if isinstance(weapon, dict):
+            character["equipped_weapon"] = normalize_hoyolab_weapon(weapon, context)
+
+        characters[character_id] = character
+    return characters
 
 
-def merge_kamera_artifacts(unified: dict[str, Any], good_payload: dict[str, Any], context: ResolverContext) -> None:
-    for raw_artifact in as_list(good_payload.get("artifacts", [])):
+def load_kamera_artifacts(good_payload: Any, context: ResolverContext) -> list[dict[str, Any]]:
+    artifacts = extract_list_section(good_payload, "artifacts")
+    normalized: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for raw_artifact in artifacts:
         if not isinstance(raw_artifact, dict):
             continue
-
         artifact = normalize_good_artifact(raw_artifact, context)
-        unified["inventory"]["artifacts"].append(artifact)
-
-        location = str(raw_artifact.get("location") or "").strip()
-        if not location:
+        fingerprint = unique_fingerprint(raw_artifact, "artifact")
+        if fingerprint in seen:
             continue
-
-        character_id = context.resolve_character(location)
-        if not character_id:
-            continue
-        character = ensure_character(unified, character_id)
-        character.setdefault("equipped_artifacts", []).append(artifact)
+        seen.add(fingerprint)
+        normalized.append(artifact)
+    return normalized
 
 
-def merge_kamera_weapons(unified: dict[str, Any], good_payload: dict[str, Any], context: ResolverContext) -> None:
-    for raw_weapon in as_list(good_payload.get("weapons", [])):
+def load_kamera_weapons(good_payload: Any, weapons_payload: Any, context: ResolverContext) -> list[dict[str, Any]]:
+    raw_weapons = [
+        *extract_list_section(good_payload, "weapons"),
+        *extract_list_section(weapons_payload, "weapons"),
+    ]
+
+    normalized: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for raw_weapon in raw_weapons:
         if not isinstance(raw_weapon, dict):
             continue
-
-        weapon = normalize_good_weapon(raw_weapon, context)
-        location = str(raw_weapon.get("location") or "").strip()
-        if location:
-            character_id = context.resolve_character(location)
-            if character_id:
-                character = ensure_character(unified, character_id)
-                character.setdefault("equipped_weapon", weapon)
+        fingerprint = unique_fingerprint(raw_weapon, "weapon")
+        if fingerprint in seen:
             continue
+        seen.add(fingerprint)
+        normalized.append(normalize_good_weapon(raw_weapon, context))
+    return normalized
 
-        unified["inventory"]["weapons"].append(weapon)
 
-
-def merge_kamera_materials(unified: dict[str, Any], good_payload: dict[str, Any], context: ResolverContext) -> None:
-    materials = good_payload.get("materials", {})
-    if isinstance(materials, dict):
-        iterable = materials.items()
-    elif isinstance(materials, list):
-        iterable = ((item.get("key") or item.get("name"), item.get("count", 0)) for item in materials if isinstance(item, dict))
-    else:
-        return
-
-    for key, count in iterable:
+def load_kamera_materials(good_payload: Any, context: ResolverContext) -> list[dict[str, Any]]:
+    raw_materials = extract_materials(good_payload)
+    normalized: list[dict[str, Any]] = []
+    for key, count in raw_materials.items():
         material_id = context.resolve_material(key)
         if not material_id:
             continue
-        unified["inventory"]["materials"].append(
+        normalized.append(
             {
                 "id": material_id,
                 "source_key": str(key),
                 "count": safe_int(count),
             }
         )
+    return normalized
 
 
-def normalize_hoyolab_weapon(raw_weapon: Any, context: ResolverContext) -> dict[str, Any] | None:
-    if not isinstance(raw_weapon, dict):
-        return None
+def attach_equipped_artifacts(characters: dict[str, Any], artifacts: list[dict[str, Any]], context: ResolverContext) -> None:
+    for character in characters.values():
+        if isinstance(character, dict):
+            character["equipped_artifacts"] = []
+
+    for artifact in artifacts:
+        location = str(artifact.get("location") or "").strip()
+        if not location:
+            continue
+
+        character_id = context.resolve_character(location)
+        if character_id not in characters:
+            continue
+        characters[character_id].setdefault("equipped_artifacts", []).append(artifact)
+
+
+def normalize_hoyolab_weapon(raw_weapon: dict[str, Any], context: ResolverContext) -> dict[str, Any]:
     name = raw_weapon.get("name") or raw_weapon.get("name_ru") or raw_weapon.get("name_en")
-    weapon_id = context.resolve_weapon(name)
     return {
-        "id": weapon_id,
-        "name": name or "",
-        "level": raw_weapon.get("level"),
-        "refinement": raw_weapon.get("refinement"),
-        "rarity": raw_weapon.get("rarity"),
-        "source": "hoyolab",
+        **raw_weapon,
+        "id": context.resolve_weapon(name),
     }
 
 
 def normalize_good_weapon(raw_weapon: dict[str, Any], context: ResolverContext) -> dict[str, Any]:
-    weapon_id = context.resolve_weapon(raw_weapon.get("key"))
+    location = str(raw_weapon.get("location") or "").strip()
     return {
-        "id": weapon_id,
+        "id": context.resolve_weapon(raw_weapon.get("key")),
         "source_key": raw_weapon.get("key"),
         "level": raw_weapon.get("level"),
         "ascension": raw_weapon.get("ascension"),
         "refinement": raw_weapon.get("refinement"),
-        "location": context.resolve_character(raw_weapon.get("location")) if raw_weapon.get("location") else "",
+        "location": context.resolve_character(location) if location else "",
         "lock": bool(raw_weapon.get("lock", False)),
         "source": "kamera",
     }
 
 
 def normalize_good_artifact(raw_artifact: dict[str, Any], context: ResolverContext) -> dict[str, Any]:
-    set_id = context.resolve_artifact_set(raw_artifact.get("setKey"))
     location = str(raw_artifact.get("location") or "").strip()
     return {
-        "set_id": set_id,
+        "set_id": context.resolve_artifact_set(raw_artifact.get("setKey")),
         "source_set_key": raw_artifact.get("setKey"),
         "slot": raw_artifact.get("slotKey") or raw_artifact.get("slot"),
         "rarity": raw_artifact.get("rarity"),
@@ -264,86 +237,59 @@ def normalize_good_artifact(raw_artifact: dict[str, Any], context: ResolverConte
     }
 
 
-def normalize_good_talents(value: Any) -> dict[str, Any]:
-    if not isinstance(value, dict):
-        return {}
-    return {
-        "normal_attack": value.get("auto"),
-        "elemental_skill": value.get("skill"),
-        "elemental_burst": value.get("burst"),
-    }
-
-
-def ensure_character(unified: dict[str, Any], character_id: str) -> dict[str, Any]:
-    characters = unified["characters"]
-    if character_id not in characters:
-        characters[character_id] = {
-            "id": character_id,
-            "equipped_artifacts": [],
-        }
-    return characters[character_id]
-
-
-def load_good_payload() -> dict[str, Any]:
-    merged: dict[str, Any] = {
-        "weapons": [],
-        "artifacts": [],
-        "materials": {},
-        "characters": [],
-    }
-
-    for name in ("kamera_good.json", "good.json"):
-        payload = load_optional_json(RAW_IMPORTS_DIR / name)
-        merge_good_payload(merged, payload)
-
-    merge_good_payload(merged, load_optional_json(RAW_IMPORTS_DIR / "kamera_weapons.json"), section_hint="weapons")
-    merge_good_payload(merged, load_optional_json(RAW_IMPORTS_DIR / "kamera_artifacts.json"), section_hint="artifacts")
-    merge_good_payload(merged, load_optional_json(RAW_IMPORTS_DIR / "kamera_materials.json"), section_hint="materials")
-    return merged
-
-
-def merge_good_payload(target: dict[str, Any], payload: Any, section_hint: str | None = None) -> None:
+def extract_list_section(payload: Any, section: str) -> list[Any]:
     if not payload:
-        return
-
-    if section_hint:
-        section_value = extract_section(payload, section_hint)
-        merge_section(target, section_hint, section_value)
-        return
-
-    if isinstance(payload, dict):
-        for section in ("weapons", "artifacts", "characters", "materials"):
-            merge_section(target, section, payload.get(section))
-
-
-def extract_section(payload: Any, section: str) -> Any:
-    if isinstance(payload, dict):
-        if section in payload:
-            return payload[section]
+        return []
+    if isinstance(payload, list):
         return payload
-    return payload
-
-
-def merge_section(target: dict[str, Any], section: str, value: Any) -> None:
-    if value is None:
-        return
-
-    if section == "materials":
+    if isinstance(payload, dict):
+        value = payload.get(section)
+        if isinstance(value, list):
+            return value
         if isinstance(value, dict):
-            for key, count in value.items():
-                target["materials"][key] = count
-        elif isinstance(value, list):
-            for item in value:
-                if isinstance(item, dict):
-                    key = item.get("key") or item.get("name")
-                    if key:
-                        target["materials"][key] = item.get("count", 0)
-        return
+            return list(value.values())
+        if looks_like_single_entity(payload, section):
+            return [payload]
+    return []
 
-    if isinstance(value, list):
-        target[section].extend(value)
-    elif isinstance(value, dict):
-        target[section].extend(value.values())
+
+def looks_like_single_entity(payload: dict[str, Any], section: str) -> bool:
+    if section == "weapons":
+        return "key" in payload and "refinement" in payload
+    if section == "artifacts":
+        return "setKey" in payload and "slotKey" in payload
+    return False
+
+
+def extract_materials(payload: Any) -> dict[str, Any]:
+    if not isinstance(payload, dict):
+        return {}
+    materials = payload.get("materials", {})
+    if isinstance(materials, dict):
+        return dict(materials)
+    if isinstance(materials, list):
+        result: dict[str, Any] = {}
+        for item in materials:
+            if not isinstance(item, dict):
+                continue
+            key = item.get("key") or item.get("name")
+            if key:
+                result[str(key)] = item.get("count", 0)
+        return result
+    return {}
+
+
+def unique_fingerprint(raw_item: dict[str, Any], kind: str) -> str:
+    for key in ("uid", "uuid", "instanceId", "instance_id"):
+        value = raw_item.get(key)
+        if value not in (None, "", 0, "0"):
+            return f"{kind}:uid:{value}"
+
+    item_id = raw_item.get("id")
+    if item_id not in (None, "", 0, "0"):
+        return f"{kind}:id:{item_id}"
+
+    return kind + ":" + json.dumps(raw_item, ensure_ascii=False, sort_keys=True)
 
 
 def build_entity_index(directory: Path) -> dict[str, str]:
@@ -355,6 +301,7 @@ def build_entity_index(directory: Path) -> dict[str, str]:
         data = load_optional_json(path)
         if not isinstance(data, dict):
             continue
+
         entity_id = str(data.get("id") or path.stem)
         for value in (
             entity_id,
@@ -380,8 +327,8 @@ def load_optional_json(path: Path) -> Any:
         return {}
 
 
-def as_list(value: Any) -> list[Any]:
-    return value if isinstance(value, list) else []
+def write_json(path: Path, data: Any) -> None:
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def normalize_entity_name(value: Any) -> str:
@@ -392,9 +339,11 @@ def slugify(value: Any) -> str:
     raw = str(value or "").strip()
     if not raw:
         return ""
+
     parts = re.findall(r"[A-Z]?[a-z]+|[A-Z]+(?=[A-Z]|$)|\d+", raw)
     if len(parts) > 1 and "".join(parts).casefold() == raw.casefold():
         raw = " ".join(parts)
+
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", raw.strip().lower()).strip("-")
     return slug or normalize_entity_name(raw)
 
