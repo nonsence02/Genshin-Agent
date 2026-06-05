@@ -31,7 +31,7 @@ from scripts.tools.weapon_info import get_weapon_details  # noqa: E402
 from scripts.tools.weapon_recommender import recommend_best_weapon  # noqa: E402
 
 
-DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
 SYSTEM_PROMPT = """
 Ты — Genshin Impact Агент. Твоя задача — отвечать на вопросы пользователя о его аккаунте,
