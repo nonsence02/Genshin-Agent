@@ -10,6 +10,7 @@ const KB_DIR = path.join(PROJECT_ROOT, 'knowledge_base');
 const ARTIFACTS_DIR = path.join(KB_DIR, 'artifacts');
 const WEAPONS_DIR = path.join(KB_DIR, 'weapons');
 const MATERIALS_DIR = path.join(KB_DIR, 'materials');
+const ENEMIES_DIR = path.join(KB_DIR, 'enemies');
 const CHARACTERS_DIR = path.join(KB_DIR, 'characters');
 const VERSIONS_DIR = path.join(KB_DIR, 'versions');
 
@@ -29,11 +30,18 @@ const PASSIVE_TALENT_TYPES = {
   passive4: 'пассивный талант 4',
 };
 
+const IGNORED_ENEMY_REWARD_NAMES = new Set([
+  'Adventure EXP',
+  'Companionship EXP',
+  'Mora',
+]);
+
 function main() {
   ensureDir(KB_DIR);
   resetDir(ARTIFACTS_DIR);
   resetDir(WEAPONS_DIR);
   resetDir(MATERIALS_DIR);
+  resetDir(ENEMIES_DIR);
   resetDir(CHARACTERS_DIR);
   resetDir(VERSIONS_DIR);
   removeLegacyFiles();
@@ -41,7 +49,8 @@ function main() {
   syncArtifacts();
   syncWeapons();
   syncCharacters();
-  syncMaterials();
+  const materialIds = syncMaterials();
+  syncEnemies(materialIds);
   syncVersions();
 
   console.log('Синхронизация базы знаний завершена.');
@@ -139,6 +148,7 @@ function syncMaterials() {
   console.log('Синхронизация материалов...');
   const names = getNames('materials');
   let saved = 0;
+  const materialIds = new Set();
 
   names.forEach((name, index) => {
     const materialEn = genshin.materials(name, EN);
@@ -153,14 +163,51 @@ function syncMaterials() {
       type_text_ru: materialRu.typeText || '',
       days_of_week_ru: asArray(materialRu.daysOfWeek),
       source_ru: asArray(materialRu.source),
+      dropped_by: [],
     };
 
     writeJson(path.join(MATERIALS_DIR, `${material.id}.json`), material);
+    materialIds.add(material.id);
     saved += 1;
     logProgress('Материалы', index + 1, names.length);
   });
 
   console.log(`Материалы сохранены: ${saved}`);
+  return materialIds;
+}
+
+function syncEnemies(materialIds) {
+  console.log('Синхронизация врагов...');
+  const names = getNames('enemies');
+  const droppedBy = new Map();
+  let saved = 0;
+
+  names.forEach((name, index) => {
+    const enemyEn = genshin.enemies(name, EN);
+    const enemyRu = genshin.enemies(name, RU);
+    if (!enemyEn || !enemyRu) return;
+
+    const enemy = {
+      id: slugify(enemyEn.name),
+      name_ru: enemyRu.name,
+      name_en: enemyEn.name,
+      type: enemyEn.investigation?.categoryType || enemyEn.enemyType || enemyEn.monsterType || '',
+      type_ru: enemyRu.investigation?.categoryText || enemyRu.categoryText || '',
+      drops: buildEnemyDrops(enemyEn, materialIds),
+    };
+
+    enemy.drops.forEach((materialId) => {
+      if (!droppedBy.has(materialId)) droppedBy.set(materialId, []);
+      droppedBy.get(materialId).push(enemy.id);
+    });
+
+    writeJson(path.join(ENEMIES_DIR, `${enemy.id}.json`), enemy);
+    saved += 1;
+    logProgress('Враги', index + 1, names.length);
+  });
+
+  updateMaterialDropMappings(droppedBy);
+  console.log(`Враги сохранены: ${saved}`);
 }
 
 function syncVersions() {
@@ -264,6 +311,36 @@ function buildConstellations(characterNameEn) {
       };
     })
     .filter(Boolean);
+}
+
+function buildEnemyDrops(enemyEn, materialIds) {
+  const drops = [];
+  asArray(enemyEn.rewardPreview).forEach((reward) => {
+    const materialId = resolveRewardMaterialId(reward);
+    if (materialId && materialIds.has(materialId) && !drops.includes(materialId)) {
+      drops.push(materialId);
+    }
+  });
+  return drops;
+}
+
+function resolveRewardMaterialId(reward) {
+  if (!reward?.name) return '';
+  if (IGNORED_ENEMY_REWARD_NAMES.has(reward.name)) return '';
+  const materialEn = genshin.materials(reward.name, EN);
+  if (!materialEn) return '';
+  return slugify(materialEn.name);
+}
+
+function updateMaterialDropMappings(droppedBy) {
+  droppedBy.forEach((enemyIds, materialId) => {
+    const materialPath = path.join(MATERIALS_DIR, `${materialId}.json`);
+    if (!fs.existsSync(materialPath)) return;
+
+    const material = JSON.parse(fs.readFileSync(materialPath, 'utf8'));
+    material.dropped_by = Array.from(new Set(enemyIds)).sort();
+    writeJson(materialPath, material);
+  });
 }
 
 function buildWeaponAscensionMaterials(weaponEn, weaponRu) {
