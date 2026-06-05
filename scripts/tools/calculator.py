@@ -233,47 +233,14 @@ def resolve_character_id(
     character_kb_dir: Path = DEFAULT_CHARACTER_KB_DIR,
     dictionary_path: Path = DEFAULT_DICTIONARY_PATH,
 ) -> str | None:
-    query = normalize_human_name(user_input_name)
-    if not query:
-        return None
+    from scripts.utils.name_resolver import resolve_character_id as resolve_strict_character_id
 
-    reverse_dict: dict[str, str] = {}
-    dictionary = load_translation_dictionary(dictionary_path)
-    for key, value in dictionary.items():
-        key_id = normalize_id(key)
-        value_id = normalize_id(value)
-        if (character_kb_dir / f"{key_id}.json").exists():
-            reverse_dict[normalize_human_name(value)] = key_id
-        if (character_kb_dir / f"{value_id}.json").exists():
-            reverse_dict[normalize_human_name(key)] = value_id
-
-    reverse_dict.update(
-        {normalize_human_name(alias): normalize_id(character_id) for alias, character_id in CHARACTER_ALIASES_RU.items()}
+    return resolve_strict_character_id(
+        user_input_name,
+        characters_file=PROJECT_ROOT / "data" / "processed" / "characters.json",
+        character_kb_dir=character_kb_dir,
+        fuzzy_cutoff=0.8,
     )
-    reverse_dict.update(load_character_name_index(character_kb_dir))
-
-    direct_id = normalize_id(user_input_name)
-    direct_path = character_kb_dir / f"{direct_id}.json"
-    if direct_path.exists():
-        return direct_id
-
-    if query in reverse_dict:
-        resolved = reverse_dict[query]
-        if (character_kb_dir / f"{resolved}.json").exists():
-            return resolved
-
-    matches = difflib.get_close_matches(query, reverse_dict.keys(), n=1, cutoff=0.6)
-    if matches:
-        resolved = reverse_dict[matches[0]]
-        if (character_kb_dir / f"{resolved}.json").exists():
-            return resolved
-
-    kb_ids = [path.stem for path in character_kb_dir.glob("*.json")]
-    id_matches = difflib.get_close_matches(direct_id, kb_ids, n=1, cutoff=0.6)
-    if id_matches:
-        return id_matches[0]
-
-    return None
 
 
 def load_character_name_index(character_kb_dir: Path = DEFAULT_CHARACTER_KB_DIR) -> dict[str, str]:

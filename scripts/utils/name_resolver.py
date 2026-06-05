@@ -10,6 +10,182 @@ from pathlib import Path
 from typing import Any
 
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_PROCESSED_CHARACTERS_PATH = PROJECT_ROOT / "data" / "processed" / "characters.json"
+DEFAULT_CHARACTER_KB_DIR = PROJECT_ROOT / "knowledge_base" / "characters"
+
+RU_TO_EN_MAP: dict[str, str] = {
+    "сяо": "xiao",
+    "ху тао": "hu-tao",
+    "хутао": "hu-tao",
+    "яэ мико": "yae-miko",
+    "райдэн": "raiden-shogun",
+    "рейден": "raiden-shogun",
+    "сёгун райдэн": "raiden-shogun",
+    "сегун райден": "raiden-shogun",
+    "сара": "kujou-sara",
+    "кудзё сара": "kujou-sara",
+    "кудзе сара": "kujou-sara",
+    "тарталья": "tartaglia",
+    "чайльд": "tartaglia",
+    "аяка": "kamisato-ayaka",
+    "аято": "kamisato-ayato",
+    "кадзуха": "kaedehara-kazuha",
+    "кокоми": "sangonomiya-kokomi",
+    "джинн": "jean",
+    "джин": "jean",
+    "юнь цзинь": "yun-jin",
+    "юньцзинь": "yun-jin",
+    "невиллет": "neuvillette",
+    "невилет": "neuvillette",
+    "арлекино": "arlecchino",
+    "нефер": "sethos",
+    "сетос": "sethos",
+    "айно": "aino",
+    "рейзор": "razor",
+    "рэйзор": "razor",
+    "ризли": "wriothesley",
+    "вриотесли": "wriothesley",
+    "риотесли": "wriothesley",
+    "флинс": "flins",
+    "шеврез": "chevreuse",
+    "шеврёз": "chevreuse",
+    "беннет": "bennett",
+    "беннетт": "bennett",
+    "сян лин": "xiangling",
+    "сянлин": "xiangling",
+    "син цю": "xingqiu",
+    "синцю": "xingqiu",
+    "сянь юнь": "xianyun",
+    "сяньюнь": "xianyun",
+    "чжун ли": "zhongli",
+    "чжунли": "zhongli",
+    "нахида": "nahida",
+    "фурина": "furina",
+    "эола": "eula",
+    "эула": "eula",
+    "гань юй": "ganyu",
+    "ганьюй": "ganyu",
+    "кэ цин": "keqing",
+    "кэцин": "keqing",
+    "ци ци": "qiqi",
+    "цици": "qiqi",
+    "кли": "klee",
+    "мона": "mona",
+    "барбара": "barbara",
+    "ноэлль": "noelle",
+    "ноэль": "noelle",
+    "нин гуан": "ningguang",
+    "нингуан": "ningguang",
+    "фишль": "fischl",
+    "сахароза": "sucrose",
+    "венти": "venti",
+    "альбедо": "albedo",
+    "дилюк": "diluc",
+    "кэйа": "kaeya",
+    "кейа": "kaeya",
+    "эмбер": "amber",
+    "лиза": "lisa",
+    "коллеи": "collei",
+    "коллей": "collei",
+    "мавуика": "mavuika",
+    "скирк": "skirk",
+    "лаума": "lauma",
+    "варка": "varka",
+}
+
+
+def resolve_character_id(
+    query: str,
+    characters_file: str | Path = DEFAULT_PROCESSED_CHARACTERS_PATH,
+    character_kb_dir: str | Path = DEFAULT_CHARACTER_KB_DIR,
+    fuzzy_cutoff: float = 0.8,
+) -> str | None:
+    """Resolve a character query strictly, with hard aliases before fuzzy matching."""
+
+    normalized_query = normalize_human_name(query)
+    if not normalized_query:
+        return None
+
+    if normalized_query in RU_TO_EN_MAP:
+        return RU_TO_EN_MAP[normalized_query]
+
+    processed_ids = load_processed_character_ids(Path(characters_file))
+    kb_ids = load_kb_character_ids(Path(character_kb_dir))
+    known_ids = processed_ids | kb_ids
+
+    direct_slug = slugify_character_query(query)
+    if direct_slug in known_ids:
+        return direct_slug
+
+    lookup = build_character_lookup(Path(character_kb_dir), known_ids)
+    if normalized_query in lookup:
+        return lookup[normalized_query]
+
+    matches = difflib.get_close_matches(normalized_query, lookup.keys(), n=1, cutoff=fuzzy_cutoff)
+    if matches:
+        return lookup[matches[0]]
+
+    id_matches = difflib.get_close_matches(direct_slug, known_ids, n=1, cutoff=fuzzy_cutoff)
+    if id_matches:
+        return id_matches[0]
+
+    return None
+
+
+def load_processed_character_ids(path: Path) -> set[str]:
+    data = load_json(path)
+    if not isinstance(data, dict):
+        return set()
+    return {str(key) for key, value in data.items() if isinstance(value, dict)}
+
+
+def load_kb_character_ids(directory: Path) -> set[str]:
+    if not directory.exists():
+        return set()
+    return {path.stem for path in directory.glob("*.json")}
+
+
+def build_character_lookup(character_kb_dir: Path, known_ids: set[str]) -> dict[str, str]:
+    lookup: dict[str, str] = {}
+    for character_id in known_ids:
+        lookup[normalize_human_name(character_id)] = character_id
+        lookup[normalize_human_name(character_id.replace("-", " "))] = character_id
+
+    if not character_kb_dir.exists():
+        return lookup
+
+    for path in character_kb_dir.glob("*.json"):
+        data = load_json(path)
+        if not isinstance(data, dict):
+            continue
+        character_id = str(data.get("id") or path.stem)
+        for key in ("name", "name_ru", "name_en"):
+            value = data.get(key)
+            if value:
+                lookup[normalize_human_name(str(value))] = character_id
+    return lookup
+
+
+def load_json(path: Path) -> Any:
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def normalize_human_name(value: Any) -> str:
+    normalized = str(value or "").casefold().replace("ё", "е").replace("_", " ").replace("-", " ")
+    normalized = re.sub(r"[^a-zа-я0-9]+", " ", normalized)
+    return re.sub(r"\s+", " ", normalized).strip()
+
+
+def slugify_character_query(value: Any) -> str:
+    normalized = str(value or "").casefold().replace("_", "-").strip()
+    normalized = re.sub(r"[^a-z0-9а-яё-]+", "-", normalized, flags=re.UNICODE)
+    return re.sub(r"-+", "-", normalized).strip("-")
+
+
 def resolve_weapon_key(inventory_key: str, weapons_db: dict[str, Any]) -> str:
     """Resolve an Inventory Kamera weapon key to a local weapon KB id."""
 
