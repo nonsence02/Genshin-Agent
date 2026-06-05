@@ -11,6 +11,9 @@ const ARTIFACTS_DIR = path.join(KB_DIR, 'artifacts');
 const WEAPONS_DIR = path.join(KB_DIR, 'weapons');
 const MATERIALS_DIR = path.join(KB_DIR, 'materials');
 const ENEMIES_DIR = path.join(KB_DIR, 'enemies');
+const DOMAINS_DIR = path.join(KB_DIR, 'domains');
+const FOOD_DIR = path.join(KB_DIR, 'food');
+const FISHING_DIR = path.join(KB_DIR, 'fishing');
 const CHARACTERS_DIR = path.join(KB_DIR, 'characters');
 const VERSIONS_DIR = path.join(KB_DIR, 'versions');
 
@@ -42,6 +45,9 @@ function main() {
   resetDir(WEAPONS_DIR);
   resetDir(MATERIALS_DIR);
   resetDir(ENEMIES_DIR);
+  resetDir(DOMAINS_DIR);
+  resetDir(FOOD_DIR);
+  resetDir(FISHING_DIR);
   resetDir(CHARACTERS_DIR);
   resetDir(VERSIONS_DIR);
   removeLegacyFiles();
@@ -49,8 +55,12 @@ function main() {
   syncArtifacts();
   syncWeapons();
   syncCharacters();
+  const artifactIds = getEntityIds('artifacts');
   const materialIds = syncMaterials();
+  syncDomains(materialIds, artifactIds);
   syncEnemies(materialIds);
+  syncFood();
+  syncFishing();
   syncVersions();
 
   console.log('Синхронизация базы знаний завершена.');
@@ -73,6 +83,8 @@ function syncArtifacts() {
       max_rarity: Math.max(...asArray(artifactEn.rarityList)),
       bonus_2pc: artifactRu.effect2Pc || '',
       bonus_4pc: artifactRu.effect4Pc || '',
+      source_domain: null,
+      coordinates: [],
     };
 
     writeJson(path.join(ARTIFACTS_DIR, `${artifact.id}.json`), artifact);
@@ -103,6 +115,7 @@ function syncWeapons() {
       passive_name_ru: weaponRu.effectName || '',
       passive_description_ru: weaponRu.r1?.description || '',
       ascension_materials: buildWeaponAscensionMaterials(weaponEn, weaponRu),
+      coordinates: [],
     };
 
     writeJson(path.join(WEAPONS_DIR, `${weapon.id}.json`), weapon);
@@ -134,6 +147,7 @@ function syncCharacters() {
       talents: buildCharacterTalents(characterEn.name),
       passive_talents: buildPassiveTalents(characterEn.name),
       constellations: buildConstellations(characterEn.name),
+      coordinates: [],
     };
 
     writeJson(path.join(CHARACTERS_DIR, `${character.id}.json`), character);
@@ -162,8 +176,11 @@ function syncMaterials() {
       type: classifyMaterial(materialEn, materialRu),
       type_text_ru: materialRu.typeText || '',
       days_of_week_ru: asArray(materialRu.daysOfWeek),
-      source_ru: asArray(materialRu.source),
+      source_ru: getSources(materialRu),
       dropped_by: [],
+      obtained_from_domains: [],
+      source_domain: null,
+      coordinates: [],
     };
 
     writeJson(path.join(MATERIALS_DIR, `${material.id}.json`), material);
@@ -194,6 +211,7 @@ function syncEnemies(materialIds) {
       type: enemyEn.investigation?.categoryType || enemyEn.enemyType || enemyEn.monsterType || '',
       type_ru: enemyRu.investigation?.categoryText || enemyRu.categoryText || '',
       drops: buildEnemyDrops(enemyEn, materialIds),
+      coordinates: [],
     };
 
     enemy.drops.forEach((materialId) => {
@@ -208,6 +226,84 @@ function syncEnemies(materialIds) {
 
   updateMaterialDropMappings(droppedBy);
   console.log(`Враги сохранены: ${saved}`);
+}
+
+function syncDomains(materialIds, artifactIds) {
+  console.log('Синхронизация подземелий...');
+  const names = getNames('domains');
+  const domainSources = new Map();
+  let saved = 0;
+
+  names.forEach((name, index) => {
+    const domainEn = genshin.domains(name, EN);
+    const domainRu = genshin.domains(name, RU);
+    if (!domainEn || !domainRu) return;
+
+    const domain = {
+      id: slugify(domainEn.name),
+      name_ru: domainRu.name,
+      name_en: domainEn.name,
+      type: domainRu.domainText || domainEn.domainText || '',
+      region: domainRu.regionName || domainEn.regionName || '',
+      days_of_week: asArray(domainRu.daysOfWeek),
+      rewards: buildDomainRewards(domainEn, materialIds, artifactIds),
+      coordinates: [],
+    };
+
+    domain.rewards.forEach((rewardId) => {
+      if (!domainSources.has(rewardId)) domainSources.set(rewardId, []);
+      domainSources.get(rewardId).push(domain.id);
+    });
+
+    writeJson(path.join(DOMAINS_DIR, `${domain.id}.json`), domain);
+    saved += 1;
+    logProgress('Подземелья', index + 1, names.length);
+  });
+
+  updateDomainSourceMappings(domainSources, materialIds, artifactIds);
+  console.log(`Подземелья сохранены: ${saved}`);
+}
+
+function syncFood() {
+  console.log('Синхронизация еды и рецептов...');
+  const names = getNames('foods');
+  let saved = 0;
+
+  names.forEach((name, index) => {
+    const foodEn = genshin.foods(name, EN);
+    const foodRu = genshin.foods(name, RU);
+    if (!foodEn || !foodRu) return;
+
+    const food = {
+      id: slugify(foodEn.name),
+      name_ru: foodRu.name,
+      name_en: foodEn.name,
+      rarity: foodEn.rarity,
+      food_type: foodRu.filterText || foodEn.filterText || foodEn.filterType || '',
+      effect_ru: foodRu.delicious?.effect || foodRu.normal?.effect || foodRu.effect || '',
+      recipe: buildIngredientRecipe(foodEn.ingredients),
+      coordinates: [],
+    };
+
+    writeJson(path.join(FOOD_DIR, `${food.id}.json`), food);
+    saved += 1;
+    logProgress('Еда', index + 1, names.length);
+  });
+
+  console.log(`Еда и рецепты сохранены: ${saved}`);
+}
+
+function syncFishing() {
+  console.log('Синхронизация рыбалки и наживок...');
+  const baitItems = buildFishingBaits();
+  const fishItems = buildFishItems(baitItems);
+  const items = [...baitItems, ...fishItems];
+
+  items.forEach((item) => {
+    writeJson(path.join(FISHING_DIR, `${item.id}.json`), item);
+  });
+
+  console.log(`Рыбалка сохранена: ${items.length} объектов`);
 }
 
 function syncVersions() {
@@ -324,6 +420,36 @@ function buildEnemyDrops(enemyEn, materialIds) {
   return drops;
 }
 
+function buildDomainRewards(domainEn, materialIds, artifactIds) {
+  const rewards = [];
+  asArray(domainEn.rewardPreview).forEach((reward) => {
+    const rewardId = resolveRewardEntityId(reward, materialIds, artifactIds);
+    if (rewardId && !rewards.includes(rewardId)) {
+      rewards.push(rewardId);
+    }
+  });
+  return rewards;
+}
+
+function resolveRewardEntityId(reward, materialIds, artifactIds) {
+  if (!reward?.name) return '';
+  if (IGNORED_ENEMY_REWARD_NAMES.has(reward.name)) return '';
+
+  const materialEn = genshin.materials(reward.name, EN);
+  if (materialEn) {
+    const materialId = slugify(materialEn.name);
+    if (materialIds.has(materialId)) return materialId;
+  }
+
+  const artifactEn = genshin.artifacts(reward.name, EN);
+  if (artifactEn) {
+    const artifactId = slugify(artifactEn.name);
+    if (artifactIds.has(artifactId)) return artifactId;
+  }
+
+  return '';
+}
+
 function resolveRewardMaterialId(reward) {
   if (!reward?.name) return '';
   if (IGNORED_ENEMY_REWARD_NAMES.has(reward.name)) return '';
@@ -332,15 +458,93 @@ function resolveRewardMaterialId(reward) {
   return slugify(materialEn.name);
 }
 
+function updateDomainSourceMappings(domainSources, materialIds, artifactIds) {
+  domainSources.forEach((domainIds, entityId) => {
+    const uniqueDomainIds = Array.from(new Set(domainIds)).sort();
+    if (materialIds.has(entityId)) {
+      updateJsonFile(path.join(MATERIALS_DIR, `${entityId}.json`), (material) => {
+        material.obtained_from_domains = uniqueDomainIds;
+        material.source_domain = uniqueDomainIds[0] || null;
+        return material;
+      });
+    }
+    if (artifactIds.has(entityId)) {
+      updateJsonFile(path.join(ARTIFACTS_DIR, `${entityId}.json`), (artifact) => {
+        artifact.source_domain = uniqueDomainIds[0] || null;
+        return artifact;
+      });
+    }
+  });
+}
+
 function updateMaterialDropMappings(droppedBy) {
   droppedBy.forEach((enemyIds, materialId) => {
-    const materialPath = path.join(MATERIALS_DIR, `${materialId}.json`);
-    if (!fs.existsSync(materialPath)) return;
-
-    const material = JSON.parse(fs.readFileSync(materialPath, 'utf8'));
-    material.dropped_by = Array.from(new Set(enemyIds)).sort();
-    writeJson(materialPath, material);
+    updateJsonFile(path.join(MATERIALS_DIR, `${materialId}.json`), (material) => {
+      material.dropped_by = Array.from(new Set(enemyIds)).sort();
+      return material;
+    });
   });
+}
+
+function buildIngredientRecipe(ingredients) {
+  return asArray(ingredients)
+    .map((ingredient) => ({
+      material_id: slugify(ingredient.name),
+      count: ingredient.count || 0,
+    }))
+    .filter((ingredient) => ingredient.material_id);
+}
+
+function buildFishingBaits() {
+  return getNames('materials')
+    .map((name) => {
+      const materialEn = genshin.materials(name, EN);
+      const materialRu = genshin.materials(name, RU);
+      if (!materialEn || !materialRu || materialEn.category !== 'FISH_BAIT') return null;
+
+      const craftEn = genshin.crafts(materialEn.name, EN);
+      return {
+        id: slugify(materialEn.name),
+        kind: 'bait',
+        name_ru: materialRu.name,
+        name_en: materialEn.name,
+        recipe: buildIngredientRecipe(craftEn?.recipe),
+        coordinates: [],
+      };
+    })
+    .filter(Boolean);
+}
+
+function buildFishItems(baitItems) {
+  const baitDescriptions = baitItems.map((bait) => {
+    const materialEn = genshin.materials(bait.name_en, EN);
+    return {
+      bait_id: bait.id,
+      description: String(materialEn?.description || '').toLowerCase(),
+    };
+  });
+
+  return getNames('animals')
+    .map((name) => {
+      const animalEn = genshin.animals(name, EN);
+      const animalRu = genshin.animals(name, RU);
+      if (!animalEn || !animalRu || animalEn.categoryType !== 'SUBTYPE_FISH') return null;
+
+      const materialRu = genshin.materials(animalEn.name, RU);
+      const fishName = String(animalEn.name || '').toLowerCase();
+      const bait = baitDescriptions.find((entry) => entry.description.includes(fishName));
+
+      return {
+        id: slugify(animalEn.name),
+        kind: 'fish',
+        name_ru: animalRu.name,
+        name_en: animalEn.name,
+        bait_id: bait?.bait_id || null,
+        locations: getSources(materialRu),
+        coordinates: [],
+      };
+    })
+    .filter(Boolean);
 }
 
 function buildWeaponAscensionMaterials(weaponEn, weaponRu) {
@@ -388,6 +592,17 @@ function getNames(folder) {
   return Array.isArray(names) ? names : [];
 }
 
+function getEntityIds(folder) {
+  return new Set(
+    getNames(folder)
+      .map((name) => {
+        const entity = genshin[folder](name, EN);
+        return entity?.name ? slugify(entity.name) : '';
+      })
+      .filter(Boolean),
+  );
+}
+
 function safeStats(entity, level) {
   if (typeof entity?.stats !== 'function') return {};
   try {
@@ -419,6 +634,16 @@ function removeLegacyFiles() {
 
 function writeJson(filePath, data) {
   fs.writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
+}
+
+function updateJsonFile(filePath, updater) {
+  if (!fs.existsSync(filePath)) return;
+  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  writeJson(filePath, updater(data));
+}
+
+function getSources(entity) {
+  return asArray(entity?.sources).length ? asArray(entity.sources) : asArray(entity?.source);
 }
 
 function slugify(value) {
