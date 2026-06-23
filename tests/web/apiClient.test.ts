@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { createPlannerApiClient, PlannerApiError } from "../../apps/web/src/api/client.js";
+import { buildPlayerSourceUploadFormData, createPlannerApiClient, PlannerApiError } from "../../apps/web/src/api/client.js";
 
 describe("planner API client", () => {
   afterEach(() => {
@@ -78,6 +78,30 @@ describe("planner API client", () => {
       method: "GET",
       headers: undefined,
       body: undefined,
+    });
+  });
+
+  it("builds player source upload FormData", () => {
+    const formData = buildPlayerSourceUploadFormData({
+      good: new File(["{}"], "good.json", { type: "application/json" }),
+      weapons: new File(["{}"], "weapons.json", { type: "application/json" }),
+    });
+
+    expect(formData.get("good")).toBeInstanceOf(File);
+    expect(formData.get("weapons")).toBeInstanceOf(File);
+    expect(formData.get("hoyolab")).toBeNull();
+  });
+
+  it("builds multipart preview requests without JSON headers", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(jsonResponse({ ok: true }));
+    const client = createPlannerApiClient("http://api.test");
+
+    await client.previewPlayerSourceFiles("default user", { good: new File(["{}"], "good.json", { type: "application/json" }) });
+
+    expect(fetchMock).toHaveBeenCalledWith("http://api.test/player/default%20user/import/source-files/preview", {
+      method: "POST",
+      headers: undefined,
+      body: expect.any(FormData),
     });
   });
 });

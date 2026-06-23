@@ -1,5 +1,7 @@
 import cors from "@fastify/cors";
+import multipart from "@fastify/multipart";
 import Fastify, { type FastifyInstance } from "fastify";
+import { PlayerSourceImportService } from "../ingestion/services/PlayerSourceImportService.js";
 import { CharacterLevelCostService } from "../planner/services/CharacterLevelCostService.js";
 import { CharacterRequirementService } from "../planner/services/CharacterRequirementService.js";
 import { InventoryDiffService } from "../planner/services/InventoryDiffService.js";
@@ -14,6 +16,7 @@ import { registerHealthRoutes } from "./routes/healthRoutes.js";
 import { registerMaterialRoutes } from "./routes/materialRoutes.js";
 import { registerPlayerStateRoutes } from "./routes/playerStateRoutes.js";
 import { registerPlannerRoutes } from "./routes/plannerRoutes.js";
+import { PlayerSourceUploadService } from "./services/PlayerSourceUploadService.js";
 
 export interface ApiServices {
   materialSources: Pick<MaterialSourceService, "lookup">;
@@ -25,6 +28,7 @@ export interface ApiServices {
   effectiveInventory: Pick<EffectiveInventoryService, "resolve">;
   manualInventoryOverrides: Pick<ManualInventoryOverrideService, "listOverrides" | "upsertOverride" | "deactivateOverride" | "clearOverrides">;
   playerState: Pick<PlayerStateBuilder, "build" | "getCharacterState">;
+  playerSourceUpload: Pick<PlayerSourceUploadService, "handleUpload">;
 }
 
 export interface CreateAppOptions {
@@ -39,6 +43,12 @@ export async function createApp(options: CreateAppOptions = {}): Promise<Fastify
   await app.register(cors, {
     origin: parseCorsOrigin(process.env.API_CORS_ORIGIN),
   });
+  await app.register(multipart, {
+    limits: {
+      fileSize: 25 * 1024 * 1024,
+      files: 3,
+    },
+  });
 
   installErrorHandlers(app);
   await registerHealthRoutes(app);
@@ -51,6 +61,8 @@ export async function createApp(options: CreateAppOptions = {}): Promise<Fastify
 }
 
 function createServices(overrides: Partial<ApiServices> | undefined): ApiServices {
+  const playerState = overrides?.playerState ?? new PlayerStateBuilder();
+
   return {
     materialSources: overrides?.materialSources ?? new MaterialSourceService(),
     materialClassifier: overrides?.materialClassifier ?? new MaterialDemandClassifier(),
@@ -60,7 +72,8 @@ function createServices(overrides: Partial<ApiServices> | undefined): ApiService
     levelCosts: overrides?.levelCosts ?? new CharacterLevelCostService(),
     effectiveInventory: overrides?.effectiveInventory ?? new EffectiveInventoryService(),
     manualInventoryOverrides: overrides?.manualInventoryOverrides ?? new ManualInventoryOverrideService(),
-    playerState: overrides?.playerState ?? new PlayerStateBuilder(),
+    playerState,
+    playerSourceUpload: overrides?.playerSourceUpload ?? new PlayerSourceUploadService(new PlayerSourceImportService(), playerState),
   };
 }
 
@@ -101,6 +114,8 @@ function registerOpenApiRoute(app: FastifyInstance): void {
       "/player/{playerKey}/inventory/effective": { get: { summary: "Resolve snapshot inventory with manual overrides" } },
       "/player/{playerKey}/state": { get: { summary: "Build merged player state from imported sources" } },
       "/player/{playerKey}/characters/{characterKey}/state": { get: { summary: "Build merged character state" } },
+      "/player/{playerKey}/import/source-files/preview": { post: { summary: "Preview uploaded local player source files" } },
+      "/player/{playerKey}/import/source-files": { post: { summary: "Import uploaded local player source files" } },
       "/player/{playerKey}/inventory/overrides": { get: { summary: "List manual inventory overrides" } },
       "/player/{playerKey}/inventory/overrides/{materialKey}": { put: { summary: "Create or update a manual inventory override" } },
     },

@@ -14,7 +14,7 @@ Environment variables:
 
 - `API_HOST`: bind host, default `127.0.0.1`
 - `API_PORT`: bind port, default `3123`
-- `API_CORS_ORIGIN`: comma-separated allowed origins, default `http://localhost:3123,http://127.0.0.1:3123`
+- `API_CORS_ORIGIN`: comma-separated allowed origins, default includes `http://localhost:5173`, `http://127.0.0.1:5173`, `http://localhost:3123`, and `http://127.0.0.1:3123`
 
 ## Endpoints
 
@@ -26,6 +26,8 @@ Environment variables:
 - `POST /planner/character/requirements`
 - `POST /planner/character/diff`
 - `POST /planner/character/plan`
+- `POST /player/:playerKey/import/source-files/preview`
+- `POST /player/:playerKey/import/source-files`
 - `GET /player/:playerKey/state?includeArtifacts=true&characterKey=char_furina`
 - `GET /player/:playerKey/characters/:characterKey/state`
 - `GET /player/:playerKey/inventory/effective?snapshotId=2&includeManualOverrides=true`
@@ -128,6 +130,23 @@ curl -X PUT http://127.0.0.1:3123/player/default/inventory/overrides/mat_heros_w
 Manual inventory overrides are applied by default to planner diff and plan endpoints. Set `"includeManualOverrides": false` to use raw snapshot quantities. Overrides correct inventory state; crafting options are a separate virtual projection layer.
 
 When `"usePlayerState": true`, planner diff and plan endpoints use `PlayerStateBuilder` to resolve current level, current ascension phase, and current talents. Explicit request fields still override merged state.
+
+## Player Source Uploads
+
+Player source uploads use `multipart/form-data` with optional file fields:
+
+- `good`: Inventory Kamera GOOD export, usually `good.json`
+- `weapons`: Inventory Kamera weapons export, usually `weapons.json`
+- `hoyolab`: local HoYoLAB profile export, usually `hoyolab_profile.json`
+
+The preview endpoint always runs the shared player-source import service with `dryRun=true`. The import endpoint writes to PostgreSQL unless `?dryRun=true` is supplied. Uploaded files must be `.json`; accepted content types are `application/json`, `text/plain`, and `application/octet-stream`; max file size is 25 MB. Temporary files are written under `data/tmp/uploads/` and deleted after import unless `keepTemp=true`.
+
+```bash
+curl -X POST "http://127.0.0.1:3123/player/default/import/source-files/preview" \
+  -F "good=@tests/fixtures/inventory-kamera-good.sample.json;type=application/json"
+```
+
+The response returns parsed/resolved/unresolved counts, accepted filenames, player-state summary for real imports, and warnings. It does not include raw uploaded JSON content.
 
 `POST /planner/character/plan` accepts a nested `preferences` object. It overrides equivalent legacy top-level fields such as `days`, `dailyResinBudget`, `currentResin`, `discountedWeeklyBossClaimsUsed`, and crafting flags:
 

@@ -81,6 +81,7 @@ function isDomainError(error: Error): boolean {
     "MaterialSourceError",
     "EffectiveInventoryError",
     "ManualInventoryOverrideError",
+    "PlayerSourceUploadError",
   ].includes(error.name);
 }
 

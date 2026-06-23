@@ -7,6 +7,8 @@ import {
   type ManualInventoryOverrideRecord,
   type PlannerApiError,
   type PlayerCharacterState,
+  type PlayerSourceFiles,
+  type PlayerSourceUploadResult,
   type PlannerMaterial,
   type ResinPlanResult,
 } from "../api/client.js";
@@ -31,6 +33,7 @@ export function PlannerPage() {
   const [health, setHealth] = useState<"checking" | "online" | "offline">("checking");
   const [loadedState, setLoadedState] = useState<PlayerCharacterState | null>(null);
   const [stateLoading, setStateLoading] = useState(false);
+  const [lastImport, setLastImport] = useState<PlayerSourceUploadResult | null>(null);
 
   useEffect(() => {
     api.health()
@@ -95,6 +98,20 @@ export function PlannerPage() {
         <BackendHealth status={health} />
 
         <FormFields form={form} onChange={setForm} />
+        <PlayerDataUploadPanel
+          api={api}
+          playerKey={form.playerKey}
+          lastImport={lastImport}
+          onPlayerKeyChange={(playerKey) => setForm((current) => ({ ...current, playerKey }))}
+          onImportComplete={async (result) => {
+            setLastImport(result);
+            if (!result.dryRun && form.characterKey.trim().length > 0) {
+              await loadCharacterState();
+            }
+          }}
+          onLoadPlayerState={loadCharacterState}
+          onBuildPlan={buildPlan}
+        />
         <PlayerStatePanel state={loadedState} loading={stateLoading} onLoad={loadCharacterState} />
         <ManualOverridesPanel api={api} playerKey={form.playerKey} />
 
@@ -307,6 +324,143 @@ function PlayerStatePanel({
         </div>
       ) : null}
     </section>
+  );
+}
+
+function PlayerDataUploadPanel({
+  api,
+  playerKey,
+  lastImport,
+  onPlayerKeyChange,
+  onImportComplete,
+  onLoadPlayerState,
+  onBuildPlan,
+}: {
+  api: ReturnType<typeof createPlannerApiClient>;
+  playerKey: string;
+  lastImport: PlayerSourceUploadResult | null;
+  onPlayerKeyChange: (playerKey: string) => void;
+  onImportComplete: (result: PlayerSourceUploadResult) => void | Promise<void>;
+  onLoadPlayerState: () => void;
+  onBuildPlan: () => void;
+}) {
+  const [files, setFiles] = useState<PlayerSourceFiles>({});
+  const [result, setResult] = useState<PlayerSourceUploadResult | null>(lastImport);
+  const [message, setMessage] = useState<string | null>(null);
+  const [loading, setLoading] = useState<"preview" | "import" | null>(null);
+
+  useEffect(() => {
+    setResult(lastImport);
+  }, [lastImport]);
+
+  const hasFiles = Boolean(files.good || files.weapons || files.hoyolab);
+
+  async function preview() {
+    await runUpload("preview");
+  }
+
+  async function importFiles() {
+    await runUpload("import");
+  }
+
+  async function runUpload(mode: "preview" | "import") {
+    setMessage(null);
+
+    if (!hasFiles) {
+      setMessage("Select at least one JSON source file.");
+      return;
+    }
+
+    setLoading(mode);
+    try {
+      const uploadResult =
+        mode === "preview"
+          ? await api.previewPlayerSourceFiles(playerKey, files)
+          : await api.importPlayerSourceFiles(playerKey, files);
+      setResult(uploadResult);
+      await onImportComplete(uploadResult);
+    } catch (error) {
+      setMessage(readableError(error));
+    } finally {
+      setLoading(null);
+    }
+  }
+
+  function setFile(field: keyof PlayerSourceFiles, fileList: FileList | null) {
+    setFiles((current) => ({ ...current, [field]: fileList?.[0] ?? null }));
+  }
+
+  return (
+    <section className="upload-panel">
+      <h2>Update player data</h2>
+      <div className="form-grid compact">
+        <label>
+          Player key
+          <input value={playerKey} onChange={(event) => onPlayerKeyChange(event.target.value)} />
+        </label>
+        <label>
+          GOOD / good.json
+          <input type="file" accept=".json,application/json,text/plain" onChange={(event) => setFile("good", event.target.files)} />
+        </label>
+        <label>
+          weapons.json
+          <input type="file" accept=".json,application/json,text/plain" onChange={(event) => setFile("weapons", event.target.files)} />
+        </label>
+        <label>
+          hoyolab_profile.json
+          <input type="file" accept=".json,application/json,text/plain" onChange={(event) => setFile("hoyolab", event.target.files)} />
+        </label>
+      </div>
+      <div className="button-row">
+        <button type="button" className="secondary" onClick={preview} disabled={loading !== null}>
+          {loading === "preview" ? "Previewing..." : "Preview"}
+        </button>
+        <button type="button" onClick={importFiles} disabled={loading !== null}>
+          {loading === "import" ? "Importing..." : "Import"}
+        </button>
+        <button type="button" className="ghost" onClick={onLoadPlayerState}>
+          Load player state
+        </button>
+        <button type="button" className="ghost" onClick={onBuildPlan}>
+          Build plan
+        </button>
+      </div>
+      {message ? <p className="warning-text">{message}</p> : null}
+      {result ? <PlayerDataUploadSummary result={result} /> : null}
+    </section>
+  );
+}
+
+function PlayerDataUploadSummary({ result }: { result: PlayerSourceUploadResult }) {
+  return (
+    <div className="state-summary upload-summary">
+      <strong>{result.dryRun ? "Preview complete" : "Import complete"}</strong>
+      <span>materials: {formatTriple(result.importSummary.materialsParsed, result.importSummary.materialsResolved, result.importSummary.materialsUnresolved)}</span>
+      <span>weapons: {formatTriple(result.importSummary.weaponsParsed, result.importSummary.weaponsResolved, result.importSummary.weaponsUnresolved)}</span>
+      <span>
+        HoYoLAB characters:{" "}
+        {formatTriple(
+          result.importSummary.hoyolabCharactersParsed,
+          result.importSummary.hoyolabCharactersResolved,
+          result.importSummary.hoyolabCharactersUnresolved,
+        )}
+      </span>
+      {result.playerStateSummary ? (
+        <span>
+          state: {result.playerStateSummary.characters} characters, {result.playerStateSummary.weapons} weapons, {result.playerStateSummary.artifacts} artifacts
+        </span>
+      ) : null}
+      {result.files.map((file) => (
+        <span key={`${file.field}-${file.originalName}`}>
+          {file.field}: {file.originalName} ({file.size} bytes)
+        </span>
+      ))}
+      {[...result.warnings, ...result.files.flatMap((file) => file.warnings)].map((warning) => (
+        <span className="warning-text" key={warning}>
+          {warning}
+        </span>
+      ))}
+    </div>
   );
 }
 
@@ -706,6 +860,10 @@ function formatDirectEffective(material: PlannerMaterial): string {
   }
 
   return `${material.directOwned ?? material.owned}/${material.effectiveOwned ?? material.owned}`;
+}
+
+function formatTriple(parsed: number, resolved: number, unresolved: number): string {
+  return `${parsed} parsed, ${resolved} resolved, ${unresolved} unresolved`;
 }
 
 function readableError(error: unknown): string {

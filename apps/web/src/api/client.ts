@@ -255,6 +255,43 @@ export interface PlayerStateResult {
   warnings: string[];
 }
 
+export interface PlayerSourceFiles {
+  good?: File | Blob | null;
+  weapons?: File | Blob | null;
+  hoyolab?: File | Blob | null;
+}
+
+export interface PlayerSourceUploadResult {
+  player: { id: number; stableKey: string };
+  dryRun: boolean;
+  files: Array<{
+    field: "good" | "weapons" | "hoyolab";
+    originalName: string;
+    size: number;
+    accepted: boolean;
+    warnings: string[];
+  }>;
+  importSummary: {
+    sourceFilesProcessed: string[];
+    materialsParsed: number;
+    materialsResolved: number;
+    materialsUnresolved: number;
+    weaponsParsed: number;
+    weaponsResolved: number;
+    weaponsUnresolved: number;
+    hoyolabCharactersParsed: number;
+    hoyolabCharactersResolved: number;
+    hoyolabCharactersUnresolved: number;
+  };
+  playerStateSummary?: {
+    characters: number;
+    weapons: number;
+    artifacts: number;
+    inventorySnapshotId?: number;
+  };
+  warnings: string[];
+}
+
 export class PlannerApiError extends Error {
   constructor(
     message: string,
@@ -304,6 +341,16 @@ export function createPlannerApiClient(baseUrl = getDefaultBaseUrl()) {
         baseUrl,
         `/player/${encodeURIComponent(playerKey)}/characters/${encodeURIComponent(characterKey)}/state`,
       ),
+    previewPlayerSourceFiles: (playerKey: string, files: PlayerSourceFiles) =>
+      request<PlayerSourceUploadResult>(baseUrl, `/player/${encodeURIComponent(playerKey)}/import/source-files/preview`, {
+        method: "POST",
+        body: buildPlayerSourceUploadFormData(files),
+      }),
+    importPlayerSourceFiles: (playerKey: string, files: PlayerSourceFiles) =>
+      request<PlayerSourceUploadResult>(baseUrl, `/player/${encodeURIComponent(playerKey)}/import/source-files`, {
+        method: "POST",
+        body: buildPlayerSourceUploadFormData(files),
+      }),
     listInventoryOverrides: (playerKey: string) =>
       request<ManualInventoryOverrideRecord[]>(baseUrl, `/player/${encodeURIComponent(playerKey)}/inventory/overrides`),
     upsertInventoryOverride: (playerKey: string, materialKey: string, payload: ManualInventoryOverridePayload) =>
@@ -319,6 +366,16 @@ export function createPlannerApiClient(baseUrl = getDefaultBaseUrl()) {
         { method: "DELETE" },
       ),
   };
+}
+
+export function buildPlayerSourceUploadFormData(files: PlayerSourceFiles): FormData {
+  const formData = new FormData();
+
+  appendFile(formData, "good", files.good);
+  appendFile(formData, "weapons", files.weapons);
+  appendFile(formData, "hoyolab", files.hoyolab);
+
+  return formData;
 }
 
 function getDefaultBaseUrl(): string {
@@ -337,8 +394,8 @@ async function request<T>(
   try {
     response = await fetch(`${baseUrl}${path}`, {
       method: options.method ?? "GET",
-      headers: options.body === undefined ? undefined : { "content-type": "application/json" },
-      body: options.body === undefined ? undefined : JSON.stringify(options.body),
+      headers: buildHeaders(options.body),
+      body: buildBody(options.body),
     });
   } catch (error) {
     throw new PlannerApiError(`Backend unavailable at ${baseUrl}`, 0, "BACKEND_UNAVAILABLE", error);
@@ -357,4 +414,37 @@ async function request<T>(
   }
 
   return data as T;
+}
+
+function appendFile(formData: FormData, field: string, file: File | Blob | null | undefined): void {
+  if (!file) {
+    return;
+  }
+
+  if ("name" in file && typeof file.name === "string") {
+    formData.append(field, file, file.name);
+    return;
+  }
+
+  formData.append(field, file, `${field}.json`);
+}
+
+function buildHeaders(body: unknown): HeadersInit | undefined {
+  if (body === undefined || body instanceof FormData) {
+    return undefined;
+  }
+
+  return { "content-type": "application/json" };
+}
+
+function buildBody(body: unknown): BodyInit | undefined {
+  if (body === undefined) {
+    return undefined;
+  }
+
+  if (body instanceof FormData) {
+    return body;
+  }
+
+  return JSON.stringify(body);
 }

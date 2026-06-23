@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { createApp, type ApiServices } from "../../src/api/createApp.js";
+import { PlayerSourceUploadService } from "../../src/api/services/PlayerSourceUploadService.js";
 
 const requirementPayload = {
   characterKey: "char_furina",
@@ -255,6 +256,11 @@ function mockServices(): ApiServices {
         };
       },
     },
+    playerSourceUpload: {
+      async handleUpload() {
+        return toUploadApiResult({ dryRun: true });
+      },
+    },
   };
 }
 
@@ -463,3 +469,197 @@ describe("local Fastify API", () => {
     expect(del.json()).toMatchObject({ active: false });
   });
 });
+
+describe("player source file uploads", () => {
+  it("preview accepts a synthetic GOOD file", async () => {
+    const { services } = uploadServices();
+    const app = await createApp({ services });
+    const response = await app.inject(multipartRequest("/player/default/import/source-files/preview", [
+      filePart("good", "good.json", JSON.stringify({ format: "GOOD", materials: { Mora: 1 } })),
+    ]));
+
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({
+      dryRun: true,
+      files: [{ field: "good", originalName: "good.json", accepted: true }],
+      importSummary: { materialsParsed: 1 },
+    });
+    expect(JSON.stringify(response.json())).not.toContain("\"Mora\":1");
+  });
+
+  it("preview accepts a synthetic weapons file", async () => {
+    const { services } = uploadServices();
+    const app = await createApp({ services });
+    const response = await app.inject(multipartRequest("/player/default/import/source-files/preview", [
+      filePart("weapons", "weapons.json", JSON.stringify({ weapons: [{ key: "test_sword" }] })),
+    ]));
+
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({ importSummary: { weaponsParsed: 1 } });
+  });
+
+  it("preview accepts a synthetic HoYoLAB profile file", async () => {
+    const { services } = uploadServices();
+    const app = await createApp({ services });
+    const response = await app.inject(multipartRequest("/player/default/import/source-files/preview", [
+      filePart("hoyolab", "hoyolab_profile.json", JSON.stringify({ source: "hoyolab_calculator", characters: { furina: {} } })),
+    ]));
+
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({ importSummary: { hoyolabCharactersParsed: 1 } });
+  });
+
+  it("preview with invalid JSON returns a structured validation error", async () => {
+    const { services } = uploadServices();
+    const app = await createApp({ services });
+    const response = await app.inject(multipartRequest("/player/default/import/source-files/preview", [
+      filePart("good", "good.json", "{nope"),
+    ]));
+
+    expect(response.statusCode).toBe(400);
+    expect(response.json()).toMatchObject({ error: { code: "DOMAIN_ERROR" } });
+  });
+
+  it("upload with no files returns a validation error", async () => {
+    const { services } = uploadServices();
+    const app = await createApp({ services });
+    const response = await app.inject(multipartRequest("/player/default/import/source-files/preview", []));
+
+    expect(response.statusCode).toBe(400);
+    expect(response.json()).toMatchObject({ error: { code: "DOMAIN_ERROR" } });
+  });
+
+  it("import endpoint calls the import service with dryRun false", async () => {
+    const { services, calls } = uploadServices();
+    const app = await createApp({ services });
+    const response = await app.inject(multipartRequest("/player/default/import/source-files", [
+      filePart("good", "good.json", JSON.stringify({ format: "GOOD", materials: { Mora: 1 } })),
+    ]));
+
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({ dryRun: false, playerStateSummary: { characters: 2, weapons: 1, artifacts: 3 } });
+    expect(calls[0]).toMatchObject({ playerStableKey: "default", dryRun: false });
+    expect(calls[0]?.goodFile).toMatch(/good\.json$/);
+  });
+
+  it("rejects unsupported file content types", async () => {
+    const { services } = uploadServices();
+    const app = await createApp({ services });
+    const response = await app.inject(multipartRequest("/player/default/import/source-files/preview", [
+      filePart("good", "good.json", JSON.stringify({ format: "GOOD", materials: {} }), "image/png"),
+    ]));
+
+    expect(response.statusCode).toBe(400);
+    expect(response.json()).toMatchObject({ error: { code: "DOMAIN_ERROR" } });
+  });
+});
+
+function toUploadApiResult(options: { dryRun: boolean; sourceFilesProcessed?: string[] }) {
+  return {
+    player: { id: options.dryRun ? 0 : 1, stableKey: "default" },
+    dryRun: options.dryRun,
+    files: [],
+    importSummary: {
+      sourceFilesProcessed: options.sourceFilesProcessed ?? [],
+      materialsParsed: 0,
+      materialsResolved: 0,
+      materialsUnresolved: 0,
+      weaponsParsed: 0,
+      weaponsResolved: 0,
+      weaponsUnresolved: 0,
+      hoyolabCharactersParsed: 0,
+      hoyolabCharactersResolved: 0,
+      hoyolabCharactersUnresolved: 0,
+    },
+    warnings: [],
+  };
+}
+
+function uploadServices() {
+  const calls: Array<{ playerStableKey: string; dryRun?: boolean; goodFile?: string; weaponsFile?: string; hoyolabFile?: string }> = [];
+  const importService = {
+    async importSources(input: { playerStableKey: string; dryRun?: boolean; goodFile?: string; weaponsFile?: string; hoyolabFile?: string }) {
+      calls.push(input);
+      return {
+        player: { id: input.dryRun ? null : 1, stableKey: input.playerStableKey },
+        dryRun: input.dryRun ?? false,
+        sourceFilesProcessed: [input.goodFile, input.weaponsFile, input.hoyolabFile].filter(Boolean) as string[],
+        materialsParsed: input.goodFile ? 1 : 0,
+        materialsResolved: input.goodFile ? 1 : 0,
+        materialsUnresolved: 0,
+        goodCharactersParsed: 0,
+        goodCharactersResolved: 0,
+        goodCharactersUnresolved: 0,
+        goodArtifactsParsed: 0,
+        weaponsParsed: input.weaponsFile ? 1 : 0,
+        weaponsResolved: input.weaponsFile ? 1 : 0,
+        weaponsUnresolved: 0,
+        hoyolabCharactersParsed: input.hoyolabFile ? 1 : 0,
+        hoyolabCharactersResolved: input.hoyolabFile ? 1 : 0,
+        hoyolabCharactersUnresolved: 0,
+        warnings: [],
+        examples: { resolvedMaterials: [], unresolvedMaterials: [], weapons: [], characters: [] },
+      };
+    },
+  };
+  const playerState = {
+    async build() {
+      return {
+        player: { id: 1, stableKey: "default" },
+        characters: [
+          { character: { key: "furina" }, talents: {}, equippedArtifacts: [], sources: {}, conflicts: [], warnings: [] },
+          { character: { key: "skirk" }, talents: {}, equippedArtifacts: [], sources: {}, conflicts: [], warnings: [] },
+        ],
+        sourceSummary: { goodCharacters: 1, hoyolabCharacters: 1, weapons: 1, artifacts: 3 },
+        warnings: [],
+      };
+    },
+    async getCharacterState() {
+      return {
+        character: { id: 37, stableKey: "char_furina", key: "furina", name: "Furina" },
+        level: 80,
+        ascension: 5,
+        constellation: 1,
+        talents: { normal: 1, skill: 9, burst: 9 },
+        equippedArtifacts: [],
+        sources: { level: "hoyolab_profile", ascension: "inventory-kamera-good" },
+        conflicts: [],
+        warnings: [],
+      };
+    },
+  };
+
+  return {
+    calls,
+    services: {
+      playerSourceUpload: new PlayerSourceUploadService(importService, playerState),
+      playerState,
+    } satisfies Partial<ApiServices>,
+  };
+}
+
+function multipartRequest(url: string, parts: Array<{ field: string; filename: string; contentType: string; body: string }>) {
+  const boundary = `----genshin-agent-${Math.random().toString(16).slice(2)}`;
+  const payload = [
+    ...parts.flatMap((part) => [
+      `--${boundary}`,
+      `Content-Disposition: form-data; name="${part.field}"; filename="${part.filename}"`,
+      `Content-Type: ${part.contentType}`,
+      "",
+      part.body,
+    ]),
+    `--${boundary}--`,
+    "",
+  ].join("\r\n");
+
+  return {
+    method: "POST" as const,
+    url,
+    headers: { "content-type": `multipart/form-data; boundary=${boundary}` },
+    payload,
+  };
+}
+
+function filePart(field: string, filename: string, body: string, contentType = "application/json") {
+  return { field, filename, contentType, body };
+}

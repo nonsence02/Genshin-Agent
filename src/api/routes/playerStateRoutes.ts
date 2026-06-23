@@ -7,6 +7,7 @@ import {
   playerCharacterKeyParamsSchema,
   playerKeyParamsSchema,
   playerMaterialKeyParamsSchema,
+  playerSourceUploadQuerySchema,
   playerStateQuerySchema,
 } from "../schemas.js";
 
@@ -41,6 +42,30 @@ export async function registerPlayerStateRoutes(app: FastifyInstance, services: 
       playerKey: params.playerKey,
       characterKey: params.characterKey,
       includeArtifacts: query.includeArtifacts,
+    });
+  });
+
+  app.post("/player/:playerKey/import/source-files/preview", async (request) => {
+    const params = parseWithSchema(playerKeyParamsSchema, request.params);
+    const query = parseWithSchema(playerSourceUploadQuerySchema, request.query);
+
+    return services.playerSourceUpload.handleUpload({
+      playerKey: params.playerKey,
+      parts: request.files(),
+      dryRun: true,
+      keepTemp: query.keepTemp,
+    });
+  });
+
+  app.post("/player/:playerKey/import/source-files", async (request) => {
+    const params = parseWithSchema(playerKeyParamsSchema, request.params);
+    const query = parseWithSchema(playerSourceUploadQuerySchema, request.query);
+
+    return services.playerSourceUpload.handleUpload({
+      playerKey: params.playerKey,
+      parts: request.files(),
+      dryRun: query.dryRun,
+      keepTemp: query.keepTemp,
     });
   });
 

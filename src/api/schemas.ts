@@ -44,6 +44,11 @@ export const playerStateQuerySchema = z.object({
   characterKey: nonEmptyString.optional(),
 });
 
+export const playerSourceUploadQuerySchema = z.object({
+  dryRun: booleanQuerySchema.default(false),
+  keepTemp: booleanQuerySchema.default(false),
+});
+
 export const materialSourcesQuerySchema = z.object({
   includeCalendar: booleanQuerySchema.default(true),
 });
