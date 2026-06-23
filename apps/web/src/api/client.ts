@@ -23,6 +23,7 @@ export interface CharacterDiffPayload extends CharacterRequirementsPayload {
   useCrafting?: boolean;
   allowDustOfAzoth?: boolean;
   allowDreamSolvent?: boolean;
+  includeManualOverrides?: boolean;
 }
 
 export interface CharacterPlanPayload extends CharacterDiffPayload {
@@ -53,6 +54,11 @@ export interface PlannerMaterial {
   missing: number;
   missingBeforeCrafting?: number;
   missingAfterCrafting?: number;
+  snapshotOwned?: number;
+  effectiveOwnedBeforeCrafting?: number;
+  overrideMode?: "absolute" | "delta";
+  overrideQuantity?: number;
+  overrideActive?: boolean;
   status: "satisfied" | "missing";
   sources?: string[];
 }
@@ -89,6 +95,7 @@ export interface InventoryDiffResult {
   materials: PlannerMaterial[];
   craftingActions?: CraftingAction[];
   conversionActions?: CraftingAction[];
+  overridesApplied?: number;
   warnings: string[];
 }
 
@@ -141,6 +148,36 @@ export interface CharacterRequirementResult {
   warnings: string[];
 }
 
+export interface ManualInventoryOverridePayload {
+  mode: "absolute" | "delta";
+  quantity: number;
+  reason?: string;
+}
+
+export interface ManualInventoryOverrideRecord {
+  id: number;
+  material: { id: number; stableKey: string; name: string };
+  mode: "absolute" | "delta";
+  quantity: number;
+  reason?: string;
+  active: boolean;
+}
+
+export interface EffectiveInventoryResult {
+  overridesApplied: number;
+  items: Array<{
+    materialId: number;
+    stableKey: string;
+    name: string;
+    snapshotQuantity: number;
+    overrideMode?: "absolute" | "delta";
+    overrideQuantity?: number;
+    effectiveQuantity: number;
+    overrideActive: boolean;
+  }>;
+  warnings: string[];
+}
+
 export class PlannerApiError extends Error {
   constructor(
     message: string,
@@ -171,6 +208,22 @@ export function createPlannerApiClient(baseUrl = getDefaultBaseUrl()) {
       request<ResinPlanResult>(baseUrl, "/planner/character/plan", { method: "POST", body: payload }),
     getLevelCosts: (currentLevel: number, targetLevel: number) =>
       request<unknown>(baseUrl, `/planner/level-costs?currentLevel=${currentLevel}&targetLevel=${targetLevel}`),
+    getEffectiveInventory: (playerKey: string) =>
+      request<EffectiveInventoryResult>(baseUrl, `/player/${encodeURIComponent(playerKey)}/inventory/effective`),
+    listInventoryOverrides: (playerKey: string) =>
+      request<ManualInventoryOverrideRecord[]>(baseUrl, `/player/${encodeURIComponent(playerKey)}/inventory/overrides`),
+    upsertInventoryOverride: (playerKey: string, materialKey: string, payload: ManualInventoryOverridePayload) =>
+      request<ManualInventoryOverrideRecord>(
+        baseUrl,
+        `/player/${encodeURIComponent(playerKey)}/inventory/overrides/${encodeURIComponent(materialKey)}`,
+        { method: "PUT", body: payload },
+      ),
+    deleteInventoryOverride: (playerKey: string, materialKey: string) =>
+      request<ManualInventoryOverrideRecord>(
+        baseUrl,
+        `/player/${encodeURIComponent(playerKey)}/inventory/overrides/${encodeURIComponent(materialKey)}`,
+        { method: "DELETE" },
+      ),
   };
 }
 

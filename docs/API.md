@@ -26,6 +26,11 @@ Environment variables:
 - `POST /planner/character/requirements`
 - `POST /planner/character/diff`
 - `POST /planner/character/plan`
+- `GET /player/:playerKey/inventory/effective?snapshotId=2&includeManualOverrides=true`
+- `GET /player/:playerKey/inventory/overrides`
+- `PUT /player/:playerKey/inventory/overrides/:materialKey`
+- `DELETE /player/:playerKey/inventory/overrides/:materialKey`
+- `POST /player/:playerKey/inventory/overrides/clear`
 
 ## Examples
 
@@ -70,6 +75,7 @@ curl -X POST http://127.0.0.1:3000/planner/character/diff \
     "withSources": true,
     "classify": true,
     "useCrafting": true,
+    "includeManualOverrides": true,
     "allowDustOfAzoth": false,
     "allowDreamSolvent": false
   }'
@@ -93,10 +99,23 @@ curl -X POST http://127.0.0.1:3000/planner/character/plan \
     "currentResin": 160,
     "discountedWeeklyBossClaimsUsed": 0,
     "useCrafting": true,
+    "includeManualOverrides": true,
     "allowDustOfAzoth": false,
     "allowDreamSolvent": false
   }'
 ```
+
+```bash
+curl http://127.0.0.1:3000/player/default/inventory/effective
+```
+
+```bash
+curl -X PUT http://127.0.0.1:3000/player/default/inventory/overrides/mat_heros_wit \
+  -H "content-type: application/json" \
+  -d '{ "mode": "absolute", "quantity": 40, "reason": "manual correction" }'
+```
+
+Manual inventory overrides are applied by default to planner diff and plan endpoints. Set `"includeManualOverrides": false` to use raw snapshot quantities. Overrides correct inventory state; crafting options are a separate virtual projection layer.
 
 Errors use a consistent JSON shape:
 

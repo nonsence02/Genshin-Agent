@@ -2,7 +2,9 @@ import { useMemo, useState } from "react";
 import {
   createPlannerApiClient,
   type CraftingAction,
+  type EffectiveInventoryResult,
   type InventoryDiffResult,
+  type ManualInventoryOverrideRecord,
   type PlannerApiError,
   type PlannerMaterial,
   type ResinPlanResult,
@@ -59,6 +61,7 @@ export function PlannerPage() {
         </div>
 
         <FormFields form={form} onChange={setForm} />
+        <ManualOverridesPanel api={api} playerKey={form.playerKey} />
 
         <div className="button-row">
           <button type="button" onClick={buildPlan} disabled={loading !== null}>
@@ -145,7 +148,125 @@ function FormFields({
       <CheckboxField label="Use crafting" checked={form.useCrafting} onChange={(value) => update("useCrafting", value)} />
       <CheckboxField label="Allow Dust of Azoth" checked={form.allowDustOfAzoth} onChange={(value) => update("allowDustOfAzoth", value)} />
       <CheckboxField label="Allow Dream Solvent" checked={form.allowDreamSolvent} onChange={(value) => update("allowDreamSolvent", value)} />
+      <CheckboxField
+        label="Apply manual inventory overrides"
+        checked={form.includeManualOverrides}
+        onChange={(value) => update("includeManualOverrides", value)}
+      />
     </form>
+  );
+}
+
+function ManualOverridesPanel({
+  api,
+  playerKey,
+}: {
+  api: ReturnType<typeof createPlannerApiClient>;
+  playerKey: string;
+}) {
+  const [materialKey, setMaterialKey] = useState("mat_heros_wit");
+  const [mode, setMode] = useState<"absolute" | "delta">("absolute");
+  const [quantity, setQuantity] = useState(40);
+  const [reason, setReason] = useState("manual correction");
+  const [overrides, setOverrides] = useState<ManualInventoryOverrideRecord[]>([]);
+  const [effectiveInventory, setEffectiveInventory] = useState<EffectiveInventoryResult | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
+
+  async function loadOverrides() {
+    setMessage(null);
+    try {
+      setOverrides(await api.listInventoryOverrides(playerKey));
+    } catch (error) {
+      setMessage(readableError(error));
+    }
+  }
+
+  async function saveOverride() {
+    setMessage(null);
+    try {
+      const saved = await api.upsertInventoryOverride(playerKey, materialKey, {
+        mode,
+        quantity,
+        reason: reason.trim() || undefined,
+      });
+      setMessage(`Saved ${saved.material.name}`);
+      await loadOverrides();
+    } catch (error) {
+      setMessage(readableError(error));
+    }
+  }
+
+  async function deleteOverride() {
+    setMessage(null);
+    try {
+      await api.deleteInventoryOverride(playerKey, materialKey);
+      setMessage(`Deleted override for ${materialKey}`);
+      await loadOverrides();
+    } catch (error) {
+      setMessage(readableError(error));
+    }
+  }
+
+  async function loadEffectiveInventory() {
+    setMessage(null);
+    try {
+      setEffectiveInventory(await api.getEffectiveInventory(playerKey));
+    } catch (error) {
+      setMessage(readableError(error));
+    }
+  }
+
+  return (
+    <section className="override-panel">
+      <h2>Manual inventory overrides</h2>
+      <div className="form-grid compact">
+        <label>
+          Material key
+          <input value={materialKey} onChange={(event) => setMaterialKey(event.target.value)} />
+        </label>
+        <label>
+          Mode
+          <select value={mode} onChange={(event) => setMode(event.target.value as "absolute" | "delta")}>
+            <option value="absolute">absolute</option>
+            <option value="delta">delta</option>
+          </select>
+        </label>
+        <NumberField label="Quantity" value={quantity} min={mode === "absolute" ? 0 : -9999} max={999999} onChange={setQuantity} />
+        <label>
+          Reason
+          <input value={reason} onChange={(event) => setReason(event.target.value)} />
+        </label>
+      </div>
+      <div className="button-row">
+        <button type="button" className="secondary" onClick={saveOverride}>
+          Save override
+        </button>
+        <button type="button" className="ghost" onClick={deleteOverride}>
+          Delete
+        </button>
+        <button type="button" className="ghost" onClick={loadOverrides}>
+          List
+        </button>
+        <button type="button" className="ghost" onClick={loadEffectiveInventory}>
+          Load effective inventory
+        </button>
+      </div>
+      {message ? <p className="warning-text">{message}</p> : null}
+      {overrides.length > 0 ? (
+        <ul className="override-list">
+          {overrides.map((override) => (
+            <li key={override.id}>
+              {override.material.name}: {override.mode} {override.quantity}; active={String(override.active)}
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {effectiveInventory ? (
+        <p className="muted">
+          Effective inventory loaded: {effectiveInventory.items.length} items, overrides applied {effectiveInventory.overridesApplied}
+        </p>
+      ) : null}
+    </section>
   );
 }
 
@@ -223,6 +344,7 @@ function SummaryPanel({ diff, plan }: { diff: InventoryDiffResult; plan: ResinPl
         <Metric label="Missing materials" value={String(plan?.summary.totalMissingMaterials ?? diff.summary.missingMaterials)} />
         <Metric label="Scheduled resin" value={String(plan?.summary.scheduledEstimatedResin ?? "diff only")} />
         <Metric label="Warnings" value={String((plan?.warnings ?? diff.warnings).length)} />
+        <Metric label="Overrides applied" value={String(diff.overridesApplied ?? 0)} />
       </div>
     </section>
   );

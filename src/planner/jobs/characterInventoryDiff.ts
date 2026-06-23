@@ -21,6 +21,7 @@ interface CliOptions {
   useCrafting: boolean;
   allowDustOfAzoth: boolean;
   allowDreamSolvent: boolean;
+  includeManualOverrides: boolean;
 }
 
 type CharacterInventoryDiffCliResult = CharacterInventoryDiffResult & {
@@ -40,6 +41,7 @@ function parseOptions(args: string[]): CliOptions {
     useCrafting: false,
     allowDustOfAzoth: false,
     allowDreamSolvent: false,
+    includeManualOverrides: true,
   };
 
   for (let index = 0; index < args.length; index += 1) {
@@ -61,6 +63,8 @@ function parseOptions(args: string[]): CliOptions {
       options.allowDustOfAzoth = true;
     } else if (arg === "--allow-dream-solvent") {
       options.allowDreamSolvent = true;
+    } else if (arg === "--no-manual-overrides") {
+      options.includeManualOverrides = false;
     } else if (arg === "--player") {
       options.playerKey = readString(args, ++index, arg);
     } else if (arg === "--character") {
@@ -131,6 +135,7 @@ function printReadable(result: CharacterInventoryDiffCliResult, onlyMissing: boo
   console.log(
     `Inventory snapshot: #${result.inventorySnapshot.id} ${result.inventorySnapshot.source} ${result.inventorySnapshot.createdAt}`,
   );
+  console.log(`Manual overrides applied: ${result.overridesApplied ?? 0}`);
   console.log(
     `Goal: level ${result.goal.currentLevel}->${result.goal.targetLevel}; talents normal ${result.goal.currentTalents.normal}->${result.goal.targetTalents.normal}, skill ${result.goal.currentTalents.skill}->${result.goal.targetTalents.skill}, burst ${result.goal.currentTalents.burst}->${result.goal.targetTalents.burst}`,
   );
@@ -299,6 +304,7 @@ try {
       useCrafting: options.useCrafting,
       allowDustOfAzoth: options.allowDustOfAzoth,
       allowDreamSolvent: options.allowDreamSolvent,
+      includeManualOverrides: options.includeManualOverrides,
     })
     .then((result) => (options.withSources || options.classify ? addSourceLookups(result) : result))
     .then((result) => (options.classify ? addClassifications(result) : result))

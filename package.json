@@ -17,6 +17,7 @@
     "import:genshin-db": "tsx src/ingestion/jobs/import-genshin-db.ts",
     "import:inventory": "tsx src/ingestion/jobs/import-inventory.ts",
     "import:player-sources": "tsx src/ingestion/jobs/import-player-sources.ts",
+    "inventory:overrides": "tsx src/player-state/jobs/inventoryOverrides.ts",
     "inspect:knowledge": "tsx src/ingestion/jobs/inspectKnowledge.ts",
     "normalize:game-data": "tsx src/ingestion/jobs/normalizeGameData.ts",
     "requirements:character": "tsx src/planner/jobs/characterRequirements.ts",

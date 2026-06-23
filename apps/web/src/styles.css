@@ -14,7 +14,8 @@ body {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -76,6 +77,14 @@ input {
   color: #17202b;
 }
 
+select {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #bcc8d4;
+  border-radius: 6px;
+  background: white;
+}
+
 .checkbox-field {
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -92,6 +101,27 @@ input {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 18px;
+}
+
+.override-panel {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #d6dee7;
+}
+
+.override-panel h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.form-grid.compact {
+  margin-top: 0;
+}
+
+.override-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: #405062;
 }
 
 button {

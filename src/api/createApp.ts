@@ -6,9 +6,12 @@ import { InventoryDiffService } from "../planner/services/InventoryDiffService.j
 import { MaterialDemandClassifier } from "../planner/services/MaterialDemandClassifier.js";
 import { MaterialSourceService } from "../planner/services/MaterialSourceService.js";
 import { ResinPlanService } from "../planner/services/ResinPlanService.js";
+import { EffectiveInventoryService } from "../player-state/services/EffectiveInventoryService.js";
+import { ManualInventoryOverrideService } from "../player-state/services/ManualInventoryOverrideService.js";
 import { installErrorHandlers } from "./errors.js";
 import { registerHealthRoutes } from "./routes/healthRoutes.js";
 import { registerMaterialRoutes } from "./routes/materialRoutes.js";
+import { registerPlayerStateRoutes } from "./routes/playerStateRoutes.js";
 import { registerPlannerRoutes } from "./routes/plannerRoutes.js";
 
 export interface ApiServices {
@@ -18,6 +21,8 @@ export interface ApiServices {
   inventoryDiff: Pick<InventoryDiffService, "diffCharacter">;
   resinPlan: Pick<ResinPlanService, "plan">;
   levelCosts: Pick<CharacterLevelCostService, "calculate">;
+  effectiveInventory: Pick<EffectiveInventoryService, "resolve">;
+  manualInventoryOverrides: Pick<ManualInventoryOverrideService, "listOverrides" | "upsertOverride" | "deactivateOverride" | "clearOverrides">;
 }
 
 export interface CreateAppOptions {
@@ -36,6 +41,7 @@ export async function createApp(options: CreateAppOptions = {}): Promise<Fastify
   installErrorHandlers(app);
   await registerHealthRoutes(app);
   await registerMaterialRoutes(app, services);
+  await registerPlayerStateRoutes(app, services);
   await registerPlannerRoutes(app, services);
   registerOpenApiRoute(app);
 
@@ -50,6 +56,8 @@ function createServices(overrides: Partial<ApiServices> | undefined): ApiService
     inventoryDiff: overrides?.inventoryDiff ?? new InventoryDiffService(),
     resinPlan: overrides?.resinPlan ?? new ResinPlanService(),
     levelCosts: overrides?.levelCosts ?? new CharacterLevelCostService(),
+    effectiveInventory: overrides?.effectiveInventory ?? new EffectiveInventoryService(),
+    manualInventoryOverrides: overrides?.manualInventoryOverrides ?? new ManualInventoryOverrideService(),
   };
 }
 
@@ -87,6 +95,9 @@ function registerOpenApiRoute(app: FastifyInstance): void {
       "/planner/character/requirements": { post: { summary: "Calculate deterministic character requirements" } },
       "/planner/character/diff": { post: { summary: "Compare character requirements against player inventory" } },
       "/planner/character/plan": { post: { summary: "Build a deterministic resin farming plan" } },
+      "/player/{playerKey}/inventory/effective": { get: { summary: "Resolve snapshot inventory with manual overrides" } },
+      "/player/{playerKey}/inventory/overrides": { get: { summary: "List manual inventory overrides" } },
+      "/player/{playerKey}/inventory/overrides/{materialKey}": { put: { summary: "Create or update a manual inventory override" } },
     },
   }));
 }

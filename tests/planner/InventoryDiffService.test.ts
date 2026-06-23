@@ -10,9 +10,11 @@ import {
   type DiffPlayerCharacter,
   type InventoryDiffRepository,
   type RequirementCalculator,
+  type InventoryDiffEffectiveInventoryService,
 } from "../../src/planner/services/InventoryDiffService.js";
 import type { CharacterRequirementInput, CharacterRequirementResult } from "../../src/planner/services/CharacterRequirementService.js";
 import { MaterialSourceService, type MaterialSourceLookupResult } from "../../src/planner/services/MaterialSourceService.js";
+import type { EffectiveInventoryResult } from "../../src/player-state/services/EffectiveInventoryService.js";
 
 class MockInventoryDiffRepository implements InventoryDiffRepository {
   player: DiffPlayer | null = { id: 1, stableKey: "default" };
@@ -121,6 +123,74 @@ class MockRequirementCalculator implements RequirementCalculator {
   }
 }
 
+class MockEffectiveInventoryService implements InventoryDiffEffectiveInventoryService {
+  overrides = new Map<number, { mode: "absolute" | "delta"; quantity: number }>();
+  lastIncludeManualOverrides: boolean | undefined;
+
+  constructor(private readonly repository: MockInventoryDiffRepository) {}
+
+  async resolve(input: { playerKey: string; inventorySnapshotId?: number; includeManualOverrides?: boolean }): Promise<EffectiveInventoryResult> {
+    this.lastIncludeManualOverrides = input.includeManualOverrides;
+    const player = await this.repository.findPlayerByStableKey(input.playerKey);
+    const snapshot =
+      input.inventorySnapshotId === undefined
+        ? await this.repository.findLatestInventorySnapshot()
+        : await this.repository.findInventorySnapshotById(player?.id ?? 0, input.inventorySnapshotId);
+
+    if (!player) {
+      throw new Error(`Player not found: ${input.playerKey}`);
+    }
+    if (!snapshot) {
+      throw new Error("No inventory snapshot found for player");
+    }
+
+    const snapshotQuantities = new Map<number, number>();
+    for (const item of await this.repository.listInventoryItems(snapshot.id)) {
+      if (item.materialId === null) {
+        continue;
+      }
+      snapshotQuantities.set(item.materialId, (snapshotQuantities.get(item.materialId) ?? 0) + item.quantity);
+    }
+
+    const materialIds = new Set([...snapshotQuantities.keys()]);
+    if (input.includeManualOverrides !== false) {
+      for (const materialId of this.overrides.keys()) {
+        materialIds.add(materialId);
+      }
+    }
+
+    const items = [...materialIds].map((materialId) => {
+      const snapshotQuantity = snapshotQuantities.get(materialId) ?? 0;
+      const override = input.includeManualOverrides === false ? undefined : this.overrides.get(materialId);
+      const rawEffective =
+        override === undefined
+          ? snapshotQuantity
+          : override.mode === "absolute"
+            ? override.quantity
+            : snapshotQuantity + override.quantity;
+
+      return {
+        materialId,
+        stableKey: materialKeyById(materialId),
+        name: materialNameById(materialId),
+        snapshotQuantity,
+        overrideMode: override?.mode,
+        overrideQuantity: override?.quantity,
+        effectiveQuantity: Math.max(0, rawEffective),
+        overrideActive: override !== undefined,
+      };
+    });
+
+    return {
+      player,
+      snapshot: { id: snapshot.id, source: snapshot.source, createdAt: snapshot.capturedAt.toISOString() },
+      items,
+      overridesApplied: input.includeManualOverrides === false ? 0 : this.overrides.size,
+      warnings: [],
+    };
+  }
+}
+
 class CraftingRequirementCalculator implements RequirementCalculator {
   async calculate(input: CharacterRequirementInput): Promise<CharacterRequirementResult> {
     return {
@@ -163,7 +233,8 @@ function setup(): {
 } {
   const repository = new MockInventoryDiffRepository();
   const requirements = new MockRequirementCalculator();
-  const service = new InventoryDiffService(repository, requirements);
+  const effectiveInventory = new MockEffectiveInventoryService(repository);
+  const service = new InventoryDiffService(repository, requirements, undefined, undefined, undefined, effectiveInventory);
 
   return { repository, requirements, service };
 }
@@ -225,6 +296,7 @@ describe("InventoryDiffService", () => {
       undefined,
       undefined,
       new EmptyMaterialSourceService(),
+      new MockEffectiveInventoryService(repository),
     );
 
     const result = await service.diffCharacter({
@@ -247,6 +319,81 @@ describe("InventoryDiffService", () => {
     expect(result.craftingActions?.[0]).toMatchObject({
       inputMaterialKey: "mat_teachings_of_justice",
       outputMaterialKey: "mat_guide_to_justice",
+    });
+  });
+
+  it("uses effective inventory with manual overrides by default", async () => {
+    const repository = new MockInventoryDiffRepository();
+    const requirements = new MockRequirementCalculator();
+    const effectiveInventory = new MockEffectiveInventoryService(repository);
+    effectiveInventory.overrides.set(4, { mode: "absolute", quantity: 40 });
+    const service = new InventoryDiffService(repository, requirements, undefined, undefined, undefined, effectiveInventory);
+
+    const result = await service.diffCharacter({
+      playerKey: "default",
+      characterKey: "char_furina",
+      currentLevel: 20,
+      targetLevel: 90,
+    });
+
+    expect(result.overridesApplied).toBe(1);
+    expect(result.materials.find((material) => material.stableKey === "mat_heros_wit")).toMatchObject({
+      snapshotOwned: 1,
+      effectiveOwnedBeforeCrafting: 40,
+      owned: 40,
+      missing: 0,
+      overrideMode: "absolute",
+      overrideQuantity: 40,
+    });
+  });
+
+  it("can disable manual overrides", async () => {
+    const repository = new MockInventoryDiffRepository();
+    const requirements = new MockRequirementCalculator();
+    const effectiveInventory = new MockEffectiveInventoryService(repository);
+    effectiveInventory.overrides.set(4, { mode: "absolute", quantity: 40 });
+    const service = new InventoryDiffService(repository, requirements, undefined, undefined, undefined, effectiveInventory);
+
+    const result = await service.diffCharacter({
+      playerKey: "default",
+      characterKey: "char_furina",
+      currentLevel: 20,
+      targetLevel: 90,
+      includeManualOverrides: false,
+    });
+
+    expect(result.overridesApplied).toBe(0);
+    expect(result.materials.find((material) => material.stableKey === "mat_heros_wit")).toMatchObject({
+      snapshotOwned: 1,
+      owned: 1,
+      missing: 1,
+    });
+  });
+
+  it("uses effective inventory as the crafting projection base", async () => {
+    const repository = new MockInventoryDiffRepository();
+    const effectiveInventory = new MockEffectiveInventoryService(repository);
+    effectiveInventory.overrides.set(5, { mode: "absolute", quantity: 3 });
+    const service = new InventoryDiffService(
+      repository,
+      new CraftingRequirementCalculator(),
+      undefined,
+      undefined,
+      new EmptyMaterialSourceService(),
+      effectiveInventory,
+    );
+
+    const result = await service.diffCharacter({
+      playerKey: "default",
+      characterKey: "char_furina",
+      currentLevel: 20,
+      targetLevel: 90,
+      useCrafting: true,
+    });
+
+    expect(result.craftingActions?.[0]).toMatchObject({
+      inputQuantity: 3,
+      outputQuantity: 1,
     });
   });
 
@@ -341,3 +488,29 @@ describe("InventoryDiffService", () => {
     ).rejects.toThrow(InventoryDiffError);
   });
 });
+
+function materialKeyById(materialId: number): string {
+  return (
+    {
+      1: "mat_mora",
+      2: "mat_lakelight_lily",
+      3: "mat_teachings_of_justice",
+      4: "mat_heros_wit",
+      5: "mat_teachings_of_justice",
+      6: "mat_guide_to_justice",
+    }[materialId] ?? `mat_${materialId}`
+  );
+}
+
+function materialNameById(materialId: number): string {
+  return (
+    {
+      1: "Mora",
+      2: "Lakelight Lily",
+      3: "Teachings of Justice",
+      4: "Hero's Wit",
+      5: "Teachings of Justice",
+      6: "Guide to Justice",
+    }[materialId] ?? `Material ${materialId}`
+  );
+}

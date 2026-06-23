@@ -18,6 +18,7 @@ export interface PlannerFormState {
   useCrafting: boolean;
   allowDustOfAzoth: boolean;
   allowDreamSolvent: boolean;
+  includeManualOverrides: boolean;
   discountedWeeklyBossClaimsUsed: number;
 }
 
@@ -39,6 +40,7 @@ export const furinaDefaults: PlannerFormState = {
   useCrafting: true,
   allowDustOfAzoth: false,
   allowDreamSolvent: false,
+  includeManualOverrides: true,
   discountedWeeklyBossClaimsUsed: 0,
 };
 
@@ -70,6 +72,7 @@ export function buildDiffPayload(form: PlannerFormState): CharacterDiffPayload {
     useCrafting: form.useCrafting,
     allowDustOfAzoth: form.allowDustOfAzoth,
     allowDreamSolvent: form.allowDreamSolvent,
+    includeManualOverrides: form.includeManualOverrides,
   };
 }
 

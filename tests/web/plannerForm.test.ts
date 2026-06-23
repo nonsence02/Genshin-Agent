@@ -23,6 +23,13 @@ describe("planner form payload builders", () => {
       useCrafting: true,
       allowDustOfAzoth: true,
       allowDreamSolvent: false,
+      includeManualOverrides: true,
+    });
+  });
+
+  it("can disable manual overrides in planner payload", () => {
+    expect(buildPlanPayload({ ...furinaDefaults, includeManualOverrides: false })).toMatchObject({
+      includeManualOverrides: false,
     });
   });
 

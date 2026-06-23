@@ -50,6 +50,23 @@ describe("planner API client", () => {
       message: "targetLevel must be valid",
     } satisfies Partial<PlannerApiError>);
   });
+
+  it("builds manual override upsert requests", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(jsonResponse({ ok: true }));
+    const client = createPlannerApiClient("http://api.test");
+
+    await client.upsertInventoryOverride("default", "mat_heros_wit", {
+      mode: "absolute",
+      quantity: 40,
+      reason: "manual correction",
+    });
+
+    expect(fetchMock).toHaveBeenCalledWith("http://api.test/player/default/inventory/overrides/mat_heros_wit", {
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ mode: "absolute", quantity: 40, reason: "manual correction" }),
+    });
+  });
 });
 
 function jsonResponse(body: unknown, status = 200): Response {

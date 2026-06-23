@@ -22,6 +22,15 @@ export const materialKeyParamsSchema = z.object({
   materialKey: nonEmptyString,
 });
 
+export const playerKeyParamsSchema = z.object({
+  playerKey: nonEmptyString,
+});
+
+export const playerMaterialKeyParamsSchema = z.object({
+  playerKey: nonEmptyString,
+  materialKey: nonEmptyString,
+});
+
 export const materialSourcesQuerySchema = z.object({
   includeCalendar: booleanQuerySchema.default(true),
 });
@@ -57,6 +66,7 @@ export const characterDiffBodySchema = characterRequirementsBodySchema
     useCrafting: z.boolean().optional(),
     allowDustOfAzoth: z.boolean().optional(),
     allowDreamSolvent: z.boolean().optional(),
+    includeManualOverrides: z.boolean().optional(),
   })
   .omit({ currentLevel: true })
   .extend({
@@ -70,4 +80,16 @@ export const characterPlanBodySchema = characterDiffBodySchema.extend({
   currentResin: z.coerce.number().int().min(0).max(2000).optional(),
   includeOpenWorld: z.boolean().optional(),
   discountedWeeklyBossClaimsUsed: z.coerce.number().int().min(0).max(3).optional(),
+});
+
+export const effectiveInventoryQuerySchema = z.object({
+  snapshotId: z.coerce.number().int().positive().optional(),
+  includeManualOverrides: booleanQuerySchema.default(true),
+});
+
+export const manualOverrideBodySchema = z.object({
+  mode: z.enum(["absolute", "delta"]),
+  quantity: z.coerce.number().int(),
+  reason: z.string().max(500).optional(),
+  active: z.boolean().optional(),
 });

@@ -79,6 +79,8 @@ function isDomainError(error: Error): boolean {
     "CharacterLevelCostError",
     "InventoryDiffError",
     "MaterialSourceError",
+    "EffectiveInventoryError",
+    "ManualInventoryOverrideError",
   ].includes(error.name);
 }
 

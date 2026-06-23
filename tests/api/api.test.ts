@@ -137,6 +137,73 @@ function mockServices(): ApiServices {
         };
       },
     },
+    effectiveInventory: {
+      async resolve(input) {
+        return {
+          player: { id: 1, stableKey: input.playerKey },
+          snapshot: { id: input.inventorySnapshotId ?? 2, source: "test", createdAt: "2026-06-23T00:00:00.000Z" },
+          items: [
+            {
+              materialId: 1,
+              stableKey: "mat_heros_wit",
+              name: "Hero's Wit",
+              snapshotQuantity: 26,
+              overrideMode: "absolute",
+              overrideQuantity: 40,
+              effectiveQuantity: 40,
+              overrideActive: true,
+            },
+          ],
+          overridesApplied: input.includeManualOverrides === false ? 0 : 1,
+          warnings: [],
+        };
+      },
+    },
+    manualInventoryOverrides: {
+      async listOverrides(playerKey) {
+        return [
+          {
+            id: 1,
+            player: { id: 1, stableKey: playerKey },
+            material: { id: 1, stableKey: "mat_heros_wit", name: "Hero's Wit" },
+            mode: "absolute",
+            quantity: 40,
+            reason: "manual correction",
+            active: true,
+            createdAt: "2026-06-23T00:00:00.000Z",
+            updatedAt: "2026-06-23T00:00:00.000Z",
+          },
+        ];
+      },
+      async upsertOverride(playerKey, materialKey, input) {
+        return {
+          id: 1,
+          player: { id: 1, stableKey: playerKey },
+          material: { id: 1, stableKey: materialKey, name: "Hero's Wit" },
+          mode: input.mode,
+          quantity: input.quantity,
+          reason: input.reason,
+          active: input.active ?? true,
+          createdAt: "2026-06-23T00:00:00.000Z",
+          updatedAt: "2026-06-23T00:00:00.000Z",
+        };
+      },
+      async deactivateOverride(playerKey, materialKey) {
+        return {
+          id: 1,
+          player: { id: 1, stableKey: playerKey },
+          material: { id: 1, stableKey: materialKey, name: "Hero's Wit" },
+          mode: "absolute",
+          quantity: 40,
+          active: false,
+          createdAt: "2026-06-23T00:00:00.000Z",
+          updatedAt: "2026-06-23T00:00:00.000Z",
+        };
+      },
+      async clearOverrides(playerKey) {
+        return { player: { id: 1, stableKey: playerKey }, deactivated: 1 };
+      },
+    },
   };
 }
 
@@ -255,5 +322,40 @@ describe("local Fastify API", () => {
 
     expect(response.statusCode).toBe(200);
     expect(response.json()).toMatchObject({ openapi: "3.1.0" });
+  });
+
+  it("returns effective inventory", async () => {
+    const app = await createApp({ services: mockServices() });
+    const response = await app.inject({ method: "GET", url: "/player/default/inventory/effective" });
+
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({ overridesApplied: 1, items: [{ effectiveQuantity: 40 }] });
+  });
+
+  it("validates override payload", async () => {
+    const app = await createApp({ services: mockServices() });
+    const response = await app.inject({
+      method: "PUT",
+      url: "/player/default/inventory/overrides/mat_heros_wit",
+      payload: { mode: "absolute", quantity: "not-a-number" },
+    });
+
+    expect(response.statusCode).toBe(400);
+    expect(response.json()).toMatchObject({ error: { code: "VALIDATION_ERROR" } });
+  });
+
+  it("upserts and deactivates manual overrides", async () => {
+    const app = await createApp({ services: mockServices() });
+    const put = await app.inject({
+      method: "PUT",
+      url: "/player/default/inventory/overrides/mat_heros_wit",
+      payload: { mode: "absolute", quantity: 40, reason: "manual correction" },
+    });
+    const del = await app.inject({ method: "DELETE", url: "/player/default/inventory/overrides/mat_heros_wit" });
+
+    expect(put.statusCode).toBe(200);
+    expect(put.json()).toMatchObject({ quantity: 40, active: true });
+    expect(del.statusCode).toBe(200);
+    expect(del.json()).toMatchObject({ active: false });
   });
 });

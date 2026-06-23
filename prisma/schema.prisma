@@ -412,13 +412,19 @@ model ManualInventoryOverride {
   id         Int      @id @default(autoincrement())
   playerId   Int
   materialId Int
+  mode       String   @default("absolute")
   quantity   Int
   reason     String?
+  active     Boolean  @default(true)
   createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  metadata   Json?
   player     Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
   material   Material @relation(fields: [materialId], references: [id])
 
   @@unique([playerId, materialId])
+  @@index([playerId, materialId])
+  @@index([playerId, active])
 }
 
 model PlayerGoal {

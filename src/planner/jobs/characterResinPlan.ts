@@ -29,6 +29,8 @@ function parseOptions(args: string[]): CliOptions {
       options.input.allowDustOfAzoth = true;
     } else if (arg === "--allow-dream-solvent") {
       options.input.allowDreamSolvent = true;
+    } else if (arg === "--no-manual-overrides") {
+      options.input.includeManualOverrides = false;
     } else if (arg === "--player") {
       options.input.playerKey = readString(args, ++index, arg);
     } else if (arg === "--character") {
@@ -111,6 +113,7 @@ function printReadable(result: ResinPlanResult): void {
   console.log(
     `Inventory snapshot: #${result.inventoryDiff.inventorySnapshot.id} ${result.inventoryDiff.inventorySnapshot.source} ${result.inventoryDiff.inventorySnapshot.createdAt}`,
   );
+  console.log(`Manual overrides applied: ${result.inventoryDiff.overridesApplied ?? 0}`);
   console.log(
     `Goal: level ${result.goal.currentLevel}->${result.goal.targetLevel}; talents normal ${result.goal.currentTalents.normal}->${result.goal.targetTalents.normal}, skill ${result.goal.currentTalents.skill}->${result.goal.targetTalents.skill}, burst ${result.goal.currentTalents.burst}->${result.goal.targetTalents.burst}`,
   );

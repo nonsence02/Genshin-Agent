@@ -1,6 +1,6 @@
 # UI Prototype
 
-The web UI prototype proves the local planning loop against the deterministic Fastify API. It lets a user enter a player, character, level and talent goals, toggle crafting options, request a plan, and inspect missing materials, crafting actions, resin schedule, open-world tasks, warnings, and raw JSON.
+The web UI prototype proves the local planning loop against the deterministic Fastify API. It lets a user enter a player, character, level and talent goals, toggle crafting/manual override options, request a plan, and inspect missing materials, crafting actions, resin schedule, open-world tasks, warnings, and raw JSON.
 
 It is intentionally local/dev only.
 
@@ -43,3 +43,4 @@ VITE_API_BASE_URL=http://127.0.0.1:3000 npm run web:dev
 - local/dev only;
 - character search/dropdowns are not implemented yet;
 - result display is a prototype over existing planner response shapes.
+- manual override material entry uses raw material keys; search/autocomplete is future work.

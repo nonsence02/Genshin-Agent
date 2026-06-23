@@ -9,6 +9,7 @@ import {
 import { CraftingRuleService, type CraftingRuleMaterial } from "./CraftingRuleService.js";
 import { InventoryProjectionService, type CraftingAction, type InventoryProjectionOptions } from "./InventoryProjectionService.js";
 import { MaterialSourceService } from "./MaterialSourceService.js";
+import { EffectiveInventoryService, type EffectiveInventoryItem, type EffectiveInventoryResult } from "../../player-state/services/EffectiveInventoryService.js";
 
 export type MaterialDiffStatus = "satisfied" | "missing";
 export type TalentTrack = "normal" | "skill" | "burst";
@@ -27,6 +28,7 @@ export interface CharacterInventoryDiffInput {
   useCrafting?: boolean;
   allowDustOfAzoth?: boolean;
   allowDreamSolvent?: boolean;
+  includeManualOverrides?: boolean;
 }
 
 export interface CharacterInventoryDiffResult {
@@ -68,12 +70,18 @@ export interface CharacterInventoryDiffResult {
     missing: number;
     missingBeforeCrafting?: number;
     missingAfterCrafting?: number;
+    snapshotOwned?: number;
+    effectiveOwnedBeforeCrafting?: number;
+    overrideMode?: "absolute" | "delta";
+    overrideQuantity?: number;
+    overrideActive?: boolean;
     status: MaterialDiffStatus;
     sources: string[];
     breakdown: CharacterRequirementResult["materials"][number]["breakdown"];
   }>;
   craftingActions?: CraftingAction[];
   conversionActions?: CraftingAction[];
+  overridesApplied?: number;
   warnings: string[];
 }
 
@@ -121,6 +129,14 @@ export interface InventoryDiffRepository {
 
 export interface RequirementCalculator {
   calculate(input: CharacterRequirementInput): Promise<CharacterRequirementResult>;
+}
+
+export interface InventoryDiffEffectiveInventoryService {
+  resolve(input: {
+    playerKey: string;
+    inventorySnapshotId?: number;
+    includeManualOverrides?: boolean;
+  }): Promise<EffectiveInventoryResult>;
 }
 
 export class InventoryDiffError extends Error {
@@ -207,6 +223,7 @@ export class InventoryDiffService {
     private readonly craftingRules = new CraftingRuleService(),
     private readonly projection = new InventoryProjectionService(),
     private readonly materialSources = new MaterialSourceService(),
+    private readonly effectiveInventory: InventoryDiffEffectiveInventoryService = new EffectiveInventoryService(),
   ) {}
 
   async diffCharacter(input: CharacterInventoryDiffInput): Promise<CharacterInventoryDiffResult> {
@@ -216,7 +233,11 @@ export class InventoryDiffService {
       ? await this.requirePlayerCharacter(player.id, character.id, input.characterKey)
       : null;
     const resolved = this.resolveGoal(input, playerCharacter);
-    const snapshot = await this.requireSnapshot(player.id, input.inventorySnapshotId);
+    const effectiveInventory = await this.effectiveInventory.resolve({
+      playerKey: input.playerKey,
+      inventorySnapshotId: input.inventorySnapshotId,
+      includeManualOverrides: input.includeManualOverrides ?? true,
+    });
     const required = await this.requirements.calculate({
       characterKey: input.characterKey,
       currentLevel: resolved.currentLevel,
@@ -226,11 +247,14 @@ export class InventoryDiffService {
       currentTalents: resolved.currentTalents,
       targetTalents: resolved.targetTalents,
     });
-    const inventoryItems = await this.repository.listInventoryItems(snapshot.id);
-    const ownedByMaterialId = aggregateInventoryItems(inventoryItems);
+    const ownedByMaterialId = aggregateEffectiveInventoryItems(effectiveInventory.items);
+    const snapshotOwnedByMaterialId = aggregateSnapshotInventoryItems(effectiveInventory.items);
+    const effectiveItemByMaterialId = new Map(effectiveInventory.items.map((item) => [item.materialId, item]));
     let materials = required.materials.map((material) => {
       const owned = ownedByMaterialId.get(material.materialId) ?? 0;
+      const snapshotOwned = snapshotOwnedByMaterialId.get(material.materialId) ?? 0;
       const missing = Math.max(0, material.quantity - owned);
+      const effectiveItem = effectiveItemByMaterialId.get(material.materialId);
 
       return {
         materialId: material.materialId,
@@ -238,8 +262,13 @@ export class InventoryDiffService {
         name: material.name,
         required: material.quantity,
         owned,
-        directOwned: owned,
+        directOwned: snapshotOwned,
         effectiveOwned: owned,
+        snapshotOwned,
+        effectiveOwnedBeforeCrafting: owned,
+        overrideMode: effectiveItem?.overrideMode,
+        overrideQuantity: effectiveItem?.overrideQuantity,
+        overrideActive: effectiveItem?.overrideActive,
         missing,
         missingBeforeCrafting: missing,
         missingAfterCrafting: missing,
@@ -253,7 +282,7 @@ export class InventoryDiffService {
     let conversionActions: CraftingAction[] | undefined;
 
     if (input.useCrafting || input.allowDustOfAzoth || input.allowDreamSolvent) {
-      const projectionMaterials = await this.buildProjectionMaterials(required, inventoryItems, ownedByMaterialId);
+      const projectionMaterials = await this.buildProjectionMaterials(required, effectiveInventory.items, ownedByMaterialId);
       const rules = this.craftingRules.buildRules(projectionMaterials);
       const projection = this.projection.project(projectionMaterials, rules, projectionOptions(input));
       craftingActions = projection.craftingActions;
@@ -278,9 +307,9 @@ export class InventoryDiffService {
       player,
       character: required.character,
       inventorySnapshot: {
-        id: snapshot.id,
-        source: snapshot.source,
-        createdAt: snapshot.capturedAt.toISOString(),
+        id: effectiveInventory.snapshot.id,
+        source: effectiveInventory.snapshot.source,
+        createdAt: effectiveInventory.snapshot.createdAt,
       },
       goal: {
         currentLevel: resolved.currentLevel,
@@ -298,17 +327,18 @@ export class InventoryDiffService {
       materials,
       craftingActions,
       conversionActions,
+      overridesApplied: effectiveInventory.overridesApplied,
       warnings: [
         ...required.warnings,
+        ...effectiveInventory.warnings,
         ...craftingWarnings,
-        "Manual inventory overrides are future work and are not included in this diff.",
       ],
     };
   }
 
   private async buildProjectionMaterials(
     required: CharacterRequirementResult,
-    inventoryItems: DiffInventoryItem[],
+    inventoryItems: EffectiveInventoryItem[],
     ownedByMaterialId: Map<number, number>,
   ): Promise<Array<CraftingRuleMaterial & { required: number; directQuantity: number }>> {
     const materialByKey = new Map<string, CraftingRuleMaterial & { required: number; directQuantity: number }>();
@@ -324,10 +354,6 @@ export class InventoryDiffService {
     }
 
     for (const item of inventoryItems) {
-      if (item.materialId === null || !item.stableKey || !item.name) {
-        continue;
-      }
-
       const existing = materialByKey.get(item.stableKey);
       materialByKey.set(item.stableKey, {
         materialId: item.materialId,
@@ -391,19 +417,6 @@ export class InventoryDiffService {
     return playerCharacter;
   }
 
-  private async requireSnapshot(playerId: number, snapshotId: number | undefined): Promise<DiffInventorySnapshot> {
-    const snapshot =
-      snapshotId === undefined
-        ? await this.repository.findLatestInventorySnapshot(playerId)
-        : await this.repository.findInventorySnapshotById(playerId, snapshotId);
-
-    if (!snapshot) {
-      throw new InventoryDiffError("No inventory snapshot found for player");
-    }
-
-    return snapshot;
-  }
-
   private resolveGoal(
     input: CharacterInventoryDiffInput,
     playerCharacter: DiffPlayerCharacter | null,
@@ -449,6 +462,26 @@ export function aggregateInventoryItems(items: DiffInventoryItem[]): Map<number,
     }
 
     quantities.set(item.materialId, (quantities.get(item.materialId) ?? 0) + item.quantity);
+  }
+
+  return quantities;
+}
+
+export function aggregateEffectiveInventoryItems(items: EffectiveInventoryItem[]): Map<number, number> {
+  const quantities = new Map<number, number>();
+
+  for (const item of items) {
+    quantities.set(item.materialId, (quantities.get(item.materialId) ?? 0) + item.effectiveQuantity);
+  }
+
+  return quantities;
+}
+
+export function aggregateSnapshotInventoryItems(items: EffectiveInventoryItem[]): Map<number, number> {
+  const quantities = new Map<number, number>();
+
+  for (const item of items) {
+    quantities.set(item.materialId, (quantities.get(item.materialId) ?? 0) + item.snapshotQuantity);
   }
 
   return quantities;

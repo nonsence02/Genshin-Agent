@@ -25,6 +25,7 @@ export interface ResinPlanInput {
   useCrafting?: boolean;
   allowDustOfAzoth?: boolean;
   allowDreamSolvent?: boolean;
+  includeManualOverrides?: boolean;
 }
 
 export interface ScheduledResinTask {
@@ -209,6 +210,7 @@ function toDiffInput(input: ResinPlanInput): CharacterInventoryDiffInput {
     useCrafting: input.useCrafting,
     allowDustOfAzoth: input.allowDustOfAzoth,
     allowDreamSolvent: input.allowDreamSolvent,
+    includeManualOverrides: input.includeManualOverrides,
   };
 }
 
