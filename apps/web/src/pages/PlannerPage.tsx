@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   createPlannerApiClient,
   type CraftingAction,
@@ -6,6 +6,7 @@ import {
   type InventoryDiffResult,
   type ManualInventoryOverrideRecord,
   type PlannerApiError,
+  type PlayerCharacterState,
   type PlannerMaterial,
   type ResinPlanResult,
 } from "../api/client.js";
@@ -27,6 +28,37 @@ export function PlannerPage() {
   const [result, setResult] = useState<ResultState>({ mode: "empty" });
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<"plan" | "diff" | null>(null);
+  const [health, setHealth] = useState<"checking" | "online" | "offline">("checking");
+  const [loadedState, setLoadedState] = useState<PlayerCharacterState | null>(null);
+  const [stateLoading, setStateLoading] = useState(false);
+
+  useEffect(() => {
+    api.health()
+      .then(() => setHealth("online"))
+      .catch(() => setHealth("offline"));
+  }, [api]);
+
+  async function loadCharacterState() {
+    setStateLoading(true);
+    setError(null);
+    try {
+      const state = await api.getCharacterState(form.playerKey, form.characterKey);
+      setLoadedState(state);
+      setForm((current) => ({
+        ...current,
+        currentLevel: state.level ?? current.currentLevel,
+        currentAscensionPhase: state.ascension === undefined ? current.currentAscensionPhase : String(state.ascension),
+        currentNormal: state.talents.normal ?? current.currentNormal,
+        currentSkill: state.talents.skill ?? current.currentSkill,
+        currentBurst: state.talents.burst ?? current.currentBurst,
+      }));
+    } catch (requestError) {
+      setError(readableError(requestError));
+      setLoadedState(null);
+    } finally {
+      setStateLoading(false);
+    }
+  }
 
   async function buildPlan() {
     setLoading("plan");
@@ -60,7 +92,10 @@ export function PlannerPage() {
           <p>Local deterministic planner prototype</p>
         </div>
 
+        <BackendHealth status={health} />
+
         <FormFields form={form} onChange={setForm} />
+        <PlayerStatePanel state={loadedState} loading={stateLoading} onLoad={loadCharacterState} />
         <ManualOverridesPanel api={api} playerKey={form.playerKey} />
 
         <div className="button-row">
@@ -111,7 +146,29 @@ function FormFields({
         <input value={form.characterKey} onChange={(event) => update("characterKey", event.target.value)} />
       </label>
       <NumberField label="Current level" value={form.currentLevel} min={1} max={90} onChange={(value) => update("currentLevel", value)} />
+      <label>
+        Current ascension phase
+        <input
+          type="number"
+          min={0}
+          max={6}
+          value={form.currentAscensionPhase}
+          onChange={(event) => update("currentAscensionPhase", event.target.value)}
+          placeholder="optional"
+        />
+      </label>
       <NumberField label="Target level" value={form.targetLevel} min={1} max={90} onChange={(value) => update("targetLevel", value)} />
+      <label>
+        Target ascension phase
+        <input
+          type="number"
+          min={0}
+          max={6}
+          value={form.targetAscensionPhase}
+          onChange={(event) => update("targetAscensionPhase", event.target.value)}
+          placeholder="advanced optional"
+        />
+      </label>
       <NumberField label="Current normal" value={form.currentNormal} min={1} max={10} onChange={(value) => update("currentNormal", value)} />
       <NumberField label="Current skill" value={form.currentSkill} min={1} max={10} onChange={(value) => update("currentSkill", value)} />
       <NumberField label="Current burst" value={form.currentBurst} min={1} max={10} onChange={(value) => update("currentBurst", value)} />
@@ -154,6 +211,54 @@ function FormFields({
         onChange={(value) => update("includeManualOverrides", value)}
       />
     </form>
+  );
+}
+
+function BackendHealth({ status }: { status: "checking" | "online" | "offline" }) {
+  return (
+    <div className={`health-banner ${status}`}>
+      <strong>Backend: {status}</strong>
+      {status === "offline" ? <span>Backend is not running. Start it with npm run dev or set VITE_API_BASE_URL.</span> : null}
+    </div>
+  );
+}
+
+function PlayerStatePanel({
+  state,
+  loading,
+  onLoad,
+}: {
+  state: PlayerCharacterState | null;
+  loading: boolean;
+  onLoad: () => void;
+}) {
+  return (
+    <section className="state-panel">
+      <div className="button-row">
+        <button type="button" className="secondary" onClick={onLoad} disabled={loading}>
+          {loading ? "Loading state..." : "Load character state"}
+        </button>
+      </div>
+      {state ? (
+        <div className="state-summary">
+          <strong>{state.character.name ?? state.character.stableKey ?? state.character.key}</strong>
+          <span>level source: {state.sources.level ?? "unknown"}</span>
+          <span>ascension source: {state.sources.ascension ?? "unknown"}</span>
+          <span>
+            talent sources: normal {state.sources["talents.normal"] ?? "unknown"}, skill {state.sources["talents.skill"] ?? "unknown"}, burst{" "}
+            {state.sources["talents.burst"] ?? "unknown"}
+          </span>
+          {state.equippedWeapon ? <span>weapon: {state.equippedWeapon.name ?? state.equippedWeapon.stableKey}</span> : null}
+          <span>artifacts: {state.equippedArtifacts.length}</span>
+          {state.conflicts.length > 0 ? <span className="warning-text">conflicts: {state.conflicts.map((conflict) => conflict.field).join(", ")}</span> : null}
+          {state.warnings.map((warning) => (
+            <span className="warning-text" key={warning}>
+              {warning}
+            </span>
+          ))}
+        </div>
+      ) : null}
+    </section>
   );
 }
 

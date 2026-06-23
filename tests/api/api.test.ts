@@ -204,6 +204,41 @@ function mockServices(): ApiServices {
         return { player: { id: 1, stableKey: playerKey }, deactivated: 1 };
       },
     },
+    playerState: {
+      async build(input) {
+        return {
+          player: { id: 1, stableKey: input.playerKey },
+          characters: [
+            {
+              character: { id: 37, stableKey: input.characterKey ?? "char_furina", key: "furina", name: "Furina" },
+              level: 80,
+              ascension: 5,
+              constellation: 1,
+              talents: { normal: 1, skill: 9, burst: 9 },
+              equippedArtifacts: [],
+              sources: { level: "hoyolab_profile", ascension: "inventory-kamera-good" },
+              conflicts: [],
+              warnings: [],
+            },
+          ],
+          sourceSummary: { goodCharacters: 1, hoyolabCharacters: 1, weapons: 1, artifacts: 0 },
+          warnings: [],
+        };
+      },
+      async getCharacterState(input) {
+        return {
+          character: { id: 37, stableKey: input.characterKey, key: "furina", name: "Furina" },
+          level: 80,
+          ascension: 5,
+          constellation: 1,
+          talents: { normal: 1, skill: 9, burst: 9 },
+          equippedArtifacts: [],
+          sources: { level: "hoyolab_profile", ascension: "inventory-kamera-good" },
+          conflicts: [],
+          warnings: [],
+        };
+      },
+    },
   };
 }
 
@@ -330,6 +365,25 @@ describe("local Fastify API", () => {
 
     expect(response.statusCode).toBe(200);
     expect(response.json()).toMatchObject({ overridesApplied: 1, items: [{ effectiveQuantity: 40 }] });
+  });
+
+  it("returns merged player state", async () => {
+    const app = await createApp({ services: mockServices() });
+    const response = await app.inject({ method: "GET", url: "/player/default/state?characterKey=char_furina" });
+
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({
+      player: { stableKey: "default" },
+      characters: [{ character: { stableKey: "char_furina" }, ascension: 5 }],
+    });
+  });
+
+  it("returns one merged character state", async () => {
+    const app = await createApp({ services: mockServices() });
+    const response = await app.inject({ method: "GET", url: "/player/default/characters/char_furina/state" });
+
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({ character: { stableKey: "char_furina" }, sources: { ascension: "inventory-kamera-good" } });
   });
 
   it("validates override payload", async () => {

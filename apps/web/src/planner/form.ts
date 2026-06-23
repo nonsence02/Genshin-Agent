@@ -4,7 +4,9 @@ export interface PlannerFormState {
   playerKey: string;
   characterKey: string;
   currentLevel: number;
+  currentAscensionPhase: string;
   targetLevel: number;
+  targetAscensionPhase: string;
   currentNormal: number;
   currentSkill: number;
   currentBurst: number;
@@ -26,7 +28,9 @@ export const furinaDefaults: PlannerFormState = {
   playerKey: "default",
   characterKey: "char_furina",
   currentLevel: 20,
+  currentAscensionPhase: "",
   targetLevel: 90,
+  targetAscensionPhase: "",
   currentNormal: 1,
   currentSkill: 1,
   currentBurst: 1,
@@ -49,6 +53,8 @@ export function buildRequirementsPayload(form: PlannerFormState): CharacterRequi
     characterKey: form.characterKey.trim(),
     currentLevel: form.currentLevel,
     targetLevel: form.targetLevel,
+    currentAscensionPhase: form.currentAscensionPhase.trim() === "" ? undefined : Number(form.currentAscensionPhase),
+    targetAscensionPhase: form.targetAscensionPhase.trim() === "" ? undefined : Number(form.targetAscensionPhase),
     currentTalents: {
       normal: form.currentNormal,
       skill: form.currentSkill,

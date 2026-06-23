@@ -7,5 +7,29 @@
     "Mora": 12345,
     "LakelightLily": 12,
     "Unknown Future Item": 7
-  }
+  },
+  "characters": {
+    "Kaeya": {
+      "key": "Kaeya",
+      "level": 51,
+      "constellation": 1,
+      "ascension": 3,
+      "talent": {
+        "auto": 2,
+        "skill": 2,
+        "burst": 2
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "key": "adventurer_flower",
+      "setKey": "Adventurer",
+      "slotKey": "flower",
+      "level": 4,
+      "rarity": 3,
+      "location": "Kaeya",
+      "mainStatKey": "hp"
+    }
+  ]
 }

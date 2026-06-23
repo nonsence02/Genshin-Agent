@@ -17,6 +17,13 @@ describe("planner form payload builders", () => {
     });
   });
 
+  it("includes optional ascension phases when set", () => {
+    expect(buildRequirementsPayload({ ...furinaDefaults, currentAscensionPhase: "3", targetAscensionPhase: "6" })).toMatchObject({
+      currentAscensionPhase: 3,
+      targetAscensionPhase: 6,
+    });
+  });
+
   it("maps crafting options into diff payload", () => {
     expect(buildDiffPayload({ ...furinaDefaults, allowDustOfAzoth: true })).toMatchObject({
       playerKey: "default",

@@ -67,6 +67,19 @@ describe("planner API client", () => {
       body: JSON.stringify({ mode: "absolute", quantity: 40, reason: "manual correction" }),
     });
   });
+
+  it("builds player character state requests", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(jsonResponse({ ok: true }));
+    const client = createPlannerApiClient("http://api.test");
+
+    await client.getCharacterState("default user", "char furina");
+
+    expect(fetchMock).toHaveBeenCalledWith("http://api.test/player/default%20user/characters/char%20furina/state", {
+      method: "GET",
+      headers: undefined,
+      body: undefined,
+    });
+  });
 });
 
 function jsonResponse(body: unknown, status = 200): Response {

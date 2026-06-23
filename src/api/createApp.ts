@@ -8,6 +8,7 @@ import { MaterialSourceService } from "../planner/services/MaterialSourceService
 import { ResinPlanService } from "../planner/services/ResinPlanService.js";
 import { EffectiveInventoryService } from "../player-state/services/EffectiveInventoryService.js";
 import { ManualInventoryOverrideService } from "../player-state/services/ManualInventoryOverrideService.js";
+import { PlayerStateBuilder } from "../player-state/services/PlayerStateBuilder.js";
 import { installErrorHandlers } from "./errors.js";
 import { registerHealthRoutes } from "./routes/healthRoutes.js";
 import { registerMaterialRoutes } from "./routes/materialRoutes.js";
@@ -23,6 +24,7 @@ export interface ApiServices {
   levelCosts: Pick<CharacterLevelCostService, "calculate">;
   effectiveInventory: Pick<EffectiveInventoryService, "resolve">;
   manualInventoryOverrides: Pick<ManualInventoryOverrideService, "listOverrides" | "upsertOverride" | "deactivateOverride" | "clearOverrides">;
+  playerState: Pick<PlayerStateBuilder, "build" | "getCharacterState">;
 }
 
 export interface CreateAppOptions {
@@ -58,6 +60,7 @@ function createServices(overrides: Partial<ApiServices> | undefined): ApiService
     levelCosts: overrides?.levelCosts ?? new CharacterLevelCostService(),
     effectiveInventory: overrides?.effectiveInventory ?? new EffectiveInventoryService(),
     manualInventoryOverrides: overrides?.manualInventoryOverrides ?? new ManualInventoryOverrideService(),
+    playerState: overrides?.playerState ?? new PlayerStateBuilder(),
   };
 }
 
@@ -96,6 +99,8 @@ function registerOpenApiRoute(app: FastifyInstance): void {
       "/planner/character/diff": { post: { summary: "Compare character requirements against player inventory" } },
       "/planner/character/plan": { post: { summary: "Build a deterministic resin farming plan" } },
       "/player/{playerKey}/inventory/effective": { get: { summary: "Resolve snapshot inventory with manual overrides" } },
+      "/player/{playerKey}/state": { get: { summary: "Build merged player state from imported sources" } },
+      "/player/{playerKey}/characters/{characterKey}/state": { get: { summary: "Build merged character state" } },
       "/player/{playerKey}/inventory/overrides": { get: { summary: "List manual inventory overrides" } },
       "/player/{playerKey}/inventory/overrides/{materialKey}": { put: { summary: "Create or update a manual inventory override" } },
     },

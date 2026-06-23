@@ -11,10 +11,12 @@ import {
   type InventoryDiffRepository,
   type RequirementCalculator,
   type InventoryDiffEffectiveInventoryService,
+  type InventoryDiffPlayerStateResolver,
 } from "../../src/planner/services/InventoryDiffService.js";
 import type { CharacterRequirementInput, CharacterRequirementResult } from "../../src/planner/services/CharacterRequirementService.js";
 import { MaterialSourceService, type MaterialSourceLookupResult } from "../../src/planner/services/MaterialSourceService.js";
 import type { EffectiveInventoryResult } from "../../src/player-state/services/EffectiveInventoryService.js";
+import type { PlayerCharacterState } from "../../src/player-state/services/PlayerStateBuilder.js";
 
 class MockInventoryDiffRepository implements InventoryDiffRepository {
   player: DiffPlayer | null = { id: 1, stableKey: "default" };
@@ -191,6 +193,26 @@ class MockEffectiveInventoryService implements InventoryDiffEffectiveInventorySe
   }
 }
 
+class MockPlayerStateResolver implements InventoryDiffPlayerStateResolver {
+  state: PlayerCharacterState | null = {
+    character: { id: 10, stableKey: "char_furina", key: "furina", name: "Furina" },
+    level: 70,
+    ascension: 4,
+    talents: { normal: 2, skill: 8, burst: 7 },
+    equippedArtifacts: [],
+    sources: { level: "hoyolab_profile", ascension: "inventory-kamera-good" },
+    conflicts: [],
+    warnings: [],
+  };
+
+  async getCharacterState(): Promise<PlayerCharacterState> {
+    if (!this.state) {
+      throw new Error("No merged player state found for char_furina");
+    }
+    return this.state;
+  }
+}
+
 class CraftingRequirementCalculator implements RequirementCalculator {
   async calculate(input: CharacterRequirementInput): Promise<CharacterRequirementResult> {
     return {
@@ -234,7 +256,7 @@ function setup(): {
   const repository = new MockInventoryDiffRepository();
   const requirements = new MockRequirementCalculator();
   const effectiveInventory = new MockEffectiveInventoryService(repository);
-  const service = new InventoryDiffService(repository, requirements, undefined, undefined, undefined, effectiveInventory);
+  const service = new InventoryDiffService(repository, requirements, undefined, undefined, undefined, effectiveInventory, new MockPlayerStateResolver());
 
   return { repository, requirements, service };
 }
@@ -327,7 +349,7 @@ describe("InventoryDiffService", () => {
     const requirements = new MockRequirementCalculator();
     const effectiveInventory = new MockEffectiveInventoryService(repository);
     effectiveInventory.overrides.set(4, { mode: "absolute", quantity: 40 });
-    const service = new InventoryDiffService(repository, requirements, undefined, undefined, undefined, effectiveInventory);
+    const service = new InventoryDiffService(repository, requirements, undefined, undefined, undefined, effectiveInventory, new MockPlayerStateResolver());
 
     const result = await service.diffCharacter({
       playerKey: "default",
@@ -352,7 +374,7 @@ describe("InventoryDiffService", () => {
     const requirements = new MockRequirementCalculator();
     const effectiveInventory = new MockEffectiveInventoryService(repository);
     effectiveInventory.overrides.set(4, { mode: "absolute", quantity: 40 });
-    const service = new InventoryDiffService(repository, requirements, undefined, undefined, undefined, effectiveInventory);
+    const service = new InventoryDiffService(repository, requirements, undefined, undefined, undefined, effectiveInventory, new MockPlayerStateResolver());
 
     const result = await service.diffCharacter({
       playerKey: "default",
@@ -429,7 +451,7 @@ describe("InventoryDiffService", () => {
     });
   });
 
-  it("resolves current level and talents from PlayerCharacter when usePlayerState is true", async () => {
+  it("resolves current level, ascension, and talents from PlayerStateBuilder when usePlayerState is true", async () => {
     const { requirements, service } = setup();
     const result = await service.diffCharacter({
       playerKey: "default",
@@ -445,7 +467,7 @@ describe("InventoryDiffService", () => {
     expect(requirements.lastInput?.currentAscensionPhase).toBe(4);
   });
 
-  it("lets explicit values override PlayerCharacter values", async () => {
+  it("lets explicit values override merged player-state values", async () => {
     const { requirements, service } = setup();
     await service.diffCharacter({
       playerKey: "default",
@@ -458,6 +480,19 @@ describe("InventoryDiffService", () => {
 
     expect(requirements.lastInput?.currentLevel).toBe(20);
     expect(requirements.lastInput?.currentTalents).toMatchObject({ normal: 2, skill: 1, burst: 7 });
+  });
+
+  it("lets explicit currentAscensionPhase override merged player-state ascension", async () => {
+    const { requirements, service } = setup();
+    await service.diffCharacter({
+      playerKey: "default",
+      characterKey: "char_furina",
+      targetLevel: 90,
+      usePlayerState: true,
+      currentAscensionPhase: 2,
+    });
+
+    expect(requirements.lastInput?.currentAscensionPhase).toBe(2);
   });
 
   it("throws a clear error when no snapshot exists", async () => {
@@ -475,8 +510,18 @@ describe("InventoryDiffService", () => {
   });
 
   it("throws a clear error when usePlayerState cannot resolve PlayerCharacter", async () => {
-    const { repository, service } = setup();
-    repository.playerCharacter = null;
+    const repository = new MockInventoryDiffRepository();
+    const playerState = new MockPlayerStateResolver();
+    playerState.state = null;
+    const service = new InventoryDiffService(
+      repository,
+      new MockRequirementCalculator(),
+      undefined,
+      undefined,
+      undefined,
+      new MockEffectiveInventoryService(repository),
+      playerState,
+    );
 
     await expect(
       service.diffCharacter({

@@ -31,6 +31,16 @@ export const playerMaterialKeyParamsSchema = z.object({
   materialKey: nonEmptyString,
 });
 
+export const playerCharacterKeyParamsSchema = z.object({
+  playerKey: nonEmptyString,
+  characterKey: nonEmptyString,
+});
+
+export const playerStateQuerySchema = z.object({
+  includeArtifacts: booleanQuerySchema.default(true),
+  characterKey: nonEmptyString.optional(),
+});
+
 export const materialSourcesQuerySchema = z.object({
   includeCalendar: booleanQuerySchema.default(true),
 });

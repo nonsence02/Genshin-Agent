@@ -4,6 +4,8 @@ import { HoyolabProfileNormalizer, type CharacterResolutionEntry, type Normalize
 import { InventoryKameraGoodNormalizer } from "../normalizers/InventoryKameraGoodNormalizer.js";
 import { type MaterialResolutionEntry, type NormalizedInventoryItem } from "../normalizers/InventoryKameraNormalizer.js";
 import { InventoryKameraWeaponsNormalizer, type NormalizedPlayerWeapon } from "../normalizers/InventoryKameraWeaponsNormalizer.js";
+import { normalizeSearchText, prefixedStableKey } from "../normalizers/normalizeKey.js";
+import type { InventoryKameraGoodCharacterRecord } from "../providers/InventoryKameraGoodProvider.js";
 import { HoyolabProfileProvider } from "../providers/HoyolabProfileProvider.js";
 import { InventoryKameraGoodProvider } from "../providers/InventoryKameraGoodProvider.js";
 import { InventoryKameraWeaponsProvider } from "../providers/InventoryKameraWeaponsProvider.js";
@@ -23,6 +25,10 @@ export interface PlayerSourceImportResult {
   materialsParsed: number;
   materialsResolved: number;
   materialsUnresolved: number;
+  goodCharactersParsed: number;
+  goodCharactersResolved: number;
+  goodCharactersUnresolved: number;
+  goodArtifactsParsed: number;
   weaponsParsed: number;
   weaponsResolved: number;
   weaponsUnresolved: number;
@@ -173,14 +179,15 @@ export class PrismaPlayerSourceImportRepository implements PlayerSourceImportRep
     characters: NormalizedHoyolabCharacter[],
   ): Promise<number> {
     await this.client.playerCharacter.deleteMany({ where: { playerId, source } });
+    const uniqueCharacters = [...new Map(characters.map((character) => [character.sourceCharacterKey, character])).values()];
 
-    if (characters.length === 0) {
+    if (uniqueCharacters.length === 0) {
       return 0;
     }
 
     return (
       await this.client.playerCharacter.createMany({
-        data: characters.map((character) => ({
+        data: uniqueCharacters.map((character) => ({
           playerId,
           source,
           characterId: character.characterId,
@@ -188,6 +195,7 @@ export class PrismaPlayerSourceImportRepository implements PlayerSourceImportRep
           name: character.name,
           nameRu: character.nameRu,
           level: character.level,
+          ascension: character.ascension,
           constellation: character.constellation,
           talentNormal: character.normalTalentLevel,
           talentSkill: character.skillTalentLevel,
@@ -202,6 +210,65 @@ export class PrismaPlayerSourceImportRepository implements PlayerSourceImportRep
         })),
       })
     ).count;
+  }
+}
+
+function normalizeGoodCharacters(
+  characters: InventoryKameraGoodCharacterRecord[],
+  knownCharacters: CharacterResolutionEntry[],
+): {
+  characters: NormalizedHoyolabCharacter[];
+  resolved: NormalizedHoyolabCharacter[];
+  unresolved: NormalizedHoyolabCharacter[];
+} {
+  const index = new GoodCharacterResolutionIndex(knownCharacters);
+  const normalized = characters.map((character) => {
+    const resolved = index.resolve(character.key);
+    const output: NormalizedHoyolabCharacter = {
+      sourceCharacterKey: character.key,
+      normalizedCharacterKey: normalizeSearchText(character.key),
+      characterId: resolved?.id,
+      characterKey: resolved?.stableKey,
+      name: resolved?.name,
+      level: character.level,
+      ascension: character.ascension,
+      constellation: character.constellation,
+      normalTalentLevel: character.talents.normal,
+      skillTalentLevel: character.talents.skill,
+      burstTalentLevel: character.talents.burst,
+      equippedArtifacts: [],
+      sourcePayload: character.sourcePayload,
+    };
+    return output;
+  });
+
+  return {
+    characters: normalized,
+    resolved: normalized.filter((character) => character.characterId !== undefined),
+    unresolved: normalized.filter((character) => character.characterId === undefined),
+  };
+}
+
+class GoodCharacterResolutionIndex {
+  private readonly byAlias = new Map<string, CharacterResolutionEntry>();
+  private readonly byStableKey = new Map<string, CharacterResolutionEntry>();
+  private readonly byName = new Map<string, CharacterResolutionEntry>();
+
+  constructor(characters: CharacterResolutionEntry[]) {
+    for (const character of characters) {
+      this.byStableKey.set(character.stableKey, character);
+      this.byName.set(normalizeSearchText(character.name), character);
+
+      for (const alias of character.aliases) {
+        this.byAlias.set(alias.normalized, character);
+      }
+    }
+  }
+
+  resolve(sourceCharacterKey: string): CharacterResolutionEntry | undefined {
+    const normalized = normalizeSearchText(sourceCharacterKey);
+    const stableKey = prefixedStableKey("char", sourceCharacterKey);
+    return this.byAlias.get(normalized) ?? this.byStableKey.get(stableKey) ?? this.byName.get(normalized);
   }
 }
 
@@ -225,6 +292,10 @@ export class PlayerSourceImportService {
       materialsParsed: 0,
       materialsResolved: 0,
       materialsUnresolved: 0,
+      goodCharactersParsed: 0,
+      goodCharactersResolved: 0,
+      goodCharactersUnresolved: 0,
+      goodArtifactsParsed: 0,
       weaponsParsed: 0,
       weaponsResolved: 0,
       weaponsUnresolved: 0,
@@ -261,11 +332,17 @@ export class PlayerSourceImportService {
   private async importGood(filePath: string, playerId: number | null, result: PlayerSourceImportResult): Promise<void> {
     const snapshot = await this.goodProvider.readSnapshot(filePath);
     const materials = await this.repository.listMaterialsForResolution();
+    const knownCharacters = await this.repository.listCharactersForResolution();
     const normalized = this.goodNormalizer.normalize(snapshot.items, materials);
+    const normalizedCharacters = normalizeGoodCharacters(snapshot.characters, knownCharacters);
     result.sourceFilesProcessed.push(filePath);
     result.materialsParsed += snapshot.items.length;
     result.materialsResolved += normalized.resolvedItems.length;
     result.materialsUnresolved += normalized.unresolvedItems.length;
+    result.goodCharactersParsed += normalizedCharacters.characters.length;
+    result.goodCharactersResolved += normalizedCharacters.resolved.length;
+    result.goodCharactersUnresolved += normalizedCharacters.unresolved.length;
+    result.goodArtifactsParsed += snapshot.artifacts.length;
     result.warnings.push(...snapshot.warnings);
     result.examples.resolvedMaterials.push(
       ...normalized.resolvedItems.slice(0, 10).map((item) => ({
@@ -287,10 +364,13 @@ export class PlayerSourceImportService {
           ...snapshot.metadata,
           filePath: snapshot.filePath,
           fileHash: snapshot.fileHash,
+          characters: snapshot.characters,
+          artifacts: snapshot.artifacts,
           unresolvedItems: result.examples.unresolvedMaterials,
         },
       });
       await this.repository.replaceInventoryItems(dbSnapshot.id, normalized.items);
+      await this.repository.replacePlayerCharacters(playerId, snapshot.source, normalizedCharacters.characters);
     }
   }
 

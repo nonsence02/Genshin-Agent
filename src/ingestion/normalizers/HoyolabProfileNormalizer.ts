@@ -19,6 +19,7 @@ export interface NormalizedHoyolabCharacter {
   name?: string;
   nameRu?: string;
   level?: number;
+  ascension?: number;
   rarity?: number;
   constellation?: number;
   normalTalentLevel?: number;

@@ -26,7 +26,10 @@ class MockPlayerSourceRepository implements PlayerSourceImportRepository {
   }
 
   async listCharactersForResolution(): Promise<CharacterResolutionEntry[]> {
-    return [{ id: 1, stableKey: "char_skirk", name: "Skirk", aliases: [{ alias: "Skirk", normalized: "skirk" }] }];
+    return [
+      { id: 1, stableKey: "char_skirk", name: "Skirk", aliases: [{ alias: "Skirk", normalized: "skirk" }] },
+      { id: 2, stableKey: "char_kaeya", name: "Kaeya", aliases: [{ alias: "Kaeya", normalized: "kaeya" }] },
+    ];
   }
 
   async createInventorySnapshot(): Promise<{ id: number }> {
@@ -71,6 +74,9 @@ describe("PlayerSourceImportService", () => {
     expect(result.materialsParsed).toBe(3);
     expect(result.materialsResolved).toBe(2);
     expect(result.materialsUnresolved).toBe(1);
+    expect(result.goodCharactersParsed).toBe(1);
+    expect(result.goodCharactersResolved).toBe(1);
+    expect(result.goodArtifactsParsed).toBe(1);
     expect(result.weaponsParsed).toBe(1);
     expect(result.hoyolabCharactersParsed).toBe(2);
     expect(result.hoyolabCharactersResolved).toBe(1);

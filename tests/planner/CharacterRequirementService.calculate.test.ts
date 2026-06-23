@@ -158,6 +158,28 @@ describe("CharacterRequirementService", () => {
     expect(result.ascension.includedPhases).toEqual([2]);
   });
 
+  it("currentLevel 50 with currentAscensionPhase 2 to targetLevel 60 includes phase 3", async () => {
+    const result = await new CharacterRequirementService(new MockCharacterRequirementRepository()).calculate({
+      characterKey: "char_furina",
+      currentLevel: 50,
+      targetLevel: 60,
+      currentAscensionPhase: 2,
+    });
+
+    expect(result.ascension.includedPhases).toEqual([3]);
+  });
+
+  it("currentLevel 50 with currentAscensionPhase 3 to targetLevel 60 does not include phase 3 again", async () => {
+    const result = await new CharacterRequirementService(new MockCharacterRequirementRepository()).calculate({
+      characterKey: "char_furina",
+      currentLevel: 50,
+      targetLevel: 60,
+      currentAscensionPhase: 3,
+    });
+
+    expect(result.ascension.includedPhases).toEqual([]);
+  });
+
   it("skill 1 to 9 includes levels 2..9", async () => {
     const result = await new CharacterRequirementService(new MockCharacterRequirementRepository()).calculate({
       characterKey: "char_furina",

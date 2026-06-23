@@ -20,6 +20,6 @@ Player-state imports describe a player's account state. They are separate from s
 
 ## Current Scope
 
-`PlayerSourceImportService` imports local player source files into player-state tables where practical. It reports unresolved materials, weapons, and characters without guessing. It does not calculate missing materials, optimize resin, or call LLM tools.
+`PlayerSourceImportService` imports local player source files into player-state tables where practical. GOOD characters are stored as `PlayerCharacter` rows with source `inventory-kamera-good`, and GOOD artifacts are preserved in the GOOD snapshot raw payload for later inspection. It reports unresolved materials, weapons, and characters without guessing. It does not calculate missing materials, optimize resin, or call LLM tools.
 
-`InventoryDiffService` resolves effective inventory from `InventorySnapshot`/`InventoryItem` plus active `ManualInventoryOverride` rows by default. Use `--no-manual-overrides` or `includeManualOverrides: false` to inspect raw imported snapshot quantities. When `--use-player-state` is used, imported HoYoLAB profile character rows provide current character level, ascension, and talent levels.
+`PlayerStateBuilder` merges imported GOOD, `weapons.json`, and HoYoLAB rows into one explainable character state. When `--use-player-state` is used, `InventoryDiffService` asks this builder for current level, ascension phase, and talents. Use `--no-manual-overrides` or `includeManualOverrides: false` to inspect raw imported snapshot quantities.

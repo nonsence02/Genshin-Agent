@@ -4,8 +4,10 @@ import { parseWithSchema } from "../errors.js";
 import {
   effectiveInventoryQuerySchema,
   manualOverrideBodySchema,
+  playerCharacterKeyParamsSchema,
   playerKeyParamsSchema,
   playerMaterialKeyParamsSchema,
+  playerStateQuerySchema,
 } from "../schemas.js";
 
 export async function registerPlayerStateRoutes(app: FastifyInstance, services: ApiServices): Promise<void> {
@@ -17,6 +19,28 @@ export async function registerPlayerStateRoutes(app: FastifyInstance, services: 
       playerKey: params.playerKey,
       inventorySnapshotId: query.snapshotId,
       includeManualOverrides: query.includeManualOverrides,
+    });
+  });
+
+  app.get("/player/:playerKey/state", async (request) => {
+    const params = parseWithSchema(playerKeyParamsSchema, request.params);
+    const query = parseWithSchema(playerStateQuerySchema, request.query);
+
+    return services.playerState.build({
+      playerKey: params.playerKey,
+      characterKey: query.characterKey,
+      includeArtifacts: query.includeArtifacts,
+    });
+  });
+
+  app.get("/player/:playerKey/characters/:characterKey/state", async (request) => {
+    const params = parseWithSchema(playerCharacterKeyParamsSchema, request.params);
+    const query = parseWithSchema(playerStateQuerySchema.pick({ includeArtifacts: true }), request.query);
+
+    return services.playerState.getCharacterState({
+      playerKey: params.playerKey,
+      characterKey: params.characterKey,
+      includeArtifacts: query.includeArtifacts,
     });
   });
 

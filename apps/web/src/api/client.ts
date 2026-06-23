@@ -82,6 +82,7 @@ export interface InventoryDiffResult {
   goal: {
     currentLevel: number;
     targetLevel: number;
+    currentAscensionPhase?: number;
     currentTalents: Required<TalentLevels>;
     targetTalents: Required<TalentLevels>;
   };
@@ -178,6 +179,31 @@ export interface EffectiveInventoryResult {
   warnings: string[];
 }
 
+export interface PlayerCharacterState {
+  character: { id?: number; stableKey?: string; key: string; name?: string };
+  level?: number;
+  ascension?: number;
+  constellation?: number;
+  talents: { normal?: number; skill?: number; burst?: number };
+  equippedWeapon?: { name?: string; stableKey?: string; level?: number; refinement?: number; rarity?: number; source: string };
+  equippedArtifacts: Array<{ slot: string; source: string; confidence: "high" | "medium" | "low" }>;
+  sources: Record<string, string>;
+  conflicts: Array<{ field: string; chosenSource: string; values: Array<{ source: string; value: unknown }> }>;
+  warnings: string[];
+}
+
+export interface PlayerStateResult {
+  player: { id: number; stableKey: string };
+  characters: PlayerCharacterState[];
+  sourceSummary: {
+    goodCharacters: number;
+    hoyolabCharacters: number;
+    weapons: number;
+    artifacts: number;
+  };
+  warnings: string[];
+}
+
 export class PlannerApiError extends Error {
   constructor(
     message: string,
@@ -210,6 +236,23 @@ export function createPlannerApiClient(baseUrl = getDefaultBaseUrl()) {
       request<unknown>(baseUrl, `/planner/level-costs?currentLevel=${currentLevel}&targetLevel=${targetLevel}`),
     getEffectiveInventory: (playerKey: string) =>
       request<EffectiveInventoryResult>(baseUrl, `/player/${encodeURIComponent(playerKey)}/inventory/effective`),
+    getPlayerState: (playerKey: string, options: { includeArtifacts?: boolean; characterKey?: string } = {}) => {
+      const query = new URLSearchParams();
+      if (options.includeArtifacts !== undefined) {
+        query.set("includeArtifacts", String(options.includeArtifacts));
+      }
+      if (options.characterKey) {
+        query.set("characterKey", options.characterKey);
+      }
+      const queryString = query.toString();
+      const suffix = queryString.length > 0 ? `?${queryString}` : "";
+      return request<PlayerStateResult>(baseUrl, `/player/${encodeURIComponent(playerKey)}/state${suffix}`);
+    },
+    getCharacterState: (playerKey: string, characterKey: string) =>
+      request<PlayerCharacterState>(
+        baseUrl,
+        `/player/${encodeURIComponent(playerKey)}/characters/${encodeURIComponent(characterKey)}/state`,
+      ),
     listInventoryOverrides: (playerKey: string) =>
       request<ManualInventoryOverrideRecord[]>(baseUrl, `/player/${encodeURIComponent(playerKey)}/inventory/overrides`),
     upsertInventoryOverride: (playerKey: string, materialKey: string, payload: ManualInventoryOverridePayload) =>

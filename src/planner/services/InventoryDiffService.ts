@@ -10,6 +10,7 @@ import { CraftingRuleService, type CraftingRuleMaterial } from "./CraftingRuleSe
 import { InventoryProjectionService, type CraftingAction, type InventoryProjectionOptions } from "./InventoryProjectionService.js";
 import { MaterialSourceService } from "./MaterialSourceService.js";
 import { EffectiveInventoryService, type EffectiveInventoryItem, type EffectiveInventoryResult } from "../../player-state/services/EffectiveInventoryService.js";
+import { PlayerStateBuilder, type PlayerCharacterState } from "../../player-state/services/PlayerStateBuilder.js";
 
 export type MaterialDiffStatus = "satisfied" | "missing";
 export type TalentTrack = "normal" | "skill" | "burst";
@@ -49,6 +50,7 @@ export interface CharacterInventoryDiffResult {
   goal: {
     currentLevel: number;
     targetLevel: number;
+    currentAscensionPhase?: number;
     currentTalents: Required<TalentLevels>;
     targetTalents: Required<TalentLevels>;
   };
@@ -139,6 +141,10 @@ export interface InventoryDiffEffectiveInventoryService {
   }): Promise<EffectiveInventoryResult>;
 }
 
+export interface InventoryDiffPlayerStateResolver {
+  getCharacterState(input: { playerKey: string; characterKey: string; includeArtifacts?: boolean }): Promise<PlayerCharacterState>;
+}
+
 export class InventoryDiffError extends Error {
   constructor(message: string) {
     super(message);
@@ -224,13 +230,14 @@ export class InventoryDiffService {
     private readonly projection = new InventoryProjectionService(),
     private readonly materialSources = new MaterialSourceService(),
     private readonly effectiveInventory: InventoryDiffEffectiveInventoryService = new EffectiveInventoryService(),
+    private readonly playerState: InventoryDiffPlayerStateResolver = new PlayerStateBuilder(),
   ) {}
 
   async diffCharacter(input: CharacterInventoryDiffInput): Promise<CharacterInventoryDiffResult> {
     const player = await this.requirePlayer(input.playerKey);
     const character = await this.requireCharacter(input.characterKey);
     const playerCharacter = input.usePlayerState
-      ? await this.requirePlayerCharacter(player.id, character.id, input.characterKey)
+      ? await this.requireMergedPlayerCharacter(input.playerKey, input.characterKey)
       : null;
     const resolved = this.resolveGoal(input, playerCharacter);
     const effectiveInventory = await this.effectiveInventory.resolve({
@@ -314,6 +321,7 @@ export class InventoryDiffService {
       goal: {
         currentLevel: resolved.currentLevel,
         targetLevel: input.targetLevel,
+        currentAscensionPhase: resolved.currentAscensionPhase,
         currentTalents: resolved.currentTalents,
         targetTalents: resolved.targetTalents,
       },
@@ -332,6 +340,7 @@ export class InventoryDiffService {
         ...required.warnings,
         ...effectiveInventory.warnings,
         ...craftingWarnings,
+        ...(playerCharacter?.warnings ?? []),
       ],
     };
   }
@@ -415,6 +424,32 @@ export class InventoryDiffService {
     }
 
     return playerCharacter;
+  }
+
+  private async requireMergedPlayerCharacter(
+    playerKey: string,
+    characterKey: string,
+  ): Promise<DiffPlayerCharacter & { warnings: string[] }> {
+    let state: PlayerCharacterState;
+    try {
+      state = await this.playerState.getCharacterState({ playerKey, characterKey, includeArtifacts: false });
+    } catch (error) {
+      throw new InventoryDiffError(error instanceof Error ? error.message : `No player character found for ${characterKey}`);
+    }
+    const level = state.level ?? null;
+
+    if (level === null) {
+      throw new InventoryDiffError(`No player character level found for ${characterKey}`);
+    }
+
+    return {
+      level,
+      ascension: state.ascension ?? null,
+      talentNormal: state.talents.normal ?? null,
+      talentSkill: state.talents.skill ?? null,
+      talentBurst: state.talents.burst ?? null,
+      warnings: [...state.warnings, ...state.conflicts.map((conflict) => `Player state conflict for ${conflict.field}; chose ${conflict.chosenSource}`)],
+    };
   }
 
   private resolveGoal(
