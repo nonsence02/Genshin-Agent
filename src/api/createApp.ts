@@ -66,7 +66,7 @@ function createServices(overrides: Partial<ApiServices> | undefined): ApiService
 
 function parseCorsOrigin(value: string | undefined): string[] | boolean {
   if (!value || value.trim() === "") {
-    return ["http://localhost:3000", "http://127.0.0.1:3000"];
+    return ["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3123", "http://127.0.0.1:3123"];
   }
 
   if (value === "true") {
@@ -97,7 +97,7 @@ function registerOpenApiRoute(app: FastifyInstance): void {
       "/planner/level-costs": { get: { summary: "Calculate character level EXP and Mora costs" } },
       "/planner/character/requirements": { post: { summary: "Calculate deterministic character requirements" } },
       "/planner/character/diff": { post: { summary: "Compare character requirements against player inventory" } },
-      "/planner/character/plan": { post: { summary: "Build a deterministic resin farming plan" } },
+      "/planner/character/plan": { post: { summary: "Build a deterministic resin farming plan with optional preferences" } },
       "/player/{playerKey}/inventory/effective": { get: { summary: "Resolve snapshot inventory with manual overrides" } },
       "/player/{playerKey}/state": { get: { summary: "Build merged player state from imported sources" } },
       "/player/{playerKey}/characters/{characterKey}/state": { get: { summary: "Build merged character state" } },

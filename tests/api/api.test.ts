@@ -112,6 +112,22 @@ function mockServices(): ApiServices {
           unknownTasks: [],
           openWorldGroups: [],
           unknownGroups: [],
+          preferencesApplied: {
+            planStyle: input.preferences?.planStyle ?? "resin_efficient",
+            days: input.preferences?.days ?? input.days ?? 7,
+            startDate: input.preferences?.startDate,
+            dailyResinBudget: input.preferences?.dailyResinBudget ?? input.dailyResinBudget ?? 180,
+            useCurrentResinOnFirstDay: false,
+            fragileResin: { allowed: false, maxToUse: 0, resinPerFragile: 60 },
+            availability: { blockedDaysOfWeek: [], blockedDates: [], preferredDaysOfWeek: [], maxResinByDate: {}, maxResinByDayOfWeek: {} },
+            weeklyBosses: { discountedClaimsUsedThisWeek: 0, blockedWeeklyBossSourceKeys: [], alreadyClaimedSourceKeys: [] },
+            sourceFilters: { excludedSourceTypes: [], excludedSourceKeys: [], preferSourceTypes: [] },
+            crafting: { useCrafting: true, allowDustOfAzoth: false, allowDreamSolvent: false },
+            manualTaskExclusions: [],
+            warnings: [],
+          },
+          excludedTasks: [],
+          fragileResinUsed: { used: 0, resinAdded: 0 },
           summary: {
             totalMissingMaterials: 0,
             totalEstimatedResin: 0,
@@ -333,6 +349,40 @@ describe("local Fastify API", () => {
 
     expect(response.statusCode).toBe(200);
     expect(response.json()).toMatchObject({ summary: { scheduledEstimatedResin: 0 } });
+  });
+
+  it("accepts character plan preferences", async () => {
+    const app = await createApp({ services: mockServices() });
+    const response = await app.inject({
+      method: "POST",
+      url: "/planner/character/plan",
+      payload: {
+        ...diffPayload,
+        preferences: {
+          planStyle: "fastest",
+          availability: { blockedDaysOfWeek: ["wednesday"] },
+          fragileResin: { allowed: true, maxToUse: 2 },
+        },
+      },
+    });
+
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({ preferencesApplied: { planStyle: "fastest" } });
+  });
+
+  it("rejects invalid character plan preferences", async () => {
+    const app = await createApp({ services: mockServices() });
+    const response = await app.inject({
+      method: "POST",
+      url: "/planner/character/plan",
+      payload: {
+        ...diffPayload,
+        preferences: { availability: { blockedDaysOfWeek: ["moonday"] } },
+      },
+    });
+
+    expect(response.statusCode).toBe(400);
+    expect(response.json()).toMatchObject({ error: { code: "VALIDATION_ERROR" } });
   });
 
   it("returns level costs", async () => {

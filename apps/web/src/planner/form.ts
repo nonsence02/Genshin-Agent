@@ -16,6 +16,14 @@ export interface PlannerFormState {
   days: number;
   dailyResinBudget: number;
   currentResin: string;
+  useCurrentResinOnFirstDay: boolean;
+  planStyle: "fastest" | "resin_efficient" | "low_effort";
+  blockedDaysOfWeek: string[];
+  blockedDates: string;
+  allowFragileResin: boolean;
+  maxFragileResin: number;
+  excludedSourceTypes: string;
+  excludedMaterials: string;
   usePlayerState: boolean;
   useCrafting: boolean;
   allowDustOfAzoth: boolean;
@@ -40,6 +48,14 @@ export const furinaDefaults: PlannerFormState = {
   days: 7,
   dailyResinBudget: 180,
   currentResin: "",
+  useCurrentResinOnFirstDay: false,
+  planStyle: "resin_efficient",
+  blockedDaysOfWeek: [],
+  blockedDates: "",
+  allowFragileResin: false,
+  maxFragileResin: 0,
+  excludedSourceTypes: "",
+  excludedMaterials: "",
   usePlayerState: false,
   useCrafting: true,
   allowDustOfAzoth: false,
@@ -87,7 +103,39 @@ export function buildPlanPayload(form: PlannerFormState): CharacterPlanPayload {
     ...buildDiffPayload(form),
     days: form.days,
     dailyResinBudget: form.dailyResinBudget,
+    useCurrentResinOnFirstDay: form.useCurrentResinOnFirstDay,
     discountedWeeklyBossClaimsUsed: form.discountedWeeklyBossClaimsUsed,
+    preferences: {
+      planStyle: form.planStyle,
+      days: form.days,
+      dailyResinBudget: form.dailyResinBudget,
+      currentResin: form.currentResin.trim() === "" ? undefined : Number(form.currentResin),
+      useCurrentResinOnFirstDay: form.useCurrentResinOnFirstDay,
+      fragileResin: {
+        allowed: form.allowFragileResin,
+        maxToUse: form.maxFragileResin,
+        resinPerFragile: 60,
+      },
+      availability: {
+        blockedDaysOfWeek: form.blockedDaysOfWeek,
+        blockedDates: commaList(form.blockedDates),
+      },
+      weeklyBosses: {
+        discountedClaimsUsedThisWeek: form.discountedWeeklyBossClaimsUsed,
+      },
+      sourceFilters: {
+        excludedSourceTypes: commaList(form.excludedSourceTypes),
+      },
+      crafting: {
+        useCrafting: form.useCrafting,
+        allowDustOfAzoth: form.allowDustOfAzoth,
+        allowDreamSolvent: form.allowDreamSolvent,
+      },
+      manualTaskExclusions: commaList(form.excludedMaterials).map((materialKey) => ({
+        materialKey,
+        reason: "Excluded in UI preferences",
+      })),
+    },
   };
 
   if (form.currentResin.trim() !== "") {
@@ -95,4 +143,11 @@ export function buildPlanPayload(form: PlannerFormState): CharacterPlanPayload {
   }
 
   return payload;
+}
+
+function commaList(value: string): string[] {
+  return value
+    .split(",")
+    .map((item) => item.trim())
+    .filter((item) => item.length > 0);
 }

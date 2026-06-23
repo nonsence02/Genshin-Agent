@@ -51,4 +51,24 @@ describe("planner form payload builders", () => {
       dailyResinBudget: 180,
     });
   });
+
+  it("includes plan preferences in plan payload", () => {
+    expect(buildPlanPayload({
+      ...furinaDefaults,
+      planStyle: "fastest",
+      blockedDaysOfWeek: ["wednesday"],
+      allowFragileResin: true,
+      maxFragileResin: 2,
+      excludedSourceTypes: "event, shop",
+      excludedMaterials: "mat_crown_of_insight",
+    })).toMatchObject({
+      preferences: {
+        planStyle: "fastest",
+        availability: { blockedDaysOfWeek: ["wednesday"] },
+        fragileResin: { allowed: true, maxToUse: 2 },
+        sourceFilters: { excludedSourceTypes: ["event", "shop"] },
+        manualTaskExclusions: [{ materialKey: "mat_crown_of_insight" }],
+      },
+    });
+  });
 });

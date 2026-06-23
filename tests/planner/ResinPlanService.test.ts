@@ -96,6 +96,93 @@ describe("ResinPlanService", () => {
     });
   });
 
+  it("sets blocked day resin budget to zero and schedules no resin tasks", async () => {
+    const result = await planWithTasks([
+      task("mat_boss", { sourceType: "boss", resinCostPerRun: 40, estimatedRuns: 1, estimatedResin: 40 }),
+    ], {
+      days: 1,
+      startDate: "2026-06-24",
+      preferences: { availability: { blockedDaysOfWeek: ["wednesday"] } },
+    });
+
+    expect(result.schedule[0]).toMatchObject({ dayOfWeek: "wednesday", blocked: true, resinBudget: 0, plannedResin: 0, tasks: [] });
+  });
+
+  it("applies daily resin budget and maxResinByDayOfWeek preferences", async () => {
+    const result = await planWithTasks([
+      task("mat_boss", { sourceType: "boss", resinCostPerRun: 40, estimatedRuns: 10, estimatedResin: 400 }),
+    ], {
+      days: 1,
+      startDate: "2026-06-22",
+      preferences: { dailyResinBudget: 160, availability: { maxResinByDayOfWeek: { monday: 80 } } },
+    });
+
+    expect(result.schedule[0]).toMatchObject({ resinBudgetBase: 80, plannedResin: 80 });
+  });
+
+  it("moves excluded source types to excludedTasks", async () => {
+    const result = await planWithTasks([
+      task("mat_event", { sourceType: "event", sourceKey: "event_test" }),
+    ], { preferences: { sourceFilters: { excludedSourceTypes: ["event"] } } });
+
+    expect(result.excludedTasks).toMatchObject([{ sourceType: "event", reason: "source type event is excluded" }]);
+    expect(result.schedule.flatMap((day) => day.tasks)).toEqual([]);
+  });
+
+  it("moves excluded materials to excludedTasks", async () => {
+    const result = await planWithTasks([
+      task("mat_crown_of_insight", { sourceType: "event", sourceKey: "event_test" }),
+    ], {
+      preferences: {
+        manualTaskExclusions: [{ materialKey: "mat_crown_of_insight", reason: "save crowns" }],
+      },
+    });
+
+    expect(result.excludedTasks).toMatchObject([{ materialKey: "mat_crown_of_insight", reason: "save crowns" }]);
+  });
+
+  it("skips already claimed weekly bosses", async () => {
+    const result = await planWithTasks([
+      task("mat_weekly", {
+        sourceType: "weekly_boss",
+        sourceKey: "enemy_weekly",
+        weeklyBoss: true,
+        estimatedRuns: null,
+        resinCostPerRun: null,
+      }),
+    ], { preferences: { weeklyBosses: { alreadyClaimedSourceKeys: ["enemy_weekly"] } } });
+
+    expect(result.excludedTasks[0]).toMatchObject({ sourceKey: "enemy_weekly" });
+    expect(result.schedule.flatMap((day) => day.tasks)).toEqual([]);
+  });
+
+  it("does not use fragile resin by default", async () => {
+    const result = await planWithTasks([
+      task("mat_boss", { sourceType: "boss", resinCostPerRun: 40, estimatedRuns: 10, estimatedResin: 400 }),
+    ], { days: 1, dailyResinBudget: 80 });
+
+    expect(result.fragileResinUsed).toEqual({ used: 0, resinAdded: 0 });
+    expect(result.schedule[0]?.resinBudget).toBe(80);
+  });
+
+  it("allowed fragile resin increases available resin deterministically", async () => {
+    const result = await planWithTasks([
+      task("mat_boss", { sourceType: "boss", resinCostPerRun: 40, estimatedRuns: 10, estimatedResin: 400 }),
+    ], { days: 1, dailyResinBudget: 80, preferences: { fragileResin: { allowed: true, maxToUse: 1 } } });
+
+    expect(result.fragileResinUsed).toEqual({ used: 1, resinAdded: 60 });
+    expect(result.schedule[0]?.resinBudget).toBe(140);
+    expect(result.schedule[0]?.plannedResin).toBe(120);
+    expect(result.warnings.some((warning) => warning.includes("Fragile resin is applied greedily"))).toBe(true);
+  });
+
+  it("accepts plan style and includes it in output", async () => {
+    const result = await planWithTasks([], { preferences: { planStyle: "low_effort" } });
+
+    expect(result.preferencesApplied.planStyle).toBe("low_effort");
+    expect(result.warnings.some((warning) => warning.includes("low_effort"))).toBe(true);
+  });
+
   it("creates warnings for unscheduled null-estimate tasks", async () => {
     const result = await planWithTasks([
       task("mat_domain", {

@@ -1,5 +1,6 @@
 import type { TalentLevels } from "../services/CharacterRequirementService.js";
 import { ResinPlanService, type ResinPlanInput, type ResinPlanResult } from "../services/ResinPlanService.js";
+import type { PlanPreferences } from "../preferences/PlanPreferences.js";
 
 interface CliOptions {
   input: Partial<ResinPlanInput>;
@@ -25,10 +26,13 @@ function parseOptions(args: string[]): CliOptions {
       options.input.usePlayerState = true;
     } else if (arg === "--use-crafting") {
       options.input.useCrafting = true;
+      ensurePreferences(options).crafting = { ...(ensurePreferences(options).crafting ?? {}), useCrafting: true };
     } else if (arg === "--allow-dust-of-azoth") {
       options.input.allowDustOfAzoth = true;
+      ensurePreferences(options).crafting = { ...(ensurePreferences(options).crafting ?? {}), allowDustOfAzoth: true };
     } else if (arg === "--allow-dream-solvent") {
       options.input.allowDreamSolvent = true;
+      ensurePreferences(options).crafting = { ...(ensurePreferences(options).crafting ?? {}), allowDreamSolvent: true };
     } else if (arg === "--no-manual-overrides") {
       options.input.includeManualOverrides = false;
     } else if (arg === "--player") {
@@ -59,14 +63,73 @@ function parseOptions(args: string[]): CliOptions {
       options.targetTalents.burst = readNumber(args, ++index, arg);
     } else if (arg === "--start-date") {
       options.input.startDate = readString(args, ++index, arg);
+      ensurePreferences(options).startDate = options.input.startDate;
     } else if (arg === "--days") {
       options.input.days = readNumber(args, ++index, arg);
+      ensurePreferences(options).days = options.input.days;
     } else if (arg === "--daily-resin") {
       options.input.dailyResinBudget = readNumber(args, ++index, arg);
+      ensurePreferences(options).dailyResinBudget = options.input.dailyResinBudget;
     } else if (arg === "--current-resin") {
       options.input.currentResin = readNumber(args, ++index, arg);
+      ensurePreferences(options).currentResin = options.input.currentResin;
+    } else if (arg === "--use-current-resin") {
+      options.input.useCurrentResinOnFirstDay = true;
+      ensurePreferences(options).useCurrentResinOnFirstDay = true;
     } else if (arg === "--discounted-weekly-boss-claims-used") {
       options.input.discountedWeeklyBossClaimsUsed = readNumber(args, ++index, arg);
+      ensurePreferences(options).weeklyBosses = {
+        ...(ensurePreferences(options).weeklyBosses ?? {}),
+        discountedClaimsUsedThisWeek: options.input.discountedWeeklyBossClaimsUsed,
+      };
+    } else if (arg === "--plan-style") {
+      ensurePreferences(options).planStyle = readString(args, ++index, arg) as PlanPreferences["planStyle"];
+    } else if (arg === "--blocked-days") {
+      ensurePreferences(options).availability = {
+        ...(ensurePreferences(options).availability ?? {}),
+        blockedDaysOfWeek: readList(args, ++index, arg),
+      };
+    } else if (arg === "--blocked-dates") {
+      ensurePreferences(options).availability = {
+        ...(ensurePreferences(options).availability ?? {}),
+        blockedDates: readList(args, ++index, arg),
+      };
+    } else if (arg === "--preferred-days") {
+      ensurePreferences(options).availability = {
+        ...(ensurePreferences(options).availability ?? {}),
+        preferredDaysOfWeek: readList(args, ++index, arg),
+      };
+    } else if (arg === "--allow-fragile-resin") {
+      ensurePreferences(options).fragileResin = {
+        ...(ensurePreferences(options).fragileResin ?? { allowed: true }),
+        allowed: true,
+      };
+    } else if (arg === "--max-fragile-resin") {
+      ensurePreferences(options).fragileResin = {
+        ...(ensurePreferences(options).fragileResin ?? { allowed: true }),
+        allowed: true,
+        maxToUse: readNumber(args, ++index, arg),
+      };
+    } else if (arg === "--already-claimed-weekly-bosses") {
+      ensurePreferences(options).weeklyBosses = {
+        ...(ensurePreferences(options).weeklyBosses ?? {}),
+        alreadyClaimedSourceKeys: readList(args, ++index, arg),
+      };
+    } else if (arg === "--exclude-source-types") {
+      ensurePreferences(options).sourceFilters = {
+        ...(ensurePreferences(options).sourceFilters ?? {}),
+        excludedSourceTypes: readList(args, ++index, arg),
+      };
+    } else if (arg === "--exclude-source-keys") {
+      ensurePreferences(options).sourceFilters = {
+        ...(ensurePreferences(options).sourceFilters ?? {}),
+        excludedSourceKeys: readList(args, ++index, arg),
+      };
+    } else if (arg === "--exclude-materials") {
+      ensurePreferences(options).manualTaskExclusions = readList(args, ++index, arg).map((materialKey) => ({
+        materialKey,
+        reason: "Excluded by CLI preference",
+      }));
     } else if (arg === "--only-missing") {
       continue;
     } else {
@@ -81,6 +144,11 @@ function parseOptions(args: string[]): CliOptions {
   }
 
   return options;
+}
+
+function ensurePreferences(options: CliOptions): PlanPreferences {
+  options.input.preferences ??= {};
+  return options.input.preferences;
 }
 
 function readString(args: string[], index: number, option: string): string {
@@ -103,6 +171,13 @@ function readNumber(args: string[], index: number, option: string): number {
   return value;
 }
 
+function readList(args: string[], index: number, option: string): string[] {
+  return readString(args, index, option)
+    .split(",")
+    .map((value) => value.trim())
+    .filter((value) => value.length > 0);
+}
+
 function compactTalents(talents: TalentLevels): TalentLevels | undefined {
   return Object.values(talents).some((value) => value !== undefined) ? talents : undefined;
 }
@@ -120,6 +195,9 @@ function printReadable(result: ResinPlanResult): void {
   console.log(
     `Missing materials: ${result.summary.totalMissingMaterials}; scheduled resin: ${result.summary.scheduledEstimatedResin}; unscheduled resin tasks: ${result.summary.unscheduledResinTasks}`,
   );
+  console.log(`Plan style: ${result.preferencesApplied.planStyle}`);
+  console.log(`Fragile resin used: ${result.fragileResinUsed.used} (${result.fragileResinUsed.resinAdded} resin)`);
+  console.log(`Excluded tasks: ${result.excludedTasks.length}`);
   console.log(`Source groups: ${result.sourceGroups.length}`);
   printActions("Crafting actions", result.inventoryDiff.craftingActions ?? []);
   printActions("Conversion actions", result.inventoryDiff.conversionActions ?? []);
@@ -145,12 +223,23 @@ function printReadable(result: ResinPlanResult): void {
 
   printGroups("Open-world groups", result.openWorldGroups);
   printGroups("Unknown/event groups", result.unknownGroups);
+  printExcludedTasks(result.excludedTasks);
 
   if (result.warnings.length > 0) {
     console.log("Warnings:");
     for (const warning of result.warnings) {
       console.log(`- ${warning}`);
     }
+  }
+}
+
+function printExcludedTasks(tasks: ResinPlanResult["excludedTasks"]): void {
+  if (tasks.length === 0) {
+    return;
+  }
+  console.log("Excluded tasks:");
+  for (const task of tasks) {
+    console.log(`- ${task.groupKey ?? task.materialKey ?? task.sourceKey ?? task.sourceType}: ${task.reason}`);
   }
 }
 

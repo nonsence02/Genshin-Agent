@@ -1,9 +1,11 @@
 import { ResinPolicy } from "../policies/ResinPolicy.js";
 import { WeeklyBossPolicy } from "../policies/WeeklyBossPolicy.js";
+import type { PlanPreferences, PlanPreferencesResolved } from "../preferences/PlanPreferences.js";
 import type { TalentLevels } from "./CharacterRequirementService.js";
 import { FarmTaskBuilder, type FarmTask, type FarmTaskPlan } from "./FarmTaskBuilder.js";
 import { FarmTaskGroupingService, type FarmSourceGroup, type FarmSourceGroupPlan } from "./FarmTaskGroupingService.js";
 import { InventoryDiffService, type CharacterInventoryDiffResult, type CharacterInventoryDiffInput } from "./InventoryDiffService.js";
+import { PlanPreferenceResolver } from "./PlanPreferenceResolver.js";
 
 export interface ResinPlanInput {
   playerKey: string;
@@ -26,6 +28,9 @@ export interface ResinPlanInput {
   allowDustOfAzoth?: boolean;
   allowDreamSolvent?: boolean;
   includeManualOverrides?: boolean;
+  planStyle?: PlanPreferences["planStyle"];
+  useCurrentResinOnFirstDay?: boolean;
+  preferences?: PlanPreferences;
 }
 
 export interface ScheduledResinTask {
@@ -54,9 +59,21 @@ export interface ResinPlanDay {
   date: string;
   dayOfWeek: string;
   resinBudget: number;
+  resinBudgetBase: number;
+  resinBudgetEffective: number;
   plannedResin: number;
+  blocked: boolean;
+  fragileResinUsed: number;
   tasks: ScheduledResinTask[];
   notes: string[];
+}
+
+export interface ExcludedPlannerTask {
+  groupKey?: string;
+  materialKey?: string;
+  sourceType?: string;
+  sourceKey?: string;
+  reason: string;
 }
 
 export interface ResinPlanResult {
@@ -72,6 +89,12 @@ export interface ResinPlanResult {
   unknownTasks: FarmTask[];
   openWorldGroups: FarmSourceGroup[];
   unknownGroups: FarmSourceGroup[];
+  preferencesApplied: PlanPreferencesResolved;
+  excludedTasks: ExcludedPlannerTask[];
+  fragileResinUsed: {
+    used: number;
+    resinAdded: number;
+  };
   summary: {
     totalMissingMaterials: number;
     totalEstimatedResin: number | null;
@@ -107,27 +130,63 @@ export class ResinPlanService {
     private readonly taskGrouping = new FarmTaskGroupingService(),
     private readonly resinPolicy = new ResinPolicy(),
     private readonly weeklyBossPolicy = new WeeklyBossPolicy(),
+    private readonly preferenceResolver = new PlanPreferenceResolver(),
   ) {}
 
   async plan(input: ResinPlanInput): Promise<ResinPlanResult> {
     validateInput(input);
+    const preferences = this.preferenceResolver.resolve(input);
 
-    const inventoryDiff = await this.inventoryDiff.diffCharacter(toDiffInput(input));
+    const inventoryDiff = await this.inventoryDiff.diffCharacter(toDiffInput(input, preferences));
     const farmTasks = await this.taskBuilder.build(inventoryDiff);
     const sourceGroupPlan = this.taskGrouping.group(farmTasks);
-    const days = buildPlanDays(input, this.resinPolicy);
-    const warnings = [...sourceGroupPlan.warnings];
-    const remainingGroups = [...sourceGroupPlan.resinGroups].sort(compareResinGroups).map((group) => ({
+    const days = buildPlanDays(preferences, this.resinPolicy);
+    const excludedTasks: ExcludedPlannerTask[] = [];
+    const warnings = [...sourceGroupPlan.warnings, ...preferences.warnings];
+    const excludedGroupKeys = new Set<string>();
+    const filteredAllGroups = filterSourceGroups(sourceGroupPlan.allGroups, preferences, excludedTasks, warnings, excludedGroupKeys);
+    const filteredGroups = sourceGroupPlan.resinGroups.filter((group) => !excludedGroupKeys.has(group.groupKey));
+    const filteredOpenWorldGroups = sourceGroupPlan.openWorldGroups.filter((group) => !excludedGroupKeys.has(group.groupKey));
+    const filteredUnknownGroups = sourceGroupPlan.unknownGroups.filter((group) => !excludedGroupKeys.has(group.groupKey));
+    const filteredOpenWorldTasks = farmTasks.openWorldTasks.filter((task) => !isTaskExcluded(task, preferences));
+    const filteredUnknownTasks = farmTasks.unknownTasks.filter((task) => !isTaskExcluded(task, preferences));
+    const remainingGroups = filteredGroups.sort((left, right) => compareResinGroups(left, right, preferences)).map((group) => ({
       group,
       remainingRuns: group.estimatedRuns ?? null,
       placeholderScheduled: false,
     }));
     const weeklyBossesScheduledThisWeek = new Set<string>();
-    let discountedWeeklyBossClaimsUsed = input.discountedWeeklyBossClaimsUsed ?? 0;
+    let discountedWeeklyBossClaimsUsed = preferences.weeklyBosses.discountedClaimsUsedThisWeek;
+    let remainingFragileResin = preferences.fragileResin.allowed
+      ? preferences.fragileResin.maxToUse * preferences.fragileResin.resinPerFragile
+      : 0;
+    let fragileResinAdded = 0;
+    if (preferences.fragileResin.allowed && remainingFragileResin > 0) {
+      warnings.push("Fragile resin is applied greedily in v1: at most one configured fragile resin unit is added to each eligible early day.");
+    }
 
     for (const day of days) {
+      if (day.blocked) {
+        warnings.push(`${day.date} ${day.dayOfWeek} is blocked by plan preferences.`);
+        continue;
+      }
+
+      if (preferences.fragileResin.allowed && remainingFragileResin > 0 && remainingGroups.some(groupHasRemaining)) {
+        const added = Math.min(remainingFragileResin, preferences.fragileResin.resinPerFragile);
+        day.resinBudget += added;
+        day.resinBudgetEffective += added;
+        day.fragileResinUsed += added;
+        remainingFragileResin -= added;
+        fragileResinAdded += added;
+      }
+
       for (const remaining of remainingGroups) {
         if (!canScheduleOnDay(remaining.group, day.dayOfWeek)) {
+          continue;
+        }
+
+        if (shouldSkipWeeklyBoss(remaining.group, preferences, excludedTasks, warnings)) {
+          remaining.placeholderScheduled = true;
           continue;
         }
 
@@ -174,12 +233,18 @@ export class ResinPlanService {
       },
       inventoryDiff,
       farmTasks,
-      sourceGroups: sourceGroupPlan.allGroups,
+      sourceGroups: filteredAllGroups,
       schedule: days,
-      openWorldTasks: input.includeOpenWorld === false ? [] : farmTasks.openWorldTasks,
-      unknownTasks: farmTasks.unknownTasks,
-      openWorldGroups: input.includeOpenWorld === false ? [] : sourceGroupPlan.openWorldGroups,
-      unknownGroups: sourceGroupPlan.unknownGroups,
+      openWorldTasks: input.includeOpenWorld === false ? [] : filteredOpenWorldTasks,
+      unknownTasks: filteredUnknownTasks,
+      openWorldGroups: input.includeOpenWorld === false ? [] : filteredOpenWorldGroups,
+      unknownGroups: filteredUnknownGroups,
+      preferencesApplied: preferences,
+      excludedTasks,
+      fragileResinUsed: {
+        used: Math.ceil(fragileResinAdded / preferences.fragileResin.resinPerFragile),
+        resinAdded: fragileResinAdded,
+      },
       summary: {
         totalMissingMaterials: inventoryDiff.summary.missingMaterials,
         totalEstimatedResin,
@@ -187,15 +252,15 @@ export class ResinPlanService {
         unscheduledResinTasks: remainingGroups.filter((item) =>
           item.remainingRuns === null ? !item.placeholderScheduled : item.remainingRuns > 0,
         ).length,
-        openWorldTasks: input.includeOpenWorld === false ? 0 : sourceGroupPlan.openWorldGroups.length,
-        unknownTasks: sourceGroupPlan.unknownGroups.length,
+        openWorldTasks: input.includeOpenWorld === false ? 0 : filteredOpenWorldGroups.length,
+        unknownTasks: filteredUnknownGroups.length,
       },
       warnings: [...new Set(warnings)],
     };
   }
 }
 
-function toDiffInput(input: ResinPlanInput): CharacterInventoryDiffInput {
+function toDiffInput(input: ResinPlanInput, preferences: PlanPreferencesResolved): CharacterInventoryDiffInput {
   return {
     playerKey: input.playerKey,
     characterKey: input.characterKey,
@@ -207,9 +272,9 @@ function toDiffInput(input: ResinPlanInput): CharacterInventoryDiffInput {
     targetAscensionPhase: input.targetAscensionPhase,
     currentTalents: input.currentTalents,
     targetTalents: input.targetTalents,
-    useCrafting: input.useCrafting,
-    allowDustOfAzoth: input.allowDustOfAzoth,
-    allowDreamSolvent: input.allowDreamSolvent,
+    useCrafting: preferences.crafting.useCrafting,
+    allowDustOfAzoth: preferences.crafting.allowDustOfAzoth,
+    allowDreamSolvent: preferences.crafting.allowDreamSolvent,
     includeManualOverrides: input.includeManualOverrides,
   };
 }
@@ -235,27 +300,40 @@ function validateInput(input: ResinPlanInput): void {
   }
 }
 
-function buildPlanDays(input: ResinPlanInput, resinPolicy: ResinPolicy): ResinPlanDay[] {
-  const startDate = parseStartDate(input.startDate);
-  const dayCount = input.days ?? 7;
-  const dailyBudget = input.dailyResinBudget ?? resinPolicy.config.naturalResinPerDay;
+function buildPlanDays(preferences: PlanPreferencesResolved, resinPolicy: ResinPolicy): ResinPlanDay[] {
+  const startDate = parseStartDate(preferences.startDate);
+  const dayCount = preferences.days;
+  const dailyBudget = preferences.dailyResinBudget ?? resinPolicy.config.naturalResinPerDay;
 
   return Array.from({ length: dayCount }, (_, index) => {
     const date = new Date(startDate);
     date.setDate(startDate.getDate() + index);
-    const resinBudget =
-      index === 0 && input.currentResin !== undefined
-        ? Math.min(resinPolicy.config.resinCap, dailyBudget + input.currentResin)
-        : dailyBudget;
+    const dateKey = formatDate(date);
+    const dayOfWeek = DAY_NAMES[date.getDay()];
+    const blocked = preferences.availability.blockedDaysOfWeek.includes(dayOfWeek) || preferences.availability.blockedDates.includes(dateKey);
+    const cappedDailyBudget = Math.min(
+      dailyBudget,
+      preferences.availability.maxResinByDate[dateKey] ?? Number.POSITIVE_INFINITY,
+      preferences.availability.maxResinByDayOfWeek[dayOfWeek] ?? Number.POSITIVE_INFINITY,
+    );
+    const resinBudgetBase =
+      index === 0 && preferences.useCurrentResinOnFirstDay && preferences.currentResin !== undefined
+        ? Math.min(resinPolicy.config.resinCap, cappedDailyBudget + preferences.currentResin)
+        : cappedDailyBudget;
+    const resinBudget = blocked ? 0 : resinBudgetBase;
 
     return {
-      date: formatDate(date),
-      dayOfWeek: DAY_NAMES[date.getDay()],
+      date: dateKey,
+      dayOfWeek,
       resinBudget,
+      resinBudgetBase,
+      resinBudgetEffective: resinBudget,
       plannedResin: 0,
+      blocked,
+      fragileResinUsed: 0,
       tasks: [],
       notes:
-        index === 0 && input.currentResin !== undefined
+        index === 0 && preferences.useCurrentResinOnFirstDay && preferences.currentResin !== undefined
           ? [`First day budget includes currentResin and is capped at ${resinPolicy.config.resinCap}.`]
           : [],
     };
@@ -287,12 +365,123 @@ function canScheduleOnDay(group: FarmSourceGroup, dayOfWeek: string): boolean {
   return group.calendarDays.length === 0 || group.calendarDays.includes(dayOfWeek);
 }
 
-function compareResinGroups(left: FarmSourceGroup, right: FarmSourceGroup): number {
+function filterSourceGroups(
+  groups: FarmSourceGroup[],
+  preferences: PlanPreferencesResolved,
+  excludedTasks: ExcludedPlannerTask[],
+  warnings: string[],
+  excludedGroupKeys: Set<string> = new Set<string>(),
+): FarmSourceGroup[] {
+  return groups.filter((group) => {
+    const reason = exclusionReason(group, preferences);
+
+    if (!reason) {
+      return true;
+    }
+
+    excludedTasks.push({
+      groupKey: group.groupKey,
+      materialKey: group.primaryMaterialKey,
+      sourceType: group.sourceType,
+      sourceKey: group.sourceKey,
+      reason,
+    });
+    excludedGroupKeys.add(group.groupKey);
+    warnings.push(`Excluded ${group.groupKey}: ${reason}`);
+    return false;
+  });
+}
+
+function isTaskExcluded(task: FarmTask, preferences: PlanPreferencesResolved): boolean {
+  if (preferences.sourceFilters.excludedSourceTypes.includes(task.sourceType)) {
+    return true;
+  }
+  if (task.sourceKey && preferences.sourceFilters.excludedSourceKeys.includes(task.sourceKey)) {
+    return true;
+  }
+  return preferences.manualTaskExclusions.some((exclusion) =>
+    (!exclusion.materialKey || task.materialKey === exclusion.materialKey) &&
+    (!exclusion.sourceKey || task.sourceKey === exclusion.sourceKey) &&
+    (!exclusion.sourceType || task.sourceType === exclusion.sourceType),
+  );
+}
+
+function exclusionReason(group: FarmSourceGroup, preferences: PlanPreferencesResolved): string | null {
+  if (preferences.sourceFilters.excludedSourceTypes.includes(group.sourceType)) {
+    return `source type ${group.sourceType} is excluded`;
+  }
+  if (group.sourceKey && preferences.sourceFilters.excludedSourceKeys.includes(group.sourceKey)) {
+    return `source key ${group.sourceKey} is excluded`;
+  }
+
+  for (const exclusion of preferences.manualTaskExclusions) {
+    const materialMatches = !exclusion.materialKey || group.materials.some((material) => material.materialKey === exclusion.materialKey);
+    const sourceKeyMatches = !exclusion.sourceKey || group.sourceKey === exclusion.sourceKey;
+    const sourceTypeMatches = !exclusion.sourceType || group.sourceType === exclusion.sourceType;
+    if (materialMatches && sourceKeyMatches && sourceTypeMatches) {
+      return exclusion.reason ?? "manual task exclusion";
+    }
+  }
+
+  return null;
+}
+
+function shouldSkipWeeklyBoss(
+  group: FarmSourceGroup,
+  preferences: PlanPreferencesResolved,
+  excludedTasks: ExcludedPlannerTask[],
+  warnings: string[],
+): boolean {
+  if (!group.weeklyBoss && !WEEKLY_BOSS_SOURCE_TYPES.has(group.sourceType)) {
+    return false;
+  }
+
+  const sourceKey = group.sourceKey ?? group.groupKey;
+  const blocked = preferences.weeklyBosses.blockedWeeklyBossSourceKeys.includes(sourceKey);
+  const claimed = preferences.weeklyBosses.alreadyClaimedSourceKeys.includes(sourceKey);
+  if (!blocked && !claimed) {
+    return false;
+  }
+
+  const reason = blocked ? `weekly boss ${sourceKey} is blocked` : `weekly boss ${sourceKey} already claimed`;
+  excludedTasks.push({
+    groupKey: group.groupKey,
+    materialKey: group.primaryMaterialKey,
+    sourceType: group.sourceType,
+    sourceKey,
+    reason,
+  });
+  warnings.push(`Skipped ${group.groupKey}: ${reason}`);
+  return true;
+}
+
+function groupHasRemaining(remaining: RemainingTask): boolean {
+  return remaining.remainingRuns === null ? !remaining.placeholderScheduled : remaining.remainingRuns > 0;
+}
+
+function compareResinGroups(left: FarmSourceGroup, right: FarmSourceGroup, preferences?: PlanPreferencesResolved): number {
+  const preferred = comparePreferredSourceTypes(left, right, preferences);
+  if (preferred !== 0) {
+    return preferred;
+  }
+
   return (
     resinGroupRank(left) - resinGroupRank(right) ||
     left.groupKey.localeCompare(right.groupKey) ||
     left.sourceType.localeCompare(right.sourceType)
   );
+}
+
+function comparePreferredSourceTypes(left: FarmSourceGroup, right: FarmSourceGroup, preferences: PlanPreferencesResolved | undefined): number {
+  const preferred = preferences?.sourceFilters.preferSourceTypes ?? [];
+  if (preferred.length === 0) {
+    return 0;
+  }
+  const leftIndex = preferred.indexOf(left.sourceType);
+  const rightIndex = preferred.indexOf(right.sourceType);
+  const leftRank = leftIndex === -1 ? preferred.length + 1 : leftIndex;
+  const rightRank = rightIndex === -1 ? preferred.length + 1 : rightIndex;
+  return leftRank - rightRank;
 }
 
 function resinGroupRank(group: FarmSourceGroup): number {

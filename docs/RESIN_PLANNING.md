@@ -117,8 +117,10 @@ Defaults:
 - `days`: `7`;
 - `dailyResinBudget`: `180`;
 - resin cap: `200`;
-- `currentResin`, when provided, is added to the first day but capped by the resin cap;
+- `currentResin`, when provided with `useCurrentResinOnFirstDay`, is added to the first day but capped by the resin cap;
 - `discountedWeeklyBossClaimsUsed`: `0`.
+
+`PlanPreferences` can constrain the schedule without mutating inventory or knowledge data. Supported v1 preferences include blocked weekdays/dates, date/day resin caps, source type/key exclusions, manual task exclusions, weekly boss claimed/blocked source keys, fragile resin limits, and plan style. Excluded tasks are returned in `excludedTasks` with reasons.
 
 Scheduling rules:
 
@@ -142,6 +144,8 @@ Priority order:
 5. other resin-gated tasks.
 
 Weekly boss handling is intentionally cautious. The planner uses `WeeklyBossPolicy` for one claim's resin cost and avoids scheduling the same weekly boss source more than once per week. It does not know which bosses the player has already claimed beyond the `discountedWeeklyBossClaimsUsed` input.
+
+With preferences, already claimed or blocked weekly boss source keys are skipped and reported. Fragile resin is disabled by default. When enabled, v1 greedily adds up to one fragile resin unit to early days with remaining resin tasks until the configured maximum is exhausted.
 
 Future work:
 

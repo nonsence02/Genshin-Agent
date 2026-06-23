@@ -13,8 +13,8 @@ npm run dev
 Environment variables:
 
 - `API_HOST`: bind host, default `127.0.0.1`
-- `API_PORT`: bind port, default `3000`
-- `API_CORS_ORIGIN`: comma-separated allowed origins, default `http://localhost:3000,http://127.0.0.1:3000`
+- `API_PORT`: bind port, default `3123`
+- `API_CORS_ORIGIN`: comma-separated allowed origins, default `http://localhost:3123,http://127.0.0.1:3123`
 
 ## Endpoints
 
@@ -37,19 +37,19 @@ Environment variables:
 ## Examples
 
 ```bash
-curl http://127.0.0.1:3000/health
+curl http://127.0.0.1:3123/health
 ```
 
 ```bash
-curl "http://127.0.0.1:3000/knowledge/materials/mat_philosophies_of_justice/sources"
+curl "http://127.0.0.1:3123/knowledge/materials/mat_philosophies_of_justice/sources"
 ```
 
 ```bash
-curl "http://127.0.0.1:3000/planner/level-costs?currentLevel=20&targetLevel=90"
+curl "http://127.0.0.1:3123/planner/level-costs?currentLevel=20&targetLevel=90"
 ```
 
 ```bash
-curl -X POST http://127.0.0.1:3000/planner/character/requirements \
+curl -X POST http://127.0.0.1:3123/planner/character/requirements \
   -H "content-type: application/json" \
   -d '{
     "characterKey": "char_furina",
@@ -63,7 +63,7 @@ curl -X POST http://127.0.0.1:3000/planner/character/requirements \
 ```
 
 ```bash
-curl -X POST http://127.0.0.1:3000/planner/character/diff \
+curl -X POST http://127.0.0.1:3123/planner/character/diff \
   -H "content-type: application/json" \
   -d '{
     "playerKey": "default",
@@ -84,7 +84,7 @@ curl -X POST http://127.0.0.1:3000/planner/character/diff \
 ```
 
 ```bash
-curl -X POST http://127.0.0.1:3000/planner/character/plan \
+curl -X POST http://127.0.0.1:3123/planner/character/plan \
   -H "content-type: application/json" \
   -d '{
     "playerKey": "default",
@@ -108,19 +108,19 @@ curl -X POST http://127.0.0.1:3000/planner/character/plan \
 ```
 
 ```bash
-curl http://127.0.0.1:3000/player/default/inventory/effective
+curl http://127.0.0.1:3123/player/default/inventory/effective
 ```
 
 ```bash
-curl "http://127.0.0.1:3000/player/default/state?characterKey=char_furina"
+curl "http://127.0.0.1:3123/player/default/state?characterKey=char_furina"
 ```
 
 ```bash
-curl http://127.0.0.1:3000/player/default/characters/char_furina/state
+curl http://127.0.0.1:3123/player/default/characters/char_furina/state
 ```
 
 ```bash
-curl -X PUT http://127.0.0.1:3000/player/default/inventory/overrides/mat_heros_wit \
+curl -X PUT http://127.0.0.1:3123/player/default/inventory/overrides/mat_heros_wit \
   -H "content-type: application/json" \
   -d '{ "mode": "absolute", "quantity": 40, "reason": "manual correction" }'
 ```
@@ -128,6 +128,27 @@ curl -X PUT http://127.0.0.1:3000/player/default/inventory/overrides/mat_heros_w
 Manual inventory overrides are applied by default to planner diff and plan endpoints. Set `"includeManualOverrides": false` to use raw snapshot quantities. Overrides correct inventory state; crafting options are a separate virtual projection layer.
 
 When `"usePlayerState": true`, planner diff and plan endpoints use `PlayerStateBuilder` to resolve current level, current ascension phase, and current talents. Explicit request fields still override merged state.
+
+`POST /planner/character/plan` accepts a nested `preferences` object. It overrides equivalent legacy top-level fields such as `days`, `dailyResinBudget`, `currentResin`, `discountedWeeklyBossClaimsUsed`, and crafting flags:
+
+```json
+{
+  "preferences": {
+    "planStyle": "resin_efficient",
+    "dailyResinBudget": 180,
+    "availability": {
+      "blockedDaysOfWeek": ["wednesday"]
+    },
+    "fragileResin": {
+      "allowed": true,
+      "maxToUse": 2
+    },
+    "sourceFilters": {
+      "excludedSourceTypes": ["event", "shop"]
+    }
+  }
+}
+```
 
 Errors use a consistent JSON shape:
 
@@ -140,3 +161,4 @@ Errors use a consistent JSON shape:
   }
 }
 ```
+

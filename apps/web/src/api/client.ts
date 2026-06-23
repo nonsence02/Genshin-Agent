@@ -31,8 +31,52 @@ export interface CharacterPlanPayload extends CharacterDiffPayload {
   days?: number;
   dailyResinBudget?: number;
   currentResin?: number;
+  useCurrentResinOnFirstDay?: boolean;
   includeOpenWorld?: boolean;
   discountedWeeklyBossClaimsUsed?: number;
+  preferences?: PlanPreferencesPayload;
+}
+
+export interface PlanPreferencesPayload {
+  planStyle?: "fastest" | "resin_efficient" | "low_effort";
+  days?: number;
+  startDate?: string;
+  dailyResinBudget?: number;
+  currentResin?: number;
+  useCurrentResinOnFirstDay?: boolean;
+  fragileResin?: {
+    allowed: boolean;
+    maxToUse?: number;
+    resinPerFragile?: number;
+  };
+  availability?: {
+    blockedDaysOfWeek?: string[];
+    blockedDates?: string[];
+    preferredDaysOfWeek?: string[];
+    maxResinByDate?: Record<string, number>;
+    maxResinByDayOfWeek?: Record<string, number>;
+  };
+  weeklyBosses?: {
+    discountedClaimsUsedThisWeek?: number;
+    blockedWeeklyBossSourceKeys?: string[];
+    alreadyClaimedSourceKeys?: string[];
+  };
+  sourceFilters?: {
+    excludedSourceTypes?: string[];
+    excludedSourceKeys?: string[];
+    preferSourceTypes?: string[];
+  };
+  crafting?: {
+    useCrafting?: boolean;
+    allowDustOfAzoth?: boolean;
+    allowDreamSolvent?: boolean;
+  };
+  manualTaskExclusions?: Array<{
+    materialKey?: string;
+    sourceKey?: string;
+    sourceType?: string;
+    reason?: string;
+  }>;
 }
 
 export interface ApiErrorResponse {
@@ -108,7 +152,11 @@ export interface ResinPlanResult {
     date: string;
     dayOfWeek: string;
     resinBudget: number;
+    resinBudgetBase?: number;
+    resinBudgetEffective?: number;
     plannedResin: number;
+    blocked?: boolean;
+    fragileResinUsed?: number;
     tasks: Array<{
       taskType: string;
       materialKey: string;
@@ -123,6 +171,9 @@ export interface ResinPlanResult {
   }>;
   openWorldTasks: FarmTask[];
   unknownTasks: FarmTask[];
+  preferencesApplied?: PlanPreferencesPayload & { warnings?: string[] };
+  excludedTasks?: Array<{ groupKey?: string; materialKey?: string; sourceType?: string; sourceKey?: string; reason: string }>;
+  fragileResinUsed?: { used: number; resinAdded: number };
   summary: {
     totalMissingMaterials: number;
     totalEstimatedResin: number | null;
@@ -216,7 +267,7 @@ export class PlannerApiError extends Error {
   }
 }
 
-const DEFAULT_API_BASE_URL = "http://127.0.0.1:3000";
+const DEFAULT_API_BASE_URL = "http://127.0.0.1:3123";
 declare const __GENSHIN_AGENT_API_BASE_URL__: string | undefined;
 
 export function createPlannerApiClient(baseUrl = getDefaultBaseUrl()) {

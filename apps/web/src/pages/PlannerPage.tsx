@@ -194,6 +194,11 @@ function FormFields({
           placeholder="optional"
         />
       </label>
+      <CheckboxField
+        label="Use current resin on first day"
+        checked={form.useCurrentResinOnFirstDay}
+        onChange={(value) => update("useCurrentResinOnFirstDay", value)}
+      />
       <NumberField
         label="Weekly discounts used"
         value={form.discountedWeeklyBossClaimsUsed}
@@ -210,8 +215,51 @@ function FormFields({
         checked={form.includeManualOverrides}
         onChange={(value) => update("includeManualOverrides", value)}
       />
+      <section className="preference-panel">
+        <h2>Plan preferences</h2>
+        <label>
+          Plan style
+          <select value={form.planStyle} onChange={(event) => update("planStyle", event.target.value as PlannerFormState["planStyle"])}>
+            <option value="resin_efficient">resin_efficient</option>
+            <option value="fastest">fastest</option>
+            <option value="low_effort">low_effort</option>
+          </select>
+        </label>
+        <div className="day-checkboxes">
+          {["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"].map((day) => (
+            <CheckboxField
+              key={day}
+              label={`Block ${day}`}
+              checked={form.blockedDaysOfWeek.includes(day)}
+              onChange={(checked) => update("blockedDaysOfWeek", toggleListValue(form.blockedDaysOfWeek, day, checked))}
+            />
+          ))}
+        </div>
+        <label>
+          Blocked dates
+          <input
+            value={form.blockedDates}
+            onChange={(event) => update("blockedDates", event.target.value)}
+            placeholder="2026-06-25,2026-06-26"
+          />
+        </label>
+        <CheckboxField label="Allow fragile resin" checked={form.allowFragileResin} onChange={(value) => update("allowFragileResin", value)} />
+        <NumberField label="Max fragile resin" value={form.maxFragileResin} min={0} max={99} onChange={(value) => update("maxFragileResin", value)} />
+        <label>
+          Exclude source types
+          <input value={form.excludedSourceTypes} onChange={(event) => update("excludedSourceTypes", event.target.value)} placeholder="event,shop" />
+        </label>
+        <label>
+          Exclude materials
+          <input value={form.excludedMaterials} onChange={(event) => update("excludedMaterials", event.target.value)} placeholder="mat_crown_of_insight" />
+        </label>
+      </section>
     </form>
   );
+}
+
+function toggleListValue(values: string[], value: string, enabled: boolean): string[] {
+  return enabled ? [...new Set([...values, value])] : values.filter((item) => item !== value);
 }
 
 function BackendHealth({ status }: { status: "checking" | "online" | "offline" }) {
@@ -422,6 +470,7 @@ function ResultView({ result }: { result: Exclude<ResultState, { mode: "empty" }
   return (
     <div className="result-stack">
       <SummaryPanel diff={diff} plan={plan} />
+      {plan ? <PreferencesPanel plan={plan} /> : null}
       <MaterialTable title="Missing materials" materials={missing} />
       {result.mode === "diff" ? <MaterialTable title="Satisfied materials" materials={satisfied} compact /> : null}
       <CraftingActions title="Crafting actions" actions={diff.craftingActions ?? []} />
@@ -435,6 +484,31 @@ function ResultView({ result }: { result: Exclude<ResultState, { mode: "empty" }
         <pre>{JSON.stringify(result.data, null, 2)}</pre>
       </details>
     </div>
+  );
+}
+
+function PreferencesPanel({ plan }: { plan: ResinPlanResult }) {
+  const blockedDays = plan.schedule.filter((day) => day.blocked);
+
+  return (
+    <section className="result-panel">
+      <h2>Preferences applied</h2>
+      <div className="summary-grid">
+        <Metric label="Plan style" value={String(plan.preferencesApplied?.planStyle ?? "resin_efficient")} />
+        <Metric label="Blocked days" value={blockedDays.map((day) => `${day.date} ${day.dayOfWeek}`).join(", ") || "none"} />
+        <Metric label="Fragile resin" value={`${plan.fragileResinUsed?.used ?? 0} used, ${plan.fragileResinUsed?.resinAdded ?? 0} resin`} />
+        <Metric label="Excluded tasks" value={String(plan.excludedTasks?.length ?? 0)} />
+      </div>
+      {plan.excludedTasks && plan.excludedTasks.length > 0 ? (
+        <ul className="warning-list">
+          {plan.excludedTasks.map((task, index) => (
+            <li key={`${task.groupKey ?? task.materialKey ?? task.sourceKey}-${index}`}>
+              {task.groupKey ?? task.materialKey ?? task.sourceKey}: {task.reason}
+            </li>
+          ))}
+        </ul>
+      ) : null}
+    </section>
   );
 }
 

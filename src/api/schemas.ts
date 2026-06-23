@@ -4,6 +4,9 @@ const nonEmptyString = z.string().trim().min(1);
 const level = z.coerce.number().int().min(1).max(90);
 const talentLevel = z.coerce.number().int().min(1).max(10);
 const ascensionPhase = z.coerce.number().int().min(0).max(6);
+const dayName = z.enum(["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]);
+const dateString = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
+const planStyle = z.enum(["fastest", "resin_efficient", "low_effort"]);
 
 export const booleanQuerySchema = z.preprocess((value) => {
   if (value === undefined) {
@@ -83,13 +86,58 @@ export const characterDiffBodySchema = characterRequirementsBodySchema
     currentLevel: level.optional(),
   });
 
+const planPreferencesSchema = z.object({
+  planStyle: planStyle.optional(),
+  days: z.coerce.number().int().min(1).max(30).optional(),
+  startDate: dateString.optional(),
+  dailyResinBudget: z.coerce.number().int().min(0).max(2000).optional(),
+  currentResin: z.coerce.number().int().min(0).max(2000).optional(),
+  useCurrentResinOnFirstDay: z.boolean().optional(),
+  fragileResin: z.object({
+    allowed: z.boolean(),
+    maxToUse: z.coerce.number().int().min(0).optional(),
+    resinPerFragile: z.coerce.number().int().min(1).optional(),
+  }).optional(),
+  availability: z.object({
+    blockedDaysOfWeek: z.array(dayName).optional(),
+    blockedDates: z.array(dateString).optional(),
+    preferredDaysOfWeek: z.array(dayName).optional(),
+    maxResinByDate: z.record(dateString, z.coerce.number().int().min(0).max(2000)).optional(),
+    maxResinByDayOfWeek: z.record(dayName, z.coerce.number().int().min(0).max(2000)).optional(),
+  }).optional(),
+  weeklyBosses: z.object({
+    discountedClaimsUsedThisWeek: z.coerce.number().int().min(0).max(3).optional(),
+    blockedWeeklyBossSourceKeys: z.array(nonEmptyString).optional(),
+    alreadyClaimedSourceKeys: z.array(nonEmptyString).optional(),
+  }).optional(),
+  sourceFilters: z.object({
+    excludedSourceTypes: z.array(nonEmptyString).optional(),
+    excludedSourceKeys: z.array(nonEmptyString).optional(),
+    preferSourceTypes: z.array(nonEmptyString).optional(),
+  }).optional(),
+  crafting: z.object({
+    useCrafting: z.boolean().optional(),
+    allowDustOfAzoth: z.boolean().optional(),
+    allowDreamSolvent: z.boolean().optional(),
+  }).optional(),
+  manualTaskExclusions: z.array(z.object({
+    materialKey: nonEmptyString.optional(),
+    sourceKey: nonEmptyString.optional(),
+    sourceType: nonEmptyString.optional(),
+    reason: z.string().max(500).optional(),
+  })).optional(),
+});
+
 export const characterPlanBodySchema = characterDiffBodySchema.extend({
-  startDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  startDate: dateString.optional(),
   days: z.coerce.number().int().min(1).max(30).optional(),
   dailyResinBudget: z.coerce.number().int().min(0).max(2000).optional(),
   currentResin: z.coerce.number().int().min(0).max(2000).optional(),
+  useCurrentResinOnFirstDay: z.boolean().optional(),
   includeOpenWorld: z.boolean().optional(),
   discountedWeeklyBossClaimsUsed: z.coerce.number().int().min(0).max(3).optional(),
+  planStyle: planStyle.optional(),
+  preferences: planPreferencesSchema.optional(),
 });
 
 export const effectiveInventoryQuerySchema = z.object({
