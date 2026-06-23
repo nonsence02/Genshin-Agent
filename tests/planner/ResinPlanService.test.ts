@@ -22,7 +22,7 @@ class MockTaskBuilder implements ResinPlanFarmTaskBuilder {
 describe("ResinPlanService", () => {
   it("does not exceed daily resin budget and schedules boss tasks any day", async () => {
     const result = await planWithTasks([
-      task("mat_boss", { sourceType: "boss", resinCostPerRun: 40, estimatedRuns: 10, estimatedResin: 400 }),
+      task("mat_boss", { sourceType: "boss", resinCostPerRun: 40, estimatedRuns: 10, estimatedResin: 400, missing: 25 }),
     ], { days: 2, dailyResinBudget: 80, startDate: "2026-06-22" });
 
     expect(result.schedule.map((day) => day.plannedResin)).toEqual([80, 80]);
@@ -116,6 +116,40 @@ describe("ResinPlanService", () => {
 
     expect(result.schedule[0]?.tasks.map((scheduled) => scheduled.materialKey)).toEqual(["mat_weekly", "mat_boss", "mat_ley"]);
     expect(result.schedule[0]?.plannedResin).toBe(90);
+  });
+
+  it("schedules grouped boss source once instead of duplicating gem and boss material resin", async () => {
+    const result = await planWithTasks([
+      task("mat_varunada_lazurite_chunk", {
+        materialName: "Varunada Lazurite Chunk",
+        sourceType: "boss",
+        sourceKey: "enemy_aeonblight_drake",
+        sourceName: "Aeonblight Drake",
+        missing: 9,
+        sourceOptions: [
+          { sourceType: "boss", sourceKey: "enemy_aeonblight_drake", sourceName: "Aeonblight Drake" },
+          { sourceType: "boss", sourceKey: "enemy_hydro_tulpa", sourceName: "Hydro Tulpa" },
+        ],
+      }),
+      task("mat_water_that_failed_to_transcend", {
+        materialName: "Water That Failed To Transcend",
+        sourceType: "boss",
+        sourceKey: "enemy_hydro_tulpa",
+        sourceName: "Hydro Tulpa",
+        missing: 46,
+      }),
+    ], { days: 7, dailyResinBudget: 180, startDate: "2026-06-22" });
+
+    const scheduledHydroTulpaTasks = result.schedule.flatMap((day) =>
+      day.tasks.filter((scheduled) => scheduled.groupKey === "boss:enemy_hydro_tulpa"),
+    );
+
+    expect(result.sourceGroups.find((group) => group.groupKey === "boss:enemy_hydro_tulpa")?.materials).toEqual([
+      expect.objectContaining({ materialKey: "mat_water_that_failed_to_transcend", role: "primary" }),
+      expect.objectContaining({ materialKey: "mat_varunada_lazurite_chunk", role: "secondary" }),
+    ]);
+    expect(scheduledHydroTulpaTasks.reduce((sum, scheduled) => sum + (scheduled.runs ?? 0), 0)).toBe(19);
+    expect(scheduledHydroTulpaTasks.reduce((sum, scheduled) => sum + (scheduled.resin ?? 0), 0)).toBe(760);
   });
 });
 

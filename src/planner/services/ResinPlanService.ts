@@ -2,6 +2,7 @@ import { ResinPolicy } from "../policies/ResinPolicy.js";
 import { WeeklyBossPolicy } from "../policies/WeeklyBossPolicy.js";
 import type { TalentLevels } from "./CharacterRequirementService.js";
 import { FarmTaskBuilder, type FarmTask, type FarmTaskPlan } from "./FarmTaskBuilder.js";
+import { FarmTaskGroupingService, type FarmSourceGroup, type FarmSourceGroupPlan } from "./FarmTaskGroupingService.js";
 import { InventoryDiffService, type CharacterInventoryDiffResult, type CharacterInventoryDiffInput } from "./InventoryDiffService.js";
 
 export interface ResinPlanInput {
@@ -25,10 +26,19 @@ export interface ResinPlanInput {
 
 export interface ScheduledResinTask {
   taskType: string;
+  groupKey?: string;
   materialKey: string;
   materialName: string;
+  primaryMaterialKey?: string;
+  primaryMaterialName?: string;
   sourceType: string;
   sourceName?: string;
+  materials?: Array<{
+    materialKey: string;
+    materialName: string;
+    missing: number;
+    role: "primary" | "secondary" | "unknown";
+  }>;
   runs?: number | null;
   resin?: number | null;
   reason: string;
@@ -52,9 +62,12 @@ export interface ResinPlanResult {
   };
   inventoryDiff: CharacterInventoryDiffResult;
   farmTasks: FarmTaskPlan;
+  sourceGroups: FarmSourceGroup[];
   schedule: ResinPlanDay[];
   openWorldTasks: FarmTask[];
   unknownTasks: FarmTask[];
+  openWorldGroups: FarmSourceGroup[];
+  unknownGroups: FarmSourceGroup[];
   summary: {
     totalMissingMaterials: number;
     totalEstimatedResin: number | null;
@@ -67,7 +80,7 @@ export interface ResinPlanResult {
 }
 
 interface RemainingTask {
-  task: FarmTask;
+  group: FarmSourceGroup;
   remainingRuns: number | null;
   placeholderScheduled: boolean;
 }
@@ -87,6 +100,7 @@ export class ResinPlanService {
   constructor(
     private readonly inventoryDiff: ResinPlanInventoryDiffService = new InventoryDiffService(),
     private readonly taskBuilder: ResinPlanFarmTaskBuilder = new FarmTaskBuilder(),
+    private readonly taskGrouping = new FarmTaskGroupingService(),
     private readonly resinPolicy = new ResinPolicy(),
     private readonly weeklyBossPolicy = new WeeklyBossPolicy(),
   ) {}
@@ -96,23 +110,24 @@ export class ResinPlanService {
 
     const inventoryDiff = await this.inventoryDiff.diffCharacter(toDiffInput(input));
     const farmTasks = await this.taskBuilder.build(inventoryDiff);
+    const sourceGroupPlan = this.taskGrouping.group(farmTasks);
     const days = buildPlanDays(input, this.resinPolicy);
-    const warnings = [...farmTasks.warnings];
-    const remainingTasks = [...farmTasks.resinTasks].sort(compareResinTasks).map((task) => ({
-      task,
-      remainingRuns: task.estimatedRuns ?? null,
+    const warnings = [...sourceGroupPlan.warnings];
+    const remainingGroups = [...sourceGroupPlan.resinGroups].sort(compareResinGroups).map((group) => ({
+      group,
+      remainingRuns: group.estimatedRuns ?? null,
       placeholderScheduled: false,
     }));
     const weeklyBossesScheduledThisWeek = new Set<string>();
     let discountedWeeklyBossClaimsUsed = input.discountedWeeklyBossClaimsUsed ?? 0;
 
     for (const day of days) {
-      for (const remaining of remainingTasks) {
-        if (!canScheduleOnDay(remaining.task, day.dayOfWeek)) {
+      for (const remaining of remainingGroups) {
+        if (!canScheduleOnDay(remaining.group, day.dayOfWeek)) {
           continue;
         }
 
-        if (remaining.task.weeklyBoss || WEEKLY_BOSS_SOURCE_TYPES.has(remaining.task.sourceType)) {
+        if (remaining.group.weeklyBoss || WEEKLY_BOSS_SOURCE_TYPES.has(remaining.group.sourceType)) {
           const scheduled = scheduleWeeklyBossTask(
             remaining,
             day,
@@ -134,17 +149,17 @@ export class ResinPlanService {
       }
     }
 
-    for (const remaining of remainingTasks) {
+    for (const remaining of remainingGroups) {
       if (remaining.remainingRuns === null && !remaining.placeholderScheduled) {
-        warnings.push(`No placeholder could be scheduled for ${remaining.task.materialKey}; resin budget or calendar did not allow it.`);
+        warnings.push(`No placeholder could be scheduled for ${remaining.group.groupKey}; resin budget or calendar did not allow it.`);
       } else if (remaining.remainingRuns !== null && remaining.remainingRuns > 0) {
-        warnings.push(`${remaining.task.materialKey} has ${remaining.remainingRuns} estimated runs left after the plan window.`);
+        warnings.push(`${remaining.group.groupKey} has ${remaining.remainingRuns} estimated runs left after the plan window.`);
       }
     }
 
-    const totalEstimatedResin = farmTasks.resinTasks.some((task) => task.estimatedResin === null || task.estimatedResin === undefined)
+    const totalEstimatedResin = sourceGroupPlan.resinGroups.some((group) => group.estimatedResin === null || group.estimatedResin === undefined)
       ? null
-      : farmTasks.resinTasks.reduce((sum, task) => sum + (task.estimatedResin ?? 0), 0);
+      : sourceGroupPlan.resinGroups.reduce((sum, group) => sum + (group.estimatedResin ?? 0), 0);
     const scheduledEstimatedResin = days.reduce((sum, day) => sum + day.plannedResin, 0);
 
     return {
@@ -155,18 +170,21 @@ export class ResinPlanService {
       },
       inventoryDiff,
       farmTasks,
+      sourceGroups: sourceGroupPlan.allGroups,
       schedule: days,
       openWorldTasks: input.includeOpenWorld === false ? [] : farmTasks.openWorldTasks,
       unknownTasks: farmTasks.unknownTasks,
+      openWorldGroups: input.includeOpenWorld === false ? [] : sourceGroupPlan.openWorldGroups,
+      unknownGroups: sourceGroupPlan.unknownGroups,
       summary: {
         totalMissingMaterials: inventoryDiff.summary.missingMaterials,
         totalEstimatedResin,
         scheduledEstimatedResin,
-        unscheduledResinTasks: remainingTasks.filter((item) =>
+        unscheduledResinTasks: remainingGroups.filter((item) =>
           item.remainingRuns === null ? !item.placeholderScheduled : item.remainingRuns > 0,
         ).length,
-        openWorldTasks: input.includeOpenWorld === false ? 0 : farmTasks.openWorldTasks.length,
-        unknownTasks: farmTasks.unknownTasks.length,
+        openWorldTasks: input.includeOpenWorld === false ? 0 : sourceGroupPlan.openWorldGroups.length,
+        unknownTasks: sourceGroupPlan.unknownGroups.length,
       },
       warnings: [...new Set(warnings)],
     };
@@ -257,29 +275,29 @@ function formatDate(date: Date): string {
   return `${year}-${month}-${day}`;
 }
 
-function canScheduleOnDay(task: FarmTask, dayOfWeek: string): boolean {
-  return task.calendarDays.length === 0 || task.calendarDays.includes(dayOfWeek);
+function canScheduleOnDay(group: FarmSourceGroup, dayOfWeek: string): boolean {
+  return group.calendarDays.length === 0 || group.calendarDays.includes(dayOfWeek);
 }
 
-function compareResinTasks(left: FarmTask, right: FarmTask): number {
+function compareResinGroups(left: FarmSourceGroup, right: FarmSourceGroup): number {
   return (
-    resinTaskRank(left) - resinTaskRank(right) ||
-    left.materialKey.localeCompare(right.materialKey) ||
+    resinGroupRank(left) - resinGroupRank(right) ||
+    left.groupKey.localeCompare(right.groupKey) ||
     left.sourceType.localeCompare(right.sourceType)
   );
 }
 
-function resinTaskRank(task: FarmTask): number {
-  if (task.weeklyBoss || WEEKLY_BOSS_SOURCE_TYPES.has(task.sourceType)) {
+function resinGroupRank(group: FarmSourceGroup): number {
+  if (group.weeklyBoss || WEEKLY_BOSS_SOURCE_TYPES.has(group.sourceType)) {
     return 0;
   }
-  if (task.sourceType === "boss" || task.sourceType === "normal_boss") {
+  if (group.sourceType === "boss" || group.sourceType === "normal_boss") {
     return 1;
   }
-  if (task.sourceType.includes("domain")) {
+  if (group.sourceType.includes("domain")) {
     return 2;
   }
-  if (task.sourceType === "ley_line") {
+  if (group.sourceType === "ley_line") {
     return 3;
   }
   return 9;
@@ -294,7 +312,7 @@ function scheduleEstimatedRuns(remaining: RemainingTask, day: ResinPlanDay): voi
     return;
   }
 
-  const cost = remaining.task.resinCostPerRun ?? 0;
+  const cost = remaining.group.resinCostPerRun ?? 0;
   if (cost <= 0) {
     return;
   }
@@ -309,15 +327,19 @@ function scheduleEstimatedRuns(remaining: RemainingTask, day: ResinPlanDay): voi
   day.plannedResin += resin;
   day.tasks.push({
     taskType: "estimated_runs",
-    materialKey: remaining.task.materialKey,
-    materialName: remaining.task.materialName,
-    sourceType: remaining.task.sourceType,
-    sourceName: remaining.task.sourceName,
+    groupKey: remaining.group.groupKey,
+    materialKey: remaining.group.primaryMaterialKey ?? remaining.group.groupKey,
+    materialName: remaining.group.primaryMaterialName ?? remaining.group.groupKey,
+    primaryMaterialKey: remaining.group.primaryMaterialKey,
+    primaryMaterialName: remaining.group.primaryMaterialName,
+    sourceType: remaining.group.sourceType,
+    sourceName: remaining.group.sourceName,
+    materials: scheduledMaterials(remaining.group),
     runs,
     resin,
     reason: "Scheduled rough estimated runs within daily resin budget.",
     estimated: true,
-    warnings: remaining.task.warnings,
+    warnings: remaining.group.warnings,
   });
 }
 
@@ -326,7 +348,7 @@ function schedulePlaceholderTask(remaining: RemainingTask, day: ResinPlanDay, wa
     return;
   }
 
-  const cost = remaining.task.resinCostPerRun ?? 0;
+  const cost = remaining.group.resinCostPerRun ?? 0;
   if (cost <= 0 || availableResin(day) < cost) {
     return;
   }
@@ -335,17 +357,21 @@ function schedulePlaceholderTask(remaining: RemainingTask, day: ResinPlanDay, wa
   day.plannedResin += cost;
   day.tasks.push({
     taskType: "placeholder",
-    materialKey: remaining.task.materialKey,
-    materialName: remaining.task.materialName,
-    sourceType: remaining.task.sourceType,
-    sourceName: remaining.task.sourceName,
+    groupKey: remaining.group.groupKey,
+    materialKey: remaining.group.primaryMaterialKey ?? remaining.group.groupKey,
+    materialName: remaining.group.primaryMaterialName ?? remaining.group.groupKey,
+    primaryMaterialKey: remaining.group.primaryMaterialKey,
+    primaryMaterialName: remaining.group.primaryMaterialName,
+    sourceType: remaining.group.sourceType,
+    sourceName: remaining.group.sourceName,
+    materials: scheduledMaterials(remaining.group),
     runs: null,
     resin: cost,
     reason: "One placeholder run scheduled because no reliable drop model exists yet.",
     estimated: true,
-    warnings: remaining.task.warnings,
+    warnings: remaining.group.warnings,
   });
-  warnings.push(`Scheduled placeholder for ${remaining.task.materialKey}; exact run count is unknown.`);
+  warnings.push(`Scheduled placeholder for ${remaining.group.groupKey}; exact run count is unknown.`);
 }
 
 function scheduleWeeklyBossTask(
@@ -360,7 +386,7 @@ function scheduleWeeklyBossTask(
     return { discountedClaimsApplied: 0 };
   }
 
-  const sourceIdentity = remaining.task.sourceKey ?? remaining.task.materialKey;
+  const sourceIdentity = remaining.group.sourceKey ?? remaining.group.groupKey;
   if (weeklyBossesScheduledThisWeek.has(sourceIdentity)) {
     return { discountedClaimsApplied: 0 };
   }
@@ -380,17 +406,30 @@ function scheduleWeeklyBossTask(
   day.plannedResin += resin;
   day.tasks.push({
     taskType: "weekly_boss_claim",
-    materialKey: remaining.task.materialKey,
-    materialName: remaining.task.materialName,
-    sourceType: remaining.task.sourceType,
-    sourceName: remaining.task.sourceName,
+    groupKey: remaining.group.groupKey,
+    materialKey: remaining.group.primaryMaterialKey ?? remaining.group.groupKey,
+    materialName: remaining.group.primaryMaterialName ?? remaining.group.groupKey,
+    primaryMaterialKey: remaining.group.primaryMaterialKey,
+    primaryMaterialName: remaining.group.primaryMaterialName,
+    sourceType: remaining.group.sourceType,
+    sourceName: remaining.group.sourceName,
+    materials: scheduledMaterials(remaining.group),
     runs: 1,
     resin,
     reason: "Scheduled one weekly boss reward claim; each boss source is scheduled at most once per week in v1.",
     estimated: true,
-    warnings: remaining.task.warnings,
+    warnings: remaining.group.warnings,
   });
-  warnings.push(`Weekly boss ${remaining.task.materialKey} scheduled as one cautious claim; exact drops are not estimated.`);
+  warnings.push(`Weekly boss ${remaining.group.groupKey} scheduled as one cautious claim; exact drops are not estimated.`);
 
   return { discountedClaimsApplied: cost.discountedClaimsApplied };
+}
+
+function scheduledMaterials(group: FarmSourceGroup): ScheduledResinTask["materials"] {
+  return group.materials.map((material) => ({
+    materialKey: material.materialKey,
+    materialName: material.materialName,
+    missing: material.missing,
+    role: material.role,
+  }));
 }

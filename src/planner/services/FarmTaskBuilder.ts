@@ -8,10 +8,21 @@ export interface FarmTask {
   materialId: number;
   materialKey: string;
   materialName: string;
+  required?: number;
+  owned?: number;
   missing: number;
   sourceType: string;
   sourceName?: string;
   sourceKey?: string;
+  sourceTypes?: string[];
+  sourceOptions?: Array<{
+    sourceType: string;
+    sourceKey?: string;
+    sourceName?: string;
+    resinCost?: number;
+    days?: string[];
+    notes?: string;
+  }>;
   resinCostPerRun?: number | null;
   estimatedRuns?: number | null;
   estimatedResin?: number | null;
@@ -143,10 +154,14 @@ export class FarmTaskBuilder {
       materialId: material.materialId,
       materialKey: material.stableKey,
       materialName: material.name,
+      required: material.required,
+      owned: material.owned,
       missing: material.missing,
       sourceType,
       sourceName: source?.sourceName,
       sourceKey: source?.sourceKey,
+      sourceTypes: classification.sourceTypes,
+      sourceOptions: lookup?.sources,
       resinCostPerRun,
       estimatedRuns: estimate.estimatedRuns,
       estimatedResin: estimate.estimatedResin,

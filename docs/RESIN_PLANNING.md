@@ -83,6 +83,29 @@ The service intentionally does not hardcode unverified talent book, weapon mater
 
 Domain tasks include calendar days when normalized `FarmCalendarEntry` data exists. Mora and character EXP books use curated `ley_line` source metadata until normalized upstream source data is complete.
 
+## FarmTaskGroupingService
+
+`FarmTaskGroupingService` groups farm tasks by source identity before scheduling. The planner schedules farming activities, not every missing material independently.
+
+Source identity rules:
+
+- use `sourceType:sourceKey` when a source key exists;
+- otherwise use `sourceType:normalizedSourceName`;
+- otherwise use `sourceType:unknown:materialKey`;
+- local specialties without a route/source key usually remain one group per material;
+- Mora and EXP books are split into `ley_line_mora` and `ley_line_exp` when distinguishable.
+
+Grouping behavior:
+
+- materials from the same boss source become one boss group;
+- elemental gems are treated as secondary when grouped with a boss-specific ascension material;
+- normal boss run estimates are based on the primary boss-specific material only;
+- domain book rarities from the same domain become one domain group;
+- enemy drops can group by enemy/source;
+- unknown or event materials remain separate unknown/event groups and do not consume resin.
+
+This reduces double-counting but remains approximate. Exact random drops, crafting/conversion, alternate source choice, and player correction are future work.
+
 ## ResinPlanService V1
 
 `ResinPlanService` builds a simple day-by-day resin plan. It is deterministic, useful for inspection, and deliberately not a perfect optimizer.
@@ -97,6 +120,7 @@ Defaults:
 
 Scheduling rules:
 
+- source groups are scheduled instead of raw material rows;
 - daily planned resin never exceeds that day's budget;
 - domain tasks with calendar days are scheduled only on matching days;
 - Sunday is allowed when Sunday appears in the calendar;

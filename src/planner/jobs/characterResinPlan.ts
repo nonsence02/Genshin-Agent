@@ -111,6 +111,7 @@ function printReadable(result: ResinPlanResult): void {
   console.log(
     `Missing materials: ${result.summary.totalMissingMaterials}; scheduled resin: ${result.summary.scheduledEstimatedResin}; unscheduled resin tasks: ${result.summary.unscheduledResinTasks}`,
   );
+  console.log(`Source groups: ${result.sourceGroups.length}`);
 
   console.log("Daily resin schedule:");
   for (const day of result.schedule) {
@@ -123,13 +124,16 @@ function printReadable(result: ResinPlanResult): void {
 
     for (const task of day.tasks) {
       console.log(
-        `  - ${task.materialName} (${task.materialKey}) via ${task.sourceType}${task.sourceName ? `:${task.sourceName}` : ""}; runs=${task.runs ?? "unknown"} resin=${task.resin ?? "unknown"}; ${task.reason}`,
+        `  - ${task.sourceType}${task.sourceName ? `:${task.sourceName}` : ""} [${task.groupKey ?? task.materialKey}]; primary=${task.primaryMaterialName ?? task.materialName}; runs=${task.runs ?? "unknown"} resin=${task.resin ?? "unknown"}; ${task.reason}`,
       );
+      for (const material of task.materials ?? []) {
+        console.log(`    - ${material.materialName} (${material.materialKey}): missing ${material.missing}, ${material.role}`);
+      }
     }
   }
 
-  printTasks("Open-world tasks", result.openWorldTasks);
-  printTasks("Unknown tasks", result.unknownTasks);
+  printGroups("Open-world groups", result.openWorldGroups);
+  printGroups("Unknown/event groups", result.unknownGroups);
 
   if (result.warnings.length > 0) {
     console.log("Warnings:");
@@ -139,17 +143,20 @@ function printReadable(result: ResinPlanResult): void {
   }
 }
 
-function printTasks(label: string, tasks: ResinPlanResult["openWorldTasks"]): void {
+function printGroups(label: string, groups: ResinPlanResult["openWorldGroups"]): void {
   console.log(`${label}:`);
 
-  if (tasks.length === 0) {
+  if (groups.length === 0) {
     console.log("- none");
     return;
   }
 
-  for (const task of tasks) {
-    const source = task.sourceName ?? task.sourceKey ?? task.sourceType;
-    console.log(`- ${task.materialName} (${task.materialKey}): missing ${task.missing}, source ${source}`);
+  for (const group of groups) {
+    const source = group.sourceName ?? group.sourceKey ?? group.sourceType;
+    console.log(`- ${source} [${group.groupKey}]`);
+    for (const material of group.materials) {
+      console.log(`  - ${material.materialName} (${material.materialKey}): missing ${material.missing}, ${material.role}`);
+    }
   }
 }
 

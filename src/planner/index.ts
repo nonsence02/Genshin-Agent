@@ -1,4 +1,5 @@
 export { FarmTaskBuilder } from "./services/FarmTaskBuilder.js";
+export { FarmTaskGroupingService } from "./services/FarmTaskGroupingService.js";
 export { CharacterLevelCostService } from "./services/CharacterLevelCostService.js";
 export { CharacterRequirementService } from "./services/CharacterRequirementService.js";
 export { InventoryDiffService } from "./services/InventoryDiffService.js";

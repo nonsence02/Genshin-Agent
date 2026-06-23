@@ -87,6 +87,7 @@ This keeps the planner deterministic: the LLM can later call a tool wrapping thi
 
 - calls `InventoryDiffService` to get missing normalized materials;
 - uses `FarmTaskBuilder` to classify missing materials into resin-gated, open-world, and unknown tasks;
+- uses `FarmTaskGroupingService` to group materials by farming source before scheduling;
 - uses `RunEstimateService` for rough deterministic run estimates;
 - schedules resin tasks day by day with a fixed resin budget and domain calendar constraints;
 - lists open-world tasks separately instead of consuming resin for them.
@@ -109,6 +110,16 @@ The schedule is deterministic and priority ordered:
 5. other resin-gated tasks.
 
 Weekly boss tasks use `WeeklyBossPolicy` for the resin cost of one cautious claim and avoid duplicate claims for the same source within the v1 plan window. This does not replace future weekly claimed-boss tracking.
+
+Source grouping reduces obvious resin double-counting:
+
+- boss-specific ascension materials and elemental gems can share the same boss source group;
+- elemental gems are secondary when a boss-specific material is present;
+- domain book rarities from the same domain are one source group;
+- Mora and character EXP ley lines are separated into Mora and EXP source groups when distinguishable;
+- enemy drops can group by enemy/source, while local specialties usually stay one group per material unless route/source identity exists.
+
+Grouping is still a rough planner layer. It does not simulate exact drop outcomes, crafting/conversion, inventory correction, or multi-source optimization.
 
 Example:
 
