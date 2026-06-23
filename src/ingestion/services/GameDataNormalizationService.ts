@@ -1,11 +1,18 @@
 import type { PrismaClient } from "@prisma/client";
 import { prisma } from "../../db/client.js";
 import { CharacterNormalizer, type NormalizedCharacter } from "../normalizers/CharacterNormalizer.js";
+import {
+  CharacterCostNormalizer,
+  type ExtractedAscensionCost,
+  type ExtractedTalentCost,
+} from "../normalizers/CharacterCostNormalizer.js";
 import { MaterialNormalizer, type NormalizedMaterial } from "../normalizers/MaterialNormalizer.js";
+import { normalizeSearchText, prefixedStableKey } from "../normalizers/normalizeKey.js";
 import type { NormalizedAlias, RawGameObjectForNormalization } from "../normalizers/types.js";
 
 export interface NormalizeGameDataOptions {
   folders?: string[];
+  sections?: string[];
   limit?: number;
   dryRun?: boolean;
 }
@@ -31,11 +38,64 @@ export interface GameDataNormalizationResult {
   characters: NormalizationCounts;
   materials: NormalizationCounts;
   aliases: NormalizationCounts;
+  characterAscensionCosts: NormalizationCounts;
+  characterTalentCosts: NormalizationCounts;
+  unresolvedMaterials: number;
+  unresolvedCharacters: number;
+  specialCases: string[];
+  materialCountReport?: MaterialCountReport;
   dryRun: boolean;
+}
+
+export interface MaterialCountReport {
+  rawMaterials: number;
+  normalizedMaterials: number;
+  duplicateStableKeys: Array<{
+    stableKey: string;
+    externalKeys: string[];
+  }>;
+}
+
+export interface CharacterReference {
+  id: number;
+  stableKey: string;
+  name: string;
+}
+
+export interface MaterialReference {
+  id: number;
+  stableKey: string;
+  name: string;
+  aliases: Array<{
+    alias: string;
+    normalized: string;
+  }>;
+}
+
+export interface AscensionCostWrite {
+  characterId: number;
+  materialId: number;
+  phase: number;
+  quantity: number;
+}
+
+export interface TalentCostWrite {
+  characterId: number;
+  materialId: number;
+  fromLevel: number;
+  toLevel: number;
+  quantity: number;
 }
 
 export interface GameDataNormalizationRepository {
   listRawObjects(source: string, folder: string, limit?: number): Promise<RawGameObjectForNormalization[]>;
+  countRawObjects(source: string, folder: string): Promise<number>;
+  countCharacters(): Promise<number>;
+  countMaterials(): Promise<number>;
+  findCharacterForRaw(rawObject: RawGameObjectForNormalization): Promise<CharacterReference | null>;
+  listMaterialsForResolution(): Promise<MaterialReference[]>;
+  replaceCharacterAscensionCosts(characterId: number, costs: AscensionCostWrite[]): Promise<number>;
+  replaceCharacterTalentCosts(characterId: number, costs: TalentCostWrite[]): Promise<number>;
   upsertCharacter(character: NormalizedCharacter): Promise<EntityWriteResult>;
   upsertMaterial(material: NormalizedMaterial): Promise<EntityWriteResult>;
   upsertAlias(input: {
@@ -91,6 +151,106 @@ export class PrismaGameDataNormalizationRepository implements GameDataNormalizat
         sourceVersion: true,
       },
     });
+  }
+
+  async countRawObjects(source: string, folder: string): Promise<number> {
+    return this.client.rawGameObject.count({
+      where: {
+        source,
+        folder,
+      },
+    });
+  }
+
+  async countCharacters(): Promise<number> {
+    return this.client.character.count();
+  }
+
+  async countMaterials(): Promise<number> {
+    return this.client.material.count();
+  }
+
+  async findCharacterForRaw(rawObject: RawGameObjectForNormalization): Promise<CharacterReference | null> {
+    const normalized = normalizeSearchText(rawObject.externalKey);
+    const stableKey = normalized ? prefixedStableKey("char", rawObject.externalKey) : rawObject.externalKey;
+
+    return this.client.character.findFirst({
+      where: {
+        OR: [
+          { sourceExternalKey: rawObject.externalKey },
+          { name: rawObject.externalKey },
+          { stableKey },
+          {
+            aliases: {
+              some: {
+                entityType: "character",
+                normalized,
+              },
+            },
+          },
+        ],
+      },
+      select: {
+        id: true,
+        stableKey: true,
+        name: true,
+      },
+    });
+  }
+
+  async listMaterialsForResolution(): Promise<MaterialReference[]> {
+    return this.client.material.findMany({
+      select: {
+        id: true,
+        stableKey: true,
+        name: true,
+        aliases: {
+          where: {
+            entityType: "material",
+          },
+          select: {
+            alias: true,
+            normalized: true,
+          },
+        },
+      },
+    });
+  }
+
+  async replaceCharacterAscensionCosts(characterId: number, costs: AscensionCostWrite[]): Promise<number> {
+    await this.client.characterAscensionCost.deleteMany({
+      where: {
+        characterId,
+      },
+    });
+
+    if (costs.length === 0) {
+      return 0;
+    }
+
+    const result = await this.client.characterAscensionCost.createMany({
+      data: costs,
+    });
+
+    return result.count;
+  }
+
+  async replaceCharacterTalentCosts(characterId: number, costs: TalentCostWrite[]): Promise<number> {
+    await this.client.characterTalentCost.deleteMany({
+      where: {
+        characterId,
+      },
+    });
+
+    if (costs.length === 0) {
+      return 0;
+    }
+
+    const result = await this.client.characterTalentCost.createMany({
+      data: costs,
+    });
+
+    return result.count;
   }
 
   async upsertCharacter(character: NormalizedCharacter): Promise<EntityWriteResult> {
@@ -252,27 +412,37 @@ export class GameDataNormalizationService {
     private readonly repository: GameDataNormalizationRepository = new PrismaGameDataNormalizationRepository(),
     private readonly characterNormalizer = new CharacterNormalizer(),
     private readonly materialNormalizer = new MaterialNormalizer(),
+    private readonly characterCostNormalizer = new CharacterCostNormalizer(),
     private readonly log: (message: string) => void = console.log,
   ) {}
 
   async normalize(options: NormalizeGameDataOptions = {}): Promise<GameDataNormalizationResult> {
-    const folders = options.folders?.length ? options.folders : ["characters", "materials"];
+    const sections = options.sections?.length ? options.sections : options.folders?.length ? options.folders : ["characters", "materials", "character-costs"];
     const result: GameDataNormalizationResult = {
       characters: emptyCounts(),
       materials: emptyCounts(),
       aliases: emptyCounts(),
+      characterAscensionCosts: emptyCounts(),
+      characterTalentCosts: emptyCounts(),
+      unresolvedMaterials: 0,
+      unresolvedCharacters: 0,
+      specialCases: [],
       dryRun: options.dryRun ?? false,
     };
 
-    for (const folder of folders) {
-      if (folder === "characters") {
+    for (const section of sections) {
+      if (section === "characters") {
         await this.normalizeCharacters(options, result);
-      } else if (folder === "materials") {
+      } else if (section === "materials") {
         await this.normalizeMaterials(options, result);
+      } else if (section === "character-costs") {
+        await this.normalizeCharacterCosts(options, result);
       } else {
-        this.log(`Skipping unsupported normalization folder: ${folder}`);
+        this.log(`Skipping unsupported normalization section: ${section}`);
       }
     }
+
+    result.materialCountReport = await this.buildMaterialCountReport();
 
     this.log(
       `Normalization completed. Characters created/updated/skipped: ${result.characters.created}/${result.characters.updated}/${result.characters.skipped}`,
@@ -281,6 +451,18 @@ export class GameDataNormalizationService {
       `Materials created/updated/skipped: ${result.materials.created}/${result.materials.updated}/${result.materials.skipped}`,
     );
     this.log(`Aliases created/updated/skipped: ${result.aliases.created}/${result.aliases.updated}/${result.aliases.skipped}`);
+    this.log(
+      `CharacterAscensionCost created/updated/skipped: ${result.characterAscensionCosts.created}/${result.characterAscensionCosts.updated}/${result.characterAscensionCosts.skipped}`,
+    );
+    this.log(
+      `CharacterTalentCost created/updated/skipped: ${result.characterTalentCosts.created}/${result.characterTalentCosts.updated}/${result.characterTalentCosts.skipped}`,
+    );
+    this.log(`Unresolved materials: ${result.unresolvedMaterials}`);
+    this.log(`Unresolved characters: ${result.unresolvedCharacters}`);
+    this.log(`Special cases skipped: ${result.specialCases.length}`);
+    this.log(
+      `Material count report: raw=${result.materialCountReport.rawMaterials}, normalized=${result.materialCountReport.normalizedMaterials}, duplicateStableKeys=${result.materialCountReport.duplicateStableKeys.length}`,
+    );
 
     return result;
   }
@@ -347,5 +529,155 @@ export class GameDataNormalizationService {
         );
       }
     }
+  }
+
+  private async normalizeCharacterCosts(
+    options: NormalizeGameDataOptions,
+    result: GameDataNormalizationResult,
+  ): Promise<void> {
+    const materials = await this.repository.listMaterialsForResolution();
+    const materialIndex = new MaterialResolutionIndex(materials);
+    const rawCharacters = await this.repository.listRawObjects("genshin-db", "characters", options.limit);
+    const rawTalents = await this.repository.listRawObjects("genshin-db", "talents", options.limit);
+    this.log(`Normalizing character ascension costs: ${rawCharacters.length} raw character objects`);
+    this.log(`Normalizing character talent costs: ${rawTalents.length} raw talent objects`);
+
+    for (const rawObject of rawCharacters) {
+      const character = await this.repository.findCharacterForRaw(rawObject);
+
+      if (!character) {
+        result.unresolvedCharacters += 1;
+        result.specialCases.push(`Ascension costs skipped: unresolved character '${rawObject.externalKey}'`);
+        continue;
+      }
+
+      const extracted = this.characterCostNormalizer.extractAscensionCosts(rawObject);
+      const costs: AscensionCostWrite[] = [];
+
+      for (const extractedCost of extracted.ascensionCosts) {
+        const materialId = materialIndex.resolve(extractedCost.materialName);
+
+        if (materialId === null) {
+          result.unresolvedMaterials += 1;
+          result.specialCases.push(
+            `Unresolved ascension material '${extractedCost.materialName}' for ${character.name} phase ${extractedCost.phase}`,
+          );
+          continue;
+        }
+
+        costs.push({
+          characterId: character.id,
+          materialId,
+          phase: extractedCost.phase,
+          quantity: extractedCost.quantity,
+        });
+      }
+
+      for (const warning of extracted.warnings) {
+        result.specialCases.push(warning);
+      }
+
+      if (options.dryRun) {
+        result.characterAscensionCosts.skipped += costs.length;
+        continue;
+      }
+
+      result.characterAscensionCosts.created += await this.repository.replaceCharacterAscensionCosts(character.id, costs);
+    }
+
+    for (const rawObject of rawTalents) {
+      const character = await this.repository.findCharacterForRaw(rawObject);
+
+      if (!character) {
+        result.unresolvedCharacters += 1;
+        result.specialCases.push(`Talent costs skipped: unresolved character '${rawObject.externalKey}'`);
+        continue;
+      }
+
+      const extracted = this.characterCostNormalizer.extractTalentCosts(rawObject);
+      const costs: TalentCostWrite[] = [];
+
+      for (const extractedCost of extracted.talentCosts) {
+        const materialId = materialIndex.resolve(extractedCost.materialName);
+
+        if (materialId === null) {
+          result.unresolvedMaterials += 1;
+          result.specialCases.push(
+            `Unresolved talent material '${extractedCost.materialName}' for ${character.name} ${extractedCost.fromLevel}->${extractedCost.toLevel}`,
+          );
+          continue;
+        }
+
+        costs.push({
+          characterId: character.id,
+          materialId,
+          fromLevel: extractedCost.fromLevel,
+          toLevel: extractedCost.toLevel,
+          quantity: extractedCost.quantity,
+        });
+      }
+
+      for (const warning of extracted.warnings) {
+        result.specialCases.push(warning);
+      }
+
+      if (options.dryRun) {
+        result.characterTalentCosts.skipped += costs.length;
+        continue;
+      }
+
+      result.characterTalentCosts.created += await this.repository.replaceCharacterTalentCosts(character.id, costs);
+    }
+  }
+
+  private async buildMaterialCountReport(): Promise<MaterialCountReport> {
+    const rawObjects = await this.repository.listRawObjects("genshin-db", "materials");
+    const duplicateMap = new Map<string, string[]>();
+
+    for (const rawObject of rawObjects) {
+      const material = this.materialNormalizer.normalize(rawObject);
+      const current = duplicateMap.get(material.stableKey) ?? [];
+      current.push(rawObject.externalKey);
+      duplicateMap.set(material.stableKey, current);
+    }
+
+    return {
+      rawMaterials: await this.repository.countRawObjects("genshin-db", "materials"),
+      normalizedMaterials: await this.repository.countMaterials(),
+      duplicateStableKeys: [...duplicateMap.entries()]
+        .filter(([, externalKeys]) => externalKeys.length > 1)
+        .map(([stableKey, externalKeys]) => ({
+          stableKey,
+          externalKeys,
+        })),
+    };
+  }
+}
+
+class MaterialResolutionIndex {
+  private readonly byAlias = new Map<string, number>();
+  private readonly byNormalizedName = new Map<string, number>();
+  private readonly byStableKey = new Map<string, number>();
+
+  constructor(materials: MaterialReference[]) {
+    for (const material of materials) {
+      this.byStableKey.set(material.stableKey, material.id);
+      this.byNormalizedName.set(normalizeSearchText(material.name), material.id);
+
+      for (const alias of material.aliases) {
+        this.byAlias.set(alias.normalized, material.id);
+      }
+    }
+  }
+
+  resolve(rawName: string): number | null {
+    const normalized = normalizeSearchText(rawName);
+    return (
+      this.byAlias.get(normalized) ??
+      this.byNormalizedName.get(normalized) ??
+      this.byStableKey.get(rawName) ??
+      this.byStableKey.get(`mat_${normalized}`) ??
+      null
+    );
   }
 }

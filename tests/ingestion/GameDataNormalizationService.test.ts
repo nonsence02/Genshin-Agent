@@ -2,18 +2,26 @@ import { describe, expect, it } from "vitest";
 import {
   GameDataNormalizationService,
   type AliasWriteResult,
+  type AscensionCostWrite,
   type EntityWriteResult,
   type GameDataNormalizationRepository,
+  type MaterialReference,
+  type TalentCostWrite,
 } from "../../src/ingestion/services/GameDataNormalizationService.js";
 import type { NormalizedAlias, RawGameObjectForNormalization } from "../../src/ingestion/normalizers/types.js";
 import { CharacterNormalizer, type NormalizedCharacter } from "../../src/ingestion/normalizers/CharacterNormalizer.js";
+import { CharacterCostNormalizer } from "../../src/ingestion/normalizers/CharacterCostNormalizer.js";
 import { MaterialNormalizer, type NormalizedMaterial } from "../../src/ingestion/normalizers/MaterialNormalizer.js";
 
 class MockNormalizationRepository implements GameDataNormalizationRepository {
   private readonly characters = new Map<string, number>();
   private readonly materials = new Map<string, number>();
   private readonly aliases = new Map<string, number>();
+  ascensionWrites: AscensionCostWrite[] = [];
+  talentWrites: TalentCostWrite[] = [];
   private nextId = 1;
+
+  constructor(private readonly exposeMaterials = true) {}
 
   async listRawObjects(_source: string, folder: string, limit?: number): Promise<RawGameObjectForNormalization[]> {
     const objects =
@@ -26,16 +34,66 @@ class MockNormalizationRepository implements GameDataNormalizationRepository {
               sourceVersion: "5.2.11",
             },
           ]
-        : [
+        : folder === "materials"
+          ? [
             {
               id: 200,
               externalKey: "Teachings of Justice",
               payload: { name: "Teachings of Justice", rarity: 2, category: "AVATAR_MATERIAL" },
               sourceVersion: "5.2.11",
             },
-          ];
+          ]
+          : [
+              {
+                id: 300,
+                externalKey: "Furina",
+                payload: { name: "Furina", costs: { lvl2: [{ name: "Teachings of Justice", count: 3 }] } },
+                sourceVersion: "5.2.11",
+              },
+            ];
 
     return limit ? objects.slice(0, limit) : objects;
+  }
+
+  async countRawObjects(_source: string, folder: string): Promise<number> {
+    return (await this.listRawObjects("genshin-db", folder)).length;
+  }
+
+  async countCharacters(): Promise<number> {
+    return this.characters.size;
+  }
+
+  async countMaterials(): Promise<number> {
+    return this.materials.size;
+  }
+
+  async findCharacterForRaw(rawObject: RawGameObjectForNormalization) {
+    const id = this.characters.get(`char_${rawObject.externalKey.toLowerCase()}`);
+    return id ? { id, stableKey: `char_${rawObject.externalKey.toLowerCase()}`, name: rawObject.externalKey } : null;
+  }
+
+  async listMaterialsForResolution(): Promise<MaterialReference[]> {
+    const materialId = this.materials.get("mat_teachings_of_justice");
+    return materialId && this.exposeMaterials
+      ? [
+          {
+            id: materialId,
+            stableKey: "mat_teachings_of_justice",
+            name: "Teachings of Justice",
+            aliases: [{ alias: "Teachings of Justice", normalized: "teachings_of_justice" }],
+          },
+        ]
+      : [];
+  }
+
+  async replaceCharacterAscensionCosts(characterId: number, costs: AscensionCostWrite[]): Promise<number> {
+    this.ascensionWrites = this.ascensionWrites.filter((cost) => cost.characterId !== characterId).concat(costs);
+    return costs.length;
+  }
+
+  async replaceCharacterTalentCosts(characterId: number, costs: TalentCostWrite[]): Promise<number> {
+    this.talentWrites = this.talentWrites.filter((cost) => cost.characterId !== characterId).concat(costs);
+    return costs.length;
   }
 
   async upsertCharacter(character: NormalizedCharacter): Promise<EntityWriteResult> {
@@ -85,11 +143,12 @@ describe("GameDataNormalizationService", () => {
       repository,
       new CharacterNormalizer(),
       new MaterialNormalizer(),
+      new CharacterCostNormalizer(),
       () => undefined,
     );
 
-    const first = await service.normalize();
-    const second = await service.normalize();
+    const first = await service.normalize({ sections: ["characters", "materials"] });
+    const second = await service.normalize({ sections: ["characters", "materials"] });
 
     expect(first.characters).toEqual({ created: 1, updated: 0, skipped: 0 });
     expect(first.materials).toEqual({ created: 1, updated: 0, skipped: 0 });
@@ -97,6 +156,43 @@ describe("GameDataNormalizationService", () => {
     expect(second.characters).toEqual({ created: 0, updated: 1, skipped: 0 });
     expect(second.materials).toEqual({ created: 0, updated: 1, skipped: 0 });
     expect(second.aliases.updated).toBe(2);
+  });
+
+  it("replaces character cost rows idempotently", async () => {
+    const repository = new MockNormalizationRepository();
+    const service = new GameDataNormalizationService(
+      repository,
+      new CharacterNormalizer(),
+      new MaterialNormalizer(),
+      new CharacterCostNormalizer(),
+      () => undefined,
+    );
+
+    await service.normalize({ sections: ["characters", "materials"] });
+    const first = await service.normalize({ sections: ["character-costs"] });
+    const second = await service.normalize({ sections: ["character-costs"] });
+
+    expect(first.characterTalentCosts.created).toBe(1);
+    expect(second.characterTalentCosts.created).toBe(1);
+    expect(repository.talentWrites).toHaveLength(1);
+  });
+
+  it("reports unresolved materials without failing the whole run", async () => {
+    const repository = new MockNormalizationRepository(false);
+    const service = new GameDataNormalizationService(
+      repository,
+      new CharacterNormalizer(),
+      new MaterialNormalizer(),
+      new CharacterCostNormalizer(),
+      () => undefined,
+    );
+
+    await service.normalize({ sections: ["characters", "materials"] });
+    const result = await service.normalize({ sections: ["character-costs"] });
+
+    expect(result.unresolvedMaterials).toBe(1);
+    expect(result.characterTalentCosts.created).toBe(0);
+    expect(result.specialCases.some((warning) => warning.includes("Unresolved talent material"))).toBe(true);
   });
 
   // TODO: add PostgreSQL integration coverage once test database lifecycle is configured.

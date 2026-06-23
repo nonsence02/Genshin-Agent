@@ -4,4 +4,10 @@ export interface Normalizer<Input = unknown, Output = unknown> {
 
 export { CharacterNormalizer, type NormalizedCharacter } from "./CharacterNormalizer.js";
 export { MaterialNormalizer, type NormalizedMaterial } from "./MaterialNormalizer.js";
+export {
+  CharacterCostNormalizer,
+  type CharacterCostExtractionResult,
+  type ExtractedAscensionCost,
+  type ExtractedTalentCost,
+} from "./CharacterCostNormalizer.js";
 export { normalizeSearchText, normalizeStableKey, prefixedStableKey } from "./normalizeKey.js";

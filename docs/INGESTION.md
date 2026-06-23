@@ -22,3 +22,11 @@ Raw objects are imported first, then selected upstream folders are normalized in
 Normalized entities use deterministic stable keys such as `char_furina` and `mat_teachings_of_justice`. Planner services and agent tools should use these normalized tables instead of depending on raw `genshin-db` payload shapes.
 
 Character and material normalization is intentionally conservative: it maps direct fields such as name, rarity, element, weapon type, category, and aliases. Costs, domains, enemies, material sources, multilingual aliases, and farm calendar relationships will be normalized in later commits.
+
+## Character Upgrade Cost Normalization
+
+Character ascension and talent costs are normalized after `Character`, `Material`, and `EntityAlias` rows exist. Cost rows reference normalized `Material` records so future planner logic can calculate requirements without reading raw `genshin-db` payloads.
+
+Material names from raw cost arrays are resolved through material aliases, normalized material names, and stable material keys. Unresolved materials or characters are reported and skipped rather than guessed. This keeps the normalized cost tables deterministic and makes data gaps visible.
+
+This step only covers character ascension costs and generic combat talent level-up costs. Weapon costs, material sources, domains, enemies, and route/calendar relationships remain future normalization work.

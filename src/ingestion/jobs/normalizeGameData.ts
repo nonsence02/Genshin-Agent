@@ -6,6 +6,7 @@ import {
 function parseOptions(args: string[]): NormalizeGameDataOptions {
   const options: NormalizeGameDataOptions = {};
   const folders: string[] = [];
+  const sections: string[] = [];
 
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
@@ -27,6 +28,18 @@ function parseOptions(args: string[]): NormalizeGameDataOptions {
       continue;
     }
 
+    if (arg === "--section") {
+      const section = args[index + 1];
+
+      if (!section) {
+        throw new Error("Missing value for --section");
+      }
+
+      sections.push(section);
+      index += 1;
+      continue;
+    }
+
     if (arg === "--limit") {
       const limit = Number(args[index + 1]);
 
@@ -44,6 +57,10 @@ function parseOptions(args: string[]): NormalizeGameDataOptions {
 
   if (folders.length > 0) {
     options.folders = folders;
+  }
+
+  if (sections.length > 0) {
+    options.sections = sections;
   }
 
   return options;
