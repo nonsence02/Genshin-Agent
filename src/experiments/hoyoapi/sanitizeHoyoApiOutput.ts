@@ -23,6 +23,17 @@ export interface CharacterFieldCoverage {
 }
 
 export interface HoyoApiExperimentSummary {
+  attemptedInitStrategies: string[];
+  hoyolabGamesListEndpoint: EndpointStatus;
+  hoyolabGamesListGenshinEndpoint: EndpointStatus;
+  gameAccountsCount: number;
+  selectedAccountUidPresent: boolean;
+  selectedAccountRegionPresent: boolean;
+  selectedAccountLevelPresent: boolean;
+  selectedAccountNicknamePresent: boolean;
+  selectedAccountKeys: string[];
+  selectedUid?: string;
+  selectedRegion?: string;
   recordsEndpoint: EndpointStatus;
   charactersEndpoint: EndpointStatus;
   charactersCount: number;
@@ -116,6 +127,10 @@ export function buildHoyoApiExperimentSummary(input: {
   characterIds: number[];
   dailyClaimCalled: boolean;
   warnings?: string[];
+  attemptedInitStrategies?: string[];
+  selectedGameAccount?: unknown;
+  selectedUid?: string | number;
+  selectedRegion?: string;
 }): HoyoApiExperimentSummary {
   const coverageSources = Object.values(input.endpoints)
     .filter((endpoint) => endpoint.status === "ok")
@@ -127,8 +142,20 @@ export function buildHoyoApiExperimentSummary(input: {
   const dailyInfoEndpoint = endpointStatus(input.endpoints.dailyInfo);
   const dailyRewardsEndpoint = endpointStatus(input.endpoints.dailyRewards);
   const dailyRewardEndpoint = endpointStatus(input.endpoints.dailyReward);
+  const selectedAccountSummary = summarizeSelectedGameAccount(input.selectedGameAccount);
 
   return {
+    attemptedInitStrategies: input.attemptedInitStrategies ?? [],
+    hoyolabGamesListEndpoint: endpointStatus(input.endpoints.hoyolabGamesList),
+    hoyolabGamesListGenshinEndpoint: endpointStatus(input.endpoints.hoyolabGamesListGenshin),
+    gameAccountsCount: input.endpoints.hoyolabGamesListGenshin?.count ?? 0,
+    selectedAccountUidPresent: selectedAccountSummary.uidPresent,
+    selectedAccountRegionPresent: selectedAccountSummary.regionPresent,
+    selectedAccountLevelPresent: selectedAccountSummary.levelPresent,
+    selectedAccountNicknamePresent: selectedAccountSummary.nicknamePresent,
+    selectedAccountKeys: selectedAccountSummary.keys,
+    selectedUid: input.selectedUid === undefined ? undefined : String(input.selectedUid),
+    selectedRegion: input.selectedRegion,
     recordsEndpoint: endpointStatus(input.endpoints.records),
     charactersEndpoint,
     charactersCount: input.endpoints.characters?.count ?? countLikelyItems(input.endpoints.characters?.data),
@@ -153,6 +180,34 @@ export function buildHoyoApiExperimentSummary(input: {
       characterFieldCoverage,
     }),
     warnings: input.warnings ?? [],
+  };
+}
+
+function summarizeSelectedGameAccount(account: unknown): {
+  uidPresent: boolean;
+  regionPresent: boolean;
+  levelPresent: boolean;
+  nicknamePresent: boolean;
+  keys: string[];
+} {
+  if (!account || typeof account !== "object" || Array.isArray(account)) {
+    return {
+      uidPresent: false,
+      regionPresent: false,
+      levelPresent: false,
+      nicknamePresent: false,
+      keys: [],
+    };
+  }
+
+  const object = account as Record<string, unknown>;
+
+  return {
+    uidPresent: Boolean(object.game_uid ?? object.uid ?? object.gameRoleId ?? object.game_role_id),
+    regionPresent: Boolean(object.region ?? object.server ?? object.region_name),
+    levelPresent: object.level !== undefined,
+    nicknamePresent: Boolean(object.nickname),
+    keys: Object.keys(object).sort(),
   };
 }
 

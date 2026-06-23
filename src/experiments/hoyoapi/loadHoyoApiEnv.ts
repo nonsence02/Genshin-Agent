@@ -29,6 +29,8 @@ export interface HoyoApiConfigDiagnostic {
   uidSource: UidSource;
   cookiePresent: boolean;
   cookieSource: CookieSource;
+  fullCookiePresent: boolean;
+  v2FieldsPresent: boolean;
   hasLtuidV2: boolean;
   hasLtokenV2: boolean;
   hasCookieTokenV2: boolean;
@@ -131,6 +133,8 @@ export function buildConfigDiagnostic(
     uidSource: config.credentialSource.uid,
     cookiePresent: config.credentialSource.cookie !== "missing",
     cookieSource: config.credentialSource.cookie,
+    fullCookiePresent: Boolean(config.cookieString),
+    v2FieldsPresent: Boolean(config.cookieObject?.ltuidV2 && config.cookieObject?.ltokenV2),
     hasLtuidV2: Boolean(config.cookieObject?.ltuidV2),
     hasLtokenV2: Boolean(config.cookieObject?.ltokenV2),
     hasCookieTokenV2: Boolean(config.cookieObject?.cookieTokenV2),

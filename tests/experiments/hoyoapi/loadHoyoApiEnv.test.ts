@@ -62,6 +62,22 @@ describe("loadHoyoApiEnv", () => {
     expect(config.cookieObject?.ltokenV2).toBe("explicit-token");
   });
 
+  it("lets HOYOAPI_COOKIE take priority over v2 fields", () => {
+    const config = buildHoyoApiExperimentConfig({
+      HOYOAPI_COOKIE: "ltuid=1; ltoken=full-cookie-token",
+      HOYOAPI_LTUID_V2: "1001",
+      HOYOAPI_LTOKEN_V2: "explicit-token",
+    });
+
+    expect(config.cookieString).toBe("ltuid=1; ltoken=full-cookie-token");
+    expect(config.credentialSource.cookie).toBe("HOYOAPI_COOKIE");
+    expect(buildConfigDiagnostic(config)).toMatchObject({
+      fullCookiePresent: true,
+      v2FieldsPresent: true,
+      cookieSource: "HOYOAPI_COOKIE",
+    });
+  });
+
   it("prints non-secret config diagnostics", () => {
     const config = buildHoyoApiExperimentConfig(
       {

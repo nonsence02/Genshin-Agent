@@ -18,6 +18,8 @@ npm run spike:hoyoapi -- --out data/raw/hoyoapi/latest.sanitized.json
 
 The spike accepts either explicit `HOYOAPI_*` variables or the existing project
 names `GENSHIN_UID`, `LTUID_V2`, `LTOKEN_V2`, and `COOKIE_TOKEN_V2`.
+For the documented Hoyolab-first flow, set `HOYOAPI_COOKIE` to the full
+`document.cookie` string copied from HoYoLAB or Battle Chronicle.
 
 Daily check-in claiming is disabled by default. To test it, both flags are
 required:

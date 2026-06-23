@@ -35,6 +35,30 @@ COOKIE_TOKEN_V2=...
 credentials, set the ltuid/ltoken fields instead. Values must never be
 committed or logged.
 
+## Getting A Full HoYoLAB Cookie
+
+Some HoYoLAB game record endpoints may reject v2-only credentials even when
+daily reward endpoints work. For the documented hoyoapi flow, use a full
+`document.cookie` string:
+
+1. Log in to HoYoLAB or Genshin Battle Chronicle.
+2. Open the Battle Chronicle page while logged in.
+3. Use the bookmarklet from the hoyoapi docs to copy `document.cookie`.
+4. Put the full value in `.env` or `.env.local` as `HOYOAPI_COOKIE`.
+5. Set `HOYOAPI_UID` or `GENSHIN_UID` if you want to select a specific account.
+
+Example:
+
+```bash
+HOYOAPI_COOKIE="ltuid=...; ltoken=...; cookie_token=...; ltuid_v2=...; ltoken_v2=...; cookie_token_v2=..."
+GENSHIN_UID=711328650
+```
+
+Do not commit `.env` or `.env.local`. Cookies expire and may need to be
+refreshed. The spike now prefers `HOYOAPI_COOKIE`, calls `Hoyolab.gamesList()`,
+selects a Genshin account, and then initializes `GenshinImpact` with the
+selected uid and region.
+
 ## Commands
 
 ```bash

@@ -1,5 +1,5 @@
 import { GenshinImpact, GenshinRegion } from "hoyoapi/gi";
-import { Language } from "hoyoapi";
+import { GamesEnum, Hoyolab, Language } from "hoyoapi";
 import type { IGenshinOptions } from "hoyoapi/gi";
 import {
   buildConfigDiagnostic,
@@ -22,6 +22,7 @@ export interface HoyoApiExperimentOptions {
 export interface HoyoApiExperimentReport {
   setupMode: "create" | "constructor";
   initializationStrategy: string;
+  attemptedInitStrategies: string[];
   endpoints: Record<string, EndpointResult>;
   summary: HoyoApiExperimentSummary;
   warnings: string[];
@@ -31,17 +32,29 @@ interface HoyoApiExperimentCredentials {
   name: string;
   cookie: IGenshinOptions["cookie"];
   canUseCreate: boolean;
+  preferConstructor?: boolean;
+}
+
+export interface SelectedGameAccountSummary {
+  account?: unknown;
+  uid?: string;
+  region?: string;
 }
 
 export async function runHoyoApiExperiment(options: HoyoApiExperimentOptions = {}): Promise<HoyoApiExperimentReport> {
   const config = loadHoyoApiEnv();
-  const { client, setupMode, initializationStrategy, warnings } = await createGenshinClient(config);
+  const init = await createGenshinClient(config);
 
-  return runHoyoApiExperimentAgainstClient(client, {
+  return runHoyoApiExperimentAgainstClient(init.client, {
     ...options,
-    setupMode,
-    initializationStrategy,
-    warnings,
+    setupMode: init.setupMode,
+    initializationStrategy: init.initializationStrategy,
+    attemptedInitStrategies: init.attemptedStrategies,
+    initEndpoints: init.endpoints,
+    selectedGameAccount: init.selectedGameAccount,
+    selectedUid: init.selectedUid,
+    selectedRegion: init.selectedRegion,
+    warnings: init.warnings,
   });
 }
 
@@ -50,10 +63,15 @@ export async function runHoyoApiExperimentAgainstClient(
   options: HoyoApiExperimentOptions & {
     setupMode?: "create" | "constructor";
     initializationStrategy?: string;
+    attemptedInitStrategies?: string[];
+    initEndpoints?: Record<string, EndpointResult>;
+    selectedGameAccount?: unknown;
+    selectedUid?: string | number;
+    selectedRegion?: string;
     warnings?: string[];
   } = {},
 ): Promise<HoyoApiExperimentReport> {
-  const endpoints: Record<string, EndpointResult> = {};
+  const endpoints: Record<string, EndpointResult> = { ...(options.initEndpoints ?? {}) };
   const warnings = [...(options.warnings ?? [])];
 
   endpoints.records = await callEndpoint("records", () => recordMethod(client, "records")());
@@ -97,11 +115,16 @@ export async function runHoyoApiExperimentAgainstClient(
     characterIds,
     dailyClaimCalled,
     warnings,
+    attemptedInitStrategies: options.attemptedInitStrategies,
+    selectedGameAccount: options.selectedGameAccount,
+    selectedUid: options.selectedUid,
+    selectedRegion: options.selectedRegion,
   });
 
   return {
     setupMode: options.setupMode ?? "constructor",
     initializationStrategy: options.initializationStrategy ?? "provided-client",
+    attemptedInitStrategies: options.attemptedInitStrategies ?? ["provided-client"],
     endpoints,
     summary,
     warnings,
@@ -112,29 +135,55 @@ export async function createGenshinClient(config: HoyoApiExperimentConfig): Prom
   client: GenshinImpact;
   setupMode: "create" | "constructor";
   initializationStrategy: string;
+  attemptedStrategies: string[];
+  endpoints: Record<string, EndpointResult>;
+  selectedGameAccount?: unknown;
+  selectedUid?: string;
+  selectedRegion?: string;
   warnings: string[];
 }> {
   const candidates = buildCredentialCandidates(config);
   const warnings: string[] = [];
+  const endpoints: Record<string, EndpointResult> = {};
+  const attemptedStrategies: string[] = [];
 
   if (candidates.length === 0) {
     throw new Error(MISSING_HOYOAPI_CREDENTIALS_MESSAGE);
   }
 
   for (const candidate of candidates) {
-    const options = {
+    if (candidate.name === "hoyolab-games-list") {
+      const result = await tryHoyolabGamesListFlow(candidate, config, endpoints, warnings);
+      attemptedStrategies.push("hoyolab-games-list");
+
+      if (result) {
+        return {
+          ...result,
+          attemptedStrategies,
+          endpoints,
+          warnings,
+        };
+      }
+
+      continue;
+    }
+
+    const directOptions = {
       cookie: candidate.cookie,
       uid: config.uid,
       region: parseRegion(config.region, config.uid),
       lang: Language.parseLang(config.lang),
     };
 
-    if (candidate.canUseCreate) {
+    if (candidate.canUseCreate && !candidate.preferConstructor) {
+      attemptedStrategies.push(`${candidate.name}:create`);
       try {
         return {
-          client: await GenshinImpact.create(options),
+          client: await GenshinImpact.create(directOptions),
           setupMode: "create",
           initializationStrategy: `${candidate.name}:create`,
+          attemptedStrategies,
+          endpoints,
           warnings,
         };
       } catch (error) {
@@ -142,11 +191,14 @@ export async function createGenshinClient(config: HoyoApiExperimentConfig): Prom
       }
     }
 
+    attemptedStrategies.push(`${candidate.name}:constructor`);
     try {
       return {
-        client: new GenshinImpact(options),
+        client: new GenshinImpact(directOptions),
         setupMode: "constructor",
         initializationStrategy: `${candidate.name}:constructor`,
+        attemptedStrategies,
+        endpoints,
         warnings,
       };
     } catch (error) {
@@ -155,6 +207,76 @@ export async function createGenshinClient(config: HoyoApiExperimentConfig): Prom
   }
 
   throw new Error(`Unable to initialize hoyoapi client without exposing credentials.\n${warnings.join("\n")}`);
+}
+
+async function tryHoyolabGamesListFlow(
+  candidate: HoyoApiExperimentCredentials,
+  config: HoyoApiExperimentConfig,
+  endpoints: Record<string, EndpointResult>,
+  warnings: string[],
+): Promise<
+  | {
+      client: GenshinImpact;
+      setupMode: "constructor";
+      initializationStrategy: string;
+      selectedGameAccount?: unknown;
+      selectedUid?: string;
+      selectedRegion?: string;
+    }
+  | undefined
+> {
+  try {
+    const hoyolab = new Hoyolab({
+      cookie: candidate.cookie,
+      lang: Language.parseLang(config.lang),
+    });
+    endpoints.hoyolabGamesList = await callEndpoint("hoyolab.gamesList", () => hoyolab.gamesList());
+    endpoints.hoyolabGamesListGenshin = await callEndpoint("hoyolab.gamesList(GENSHIN_IMPACT)", () =>
+      hoyolab.gamesList(GamesEnum.GENSHIN_IMPACT),
+    );
+
+    const accounts = extractGameAccounts(
+      endpoints.hoyolabGamesListGenshin.status === "ok"
+        ? endpoints.hoyolabGamesListGenshin.data
+        : endpoints.hoyolabGamesList.data,
+    );
+    endpoints.hoyolabGamesListGenshin.count = accounts.length;
+    const selected = selectGameAccount(accounts, config.uid);
+
+    if (!selected.account || !selected.uid || !selected.region) {
+      warnings.push("hoyolab-games-list did not return a usable Genshin account with uid and region.");
+      return undefined;
+    }
+
+    const client = new GenshinImpact({
+      cookie: candidate.cookie,
+      uid: Number(selected.uid),
+      region: parseRegion(selected.region, Number(selected.uid)),
+      lang: Language.parseLang(config.lang),
+    });
+
+    try {
+      (client as { account?: unknown }).account = selected.account;
+    } catch {
+      warnings.push("hoyolab-games-list selected account could not be attached to GenshinImpact client.");
+    }
+
+    return {
+      client,
+      setupMode: "constructor",
+      initializationStrategy: "hoyolab-games-list",
+      selectedGameAccount: selected.account,
+      selectedUid: selected.uid,
+      selectedRegion: selected.region,
+    };
+  } catch (error) {
+    endpoints.hoyolabGamesList ??= {
+      status: "error",
+      error: `hoyolab.gamesList: ${formatError(error)}`,
+    };
+    warnings.push(`hoyolab-games-list failed: ${formatError(error)}`);
+    return undefined;
+  }
 }
 
 function recordMethod(client: unknown, methodName: string): (...args: unknown[]) => Promise<unknown> {
@@ -274,6 +396,12 @@ function buildCredentialCandidates(config: HoyoApiExperimentConfig): HoyoApiExpe
 
   if (config.cookieString) {
     candidates.push({
+      name: "hoyolab-games-list",
+      cookie: config.cookieString,
+      canUseCreate: false,
+      preferConstructor: true,
+    });
+    candidates.push({
       name: "cookie-string",
       cookie: config.cookieString,
       canUseCreate: Boolean(cookieObject?.cookieTokenV2),
@@ -321,4 +449,66 @@ function buildCredentialCandidates(config: HoyoApiExperimentConfig): HoyoApiExpe
 
 export function getHoyoApiConfigDiagnostic(initializationStrategySelected?: string) {
   return buildConfigDiagnostic(loadHoyoApiEnv(), initializationStrategySelected);
+}
+
+export function extractGameAccounts(value: unknown): unknown[] {
+  if (Array.isArray(value)) {
+    return value;
+  }
+
+  if (!value || typeof value !== "object") {
+    return [];
+  }
+
+  const object = value as Record<string, unknown>;
+  const likelyList = object.list ?? object.games ?? object.accounts ?? object.data;
+
+  if (Array.isArray(likelyList)) {
+    return likelyList;
+  }
+
+  return [];
+}
+
+export function selectGameAccount(accounts: unknown[], preferredUid?: number): SelectedGameAccountSummary {
+  const accountObjects = accounts.filter((account) => account && typeof account === "object") as Record<
+    string,
+    unknown
+  >[];
+  const preferred = preferredUid === undefined ? undefined : String(preferredUid);
+  const matching = preferred
+    ? accountObjects.find((account) => extractAccountUid(account) === preferred)
+    : undefined;
+  const selected =
+    matching ??
+    [...accountObjects].sort((left, right) => extractAccountLevel(right) - extractAccountLevel(left))[0] ??
+    accountObjects[0];
+
+  if (!selected) {
+    return {};
+  }
+
+  return {
+    account: selected,
+    uid: extractAccountUid(selected),
+    region: extractAccountRegion(selected),
+  };
+}
+
+function extractAccountUid(account: Record<string, unknown>): string | undefined {
+  const value = account.game_uid ?? account.uid ?? account.gameRoleId ?? account.game_role_id;
+
+  return value === undefined ? undefined : String(value);
+}
+
+function extractAccountRegion(account: Record<string, unknown>): string | undefined {
+  const value = account.region ?? account.server ?? account.region_name;
+
+  return value === undefined ? undefined : String(value);
+}
+
+function extractAccountLevel(account: Record<string, unknown>): number {
+  const value = account.level;
+
+  return typeof value === "number" ? value : Number(value) || 0;
 }

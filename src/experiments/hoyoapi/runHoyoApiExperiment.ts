@@ -1,7 +1,6 @@
-import { mkdirSync, writeFileSync } from "node:fs";
-import { dirname, resolve } from "node:path";
 import { getHoyoApiConfigDiagnostic, runHoyoApiExperiment } from "./HoyoApiExperimentClient.js";
 import { sanitizeHoyoApiOutput } from "./sanitizeHoyoApiOutput.js";
+import { writeHoyoApiOutput, type HoyoApiOutputWriteResult } from "./writeHoyoApiOutput.js";
 
 interface CliOptions {
   json: boolean;
@@ -33,19 +32,14 @@ async function main(): Promise<void> {
     yes: options.yes,
   });
   const sanitized = sanitizeHoyoApiOutput(report);
-
-  if (options.out && !options.noWrite) {
-    const outPath = resolve(options.out);
-    mkdirSync(dirname(outPath), { recursive: true });
-    writeFileSync(outPath, `${JSON.stringify(sanitized, null, 2)}\n`, "utf8");
-  }
+  const outputWrite = writeHoyoApiOutput(report, options);
 
   if (options.json) {
     console.log(JSON.stringify(sanitized, null, 2));
     return;
   }
 
-  printSummary(report, options);
+  printSummary(report, options, outputWrite);
 }
 
 function parseArgs(args: string[]): CliOptions {
@@ -87,12 +81,25 @@ function parseArgs(args: string[]): CliOptions {
   return options;
 }
 
-function printSummary(report: Awaited<ReturnType<typeof runHoyoApiExperiment>>, options: CliOptions): void {
+function printSummary(
+  report: Awaited<ReturnType<typeof runHoyoApiExperiment>>,
+  options: CliOptions,
+  outputWrite: HoyoApiOutputWriteResult,
+): void {
   const summary = report.summary;
 
   console.log("hoyoapi experiment summary");
   console.log(`setup mode: ${report.setupMode}`);
   console.log(`initialization strategy: ${report.initializationStrategy}`);
+  console.log(`attempted init strategies: ${report.attemptedInitStrategies.join(", ")}`);
+  console.log(`hoyolab.gamesList endpoint: ${summary.hoyolabGamesListEndpoint}`);
+  console.log(`hoyolab.gamesList genshin endpoint: ${summary.hoyolabGamesListGenshinEndpoint}`);
+  console.log(`game accounts count: ${summary.gameAccountsCount}`);
+  console.log(`selected account uid present: ${yesNo(summary.selectedAccountUidPresent)}`);
+  console.log(`selected account region/server present: ${yesNo(summary.selectedAccountRegionPresent)}`);
+  console.log(`selected account level present: ${yesNo(summary.selectedAccountLevelPresent)}`);
+  console.log(`selected uid: ${summary.selectedUid ?? "missing"}`);
+  console.log(`selected region/server: ${summary.selectedRegion ?? "missing"}`);
   console.log(`records endpoint: ${summary.recordsEndpoint}`);
   console.log(`characters endpoint: ${summary.charactersEndpoint}`);
   console.log(`characters count: ${summary.charactersCount}`);
@@ -122,9 +129,10 @@ function printSummary(report: Awaited<ReturnType<typeof runHoyoApiExperiment>>, 
   console.log("  hoyolab_profile.json: character level, constellation, talent levels, weapon summary, weak artifact info");
   console.log("  Inventory Kamera: materials, weapons, artifacts/items depending on source, no live HoYoLAB data");
 
-  if (options.out) {
-    console.log(`sanitized output: ${options.noWrite ? "not written (--no-write)" : options.out}`);
-  }
+  console.log(`sanitized output written: ${yesNo(outputWrite.written)}`);
+  console.log(`sanitized output path: ${outputWrite.path ?? options.out ?? "not requested"}`);
+  console.log(`sanitized output ignored by git: ${outputWrite.ignoredByGit === undefined ? "unknown" : yesNo(outputWrite.ignoredByGit)}`);
+  if (outputWrite.reason) console.log(`sanitized output reason: ${outputWrite.reason}`);
 
   for (const warning of summary.warnings) {
     console.warn(`warning: ${warning}`);
