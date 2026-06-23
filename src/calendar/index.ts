@@ -1,5 +1,7 @@
+export type FarmDay = "monday" | "tuesday" | "wednesday" | "thursday" | "friday" | "saturday" | "sunday";
+
 export interface FarmAvailability {
-  dayOfWeek: number;
+  dayOfWeek: FarmDay;
   sourceType: string;
   sourceKey: string;
 }

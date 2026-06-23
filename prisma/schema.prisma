@@ -142,6 +142,7 @@ model Enemy {
   name              String
   enemyType         String?
   region            String?
+  family            String?
   sourceExternalKey String?
   rawGameObjectId   Int?
   rawGameObject     RawGameObject?   @relation(fields: [rawGameObjectId], references: [id])
@@ -195,10 +196,13 @@ model MaterialSource {
   id          Int       @id @default(autoincrement())
   materialId  Int
   sourceType  String
-  sourceKey   String
+  sourceKey   String?
+  sourceName  String?
+  resinCost   Int?
   domainId    Int?
   enemyId     Int?
   notes       String?
+  rawPayload   Json?
   material    Material  @relation(fields: [materialId], references: [id], onDelete: Cascade)
   domain      Domain?   @relation(fields: [domainId], references: [id])
   enemy       Enemy?    @relation(fields: [enemyId], references: [id])
@@ -253,6 +257,9 @@ model DomainReward {
   domainId   Int
   materialId Int
   rewardType String
+  level      Int?
+  rarity     Int?
+  rawPayload Json?
   minWorldLevel Int?
   domain     Domain   @relation(fields: [domainId], references: [id], onDelete: Cascade)
   material   Material @relation(fields: [materialId], references: [id])
@@ -266,6 +273,9 @@ model EnemyDrop {
   enemyId    Int
   materialId Int
   dropType   String
+  rarity     Int?
+  minLevel   Int?
+  rawPayload Json?
   enemy      Enemy    @relation(fields: [enemyId], references: [id], onDelete: Cascade)
   material   Material @relation(fields: [materialId], references: [id])
 
@@ -275,7 +285,7 @@ model EnemyDrop {
 
 model FarmCalendarEntry {
   id         Int       @id @default(autoincrement())
-  dayOfWeek  Int
+  dayOfWeek  String
   sourceType String
   sourceKey  String
   domainId   Int?

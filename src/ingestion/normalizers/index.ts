@@ -10,4 +10,17 @@ export {
   type ExtractedAscensionCost,
   type ExtractedTalentCost,
 } from "./CharacterCostNormalizer.js";
+export { DomainNormalizer, type NormalizedDomain, type NormalizedDomainReward } from "./DomainNormalizer.js";
+export { EnemyNormalizer, type NormalizedEnemy, type NormalizedEnemyDrop } from "./EnemyNormalizer.js";
+export {
+  FarmCalendarNormalizer,
+  FARM_DAYS,
+  normalizeFarmDay,
+  type FarmDay,
+} from "./FarmCalendarNormalizer.js";
+export {
+  MaterialSourceNormalizer,
+  type NormalizedMaterialSource,
+  type NormalizedMaterialSourceExtraction,
+} from "./MaterialSourceNormalizer.js";
 export { normalizeSearchText, normalizeStableKey, prefixedStableKey } from "./normalizeKey.js";

@@ -15,6 +15,26 @@ The service currently calculates character ascension and generic combat talent r
 
 It does not compare against player inventory, import Inventory Kamera data, optimize resin, choose farming routes, or call an LLM. Those are later services that can consume this deterministic result.
 
+## MaterialSourceService
+
+`MaterialSourceService` explains where a normalized material can be obtained. It reads normalized `MaterialSource` and `FarmCalendarEntry` rows, not raw `genshin-db` JSON.
+
+The service is deterministic:
+
+- material identity is resolved by `Material.stableKey` or `Material.id`;
+- sources are sorted in a stable order: domain, boss, weekly boss, enemy, local specialty, then other source types;
+- domain calendar days are returned when normalized farm calendar rows exist;
+- missing source data returns a warning instead of guessing.
+
+Example:
+
+```bash
+npm run sources:material -- --material mat_philosophies_of_justice
+npm run sources:material -- --material mat_lakelight_lily --json
+```
+
+Source data may be incomplete because it depends on what upstream `genshin-db` exposes and what has been normalized so far. Resin efficiency and map routes are future planner layers.
+
 ## InventoryDiffService
 
 `InventoryDiffService` is the first complete user-facing planning primitive. It compares deterministic character upgrade requirements against a player's imported inventory snapshot.
@@ -34,6 +54,7 @@ Example:
 
 ```bash
 npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10
+npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --with-sources
 npm run diff:character -- --player default --character char_furina --target-level 90 --skill 9 --burst 10 --use-player-state
 ```
 

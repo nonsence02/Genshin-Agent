@@ -6,6 +6,10 @@ import {
   type ExtractedAscensionCost,
   type ExtractedTalentCost,
 } from "../normalizers/CharacterCostNormalizer.js";
+import { DomainNormalizer, type NormalizedDomain } from "../normalizers/DomainNormalizer.js";
+import { EnemyNormalizer, type NormalizedEnemy } from "../normalizers/EnemyNormalizer.js";
+import { FarmCalendarNormalizer } from "../normalizers/FarmCalendarNormalizer.js";
+import { MaterialSourceNormalizer, type NormalizedMaterialSource } from "../normalizers/MaterialSourceNormalizer.js";
 import { MaterialNormalizer, type NormalizedMaterial } from "../normalizers/MaterialNormalizer.js";
 import { normalizeSearchText, prefixedStableKey } from "../normalizers/normalizeKey.js";
 import type { NormalizedAlias, RawGameObjectForNormalization } from "../normalizers/types.js";
@@ -40,8 +44,15 @@ export interface GameDataNormalizationResult {
   aliases: NormalizationCounts;
   characterAscensionCosts: NormalizationCounts;
   characterTalentCosts: NormalizationCounts;
+  domains: NormalizationCounts;
+  domainRewardsInserted: number;
+  enemies: NormalizationCounts;
+  enemyDropsInserted: number;
+  materialSourcesInserted: number;
+  farmCalendarEntriesInserted: number;
   unresolvedMaterials: number;
   unresolvedCharacters: number;
+  unresolvedSourceReferences: number;
   specialCases: string[];
   materialCountReport?: MaterialCountReport;
   dryRun: boolean;
@@ -72,6 +83,21 @@ export interface MaterialReference {
   }>;
 }
 
+export interface DomainReference {
+  id: number;
+  stableKey: string;
+  name: string;
+  domainType: string | null;
+}
+
+export interface EnemyReference {
+  id: number;
+  stableKey: string;
+  name: string;
+  enemyType: string | null;
+  family: string | null;
+}
+
 export interface AscensionCostWrite {
   characterId: number;
   materialId: number;
@@ -87,6 +113,63 @@ export interface TalentCostWrite {
   quantity: number;
 }
 
+export interface DomainRewardWrite {
+  domainId: number;
+  materialId: number;
+  rewardType: string;
+  level: number | null;
+  rarity: number | null;
+  rawPayload: unknown;
+}
+
+export interface EnemyDropWrite {
+  enemyId: number;
+  materialId: number;
+  dropType: string;
+  rarity: number | null;
+  minLevel: number | null;
+  rawPayload: unknown;
+}
+
+export interface MaterialSourceWrite {
+  materialId: number;
+  sourceType: string;
+  sourceKey: string | null;
+  sourceName: string | null;
+  resinCost: number | null;
+  domainId: number | null;
+  enemyId: number | null;
+  notes: string | null;
+  rawPayload: unknown;
+}
+
+export interface FarmCalendarEntryWrite {
+  dayOfWeek: string;
+  sourceType: string;
+  sourceKey: string;
+  domainId: number | null;
+  materialId: number | null;
+}
+
+export interface DomainRewardSource {
+  materialId: number;
+  domainId: number;
+  domainStableKey: string;
+  domainName: string;
+  rewardType: string;
+  rawPayload: unknown;
+}
+
+export interface EnemyDropSource {
+  materialId: number;
+  enemyId: number;
+  enemyStableKey: string;
+  enemyName: string;
+  enemyType: string | null;
+  family: string | null;
+  rawPayload: unknown;
+}
+
 export interface GameDataNormalizationRepository {
   listRawObjects(source: string, folder: string, limit?: number): Promise<RawGameObjectForNormalization[]>;
   countRawObjects(source: string, folder: string): Promise<number>;
@@ -96,8 +179,16 @@ export interface GameDataNormalizationRepository {
   listMaterialsForResolution(): Promise<MaterialReference[]>;
   replaceCharacterAscensionCosts(characterId: number, costs: AscensionCostWrite[]): Promise<number>;
   replaceCharacterTalentCosts(characterId: number, costs: TalentCostWrite[]): Promise<number>;
+  replaceDomainRewards(domainId: number, rewards: DomainRewardWrite[]): Promise<number>;
+  replaceEnemyDrops(enemyId: number, drops: EnemyDropWrite[]): Promise<number>;
+  replaceMaterialSources(sources: MaterialSourceWrite[]): Promise<number>;
+  replaceFarmCalendarEntries(entries: FarmCalendarEntryWrite[]): Promise<number>;
+  listDomainRewardSources(): Promise<DomainRewardSource[]>;
+  listEnemyDropSources(): Promise<EnemyDropSource[]>;
   upsertCharacter(character: NormalizedCharacter): Promise<EntityWriteResult>;
   upsertMaterial(material: NormalizedMaterial): Promise<EntityWriteResult>;
+  upsertDomain(domain: NormalizedDomain): Promise<EntityWriteResult>;
+  upsertEnemy(enemy: NormalizedEnemy): Promise<EntityWriteResult>;
   upsertAlias(input: {
     entityType: "character" | "material";
     entityId: number;
@@ -235,6 +326,166 @@ export class PrismaGameDataNormalizationRepository implements GameDataNormalizat
     return result.count;
   }
 
+  async replaceDomainRewards(domainId: number, rewards: DomainRewardWrite[]): Promise<number> {
+    await this.client.domainReward.deleteMany({
+      where: {
+        domainId,
+      },
+    });
+
+    if (rewards.length === 0) {
+      return 0;
+    }
+
+    const result = await this.client.domainReward.createMany({
+      data: rewards.map((reward) => ({
+        domainId: reward.domainId,
+        materialId: reward.materialId,
+        rewardType: reward.rewardType,
+        level: reward.level,
+        rarity: reward.rarity,
+        rawPayload: reward.rawPayload as never,
+      })),
+      skipDuplicates: true,
+    });
+
+    return result.count;
+  }
+
+  async replaceEnemyDrops(enemyId: number, drops: EnemyDropWrite[]): Promise<number> {
+    await this.client.enemyDrop.deleteMany({
+      where: {
+        enemyId,
+      },
+    });
+
+    if (drops.length === 0) {
+      return 0;
+    }
+
+    const result = await this.client.enemyDrop.createMany({
+      data: drops.map((drop) => ({
+        enemyId: drop.enemyId,
+        materialId: drop.materialId,
+        dropType: drop.dropType,
+        rarity: drop.rarity,
+        minLevel: drop.minLevel,
+        rawPayload: drop.rawPayload as never,
+      })),
+      skipDuplicates: true,
+    });
+
+    return result.count;
+  }
+
+  async replaceMaterialSources(sources: MaterialSourceWrite[]): Promise<number> {
+    await this.client.materialSource.deleteMany();
+
+    if (sources.length === 0) {
+      return 0;
+    }
+
+    const result = await this.client.materialSource.createMany({
+      data: sources.map((source) => ({
+        materialId: source.materialId,
+        sourceType: source.sourceType,
+        sourceKey: source.sourceKey,
+        sourceName: source.sourceName,
+        resinCost: source.resinCost,
+        domainId: source.domainId,
+        enemyId: source.enemyId,
+        notes: source.notes,
+        rawPayload: source.rawPayload as never,
+      })),
+    });
+
+    return result.count;
+  }
+
+  async replaceFarmCalendarEntries(entries: FarmCalendarEntryWrite[]): Promise<number> {
+    await this.client.farmCalendarEntry.deleteMany();
+
+    if (entries.length === 0) {
+      return 0;
+    }
+
+    const result = await this.client.farmCalendarEntry.createMany({
+      data: entries,
+      skipDuplicates: true,
+    });
+
+    return result.count;
+  }
+
+  async listDomainRewardSources(): Promise<DomainRewardSource[]> {
+    const rows = await this.client.domainReward.findMany({
+      include: {
+        domain: {
+          select: {
+            id: true,
+            stableKey: true,
+            name: true,
+          },
+        },
+      },
+      orderBy: [
+        {
+          domain: {
+            stableKey: "asc",
+          },
+        },
+        {
+          materialId: "asc",
+        },
+      ],
+    });
+
+    return rows.map((row) => ({
+      materialId: row.materialId,
+      domainId: row.domainId,
+      domainStableKey: row.domain.stableKey,
+      domainName: row.domain.name,
+      rewardType: row.rewardType,
+      rawPayload: row.rawPayload,
+    }));
+  }
+
+  async listEnemyDropSources(): Promise<EnemyDropSource[]> {
+    const rows = await this.client.enemyDrop.findMany({
+      include: {
+        enemy: {
+          select: {
+            id: true,
+            stableKey: true,
+            name: true,
+            enemyType: true,
+            family: true,
+          },
+        },
+      },
+      orderBy: [
+        {
+          enemy: {
+            stableKey: "asc",
+          },
+        },
+        {
+          materialId: "asc",
+        },
+      ],
+    });
+
+    return rows.map((row) => ({
+      materialId: row.materialId,
+      enemyId: row.enemyId,
+      enemyStableKey: row.enemy.stableKey,
+      enemyName: row.enemy.name,
+      enemyType: row.enemy.enemyType,
+      family: row.enemy.family,
+      rawPayload: row.rawPayload,
+    }));
+  }
+
   async replaceCharacterTalentCosts(characterId: number, costs: TalentCostWrite[]): Promise<number> {
     await this.client.characterTalentCost.deleteMany({
       where: {
@@ -345,6 +596,86 @@ export class PrismaGameDataNormalizationRepository implements GameDataNormalizat
     };
   }
 
+  async upsertDomain(domain: NormalizedDomain): Promise<EntityWriteResult> {
+    const existing = await this.client.domain.findUnique({
+      where: {
+        stableKey: domain.stableKey,
+      },
+      select: {
+        id: true,
+      },
+    });
+
+    const saved = await this.client.domain.upsert({
+      where: {
+        stableKey: domain.stableKey,
+      },
+      create: {
+        stableKey: domain.stableKey,
+        name: domain.name,
+        region: domain.region,
+        domainType: domain.domainType,
+        sourceExternalKey: domain.sourceExternalKey,
+        rawGameObjectId: domain.rawGameObjectId,
+      },
+      update: {
+        name: domain.name,
+        region: domain.region,
+        domainType: domain.domainType,
+        sourceExternalKey: domain.sourceExternalKey,
+        rawGameObjectId: domain.rawGameObjectId,
+      },
+      select: {
+        id: true,
+      },
+    });
+
+    return {
+      id: saved.id,
+      created: existing === null,
+    };
+  }
+
+  async upsertEnemy(enemy: NormalizedEnemy): Promise<EntityWriteResult> {
+    const existing = await this.client.enemy.findUnique({
+      where: {
+        stableKey: enemy.stableKey,
+      },
+      select: {
+        id: true,
+      },
+    });
+
+    const saved = await this.client.enemy.upsert({
+      where: {
+        stableKey: enemy.stableKey,
+      },
+      create: {
+        stableKey: enemy.stableKey,
+        name: enemy.name,
+        enemyType: enemy.enemyType,
+        family: enemy.family,
+        sourceExternalKey: enemy.sourceExternalKey,
+        rawGameObjectId: enemy.rawGameObjectId,
+      },
+      update: {
+        name: enemy.name,
+        enemyType: enemy.enemyType,
+        family: enemy.family,
+        sourceExternalKey: enemy.sourceExternalKey,
+        rawGameObjectId: enemy.rawGameObjectId,
+      },
+      select: {
+        id: true,
+      },
+    });
+
+    return {
+      id: saved.id,
+      created: existing === null,
+    };
+  }
+
   async upsertAlias(input: {
     entityType: "character" | "material";
     entityId: number;
@@ -414,18 +745,33 @@ export class GameDataNormalizationService {
     private readonly materialNormalizer = new MaterialNormalizer(),
     private readonly characterCostNormalizer = new CharacterCostNormalizer(),
     private readonly log: (message: string) => void = console.log,
+    private readonly domainNormalizer = new DomainNormalizer(),
+    private readonly enemyNormalizer = new EnemyNormalizer(),
+    private readonly materialSourceNormalizer = new MaterialSourceNormalizer(),
+    private readonly farmCalendarNormalizer = new FarmCalendarNormalizer(),
   ) {}
 
   async normalize(options: NormalizeGameDataOptions = {}): Promise<GameDataNormalizationResult> {
-    const sections = options.sections?.length ? options.sections : options.folders?.length ? options.folders : ["characters", "materials", "character-costs"];
+    const sections = options.sections?.length
+      ? options.sections
+      : options.folders?.length
+        ? options.folders
+        : ["characters", "materials", "character-costs", "domains", "enemies", "material-sources", "farm-calendar"];
     const result: GameDataNormalizationResult = {
       characters: emptyCounts(),
       materials: emptyCounts(),
       aliases: emptyCounts(),
       characterAscensionCosts: emptyCounts(),
       characterTalentCosts: emptyCounts(),
+      domains: emptyCounts(),
+      domainRewardsInserted: 0,
+      enemies: emptyCounts(),
+      enemyDropsInserted: 0,
+      materialSourcesInserted: 0,
+      farmCalendarEntriesInserted: 0,
       unresolvedMaterials: 0,
       unresolvedCharacters: 0,
+      unresolvedSourceReferences: 0,
       specialCases: [],
       dryRun: options.dryRun ?? false,
     };
@@ -437,6 +783,14 @@ export class GameDataNormalizationService {
         await this.normalizeMaterials(options, result);
       } else if (section === "character-costs") {
         await this.normalizeCharacterCosts(options, result);
+      } else if (section === "domains") {
+        await this.normalizeDomains(options, result);
+      } else if (section === "enemies") {
+        await this.normalizeEnemies(options, result);
+      } else if (section === "material-sources") {
+        await this.normalizeMaterialSources(options, result);
+      } else if (section === "farm-calendar") {
+        await this.normalizeFarmCalendar(options, result);
       } else {
         this.log(`Skipping unsupported normalization section: ${section}`);
       }
@@ -457,8 +811,15 @@ export class GameDataNormalizationService {
     this.log(
       `CharacterTalentCost created/updated/skipped: ${result.characterTalentCosts.created}/${result.characterTalentCosts.updated}/${result.characterTalentCosts.skipped}`,
     );
+    this.log(`Domains created/updated/skipped: ${result.domains.created}/${result.domains.updated}/${result.domains.skipped}`);
+    this.log(`Domain rewards inserted: ${result.domainRewardsInserted}`);
+    this.log(`Enemies created/updated/skipped: ${result.enemies.created}/${result.enemies.updated}/${result.enemies.skipped}`);
+    this.log(`Enemy drops inserted: ${result.enemyDropsInserted}`);
+    this.log(`Material sources inserted: ${result.materialSourcesInserted}`);
+    this.log(`Farm calendar entries inserted: ${result.farmCalendarEntriesInserted}`);
     this.log(`Unresolved materials: ${result.unresolvedMaterials}`);
     this.log(`Unresolved characters: ${result.unresolvedCharacters}`);
+    this.log(`Unresolved source references: ${result.unresolvedSourceReferences}`);
     this.log(`Special cases skipped: ${result.specialCases.length}`);
     this.log(
       `Material count report: raw=${result.materialCountReport.rawMaterials}, normalized=${result.materialCountReport.normalizedMaterials}, duplicateStableKeys=${result.materialCountReport.duplicateStableKeys.length}`,
@@ -630,6 +991,301 @@ export class GameDataNormalizationService {
     }
   }
 
+  private async normalizeDomains(options: NormalizeGameDataOptions, result: GameDataNormalizationResult): Promise<void> {
+    const materials = await this.repository.listMaterialsForResolution();
+    const materialIndex = new MaterialResolutionIndex(materials);
+    const rawObjects = await this.repository.listRawObjects("genshin-db", "domains", options.limit);
+    const rewardsByDomain = new Map<number, DomainRewardWrite[]>();
+    this.log(`Normalizing domains: ${rawObjects.length} raw objects`);
+
+    for (const rawObject of rawObjects) {
+      const domain = this.domainNormalizer.normalize(rawObject);
+
+      if (options.dryRun) {
+        result.domains.skipped += 1;
+        continue;
+      }
+
+      const writeResult = await this.repository.upsertDomain(domain);
+      incrementEntity(result.domains, writeResult);
+
+      const currentRewards = rewardsByDomain.get(writeResult.id) ?? [];
+
+      for (const reward of domain.rewards) {
+        const materialId = materialIndex.resolve(reward.materialName);
+
+        if (materialId === null) {
+          result.unresolvedMaterials += 1;
+          result.specialCases.push(`Unresolved domain reward '${reward.materialName}' for ${domain.name}`);
+          continue;
+        }
+
+        currentRewards.push({
+          domainId: writeResult.id,
+          materialId,
+          rewardType: reward.rewardType,
+          level: reward.level,
+          rarity: reward.rarity,
+          rawPayload: reward.rawPayload,
+        });
+      }
+
+      rewardsByDomain.set(writeResult.id, currentRewards);
+    }
+
+    if (options.dryRun) {
+      return;
+    }
+
+    for (const [domainId, rewards] of rewardsByDomain.entries()) {
+      result.domainRewardsInserted += await this.repository.replaceDomainRewards(domainId, rewards);
+    }
+  }
+
+  private async normalizeEnemies(options: NormalizeGameDataOptions, result: GameDataNormalizationResult): Promise<void> {
+    const materials = await this.repository.listMaterialsForResolution();
+    const materialIndex = new MaterialResolutionIndex(materials);
+    const rawObjects = await this.repository.listRawObjects("genshin-db", "enemies", options.limit);
+    this.log(`Normalizing enemies: ${rawObjects.length} raw objects`);
+
+    for (const rawObject of rawObjects) {
+      const enemy = this.enemyNormalizer.normalize(rawObject);
+
+      if (options.dryRun) {
+        result.enemies.skipped += 1;
+        continue;
+      }
+
+      const writeResult = await this.repository.upsertEnemy(enemy);
+      incrementEntity(result.enemies, writeResult);
+      const drops: EnemyDropWrite[] = [];
+
+      for (const drop of enemy.drops) {
+        const materialId = materialIndex.resolve(drop.materialName);
+
+        if (materialId === null) {
+          result.unresolvedMaterials += 1;
+          result.specialCases.push(`Unresolved enemy drop '${drop.materialName}' for ${enemy.name}`);
+          continue;
+        }
+
+        drops.push({
+          enemyId: writeResult.id,
+          materialId,
+          dropType: drop.dropType,
+          rarity: drop.rarity,
+          minLevel: drop.minLevel,
+          rawPayload: drop.rawPayload,
+        });
+      }
+
+      result.enemyDropsInserted += await this.repository.replaceEnemyDrops(writeResult.id, drops);
+    }
+  }
+
+  private async normalizeMaterialSources(
+    options: NormalizeGameDataOptions,
+    result: GameDataNormalizationResult,
+  ): Promise<void> {
+    const materials = await this.repository.listMaterialsForResolution();
+    const materialIndex = new MaterialResolutionIndex(materials);
+    const rawMaterials = await this.repository.listRawObjects("genshin-db", "materials", options.limit);
+    const sources: MaterialSourceWrite[] = [];
+
+    for (const rawMaterial of rawMaterials) {
+      const extracted = this.materialSourceNormalizer.extractFromMaterial(rawMaterial);
+
+      for (const warning of extracted.warnings) {
+        result.unresolvedSourceReferences += 1;
+        result.specialCases.push(warning);
+      }
+
+      for (const source of extracted.sources) {
+        const materialId = materialIndex.resolve(source.materialName);
+
+        if (materialId === null) {
+          result.unresolvedMaterials += 1;
+          result.specialCases.push(`Unresolved material source material '${source.materialName}'`);
+          continue;
+        }
+
+        sources.push(this.toMaterialSourceWrite(materialId, source, null, null));
+      }
+    }
+
+    for (const reward of await this.repository.listDomainRewardSources()) {
+      sources.push({
+        materialId: reward.materialId,
+        sourceType: "domain",
+        sourceKey: reward.domainStableKey,
+        sourceName: reward.domainName,
+        resinCost: null,
+        domainId: reward.domainId,
+        enemyId: null,
+        notes: `Domain reward: ${reward.rewardType}`,
+        rawPayload: reward.rawPayload,
+      });
+    }
+
+    for (const drop of await this.repository.listEnemyDropSources()) {
+      sources.push({
+        materialId: drop.materialId,
+        sourceType: this.sourceTypeForEnemy(drop),
+        sourceKey: drop.enemyStableKey,
+        sourceName: drop.enemyName,
+        resinCost: null,
+        domainId: null,
+        enemyId: drop.enemyId,
+        notes: drop.family,
+        rawPayload: drop.rawPayload,
+      });
+    }
+
+    const deduped = dedupeMaterialSources(sources);
+    this.log(`Normalizing material sources: ${deduped.length} source rows`);
+
+    if (options.dryRun) {
+      result.materialSourcesInserted += deduped.length;
+      return;
+    }
+
+    result.materialSourcesInserted += await this.repository.replaceMaterialSources(deduped);
+  }
+
+  private async normalizeFarmCalendar(options: NormalizeGameDataOptions, result: GameDataNormalizationResult): Promise<void> {
+    const rawDomains = await this.repository.listRawObjects("genshin-db", "domains", options.limit);
+    const rawMaterials = await this.repository.listRawObjects("genshin-db", "materials", options.limit);
+    const materials = await this.repository.listMaterialsForResolution();
+    const materialIndex = new MaterialResolutionIndex(materials);
+    const entries: FarmCalendarEntryWrite[] = [];
+    const domainSourceKeysByDropName = new Map<string, Set<string>>();
+    this.log(`Normalizing farm calendar from domains: ${rawDomains.length} raw objects`);
+
+    for (const rawObject of rawDomains) {
+      const domain = this.domainNormalizer.normalize(rawObject);
+      const raw = rawObject.payload !== null && typeof rawObject.payload === "object" && !Array.isArray(rawObject.payload)
+        ? (rawObject.payload as Record<string, unknown>)
+        : {};
+      const rawName = typeof raw.name === "string" ? raw.name : rawObject.externalKey;
+      const dropName = rawName.replace(/\s+[IVX]+$/i, "").trim();
+      const sourceKeys = domainSourceKeysByDropName.get(dropName) ?? new Set<string>();
+      sourceKeys.add(domain.stableKey);
+      domainSourceKeysByDropName.set(dropName, sourceKeys);
+      const days = this.farmCalendarNormalizer.normalizeDays(domain.daysOfWeek);
+
+      if (days.length === 0) {
+        continue;
+      }
+
+      if (options.dryRun) {
+        for (const dayOfWeek of days) {
+          entries.push({
+            dayOfWeek,
+            sourceType: "domain",
+            sourceKey: domain.stableKey,
+            domainId: null,
+            materialId: null,
+          });
+        }
+
+        continue;
+      }
+
+      const domainWrite = await this.repository.upsertDomain(domain);
+
+      for (const dayOfWeek of days) {
+        entries.push({
+          dayOfWeek,
+          sourceType: "domain",
+          sourceKey: domain.stableKey,
+          domainId: domainWrite.id,
+          materialId: null,
+        });
+      }
+    }
+
+    for (const rawObject of rawMaterials) {
+      const raw = rawObject.payload !== null && typeof rawObject.payload === "object" && !Array.isArray(rawObject.payload)
+        ? (rawObject.payload as Record<string, unknown>)
+        : {};
+      const materialName = typeof raw.name === "string" ? raw.name : rawObject.externalKey;
+      const domainName = typeof raw.dropDomainName === "string" ? raw.dropDomainName : null;
+      const days = this.farmCalendarNormalizer.normalizeDays(raw.daysOfWeek);
+
+      if (!domainName || days.length === 0) {
+        continue;
+      }
+
+      const materialId = materialIndex.resolve(materialName);
+
+      if (materialId === null) {
+        result.unresolvedMaterials += 1;
+        result.specialCases.push(`Unresolved farm calendar material '${materialName}'`);
+        continue;
+      }
+
+      for (const dayOfWeek of days) {
+        const sourceKeys = new Set<string>([
+          prefixedStableKey("domain", domainName),
+          ...(domainSourceKeysByDropName.get(domainName) ?? []),
+        ]);
+
+        for (const sourceKey of sourceKeys) {
+          entries.push({
+            dayOfWeek,
+            sourceType: "domain",
+            sourceKey,
+            domainId: null,
+            materialId,
+          });
+        }
+      }
+    }
+
+    const deduped = dedupeFarmCalendarEntries(entries);
+
+    if (options.dryRun) {
+      result.farmCalendarEntriesInserted += deduped.length;
+      return;
+    }
+
+    result.farmCalendarEntriesInserted += await this.repository.replaceFarmCalendarEntries(deduped);
+  }
+
+  private toMaterialSourceWrite(
+    materialId: number,
+    source: NormalizedMaterialSource,
+    domainId: number | null,
+    enemyId: number | null,
+  ): MaterialSourceWrite {
+    return {
+      materialId,
+      sourceType: source.sourceType,
+      sourceKey: source.sourceKey,
+      sourceName: source.sourceName,
+      resinCost: source.resinCost,
+      domainId,
+      enemyId,
+      notes: source.notes,
+      rawPayload: source.rawPayload,
+    };
+  }
+
+  private sourceTypeForEnemy(drop: EnemyDropSource): string {
+    const type = (drop.enemyType ?? "").toLowerCase();
+    const family = (drop.family ?? "").toLowerCase();
+
+    if (type.includes("boss") && family.includes("note")) {
+      return "weekly_boss";
+    }
+
+    if (type.includes("boss")) {
+      return "boss";
+    }
+
+    return "enemy";
+  }
+
   private async buildMaterialCountReport(): Promise<MaterialCountReport> {
     const rawObjects = await this.repository.listRawObjects("genshin-db", "materials");
     const duplicateMap = new Map<string, string[]>();
@@ -652,6 +1308,42 @@ export class GameDataNormalizationService {
         })),
     };
   }
+}
+
+function dedupeMaterialSources(sources: MaterialSourceWrite[]): MaterialSourceWrite[] {
+  const deduped = new Map<string, MaterialSourceWrite>();
+
+  for (const source of sources) {
+    const key = [
+      source.materialId,
+      source.sourceType,
+      source.sourceKey ?? "",
+      source.sourceName ?? "",
+      source.notes ?? "",
+      source.domainId ?? "",
+      source.enemyId ?? "",
+    ].join("|");
+
+    if (!deduped.has(key)) {
+      deduped.set(key, source);
+    }
+  }
+
+  return [...deduped.values()];
+}
+
+function dedupeFarmCalendarEntries(entries: FarmCalendarEntryWrite[]): FarmCalendarEntryWrite[] {
+  const deduped = new Map<string, FarmCalendarEntryWrite>();
+
+  for (const entry of entries) {
+    const key = [entry.dayOfWeek, entry.sourceType, entry.sourceKey, entry.materialId ?? ""].join("|");
+
+    if (!deduped.has(key)) {
+      deduped.set(key, entry);
+    }
+  }
+
+  return [...deduped.values()];
 }
 
 class MaterialResolutionIndex {

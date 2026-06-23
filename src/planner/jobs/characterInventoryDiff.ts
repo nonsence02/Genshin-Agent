@@ -1,5 +1,6 @@
 import { InventoryDiffService, type CharacterInventoryDiffResult } from "../services/InventoryDiffService.js";
 import type { TalentLevels } from "../services/CharacterRequirementService.js";
+import { MaterialSourceService, type MaterialSourceLookupResult } from "../services/MaterialSourceService.js";
 
 interface CliOptions {
   playerKey?: string;
@@ -14,7 +15,12 @@ interface CliOptions {
   targetTalents: TalentLevels;
   json: boolean;
   onlyMissing: boolean;
+  withSources: boolean;
 }
+
+type CharacterInventoryDiffCliResult = CharacterInventoryDiffResult & {
+  materialSourceLookups?: Record<string, MaterialSourceLookupResult>;
+};
 
 function parseOptions(args: string[]): CliOptions {
   const options: CliOptions = {
@@ -23,6 +29,7 @@ function parseOptions(args: string[]): CliOptions {
     targetTalents: {},
     json: false,
     onlyMissing: false,
+    withSources: false,
   };
 
   for (let index = 0; index < args.length; index += 1) {
@@ -32,6 +39,8 @@ function parseOptions(args: string[]): CliOptions {
       options.json = true;
     } else if (arg === "--only-missing") {
       options.onlyMissing = true;
+    } else if (arg === "--with-sources") {
+      options.withSources = true;
     } else if (arg === "--use-player-state") {
       options.usePlayerState = true;
     } else if (arg === "--player") {
@@ -98,7 +107,7 @@ function compactTalents(talents: TalentLevels): TalentLevels | undefined {
   return Object.values(talents).some((value) => value !== undefined) ? talents : undefined;
 }
 
-function printReadable(result: CharacterInventoryDiffResult, onlyMissing: boolean): void {
+function printReadable(result: CharacterInventoryDiffCliResult, onlyMissing: boolean): void {
   console.log(`${result.character.name} (${result.character.stableKey})`);
   console.log(`Player: ${result.player.stableKey}`);
   console.log(
@@ -128,7 +137,7 @@ function printReadable(result: CharacterInventoryDiffResult, onlyMissing: boolea
   }
 }
 
-function printMaterials(label: string, materials: CharacterInventoryDiffResult["materials"]): void {
+function printMaterials(label: string, materials: CharacterInventoryDiffCliResult["materials"]): void {
   console.log(`${label}:`);
 
   if (materials.length === 0) {
@@ -139,6 +148,53 @@ function printMaterials(label: string, materials: CharacterInventoryDiffResult["
   for (const material of materials) {
     console.log(`- ${material.name} (${material.stableKey}): required ${material.required}, owned ${material.owned}, missing ${material.missing}`);
   }
+}
+
+function printSourceLookups(result: CharacterInventoryDiffCliResult): void {
+  if (!result.materialSourceLookups) {
+    return;
+  }
+
+  console.log("Sources for missing materials:");
+
+  for (const material of result.materials.filter((item) => item.status === "missing")) {
+    const lookup = result.materialSourceLookups[material.stableKey];
+
+    if (!lookup) {
+      continue;
+    }
+
+    const summary = lookup.sources
+      .slice(0, 3)
+      .map((source) => {
+        const name = source.sourceName ?? source.sourceKey ?? "unknown";
+        const days = source.days?.length ? ` (${source.days.join(",")})` : "";
+        return `${source.sourceType}:${name}${days}`;
+      })
+      .join("; ");
+
+    console.log(`- ${material.name}: ${summary || "no normalized sources"}`);
+  }
+}
+
+async function addSourceLookups(
+  result: CharacterInventoryDiffResult,
+  service = new MaterialSourceService(),
+): Promise<CharacterInventoryDiffCliResult> {
+  const missing = result.materials.filter((material) => material.status === "missing");
+  const lookups: Record<string, MaterialSourceLookupResult> = {};
+
+  for (const material of missing) {
+    lookups[material.stableKey] = await service.lookup({
+      materialKey: material.stableKey,
+      includeCalendar: true,
+    });
+  }
+
+  return {
+    ...result,
+    materialSourceLookups: lookups,
+  };
 }
 
 try {
@@ -158,11 +214,13 @@ try {
       currentTalents: compactTalents(options.currentTalents),
       targetTalents: compactTalents(options.targetTalents),
     })
+    .then((result) => (options.withSources ? addSourceLookups(result) : result))
     .then((result) => {
       if (options.json) {
         console.log(JSON.stringify(result, null, 2));
       } else {
         printReadable(result, options.onlyMissing);
+        printSourceLookups(result);
       }
     })
     .catch((error: unknown) => {

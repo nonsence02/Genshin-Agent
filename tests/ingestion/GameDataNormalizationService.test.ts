@@ -3,8 +3,14 @@ import {
   GameDataNormalizationService,
   type AliasWriteResult,
   type AscensionCostWrite,
+  type DomainRewardSource,
+  type DomainRewardWrite,
+  type EnemyDropSource,
+  type EnemyDropWrite,
   type EntityWriteResult,
+  type FarmCalendarEntryWrite,
   type GameDataNormalizationRepository,
+  type MaterialSourceWrite,
   type MaterialReference,
   type TalentCostWrite,
 } from "../../src/ingestion/services/GameDataNormalizationService.js";
@@ -12,6 +18,8 @@ import type { NormalizedAlias, RawGameObjectForNormalization } from "../../src/i
 import { CharacterNormalizer, type NormalizedCharacter } from "../../src/ingestion/normalizers/CharacterNormalizer.js";
 import { CharacterCostNormalizer } from "../../src/ingestion/normalizers/CharacterCostNormalizer.js";
 import { MaterialNormalizer, type NormalizedMaterial } from "../../src/ingestion/normalizers/MaterialNormalizer.js";
+import type { NormalizedDomain } from "../../src/ingestion/normalizers/DomainNormalizer.js";
+import type { NormalizedEnemy } from "../../src/ingestion/normalizers/EnemyNormalizer.js";
 
 class MockNormalizationRepository implements GameDataNormalizationRepository {
   private readonly characters = new Map<string, number>();
@@ -19,6 +27,10 @@ class MockNormalizationRepository implements GameDataNormalizationRepository {
   private readonly aliases = new Map<string, number>();
   ascensionWrites: AscensionCostWrite[] = [];
   talentWrites: TalentCostWrite[] = [];
+  domainRewardWrites: DomainRewardWrite[] = [];
+  enemyDropWrites: EnemyDropWrite[] = [];
+  materialSourceWrites: MaterialSourceWrite[] = [];
+  farmCalendarWrites: FarmCalendarEntryWrite[] = [];
   private nextId = 1;
 
   constructor(private readonly exposeMaterials = true) {}
@@ -96,12 +108,48 @@ class MockNormalizationRepository implements GameDataNormalizationRepository {
     return costs.length;
   }
 
+  async replaceDomainRewards(domainId: number, rewards: DomainRewardWrite[]): Promise<number> {
+    this.domainRewardWrites = this.domainRewardWrites.filter((reward) => reward.domainId !== domainId).concat(rewards);
+    return rewards.length;
+  }
+
+  async replaceEnemyDrops(enemyId: number, drops: EnemyDropWrite[]): Promise<number> {
+    this.enemyDropWrites = this.enemyDropWrites.filter((drop) => drop.enemyId !== enemyId).concat(drops);
+    return drops.length;
+  }
+
+  async replaceMaterialSources(sources: MaterialSourceWrite[]): Promise<number> {
+    this.materialSourceWrites = sources;
+    return sources.length;
+  }
+
+  async replaceFarmCalendarEntries(entries: FarmCalendarEntryWrite[]): Promise<number> {
+    this.farmCalendarWrites = entries;
+    return entries.length;
+  }
+
+  async listDomainRewardSources(): Promise<DomainRewardSource[]> {
+    return [];
+  }
+
+  async listEnemyDropSources(): Promise<EnemyDropSource[]> {
+    return [];
+  }
+
   async upsertCharacter(character: NormalizedCharacter): Promise<EntityWriteResult> {
     return this.upsertEntity(this.characters, character.stableKey);
   }
 
   async upsertMaterial(material: NormalizedMaterial): Promise<EntityWriteResult> {
     return this.upsertEntity(this.materials, material.stableKey);
+  }
+
+  async upsertDomain(domain: NormalizedDomain): Promise<EntityWriteResult> {
+    return this.upsertEntity(new Map([[domain.stableKey, 900]]), domain.stableKey);
+  }
+
+  async upsertEnemy(enemy: NormalizedEnemy): Promise<EntityWriteResult> {
+    return this.upsertEntity(new Map([[enemy.stableKey, 901]]), enemy.stableKey);
   }
 
   async upsertAlias(input: {
