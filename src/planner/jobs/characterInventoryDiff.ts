@@ -1,5 +1,6 @@
 import { InventoryDiffService, type CharacterInventoryDiffResult } from "../services/InventoryDiffService.js";
 import type { TalentLevels } from "../services/CharacterRequirementService.js";
+import { MaterialDemandClassifier, type ClassifiedMaterialDemand } from "../services/MaterialDemandClassifier.js";
 import { MaterialSourceService, type MaterialSourceLookupResult } from "../services/MaterialSourceService.js";
 
 interface CliOptions {
@@ -16,10 +17,12 @@ interface CliOptions {
   json: boolean;
   onlyMissing: boolean;
   withSources: boolean;
+  classify: boolean;
 }
 
 type CharacterInventoryDiffCliResult = CharacterInventoryDiffResult & {
   materialSourceLookups?: Record<string, MaterialSourceLookupResult>;
+  materialClassifications?: Record<string, ClassifiedMaterialDemand>;
 };
 
 function parseOptions(args: string[]): CliOptions {
@@ -30,6 +33,7 @@ function parseOptions(args: string[]): CliOptions {
     json: false,
     onlyMissing: false,
     withSources: false,
+    classify: false,
   };
 
   for (let index = 0; index < args.length; index += 1) {
@@ -41,6 +45,8 @@ function parseOptions(args: string[]): CliOptions {
       options.onlyMissing = true;
     } else if (arg === "--with-sources") {
       options.withSources = true;
+    } else if (arg === "--classify") {
+      options.classify = true;
     } else if (arg === "--use-player-state") {
       options.usePlayerState = true;
     } else if (arg === "--player") {
@@ -177,6 +183,27 @@ function printSourceLookups(result: CharacterInventoryDiffCliResult): void {
   }
 }
 
+function printClassifications(result: CharacterInventoryDiffCliResult): void {
+  if (!result.materialClassifications) {
+    return;
+  }
+
+  console.log("Classification for missing materials:");
+
+  for (const material of result.materials.filter((item) => item.status === "missing")) {
+    const classification = result.materialClassifications[material.stableKey];
+
+    if (!classification) {
+      continue;
+    }
+
+    const cost = classification.resinCostPerRun ?? (classification.weeklyBoss ? "dynamic" : "none");
+    console.log(
+      `- ${material.name}: primary=${classification.primarySourceType ?? "none"}, resin=${classification.resinGated ? "yes" : "no"}, cost=${cost}, openWorld=${classification.openWorld ? "yes" : "no"}`,
+    );
+  }
+}
+
 async function addSourceLookups(
   result: CharacterInventoryDiffResult,
   service = new MaterialSourceService(),
@@ -197,6 +224,34 @@ async function addSourceLookups(
   };
 }
 
+async function addClassifications(
+  result: CharacterInventoryDiffCliResult,
+  classifier = new MaterialDemandClassifier(),
+): Promise<CharacterInventoryDiffCliResult> {
+  const withSources = result.materialSourceLookups ? result : await addSourceLookups(result);
+  const classifications: Record<string, ClassifiedMaterialDemand> = {};
+
+  for (const material of withSources.materials.filter((item) => item.status === "missing")) {
+    classifications[material.stableKey] = classifier.classify({
+      material: {
+        materialId: material.materialId,
+        stableKey: material.stableKey,
+        name: material.name,
+        required: material.required,
+        owned: material.owned,
+        missing: material.missing,
+        status: material.status,
+      },
+      sourceLookup: withSources.materialSourceLookups?.[material.stableKey],
+    });
+  }
+
+  return {
+    ...withSources,
+    materialClassifications: classifications,
+  };
+}
+
 try {
   const options = parseOptions(process.argv.slice(2));
   const service = new InventoryDiffService();
@@ -214,13 +269,15 @@ try {
       currentTalents: compactTalents(options.currentTalents),
       targetTalents: compactTalents(options.targetTalents),
     })
-    .then((result) => (options.withSources ? addSourceLookups(result) : result))
+    .then((result) => (options.withSources || options.classify ? addSourceLookups(result) : result))
+    .then((result) => (options.classify ? addClassifications(result) : result))
     .then((result) => {
       if (options.json) {
         console.log(JSON.stringify(result, null, 2));
       } else {
         printReadable(result, options.onlyMissing);
         printSourceLookups(result);
+        printClassifications(result);
       }
     })
     .catch((error: unknown) => {

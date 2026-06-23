@@ -35,6 +35,21 @@ npm run sources:material -- --material mat_lakelight_lily --json
 
 Source data may be incomplete because it depends on what upstream `genshin-db` exposes and what has been normalized so far. Resin efficiency and map routes are future planner layers.
 
+## ResinPolicy And MaterialDemandClassifier
+
+`ResinPolicy` and `WeeklyBossPolicy` encode reusable resin rules before the full optimizer exists. They cover resin cap, natural regeneration, static source costs, and weekly boss discounted claim costs.
+
+`MaterialDemandClassifier` uses normalized material sources to mark missing materials as resin-gated, open-world, weekly-boss-gated, and calendar-bound. It does not estimate drop rates, run counts, routes, or schedules.
+
+Examples:
+
+```bash
+npm run classify:material -- --material mat_water_that_failed_to_transcend
+npm run classify:material -- --material mat_lakelight_lily --json
+```
+
+Weekly boss cost is dynamic: each weekly boss reward can be claimed once per week, the first 3 weekly boss reward claims cost 30 resin, and later claims cost 60 resin. Current planner code does not track claimed bosses yet.
+
 ## InventoryDiffService
 
 `InventoryDiffService` is the first complete user-facing planning primitive. It compares deterministic character upgrade requirements against a player's imported inventory snapshot.
@@ -55,6 +70,7 @@ Example:
 ```bash
 npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10
 npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --with-sources
+npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --with-sources --classify
 npm run diff:character -- --player default --character char_furina --target-level 90 --skill 9 --burst 10 --use-player-state
 ```
 

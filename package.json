@@ -17,6 +17,7 @@
     "requirements:character": "tsx src/planner/jobs/characterRequirements.ts",
     "diff:character": "tsx src/planner/jobs/characterInventoryDiff.ts",
     "sources:material": "tsx src/planner/jobs/materialSources.ts",
+    "classify:material": "tsx src/planner/jobs/classifyMaterial.ts",
     "compare:genshin-py": "tsx src/experiments/genshin-py-comparison/compareGenshinPyProfile.ts",
     "auth:hoyolab": "tsx src/experiments/hoyoapi/captureHoyolabCookies.ts",
     "spike:hoyoapi": "tsx src/experiments/hoyoapi/runHoyoApiExperiment.ts",
