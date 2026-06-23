@@ -7,6 +7,9 @@
     "dev": "tsx src/api/index.ts",
     "api:dev": "tsx src/api/index.ts",
     "api:test": "vitest run tests/api",
+    "web:dev": "vite --config apps/web/vite.config.ts --host 127.0.0.1",
+    "web:build": "vite build --config apps/web/vite.config.ts",
+    "web:preview": "vite preview --config apps/web/vite.config.ts --host 127.0.0.1",
     "db:up": "docker compose up -d postgres",
     "db:down": "docker compose down",
     "db:migrate": "prisma migrate dev",
@@ -48,15 +51,24 @@
     "genshin-db": "5.2.11",
     "hoyoapi": "1.2.0",
     "pg": "^8.22.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
     "@types/node": "^26.0.0",
     "@types/pg": "^8.20.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "jsdom": "^29.1.1",
     "playwright": "1.61.0",
     "prisma": "^7.8.0",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3",
+    "vite": "^8.1.0",
     "vitest": "^4.1.9"
   }
 }

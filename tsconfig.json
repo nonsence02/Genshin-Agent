@@ -9,7 +9,8 @@
     "skipLibCheck": true,
     "outDir": "dist",
     "rootDir": ".",
-    "types": ["node", "vitest"]
+    "jsx": "react-jsx",
+    "types": ["node", "vitest", "vite/client"]
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts", "vitest.config.ts", "prisma.config.ts"]
+  "include": ["src/**/*.ts", "apps/web/src/**/*.ts", "apps/web/src/**/*.tsx", "tests/**/*.ts", "tests/**/*.tsx", "vitest.config.ts", "prisma.config.ts"]
 }

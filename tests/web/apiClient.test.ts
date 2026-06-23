@@ -1,0 +1,61 @@
+import { afterEach, describe, expect, it, vi } from "vitest";
+import { createPlannerApiClient, PlannerApiError } from "../../apps/web/src/api/client.js";
+
+describe("planner API client", () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  it("builds GET requests with encoded material keys", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(jsonResponse({ ok: true }));
+    const client = createPlannerApiClient("http://api.test");
+
+    await client.getMaterialSources("mat philosophy");
+
+    expect(fetchMock).toHaveBeenCalledWith("http://api.test/knowledge/materials/mat%20philosophy/sources", {
+      method: "GET",
+      headers: undefined,
+      body: undefined,
+    });
+  });
+
+  it("builds POST requests with JSON body", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(jsonResponse({ ok: true }));
+    const client = createPlannerApiClient("http://api.test");
+    const payload = {
+      characterKey: "char_furina",
+      currentLevel: 20,
+      targetLevel: 90,
+    };
+
+    await client.getCharacterRequirements(payload);
+
+    expect(fetchMock).toHaveBeenCalledWith("http://api.test/planner/character/requirements", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+  });
+
+  it("throws readable API errors", async () => {
+    vi.spyOn(globalThis, "fetch").mockResolvedValue(
+      jsonResponse({ error: { code: "VALIDATION_ERROR", message: "targetLevel must be valid" } }, 400),
+    );
+    const client = createPlannerApiClient("http://api.test");
+
+    await expect(client.getLevelCosts(20, 91)).rejects.toMatchObject({
+      name: "PlannerApiError",
+      status: 400,
+      code: "VALIDATION_ERROR",
+      message: "targetLevel must be valid",
+    } satisfies Partial<PlannerApiError>);
+  });
+});
+
+function jsonResponse(body: unknown, status = 200): Response {
+  return {
+    ok: status >= 200 && status < 300,
+    status,
+    json: async () => body,
+  } as Response;
+}
