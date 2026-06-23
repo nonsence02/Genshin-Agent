@@ -6,6 +6,7 @@ import {
   inferAscensionPhaseFromLevel,
   type AscensionCostRow,
   type CharacterRequirementRepository,
+  type RequirementCostMaterial,
   type RequirementCharacter,
   type TalentCostRow,
 } from "../../src/planner/services/CharacterRequirementService.js";
@@ -59,6 +60,20 @@ class MockCharacterRequirementRepository implements CharacterRequirementReposito
     return this.found && stableKey === this.character.stableKey ? this.character : null;
   }
 
+  async listMaterialsByStableKeys(stableKeys: string[]): Promise<RequirementCostMaterial[]> {
+    return stableKeys.map((stableKey) => ({
+      id: this.materialId(stableKey),
+      stableKey,
+      name:
+        {
+          mat_mora: "Mora",
+          mat_heros_wit: "Hero's Wit",
+          mat_adventurers_experience: "Adventurer's Experience",
+          mat_wanderers_advice: "Wanderer's Advice",
+        }[stableKey] ?? stableKey,
+    }));
+  }
+
   async listAscensionCosts(_characterId: number, phases: number[]): Promise<AscensionCostRow[]> {
     return this.ascensionCosts.filter((cost) => phases.includes(cost.phase));
   }
@@ -99,6 +114,9 @@ class MockCharacterRequirementRepository implements CharacterRequirementReposito
       mat_mora: 1,
       mat_lakelight_lily: 2,
       mat_teachings_of_justice: 3,
+      mat_heros_wit: 4,
+      mat_adventurers_experience: 5,
+      mat_wanderers_advice: 6,
     }[stableKey] ?? 999;
   }
 }
@@ -125,6 +143,8 @@ describe("CharacterRequirementService", () => {
 
     expect(result.ascension.includedPhases).toEqual([1, 2, 3, 4, 5, 6]);
     expect(materialQuantity(result, "mat_lakelight_lily")).toBe(168);
+    expect(materialQuantity(result, "mat_heros_wit")).toBe(412);
+    expect(materialQuantity(result, "mat_wanderers_advice")).toBe(3);
   });
 
   it("currentLevel 40 with currentAscensionPhase 1 to targetLevel 50 includes phase 2", async () => {
@@ -180,7 +200,30 @@ describe("CharacterRequirementService", () => {
     });
 
     expect(result.materials[0]?.stableKey).toBe("mat_mora");
-    expect(materialQuantity(result, "mat_mora")).toBe(1372500);
+    expect(materialQuantity(result, "mat_mora")).toBe(3021100);
+    expect(result.materials.find((material) => material.stableKey === "mat_mora")?.sources).toEqual([
+      "level_mora",
+      "ascension",
+      "talent_skill",
+    ]);
+  });
+
+  it("adds character EXP books as level_exp requirements", async () => {
+    const result = await new CharacterRequirementService(new MockCharacterRequirementRepository()).calculate({
+      characterKey: "char_furina",
+      currentLevel: 20,
+      targetLevel: 90,
+    });
+
+    expect(result.materials.find((material) => material.stableKey === "mat_heros_wit")).toMatchObject({
+      quantity: 412,
+      sources: ["level_exp"],
+    });
+    expect(result.materials.find((material) => material.stableKey === "mat_wanderers_advice")).toMatchObject({
+      quantity: 3,
+      sources: ["level_exp"],
+    });
+    expect(result.materials.find((material) => material.stableKey === "mat_adventurers_experience")).toBeUndefined();
   });
 
   it("throws clear errors for invalid input", async () => {

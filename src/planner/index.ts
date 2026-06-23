@@ -1,3 +1,4 @@
+export { CharacterLevelCostService } from "./services/CharacterLevelCostService.js";
 export { CharacterRequirementService } from "./services/CharacterRequirementService.js";
 export { InventoryDiffService } from "./services/InventoryDiffService.js";
 export { MaterialDemandClassifier } from "./services/MaterialDemandClassifier.js";

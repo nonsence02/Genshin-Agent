@@ -90,4 +90,22 @@ describe("MaterialSourceService", () => {
     expect(result.sources).toEqual([]);
     expect(result.warnings).toEqual(["No normalized sources found for mat_unknown"]);
   });
+
+  it("adds curated ley line sources for Mora and EXP books", async () => {
+    const mora = new MaterialSourceService(
+      new MockMaterialSourceRepository({ id: 4, stableKey: "mat_mora", name: "Mora" }, [], []),
+    );
+    const heroWit = new MaterialSourceService(
+      new MockMaterialSourceRepository({ id: 5, stableKey: "mat_heros_wit", name: "Hero's Wit" }, [], []),
+    );
+
+    await expect(mora.lookup({ materialKey: "mat_mora" })).resolves.toMatchObject({
+      sources: [{ sourceType: "ley_line", sourceKey: "ley_line_mora", sourceName: "Blossom of Wealth", resinCost: 20 }],
+      warnings: [],
+    });
+    await expect(heroWit.lookup({ materialKey: "mat_heros_wit" })).resolves.toMatchObject({
+      sources: [{ sourceType: "ley_line", sourceKey: "ley_line_exp", sourceName: "Blossom of Revelation", resinCost: 20 }],
+      warnings: [],
+    });
+  });
 });

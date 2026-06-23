@@ -13,6 +13,8 @@ The service does not read raw `genshin-db` payloads. Raw imports and normalizati
 
 The service currently calculates character ascension and generic combat talent requirements. It aggregates identical materials across ascension, normal attack, skill, and burst goals, while preserving a breakdown that explains which phase or talent level caused each quantity.
 
+It also includes character level EXP requirements through `CharacterLevelCostService`. Level EXP is converted into normalized EXP book materials (`mat_heros_wit`, `mat_adventurers_experience`, `mat_wanderers_advice`) and level-up Mora (`mat_mora`). The level curve is a static deterministic planner constant documented in `docs/CHARACTER_LEVELING.md`.
+
 It does not compare against player inventory, import Inventory Kamera data, optimize resin, choose farming routes, or call an LLM. Those are later services that can consume this deterministic result.
 
 ## MaterialSourceService
@@ -24,6 +26,7 @@ The service is deterministic:
 - material identity is resolved by `Material.stableKey` or `Material.id`;
 - sources are sorted in a stable order: domain, boss, weekly boss, enemy, local specialty, then other source types;
 - domain calendar days are returned when normalized farm calendar rows exist;
+- curated ley line sources are supplied for Mora and character EXP books until normalized upstream source data is complete;
 - missing source data returns a warning instead of guessing.
 
 Example:
@@ -41,6 +44,8 @@ Source data may be incomplete because it depends on what upstream `genshin-db` e
 
 `MaterialDemandClassifier` uses normalized material sources to mark missing materials as resin-gated, open-world, weekly-boss-gated, and calendar-bound. It does not estimate drop rates, run counts, routes, or schedules.
 
+Mora and character EXP books are treated as ley-line-primary demand when a ley line source is available. This is source classification only; it is not resin optimization.
+
 Examples:
 
 ```bash
@@ -56,7 +61,7 @@ Weekly boss cost is dynamic: each weekly boss reward can be claimed once per wee
 
 The service:
 
-- calls `CharacterRequirementService` for all character ascension and talent requirement math;
+- calls `CharacterRequirementService` for all character level EXP, ascension, and talent requirement math;
 - loads `Player`, `InventorySnapshot`, and `InventoryItem` rows from player state;
 - aggregates owned material quantities by normalized `Material.id`;
 - ignores unresolved inventory rows that do not have a resolved `materialId`;

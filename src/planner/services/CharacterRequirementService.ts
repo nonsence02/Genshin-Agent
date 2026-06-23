@@ -1,8 +1,10 @@
 import type { PrismaClient } from "@prisma/client";
 import { prisma } from "../../db/client.js";
+import { CHARACTER_LEVEL_UP_MORA_MATERIAL_KEY } from "../data/characterLevelCurve.js";
+import { CharacterLevelCostService, type CharacterLevelCostResult } from "./CharacterLevelCostService.js";
 
 export type TalentTrack = "normal" | "skill" | "burst";
-export type RequirementSource = "ascension" | "talent_normal" | "talent_skill" | "talent_burst";
+export type RequirementSource = "level_exp" | "level_mora" | "ascension" | "talent_normal" | "talent_skill" | "talent_burst";
 
 export interface TalentLevels {
   normal?: number;
@@ -73,8 +75,15 @@ export interface TalentCostRow extends RequirementCostRow {
 
 export interface CharacterRequirementRepository {
   findCharacterByStableKey(stableKey: string): Promise<RequirementCharacter | null>;
+  listMaterialsByStableKeys(stableKeys: string[]): Promise<RequirementCostMaterial[]>;
   listAscensionCosts(characterId: number, phases: number[]): Promise<AscensionCostRow[]>;
   listTalentCosts(characterId: number, fromLevelExclusiveLowerBound: number, toLevelInclusive: number): Promise<TalentCostRow[]>;
+}
+
+export interface RequirementCostMaterial {
+  id: number;
+  stableKey: string;
+  name: string;
 }
 
 export class CharacterRequirementError extends Error {
@@ -98,6 +107,25 @@ export class PrismaCharacterRequirementRepository implements CharacterRequiremen
     return this.client.character.findUnique({
       where: {
         stableKey,
+      },
+      select: {
+        id: true,
+        stableKey: true,
+        name: true,
+      },
+    });
+  }
+
+  async listMaterialsByStableKeys(stableKeys: string[]): Promise<RequirementCostMaterial[]> {
+    if (stableKeys.length === 0) {
+      return [];
+    }
+
+    return this.client.material.findMany({
+      where: {
+        stableKey: {
+          in: [...new Set(stableKeys)],
+        },
       },
       select: {
         id: true,
@@ -228,7 +256,10 @@ function sourceForTalent(track: TalentTrack): RequirementSource {
 }
 
 export class CharacterRequirementService {
-  constructor(private readonly repository: CharacterRequirementRepository = new PrismaCharacterRequirementRepository()) {}
+  constructor(
+    private readonly repository: CharacterRequirementRepository = new PrismaCharacterRequirementRepository(),
+    private readonly levelCosts = new CharacterLevelCostService(),
+  ) {}
 
   async calculate(input: CharacterRequirementInput): Promise<CharacterRequirementResult> {
     this.validateInput(input);
@@ -251,6 +282,13 @@ export class CharacterRequirementService {
     const phases = includedAscensionPhases(currentPhase, targetPhase);
     const talentPlans = this.buildTalentPlans(input);
     const aggregation = new MaterialRequirementAggregation();
+    const warnings: string[] = [];
+    const levelCost = this.levelCosts.calculate({
+      currentLevel: input.currentLevel,
+      targetLevel: input.targetLevel,
+    });
+
+    await this.addLevelCosts(aggregation, levelCost, warnings);
 
     for (const row of await this.repository.listAscensionCosts(character.id, phases)) {
       aggregation.add({
@@ -289,8 +327,52 @@ export class CharacterRequirementService {
       },
       talents: talentPlans,
       materials: aggregation.toSortedMaterials(),
-      warnings: [],
+      warnings,
     };
+  }
+
+  private async addLevelCosts(
+    aggregation: MaterialRequirementAggregation,
+    levelCost: CharacterLevelCostResult,
+    warnings: string[],
+  ): Promise<void> {
+    const quantities = new Map<string, number>();
+
+    for (const book of levelCost.expBooks) {
+      if (book.quantity > 0) {
+        quantities.set(book.materialKey, book.quantity);
+      }
+    }
+
+    if (levelCost.levelUpMora > 0) {
+      quantities.set(CHARACTER_LEVEL_UP_MORA_MATERIAL_KEY, levelCost.levelUpMora);
+    }
+
+    if (quantities.size === 0) {
+      return;
+    }
+
+    const materials = await this.repository.listMaterialsByStableKeys([...quantities.keys()]);
+    const materialByKey = new Map(materials.map((material) => [material.stableKey, material]));
+
+    for (const [stableKey, quantity] of quantities.entries()) {
+      const material = materialByKey.get(stableKey);
+
+      if (!material) {
+        warnings.push(`Level cost material not found: ${stableKey}`);
+        continue;
+      }
+
+      aggregation.add({
+        materialId: material.id,
+        stableKey: material.stableKey,
+        name: material.name,
+        source: stableKey === CHARACTER_LEVEL_UP_MORA_MATERIAL_KEY ? "level_mora" : "level_exp",
+        fromLevel: levelCost.currentLevel,
+        toLevel: levelCost.targetLevel,
+        quantity,
+      });
+    }
   }
 
   private validateInput(input: CharacterRequirementInput): void {

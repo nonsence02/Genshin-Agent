@@ -57,6 +57,12 @@ const PRIMARY_SOURCE_ORDER = [
 
 const OPEN_WORLD_SOURCE_TYPES = new Set(["enemy", "local_specialty"]);
 const WEEKLY_BOSS_SOURCE_TYPES = new Set(["weekly_boss", "trounce_domain"]);
+const LEY_LINE_PRIMARY_MATERIAL_KEYS = new Set([
+  "mat_mora",
+  "mat_heros_wit",
+  "mat_adventurers_experience",
+  "mat_wanderers_advice",
+]);
 
 export class MaterialDemandClassifier {
   constructor(private readonly resinPolicy = new ResinPolicy()) {}
@@ -64,7 +70,10 @@ export class MaterialDemandClassifier {
   classify(input: MaterialDemandClassifierInput): ClassifiedMaterialDemand {
     const sources = input.sourceLookup?.sources ?? [];
     const sourceTypes = [...new Set(sources.map((source) => source.sourceType))].sort(compareSourceTypes);
-    const primarySourceType = sourceTypes[0] ?? null;
+    const primarySourceType =
+      LEY_LINE_PRIMARY_MATERIAL_KEYS.has(input.material.stableKey) && sourceTypes.includes("ley_line")
+        ? "ley_line"
+        : (sourceTypes[0] ?? null);
     const resinCostPerRun = primarySourceType ? this.resinPolicy.getBaseCostForSourceType(primarySourceType) : null;
     const warnings = [...(input.sourceLookup?.warnings ?? [])];
 

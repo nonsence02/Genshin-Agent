@@ -49,10 +49,14 @@ The current policy calculates costs for planned weekly boss claims given how man
 
 It does not estimate run counts, drop rates, schedules, route paths, or resin efficiency. Full `ResinOptimizerService` remains future work.
 
+Mora and character EXP books have curated `ley_line` source metadata so they can be marked as resin-gated at a 20 resin base cost. This is intentionally a classification layer, not a planner that decides whether the user should farm ley lines.
+
 Examples:
 
 ```bash
 npm run classify:material -- --material mat_water_that_failed_to_transcend
 npm run classify:material -- --material mat_philosophies_of_justice
+npm run classify:material -- --material mat_mora
+npm run classify:material -- --material mat_heros_wit
 npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --with-sources --classify
 ```

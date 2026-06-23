@@ -60,6 +60,27 @@ describe("MaterialDemandClassifier", () => {
     expect(result.openWorld).toBe(true);
   });
 
+  it("treats Mora and EXP books as ley-line-primary demand", () => {
+    const mora = classifier.classify({
+      material: material("mat_mora", "Mora"),
+      sourceLookup: lookup("mat_mora", "Mora", [
+        { sourceType: "shop", notes: "Fallback exchange" },
+        { sourceType: "ley_line", sourceName: "Blossom of Wealth" },
+      ]),
+    });
+    const heroWit = classifier.classify({
+      material: material("mat_heros_wit", "Hero's Wit"),
+      sourceLookup: lookup("mat_heros_wit", "Hero's Wit", [{ sourceType: "ley_line", sourceName: "Blossom of Revelation" }]),
+    });
+
+    expect(mora.primarySourceType).toBe("ley_line");
+    expect(mora.resinGated).toBe(true);
+    expect(mora.resinCostPerRun).toBe(20);
+    expect(heroWit.primarySourceType).toBe("ley_line");
+    expect(heroWit.resinGated).toBe(true);
+    expect(heroWit.resinCostPerRun).toBe(20);
+  });
+
   it("returns warnings for unknown or missing sources", () => {
     const unknown = classifier.classify({
       material: material("mat_unknown", "Unknown"),

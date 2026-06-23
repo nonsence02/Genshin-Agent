@@ -35,6 +35,7 @@ class MockInventoryDiffRepository implements InventoryDiffRepository {
         { materialId: 2, quantity: 3 },
         { materialId: 2, quantity: 4 },
         { materialId: 3, quantity: 99 },
+        { materialId: 4, quantity: 1 },
         { materialId: null, quantity: 999 },
       ],
     ],
@@ -104,6 +105,14 @@ class MockRequirementCalculator implements RequirementCalculator {
           sources: ["talent_skill"],
           breakdown: [{ source: "talent_skill", fromLevel: 1, toLevel: 2, quantity: 10 }],
         },
+        {
+          materialId: 4,
+          stableKey: "mat_heros_wit",
+          name: "Hero's Wit",
+          quantity: 2,
+          sources: ["level_exp"],
+          breakdown: [{ source: "level_exp", fromLevel: 20, toLevel: 90, quantity: 2 }],
+        },
       ],
       warnings: [],
     };
@@ -162,6 +171,12 @@ describe("InventoryDiffService", () => {
       owned: 99,
       missing: 0,
       status: "satisfied",
+    });
+    expect(result.materials.find((material) => material.stableKey === "mat_heros_wit")).toMatchObject({
+      required: 2,
+      owned: 1,
+      missing: 1,
+      status: "missing",
     });
   });
 

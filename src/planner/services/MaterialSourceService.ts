@@ -143,6 +143,59 @@ const DAY_ORDER = new Map<string, number>([
   ["sunday", 6],
 ]);
 
+const CURATED_SOURCE_NOTES = "Curated planner source until normalized upstream source data is complete.";
+
+const CURATED_MATERIAL_SOURCES = new Map<string, MaterialSourceLookupResult["sources"]>([
+  [
+    "mat_mora",
+    [
+      {
+        sourceType: "ley_line",
+        sourceKey: "ley_line_mora",
+        sourceName: "Blossom of Wealth",
+        resinCost: 20,
+        notes: CURATED_SOURCE_NOTES,
+      },
+    ],
+  ],
+  [
+    "mat_heros_wit",
+    [
+      {
+        sourceType: "ley_line",
+        sourceKey: "ley_line_exp",
+        sourceName: "Blossom of Revelation",
+        resinCost: 20,
+        notes: CURATED_SOURCE_NOTES,
+      },
+    ],
+  ],
+  [
+    "mat_adventurers_experience",
+    [
+      {
+        sourceType: "ley_line",
+        sourceKey: "ley_line_exp",
+        sourceName: "Blossom of Revelation",
+        resinCost: 20,
+        notes: CURATED_SOURCE_NOTES,
+      },
+    ],
+  ],
+  [
+    "mat_wanderers_advice",
+    [
+      {
+        sourceType: "ley_line",
+        sourceKey: "ley_line_exp",
+        sourceName: "Blossom of Revelation",
+        resinCost: 20,
+        notes: CURATED_SOURCE_NOTES,
+      },
+    ],
+  ],
+]);
+
 export class MaterialSourceService {
   constructor(private readonly repository: MaterialSourceRepository = new PrismaMaterialSourceRepository()) {}
 
@@ -161,7 +214,7 @@ export class MaterialSourceService {
     const calendarRows =
       input.includeCalendar === false ? [] : await this.repository.listCalendarEntries(material.id, sourceKeys);
     const calendarIndex = buildCalendarIndex(calendarRows);
-    const sources = sourceRows
+    const normalizedSources = sourceRows
       .map((source) => ({
         sourceType: source.sourceType,
         sourceKey: source.sourceKey ?? undefined,
@@ -171,6 +224,7 @@ export class MaterialSourceService {
         notes: source.notes ?? undefined,
       }))
       .sort(compareSources);
+    const sources = mergeCuratedSources(material.stableKey, normalizedSources);
 
     return {
       material,
@@ -178,6 +232,20 @@ export class MaterialSourceService {
       warnings: sources.length === 0 ? [`No normalized sources found for ${material.stableKey}`] : [],
     };
   }
+}
+
+function mergeCuratedSources(
+  stableKey: string,
+  normalizedSources: MaterialSourceLookupResult["sources"],
+): MaterialSourceLookupResult["sources"] {
+  const curated = CURATED_MATERIAL_SOURCES.get(stableKey) ?? [];
+  const deduped = new Map<string, MaterialSourceLookupResult["sources"][number]>();
+
+  for (const source of [...normalizedSources, ...curated]) {
+    deduped.set(`${source.sourceType}|${source.sourceKey ?? ""}|${source.sourceName ?? ""}`, source);
+  }
+
+  return [...deduped.values()].sort(compareSources);
 }
 
 function buildCalendarIndex(rows: FarmCalendarRow[]): Map<string, string[]> {
