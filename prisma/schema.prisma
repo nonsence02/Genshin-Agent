@@ -1,0 +1,490 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model ImportRun {
+  id            Int             @id @default(autoincrement())
+  source        String
+  sourceVersion String?
+  status        String
+  startedAt     DateTime        @default(now())
+  finishedAt    DateTime?
+  errorMessage  String?
+  metadata      Json?
+  rawObjects    RawGameObject[]
+
+  @@index([source, startedAt])
+}
+
+model RawGameObject {
+  id            Int       @id @default(autoincrement())
+  importRunId   Int
+  source        String
+  folder        String
+  externalKey   String
+  sourceVersion String
+  payload       Json
+  importedAt    DateTime  @default(now())
+  importRun     ImportRun @relation(fields: [importRunId], references: [id], onDelete: Cascade)
+  characters    Character[]
+  weapons       Weapon[]
+  materials     Material[]
+  domains       Domain[]
+  enemies       Enemy[]
+  artifactSets  ArtifactSet[]
+
+  @@unique([source, folder, externalKey, sourceVersion])
+  @@index([importRunId])
+  @@index([source, folder])
+}
+
+model Character {
+  id                 Int                      @id @default(autoincrement())
+  stableKey          String                   @unique
+  name               String
+  element            String?
+  weaponType         String?
+  rarity             Int?
+  sourceExternalKey  String?
+  rawGameObjectId    Int?
+  rawGameObject      RawGameObject?           @relation(fields: [rawGameObjectId], references: [id])
+  aliases            EntityAlias[]
+  ascensionCosts     CharacterAscensionCost[]
+  talentCosts        CharacterTalentCost[]
+  playerCharacters   PlayerCharacter[]
+  plannerTasks       PlannerTask[]
+  createdAt          DateTime                 @default(now())
+  updatedAt          DateTime                 @updatedAt
+
+  @@index([name])
+}
+
+model Weapon {
+  id                Int                   @id @default(autoincrement())
+  stableKey         String                @unique
+  name              String
+  weaponType        String?
+  rarity            Int?
+  sourceExternalKey String?
+  rawGameObjectId   Int?
+  rawGameObject     RawGameObject?        @relation(fields: [rawGameObjectId], references: [id])
+  aliases           EntityAlias[]
+  ascensionCosts    WeaponAscensionCost[]
+  playerWeapons     PlayerWeapon[]
+  plannerTasks      PlannerTask[]
+  createdAt         DateTime              @default(now())
+  updatedAt         DateTime              @updatedAt
+
+  @@index([name])
+}
+
+model Material {
+  id                      Int                      @id @default(autoincrement())
+  stableKey               String                   @unique
+  name                    String
+  category                String?
+  rarity                  Int?
+  sourceExternalKey       String?
+  rawGameObjectId         Int?
+  rawGameObject           RawGameObject?           @relation(fields: [rawGameObjectId], references: [id])
+  aliases                 EntityAlias[]
+  sources                 MaterialSource[]
+  characterAscensionCosts CharacterAscensionCost[]
+  characterTalentCosts    CharacterTalentCost[]
+  weaponAscensionCosts    WeaponAscensionCost[]
+  domainRewards           DomainReward[]
+  enemyDrops              EnemyDrop[]
+  farmCalendarEntries     FarmCalendarEntry[]
+  inventoryItems          InventoryItem[]
+  manualOverrides         ManualInventoryOverride[]
+  plannerTasks            PlannerTask[]
+  createdAt               DateTime                 @default(now())
+  updatedAt               DateTime                 @updatedAt
+
+  @@index([name])
+  @@index([category])
+}
+
+model Domain {
+  id                  Int                 @id @default(autoincrement())
+  stableKey           String              @unique
+  name                String
+  region              String?
+  domainType          String?
+  sourceExternalKey   String?
+  rawGameObjectId     Int?
+  rawGameObject       RawGameObject?      @relation(fields: [rawGameObjectId], references: [id])
+  aliases             EntityAlias[]
+  materialSources     MaterialSource[]
+  rewards             DomainReward[]
+  farmCalendarEntries FarmCalendarEntry[]
+  locations           Location[]
+  createdAt           DateTime            @default(now())
+  updatedAt           DateTime            @updatedAt
+
+  @@index([name])
+}
+
+model Enemy {
+  id                Int              @id @default(autoincrement())
+  stableKey         String           @unique
+  name              String
+  enemyType         String?
+  region            String?
+  sourceExternalKey String?
+  rawGameObjectId   Int?
+  rawGameObject     RawGameObject?   @relation(fields: [rawGameObjectId], references: [id])
+  aliases           EntityAlias[]
+  materialSources   MaterialSource[]
+  drops             EnemyDrop[]
+  locations         Location[]
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+
+  @@index([name])
+}
+
+model ArtifactSet {
+  id                Int            @id @default(autoincrement())
+  stableKey         String         @unique
+  name              String
+  sourceExternalKey String?
+  rawGameObjectId   Int?
+  rawGameObject     RawGameObject? @relation(fields: [rawGameObjectId], references: [id])
+  aliases           EntityAlias[]
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+
+  @@index([name])
+}
+
+model EntityAlias {
+  id            Int          @id @default(autoincrement())
+  alias         String
+  normalized    String
+  entityType    String
+  characterId   Int?
+  weaponId      Int?
+  materialId    Int?
+  domainId      Int?
+  enemyId       Int?
+  artifactSetId Int?
+  character     Character?   @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  weapon        Weapon?      @relation(fields: [weaponId], references: [id], onDelete: Cascade)
+  material      Material?    @relation(fields: [materialId], references: [id], onDelete: Cascade)
+  domain        Domain?      @relation(fields: [domainId], references: [id], onDelete: Cascade)
+  enemy         Enemy?       @relation(fields: [enemyId], references: [id], onDelete: Cascade)
+  artifactSet   ArtifactSet? @relation(fields: [artifactSetId], references: [id], onDelete: Cascade)
+
+  @@unique([entityType, normalized])
+  @@index([normalized])
+}
+
+model MaterialSource {
+  id          Int       @id @default(autoincrement())
+  materialId  Int
+  sourceType  String
+  sourceKey   String
+  domainId    Int?
+  enemyId     Int?
+  notes       String?
+  material    Material  @relation(fields: [materialId], references: [id], onDelete: Cascade)
+  domain      Domain?   @relation(fields: [domainId], references: [id])
+  enemy       Enemy?    @relation(fields: [enemyId], references: [id])
+  createdAt   DateTime  @default(now())
+
+  @@index([materialId, sourceType])
+  @@index([sourceType, sourceKey])
+}
+
+model CharacterAscensionCost {
+  id          Int       @id @default(autoincrement())
+  characterId Int
+  materialId  Int
+  phase       Int
+  quantity    Int
+  character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  material    Material  @relation(fields: [materialId], references: [id])
+
+  @@unique([characterId, phase, materialId])
+  @@index([characterId])
+}
+
+model CharacterTalentCost {
+  id          Int       @id @default(autoincrement())
+  characterId Int
+  materialId  Int
+  fromLevel   Int
+  toLevel     Int
+  quantity    Int
+  character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  material    Material  @relation(fields: [materialId], references: [id])
+
+  @@unique([characterId, fromLevel, toLevel, materialId])
+  @@index([characterId])
+}
+
+model WeaponAscensionCost {
+  id          Int      @id @default(autoincrement())
+  weaponId    Int
+  materialId  Int
+  phase       Int
+  quantity    Int
+  weapon      Weapon   @relation(fields: [weaponId], references: [id], onDelete: Cascade)
+  material    Material @relation(fields: [materialId], references: [id])
+
+  @@unique([weaponId, phase, materialId])
+  @@index([weaponId])
+}
+
+model DomainReward {
+  id         Int      @id @default(autoincrement())
+  domainId   Int
+  materialId Int
+  rewardType String
+  minWorldLevel Int?
+  domain     Domain   @relation(fields: [domainId], references: [id], onDelete: Cascade)
+  material   Material @relation(fields: [materialId], references: [id])
+
+  @@unique([domainId, materialId, rewardType])
+  @@index([domainId])
+}
+
+model EnemyDrop {
+  id         Int      @id @default(autoincrement())
+  enemyId    Int
+  materialId Int
+  dropType   String
+  enemy      Enemy    @relation(fields: [enemyId], references: [id], onDelete: Cascade)
+  material   Material @relation(fields: [materialId], references: [id])
+
+  @@unique([enemyId, materialId, dropType])
+  @@index([enemyId])
+}
+
+model FarmCalendarEntry {
+  id         Int       @id @default(autoincrement())
+  dayOfWeek  Int
+  sourceType String
+  sourceKey  String
+  domainId   Int?
+  materialId Int?
+  domain     Domain?   @relation(fields: [domainId], references: [id])
+  material   Material? @relation(fields: [materialId], references: [id])
+
+  @@unique([dayOfWeek, sourceType, sourceKey, materialId])
+  @@index([dayOfWeek, sourceType, sourceKey])
+}
+
+model Player {
+  id                 Int                       @id @default(autoincrement())
+  stableKey          String                    @unique
+  displayName        String
+  accounts           PlayerAccount[]
+  inventorySnapshots InventorySnapshot[]
+  characters         PlayerCharacter[]
+  weapons            PlayerWeapon[]
+  manualOverrides    ManualInventoryOverride[]
+  goals              PlayerGoal[]
+  plannerRuns        PlannerRun[]
+  createdAt          DateTime                  @default(now())
+  updatedAt          DateTime                  @updatedAt
+}
+
+model PlayerAccount {
+  id              Int       @id @default(autoincrement())
+  playerId        Int
+  provider        String
+  externalAccount String?
+  region          String?
+  metadata        Json?
+  player          Player    @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@unique([provider, externalAccount])
+  @@index([playerId])
+}
+
+model InventorySnapshot {
+  id             Int             @id @default(autoincrement())
+  playerId       Int
+  source         String
+  capturedAt     DateTime
+  importedAt     DateTime        @default(now())
+  sourceVersion  String?
+  rawPayload     Json?
+  player         Player          @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  items          InventoryItem[]
+  plannerRuns    PlannerRun[]
+
+  @@index([playerId, capturedAt])
+}
+
+model InventoryItem {
+  id             Int               @id @default(autoincrement())
+  snapshotId     Int
+  materialId     Int?
+  externalKey    String?
+  name           String
+  quantity       Int
+  metadata       Json?
+  snapshot       InventorySnapshot @relation(fields: [snapshotId], references: [id], onDelete: Cascade)
+  material       Material?         @relation(fields: [materialId], references: [id])
+
+  @@unique([snapshotId, materialId])
+  @@index([snapshotId, materialId])
+  @@index([externalKey])
+}
+
+model PlayerCharacter {
+  id            Int       @id @default(autoincrement())
+  playerId      Int
+  characterId   Int
+  level         Int?
+  ascension     Int?
+  constellation Int?
+  talentNormal  Int?
+  talentSkill   Int?
+  talentBurst   Int?
+  metadata      Json?
+  player        Player    @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  character     Character @relation(fields: [characterId], references: [id])
+
+  @@unique([playerId, characterId])
+}
+
+model PlayerWeapon {
+  id         Int     @id @default(autoincrement())
+  playerId   Int
+  weaponId   Int
+  level      Int?
+  ascension  Int?
+  refinement Int?
+  quantity   Int     @default(1)
+  metadata   Json?
+  player     Player  @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  weapon     Weapon  @relation(fields: [weaponId], references: [id])
+
+  @@index([playerId, weaponId])
+}
+
+model ManualInventoryOverride {
+  id         Int      @id @default(autoincrement())
+  playerId   Int
+  materialId Int
+  quantity   Int
+  reason     String?
+  createdAt  DateTime @default(now())
+  player     Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  material   Material @relation(fields: [materialId], references: [id])
+
+  @@unique([playerId, materialId])
+}
+
+model PlayerGoal {
+  id          Int       @id @default(autoincrement())
+  playerId    Int
+  goalType    String
+  targetKey   String
+  targetState Json
+  priority    Int       @default(0)
+  status      String    @default("active")
+  player      Player    @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  plannerTasks PlannerTask[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([playerId, status])
+}
+
+model PlannerRun {
+  id                  Int                @id @default(autoincrement())
+  playerId            Int
+  inventorySnapshotId Int?
+  status              String
+  startedAt           DateTime           @default(now())
+  finishedAt          DateTime?
+  input               Json?
+  summary             Json?
+  player              Player             @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  inventorySnapshot   InventorySnapshot?  @relation(fields: [inventorySnapshotId], references: [id])
+  tasks               PlannerTask[]
+
+  @@index([playerId, startedAt])
+}
+
+model PlannerTask {
+  id            Int         @id @default(autoincrement())
+  plannerRunId  Int
+  playerGoalId  Int?
+  taskType      String
+  status        String      @default("open")
+  priority      Int         @default(0)
+  characterId   Int?
+  weaponId      Int?
+  materialId    Int?
+  quantity      Int?
+  resinEstimate Int?
+  details       Json?
+  plannerRun    PlannerRun  @relation(fields: [plannerRunId], references: [id], onDelete: Cascade)
+  playerGoal    PlayerGoal? @relation(fields: [playerGoalId], references: [id])
+  character     Character?  @relation(fields: [characterId], references: [id])
+  weapon        Weapon?     @relation(fields: [weaponId], references: [id])
+  material      Material?   @relation(fields: [materialId], references: [id])
+
+  @@index([plannerRunId, priority])
+  @@index([taskType, status])
+}
+
+model Location {
+  id        Int         @id @default(autoincrement())
+  stableKey String      @unique
+  name      String
+  region    String?
+  area      String?
+  latitude  Decimal?
+  longitude Decimal?
+  domainId  Int?
+  enemyId   Int?
+  metadata  Json?
+  domain    Domain?     @relation(fields: [domainId], references: [id])
+  enemy     Enemy?      @relation(fields: [enemyId], references: [id])
+  routeNodes RouteNode[]
+
+  @@index([region, area])
+}
+
+model Route {
+  id          Int         @id @default(autoincrement())
+  stableKey   String      @unique
+  name        String
+  routeType   String
+  region      String?
+  description String?
+  metadata    Json?
+  nodes       RouteNode[]
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@index([routeType, region])
+}
+
+model RouteNode {
+  id         Int      @id @default(autoincrement())
+  routeId    Int
+  locationId Int
+  sortOrder  Int
+  notes      String?
+  metadata   Json?
+  route      Route    @relation(fields: [routeId], references: [id], onDelete: Cascade)
+  location   Location @relation(fields: [locationId], references: [id])
+
+  @@unique([routeId, sortOrder])
+  @@index([routeId])
+  @@index([locationId])
+}

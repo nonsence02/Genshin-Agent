@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "tsx src/api/index.ts",
+    "db:up": "docker compose up -d postgres",
+    "db:down": "docker compose down",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "import:genshin-db": "tsx src/ingestion/jobs/import-genshin-db.ts",
+    "import:inventory": "tsx src/ingestion/jobs/import-inventory.ts",
     "sync:db": "node scripts/sync_database.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -19,6 +26,17 @@
   },
   "homepage": "https://github.com/nonsence02/Genshin-Agent#readme",
   "dependencies": {
-    "genshin-db": "^5.2.11"
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "genshin-db": "^5.2.11",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "@types/pg": "^8.20.0",
+    "prisma": "^7.8.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
   }
 }
