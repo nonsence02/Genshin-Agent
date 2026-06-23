@@ -2,4 +2,6 @@ node_modules/
 __pycache__/
 *.pyc
 .env/
+.env.local
 data/raw/user_imports/*.json
+data/raw/hoyoapi/*.json
