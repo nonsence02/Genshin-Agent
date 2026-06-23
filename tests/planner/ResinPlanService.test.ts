@@ -4,9 +4,12 @@ import type { FarmTaskPlan } from "../../src/planner/services/FarmTaskBuilder.js
 import type { CharacterInventoryDiffResult } from "../../src/planner/services/InventoryDiffService.js";
 
 class MockInventoryDiff implements ResinPlanInventoryDiffService {
+  lastInput: Parameters<ResinPlanInventoryDiffService["diffCharacter"]>[0] | null = null;
+
   constructor(private readonly result = diff()) {}
 
-  async diffCharacter(): Promise<CharacterInventoryDiffResult> {
+  async diffCharacter(input: Parameters<ResinPlanInventoryDiffService["diffCharacter"]>[0]): Promise<CharacterInventoryDiffResult> {
+    this.lastInput = input;
     return this.result;
   }
 }
@@ -150,6 +153,27 @@ describe("ResinPlanService", () => {
     ]);
     expect(scheduledHydroTulpaTasks.reduce((sum, scheduled) => sum + (scheduled.runs ?? 0), 0)).toBe(19);
     expect(scheduledHydroTulpaTasks.reduce((sum, scheduled) => sum + (scheduled.resin ?? 0), 0)).toBe(760);
+  });
+
+  it("forwards crafting options to the inventory diff layer", async () => {
+    const inventoryDiff = new MockInventoryDiff();
+    const service = new ResinPlanService(inventoryDiff, new MockTaskBuilder({ resinTasks: [], openWorldTasks: [], unknownTasks: [], warnings: [] }));
+
+    await service.plan({
+      playerKey: "default",
+      characterKey: "char_furina",
+      currentLevel: 20,
+      targetLevel: 90,
+      useCrafting: true,
+      allowDustOfAzoth: true,
+      allowDreamSolvent: true,
+    });
+
+    expect(inventoryDiff.lastInput).toMatchObject({
+      useCrafting: true,
+      allowDustOfAzoth: true,
+      allowDreamSolvent: true,
+    });
   });
 });
 

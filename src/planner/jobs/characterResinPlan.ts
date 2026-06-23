@@ -23,6 +23,12 @@ function parseOptions(args: string[]): CliOptions {
       options.json = true;
     } else if (arg === "--use-player-state") {
       options.input.usePlayerState = true;
+    } else if (arg === "--use-crafting") {
+      options.input.useCrafting = true;
+    } else if (arg === "--allow-dust-of-azoth") {
+      options.input.allowDustOfAzoth = true;
+    } else if (arg === "--allow-dream-solvent") {
+      options.input.allowDreamSolvent = true;
     } else if (arg === "--player") {
       options.input.playerKey = readString(args, ++index, arg);
     } else if (arg === "--character") {
@@ -112,6 +118,8 @@ function printReadable(result: ResinPlanResult): void {
     `Missing materials: ${result.summary.totalMissingMaterials}; scheduled resin: ${result.summary.scheduledEstimatedResin}; unscheduled resin tasks: ${result.summary.unscheduledResinTasks}`,
   );
   console.log(`Source groups: ${result.sourceGroups.length}`);
+  printActions("Crafting actions", result.inventoryDiff.craftingActions ?? []);
+  printActions("Conversion actions", result.inventoryDiff.conversionActions ?? []);
 
   console.log("Daily resin schedule:");
   for (const day of result.schedule) {
@@ -140,6 +148,18 @@ function printReadable(result: ResinPlanResult): void {
     for (const warning of result.warnings) {
       console.log(`- ${warning}`);
     }
+  }
+}
+
+function printActions(label: string, actions: NonNullable<ResinPlanResult["inventoryDiff"]["craftingActions"]>): void {
+  if (actions.length === 0) {
+    return;
+  }
+
+  console.log(`${label}:`);
+  for (const action of actions) {
+    const catalyst = action.catalystMaterialKey ? `, catalyst ${action.catalystMaterialName ?? action.catalystMaterialKey} x${action.catalystQuantity}` : "";
+    console.log(`- ${action.inputMaterialName} x${action.inputQuantity} -> ${action.outputMaterialName} x${action.outputQuantity}${catalyst}`);
   }
 }
 

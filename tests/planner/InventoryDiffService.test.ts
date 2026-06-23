@@ -12,6 +12,7 @@ import {
   type RequirementCalculator,
 } from "../../src/planner/services/InventoryDiffService.js";
 import type { CharacterRequirementInput, CharacterRequirementResult } from "../../src/planner/services/CharacterRequirementService.js";
+import { MaterialSourceService, type MaterialSourceLookupResult } from "../../src/planner/services/MaterialSourceService.js";
 
 class MockInventoryDiffRepository implements InventoryDiffRepository {
   player: DiffPlayer | null = { id: 1, stableKey: "default" };
@@ -36,6 +37,7 @@ class MockInventoryDiffRepository implements InventoryDiffRepository {
         { materialId: 2, quantity: 4 },
         { materialId: 3, quantity: 99 },
         { materialId: 4, quantity: 1 },
+        { materialId: 5, stableKey: "mat_teachings_of_justice", name: "Teachings of Justice", quantity: 3 },
         { materialId: null, quantity: 999 },
       ],
     ],
@@ -119,6 +121,41 @@ class MockRequirementCalculator implements RequirementCalculator {
   }
 }
 
+class CraftingRequirementCalculator implements RequirementCalculator {
+  async calculate(input: CharacterRequirementInput): Promise<CharacterRequirementResult> {
+    return {
+      character: { id: 10, stableKey: input.characterKey, name: "Furina" },
+      ascension: { currentPhase: 0, targetPhase: 0, includedPhases: [] },
+      talents: {
+        normal: { current: 1, target: 1, includedLevels: [] },
+        skill: { current: 1, target: 1, includedLevels: [] },
+        burst: { current: 1, target: 1, includedLevels: [] },
+      },
+      materials: [
+        {
+          materialId: 6,
+          stableKey: "mat_guide_to_justice",
+          name: "Guide to Justice",
+          quantity: 1,
+          sources: ["talent_skill"],
+          breakdown: [{ source: "talent_skill", fromLevel: 2, toLevel: 3, quantity: 1 }],
+        },
+      ],
+      warnings: [],
+    };
+  }
+}
+
+class EmptyMaterialSourceService extends MaterialSourceService {
+  override async lookup(input: { materialKey?: string }): Promise<MaterialSourceLookupResult> {
+    return {
+      material: { id: 1, stableKey: input.materialKey ?? "unknown", name: input.materialKey ?? "unknown" },
+      sources: [],
+      warnings: [],
+    };
+  }
+}
+
 function setup(): {
   repository: MockInventoryDiffRepository;
   requirements: MockRequirementCalculator;
@@ -177,6 +214,39 @@ describe("InventoryDiffService", () => {
       owned: 1,
       missing: 1,
       status: "missing",
+    });
+  });
+
+  it("can project craftable inventory into effective owned quantities", async () => {
+    const repository = new MockInventoryDiffRepository();
+    const service = new InventoryDiffService(
+      repository,
+      new CraftingRequirementCalculator(),
+      undefined,
+      undefined,
+      new EmptyMaterialSourceService(),
+    );
+
+    const result = await service.diffCharacter({
+      playerKey: "default",
+      characterKey: "char_furina",
+      currentLevel: 20,
+      targetLevel: 90,
+      useCrafting: true,
+    });
+    const guide = result.materials.find((material) => material.stableKey === "mat_guide_to_justice");
+
+    expect(guide).toMatchObject({
+      directOwned: 0,
+      effectiveOwned: 1,
+      missingBeforeCrafting: 1,
+      missingAfterCrafting: 0,
+      missing: 0,
+      status: "satisfied",
+    });
+    expect(result.craftingActions?.[0]).toMatchObject({
+      inputMaterialKey: "mat_teachings_of_justice",
+      outputMaterialKey: "mat_guide_to_justice",
     });
   });
 

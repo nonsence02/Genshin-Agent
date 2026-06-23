@@ -18,6 +18,9 @@ interface CliOptions {
   onlyMissing: boolean;
   withSources: boolean;
   classify: boolean;
+  useCrafting: boolean;
+  allowDustOfAzoth: boolean;
+  allowDreamSolvent: boolean;
 }
 
 type CharacterInventoryDiffCliResult = CharacterInventoryDiffResult & {
@@ -34,6 +37,9 @@ function parseOptions(args: string[]): CliOptions {
     onlyMissing: false,
     withSources: false,
     classify: false,
+    useCrafting: false,
+    allowDustOfAzoth: false,
+    allowDreamSolvent: false,
   };
 
   for (let index = 0; index < args.length; index += 1) {
@@ -49,6 +55,12 @@ function parseOptions(args: string[]): CliOptions {
       options.classify = true;
     } else if (arg === "--use-player-state") {
       options.usePlayerState = true;
+    } else if (arg === "--use-crafting") {
+      options.useCrafting = true;
+    } else if (arg === "--allow-dust-of-azoth") {
+      options.allowDustOfAzoth = true;
+    } else if (arg === "--allow-dream-solvent") {
+      options.allowDreamSolvent = true;
     } else if (arg === "--player") {
       options.playerKey = readString(args, ++index, arg);
     } else if (arg === "--character") {
@@ -122,9 +134,7 @@ function printReadable(result: CharacterInventoryDiffCliResult, onlyMissing: boo
   console.log(
     `Goal: level ${result.goal.currentLevel}->${result.goal.targetLevel}; talents normal ${result.goal.currentTalents.normal}->${result.goal.targetTalents.normal}, skill ${result.goal.currentTalents.skill}->${result.goal.targetTalents.skill}, burst ${result.goal.currentTalents.burst}->${result.goal.targetTalents.burst}`,
   );
-  console.log(
-    `Summary: ${result.summary.satisfiedMaterials}/${result.summary.totalMaterials} satisfied, ${result.summary.missingMaterials} missing`,
-  );
+  console.log(`Summary: ${result.summary.satisfiedMaterials}/${result.summary.totalMaterials} satisfied, ${result.summary.missingMaterials} missing`);
 
   const missing = result.materials.filter((material) => material.status === "missing");
   const satisfied = result.materials.filter((material) => material.status === "satisfied");
@@ -134,6 +144,9 @@ function printReadable(result: CharacterInventoryDiffCliResult, onlyMissing: boo
   if (!onlyMissing) {
     printMaterials("Satisfied materials", satisfied);
   }
+
+  printActions("Crafting actions", result.craftingActions ?? []);
+  printActions("Conversion actions", result.conversionActions ?? []);
 
   if (result.warnings.length > 0) {
     console.log("Warnings:");
@@ -152,7 +165,22 @@ function printMaterials(label: string, materials: CharacterInventoryDiffCliResul
   }
 
   for (const material of materials) {
-    console.log(`- ${material.name} (${material.stableKey}): required ${material.required}, owned ${material.owned}, missing ${material.missing}`);
+    const crafting = material.missingBeforeCrafting !== undefined && material.missingAfterCrafting !== undefined
+      ? `, direct ${material.directOwned ?? material.owned}, effective ${material.effectiveOwned ?? material.owned}, missing before/after ${material.missingBeforeCrafting}/${material.missingAfterCrafting}`
+      : "";
+    console.log(`- ${material.name} (${material.stableKey}): required ${material.required}, owned ${material.owned}, missing ${material.missing}${crafting}`);
+  }
+}
+
+function printActions(label: string, actions: NonNullable<CharacterInventoryDiffCliResult["craftingActions"]>): void {
+  if (actions.length === 0) {
+    return;
+  }
+
+  console.log(`${label}:`);
+  for (const action of actions) {
+    const catalyst = action.catalystMaterialKey ? `, catalyst ${action.catalystMaterialName ?? action.catalystMaterialKey} x${action.catalystQuantity}` : "";
+    console.log(`- ${action.inputMaterialName} x${action.inputQuantity} -> ${action.outputMaterialName} x${action.outputQuantity}${catalyst}`);
   }
 }
 
@@ -268,6 +296,9 @@ try {
       targetAscensionPhase: options.targetAscensionPhase,
       currentTalents: compactTalents(options.currentTalents),
       targetTalents: compactTalents(options.targetTalents),
+      useCrafting: options.useCrafting,
+      allowDustOfAzoth: options.allowDustOfAzoth,
+      allowDreamSolvent: options.allowDreamSolvent,
     })
     .then((result) => (options.withSources || options.classify ? addSourceLookups(result) : result))
     .then((result) => (options.classify ? addClassifications(result) : result))

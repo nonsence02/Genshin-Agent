@@ -22,6 +22,9 @@ export interface ResinPlanInput {
   currentResin?: number;
   includeOpenWorld?: boolean;
   discountedWeeklyBossClaimsUsed?: number;
+  useCrafting?: boolean;
+  allowDustOfAzoth?: boolean;
+  allowDreamSolvent?: boolean;
 }
 
 export interface ScheduledResinTask {
@@ -203,6 +206,9 @@ function toDiffInput(input: ResinPlanInput): CharacterInventoryDiffInput {
     targetAscensionPhase: input.targetAscensionPhase,
     currentTalents: input.currentTalents,
     targetTalents: input.targetTalents,
+    useCrafting: input.useCrafting,
+    allowDustOfAzoth: input.allowDustOfAzoth,
+    allowDreamSolvent: input.allowDreamSolvent,
   };
 }
 

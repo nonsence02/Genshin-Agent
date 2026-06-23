@@ -67,6 +67,9 @@ The service:
 - ignores unresolved inventory rows that do not have a resolved `materialId`;
 - reports required, owned, and missing quantities for each required material;
 - can optionally use imported `PlayerCharacter` state for current level, ascension, and talent levels.
+- can optionally use craft-aware projected inventory with `--use-crafting`, `--allow-dust-of-azoth`, and `--allow-dream-solvent`.
+
+Craft-aware projection is virtual: it never mutates raw inventory rows. Direct owned, effective owned, missing before crafting, and missing after crafting are reported separately when projection is enabled.
 
 The service does not optimize resin, infer farming routes, call an LLM, or calculate weapon/artifact goals. Manual inventory overrides are noted as future work and are not applied yet.
 
@@ -76,6 +79,7 @@ Example:
 npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10
 npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --with-sources
 npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --with-sources --classify
+npm run diff:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --use-crafting
 npm run diff:character -- --player default --character char_furina --target-level 90 --skill 9 --burst 10 --use-player-state
 ```
 
@@ -86,6 +90,7 @@ This keeps the planner deterministic: the LLM can later call a tool wrapping thi
 `ResinPlanService` turns a character goal into a simple farming plan:
 
 - calls `InventoryDiffService` to get missing normalized materials;
+- can ask `InventoryDiffService` for craft-aware missing quantities before farming tasks are built;
 - uses `FarmTaskBuilder` to classify missing materials into resin-gated, open-world, and unknown tasks;
 - uses `FarmTaskGroupingService` to group materials by farming source before scheduling;
 - uses `RunEstimateService` for rough deterministic run estimates;
@@ -121,10 +126,13 @@ Source grouping reduces obvious resin double-counting:
 
 Grouping is still a rough planner layer. It does not simulate exact drop outcomes, crafting/conversion, inventory correction, or multi-source optimization.
 
+When craft-aware options are enabled, source groups are based on remaining missing quantities after the virtual projection. Crafting and conversion actions are included in the plan output before the farming schedule.
+
 Example:
 
 ```bash
 npm run plan:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10
 npm run plan:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --days 7 --json
+npm run plan:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --use-crafting
 npm run plan:character -- --player default --character char_furina --target-level 90 --skill 10 --burst 10 --use-player-state
 ```

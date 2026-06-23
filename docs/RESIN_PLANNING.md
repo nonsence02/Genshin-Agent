@@ -110,6 +110,8 @@ This reduces double-counting but remains approximate. Exact random drops, crafti
 
 `ResinPlanService` builds a simple day-by-day resin plan. It is deterministic, useful for inspection, and deliberately not a perfect optimizer.
 
+When `--use-crafting` is enabled, `ResinPlanService` plans from projected inventory instead of direct inventory. The real inventory snapshot is never mutated. Optional `--allow-dust-of-azoth` and `--allow-dream-solvent` flags enable rare conversion suggestions; they are disabled by default.
+
 Defaults:
 
 - `days`: `7`;
@@ -121,6 +123,7 @@ Defaults:
 Scheduling rules:
 
 - source groups are scheduled instead of raw material rows;
+- craft-aware missing quantities are used when projection flags are enabled;
 - daily planned resin never exceeds that day's budget;
 - domain tasks with calendar days are scheduled only on matching days;
 - Sunday is allowed when Sunday appears in the calendar;
@@ -144,6 +147,9 @@ Future work:
 
 - drop-rate models;
 - condensed resin;
+- normalized craft Mora costs;
+- crafting passive bonuses and refunds;
+- player-controlled conversion reservations;
 - actual current resin from live notes;
 - weekly claimed boss tracking;
 - route planning;
@@ -155,4 +161,5 @@ Example:
 ```bash
 npm run plan:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10
 npm run plan:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --days 7 --json
+npm run plan:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --use-crafting
 ```

@@ -6,6 +6,9 @@ import {
   type CharacterRequirementResult,
   type TalentLevels,
 } from "./CharacterRequirementService.js";
+import { CraftingRuleService, type CraftingRuleMaterial } from "./CraftingRuleService.js";
+import { InventoryProjectionService, type CraftingAction, type InventoryProjectionOptions } from "./InventoryProjectionService.js";
+import { MaterialSourceService } from "./MaterialSourceService.js";
 
 export type MaterialDiffStatus = "satisfied" | "missing";
 export type TalentTrack = "normal" | "skill" | "burst";
@@ -21,6 +24,9 @@ export interface CharacterInventoryDiffInput {
   targetAscensionPhase?: number;
   currentTalents?: TalentLevels;
   targetTalents?: TalentLevels;
+  useCrafting?: boolean;
+  allowDustOfAzoth?: boolean;
+  allowDreamSolvent?: boolean;
 }
 
 export interface CharacterInventoryDiffResult {
@@ -57,11 +63,17 @@ export interface CharacterInventoryDiffResult {
     name: string;
     required: number;
     owned: number;
+    directOwned?: number;
+    effectiveOwned?: number;
     missing: number;
+    missingBeforeCrafting?: number;
+    missingAfterCrafting?: number;
     status: MaterialDiffStatus;
     sources: string[];
     breakdown: CharacterRequirementResult["materials"][number]["breakdown"];
   }>;
+  craftingActions?: CraftingAction[];
+  conversionActions?: CraftingAction[];
   warnings: string[];
 }
 
@@ -85,6 +97,8 @@ export interface DiffInventorySnapshot {
 
 export interface DiffInventoryItem {
   materialId: number | null;
+  stableKey?: string;
+  name?: string;
   quantity: number;
 }
 
@@ -163,10 +177,26 @@ export class PrismaInventoryDiffRepository implements InventoryDiffRepository {
   }
 
   async listInventoryItems(snapshotId: number): Promise<DiffInventoryItem[]> {
-    return this.client.inventoryItem.findMany({
+    const rows = await this.client.inventoryItem.findMany({
       where: { snapshotId },
-      select: { materialId: true, quantity: true },
+      select: {
+        materialId: true,
+        quantity: true,
+        material: {
+          select: {
+            stableKey: true,
+            name: true,
+          },
+        },
+      },
     });
+
+    return rows.map((row) => ({
+      materialId: row.materialId,
+      stableKey: row.material?.stableKey,
+      name: row.material?.name,
+      quantity: row.quantity,
+    }));
   }
 }
 
@@ -174,6 +204,9 @@ export class InventoryDiffService {
   constructor(
     private readonly repository: InventoryDiffRepository = new PrismaInventoryDiffRepository(),
     private readonly requirements: RequirementCalculator = new CharacterRequirementService(),
+    private readonly craftingRules = new CraftingRuleService(),
+    private readonly projection = new InventoryProjectionService(),
+    private readonly materialSources = new MaterialSourceService(),
   ) {}
 
   async diffCharacter(input: CharacterInventoryDiffInput): Promise<CharacterInventoryDiffResult> {
@@ -193,8 +226,9 @@ export class InventoryDiffService {
       currentTalents: resolved.currentTalents,
       targetTalents: resolved.targetTalents,
     });
-    const ownedByMaterialId = aggregateInventoryItems(await this.repository.listInventoryItems(snapshot.id));
-    const materials = required.materials.map((material) => {
+    const inventoryItems = await this.repository.listInventoryItems(snapshot.id);
+    const ownedByMaterialId = aggregateInventoryItems(inventoryItems);
+    let materials = required.materials.map((material) => {
       const owned = ownedByMaterialId.get(material.materialId) ?? 0;
       const missing = Math.max(0, material.quantity - owned);
 
@@ -204,12 +238,41 @@ export class InventoryDiffService {
         name: material.name,
         required: material.quantity,
         owned,
+        directOwned: owned,
+        effectiveOwned: owned,
         missing,
+        missingBeforeCrafting: missing,
+        missingAfterCrafting: missing,
         status: missing > 0 ? ("missing" as const) : ("satisfied" as const),
         sources: material.sources,
         breakdown: material.breakdown,
       };
     }).sort(compareMaterialDiffs);
+    const craftingWarnings: string[] = [];
+    let craftingActions: CraftingAction[] | undefined;
+    let conversionActions: CraftingAction[] | undefined;
+
+    if (input.useCrafting || input.allowDustOfAzoth || input.allowDreamSolvent) {
+      const projectionMaterials = await this.buildProjectionMaterials(required, inventoryItems, ownedByMaterialId);
+      const rules = this.craftingRules.buildRules(projectionMaterials);
+      const projection = this.projection.project(projectionMaterials, rules, projectionOptions(input));
+      craftingActions = projection.craftingActions;
+      conversionActions = projection.conversionActions;
+      craftingWarnings.push(...projection.warnings);
+      materials = materials.map((material) => {
+        const effectiveOwned = projection.effectiveOwnedByMaterialKey.get(material.stableKey) ?? material.owned;
+        const missingAfterCrafting = projection.missingAfterByMaterialKey.get(material.stableKey) ?? material.missing;
+
+        return {
+          ...material,
+          owned: effectiveOwned,
+          effectiveOwned,
+          missing: missingAfterCrafting,
+          missingAfterCrafting,
+          status: missingAfterCrafting > 0 ? ("missing" as const) : ("satisfied" as const),
+        };
+      }).sort(compareMaterialDiffs);
+    }
 
     return {
       player,
@@ -233,11 +296,65 @@ export class InventoryDiffService {
         totalOwnedQuantityForRequiredMaterials: materials.reduce((sum, material) => sum + material.owned, 0),
       },
       materials,
+      craftingActions,
+      conversionActions,
       warnings: [
         ...required.warnings,
+        ...craftingWarnings,
         "Manual inventory overrides are future work and are not included in this diff.",
       ],
     };
+  }
+
+  private async buildProjectionMaterials(
+    required: CharacterRequirementResult,
+    inventoryItems: DiffInventoryItem[],
+    ownedByMaterialId: Map<number, number>,
+  ): Promise<Array<CraftingRuleMaterial & { required: number; directQuantity: number }>> {
+    const materialByKey = new Map<string, CraftingRuleMaterial & { required: number; directQuantity: number }>();
+
+    for (const material of required.materials) {
+      materialByKey.set(material.stableKey, {
+        materialId: material.materialId,
+        stableKey: material.stableKey,
+        name: material.name,
+        required: material.quantity,
+        directQuantity: ownedByMaterialId.get(material.materialId) ?? 0,
+      });
+    }
+
+    for (const item of inventoryItems) {
+      if (item.materialId === null || !item.stableKey || !item.name) {
+        continue;
+      }
+
+      const existing = materialByKey.get(item.stableKey);
+      materialByKey.set(item.stableKey, {
+        materialId: item.materialId,
+        stableKey: item.stableKey,
+        name: item.name,
+        required: existing?.required ?? 0,
+        directQuantity: ownedByMaterialId.get(item.materialId) ?? 0,
+      });
+    }
+
+    const materials = [...materialByKey.values()];
+
+    for (const material of materials) {
+      try {
+        const lookup = await this.materialSources.lookup({ materialKey: material.stableKey, includeCalendar: false });
+        material.sourceTypes = [...new Set(lookup.sources.map((source) => source.sourceType))];
+        material.sourceOptions = lookup.sources.map((source) => ({
+          sourceType: source.sourceType,
+          sourceKey: source.sourceKey,
+          sourceName: source.sourceName,
+        }));
+      } catch {
+        // Source metadata is best-effort for conversion rules; missing sources simply disable ambiguous conversions.
+      }
+    }
+
+    return materials;
   }
 
   private async requirePlayer(playerKey: string): Promise<DiffPlayer> {
@@ -312,6 +429,15 @@ export class InventoryDiffService {
       targetTalents,
     };
   }
+}
+
+function projectionOptions(input: CharacterInventoryDiffInput): InventoryProjectionOptions {
+  return {
+    allowTierUpgrades: input.useCrafting || input.allowDustOfAzoth || input.allowDreamSolvent,
+    allowDustOfAzoth: input.allowDustOfAzoth,
+    allowDreamSolvent: input.allowDreamSolvent,
+    preserveLowerTierMaterials: false,
+  };
 }
 
 export function aggregateInventoryItems(items: DiffInventoryItem[]): Map<number, number> {
