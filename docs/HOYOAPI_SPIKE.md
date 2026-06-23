@@ -59,6 +59,37 @@ refreshed. The spike now prefers `HOYOAPI_COOKIE`, calls `Hoyolab.gamesList()`,
 selects a Genshin account, and then initializes `GenshinImpact` with the
 selected uid and region.
 
+## Local Cookie Capture Helper
+
+The spike includes a local-only helper for collecting a full HoYoLAB cookie from
+a browser session:
+
+```bash
+npm run auth:hoyolab
+npm run auth:hoyolab -- --out-env .env.local --out-json data/raw/hoyoapi/hoyolab.cookies.local.json
+npm run auth:hoyolab -- --no-write --json
+```
+
+The helper opens the official HoYoLAB/Battle Chronicle page in headed Chromium.
+You log in manually in the browser window, then press Enter in the terminal. The
+tool reads cookies from the local browser session and writes `HOYOAPI_COOKIE` to
+`.env.local` unless `--no-write` is passed.
+
+It does not store passwords, automate username/password login, bypass CAPTCHA,
+or call `daily.claim()`. Captured cookies are secrets. `.env.local` and
+`data/raw/hoyoapi/*.json`, `*.cookie.json`, and `*.env.local` are ignored by git.
+Cookies expire and may need to be recaptured.
+
+Cookie deduplication is heuristic: duplicate names prefer HoYoLAB domains, then
+HoYoverse domains, then longer paths, then later expiry timestamps. Only cookie
+names, counts, and domains are printed; full values are not printed.
+
+If Chromium is not installed for Playwright yet, run:
+
+```bash
+npx playwright install chromium
+```
+
 ## Commands
 
 ```bash

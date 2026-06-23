@@ -5,3 +5,5 @@ __pycache__/
 .env.local
 data/raw/user_imports/*.json
 data/raw/hoyoapi/*.json
+data/raw/hoyoapi/*.cookie.json
+data/raw/hoyoapi/*.env.local
