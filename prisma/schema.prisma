@@ -51,6 +51,10 @@ model Character {
   element            String?
   weaponType         String?
   rarity             Int?
+  region             String?
+  affiliation        String?
+  birthday           String?
+  constellation      String?
   sourceExternalKey  String?
   rawGameObjectId    Int?
   rawGameObject      RawGameObject?           @relation(fields: [rawGameObjectId], references: [id])
@@ -89,6 +93,7 @@ model Material {
   stableKey               String                   @unique
   name                    String
   category                String?
+  typeText                String?
   rarity                  Int?
   sourceExternalKey       String?
   rawGameObjectId         Int?
