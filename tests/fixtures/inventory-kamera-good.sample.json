@@ -1,0 +1,12 @@
+{
+  "format": "GOOD",
+  "version": 2,
+  "source": "Inventory Kamera",
+  "materials": {
+    "Mora": 12345,
+    "LakelightLily": 12,
+    "Teachings of Justice": 3,
+    "Unknown Future Item": 7,
+    "Broken Quantity": "not-a-number"
+  }
+}
