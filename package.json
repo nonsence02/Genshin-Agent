@@ -16,6 +16,7 @@
     "normalize:game-data": "tsx src/ingestion/jobs/normalizeGameData.ts",
     "requirements:character": "tsx src/planner/jobs/characterRequirements.ts",
     "diff:character": "tsx src/planner/jobs/characterInventoryDiff.ts",
+    "plan:character": "tsx src/planner/jobs/characterResinPlan.ts",
     "costs:level": "tsx src/planner/jobs/characterLevelCosts.ts",
     "sources:material": "tsx src/planner/jobs/materialSources.ts",
     "classify:material": "tsx src/planner/jobs/classifyMaterial.ts",

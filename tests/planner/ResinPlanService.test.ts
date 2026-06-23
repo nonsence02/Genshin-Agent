@@ -1,0 +1,190 @@
+import { describe, expect, it } from "vitest";
+import { ResinPlanService, type ResinPlanFarmTaskBuilder, type ResinPlanInventoryDiffService } from "../../src/planner/services/ResinPlanService.js";
+import type { FarmTaskPlan } from "../../src/planner/services/FarmTaskBuilder.js";
+import type { CharacterInventoryDiffResult } from "../../src/planner/services/InventoryDiffService.js";
+
+class MockInventoryDiff implements ResinPlanInventoryDiffService {
+  constructor(private readonly result = diff()) {}
+
+  async diffCharacter(): Promise<CharacterInventoryDiffResult> {
+    return this.result;
+  }
+}
+
+class MockTaskBuilder implements ResinPlanFarmTaskBuilder {
+  constructor(private readonly result: FarmTaskPlan) {}
+
+  async build(): Promise<FarmTaskPlan> {
+    return this.result;
+  }
+}
+
+describe("ResinPlanService", () => {
+  it("does not exceed daily resin budget and schedules boss tasks any day", async () => {
+    const result = await planWithTasks([
+      task("mat_boss", { sourceType: "boss", resinCostPerRun: 40, estimatedRuns: 10, estimatedResin: 400 }),
+    ], { days: 2, dailyResinBudget: 80, startDate: "2026-06-22" });
+
+    expect(result.schedule.map((day) => day.plannedResin)).toEqual([80, 80]);
+    expect(result.schedule.every((day) => day.plannedResin <= day.resinBudget)).toBe(true);
+    expect(result.summary.unscheduledResinTasks).toBe(1);
+  });
+
+  it("only schedules domain placeholders on valid calendar days", async () => {
+    const result = await planWithTasks([
+      task("mat_domain", {
+        sourceType: "domain",
+        resinCostPerRun: 20,
+        estimatedRuns: null,
+        calendarDays: ["wednesday"],
+      }),
+    ], { days: 3, dailyResinBudget: 180, startDate: "2026-06-22" });
+
+    expect(result.schedule[0]?.tasks).toEqual([]);
+    expect(result.schedule[1]?.tasks).toEqual([]);
+    expect(result.schedule[2]?.dayOfWeek).toBe("wednesday");
+    expect(result.schedule[2]?.tasks[0]).toMatchObject({ materialKey: "mat_domain", taskType: "placeholder", resin: 20 });
+  });
+
+  it("allows Sunday domain scheduling when Sunday is in calendar days", async () => {
+    const result = await planWithTasks([
+      task("mat_sunday_domain", {
+        sourceType: "domain",
+        resinCostPerRun: 20,
+        estimatedRuns: null,
+        calendarDays: ["sunday"],
+      }),
+    ], { days: 1, dailyResinBudget: 180, startDate: "2026-06-28" });
+
+    expect(result.schedule[0]?.dayOfWeek).toBe("sunday");
+    expect(result.schedule[0]?.tasks[0]?.materialKey).toBe("mat_sunday_domain");
+  });
+
+  it("keeps open-world tasks separate and resin-free", async () => {
+    const result = await planWithTasks([], {
+      farmTasks: {
+        resinTasks: [],
+        openWorldTasks: [task("mat_local", { sourceType: "local_specialty", openWorld: true, estimatedRuns: 0, estimatedResin: 0 })],
+        unknownTasks: [],
+        warnings: [],
+      },
+    });
+
+    expect(result.schedule.every((day) => day.plannedResin === 0)).toBe(true);
+    expect(result.openWorldTasks).toHaveLength(1);
+    expect(result.summary.openWorldTasks).toBe(1);
+  });
+
+  it("applies weekly boss discounted cost policy", async () => {
+    const result = await planWithTasks([
+      task("mat_weekly", {
+        sourceType: "weekly_boss",
+        sourceKey: "enemy_weekly",
+        weeklyBoss: true,
+        estimatedRuns: null,
+        resinCostPerRun: null,
+      }),
+    ], { days: 1, dailyResinBudget: 180, startDate: "2026-06-22", discountedWeeklyBossClaimsUsed: 2 });
+
+    expect(result.schedule[0]?.tasks[0]).toMatchObject({
+      taskType: "weekly_boss_claim",
+      materialKey: "mat_weekly",
+      resin: 30,
+    });
+  });
+
+  it("creates warnings for unscheduled null-estimate tasks", async () => {
+    const result = await planWithTasks([
+      task("mat_domain", {
+        sourceType: "domain",
+        resinCostPerRun: 20,
+        estimatedRuns: null,
+        calendarDays: ["wednesday"],
+      }),
+    ], { days: 1, dailyResinBudget: 180, startDate: "2026-06-22" });
+
+    expect(result.summary.unscheduledResinTasks).toBe(1);
+    expect(result.warnings.some((warning) => warning.includes("No placeholder could be scheduled"))).toBe(true);
+  });
+
+  it("uses deterministic scheduling priority", async () => {
+    const result = await planWithTasks([
+      task("mat_ley", { sourceType: "ley_line", resinCostPerRun: 20, estimatedRuns: 1, estimatedResin: 20 }),
+      task("mat_boss", { sourceType: "boss", resinCostPerRun: 40, estimatedRuns: 1, estimatedResin: 40 }),
+      task("mat_weekly", { sourceType: "weekly_boss", sourceKey: "weekly", weeklyBoss: true, estimatedRuns: null, resinCostPerRun: null }),
+    ], { days: 1, dailyResinBudget: 90, startDate: "2026-06-22" });
+
+    expect(result.schedule[0]?.tasks.map((scheduled) => scheduled.materialKey)).toEqual(["mat_weekly", "mat_boss", "mat_ley"]);
+    expect(result.schedule[0]?.plannedResin).toBe(90);
+  });
+});
+
+async function planWithTasks(
+  resinTasks: FarmTaskPlan["resinTasks"],
+  options: Partial<Parameters<ResinPlanService["plan"]>[0]> & { farmTasks?: FarmTaskPlan } = {},
+) {
+  const farmTasks: FarmTaskPlan = options.farmTasks ?? {
+    resinTasks,
+    openWorldTasks: [],
+    unknownTasks: [],
+    warnings: [],
+  };
+  const service = new ResinPlanService(new MockInventoryDiff(), new MockTaskBuilder(farmTasks));
+
+  return service.plan({
+    playerKey: "default",
+    characterKey: "char_furina",
+    currentLevel: 20,
+    targetLevel: 90,
+    startDate: "2026-06-22",
+    days: 7,
+    ...options,
+  });
+}
+
+function diff(): CharacterInventoryDiffResult {
+  return {
+    player: { id: 1, stableKey: "default" },
+    character: { id: 1, stableKey: "char_furina", name: "Furina" },
+    inventorySnapshot: { id: 1, source: "test", createdAt: "2026-06-23T00:00:00.000Z" },
+    goal: {
+      currentLevel: 20,
+      targetLevel: 90,
+      currentTalents: { normal: 1, skill: 1, burst: 1 },
+      targetTalents: { normal: 1, skill: 9, burst: 10 },
+    },
+    summary: {
+      totalMaterials: 1,
+      satisfiedMaterials: 0,
+      missingMaterials: 1,
+      totalRequiredQuantity: 1,
+      totalOwnedQuantityForRequiredMaterials: 0,
+    },
+    materials: [],
+    warnings: [],
+  };
+}
+
+function task(
+  materialKey: string,
+  overrides: Partial<FarmTaskPlan["resinTasks"][number]> = {},
+): FarmTaskPlan["resinTasks"][number] {
+  return {
+    materialId: 1,
+    materialKey,
+    materialName: materialKey,
+    missing: 10,
+    sourceType: "boss",
+    sourceName: materialKey,
+    sourceKey: materialKey,
+    resinCostPerRun: 40,
+    estimatedRuns: 1,
+    estimatedResin: 40,
+    calendarDays: [],
+    weeklyBoss: false,
+    openWorld: false,
+    notes: [],
+    warnings: [],
+    ...overrides,
+  };
+}

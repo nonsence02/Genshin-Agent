@@ -80,3 +80,40 @@ npm run diff:character -- --player default --character char_furina --target-leve
 ```
 
 This keeps the planner deterministic: the LLM can later call a tool wrapping this service, but the material diff itself is ordinary service logic over normalized database rows.
+
+## ResinPlanService V1
+
+`ResinPlanService` turns a character goal into a simple farming plan:
+
+- calls `InventoryDiffService` to get missing normalized materials;
+- uses `FarmTaskBuilder` to classify missing materials into resin-gated, open-world, and unknown tasks;
+- uses `RunEstimateService` for rough deterministic run estimates;
+- schedules resin tasks day by day with a fixed resin budget and domain calendar constraints;
+- lists open-world tasks separately instead of consuming resin for them.
+
+This is not the full optimizer. It does not estimate exact random drops, use condensed resin, read live current resin, track already claimed weekly bosses, route open-world materials, or optimize multiple goals together.
+
+Default assumptions:
+
+- daily resin budget: `180`;
+- resin cap: `200`;
+- normal boss unique ascension materials: rough `2.5` material per run;
+- talent domains, weapon domains, artifact domains, and ley lines do not have precise run estimates yet unless a reliable model is added later.
+
+The schedule is deterministic and priority ordered:
+
+1. weekly boss / trounce domain tasks;
+2. normal boss tasks;
+3. domain tasks available on that day;
+4. ley line tasks;
+5. other resin-gated tasks.
+
+Weekly boss tasks use `WeeklyBossPolicy` for the resin cost of one cautious claim and avoid duplicate claims for the same source within the v1 plan window. This does not replace future weekly claimed-boss tracking.
+
+Example:
+
+```bash
+npm run plan:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10
+npm run plan:character -- --player default --character char_furina --current-level 20 --target-level 90 --skill 9 --burst 10 --days 7 --json
+npm run plan:character -- --player default --character char_furina --target-level 90 --skill 10 --burst 10 --use-player-state
+```
