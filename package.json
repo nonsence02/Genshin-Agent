@@ -14,6 +14,7 @@
     "import:player-sources": "tsx src/ingestion/jobs/import-player-sources.ts",
     "normalize:game-data": "tsx src/ingestion/jobs/normalizeGameData.ts",
     "requirements:character": "tsx src/planner/jobs/characterRequirements.ts",
+    "diff:character": "tsx src/planner/jobs/characterInventoryDiff.ts",
     "auth:hoyolab": "tsx src/experiments/hoyoapi/captureHoyolabCookies.ts",
     "spike:hoyoapi": "tsx src/experiments/hoyoapi/runHoyoApiExperiment.ts",
     "sync:db": "node scripts/sync_database.js",
