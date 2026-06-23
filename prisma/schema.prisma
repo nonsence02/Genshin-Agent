@@ -28,6 +28,7 @@ model RawGameObject {
   externalKey   String
   sourceVersion String
   payload       Json
+  rawHash       String
   importedAt    DateTime  @default(now())
   importRun     ImportRun @relation(fields: [importRunId], references: [id], onDelete: Cascade)
   characters    Character[]
@@ -40,6 +41,7 @@ model RawGameObject {
   @@unique([source, folder, externalKey, sourceVersion])
   @@index([importRunId])
   @@index([source, folder])
+  @@index([rawHash])
 }
 
 model Character {
