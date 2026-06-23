@@ -12,6 +12,7 @@
     "import:genshin-db": "tsx src/ingestion/jobs/import-genshin-db.ts",
     "import:inventory": "tsx src/ingestion/jobs/import-inventory.ts",
     "normalize:game-data": "tsx src/ingestion/jobs/normalizeGameData.ts",
+    "requirements:character": "tsx src/planner/jobs/characterRequirements.ts",
     "sync:db": "node scripts/sync_database.js",
     "test": "vitest run"
   },
