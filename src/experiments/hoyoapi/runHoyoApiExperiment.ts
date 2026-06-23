@@ -1,6 +1,6 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
-import { runHoyoApiExperiment } from "./HoyoApiExperimentClient.js";
+import { getHoyoApiConfigDiagnostic, runHoyoApiExperiment } from "./HoyoApiExperimentClient.js";
 import { sanitizeHoyoApiOutput } from "./sanitizeHoyoApiOutput.js";
 
 interface CliOptions {
@@ -9,11 +9,16 @@ interface CliOptions {
   noWrite: boolean;
   claimDaily: boolean;
   yes: boolean;
+  printConfig: boolean;
 }
 
 async function main(): Promise<void> {
-  loadLocalEnv();
   const options = parseArgs(process.argv.slice(2));
+
+  if (options.printConfig) {
+    console.log(JSON.stringify(getHoyoApiConfigDiagnostic(), null, 2));
+    return;
+  }
 
   if (options.claimDaily && !options.yes) {
     throw new Error("Refusing to claim daily rewards without --yes. Pass both --claim-daily and --yes.");
@@ -49,6 +54,7 @@ function parseArgs(args: string[]): CliOptions {
     noWrite: false,
     claimDaily: false,
     yes: false,
+    printConfig: false,
   };
 
   for (let index = 0; index < args.length; index += 1) {
@@ -62,6 +68,8 @@ function parseArgs(args: string[]): CliOptions {
       options.claimDaily = true;
     } else if (arg === "--yes") {
       options.yes = true;
+    } else if (arg === "--print-config") {
+      options.printConfig = true;
     } else if (arg === "--out") {
       const out = args[index + 1];
 
@@ -84,6 +92,7 @@ function printSummary(report: Awaited<ReturnType<typeof runHoyoApiExperiment>>, 
 
   console.log("hoyoapi experiment summary");
   console.log(`setup mode: ${report.setupMode}`);
+  console.log(`initialization strategy: ${report.initializationStrategy}`);
   console.log(`records endpoint: ${summary.recordsEndpoint}`);
   console.log(`characters endpoint: ${summary.charactersEndpoint}`);
   console.log(`characters count: ${summary.charactersCount}`);
@@ -119,40 +128,6 @@ function printSummary(report: Awaited<ReturnType<typeof runHoyoApiExperiment>>, 
 
   for (const warning of summary.warnings) {
     console.warn(`warning: ${warning}`);
-  }
-}
-
-function loadLocalEnv(): void {
-  for (const file of [".env.local", ".env"]) {
-    const path = resolve(file);
-
-    if (!existsSync(path)) {
-      continue;
-    }
-
-    const content = readFileSync(path, "utf8");
-
-    for (const rawLine of content.split(/\r?\n/)) {
-      const line = rawLine.trim();
-
-      if (!line || line.startsWith("#")) {
-        continue;
-      }
-
-      const separator = line.indexOf("=");
-
-      if (separator === -1) {
-        continue;
-      }
-
-      const key = line.slice(0, separator).trim();
-      const rawValue = line.slice(separator + 1).trim();
-      const value = rawValue.replace(/^["']|["']$/g, "");
-
-      if (!process.env[key]) {
-        process.env[key] = value;
-      }
-    }
   }
 }
 

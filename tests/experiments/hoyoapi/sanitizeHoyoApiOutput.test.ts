@@ -19,4 +19,16 @@ describe("sanitizeHoyoApiOutput", () => {
       },
     });
   });
+
+  it("does not redact endpoint status keys that merely contain secret-like letters", () => {
+    expect(
+      sanitizeHoyoApiOutput({
+        recordsEndpoint: "ok",
+        dailyRewardsEndpoint: "ok",
+      }),
+    ).toEqual({
+      recordsEndpoint: "ok",
+      dailyRewardsEndpoint: "ok",
+    });
+  });
 });

@@ -21,18 +21,32 @@ HOYOAPI_LTOKEN_V2=
 HOYOAPI_COOKIE_TOKEN_V2=
 ```
 
+The spike also accepts the existing project variable names:
+
+```bash
+GENSHIN_UID=711328650
+LTUID_V2=...
+LTOKEN_V2=...
+COOKIE_TOKEN_V2=...
+```
+
+`HOYOAPI_*` variables take precedence over the existing project names.
 `HOYOAPI_COOKIE` can be used as a raw cookie string. If using object-style
-credentials, set the ltuid/ltoken fields instead.
+credentials, set the ltuid/ltoken fields instead. Values must never be
+committed or logged.
 
 ## Commands
 
 ```bash
 npm run spike:hoyoapi
+npm run spike:hoyoapi -- --print-config
 npm run spike:hoyoapi -- --json --no-write
 npm run spike:hoyoapi -- --out data/raw/hoyoapi/latest.sanitized.json
 ```
 
 Output written under `data/raw/hoyoapi/*.json` is sanitized and ignored by git.
+The config diagnostic prints only whether values are present and which env names
+were used; it never prints token values.
 
 ## Endpoints Tested
 

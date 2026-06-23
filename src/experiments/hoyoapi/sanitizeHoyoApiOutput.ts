@@ -41,8 +41,6 @@ export interface HoyoApiExperimentSummary {
 }
 
 const REDACTED = "[REDACTED]";
-const SECRET_KEY_PATTERN =
-  /(cookie|token|ltoken|ltuid|account|uid|email|phone|auth|ds|stoken|mid|login|session)/i;
 const MAX_ARRAY_ITEMS = 50;
 
 export function sanitizeHoyoApiOutput(value: unknown): unknown {
@@ -50,7 +48,7 @@ export function sanitizeHoyoApiOutput(value: unknown): unknown {
 }
 
 function sanitizeValue(value: unknown, key: string): unknown {
-  if (SECRET_KEY_PATTERN.test(key)) {
+  if (isSecretKey(key)) {
     return REDACTED;
   }
 
@@ -87,6 +85,20 @@ function sanitizeValue(value: unknown, key: string): unknown {
 
 function looksSensitive(value: string): boolean {
   return /ltoken=|ltuid=|cookie_token|account_id|stoken=|mid=/i.test(value);
+}
+
+function isSecretKey(key: string): boolean {
+  const normalized = key.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+  if (normalized.includes("cookie") || normalized.includes("token")) {
+    return true;
+  }
+
+  if (normalized.includes("ltoken") || normalized.includes("ltuid") || normalized.includes("account")) {
+    return true;
+  }
+
+  return ["uid", "email", "phone", "auth", "ds", "stoken", "mid", "login", "session"].includes(normalized);
 }
 
 export function detectHoyoApiFieldCoverage(values: unknown[]): CharacterFieldCoverage {

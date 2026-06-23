@@ -32,6 +32,7 @@
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
+    "dotenv": "17.4.2",
     "genshin-db": "5.2.11",
     "hoyoapi": "1.2.0",
     "pg": "^8.22.0"

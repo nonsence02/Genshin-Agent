@@ -2,6 +2,12 @@ import { GenshinImpact, GenshinRegion } from "hoyoapi/gi";
 import { Language } from "hoyoapi";
 import type { IGenshinOptions } from "hoyoapi/gi";
 import {
+  buildConfigDiagnostic,
+  loadHoyoApiEnv,
+  MISSING_HOYOAPI_CREDENTIALS_MESSAGE,
+  type HoyoApiExperimentConfig,
+} from "./loadHoyoApiEnv.js";
+import {
   buildHoyoApiExperimentSummary,
   countLikelyItems,
   type EndpointResult,
@@ -15,25 +21,26 @@ export interface HoyoApiExperimentOptions {
 
 export interface HoyoApiExperimentReport {
   setupMode: "create" | "constructor";
+  initializationStrategy: string;
   endpoints: Record<string, EndpointResult>;
   summary: HoyoApiExperimentSummary;
   warnings: string[];
 }
 
 interface HoyoApiExperimentCredentials {
+  name: string;
   cookie: IGenshinOptions["cookie"];
-  uid?: number;
-  lang?: string;
-  region?: GenshinRegion;
+  canUseCreate: boolean;
 }
 
 export async function runHoyoApiExperiment(options: HoyoApiExperimentOptions = {}): Promise<HoyoApiExperimentReport> {
-  const credentials = loadCredentialsFromEnv();
-  const { client, setupMode, warnings } = await createGenshinClient(credentials);
+  const config = loadHoyoApiEnv();
+  const { client, setupMode, initializationStrategy, warnings } = await createGenshinClient(config);
 
   return runHoyoApiExperimentAgainstClient(client, {
     ...options,
     setupMode,
+    initializationStrategy,
     warnings,
   });
 }
@@ -42,6 +49,7 @@ export async function runHoyoApiExperimentAgainstClient(
   client: unknown,
   options: HoyoApiExperimentOptions & {
     setupMode?: "create" | "constructor";
+    initializationStrategy?: string;
     warnings?: string[];
   } = {},
 ): Promise<HoyoApiExperimentReport> {
@@ -93,72 +101,60 @@ export async function runHoyoApiExperimentAgainstClient(
 
   return {
     setupMode: options.setupMode ?? "constructor",
+    initializationStrategy: options.initializationStrategy ?? "provided-client",
     endpoints,
     summary,
     warnings,
   };
 }
 
-async function createGenshinClient(credentials: HoyoApiExperimentCredentials): Promise<{
+export async function createGenshinClient(config: HoyoApiExperimentConfig): Promise<{
   client: GenshinImpact;
   setupMode: "create" | "constructor";
+  initializationStrategy: string;
   warnings: string[];
 }> {
-  const options = {
-    cookie: credentials.cookie,
-    uid: credentials.uid,
-    region: credentials.region,
-    lang: Language.parseLang(credentials.lang),
-  };
+  const candidates = buildCredentialCandidates(config);
+  const warnings: string[] = [];
 
-  try {
-    return {
-      client: await GenshinImpact.create(options),
-      setupMode: "create",
-      warnings: [],
-    };
-  } catch (error) {
-    return {
-      client: new GenshinImpact(options),
-      setupMode: "constructor",
-      warnings: [`GenshinImpact.create failed, fell back to constructor: ${formatError(error)}`],
-    };
-  }
-}
-
-function loadCredentialsFromEnv(): HoyoApiExperimentCredentials {
-  const rawCookie = process.env.HOYOAPI_COOKIE?.trim();
-  const uid = parseOptionalInt(process.env.HOYOAPI_UID);
-  const lang = process.env.HOYOAPI_LANG;
-  const region = parseRegion(process.env.HOYOAPI_REGION, uid);
-
-  if (rawCookie) {
-    return {
-      cookie: rawCookie,
-      uid,
-      lang,
-      region,
-    };
+  if (candidates.length === 0) {
+    throw new Error(MISSING_HOYOAPI_CREDENTIALS_MESSAGE);
   }
 
-  const ltuid = parseOptionalInt(process.env.HOYOAPI_LTUID_V2 ?? process.env.HOYOAPI_LTUID);
-  const ltoken = process.env.HOYOAPI_LTOKEN_V2 ?? process.env.HOYOAPI_LTOKEN;
-  const cookieTokenV2 = process.env.HOYOAPI_COOKIE_TOKEN_V2;
+  for (const candidate of candidates) {
+    const options = {
+      cookie: candidate.cookie,
+      uid: config.uid,
+      region: parseRegion(config.region, config.uid),
+      lang: Language.parseLang(config.lang),
+    };
 
-  if (!ltuid || !ltoken) {
-    throw new Error("Missing HOYOAPI_COOKIE or HOYOAPI_LTUID(_V2)/HOYOAPI_LTOKEN(_V2) credentials.");
+    if (candidate.canUseCreate) {
+      try {
+        return {
+          client: await GenshinImpact.create(options),
+          setupMode: "create",
+          initializationStrategy: `${candidate.name}:create`,
+          warnings,
+        };
+      } catch (error) {
+        warnings.push(`GenshinImpact.create failed for ${candidate.name}; trying fallback: ${formatError(error)}`);
+      }
+    }
+
+    try {
+      return {
+        client: new GenshinImpact(options),
+        setupMode: "constructor",
+        initializationStrategy: `${candidate.name}:constructor`,
+        warnings,
+      };
+    } catch (error) {
+      warnings.push(`GenshinImpact constructor failed for ${candidate.name}: ${formatError(error)}`);
+    }
   }
 
-  return {
-    cookie: {
-      ltuid,
-      ltoken,
-      cookieTokenV2,
-    },
-    uid,
-    lang,
-    region,
-  };
+  throw new Error(`Unable to initialize hoyoapi client without exposing credentials.\n${warnings.join("\n")}`);
 }
 
 function recordMethod(client: unknown, methodName: string): (...args: unknown[]) => Promise<unknown> {
@@ -238,16 +234,6 @@ function collectCharacterIds(value: unknown, ids: Set<number>): void {
   }
 }
 
-function parseOptionalInt(value: string | undefined): number | undefined {
-  if (!value) {
-    return undefined;
-  }
-
-  const parsed = Number(value);
-
-  return Number.isInteger(parsed) ? parsed : undefined;
-}
-
 function parseRegion(value: string | undefined, uid: number | undefined): GenshinRegion | undefined {
   if (value) {
     const normalized = value.toLowerCase();
@@ -280,4 +266,59 @@ function parseRegion(value: string | undefined, uid: number | undefined): Genshi
 
 function formatError(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
+}
+
+function buildCredentialCandidates(config: HoyoApiExperimentConfig): HoyoApiExperimentCredentials[] {
+  const candidates: HoyoApiExperimentCredentials[] = [];
+  const cookieObject = config.cookieObject;
+
+  if (config.cookieString) {
+    candidates.push({
+      name: "cookie-string",
+      cookie: config.cookieString,
+      canUseCreate: Boolean(cookieObject?.cookieTokenV2),
+    });
+  }
+
+  if (cookieObject?.ltuidV2 && cookieObject.ltokenV2) {
+    const ltuid = Number(cookieObject.ltuidV2);
+
+    if (Number.isInteger(ltuid)) {
+      candidates.push({
+        name: "v2-object",
+        cookie: {
+          ltuid,
+          ltoken: cookieObject.ltokenV2,
+          cookieTokenV2: cookieObject.cookieTokenV2,
+        },
+        canUseCreate: Boolean(cookieObject.cookieTokenV2),
+      });
+    }
+
+    candidates.push({
+      name: "v2-cookie-string",
+      cookie: [
+        `ltuid_v2=${cookieObject.ltuidV2}`,
+        `ltoken_v2=${cookieObject.ltokenV2}`,
+        cookieObject.cookieTokenV2 ? `cookie_token_v2=${cookieObject.cookieTokenV2}` : undefined,
+      ]
+        .filter(Boolean)
+        .join("; "),
+      canUseCreate: Boolean(cookieObject.cookieTokenV2),
+    });
+  }
+
+  if (cookieObject?.ltuid && cookieObject.ltoken) {
+    candidates.push({
+      name: "v1-cookie-string",
+      cookie: `ltuid=${cookieObject.ltuid}; ltoken=${cookieObject.ltoken}`,
+      canUseCreate: false,
+    });
+  }
+
+  return candidates;
+}
+
+export function getHoyoApiConfigDiagnostic(initializationStrategySelected?: string) {
+  return buildConfigDiagnostic(loadHoyoApiEnv(), initializationStrategySelected);
 }

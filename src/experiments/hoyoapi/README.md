@@ -10,10 +10,14 @@ planner and normalizers must not depend on raw `hoyoapi` response shapes.
 Run:
 
 ```bash
+npm run spike:hoyoapi -- --print-config
 npm run spike:hoyoapi
 npm run spike:hoyoapi -- --json --no-write
 npm run spike:hoyoapi -- --out data/raw/hoyoapi/latest.sanitized.json
 ```
+
+The spike accepts either explicit `HOYOAPI_*` variables or the existing project
+names `GENSHIN_UID`, `LTUID_V2`, `LTOKEN_V2`, and `COOKIE_TOKEN_V2`.
 
 Daily check-in claiming is disabled by default. To test it, both flags are
 required:
