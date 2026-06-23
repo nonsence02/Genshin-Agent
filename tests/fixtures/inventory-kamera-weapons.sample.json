@@ -1,0 +1,17 @@
+{
+  "format": "GOOD",
+  "version": 3,
+  "kamera_version": "1.4.3",
+  "source": "Inventory_Kamera",
+  "weapons": [
+    {
+      "key": "AstralVulturesCrimsonPlumage",
+      "level": 90,
+      "ascension": 6,
+      "refinement": 1,
+      "location": "Chasca",
+      "lock": false,
+      "id": 0
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "source": "hoyolab_calculator",
+  "uid": "000000000",
+  "characters": {
+    "skirk": {
+      "id": "skirk",
+      "name_ru": "Skirk RU",
+      "level": 90,
+      "rarity": 5,
+      "constellation": 0,
+      "talents": {
+        "normal_attack": 1,
+        "elemental_skill": 10,
+        "elemental_burst": 1
+      },
+      "equipped_weapon": {
+        "name": "Azurelight",
+        "level": 90,
+        "refinement": 1,
+        "rarity": 5
+      },
+      "equipped_artifacts": [
+        {
+          "name": "Hunter Brooch",
+          "set_name": "",
+          "slot": "flower",
+          "main_stat": "",
+          "level": 20,
+          "rarity": 5
+        }
+      ]
+    },
+    "unknown_ru_only": {
+      "id": "unknown_ru_only",
+      "name_ru": "Unknown RU",
+      "level": 70,
+      "rarity": 4,
+      "constellation": 2,
+      "talents": {
+        "normal_attack": 6,
+        "elemental_skill": 8,
+        "elemental_burst": 8
+      }
+    }
+  }
+}

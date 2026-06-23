@@ -349,35 +349,53 @@ model InventoryItem {
 }
 
 model PlayerCharacter {
-  id            Int       @id @default(autoincrement())
-  playerId      Int
-  characterId   Int
-  level         Int?
-  ascension     Int?
-  constellation Int?
-  talentNormal  Int?
-  talentSkill   Int?
-  talentBurst   Int?
-  metadata      Json?
-  player        Player    @relation(fields: [playerId], references: [id], onDelete: Cascade)
-  character     Character @relation(fields: [characterId], references: [id])
+  id                       Int        @id @default(autoincrement())
+  playerId                 Int
+  characterId              Int?
+  source                   String?
+  sourceCharacterKey       String?
+  name                     String?
+  nameRu                   String?
+  level                    Int?
+  ascension                Int?
+  constellation            Int?
+  talentNormal             Int?
+  talentSkill              Int?
+  talentBurst              Int?
+  equippedWeaponName       String?
+  equippedWeaponLevel      Int?
+  equippedWeaponRefinement Int?
+  rawPayload               Json?
+  importedAt               DateTime   @default(now())
+  metadata                 Json?
+  player                   Player     @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  character                Character? @relation(fields: [characterId], references: [id])
 
-  @@unique([playerId, characterId])
+  @@unique([playerId, source, sourceCharacterKey])
+  @@index([playerId, characterId])
 }
 
 model PlayerWeapon {
-  id         Int     @id @default(autoincrement())
-  playerId   Int
-  weaponId   Int
-  level      Int?
-  ascension  Int?
-  refinement Int?
-  quantity   Int     @default(1)
-  metadata   Json?
-  player     Player  @relation(fields: [playerId], references: [id], onDelete: Cascade)
-  weapon     Weapon  @relation(fields: [weaponId], references: [id])
+  id              Int      @id @default(autoincrement())
+  playerId        Int
+  weaponId        Int?
+  source          String?
+  sourceWeaponKey String?
+  level           Int?
+  ascension       Int?
+  refinement      Int?
+  location        String?
+  lock            Boolean?
+  inventoryItemId Int?
+  quantity        Int      @default(1)
+  rawPayload      Json?
+  importedAt      DateTime @default(now())
+  metadata        Json?
+  player          Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  weapon          Weapon?  @relation(fields: [weaponId], references: [id])
 
   @@index([playerId, weaponId])
+  @@index([playerId, source, sourceWeaponKey])
 }
 
 model ManualInventoryOverride {

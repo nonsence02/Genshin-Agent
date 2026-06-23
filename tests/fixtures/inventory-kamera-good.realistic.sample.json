@@ -1,0 +1,11 @@
+{
+  "format": "GOOD",
+  "version": 3,
+  "kamera_version": "1.4.3",
+  "source": "Inventory_Kamera",
+  "materials": {
+    "Mora": 12345,
+    "LakelightLily": 12,
+    "Unknown Future Item": 7
+  }
+}
