@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx src/api/index.ts",
+    "api:dev": "tsx src/api/index.ts",
+    "api:test": "vitest run tests/api",
     "db:up": "docker compose up -d postgres",
     "db:down": "docker compose down",
     "db:migrate": "prisma migrate dev",
@@ -38,12 +40,15 @@
   },
   "homepage": "https://github.com/nonsence02/Genshin-Agent#readme",
   "dependencies": {
+    "@fastify/cors": "^11.2.0",
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "dotenv": "17.4.2",
+    "fastify": "^5.8.5",
     "genshin-db": "5.2.11",
     "hoyoapi": "1.2.0",
-    "pg": "^8.22.0"
+    "pg": "^8.22.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^26.0.0",
